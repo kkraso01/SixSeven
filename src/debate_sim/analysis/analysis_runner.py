@@ -4,8 +4,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List
 
-from debate_sim.analysis.features import load_run_inputs
-from debate_sim.analysis.metrics import (
+from .features import load_run_inputs
+from .metrics import (
     persuasion_moments,
     quality_summary_from_scores,
     redundancy_summary,
@@ -13,19 +13,19 @@ from debate_sim.analysis.metrics import (
     stance_summary_from_logs,
     tactic_summary_from_logs,
 )
-from debate_sim.analysis.plots import (
+from .plots import (
     plot_aggregate_histogram,
     plot_aggregate_scatter,
     plot_quality_scores,
     plot_stance_trajectory,
     plot_tactic_histogram,
 )
-from debate_sim.analysis.report_models import (
+from .report_models import (
     AggregateReport,
     AnalysisReport,
     RunCaseSummary,
 )
-from debate_sim.analysis.report_writer import write_aggregate_report, write_analysis_report
+from .report_writer import write_aggregate_report, write_analysis_report
 
 
 @dataclass

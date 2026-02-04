@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections import Counter
 from typing import Dict, List
 
-from debate_sim.schemas import MemoryState, ModeratorRecap
+from ..schemas import MemoryState, ModeratorRecap
 
 
 def update_metrics(

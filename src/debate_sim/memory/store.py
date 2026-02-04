@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from debate_sim.schemas import MemoryState
+from ..schemas import MemoryState
 
 
 def save_memory(path: Path, memory: MemoryState) -> None:
