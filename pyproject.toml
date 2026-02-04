@@ -1,0 +1,21 @@
+[project]
+name = "debate-sim"
+version = "0.1.0"
+description = "Multi-agent debate simulator with Ollama and Instructor."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic==2.12.5",
+  "instructor==1.14.5",
+  "httpx==0.28.1",
+  "tenacity==9.1.2",
+  "openai==2.16.0",
+  "matplotlib==3.10.8",
+]
+
+[project.optional-dependencies]
+logging = ["rich==14.3.2"]
+analysis = ["scikit-learn==1.8.0"]
+
+[tool.ruff]
+line-length = 100
