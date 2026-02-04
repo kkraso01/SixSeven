@@ -7,8 +7,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import List
 
-from debate_sim.export.templates import render_transcript
-from debate_sim.schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
+from .templates import render_transcript
+from ..schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
 
 
 @dataclass

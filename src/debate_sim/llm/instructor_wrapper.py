@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Type
 
 from pydantic import BaseModel
 
-from debate_sim.llm.ollama_client import LLMResponseError, OllamaClient
+from .ollama_client import LLMResponseError, OllamaClient
 
 
 class StructuredLLM:

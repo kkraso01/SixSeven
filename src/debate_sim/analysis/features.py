@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-from debate_sim.schemas import MemoryState
+from ..schemas import MemoryState
 
 
 @dataclass

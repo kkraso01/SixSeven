@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from debate_sim import DebateConfig, run_debate
+from src.debate_sim import DebateConfig, run_debate
 
 
 @dataclass(frozen=True)
@@ -14,8 +14,8 @@ class RunResult:
 def run_experiment():
     config = DebateConfig.from_env()
     result = run_debate(
-        topic="Persuasion dynamics in contested claims",
-        motion="Institutional narratives reduce public trust more than they build it.",
+        topic="The safety and efficacy of mRNA vaccine technology",
+        motion="Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
         rounds=config.rounds,
         config=config,
     )

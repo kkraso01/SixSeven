@@ -4,13 +4,13 @@ import importlib.util
 import math
 from typing import Dict, Iterable, List, Tuple
 
-from debate_sim.analysis.features import (
+from .features import (
     detect_recap_keyword,
     excerpt_for_round,
     extract_recap_text,
     safety_flags_from_text,
 )
-from debate_sim.analysis.report_models import (
+from .report_models import (
     PersuasionMoment,
     QualityAggregate,
     QualitySummary,
@@ -19,7 +19,7 @@ from debate_sim.analysis.report_models import (
     StanceSummary,
     TacticSummary,
 )
-from debate_sim.schemas import DebateLogItem, MemoryState
+from ..schemas import DebateLogItem, MemoryState
 
 HAS_SKLEARN = importlib.util.find_spec("sklearn") is not None
 

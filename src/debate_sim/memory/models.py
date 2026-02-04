@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Dict, List
 
-from debate_sim.schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
+from ..schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
 
 
 def initial_memory(topic: str, motion: str) -> MemoryState:

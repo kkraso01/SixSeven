@@ -8,7 +8,7 @@ import instructor
 from openai import OpenAI
 from pydantic import BaseModel, ValidationError
 
-from debate_sim.config import DebateConfig
+from ..config import DebateConfig
 
 
 class LLMResponseError(RuntimeError):
@@ -25,7 +25,12 @@ class OllamaClient:
         self._instructor_client: Optional[Any] = None
 
         if config.api_mode == "openai":
-            self._openai_client = OpenAI(base_url=f"{config.base_url}/v1", api_key="ollama")
+            # Use base_url directly without appending /v1 (it should already be in the base_url)
+            self._openai_client = OpenAI(
+                base_url=config.base_url,
+                api_key="ollama",
+                http_client=httpx.Client(verify=False, timeout=120.0)
+            )
             self._instructor_client = instructor.from_openai(
                 self._openai_client, mode=instructor.Mode.JSON
             )

@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import List
 
-from debate_sim.analysis.report_models import AggregateReport, AnalysisReport
+from .report_models import AggregateReport, AnalysisReport
 
 
 def write_analysis_report(run_dir: Path, report: AnalysisReport) -> AnalysisReport:
