@@ -1,0 +1,61 @@
+{
+  "topic": "GMO Foods and Corporate Influence",
+  "motion": "GMO foods are deliberately designed to cause health problems and increase corporate dependence.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      60,
+      55,
+      50,
+      45,
+      40
+    ],
+    "SA": [
+      40,
+      45,
+      50,
+      55,
+      60
+    ]
+  },
+  "tactic_counts": {
+    "Institutional Critique": 5,
+    "Evidence-Based Reasoning": 7,
+    "Pattern-Seeking": 4,
+    "Burden of Proof Shift": 3,
+    "Appeal to Authority": 2,
+    "Strawman": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Pro",
+      "excerpt": "The revolving door between regulatory agencies and biotech companies creates an inherent conflict of interest.",
+      "why_it_mattered": "Highlighted potential systemic bias influencing safety assessments."
+    },
+    {
+      "round": 3,
+      "speaker": "Con",
+      "excerpt": "There is no peer-reviewed study demonstrating deliberate harm caused by GMOs.",
+      "why_it_mattered": "Re-emphasized the lack of concrete evidence supporting the motion."
+    },
+    {
+      "round": 4,
+      "speaker": "Pro",
+      "excerpt": "The consolidation of the seed industry into the hands of a few corporations gives them undue control over the food supply.",
+      "why_it_mattered": "Framed the issue as one of power and control, appealing to concerns about corporate influence."
+    },
+    {
+      "round": 5,
+      "speaker": "Con",
+      "excerpt": "Focusing on hypothetical risks distracts from addressing real and pressing food security challenges.",
+      "why_it_mattered": "Shifted the focus to practical concerns and framed the motion as a misallocation of resources."
+    }
+  ],
+  "outcome_summary": "While both sides maintained their core beliefs, the 'Con' agent successfully cast doubt on the claim of deliberate harm, while the 'Pro' agent raised valid concerns about potential conflicts of interest and the need for greater transparency.",
+  "limitations": [
+    "The analysis is based on a single debate and may not generalize to other contexts.",
+    "Subjectivity in identifying and interpreting persuasive moments.",
+    "Limited data on audience perception and impact."
+  ]
+}

@@ -16,14 +16,14 @@ def initial_memory(topic: str, motion: str) -> MemoryState:
                 values=["skepticism", "narrative cohesion"],
                 preferred_tactics=["pattern-seeking"],
                 rejected_frames=["authority-only"],
-                what_changes_mind="Clear disconfirming evidence and reliable sources.",
+                what_changes_mind="Verifiable evidence that directly contradicts the core conspiracy claim.",
             ),
             "SA": AgentState(
                 confidence=55,
                 values=["falsifiability", "empirical rigor"],
                 preferred_tactics=["evidence"],
                 rejected_frames=["anecdote-only"],
-                what_changes_mind="Reproducible evidence and transparent methods.",
+                what_changes_mind="Reproducible empirical evidence supporting the conspiracy claim.",
             ),
         },
         debate_log=[],
@@ -34,7 +34,7 @@ def initial_memory(topic: str, motion: str) -> MemoryState:
             epistemic_quality=0,
         ),
         moderator_notes=[],
-        next_round_strategy={"CA": "Stay focused on narrative claims.", "SA": "Stress tests."},
+        next_round_strategy={"CA": "Establish core claim.", "SA": "Clarify and challenge."},
     )
 
 
@@ -67,6 +67,7 @@ def update_agent_state(
     confidence: int,
     what_changes_mind: str,
 ) -> MemoryState:
+    """Update agent confidence and what_changes_mind - tracks persuasion over time."""
     agent_states = dict(memory.agent_states)
     agent = agent_states[speaker].model_copy(
         update={"confidence": confidence, "what_changes_mind": what_changes_mind}

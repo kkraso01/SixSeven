@@ -1,0 +1,13 @@
+{
+  "topic_id": "gmo_dangers",
+  "topic_category": "food",
+  "topic_description": "Debate about GMO safety and corporate control",
+  "model_config": "gemma-mod-dolphin-agents",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T17:17:02.219589"
+}

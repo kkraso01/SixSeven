@@ -52,21 +52,21 @@ PROFANITY_PATTERN = re.compile(
 
 def load_memory(run_dir: Path) -> MemoryState:
     memory_path = run_dir / "memory.json"
-    return MemoryState.model_validate_json(memory_path.read_text())
+    return MemoryState.model_validate_json(memory_path.read_text(encoding="utf-8"))
 
 
 def load_run_config(run_dir: Path) -> Optional[Dict[str, object]]:
     path = run_dir / "run_config.json"
     if not path.exists():
         return None
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def load_transcript(run_dir: Path) -> TranscriptData:
     path = run_dir / "transcript.md"
     if not path.exists():
         return TranscriptData(rounds={})
-    text = path.read_text()
+    text = path.read_text(encoding="utf-8")
     return parse_transcript(text)
 
 

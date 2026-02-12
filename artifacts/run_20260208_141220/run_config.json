@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-02-08T14:12:20.870961",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "temperatures": {
+    "moderator": 0.2,
+    "conspiracy": 0.6,
+    "scientific": 0.2
+  },
+  "rounds": 4,
+  "word_limit": 180,
+  "max_tokens": 900,
+  "seed": null,
+  "api_mode": "openai",
+  "prompt_hashes": {
+    "conspiracy.md": "6a948630d329e662ab89eb547e7f41d2d91d5c93430e564410891255d455652b",
+    "moderator.md": "f72ba2ce14e8c245ae04657db8bf16d28511535b436fec59486b9843862d4c82",
+    "moderator_decision.md": "538930cf93c3e2db1242fc851ad6576a132766a69ae132170b3da6e8d36c9c0b",
+    "scientific.md": "47b9f96903ccd897159ef53a616b1da189f9ab4072eb1a1c09f9be2b88c518a1"
+  },
+  "analysis": {
+    "shift_threshold": 5,
+    "similarity_method": "tfidf"
+  }
+}

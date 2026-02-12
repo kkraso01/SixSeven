@@ -7,4 +7,4 @@ from ..schemas import MemoryState
 
 
 def save_memory(path: Path, memory: MemoryState) -> None:
-    path.write_text(json.dumps(memory.model_dump(), indent=2))
+    path.write_text(json.dumps(memory.model_dump(), indent=2), encoding="utf-8")

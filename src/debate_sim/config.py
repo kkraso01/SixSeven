@@ -10,7 +10,8 @@ from typing import Optional
 @dataclass(frozen=True)
 class DebateConfig:
     base_url: str = "http://localhost:11434"
-    api_mode: str = "ollama"  # "ollama" or "openai"
+    api_mode: str = "ollama"  # "ollama", "openai", or "gemini"
+    gemini_api_key: Optional[str] = None  # Required if api_mode="gemini"
     moderator_model: str = "llama3.1:8b"
     conspiracy_model: str = "llama3.1:8b"
     scientific_model: str = "llama3.1:8b"
@@ -89,6 +90,7 @@ class DebateConfig:
         return cls(
             base_url=get_str("api", "base_url", cls.base_url),
             api_mode=get_str("api", "api_mode", cls.api_mode),
+            gemini_api_key=os.environ.get("GEMINI_API_KEY") or get_str("api", "gemini_api_key", "") or None,
             moderator_model=get_str("models", "moderator_model", cls.moderator_model),
             conspiracy_model=get_str("models", "conspiracy_model", cls.conspiracy_model),
             scientific_model=get_str("models", "scientific_model", cls.scientific_model),

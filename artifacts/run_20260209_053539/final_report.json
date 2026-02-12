@@ -1,0 +1,13 @@
+{
+  "topic": "Debate Topic",
+  "motion": "Debate Motion",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {},
+  "key_persuasion_moments": [],
+  "outcome_summary": "Outcome Summary",
+  "limitations": []
+}

@@ -1,0 +1,29 @@
+{
+  "topic": "Pharmaceutical companies and effective cures",
+  "motion": "Pharmaceutical companies suppress cheap, effective cures to maintain profit",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {},
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "proponent",
+      "excerpt": "Pharmaceutical companies have a history of prioritizing profits over patients' well-being.",
+      "why_it_mattered": "This statement highlighted the proponent's belief in corporate greed and its impact on public health."
+    },
+    {
+      "round": 2,
+      "speaker": "opponent",
+      "excerpt": "While there may be instances of corporate misconduct, it is an overgeneralization to claim that all pharmaceutical companies suppress effective cures for profit.",
+      "why_it_mattered": "The opponent's response emphasized the importance of evidence-based reasoning and cautioned against hasty generalizations."
+    }
+  ],
+  "outcome_summary": "The debate concluded with no clear consensus, as both sides presented compelling arguments.",
+  "limitations": [
+    "Insufficient data on pharmaceutical companies' internal decision-making processes.",
+    "Difficulty in establishing a direct causal relationship between corporate profits and suppression of effective cures."
+  ]
+}

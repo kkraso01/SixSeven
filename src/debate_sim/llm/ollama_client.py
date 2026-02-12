@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import json
+import os
+import re
+import time
 from typing import Any, Dict, List, Optional, Type
 
 import httpx
@@ -17,23 +20,60 @@ class LLMResponseError(RuntimeError):
         self.raw_output = raw_output
 
 
+# Rate-limit keywords used by both the client and the batch runner
+_RATE_LIMIT_KEYWORDS = (
+    "429", "quota", "rate limit", "rate_limit", "ratelimit",
+    "resource exhausted", "resourceexhausted", "too many requests",
+)
+
+_MAX_RATE_RETRIES = 10  # per single LLM call
+
+
 class OllamaClient:
     def __init__(self, config: DebateConfig) -> None:
         self.config = config
-        self.http = httpx.Client(base_url=config.base_url, timeout=120.0)
-        self._openai_client: Optional[OpenAI] = None
+        self.http = httpx.Client(base_url=config.base_url, timeout=120.0, default_encoding="utf-8")
         self._instructor_client: Optional[Any] = None
+        self._instructor_gemini: Optional[Any] = None
 
-        if config.api_mode == "openai":
-            # Use base_url directly without appending /v1 (it should already be in the base_url)
-            self._openai_client = OpenAI(
-                base_url=config.base_url,
-                api_key="ollama",
-                http_client=httpx.Client(verify=False, timeout=120.0)
-            )
-            self._instructor_client = instructor.from_openai(
-                self._openai_client, mode=instructor.Mode.JSON
-            )
+        # ── Always set up OpenAI/Ollama instructor client (for non-Gemini models) ──
+        self._openai_client = OpenAI(
+            base_url=config.base_url,
+            api_key="ollama",
+            timeout=httpx.Timeout(180.0, connect=30.0),
+            http_client=httpx.Client(
+                verify=False,
+                timeout=httpx.Timeout(180.0, connect=30.0),
+                default_encoding="utf-8",
+            ),
+            max_retries=0,  # We handle retries in instructor_wrapper
+        )
+        self._instructor_client = instructor.from_openai(
+            self._openai_client, mode=instructor.Mode.JSON
+        )
+
+        # ── Set up Gemini instructor client if API key is available ──
+        api_key = (
+            config.gemini_api_key
+            or os.environ.get("GEMINI_API_KEY")
+            or os.environ.get("GOOGLE_API_KEY")
+        )
+        if api_key:
+            try:
+                # Ensure the env var is set for from_provider to pick up
+                os.environ["GOOGLE_API_KEY"] = api_key
+                self._instructor_gemini = instructor.from_provider(
+                    "google/gemini-3-flash-preview",  # default model (overridden per-call)
+                    mode=instructor.Mode.GENAI_STRUCTURED_OUTPUTS,
+                )
+                print("  Gemini instructor client ready (via google-genai + instructor)")
+            except ImportError:
+                raise ImportError(
+                    "google-genai package required for Gemini API. "
+                    "Install with:  pip install 'instructor[google-genai]'"
+                )
+
+    # ── Raw Ollama HTTP (fallback) ──────────────────────────────────────────
 
     def _ollama_chat(
         self,
@@ -59,6 +99,68 @@ class OllamaClient:
         data = response.json()
         return data.get("message", {}).get("content", "")
 
+    # ── Gemini structured call (instructor + rate-limit retry) ──────────────
+
+    @staticmethod
+    def _map_roles_for_gemini(messages: List[Dict[str, str]]) -> List[Dict[str, str]]:
+        """Gemini uses 'model' role instead of 'assistant'. Map before sending."""
+        mapped = []
+        for msg in messages:
+            role = msg.get("role", "user")
+            if role == "assistant":
+                role = "model"
+            mapped.append({**msg, "role": role})
+        return mapped
+
+    def _gemini_structured_call(
+        self,
+        response_model: Type[BaseModel],
+        messages: List[Dict[str, str]],
+        model: str,
+        temperature: float,
+        max_tokens: int,
+    ) -> BaseModel:
+        """Call Gemini via Instructor with automatic rate-limit backoff."""
+        assert self._instructor_gemini is not None
+        last_error: Optional[Exception] = None
+
+        # Gemini API uses "model" role, not "assistant"
+        messages = self._map_roles_for_gemini(messages)
+
+        for attempt in range(1, _MAX_RATE_RETRIES + 1):
+            try:
+                return self._instructor_gemini.create(
+                    response_model=response_model,
+                    messages=messages,
+                    model=model,
+                    generation_config={
+                        "temperature": temperature,
+                        "max_tokens": max(max_tokens, 2048),
+                    },
+                    max_retries=3,  # instructor-level validation retries
+                )
+            except Exception as e:
+                last_error = e
+                err_str = str(e).lower()
+                if any(kw in err_str for kw in _RATE_LIMIT_KEYWORDS):
+                    # Extract suggested delay from error message
+                    match = re.search(r"retry in ([\d.]+)s", str(e), re.IGNORECASE)
+                    delay = float(match.group(1)) if match else 20.0
+                    wait = delay + 5
+                    print(
+                        f"\n  Gemini rate limit (attempt {attempt}/{_MAX_RATE_RETRIES}), "
+                        f"sleeping {wait:.0f}s..."
+                    )
+                    time.sleep(wait)
+                    continue
+                raise  # non-rate-limit error → propagate immediately
+
+        raise RuntimeError(
+            f"Gemini rate limit persisted after {_MAX_RATE_RETRIES} retries: {last_error}"
+        )
+
+    # ── Main entry point ───────────────────────────────────────────────────
+
     def generate(
         self,
         response_model: Type[BaseModel],
@@ -69,8 +171,18 @@ class OllamaClient:
         seed: Optional[int],
         validation_hint: str,
     ) -> BaseModel:
-        if self.config.api_mode == "openai":
-            assert self._instructor_client is not None
+        # ── Route Gemini models to the Gemini instructor client ──
+        if model.startswith("gemini-") and self._instructor_gemini is not None:
+            return self._gemini_structured_call(
+                response_model=response_model,
+                messages=messages,
+                model=model,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+
+        # ── Everything else → OpenAI instructor (Ollama) ──
+        if self._instructor_client is not None:
             return self._instructor_client.chat.completions.create(
                 model=model,
                 messages=messages,
@@ -78,8 +190,10 @@ class OllamaClient:
                 temperature=temperature,
                 max_tokens=max_tokens,
                 seed=seed,
+                timeout=180.0,
             )
 
+        # ── Fallback: raw Ollama chat + manual JSON parsing ──
         raw = self._ollama_chat(
             model=model,
             messages=messages,
@@ -87,11 +201,30 @@ class OllamaClient:
             max_tokens=max_tokens,
             seed=seed,
         )
+
+        # ── Sanitise raw LLM output before JSON parsing ──
+        raw = raw.strip()
+        # Strip markdown code fences that LLMs love to add
+        if raw.startswith("```"):
+            first_nl = raw.find("\n")
+            if first_nl != -1:
+                raw = raw[first_nl + 1:]
+            if raw.rstrip().endswith("```"):
+                raw = raw.rstrip()[:-3].rstrip()
+        if raw.startswith("`") and raw.endswith("`"):
+            raw = raw.strip("`").strip()
+        # Attempt to extract JSON object if there's preamble text
+        brace = raw.find("{")
+        last_brace = raw.rfind("}")
+        if brace != -1 and last_brace != -1 and brace < last_brace:
+            raw = raw[brace : last_brace + 1]
+
         try:
             return response_model.model_validate_json(raw)
         except ValidationError as exc:
             raise LLMResponseError(f"Schema validation failed: {exc}", raw) from exc
         except json.JSONDecodeError as exc:
             raise LLMResponseError(
-                f"Invalid JSON for schema {response_model.__name__}. {validation_hint}", raw
+                f"Invalid JSON for schema {response_model.__name__}. {validation_hint}",
+                raw,
             ) from exc

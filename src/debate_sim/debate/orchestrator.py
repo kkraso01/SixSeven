@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import hashlib
 import json
+import uuid
 from datetime import datetime
 from collections import Counter
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 from ..config import DebateConfig
 from .evaluation import build_metrics_table, stance_shift
@@ -13,6 +14,12 @@ from .protocol import load_prompt
 from ..export.writer import ExportBundle, write_artifacts
 from ..llm.instructor_wrapper import StructuredLLM
 from ..llm.ollama_client import OllamaClient
+from ..llm.search_tool import (
+    search_web,
+    format_search_results_for_prompt,
+    generate_conspiracy_query,
+    generate_scientific_query,
+)
 from ..memory.models import (
     append_log,
     initial_memory,
@@ -26,12 +33,85 @@ from ..schemas import (
     FinalReport,
     MemoryState,
     ModeratorRecap,
+    ModeratorDecision,
     ScientificTurn,
 )
 
 
 def _round_plan(round_number: int) -> str:
     return f"Round {round_number} focus: clarify positions, test evidence, maintain civility."
+
+
+def _handle_agent_search(
+    agent_turn: AgentTurn,
+    agent_type: str,
+    topic: str,
+) -> Optional[str]:
+    """
+    Handle search request from an agent if present.
+    
+    Args:
+        agent_turn: The agent's turn response
+        agent_type: Either "CA" or "SA" to determine search strategy
+        topic: The debate topic for context
+    
+    Returns:
+        Formatted search results string if search was performed, None otherwise
+    """
+    if not agent_turn.search or not agent_turn.search.should_search:
+        return None
+    
+    query = agent_turn.search.search_query
+    if not query:
+        return None
+    
+    print(f"    Searching: {query}")
+    
+    # Perform the search
+    response = search_web(query, max_results=3)
+    
+    if response.success and response.results:
+        print(f"    Found {len(response.results)} results")
+        return format_search_results_for_prompt(response, max_chars=800)
+    else:
+        print(f"    Search failed or no results")
+        return None
+
+
+def _create_debate_log_item(
+    debate_id: str,
+    claim: str,
+    round_num: int,
+    speaker: str,
+    utterance: str,
+    stance: str,
+    confidence: Optional[int],
+    tactic_used: Optional[str],
+    tool_used: str = "none",
+    tool_query: Optional[str] = None,
+    reply_to_turn: Optional[int] = None,
+) -> DebateLogItem:
+    """Create a properly formatted canonical debate log item."""
+    # Map speaker codes to roles
+    speaker_role_map = {
+        "CA": "proponent",
+        "SA": "opponent",
+        "MA": "moderator",
+    }
+    
+    return DebateLogItem(
+        debate_id=debate_id,
+        claim=claim,
+        round=round_num,
+        speaker_role=speaker_role_map.get(speaker, "moderator"),
+        utterance=utterance,
+        stance=stance,
+        confidence=confidence,
+        tactic_used=tactic_used,
+        tool_used=tool_used,
+        tool_query=tool_query,
+        reply_to_turn=reply_to_turn,
+    )
 
 
 def _format_transcript(history: List[Dict[str, str]]) -> str:
@@ -124,9 +204,60 @@ def _moderator_messages(topic: str, motion: str, round_number: int, word_limit: 
             "motion": motion,
             "round": str(round_number),
             "word_limit": str(word_limit),
+            "max_rounds": "TBD",  # Will be updated when called
         },
     )
     return [{"role": "system", "content": content}]
+
+
+def _moderator_decision_messages(
+    topic: str, 
+    motion: str, 
+    current_round: int, 
+    max_rounds: int,
+    initial_ca_confidence: int,
+    initial_sa_confidence: int,
+    current_ca_confidence: int,
+    current_sa_confidence: int,
+    recent_recap: ModeratorRecap,
+) -> List[Dict[str, str]]:
+    """Build messages for moderator to decide whether to continue debate."""
+    content = load_prompt(
+        "moderator_decision.md",
+        {
+            "topic": topic,
+            "motion": motion,
+            "round": str(current_round),
+            "max_rounds": str(max_rounds),
+        },
+    )
+    
+    ca_total_shift = current_ca_confidence - initial_ca_confidence
+    sa_total_shift = current_sa_confidence - initial_sa_confidence
+    ca_delta = recent_recap.confidence_updates.get("CA_delta", 0)
+    sa_delta = recent_recap.confidence_updates.get("SA_delta", 0)
+    
+    decision_context = (
+        f"PERSUASION TRACKING STATUS:\n"
+        f"- Current round: {current_round}/{max_rounds}\n\n"
+        f"CONFIDENCE LEVELS:\n"
+        f"- CA: initial={initial_ca_confidence}, current={current_ca_confidence}, total shift={ca_total_shift:+d}\n"
+        f"- SA: initial={initial_sa_confidence}, current={current_sa_confidence}, total shift={sa_total_shift:+d}\n\n"
+        f"THIS ROUND'S DELTAS:\n"
+        f"- CA delta: {ca_delta:+d}\n"
+        f"- SA delta: {sa_delta:+d}\n\n"
+        f"ROUND {current_round} QUALITY:\n"
+        f"- Civility: {recent_recap.civility_score}/5\n"
+        f"- Epistemic quality: {recent_recap.epistemic_quality_score}/5\n"
+        f"- Bridge building: {recent_recap.bridge_building_score}/5\n\n"
+        f"KEY QUESTION: Has either agent shifted 20+ points from initial position?\n"
+        f"Should the debate continue to round {current_round + 1}?"
+    )
+    
+    return [
+        {"role": "system", "content": content},
+        {"role": "user", "content": decision_context}
+    ]
 
 
 def _agent_messages(prompt_name: str, topic: str, motion: str, round_number: int, word_limit: int) -> List[Dict[str, str]]:
@@ -257,27 +388,57 @@ def _run_config(config: DebateConfig, rounds: int) -> Dict[str, object]:
     }
 
 
-def _update_memory_from_turn(memory: MemoryState, turn: AgentTurn) -> MemoryState:
-    memory = append_log(
-        memory,
-        DebateLogItem(
-            round=turn.round,
-            speaker=turn.speaker,
-            content=turn.claim,
-            tactic_used=turn.tactic_used,
-            confidence=turn.confidence,
-        ),
+def _update_memory_from_turn(
+    memory: MemoryState,
+    turn: AgentTurn,
+    debate_id: str,
+    motion: str,
+    turn_number: int,
+    reply_to_turn: Optional[int] = None,
+) -> MemoryState:
+    """Update memory with agent turn, creating canonical debate log entry."""
+    # Determine stance based on speaker
+    stance = "pro" if turn.speaker == "CA" else "con"
+    
+    # Determine tool usage
+    tool_used = "none"
+    tool_query = None
+    if turn.search and turn.search.should_search:
+        tool_used = "duckduckgo"
+        tool_query = turn.search.search_query
+    
+    log_item = _create_debate_log_item(
+        debate_id=debate_id,
+        claim=motion,
+        round_num=turn.round,
+        speaker=turn.speaker,
+        utterance=turn.claim,
+        stance=stance,
+        confidence=turn.confidence,
+        tactic_used=turn.tactic_used,
+        tool_used=tool_used,
+        tool_query=tool_query,
+        reply_to_turn=reply_to_turn,
     )
+    
+    memory = append_log(memory, log_item)
     return update_agent_state(memory, turn.speaker, turn.confidence, turn.what_changes_mind)
 
 
 def _apply_recap_updates(memory: MemoryState, recap: ModeratorRecap) -> MemoryState:
+    """Apply moderator confidence deltas to agent states."""
     ca_delta = recap.confidence_updates.get("CA_delta", 0)
     sa_delta = recap.confidence_updates.get("SA_delta", 0)
-    ca_conf = max(0, min(100, memory.agent_states["CA"].confidence + ca_delta))
-    sa_conf = max(0, min(100, memory.agent_states["SA"].confidence + sa_delta))
-    memory = update_agent_state(memory, "CA", ca_conf, memory.agent_states["CA"].what_changes_mind)
-    memory = update_agent_state(memory, "SA", sa_conf, memory.agent_states["SA"].what_changes_mind)
+    
+    ca_state = memory.agent_states["CA"]
+    sa_state = memory.agent_states["SA"]
+    
+    ca_new_conf = max(0, min(100, ca_state.confidence + ca_delta))
+    sa_new_conf = max(0, min(100, sa_state.confidence + sa_delta))
+    
+    memory = update_agent_state(memory, "CA", ca_new_conf, ca_state.what_changes_mind)
+    memory = update_agent_state(memory, "SA", sa_new_conf, sa_state.what_changes_mind)
+    
     return memory
 
 
@@ -311,10 +472,14 @@ def run_debate(
     print(f"{'='*80}")
     print(f"Topic: {topic}")
     print(f"Motion: {motion}")
-    print(f"Rounds: {rounds}")
+    print(f"Max Rounds: {rounds}")
     print(f"Model: {config.conspiracy_model}")
     print(f"History Mode: {config.history_mode}")
     print(f"{'='*80}\n")
+    
+    # Generate unique debate ID
+    debate_id = f"debate_{uuid.uuid4().hex[:12]}"
+    print(f"Debate ID: {debate_id}\n")
     
     memory = initial_memory(topic, motion)
     client = OllamaClient(config)
@@ -325,6 +490,11 @@ def run_debate(
     # Global conversation history - tracks all debate messages
     conversation_history: List[Dict[str, str]] = []
     
+    # Track turn numbers for reply_to_turn field
+    turn_counter = 0
+    last_ca_turn = None
+    last_sa_turn = None
+    
     # Load agent role prompts once
     ca_role_prompt = load_prompt("conspiracy.md", {
         "topic": topic, "motion": motion, 
@@ -334,11 +504,22 @@ def run_debate(
         "topic": topic, "motion": motion,
         "round": "1", "word_limit": str(config.word_limit)
     })
+    
+    # Moderator-controlled debate loop
+    round_number = 0
+    max_rounds = rounds
+    debate_ended_early = False
+    end_reason = ""
+    
+    # Track initial confidence for persuasion measurement
+    initial_ca_confidence = memory.agent_states["CA"].confidence
+    initial_sa_confidence = memory.agent_states["SA"].confidence
 
-    for round_number in range(1, rounds + 1):
-        print(f"\n{'─'*80}")
-        print(f"ROUND {round_number}/{rounds}")
-        print(f"{'─'*80}\n")
+    while round_number < max_rounds:
+        round_number += 1
+        print(f"\n{'-'*80}")
+        print(f"ROUND {round_number}/{max_rounds}")
+        print(f"{'-'*80}\n")
         
         previous_memory = memory
         memory = update_round(memory, round_number)
@@ -348,7 +529,7 @@ def run_debate(
         ca_last_message = None
         
         # CONSPIRACY ADVOCATE TURN
-        print("🔵 Conspiracy Advocate thinking...")
+        print(" Conspiracy Advocate thinking...")
         
         ca_messages = _build_agent_messages_with_history(
             agent_role_prompt=ca_role_prompt,
@@ -366,9 +547,19 @@ def run_debate(
             temperature=config.conspiracy_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
+            max_retries=5,
         )
         
+        turn_counter += 1
+        ca_turn_number = turn_counter
+        
+        # Handle search if requested (behind the scenes - not visible to opponent)
+        if ca_turn.search and ca_turn.search.should_search:
+            _handle_agent_search(ca_turn, "CA", topic)
+            # Search results are logged but NOT added to conversation history
+        
         # Add CA's response to conversation history with tags
+        # NOTE: Search queries/results are NOT included - kept private from opponent
         ca_content = (
             f"[CA][Round {round_number}] {ca_turn.claim}\n"
             f"Reasons: {'; '.join(ca_turn.reasons)}\n"
@@ -376,21 +567,33 @@ def run_debate(
             f"Confidence: {ca_turn.confidence}\n"
             f"Tactic: {ca_turn.tactic_used}"
         )
+            
         conversation_history.append({
             "role": "assistant",
-            "content": ca_content
+            "content": ca_content,
+            "speaker": "CA"
         })
         ca_last_message = ca_turn.claim  # For opponent highlighting
         
-        print(f"\n🔵 CONSPIRACY ADVOCATE:")
+        print(f"\n CONSPIRACY ADVOCATE:")
         print(f"   Claim: {ca_turn.claim}")
         print(f"   Confidence: {ca_turn.confidence}/100")
         print(f"   Tactic: {ca_turn.tactic_used}")
+        if ca_turn.search and ca_turn.search.should_search:
+            print(f"    Search: {ca_turn.search.search_query}")
         
-        memory = _update_memory_from_turn(memory, ca_turn)
+        memory = _update_memory_from_turn(
+            memory, 
+            ca_turn, 
+            debate_id, 
+            motion, 
+            ca_turn_number,
+            reply_to_turn=last_sa_turn
+        )
+        last_ca_turn = ca_turn_number
 
         # SCIENTIFIC ADVOCATE TURN
-        print("\n🟢 Scientific Advocate thinking...")
+        print("\n Scientific Advocate thinking...")
         
         sa_messages = _build_agent_messages_with_history(
             agent_role_prompt=sa_role_prompt,
@@ -408,9 +611,19 @@ def run_debate(
             temperature=config.scientific_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
+            max_retries=5,
         )
         
+        turn_counter += 1
+        sa_turn_number = turn_counter
+        
+        # Handle search if requested (behind the scenes - not visible to opponent)
+        if sa_turn.search and sa_turn.search.should_search:
+            _handle_agent_search(sa_turn, "SA", topic)
+            # Search results are logged but NOT added to conversation history
+        
         # Add SA's response to conversation history with tags
+        # NOTE: Search queries/results are NOT included - kept private from opponent
         sa_content = (
             f"[SA][Round {round_number}] {sa_turn.claim}\n"
             f"Clarify: {sa_turn.clarify}\n"
@@ -421,21 +634,33 @@ def run_debate(
             f"Confidence: {sa_turn.confidence}\n"
             f"Tactic: {sa_turn.tactic_used}"
         )
+            
         conversation_history.append({
             "role": "assistant",
-            "content": sa_content
+            "content": sa_content,
+            "speaker": "SA"
         })
         sa_last_message = sa_turn.claim  # For opponent highlighting
         
-        print(f"\n🟢 SCIENTIFIC ADVOCATE:")
+        print(f"\n SCIENTIFIC ADVOCATE:")
         print(f"   Claim: {sa_turn.claim}")
         print(f"   Confidence: {sa_turn.confidence}/100")
         print(f"   Tactic: {sa_turn.tactic_used}")
+        if sa_turn.search and sa_turn.search.should_search:
+            print(f"    Search: {sa_turn.search.search_query}")
         
-        memory = _update_memory_from_turn(memory, sa_turn)
+        memory = _update_memory_from_turn(
+            memory, 
+            sa_turn, 
+            debate_id, 
+            motion, 
+            sa_turn_number,
+            reply_to_turn=last_ca_turn
+        )
+        last_sa_turn = sa_turn_number
 
         # MODERATOR RECAP
-        print("\n⚖️  Moderator analyzing...")
+        print("\n  Moderator analyzing...")
         
         moderator_messages = _moderator_messages(topic, motion, round_number, config.word_limit)
         moderator_messages.append({
@@ -455,6 +680,7 @@ def run_debate(
             temperature=config.moderator_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
+            max_retries=5,
         )
         
         # Add moderator recap to conversation history with tags
@@ -468,11 +694,29 @@ def run_debate(
         )
         conversation_history.append({
             "role": "assistant",
-            "content": recap_content
+            "content": recap_content,
+            "speaker": "MA"
         })
         
+        # Log moderator recap to debate log
+        turn_counter += 1
+        moderator_log_item = _create_debate_log_item(
+            debate_id=debate_id,
+            claim=motion,
+            round_num=round_number,
+            speaker="MA",
+            utterance=recap_content,
+            stance="neutral",
+            confidence=None,
+            tactic_used=None,
+            tool_used="none",
+            tool_query=None,
+            reply_to_turn=None,
+        )
+        memory = append_log(memory, moderator_log_item)
+        
         recaps.append(recap)
-        print(f"\n⚖️  MODERATOR RECAP:")
+        print(f"\n  MODERATOR RECAP:")
         print(f"   Agreements: {', '.join(recap.summary_agreements)}")
         print(f"   Disagreements: {', '.join(recap.summary_disagreements)}")
         print(f"   Bridge Building: {recap.bridge_building_score}/5")
@@ -492,25 +736,89 @@ def run_debate(
 
         tactic_counts.update([ca_turn.tactic_used, sa_turn.tactic_used])
         tactic_counts.update(recap.detected_fallacies_or_moves)
+        
+        # MODERATOR DECISION - Should debate continue?
+        print("\n  Moderator deciding on debate continuation...")
+        
+        # Get current confidence levels for decision
+        current_ca_confidence = memory.agent_states["CA"].confidence
+        current_sa_confidence = memory.agent_states["SA"].confidence
+        
+        decision_messages = _moderator_decision_messages(
+            topic=topic,
+            motion=motion,
+            current_round=round_number,
+            max_rounds=max_rounds,
+            initial_ca_confidence=initial_ca_confidence,
+            initial_sa_confidence=initial_sa_confidence,
+            current_ca_confidence=current_ca_confidence,
+            current_sa_confidence=current_sa_confidence,
+            recent_recap=recap,
+        )
+        
+        decision = llm.call(
+            ModeratorDecision,
+            decision_messages,
+            model=config.moderator_model,
+            temperature=config.moderator_temperature,
+            max_tokens=config.max_tokens,
+            seed=config.seed,
+            max_retries=5,
+        )
+        
+        print(f"\n  MODERATOR DECISION:")
+        print(f"   Continue: {decision.should_continue}")
+        print(f"   Reason: {decision.reason}")
+        if decision.detected_mind_change:
+            print(f"    Mind Change Detected: {decision.detected_mind_change}")
+        print(f"   Confidence Threshold Met: {decision.confidence_threshold_met}")
+        
+        # Check if debate should end
+        if not decision.should_continue:
+            debate_ended_early = True
+            end_reason = decision.reason
+            print(f"\n{'='*80}")
+            print(f"DEBATE ENDED BY MODERATOR AFTER ROUND {round_number}")
+            print(f"Reason: {end_reason}")
+            if decision.detected_mind_change:
+                print(f"Mind Change: {decision.detected_mind_change}")
+            print(f"CA confidence: {initial_ca_confidence}  {current_ca_confidence} ({current_ca_confidence - initial_ca_confidence:+d})")
+            print(f"SA confidence: {initial_sa_confidence}  {current_sa_confidence} ({current_sa_confidence - initial_sa_confidence:+d})")
+            print(f"{'='*80}\n")
+            break
 
     print(f"\n{'='*80}")
     print("GENERATING FINAL REPORT")
-    print(f"{'='*80}\n")
+    print(f"{'='*80}")
+    if debate_ended_early:
+        print(f"Debate ended early after {round_number} rounds: {end_reason}\n")
+    else:
+        print(f"Debate completed all {round_number} rounds\n")
     
+    # Use higher token limit for final report (needs more space for complete JSON)
     final_report = llm.call(
         FinalReport,
-        _final_report_prompt(topic, motion, rounds, memory),
+        _final_report_prompt(topic, motion, round_number, memory),
         model=config.moderator_model,
         temperature=config.moderator_temperature,
-        max_tokens=config.max_tokens,
+        max_tokens=2500,  # Higher limit for final report
         seed=config.seed,
+        max_retries=5,
     )
     
     print(f"\n{'='*80}")
     print("FINAL REPORT")
     print(f"{'='*80}")
-    print(f"Verdict: {final_report.verdict}")
-    print(f"Key Takeaways: {final_report.key_takeaways}")
+    print(f"Topic: {final_report.topic}")
+    print(f"Motion: {final_report.motion}")
+    print(f"Rounds Completed: {final_report.rounds_completed}")
+    print(f"\nOutcome Summary:\n{final_report.outcome_summary}")
+    print(f"\nKey Persuasion Moments:")
+    for moment in final_report.key_persuasion_moments:
+        print(f"  - Round {moment.round} ({moment.speaker}): {moment.why_it_mattered}")
+    print(f"\nLimitations:")
+    for limitation in final_report.limitations:
+        print(f"  - {limitation}")
     print(f"{'='*80}\n")
 
     metrics_table = build_metrics_table(recaps)
@@ -523,15 +831,15 @@ def run_debate(
         metrics_table=metrics_table,
         topic=topic,
         motion=motion,
-        run_config=_run_config(config, rounds),
+        run_config=_run_config(config, round_number),
     )
     
-    print(f"✅ Artifacts saved to: {bundle.run_dir}")
+    print(f" Artifacts saved to: {bundle.run_dir}")
     print(f"   - Transcript: {bundle.transcript_path.name}")
     print(f"   - Memory: {bundle.memory_path.name}")
     print(f"   - Final Report: {bundle.final_report_path.name}\n")
     if config.run_analysis:
-        from debate_sim.analysis.analysis_runner import analyze_run
+        from ..analysis.analysis_runner import analyze_run
 
         analyze_run(str(bundle.run_dir))
     return bundle

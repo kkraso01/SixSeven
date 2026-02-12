@@ -1,0 +1,168 @@
+{
+  "topic": "Climate change science and political agendas",
+  "motion": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+  "round": 3,
+  "agent_states": {
+    "CA": {
+      "confidence": 48,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence demonstrating that the IPCC's decision-making processes and conclusions are solely based on scientific research and independent of political influence."
+    },
+    "SA": {
+      "confidence": 76,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "If concrete evidence were to emerge demonstrating a systematic manipulation of scientific findings within the IPCC, it would significantly change my position."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Climate change is a narrative perpetuated by powerful interests to advance their control over populations.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "Climate change is a complex scientific issue driven by overwhelming evidence of human impact on the environment. It is not merely a narrative perpetuated by powerful interests for control over populations.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:ipcc.ch AR4 SYR en.pdf",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge climate change as a topic of significant debate., Both agents agree that the IPCC is a central institution in the climate change discussion., Both agents identify power dynamics as relevant to the discussion, though they differ on the nature and extent of that power.\nDisagreements: CA frames climate change as a manufactured crisis for control, while SA asserts it's a genuine scientific issue., CA questions the independence of the IPCC, while SA defends its scientific basis., They disagree on the primary drivers of climate change narratives \u2013 political interests versus empirical evidence.\nDetected moves: Appeal to authority (CA referencing 'history' of elite institutions), Burden of proof shift (CA asking SA to prove IPCC independence, rather than providing evidence for CA's claim of influence), Selective evidence (CA focuses on potential political influence without addressing the scientific consensus)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA: What specific mechanisms within the IPCC ensure scientific objectivity, and how can these be verified?, SA: How does CA account for the overwhelming scientific consensus on anthropogenic climate change if political influence is the primary driver?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The IPCC's conclusions are heavily influenced by political interests rather than solely based on scientific evidence.",
+      "stance": "pro",
+      "confidence": 52,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/climate [IPCC political influence]",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "Climate change is a genuine threat driven by overwhelming scientific evidence of human impact on the environment. The IPCC's conclusions are based on rigorous scientific research and not solely influenced by political interests.",
+      "stance": "con",
+      "confidence": 72,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that policies related to climate change can have implications for power structures., Both agents pose questions requesting specific evidence from the other side to support their claims., Both agents acknowledge the IPCC as a central body in climate change discussions.\nDisagreements: CA asserts the IPCC is *primarily* driven by political interests, while SA maintains it's based on scientific consensus., CA frames climate change policies as inherently leading to increased control, while SA views them as responses to a genuine threat., They disagree on the burden of proof \u2013 CA asks SA to disprove political influence, while SA asks CA for evidence of it.\nDetected moves: appeal to authority (CA referencing 'history of elite institutions'), burden of proof shift (CA asking SA to disprove influence), narrative framing (CA framing policies as control mechanisms)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you elaborate on the specific UN bureaucrats or politicians you believe are influencing the IPCC, and how this influence manifests in their reports?, SA, how does the IPCC address potential biases or conflicts of interest within its review processes?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The IPCC's conclusions are heavily influenced by political interests rather than solely based on scientific evidence.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The IPCC's conclusions are based on rigorous scientific research and not solely influenced by political interests.",
+      "stance": "con",
+      "confidence": 73,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:ipcc.ch/publications",
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_797dec0f0518",
+      "claim": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the existence of climate change policies (e.g., carbon taxation)., Both agents agree that the IPCC plays a central role in understanding and addressing climate change., Both agents pose questions requesting specific evidence from the other to support their claims.\nDisagreements: CA argues the IPCC is *primarily* driven by political interests, while SA maintains it's based on scientific evidence., CA frames climate policies as tools for control, while SA views them as responses to a genuine threat., CA focuses on institutional critique, questioning the IPCC\u2019s processes, while SA emphasizes empirical evidence and peer review.\nDetected moves: appeal to authority (CA referencing 'history of elite institutions'), burden of proof shift (CA asking SA to disprove political influence), narrative framing (CA framing policies as control mechanisms)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you detail the specific safeguards within the IPCC that *guarantee* independence from political influence?, SA: What specific instances of political interference within the IPCC would most strongly support your claim?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 3
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

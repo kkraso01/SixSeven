@@ -86,7 +86,7 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
     for run_dir in run_dirs:
         report_path = run_dir / "analysis_report.json"
         if report_path.exists():
-            reports.append(AnalysisReport.model_validate_json(report_path.read_text()))
+            reports.append(AnalysisReport.model_validate_json(report_path.read_text(encoding="utf-8")))
         else:
             reports.append(analyze_run(str(run_dir)))
 

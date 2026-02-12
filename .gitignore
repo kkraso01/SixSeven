@@ -16,6 +16,9 @@ __pycache__/
 dist/
 build/
 
+# Poetry (not used - using pip)
+poetry.lock
+
 # IDE
 .vscode/
 .idea/

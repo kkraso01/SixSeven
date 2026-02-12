@@ -1,0 +1,44 @@
+{
+  "topic": "Federal Reserve",
+  "motion": "The Federal Reserve is a private cartel of banks that manipulates the economy for the benefit of wealthy elites at the expense of ordinary citizens.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      80
+    ]
+  },
+  "tactic_counts": {
+    "pattern-seeking": 2,
+    "appeal_to_emotion": 1,
+    "expert_testimony": 0
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Opponent",
+      "excerpt": "The Federal Reserve operates under the oversight of Congress, and its actions are subject to public scrutiny. To call it a 'private cartel' is a mischaracterization.",
+      "why_it_mattered": "This directly challenged the core claim of the motion, attempting to establish a factual basis for rebuttal."
+    },
+    {
+      "round": 4,
+      "speaker": "Proponent",
+      "excerpt": "The consistent pattern of quantitative easing and low-interest rate policies following economic downturns disproportionately benefits those holding assets \u2013 primarily the wealthy \u2013 while doing little to address the root causes of economic hardship for ordinary citizens. This isn't accidental; it's a structural feature of a system designed to protect existing wealth.",
+      "why_it_mattered": "This reinforced the proponent's argument by highlighting a perceived pattern of inequitable outcomes resulting from Federal Reserve policies."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in audience stance, with a marginal increase in support for the motion, but no definitive consensus was reached.",
+  "limitations": [
+    "Limited data on audience pre-debate beliefs.",
+    "Subjectivity in interpreting persuasive moments.",
+    "Potential for bias in tactic identification."
+  ]
+}

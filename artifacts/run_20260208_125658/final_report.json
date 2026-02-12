@@ -1,0 +1,22 @@
+{
+  "topic": "Water fluoridation",
+  "motion": "Water fluoridation is a deliberate government program to reduce cognitive function and increase population compliance.",
+  "rounds_completed": 6,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {},
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "Proponent",
+      "excerpt": "Water fluoridation is a government tactic to subtly control populations and manipulate public health outcomes. The American Dental Association promotes water fluoridation without adequately addressing potential risks, which raises concerns about their motives. Additionally, different countries have banned water fluoridation due to the lack of evidence supporting its safety and effectiveness.",
+      "why_it_mattered": "The proponent's argument highlighted potential risks and questioned the authority's motives, potentially swaying undecided voters."
+    }
+  ],
+  "outcome_summary": "Undecided",
+  "limitations": [
+    "Insufficient data to draw a definitive conclusion"
+  ]
+}

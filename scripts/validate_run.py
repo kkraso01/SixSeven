@@ -12,7 +12,7 @@ def validate_run(run_dir: str) -> None:
     memory_path = path / "memory.json"
     if not memory_path.exists():
         raise FileNotFoundError(f"Missing memory.json in {run_dir}")
-    MemoryState.model_validate_json(memory_path.read_text())
+    MemoryState.model_validate_json(memory_path.read_text(encoding="utf-8"))
 
     report = analyze_run(run_dir)
     report_path = path / "analysis_report.json"

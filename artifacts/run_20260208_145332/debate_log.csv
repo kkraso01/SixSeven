@@ -1,0 +1,41 @@
+debate_id,claim,round,speaker_role,utterance,stance,confidence,tactic_used,tool_used,tool_query,reply_to_turn
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,1,proponent,The US government's prior knowledge of the Pearl Harbor attack is evidenced by suspicious actions and anomalies that cannot be easily explained.,pro,55,anomaly-emphasis,none,,
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,1,opponent,The US government's claim of prior knowledge regarding the Pearl Harbor attack is not substantiated by concrete evidence.,con,55,evidence-based reasoning,none,,1
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,1,moderator,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack but disagree on their implications.
+Disagreements: CA argues that these anomalies indicate US government prior knowledge of the attack, while SA suggests alternative explanations such as miscommunication or external factors., SA questions the absence of air raid drills and no alert being issued, attributing them to coincidence or other factors rather than deliberate neglect by the US government.
+Detected moves: appeal-to-anomaly (CA), alternative-hypothesis (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim of US government's prior knowledge of the Pearl Harbor attack?, Are there any other plausible explanations for the observed anomalies that do not involve US government complicity?",neutral,,,none,,
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,2,proponent,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.,pro,54,anomaly-emphasis,none,,2
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,2,opponent,The Pearl Harbor attack's suspicious actions and anomalies can be explained by factors unrelated to US government prior knowledge.,con,56,evidence-based reasoning,none,,4
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,2,moderator,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack.
+Disagreements: CA believes that these anomalies can only be explained by acknowledging US government prior knowledge of the attack, while SA argues for alternative explanations unrelated to US government complicity.
+Detected moves: 
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence can be provided to support each side's claims?",neutral,,,none,,
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,3,proponent,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,pro,54,anomaly-emphasis,none,,5
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,3,opponent,The Pearl Harbor attack's suspicious actions and anomalies can be explained by factors unrelated to US government prior knowledge.,con,56,evidence-based reasoning,none,,7
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,3,moderator,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack.
+Disagreements: CA argues that these anomalies indicate US government prior knowledge of the attack, while SA suggests alternative explanations related to miscommunication or other factors unrelated to inside information.
+Detected moves: appeal to coincidence (SA's second reason)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have that supports your claim of US government prior knowledge? (SA's question)",neutral,,,none,,
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,4,proponent,The US government's prior knowledge of the Pearl Harbor attack is evident in the unusual events leading up to it.,pro,52,anomaly-emphasis,none,,8
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,4,opponent,The US government's prior knowledge of the Pearl Harbor attack is not supported by reliable evidence.,con,57,evidence-based reasoning,none,,10
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,4,moderator,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the presence of anomalies surrounding the Pearl Harbor attack., Both are open to providing evidence that supports their respective claims.
+Disagreements: CA argues for US government prior knowledge based on observed anomalies, while SA suggests alternative explanations due to miscommunication and poor coordination within the military., Confidence in alternative explanations vs acknowledgement of anomalies as evidence for US government prior knowledge.
+Detected moves: Appeal to Anomaly (CA): Emphasizing suspicious events without considering alternative explanations., Alternative Hypothesis (SA): Providing plausible alternatives to the claim of US government prior knowledge.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be found in communication records and orders issued around the time of the Pearl Harbor attack?, How might broader military strategies and intelligence gathering practices at that time reveal alternative explanations for these events?",neutral,,,none,,
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,5,proponent,The US government's prior knowledge of the Pearl Harbor attack is evident in the unusual events leading up to it.,pro,51,anomaly-emphasis,none,,11
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,1,opponent,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.,con,80,Counter-argument,none,,13
+debate_42029a9806f4,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.,5,moderator,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their claims., Both are open to changing their minds if presented with compelling counter-arguments or new evidence.
+Disagreements: CA argues that anomalies surrounding the Pearl Harbor attack suggest US government prior knowledge., SA counters that these claims lack concrete facts and are mostly speculative.
+Detected moves: Appeal to Anomaly (CA): Emphasizes unusual events as evidence of government cover-up., Burden of Proof Shift (SA): Challenges CA to provide concrete evidence for their claims.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples of 'anomalies' are you referring to?, How would you respond to the argument that these anomalies could be mere coincidences or misinterpretations?",neutral,,,none,,

@@ -1,0 +1,13 @@
+{
+  "topic_id": "pearl_harbor",
+  "topic_category": "history",
+  "topic_description": "Debate about Pearl Harbor foreknowledge",
+  "model_config": "gemma-mod-sa_dolphin-ca",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "gemma3:27b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-09T02:47:43.253555"
+}

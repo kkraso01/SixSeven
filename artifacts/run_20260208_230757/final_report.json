@@ -1,0 +1,62 @@
+{
+  "topic": "Climate Change",
+  "motion": "This House Believes that current climate action strategies are effective and sufficient.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      70,
+      65,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      65,
+      70,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "Institutional Critique": 5,
+    "Anomaly Emphasis": 3,
+    "Burden Shifting": 4,
+    "Appeal to Motive": 2,
+    "Scientific Consensus": 6,
+    "Repetition": 4,
+    "Straw Man": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "The WEF's involvement in climate policy raises serious questions about whose agenda is being served.",
+      "why_it_mattered": "Introduced a key line of attack questioning the motives behind climate action."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "The overwhelming scientific consensus supports the need for urgent climate action.",
+      "why_it_mattered": "Reasserted the core argument, but lacked specific rebuttal to CA's claims."
+    },
+    {
+      "round": 4,
+      "speaker": "CA",
+      "excerpt": "Wind turbines are known to harm bird populations, demonstrating the unintended consequences of 'green' solutions.",
+      "why_it_mattered": "Highlighted a negative impact of a climate solution, creating doubt about its overall benefit."
+    },
+    {
+      "round": 5,
+      "speaker": "SA",
+      "excerpt": "We must prioritize long-term sustainability over short-term economic concerns.",
+      "why_it_mattered": "Attempted to frame the debate in terms of values, but failed to address CA's specific concerns."
+    }
+  ],
+  "outcome_summary": "CA demonstrated a slight shift in their stance, acknowledging some validity in SA's points, but remained largely skeptical. SA maintained their position but failed to significantly sway CA.",
+  "limitations": [
+    "The analysis is based solely on the provided transcript and may not capture the full nuance of the debate.",
+    "Subjectivity in identifying and interpreting persuasive moments.",
+    "Limited data on audience perception."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "topic": "Conspiracy Theory vs. Scientific Reasoning",
+  "motion": "The existence of a deliberate, systemic cover-up regarding unexplained anomalies.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "anomaly_emphasis": 5,
+    "burden_of_proof_shift": 3,
+    "appeal_to_authority": 2,
+    "evidence_demands": 7
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The sheer number of unexplained events suggests a pattern, not random occurrences.",
+      "why_it_mattered": "Established the core claim of a deliberate pattern, framing the debate."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "While anomalies exist, they don't automatically imply a conspiracy. We need verifiable evidence.",
+      "why_it_mattered": "Challenged the core assumption and demanded empirical support."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The dismissals by authorities are themselves evidence of a cover-up.",
+      "why_it_mattered": "Demonstrated a shift in tactic - framing silence as confirmation."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "Dismissals could be due to lack of evidence, methodological flaws, or simply differing interpretations.",
+      "why_it_mattered": "Offered alternative explanations, undermining the claim of deliberate obstruction."
+    }
+  ],
+  "outcome_summary": "SA maintained a skeptical stance, consistently demanding evidence. CA did not provide sufficient evidence to shift SA's position, but managed to slightly decrease SA's initial confidence.",
+  "limitations": [
+    "The debate relied heavily on interpretation of ambiguous evidence.",
+    "The lack of access to primary sources hindered verification of claims.",
+    "The limited time frame prevented a comprehensive exploration of all relevant evidence."
+  ]
+}

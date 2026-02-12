@@ -1,0 +1,40 @@
+{
+  "topic": "JFK Assassination Conspiracy",
+  "motion": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "CA": 12,
+    "SA": 15
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The Warren Commission report is flawed and doesn't provide a complete picture of the events surrounding JFK's assassination.",
+      "why_it_mattered": "This statement challenged the widely accepted findings and sparked further discussion on potential conspiracy theories."
+    },
+    {
+      "round": 4,
+      "speaker": "SA",
+      "excerpt": "The weight of evidence supports the conclusion that Lee Harvey Oswald acted alone in assassinating President Kennedy.",
+      "why_it_mattered": "This statement provided a counterargument and reinforced the official narrative."
+    }
+  ],
+  "outcome_summary": "The debate concluded with no clear consensus on the topic.",
+  "limitations": [
+    "Insufficient time for comprehensive discussion on all aspects of the topic.",
+    "Lack of concrete evidence to definitively prove or disprove conspiracy theories."
+  ]
+}

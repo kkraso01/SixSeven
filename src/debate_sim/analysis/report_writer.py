@@ -10,20 +10,20 @@ from .report_models import AggregateReport, AnalysisReport
 def write_analysis_report(run_dir: Path, report: AnalysisReport) -> AnalysisReport:
     run_dir.mkdir(parents=True, exist_ok=True)
     report_path = run_dir / "analysis_report.json"
-    report_path.write_text(report.model_dump_json(indent=2))
+    report_path.write_text(report.model_dump_json(indent=2), encoding="utf-8")
 
     markdown_path = run_dir / "analysis_report.md"
-    markdown_path.write_text(_render_markdown(report))
+    markdown_path.write_text(_render_markdown(report), encoding="utf-8")
     return report
 
 
 def write_aggregate_report(output_dir: Path, report: AggregateReport) -> AggregateReport:
     output_dir.mkdir(parents=True, exist_ok=True)
     report_path = output_dir / "aggregate_report.json"
-    report_path.write_text(report.model_dump_json(indent=2))
+    report_path.write_text(report.model_dump_json(indent=2), encoding="utf-8")
 
     markdown_path = output_dir / "aggregate_report.md"
-    markdown_path.write_text(_render_aggregate_markdown(report))
+    markdown_path.write_text(_render_aggregate_markdown(report), encoding="utf-8")
     return report
 
 

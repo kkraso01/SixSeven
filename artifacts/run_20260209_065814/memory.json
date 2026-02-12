@@ -1,0 +1,207 @@
+{
+  "topic": "Pharmaceutical industry influence and suppressed cures",
+  "motion": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+  "round": 4,
+  "agent_states": {
+    "CA": {
+      "confidence": 29,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Evidence showing that pharmaceutical companies consistently prioritize patient welfare over profit margins in their decision-making processes."
+    },
+    "SA": {
+      "confidence": 80,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A peer-reviewed, replicated study demonstrating a suppressed cure with clear evidence of deliberate action by a pharmaceutical company to prevent its widespread use."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The pharmaceutical industry is driven by profit rather than patient welfare.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While profit is undoubtedly a motivating factor for pharmaceutical companies, attributing a singular drive *solely* to profit and implying active suppression of cures lacks sufficient evidence and ignores the complex incentives within the drug development process.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the role of profit in the pharmaceutical industry but disagree on its implications for treatment development.\nDisagreements: CA argues that profit drives suppression of cheap cures, while SA counters that this assumption lacks evidence and ignores complexities of drug development., SA questions the existence of a readily available 'cure' being suppressed, asking for specific examples from CA.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: Can CA provide specific examples of suppressed cures and evidence supporting their efficacy?, How does SA explain the high cost of drugs in light of pharmaceutical companies' profit-driven motivations?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies prioritize profit over patient welfare, evidenced by their marketing and lobbying budgets.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Big Pharma suppressed cures",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "While marketing and lobbying expenditures are substantial, attributing them solely to a prioritization of profit *over* patient welfare is an interpretation, not a demonstrated fact, and overlooks legitimate business functions.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the substantial marketing and lobbying expenditures by pharmaceutical companies., Agents agree that there is a need for objective standards to evaluate the appropriateness of these expenditures.\nDisagreements: CA argues that these expenditures demonstrate a focus on profits over patient welfare, while SA contends this interpretation overlooks legitimate business functions and lacks clear definitions., SA questions what objective standard is used to determine if current spending levels are excessive, while CA has not yet provided one.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What objective standards can be used to evaluate the appropriateness of pharmaceutical company marketing and lobbying expenditures?, How does marketing spending impact research and development efforts in the pharmaceutical industry?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies suppress effective cures for profit.",
+      "stance": "pro",
+      "confidence": 49,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy pharmaceutical industry suppress cures",
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While pharmaceutical companies undoubtedly pursue profit, the motion asserting they *suppress* cheap, effective cures lacks sufficient evidence and relies on correlation rather than causation. Alternative explanations, such as the inherent difficulties and costs of drug development, are more parsimonious.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the role of pharmaceutical companies in pursuing profit., Agents disagree on whether this pursuit leads to suppression of effective cures.\nDisagreements: CA claims evidence exists for suppressed cures; SA demands specific examples., SA suggests alternative explanations for high drug prices; CA questions industry motives.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific examples can be provided to support the claim of suppressed cures?, How do alternative explanations for high drug prices impact the argument for suppression?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies continue to prioritize profit over patient welfare, as evidenced by their marketing and lobbying practices.",
+      "stance": "pro",
+      "confidence": 39,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The claim that pharmaceutical companies suppress cheap, effective cures to maintain profits lacks sufficient evidence and relies on speculative reasoning; a more plausible explanation involves the inherent complexities of drug development, regulatory hurdles, and market forces.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_57be67a9ad63",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the complexities of drug development, marketing, and lobbying practices in the pharmaceutical industry.\nDisagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim lacks sufficient evidence and is more plausibly explained by factors such as scientific challenges, costs of development, and market forces.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific evidence can you provide to support your claim of pharmaceutical companies suppressing cheap cures? (CA), How do you reconcile the potential for high profits with the inherent risks and costs associated with drug development in your argument against suppression claims? (SA)",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 0
+    },
+    "bridge_score": 2,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

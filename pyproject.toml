@@ -1,21 +1,22 @@
 [project]
 name = "sixseven"
 version = "0.1.0"
-description = ""
+description = "Agentic Debate Simulation: Conspiracy vs Scientific Models"
 authors = [{ name = "suprch4rg3d", email = "emmanueloikonomou@gmail.com" }]
 readme = "README.md"
-requires-python = ">=3.14,<4.0"
+requires-python = ">=3.13"
 dependencies = [
     "pydantic==2.12.5",
     "instructor==1.14.5",
     "httpx==0.28.1",
-    "tenacity==9.1.2",
     "openai==2.16.0",
     "matplotlib==3.10.8",
+    "scikit-learn==1.8.0",
+    "duckduckgo-search==8.1.1",
+    "google-generativeai==0.8.3",
+    "Jinja2==3.1.6",
+    "rich==14.3.2",
 ]
-
-[tool.poetry]
-package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

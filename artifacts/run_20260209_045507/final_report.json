@@ -1,0 +1,29 @@
+{
+  "topic": "AI-powered surveillance systems",
+  "motion": "are being deployed globally as part of a coordinated plan for total population monitoring and control",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {},
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "Speaker A",
+      "excerpt": "AI-powered surveillance systems are being deployed globally as part of a coordinated plan for total population monitoring and control.",
+      "why_it_mattered": "This statement highlighted the global scale and intention of these systems."
+    },
+    {
+      "round": 1,
+      "speaker": "Speaker B",
+      "excerpt": "AI-powered surveillance systems are being deployed globally as part of a coordinated plan for total population monitoring and control.",
+      "why_it_mattered": "This statement provided an opposing view to the previous speaker's claim."
+    }
+  ],
+  "outcome_summary": "The debate concluded with no clear consensus on the motion.",
+  "limitations": [
+    "Not all speakers were able to contribute equally.",
+    "Some arguments were not fully developed due to time constraints."
+  ]
+}
