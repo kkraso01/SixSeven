@@ -1,29 +1,37 @@
+"""Immutable memory-state management for the debate simulator.
+
+All mutation functions return a **new** ``MemoryState`` via
+``model_copy(update=...)``, leaving the original untouched.
+"""
+
 from __future__ import annotations
 
-from typing import Dict, List
+from ..core.schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
 
-from ..schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
+#: Default initial confidence for both agents.
+DEFAULT_INITIAL_CONFIDENCE: int = 55
 
 
 def initial_memory(topic: str, motion: str) -> MemoryState:
+    """Create a fresh :class:`MemoryState` at round 0 with default agent states."""
     return MemoryState(
         topic=topic,
         motion=motion,
         round=0,
         agent_states={
             "CA": AgentState(
-                confidence=55,
+                confidence=DEFAULT_INITIAL_CONFIDENCE,
                 values=["skepticism", "narrative cohesion"],
                 preferred_tactics=["pattern-seeking"],
                 rejected_frames=["authority-only"],
-                what_changes_mind="Clear disconfirming evidence and reliable sources.",
+                what_changes_mind="Verifiable evidence that directly contradicts the core conspiracy claim.",
             ),
             "SA": AgentState(
-                confidence=55,
+                confidence=DEFAULT_INITIAL_CONFIDENCE,
                 values=["falsifiability", "empirical rigor"],
                 preferred_tactics=["evidence"],
                 rejected_frames=["anecdote-only"],
-                what_changes_mind="Reproducible evidence and transparent methods.",
+                what_changes_mind="Reproducible empirical evidence supporting the conspiracy claim.",
             ),
         },
         debate_log=[],
@@ -34,21 +42,23 @@ def initial_memory(topic: str, motion: str) -> MemoryState:
             epistemic_quality=0,
         ),
         moderator_notes=[],
-        next_round_strategy={"CA": "Stay focused on narrative claims.", "SA": "Stress tests."},
+        next_round_strategy={"CA": "Establish core claim.", "SA": "Clarify and challenge."},
     )
 
 
 def append_log(memory: MemoryState, item: DebateLogItem) -> MemoryState:
+    """Append a debate-log entry and return a new :class:`MemoryState`."""
     return memory.model_copy(update={"debate_log": memory.debate_log + [item]})
 
 
 def update_scoreboard(
     memory: MemoryState,
-    stance_shift: Dict[str, int],
+    stance_shift: dict[str, int],
     bridge_score: int,
     civility_score: int,
     epistemic_quality: int,
 ) -> MemoryState:
+    """Replace the scoreboard and return a new :class:`MemoryState`."""
     return memory.model_copy(
         update={
             "scoreboard": Scoreboard(
@@ -67,6 +77,7 @@ def update_agent_state(
     confidence: int,
     what_changes_mind: str,
 ) -> MemoryState:
+    """Update agent confidence and what_changes_mind - tracks persuasion over time."""
     agent_states = dict(memory.agent_states)
     agent = agent_states[speaker].model_copy(
         update={"confidence": confidence, "what_changes_mind": what_changes_mind}
@@ -76,4 +87,5 @@ def update_agent_state(
 
 
 def update_round(memory: MemoryState, new_round: int) -> MemoryState:
+    """Set the current round number and return a new :class:`MemoryState`."""
     return memory.model_copy(update={"round": new_round})

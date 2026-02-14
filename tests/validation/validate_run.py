@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 from debate_sim.analysis.analysis_runner import analyze_run
-from debate_sim.schemas import MemoryState
+from debate_sim.core.schemas import MemoryState
 
 
 def validate_run(run_dir: str) -> None:
@@ -12,7 +12,7 @@ def validate_run(run_dir: str) -> None:
     memory_path = path / "memory.json"
     if not memory_path.exists():
         raise FileNotFoundError(f"Missing memory.json in {run_dir}")
-    MemoryState.model_validate_json(memory_path.read_text())
+    MemoryState.model_validate_json(memory_path.read_text(encoding="utf-8"))
 
     report = analyze_run(run_dir)
     report_path = path / "analysis_report.json"
@@ -31,7 +31,7 @@ def validate_run(run_dir: str) -> None:
 
 def main() -> None:
     if len(sys.argv) < 2:
-        raise SystemExit("Usage: python scripts/validate_run.py <run_dir>")
+        raise SystemExit("Usage: python tests/validation/validate_run.py <run_dir>")
     validate_run(sys.argv[1])
 
 

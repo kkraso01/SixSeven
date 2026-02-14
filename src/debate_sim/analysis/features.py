@@ -1,3 +1,9 @@
+"""Feature extraction utilities for debate analysis.
+
+Provides loaders for run artifacts (memory, transcript, metrics, config)
+and helper functions for text analysis (keyword detection, safety flags).
+"""
+
 from __future__ import annotations
 
 import csv
@@ -5,28 +11,27 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
 
-from ..schemas import MemoryState
+from ..core.schemas import MemoryState
 
 
 @dataclass
 class TranscriptRound:
     round_number: int
-    claims: Dict[str, str]
-    recap_lines: List[str]
+    claims: dict[str, str]
+    recap_lines: list[str]
 
 
 @dataclass
 class TranscriptData:
-    rounds: Dict[int, TranscriptRound]
+    rounds: dict[int, TranscriptRound]
 
 
 @dataclass
 class MetricsData:
-    civility: List[int]
-    epistemic_quality: List[int]
-    bridge_building: List[int]
+    civility: list[int]
+    epistemic_quality: list[int]
+    bridge_building: list[int]
 
 
 @dataclass
@@ -35,47 +40,51 @@ class RunInputs:
     memory: MemoryState
     transcript: TranscriptData
     metrics: MetricsData
-    run_config: Optional[Dict[str, object]]
+    run_config: dict[str, object] | None
 
 
-KEYWORD_PATTERN = re.compile(
+KEYWORD_PATTERN: re.Pattern[str] = re.compile(
     r"\b(strong point|concession|agreement|compelling|persuasive|valid point|acknowledge)\b",
     re.IGNORECASE,
 )
 
 
-PROFANITY_PATTERN = re.compile(
+PROFANITY_PATTERN: re.Pattern[str] = re.compile(
     r"\b(idiot|stupid|moron|dumb|shut up|liar|bullshit|nonsense)\b",
     re.IGNORECASE,
 )
 
+#: Maximum characters kept when excerpting a claim for reports.
+EXCERPT_MAX_CHARS: int = 300
+
 
 def load_memory(run_dir: Path) -> MemoryState:
     memory_path = run_dir / "memory.json"
-    return MemoryState.model_validate_json(memory_path.read_text())
+    return MemoryState.model_validate_json(memory_path.read_text(encoding="utf-8"))
 
 
-def load_run_config(run_dir: Path) -> Optional[Dict[str, object]]:
+def load_run_config(run_dir: Path) -> dict[str, object] | None:
     path = run_dir / "run_config.json"
     if not path.exists():
         return None
-    return json.loads(path.read_text())
+    result: dict[str, object] = json.loads(path.read_text(encoding="utf-8"))
+    return result
 
 
 def load_transcript(run_dir: Path) -> TranscriptData:
     path = run_dir / "transcript.md"
     if not path.exists():
         return TranscriptData(rounds={})
-    text = path.read_text()
+    text = path.read_text(encoding="utf-8")
     return parse_transcript(text)
 
 
 def load_metrics(run_dir: Path, transcript: TranscriptData) -> MetricsData:
     metrics_path = run_dir / "metrics.csv"
     if metrics_path.exists():
-        civility: List[int] = []
-        epistemic: List[int] = []
-        bridge: List[int] = []
+        civility: list[int] = []
+        epistemic: list[int] = []
+        bridge: list[int] = []
         with metrics_path.open() as handle:
             reader = csv.DictReader(handle)
             for row in reader:
@@ -87,9 +96,9 @@ def load_metrics(run_dir: Path, transcript: TranscriptData) -> MetricsData:
 
 
 def parse_transcript(text: str) -> TranscriptData:
-    rounds: Dict[int, TranscriptRound] = {}
-    current_round: Optional[int] = None
-    current_speaker: Optional[str] = None
+    rounds: dict[int, TranscriptRound] = {}
+    current_round: int | None = None
+    current_speaker: str | None = None
     in_recap = False
 
     for raw_line in text.splitlines():
@@ -129,9 +138,9 @@ def parse_transcript(text: str) -> TranscriptData:
 
 
 def metrics_from_transcript(transcript: TranscriptData) -> MetricsData:
-    civility: List[int] = []
-    epistemic: List[int] = []
-    bridge: List[int] = []
+    civility: list[int] = []
+    epistemic: list[int] = []
+    bridge: list[int] = []
     for round_number in sorted(transcript.rounds):
         recap_lines = transcript.rounds[round_number].recap_lines
         civility.append(_extract_score(recap_lines, "Civility"))
@@ -140,7 +149,7 @@ def metrics_from_transcript(transcript: TranscriptData) -> MetricsData:
     return MetricsData(civility=civility, epistemic_quality=epistemic, bridge_building=bridge)
 
 
-def _extract_score(lines: List[str], label: str) -> int:
+def _extract_score(lines: list[str], label: str) -> int:
     for line in lines:
         if line.startswith(f"{label}:"):
             value = line.replace(f"{label}:", "").strip()
@@ -168,11 +177,11 @@ def excerpt_for_round(
 ) -> str:
     round_data = transcript.rounds.get(round_number)
     if round_data and agent in round_data.claims:
-        return round_data.claims[agent][:300]
-    return fallback[:300]
+        return round_data.claims[agent][:EXCERPT_MAX_CHARS]
+    return fallback[:EXCERPT_MAX_CHARS]
 
 
-def safety_flags_from_text(log_texts: List[Tuple[int, str, str]]) -> List[str]:
+def safety_flags_from_text(log_texts: list[tuple[int, str, str]]) -> list[str]:
     flags = []
     for round_number, speaker, text in log_texts:
         if PROFANITY_PATTERN.search(text):

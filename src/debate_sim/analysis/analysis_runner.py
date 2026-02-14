@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List
+from typing import Any, cast
 
 from .features import load_run_inputs
 from .metrics import (
@@ -53,7 +53,9 @@ def analyze_run(run_dir: str) -> AnalysisReport:
     figures_dir = path / "figures"
     figure_paths = []
     if stance_summary.per_round_confidence["CA"] or stance_summary.per_round_confidence["SA"]:
-        figure_paths.append(plot_stance_trajectory(figures_dir, stance_summary.per_round_confidence))
+        figure_paths.append(
+            plot_stance_trajectory(figures_dir, stance_summary.per_round_confidence)
+        )
     if any(len(values) > 0 for values in quality_summary.per_round.values()):
         figure_paths.append(plot_quality_scores(figures_dir, quality_summary.per_round))
     if tactic_summary.counts.get("CA"):
@@ -72,30 +74,33 @@ def analyze_run(run_dir: str) -> AnalysisReport:
         safety_flags=safety,
         limitations=_default_limitations(single_run=True),
         run_config=inputs.run_config,
-    )
-    report = report.model_copy(
-        update={"figures": [str(Path(fig).relative_to(path)) for fig in figure_paths]}
+        figures=[str(Path(fig).relative_to(path)) for fig in figure_paths],
     )
     return write_analysis_report(path, report)
 
 
 def analyze_all(artifacts_root: str) -> AggregateReport:
     root = Path(artifacts_root)
-    run_dirs = sorted([path for path in root.iterdir() if path.is_dir() and path.name.startswith("run_")])
-    reports: List[AnalysisReport] = []
+    run_dirs = sorted(
+        [path for path in root.iterdir() if path.is_dir() and path.name.startswith("run_")]
+    )
+    reports: list[AnalysisReport] = []
     for run_dir in run_dirs:
         report_path = run_dir / "analysis_report.json"
         if report_path.exists():
-            reports.append(AnalysisReport.model_validate_json(report_path.read_text()))
+            reports.append(
+                AnalysisReport.model_validate_json(report_path.read_text(encoding="utf-8"))
+            )
         else:
             reports.append(analyze_run(str(run_dir)))
 
     grouped_by = "model_signature"
-    groups: Dict[str, List[str]] = {}
+    groups: dict[str, list[str]] = {}
     for report in reports:
         model_signature = None
         if report.run_config:
-            models = report.run_config.get("models", {})
+            cfg = cast(dict[str, Any], report.run_config)
+            models = cast(dict[str, Any], cfg.get("models", {}))
             model_signature = "/".join(
                 [
                     str(models.get("moderator", "")),
@@ -107,11 +112,13 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
             model_signature = "unknown"
         groups.setdefault(model_signature, []).append(report.run_id)
 
-    net_ca_shifts = [report.stance_summary.net_shift.get("CA", 0) for report in reports]
+    net_ca_shifts = [float(report.stance_summary.net_shift.get("CA", 0)) for report in reports]
     civility_means = [report.quality_summary.aggregates["civility"].mean for report in reports]
-    epistemic_means = [report.quality_summary.aggregates["epistemic_quality"].mean for report in reports]
+    epistemic_means = [
+        report.quality_summary.aggregates["epistemic_quality"].mean for report in reports
+    ]
     bridge_means = [report.quality_summary.aggregates["bridge_building"].mean for report in reports]
-    tactic_diversity = [report.tactic_summary.diversity.get("CA", 0) for report in reports]
+    tactic_diversity = [float(report.tactic_summary.diversity.get("CA", 0)) for report in reports]
 
     summaries = [
         RunCaseSummary(
@@ -135,7 +142,7 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
     if civility_means:
         figure_paths.append(plot_aggregate_scatter(figures_dir, civility_means, net_ca_shifts))
 
-    report = AggregateReport(
+    aggregate = AggregateReport(
         runs_analyzed=len(reports),
         grouped_by=grouped_by,
         distributions={
@@ -151,17 +158,17 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
         limitations=_default_limitations(single_run=False),
         groups=groups,
     )
-    return write_aggregate_report(aggregate_dir, report)
+    return write_aggregate_report(aggregate_dir, aggregate)
 
 
-def groups_key_for_report(report: AnalysisReport, groups: Dict[str, List[str]]) -> str | None:
+def groups_key_for_report(report: AnalysisReport, groups: dict[str, list[str]]) -> str | None:
     for key, runs in groups.items():
         if report.run_id in runs:
             return key
     return None
 
 
-def _default_limitations(single_run: bool) -> List[str]:
+def _default_limitations(single_run: bool) -> list[str]:
     limitations = [
         "Deterministic heuristics may miss nuance in persuasion signals.",
         "Transcript parsing relies on consistent formatting in transcripts.",
@@ -172,10 +179,11 @@ def _default_limitations(single_run: bool) -> List[str]:
     return limitations
 
 
-def _settings_from_run_config(run_config: Dict[str, object] | None) -> AnalysisSettings:
+def _settings_from_run_config(run_config: dict[str, object] | None) -> AnalysisSettings:
     if not run_config:
         return AnalysisSettings()
-    analysis_cfg = run_config.get("analysis", {})
+    cfg = cast(dict[str, Any], run_config)
+    analysis_cfg = cast(dict[str, Any], cfg.get("analysis", {}))
     return AnalysisSettings(
         shift_threshold=int(analysis_cfg.get("shift_threshold", 5)),
         similarity_method=str(analysis_cfg.get("similarity_method", "tfidf")),

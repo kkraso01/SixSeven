@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List
 
 import matplotlib.pyplot as plt
 
 
 def plot_stance_trajectory(
     output_dir: Path,
-    per_round_confidence: Dict[str, List[int]],
+    per_round_confidence: dict[str, list[int]],
 ) -> str:
     output_dir.mkdir(parents=True, exist_ok=True)
     plt.figure()
@@ -27,7 +26,7 @@ def plot_stance_trajectory(
     return str(path)
 
 
-def plot_quality_scores(output_dir: Path, quality_scores: Dict[str, List[int]]) -> str:
+def plot_quality_scores(output_dir: Path, quality_scores: dict[str, list[int]]) -> str:
     output_dir.mkdir(parents=True, exist_ok=True)
     plt.figure()
     for label, values in quality_scores.items():
@@ -45,7 +44,7 @@ def plot_quality_scores(output_dir: Path, quality_scores: Dict[str, List[int]]) 
     return str(path)
 
 
-def plot_tactic_histogram(output_dir: Path, tactic_counts: Dict[str, int]) -> str:
+def plot_tactic_histogram(output_dir: Path, tactic_counts: dict[str, int]) -> str:
     output_dir.mkdir(parents=True, exist_ok=True)
     labels = list(tactic_counts.keys())
     values = list(tactic_counts.values())
@@ -62,7 +61,7 @@ def plot_tactic_histogram(output_dir: Path, tactic_counts: Dict[str, int]) -> st
     return str(path)
 
 
-def plot_aggregate_histogram(output_dir: Path, net_shifts: List[float]) -> str:
+def plot_aggregate_histogram(output_dir: Path, net_shifts: list[float]) -> str:
     output_dir.mkdir(parents=True, exist_ok=True)
     plt.figure()
     plt.hist(net_shifts, bins=10)
@@ -78,8 +77,8 @@ def plot_aggregate_histogram(output_dir: Path, net_shifts: List[float]) -> str:
 
 def plot_aggregate_scatter(
     output_dir: Path,
-    civility_means: List[float],
-    net_shifts: List[float],
+    civility_means: list[float],
+    net_shifts: list[float],
 ) -> str:
     output_dir.mkdir(parents=True, exist_ok=True)
     plt.figure()
