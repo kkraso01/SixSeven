@@ -5,15 +5,16 @@ import json
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import List
 
-from .templates import render_transcript
+from ..core.schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
 from .csv_export import export_debate_log_to_csv
-from ..schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
+from .templates import render_transcript
 
 
 @dataclass
 class ExportBundle:
+    """Paths to all exported artifacts for a single debate run."""
+
     run_dir: Path
     transcript_path: Path
     memory_path: Path
@@ -26,9 +27,9 @@ def write_artifacts(
     output_dir: Path,
     memory: MemoryState,
     final_report: FinalReport,
-    recaps: List[ModeratorRecap],
-    ca_sa_log: List[DebateLogItem],
-    metrics_table: List[dict],
+    recaps: list[ModeratorRecap],
+    ca_sa_log: list[DebateLogItem],
+    metrics_table: list[dict],
     topic: str,
     motion: str,
     run_config: dict | None = None,
@@ -58,7 +59,7 @@ def write_artifacts(
             writer = csv.DictWriter(handle, fieldnames=list(metrics_table[0].keys()))
             writer.writeheader()
             writer.writerows(metrics_table)
-    
+
     # Export canonical debate log as CSV
     debate_log_csv_path = run_dir / "debate_log.csv"
     export_debate_log_to_csv(ca_sa_log, debate_log_csv_path)

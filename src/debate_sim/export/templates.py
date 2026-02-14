@@ -1,31 +1,29 @@
 from __future__ import annotations
 
-from typing import List
-
-from ..schemas import DebateLogItem, ModeratorRecap
+from ..core.schemas import DebateLogItem, ModeratorRecap
 
 
 def render_transcript(
     topic: str,
     motion: str,
-    logs: List[DebateLogItem],
-    recaps: List[ModeratorRecap],
+    logs: list[DebateLogItem],
+    recaps: list[ModeratorRecap],
 ) -> str:
     # Map speaker roles to display names
     role_to_display = {
         "proponent": "Conspiracy Advocate (CA)",
         "opponent": "Scientific Advocate (SA)",
-        "moderator": "Moderator"
+        "moderator": "Moderator",
     }
-    
-    lines = [f"# Debate Transcript", f"\nTopic: {topic}", f"Motion: {motion}", ""]
-    
+
+    lines = ["# Debate Transcript", f"\nTopic: {topic}", f"Motion: {motion}", ""]
+
     # Include debate_id if available
     if logs:
         lines.append(f"Debate ID: {logs[0].debate_id}")
         lines.append("")
-    
-    round_groups = {}
+
+    round_groups: dict[int, list[DebateLogItem]] = {}
     for item in logs:
         # Only include agent turns (not moderator) in main sections
         if item.speaker_role != "moderator":

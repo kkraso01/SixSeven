@@ -1,17 +1,21 @@
+"""Debate analysis metrics — stance tracking, tactics, quality, redundancy, and safety."""
+
 from __future__ import annotations
 
 import importlib.util
 import math
-from typing import Dict, Iterable, List, Tuple
+from collections.abc import Iterable
 
+from ..core.schemas import DebateLogItem, MemoryState
 from .features import (
+    TranscriptData,
     detect_recap_keyword,
     excerpt_for_round,
     extract_recap_text,
     safety_flags_from_text,
 )
 from .report_models import (
-    PersuasionMoment,
+    PersuasionFlag,
     QualityAggregate,
     QualitySummary,
     RedundancySummary,
@@ -19,29 +23,32 @@ from .report_models import (
     StanceSummary,
     TacticSummary,
 )
-from ..schemas import DebateLogItem, MemoryState
 
 HAS_SKLEARN = importlib.util.find_spec("sklearn") is not None
+
+# Canonical mapping from debate-log speaker roles to agent codes.
+# Defined once here to avoid duplication across metric functions.
+ROLE_TO_AGENT: dict[str, str] = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
 
 
 def stance_summary_from_logs(
     memory: MemoryState,
     shift_threshold: int,
 ) -> StanceSummary:
-    # Map speaker roles back to agent codes for compatibility
-    role_to_agent = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
-    
-    per_round_confidence: Dict[str, List[int]] = {"CA": [], "SA": []}
+    """Compute per-agent confidence trajectories and significant shift events."""
+    role_to_agent = ROLE_TO_AGENT
+
+    per_round_confidence: dict[str, list[int]] = {"CA": [], "SA": []}
     for item in sorted(memory.debate_log, key=lambda x: (x.round, x.speaker_role)):
         agent = role_to_agent.get(item.speaker_role)
         if agent in per_round_confidence and item.confidence is not None:
             per_round_confidence[agent].append(item.confidence)
 
-    per_round_delta: Dict[str, List[int]] = {"CA": [], "SA": []}
-    shift_events: List[StanceShiftEvent] = []
-    start_confidence: Dict[str, int] = {}
-    end_confidence: Dict[str, int] = {}
-    net_shift: Dict[str, int] = {}
+    per_round_delta: dict[str, list[int]] = {"CA": [], "SA": []}
+    shift_events: list[StanceShiftEvent] = []
+    start_confidence: dict[str, int] = {}
+    end_confidence: dict[str, int] = {}
+    net_shift: dict[str, int] = {}
 
     for agent, values in per_round_confidence.items():
         if not values:
@@ -79,10 +86,10 @@ def stance_summary_from_logs(
 
 
 def tactic_summary_from_logs(logs: Iterable[DebateLogItem]) -> TacticSummary:
-    # Map speaker roles back to agent codes for compatibility
-    role_to_agent = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
-    
-    counts: Dict[str, Dict[str, int]] = {"CA": {}, "SA": {}}
+    """Count tactic usage per agent and compute diversity / entropy."""
+    role_to_agent = ROLE_TO_AGENT
+
+    counts: dict[str, dict[str, int]] = {"CA": {}, "SA": {}}
     for item in logs:
         agent = role_to_agent.get(item.speaker_role)
         if agent in counts and item.tactic_used:
@@ -95,7 +102,7 @@ def tactic_summary_from_logs(logs: Iterable[DebateLogItem]) -> TacticSummary:
     return TacticSummary(counts=counts, diversity=diversity, entropy=entropy)
 
 
-def _entropy(counts: Dict[str, int]) -> float:
+def _entropy(counts: dict[str, int]) -> float:
     total = sum(counts.values())
     if total == 0:
         return 0.0
@@ -107,9 +114,9 @@ def _entropy(counts: Dict[str, int]) -> float:
 
 
 def quality_summary_from_scores(
-    civility: List[int],
-    epistemic: List[int],
-    bridge: List[int],
+    civility: list[int],
+    epistemic: list[int],
+    bridge: list[int],
 ) -> QualitySummary:
     per_round = {
         "civility": civility,
@@ -129,14 +136,14 @@ def quality_summary_from_scores(
     return QualitySummary(per_round=per_round, aggregates=aggregates, trends=trends)
 
 
-def _aggregate_scores(values: List[int]) -> QualityAggregate:
+def _aggregate_scores(values: list[int]) -> QualityAggregate:
     if not values:
         return QualityAggregate(mean=0.0, min=0, max=0)
     mean = sum(values) / len(values)
     return QualityAggregate(mean=mean, min=min(values), max=max(values))
 
 
-def _trend(values: List[int]) -> float:
+def _trend(values: list[int]) -> float:
     if len(values) < 2:
         return 0.0
     return (values[-1] - values[0]) / (len(values) - 1)
@@ -144,15 +151,15 @@ def _trend(values: List[int]) -> float:
 
 def persuasion_moments(
     memory: MemoryState,
-    transcript,
+    transcript: TranscriptData,
     shift_threshold: int,
-) -> List[PersuasionMoment]:
-    # Map speaker roles back to agent codes for compatibility
-    role_to_agent = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
-    
-    moments: List[PersuasionMoment] = []
-    per_round_confidence: Dict[str, List[int]] = {"CA": [], "SA": []}
-    per_round_content: Dict[Tuple[int, str], str] = {}
+) -> list[PersuasionFlag]:
+    """Identify rounds where confidence shifted beyond *shift_threshold* alongside moderator signals."""
+    role_to_agent = ROLE_TO_AGENT
+
+    moments: list[PersuasionFlag] = []
+    per_round_confidence: dict[str, list[int]] = {"CA": [], "SA": []}
+    per_round_content: dict[tuple[int, str], str] = {}
 
     for item in sorted(memory.debate_log, key=lambda x: (x.round, x.speaker_role)):
         agent = role_to_agent.get(item.speaker_role)
@@ -173,12 +180,10 @@ def persuasion_moments(
                 fallback = per_round_content.get((round_number, agent), "")
                 excerpt = excerpt_for_round(transcript, round_number, agent, fallback)
                 why_flagged = (
-                    "confidence change with moderator signal"
-                    if recap_flag
-                    else "confidence change"
+                    "confidence change with moderator signal" if recap_flag else "confidence change"
                 )
                 moments.append(
-                    PersuasionMoment(
+                    PersuasionFlag(
                         round=round_number,
                         affected_agent=agent,
                         delta=delta,
@@ -193,22 +198,25 @@ def redundancy_summary(
     memory: MemoryState,
     similarity_method: str,
 ) -> RedundancySummary:
-    # Map speaker roles back to agent codes for compatibility
-    role_to_agent = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
-    
-    texts_by_agent: Dict[str, List[str]] = {"CA": [], "SA": []}
+    """Compute average pairwise text similarity per agent to detect repetition."""
+    role_to_agent = ROLE_TO_AGENT
+
+    texts_by_agent: dict[str, list[str]] = {"CA": [], "SA": []}
     for item in sorted(memory.debate_log, key=lambda x: (x.round, x.speaker_role)):
         agent = role_to_agent.get(item.speaker_role)
         if agent in texts_by_agent:
             texts_by_agent[agent].append(item.utterance)
 
-    by_agent = {agent: _average_similarity(texts, similarity_method) for agent, texts in texts_by_agent.items()}
+    by_agent = {
+        agent: _average_similarity(texts, similarity_method)
+        for agent, texts in texts_by_agent.items()
+    }
     overall_values = [value for value in by_agent.values() if value is not None]
     overall = sum(overall_values) / len(overall_values) if overall_values else 0.0
     return RedundancySummary(by_agent=by_agent, overall=overall, method=similarity_method)
 
 
-def _average_similarity(texts: List[str], similarity_method: str) -> float:
+def _average_similarity(texts: list[str], similarity_method: str) -> float:
     if len(texts) < 2:
         return 0.0
     similarities = []
@@ -238,18 +246,19 @@ def _tfidf_similarity(text_a: str, text_b: str) -> float:
         return _similarity(text_a, text_b, "jaccard")
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.metrics.pairwise import cosine_similarity
+
     vectorizer = TfidfVectorizer(stop_words="english")
     matrix = vectorizer.fit_transform([text_a, text_b])
     similarity = cosine_similarity(matrix[0:1], matrix[1:2])
     return float(similarity[0][0])
 
 
-def safety_flags(memory: MemoryState) -> List[str]:
-    # Map speaker roles back to agent codes for display
-    role_to_agent = {"proponent": "CA", "opponent": "SA", "moderator": "MA"}
-    
+def safety_flags(memory: MemoryState) -> list[str]:
+    """Return a list of safety-flag strings for utterances containing profanity."""
+    role_to_agent = ROLE_TO_AGENT
+
     log_texts = [
-        (item.round, role_to_agent.get(item.speaker_role, item.speaker_role), item.utterance) 
+        (item.round, role_to_agent.get(item.speaker_role, item.speaker_role), item.utterance)
         for item in memory.debate_log
     ]
     return safety_flags_from_text(log_texts)

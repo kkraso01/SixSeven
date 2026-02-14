@@ -1,10 +1,10 @@
 [project]
 name = "sixseven"
-version = "0.1.0"
+version = "0.2.0"
 description = "Agentic Debate Simulation: Conspiracy vs Scientific Models"
 authors = [{ name = "suprch4rg3d", email = "emmanueloikonomou@gmail.com" }]
-readme = "README.md"
-requires-python = ">=3.13"
+readme = "docs/README.md"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "pydantic==2.12.5",
     "instructor==1.14.5",
@@ -12,12 +12,40 @@ dependencies = [
     "openai==2.16.0",
     "matplotlib==3.10.8",
     "scikit-learn==1.8.0",
-    "duckduckgo-search==8.1.1",
-    "google-generativeai==0.8.3",
-    "Jinja2==3.1.6",
+    "jinja2==3.1.6",
     "rich==14.3.2",
+    "ddgs>=9.10.0,<10.0.0",
+    "google-genai>=1.63.0,<2.0.0",
 ]
+
+[tool.poetry]
+packages = [{include = "debate_sim", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+pytest-cov = ">=5.0"
+ruff = ">=0.4"
+mypy = ">=1.10"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

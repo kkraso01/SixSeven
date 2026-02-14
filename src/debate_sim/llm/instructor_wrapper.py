@@ -1,26 +1,29 @@
 from __future__ import annotations
 
-from typing import Dict, List, Optional, Type
+from typing import TypeVar
 
 from pydantic import BaseModel
 
-from .ollama_client import LLMResponseError, OllamaClient
+from ..core.errors import LLMResponseError
+from ..core.protocols import LLMClient
+
+T = TypeVar("T", bound=BaseModel)
 
 
 class StructuredLLM:
-    def __init__(self, client: OllamaClient) -> None:
+    def __init__(self, client: LLMClient) -> None:
         self.client = client
 
     def call(
         self,
-        response_model: Type[BaseModel],
-        messages: List[Dict[str, str]],
+        response_model: type[T],
+        messages: list[dict[str, str]],
         model: str,
         temperature: float,
         max_tokens: int,
-        seed: Optional[int],
+        seed: int | None,
         max_retries: int = 5,
-    ) -> BaseModel:
+    ) -> T:
         attempt = 0
         current_messages = list(messages)
         while attempt < max_retries:
@@ -38,16 +41,15 @@ class StructuredLLM:
                 attempt += 1
                 if attempt >= max_retries:
                     raise
-                
+
                 # Add specific guidance for common validation errors
                 error_msg = str(exc)
-                raw = getattr(exc, "raw_output", "")
-                
+
                 if "reasons" in error_msg and "too_short" in error_msg:
                     guidance = (
                         "CRITICAL: The 'reasons' field must be a JSON array with SEPARATE items. "
-                        "CORRECT format: \"reasons\": [\"First reason\", \"Second reason\", \"Third reason\"]. "
-                        "WRONG format: \"reasons\": [\"First; Second; Third\"]. "
+                        'CORRECT format: "reasons": ["First reason", "Second reason", "Third reason"]. '
+                        'WRONG format: "reasons": ["First; Second; Third"]. '
                         "Each reason must be a separate string in the array, NOT semicolon-separated in one string. "
                         f"Validation error: {exc}"
                     )
@@ -61,7 +63,11 @@ class StructuredLLM:
                         "alternative_hypotheses, discriminating_tests\n"
                         "Do NOT omit any field. Return complete valid JSON."
                     )
-                elif "invalid json" in error_msg.lower() or "eof" in error_msg.lower() or "unterminated" in error_msg.lower():
+                elif (
+                    "invalid json" in error_msg.lower()
+                    or "eof" in error_msg.lower()
+                    or "unterminated" in error_msg.lower()
+                ):
                     guidance = (
                         "CRITICAL: Your JSON was truncated or malformed. "
                         "You MUST output COMPLETE, VALID JSON that closes all braces and brackets. "
@@ -71,20 +77,21 @@ class StructuredLLM:
                     )
                 else:
                     guidance = f"You MUST output valid JSON for the schema. Validation error: {exc}"
-                
+
                 current_messages = list(current_messages)
-                current_messages.append({
-                    "role": "system",
-                    "content": guidance,
-                })
+                current_messages.append(
+                    {
+                        "role": "system",
+                        "content": guidance,
+                    }
+                )
             except Exception as exc:
                 # Catch any other unexpected error (network, timeout, etc.)
                 attempt += 1
                 if attempt >= max_retries:
                     raise LLMResponseError(
-                        f"Unexpected error after {max_retries} attempts: {exc}",
-                        raw_output=""
-                    )
+                        f"Unexpected error after {max_retries} attempts: {exc}", raw_output=""
+                    ) from exc
                 # No guidance to add — just retry
                 continue
         raise RuntimeError("Unreachable retry loop.")

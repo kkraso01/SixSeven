@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import List
 
 from .report_models import AggregateReport, AnalysisReport
 
@@ -32,7 +31,7 @@ def _render_markdown(report: AnalysisReport) -> str:
     tactic = report.tactic_summary
     quality = report.quality_summary
 
-    lines: List[str] = [
+    lines: list[str] = [
         "# Analysis Report",
         "",
         "## Overview",
@@ -71,12 +70,14 @@ def _render_markdown(report: AnalysisReport) -> str:
         for moment in report.persuasion_moments:
             lines.append(
                 f"- Round {moment.round} {moment.affected_agent} (Delta {moment.delta}): "
-                f"{moment.why_flagged} - \"{moment.excerpt}\""
+                f'{moment.why_flagged} - "{moment.excerpt}"'
             )
     else:
         lines.append("- None detected with current thresholds.")
 
-    lines.extend(["", "## Rhetorical Tactic Usage", "### CA Tactics", "| Tactic | Count |", "| --- | --- |"])
+    lines.extend(
+        ["", "## Rhetorical Tactic Usage", "### CA Tactics", "| Tactic | Count |", "| --- | --- |"]
+    )
     for tactic_name, count in tactic.counts.get("CA", {}).items():
         lines.append(f"| {tactic_name} | {count} |")
     lines.append(f"- Diversity: {tactic.diversity.get('CA', 0)}")
@@ -88,17 +89,35 @@ def _render_markdown(report: AnalysisReport) -> str:
     lines.append(f"- Diversity: {tactic.diversity.get('SA', 0)}")
     lines.append(f"- Entropy: {tactic.entropy.get('SA', 0.0):.2f}")
 
-    lines.extend(["", "## Dialogue Quality", "| Metric | Mean | Min | Max | Trend |", "| --- | --- | --- | --- | --- |"])
+    lines.extend(
+        [
+            "",
+            "## Dialogue Quality",
+            "| Metric | Mean | Min | Max | Trend |",
+            "| --- | --- | --- | --- | --- |",
+        ]
+    )
     for metric, aggregate in quality.aggregates.items():
         trend = quality.trends.get(metric, 0.0)
         lines.append(
             f"| {metric} | {aggregate.mean:.2f} | {aggregate.min} | {aggregate.max} | {trend:.2f} |"
         )
     if any(values for values in quality.per_round.values()):
-        lines.extend(["", "### Per-round Scores", "| Round | Civility | Epistemic | Bridge |", "| --- | --- | --- | --- |"])
+        lines.extend(
+            [
+                "",
+                "### Per-round Scores",
+                "| Round | Civility | Epistemic | Bridge |",
+                "| --- | --- | --- | --- |",
+            ]
+        )
         rounds = max(len(values) for values in quality.per_round.values() if values)
         for idx in range(rounds):
-            civility = quality.per_round["civility"][idx] if idx < len(quality.per_round["civility"]) else 0
+            civility = (
+                quality.per_round["civility"][idx]
+                if idx < len(quality.per_round["civility"])
+                else 0
+            )
             epistemic = (
                 quality.per_round["epistemic_quality"][idx]
                 if idx < len(quality.per_round["epistemic_quality"])
@@ -130,7 +149,7 @@ def _render_markdown(report: AnalysisReport) -> str:
 
 
 def _render_aggregate_markdown(report: AggregateReport) -> str:
-    lines: List[str] = [
+    lines: list[str] = [
         "# Aggregate Analysis Report",
         "",
         f"- Runs analyzed: {report.runs_analyzed}",

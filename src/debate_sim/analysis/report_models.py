@@ -1,11 +1,13 @@
-from __future__ import annotations
+"""Pydantic models for analysis reports — stance, quality, tactics, redundancy."""
 
-from typing import Dict, List, Optional
+from __future__ import annotations
 
 from pydantic import BaseModel, Field
 
 
 class StanceShiftEvent(BaseModel):
+    """A single significant confidence shift within a debate round."""
+
     round: int
     agent: str
     delta: int
@@ -14,39 +16,51 @@ class StanceShiftEvent(BaseModel):
 
 
 class StanceSummary(BaseModel):
-    start_confidence: Dict[str, int]
-    end_confidence: Dict[str, int]
-    net_shift: Dict[str, int]
-    per_round_confidence: Dict[str, List[int]]
-    per_round_delta: Dict[str, List[int]]
-    shift_events: List[StanceShiftEvent]
+    """Aggregated stance/confidence trajectory for all agents."""
+
+    start_confidence: dict[str, int]
+    end_confidence: dict[str, int]
+    net_shift: dict[str, int]
+    per_round_confidence: dict[str, list[int]]
+    per_round_delta: dict[str, list[int]]
+    shift_events: list[StanceShiftEvent]
 
 
 class TacticSummary(BaseModel):
-    counts: Dict[str, Dict[str, int]]
-    diversity: Dict[str, int]
-    entropy: Dict[str, float]
+    """Per-agent tactic usage counts, diversity, and entropy."""
+
+    counts: dict[str, dict[str, int]]
+    diversity: dict[str, int]
+    entropy: dict[str, float]
 
 
 class QualityAggregate(BaseModel):
+    """Mean / min / max for a single quality dimension."""
+
     mean: float
     min: int
     max: int
 
 
 class QualitySummary(BaseModel):
-    per_round: Dict[str, List[int]]
-    aggregates: Dict[str, QualityAggregate]
-    trends: Dict[str, float]
+    """Per-round and aggregated quality scores."""
+
+    per_round: dict[str, list[int]]
+    aggregates: dict[str, QualityAggregate]
+    trends: dict[str, float]
 
 
 class RedundancySummary(BaseModel):
-    by_agent: Dict[str, float]
+    """Pairwise text-similarity summary measuring argument repetition."""
+
+    by_agent: dict[str, float]
     overall: float
     method: str
 
 
-class PersuasionMoment(BaseModel):
+class PersuasionFlag(BaseModel):
+    """A flagged persuasion moment detected during analysis."""
+
     round: int
     affected_agent: str
     delta: int
@@ -55,6 +69,8 @@ class PersuasionMoment(BaseModel):
 
 
 class AnalysisReport(BaseModel):
+    """Complete single-run analysis report."""
+
     run_id: str
     topic: str
     motion: str
@@ -63,27 +79,31 @@ class AnalysisReport(BaseModel):
     tactic_summary: TacticSummary
     quality_summary: QualitySummary
     redundancy_summary: RedundancySummary
-    persuasion_moments: List[PersuasionMoment]
-    figures: List[str]
-    safety_flags: List[str] = Field(default_factory=list)
-    limitations: List[str]
-    run_config: Optional[Dict[str, object]] = None
+    persuasion_moments: list[PersuasionFlag]
+    figures: list[str]
+    safety_flags: list[str] = Field(default_factory=list)
+    limitations: list[str]
+    run_config: dict[str, object] | None = None
 
 
 class RunCaseSummary(BaseModel):
+    """Compact per-run summary used in aggregate reports."""
+
     run_id: str
     ca_net_shift: int
     civility_mean: float
     tactic_diversity_ca: int
-    model_signature: Optional[str] = None
+    model_signature: str | None = None
 
 
 class AggregateReport(BaseModel):
+    """Cross-run aggregate analysis report."""
+
     runs_analyzed: int
     grouped_by: str
-    distributions: Dict[str, List[float]]
-    best_cases: List[RunCaseSummary]
-    worst_cases: List[RunCaseSummary]
-    figures: List[str]
-    limitations: List[str]
-    groups: Optional[Dict[str, List[str]]] = None
+    distributions: dict[str, list[float]]
+    best_cases: list[RunCaseSummary]
+    worst_cases: list[RunCaseSummary]
+    figures: list[str]
+    limitations: list[str]
+    groups: dict[str, list[str]] | None = None
