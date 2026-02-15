@@ -109,6 +109,7 @@ class OllamaClient:
             "options": {
                 "temperature": temperature,
                 "num_predict": max_tokens,
+                "num_ctx": self.config.num_ctx,
             },
             "stream": False,
         }
@@ -218,6 +219,7 @@ class OllamaClient:
                 max_tokens=effective_tokens,
                 seed=seed,
                 timeout=_OPENAI_READ_TIMEOUT,
+                extra_body={"options": {"num_ctx": self.config.num_ctx}},
             )
             return result
 

@@ -161,6 +161,7 @@ class BaseBatchRunner:
             highlight_opponent_last=self.base_config.highlight_opponent_last,
             max_search_rounds=self.base_config.max_search_rounds,
             thinking_budget=self.base_config.thinking_budget,
+            num_ctx=self.base_config.num_ctx,
         )
 
     # ── Core execution ─────────────────────────────────────────────

@@ -19,6 +19,7 @@ class DebateConfig:
     scientific_temperature: float = 0.2
     max_tokens: int = 600
     thinking_budget: int = 4000  # Extra tokens reserved for thinking models' chain-of-thought
+    num_ctx: int = 8192  # Ollama context window size (num_ctx)
     rounds: int = 3
     word_limit: int = 180
     seed: int | None = None
@@ -113,6 +114,7 @@ class DebateConfig:
             ),
             max_tokens=get_int("debate", "max_tokens", cls.max_tokens),
             thinking_budget=get_int("debate", "thinking_budget", cls.thinking_budget),
+            num_ctx=get_int("debate", "num_ctx", cls.num_ctx),
             rounds=get_int("debate", "rounds", cls.rounds),
             word_limit=get_int("debate", "word_limit", cls.word_limit),
             seed=get_optional_int("debate", "seed"),
