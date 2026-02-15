@@ -18,6 +18,7 @@ from ..core.schemas import (
     ModeratorDecision,
     ModeratorRecap,
     ScientificTurn,
+    SearchPlan,
 )
 from ..export.writer import ExportBundle
 from ..memory.models import (
@@ -85,6 +86,95 @@ def _handle_agent_search(
     else:
         logger.warning("Search failed or returned no results for query: %s", query)
         return None
+
+
+def _run_agent_turn_with_search(
+    *,
+    response_model: type,
+    agent_messages: list[dict[str, str]],
+    agent_type: str,
+    topic: str,
+    model: str,
+    temperature: float,
+    max_tokens: int,
+    seed: int | None,
+    llm,
+    search: SearchProvider,
+):
+    """Two-phase agent turn: plan search → execute → argue with results.
+
+    Phase 1: Ask the LLM for a SearchPlan (should I search? what query?).
+    Phase 2: If search was requested, run it, inject results into the
+             prompt, then generate the full AgentTurn with evidence.
+    """
+    # ── Phase 1: Search planning ────────────────────────────────────────
+    search_plan_messages = list(agent_messages) + [
+        {
+            "role": "user",
+            "content": (
+                "Before composing your argument, decide whether you need to "
+                "search the web for evidence this turn. Return ONLY a JSON "
+                "with should_search (bool), search_query (string or null), "
+                "and search_rationale (string or null)."
+            ),
+        }
+    ]
+
+    plan = llm.call(
+        SearchPlan,
+        search_plan_messages,
+        model=model,
+        temperature=temperature,
+        max_tokens=300,
+        seed=seed,
+        max_retries=LLM_MAX_RETRIES,
+    )
+
+    # ── Execute search if requested ─────────────────────────────────────
+    search_results_text: str | None = None
+    if plan.should_search and plan.search_query:
+        print(f"    [{agent_type}] Searching: {plan.search_query}")
+        response = search.search(plan.search_query, max_results=SEARCH_MAX_RESULTS)
+        if response.success and response.results:
+            search_results_text = search.format_results(response, max_chars=SEARCH_MAX_CHARS)
+            print(f"    [{agent_type}] Found {len(response.results)} results")
+        else:
+            logger.warning("Search returned no results for: %s", plan.search_query)
+
+    # ── Phase 2: Generate full argument ─────────────────────────────────
+    argument_messages = list(agent_messages)
+    if search_results_text:
+        argument_messages.append(
+            {
+                "role": "user",
+                "content": (
+                    f"SEARCH RESULTS (use these as evidence in your argument):\n\n"
+                    f"{search_results_text}"
+                ),
+            }
+        )
+
+    turn = llm.call(
+        response_model,
+        argument_messages,
+        model=model,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        seed=seed,
+        max_retries=LLM_MAX_RETRIES,
+    )
+
+    # Attach the search info to the turn so logging picks it up
+    if plan.should_search and plan.search_query:
+        from ..core.schemas import SearchRequest
+
+        turn.search = SearchRequest(
+            should_search=True,
+            search_query=plan.search_query,
+            search_rationale=plan.search_rationale,
+        )
+
+    return turn
 
 
 SpeakerRole = Literal["proponent", "opponent", "moderator"]
@@ -538,23 +628,21 @@ def run_debate(
             opponent_last_message=sa_last_message,
         )
 
-        ca_turn = llm.call(
-            AgentTurn,
-            ca_messages,
+        ca_turn = _run_agent_turn_with_search(
+            response_model=AgentTurn,
+            agent_messages=ca_messages,
+            agent_type="CA",
+            topic=topic,
             model=config.conspiracy_model,
             temperature=config.conspiracy_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
-            max_retries=LLM_MAX_RETRIES,
+            llm=llm,
+            search=search,
         )
 
         turn_counter += 1
         ca_turn_number = turn_counter
-
-        # Handle search if requested (behind the scenes - not visible to opponent)
-        if ca_turn.search and ca_turn.search.should_search:
-            _handle_agent_search(ca_turn, "CA", topic, search)
-            # Search results are logged but NOT added to conversation history
 
         # Add CA's response to conversation history with tags
         # NOTE: Search queries/results are NOT included - kept private from opponent
@@ -593,23 +681,21 @@ def run_debate(
             opponent_last_message=ca_last_message,
         )
 
-        sa_turn = llm.call(
-            ScientificTurn,
-            sa_messages,
+        sa_turn = _run_agent_turn_with_search(
+            response_model=ScientificTurn,
+            agent_messages=sa_messages,
+            agent_type="SA",
+            topic=topic,
             model=config.scientific_model,
             temperature=config.scientific_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
-            max_retries=LLM_MAX_RETRIES,
+            llm=llm,
+            search=search,
         )
 
         turn_counter += 1
         sa_turn_number = turn_counter
-
-        # Handle search if requested (behind the scenes - not visible to opponent)
-        if sa_turn.search and sa_turn.search.should_search:
-            _handle_agent_search(sa_turn, "SA", topic, search)
-            # Search results are logged but NOT added to conversation history
 
         # Add SA's response to conversation history with tags
         # NOTE: Search queries/results are NOT included - kept private from opponent

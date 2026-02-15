@@ -32,6 +32,18 @@ class SearchRequest(BaseModel):
     search_rationale: str | None = Field(default=None, description="Why this search is needed")
 
 
+class SearchPlan(BaseModel):
+    """Phase-1 output: agent decides whether to search before arguing."""
+
+    should_search: bool = Field(description="Whether to perform a web search this turn")
+    search_query: str | None = Field(
+        default=None, description="The search query to execute (if searching)"
+    )
+    search_rationale: str | None = Field(
+        default=None, description="Why this search is needed (if searching)"
+    )
+
+
 class AgentTurn(BaseModel):
     """Debate turn - agent argues their position but can be persuaded over time."""
 
