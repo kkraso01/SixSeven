@@ -148,7 +148,7 @@ def _run_agent_turn_with_search(
             search_plan_messages,
             model=model,
             temperature=temperature,
-            max_tokens=300,
+            max_tokens=1024,
             seed=seed,
             max_retries=LLM_MAX_RETRIES,
         )

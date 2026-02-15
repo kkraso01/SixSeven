@@ -71,17 +71,18 @@ class BaseBatchRunner:
         self,
         *,
         batch_label: str,
-        output_dir: str = "artifacts",
-        rounds: int = 5,
-        word_limit: int = 180,
+        output_dir: str | None = None,
+        rounds: int | None = None,
+        word_limit: int | None = None,
         base_config: DebateConfig | None = None,
     ):
         self.batch_label = batch_label
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
-        self.rounds = rounds
-        self.word_limit = word_limit
         self.base_config = base_config or DebateConfig.from_ini("config/config.ini")
+        # Default to config.ini values if not explicitly provided
+        self.output_dir = Path(output_dir or self.base_config.output_dir)
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        self.rounds = rounds if rounds is not None else self.base_config.rounds
+        self.word_limit = word_limit if word_limit is not None else self.base_config.word_limit
         self.results: list[ExperimentResult] = []
         # Index of already-completed experiments: (topic_id, config_name) -> run_dir
         self._completed: dict[tuple[str, str], str] = {}
@@ -158,6 +159,8 @@ class BaseBatchRunner:
             max_chars_in_history=self.base_config.max_chars_in_history,
             summarize_if_trimmed=self.base_config.summarize_if_trimmed,
             highlight_opponent_last=self.base_config.highlight_opponent_last,
+            max_search_rounds=self.base_config.max_search_rounds,
+            thinking_budget=self.base_config.thinking_budget,
         )
 
     # ── Core execution ─────────────────────────────────────────────

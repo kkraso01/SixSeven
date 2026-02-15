@@ -21,9 +21,6 @@ def main():
     """Run Ollama-only batch experiments (no API limits)."""
     runner = OllamaBatchRunner(
         batch_label="ollama",
-        output_dir="kalamaras-artifacts",
-        rounds=10,
-        word_limit=300,
     )
 
     # Get models from config.ini

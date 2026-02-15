@@ -18,6 +18,7 @@ class DebateConfig:
     conspiracy_temperature: float = 0.6
     scientific_temperature: float = 0.2
     max_tokens: int = 600
+    thinking_budget: int = 4000  # Extra tokens reserved for thinking models' chain-of-thought
     rounds: int = 3
     word_limit: int = 180
     seed: int | None = None
@@ -111,6 +112,7 @@ class DebateConfig:
                 "models", "scientific_temperature", cls.scientific_temperature
             ),
             max_tokens=get_int("debate", "max_tokens", cls.max_tokens),
+            thinking_budget=get_int("debate", "thinking_budget", cls.thinking_budget),
             rounds=get_int("debate", "rounds", cls.rounds),
             word_limit=get_int("debate", "word_limit", cls.word_limit),
             seed=get_optional_int("debate", "seed"),
