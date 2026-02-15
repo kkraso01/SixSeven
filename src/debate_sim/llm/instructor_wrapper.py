@@ -56,9 +56,14 @@ class StructuredLLM:
                 elif "missing" in error_msg.lower() or "required" in error_msg.lower():
                     guidance = (
                         f"CRITICAL: Your JSON is missing REQUIRED fields. {exc}\n"
-                        "You MUST include ALL of these fields in your JSON response:\n"
-                        "- speaker, round, tactic_used, claim, reasons (array of 2-4 strings), "
-                        "question_to_opponent, confidence (0-100), what_changes_mind, tone\n"
+                        "You MUST return a FLAT JSON object for ONE agent only — "
+                        "do NOT nest under 'CA'/'SA' keys or combine multiple agents.\n"
+                        "You MUST include ALL of these fields at the TOP LEVEL:\n"
+                        '- "speaker" (string: "CA" or "SA"), "round" (int), '
+                        '"tactic_used" (string), "claim" (string), '
+                        '"reasons" (array of 2-4 strings), '
+                        '"question_to_opponent" (string), "confidence" (int 0-100), '
+                        '"what_changes_mind" (string, NOT null), "tone" (string)\n'
                         "If you are the Scientific Agent, you ALSO need: clarify, evaluate_gaps, "
                         "alternative_hypotheses, discriminating_tests\n"
                         "Do NOT omit any field. Return complete valid JSON."

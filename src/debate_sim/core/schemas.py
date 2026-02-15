@@ -68,6 +68,21 @@ class AgentTurn(BaseModel):
     def _fix_common_llm_mistakes(cls, data):
         """Fix common LLM JSON key naming errors before validation."""
         if isinstance(data, dict):
+            # ── Handle nested format: {"CA": {...}, "SA": {...}, ...} ──
+            # Some models return a combined object for all agents instead of
+            # a flat AgentTurn for the requested speaker.
+            top_keys = set(data.keys())
+            agent_keys = top_keys & {"CA", "SA"}
+            if agent_keys and "speaker" not in data and "claim" not in data:
+                # Pick the first agent sub-dict we find (CA preferred as it
+                # is generated first in the conversation).
+                for key in ("CA", "SA"):
+                    if key in data and isinstance(data[key], dict):
+                        sub = dict(data[key])
+                        sub.setdefault("speaker", key)
+                        data = sub
+                        break
+
             _rename_keys(
                 data,
                 {
@@ -75,9 +90,18 @@ class AgentTurn(BaseModel):
                     "what changes mind": "what_changes_mind",
                     "tactic used": "tactic_used",
                     "token estimate": "token_estimate",
+                    # Shortened key names some models prefer
+                    "question": "question_to_opponent",
+                    "tactic": "tactic_used",
+                    "arguments": "reasons",
                 },
             )
             _fix_search_field(data)
+
+            # Coerce what_changes_mind: null/None -> fallback string
+            if data.get("what_changes_mind") is None and "what_changes_mind" in data:
+                data["what_changes_mind"] = "No specific condition stated"
+
             # Coerce reasons: string -> list, single-item with semicolons -> split
             if "reasons" in data:
                 r = data["reasons"]
@@ -105,6 +129,18 @@ class ScientificTurn(AgentTurn):
     def _fix_scientific_keys(cls, data):
         """Fix common LLM key naming errors for ScientificTurn fields."""
         if isinstance(data, dict):
+            # ── Handle nested format: {"CA": {...}, "SA": {...}, ...} ──
+            top_keys = set(data.keys())
+            agent_keys = top_keys & {"CA", "SA"}
+            if agent_keys and "speaker" not in data and "claim" not in data:
+                # For ScientificTurn, prefer "SA" sub-dict
+                for key in ("SA", "CA"):
+                    if key in data and isinstance(data[key], dict):
+                        sub = dict(data[key])
+                        sub.setdefault("speaker", key)
+                        data = sub
+                        break
+
             _rename_keys(
                 data,
                 {
@@ -115,9 +151,18 @@ class ScientificTurn(AgentTurn):
                     "what changes mind": "what_changes_mind",
                     "tactic used": "tactic_used",
                     "token estimate": "token_estimate",
+                    # Shortened key names some models prefer
+                    "question": "question_to_opponent",
+                    "tactic": "tactic_used",
+                    "arguments": "reasons",
                 },
             )
             _fix_search_field(data)
+
+            # Coerce what_changes_mind: null/None -> fallback string
+            if data.get("what_changes_mind") is None and "what_changes_mind" in data:
+                data["what_changes_mind"] = "No specific condition stated"
+
             # Strip stray keys (e.g. "title")
             allowed = set(cls.model_fields.keys())
             data = {k: v for k, v in data.items() if k in allowed}
