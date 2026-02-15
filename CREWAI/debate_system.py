@@ -22,6 +22,7 @@ Usage:
 from __future__ import annotations
 
 import os
+import sys
 import json
 import uuid
 import time
@@ -29,6 +30,11 @@ import re
 import configparser
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
+
+# Force unbuffered stdout/stderr so output appears immediately in nohup.out
+if not sys.stdout.line_buffering:
+    sys.stdout.reconfigure(line_buffering=True)
+    sys.stderr.reconfigure(line_buffering=True)
 
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai.tools import BaseTool
@@ -425,11 +431,13 @@ def ensure_dir(path: str):
 
 
 def run_single_debate(
-    cfg: DebateConfig, topic: DebateTopic, run_index: int = 0
+    cfg: DebateConfig, topic: DebateTopic, run_index: int = 0,
+    swap_label: str = "",
 ) -> Dict[str, Any]:
     """
     Run one full debate for a given topic.
     Returns metadata dict with debate_id, topic_id, output paths.
+    swap_label: optional tag (e.g. '_swapped') appended to filenames.
     """
     ensure_dir(cfg.output_dir)
 
@@ -703,17 +711,21 @@ TRANSCRIPT (visible):
             reply_to_turn,
         )
 
-        print(f"  {next_speaker.upper()} stance={stance} confidence={conf}")
+        # Print actual response to console
+        print(f"  --- {next_speaker.upper()} (stance={stance} confidence={conf}) ---")
+        for line in deb_text.split("\n"):
+            print(f"  | {line}")
+        print(f"  {'- '*30}")
 
     # ---- Save artifacts ----
     subdir = os.path.join(cfg.output_dir, topic.id)
     ensure_dir(subdir)
 
     json_path = os.path.join(
-        subdir, f"{topic.id}__run{run_index}__{debate_id}.json"
+        subdir, f"{topic.id}__run{run_index}{swap_label}__{debate_id}.json"
     )
     jsonl_path = os.path.join(
-        subdir, f"{topic.id}__run{run_index}__{debate_id}.jsonl"
+        subdir, f"{topic.id}__run{run_index}{swap_label}__{debate_id}.jsonl"
     )
 
     with open(json_path, "w", encoding="utf-8") as f:
@@ -732,6 +744,9 @@ TRANSCRIPT (visible):
         "category": topic.category,
         "motion": topic.motion,
         "run_index": run_index,
+        "swapped": bool(swap_label),
+        "proponent_model": cfg.conspiracy_model,
+        "opponent_model": cfg.scientific_model,
         "json_path": json_path,
         "jsonl_path": jsonl_path,
         "total_turns": turn_counter,
@@ -747,14 +762,30 @@ TRANSCRIPT (visible):
 # =========================================================
 
 
+def _swap_config(cfg: DebateConfig) -> DebateConfig:
+    """Return a copy of cfg with conspiracy/scientific models and temperatures swapped."""
+    from dataclasses import replace
+    return replace(
+        cfg,
+        conspiracy_model=cfg.scientific_model,
+        scientific_model=cfg.conspiracy_model,
+        conspiracy_temperature=cfg.scientific_temperature,
+        scientific_temperature=cfg.conspiracy_temperature,
+    )
+
+
 def run_experiments(
     config_path: str,
     topic_ids: Optional[List[str]] = None,
     category: Optional[str] = None,
     repeats: int = 1,
+    swap: bool = False,
 ):
     """
     Run debates across multiple topics with optional filtering and repetitions.
+    If swap=True, each topic runs TWICE: once with normal config, once with
+    conspiracy/scientific models & temperatures swapped. Swapped runs are saved
+    with a '_swapped' label in filenames.
     Saves a manifest file summarizing all runs.
     """
     cfg = load_config(config_path)
@@ -771,10 +802,20 @@ def run_experiments(
     if not topics:
         raise ValueError("No topics matched your selection.")
 
+    configs_to_run: List[Tuple[DebateConfig, str]] = [(cfg, "")]
+    if swap:
+        configs_to_run.append((_swap_config(cfg), "_swapped"))
+
+    total_runs = len(topics) * repeats * len(configs_to_run)
+
     print(f"\n{'#'*60}")
     print(f"  DEBATE EXPERIMENT")
-    print(f"  Topics: {len(topics)} | Repeats: {repeats} | Total runs: {len(topics) * repeats}")
-    print(f"  Models: mod={cfg.moderator_model} pro={cfg.conspiracy_model} opp={cfg.scientific_model}")
+    print(f"  Topics: {len(topics)} | Repeats: {repeats} | Swap: {swap} | Total runs: {total_runs}")
+    print(f"  Normal : pro={cfg.conspiracy_model}(t={cfg.conspiracy_temperature}) opp={cfg.scientific_model}(t={cfg.scientific_temperature})")
+    if swap:
+        sc = _swap_config(cfg)
+        print(f"  Swapped: pro={sc.conspiracy_model}(t={sc.conspiracy_temperature}) opp={sc.scientific_model}(t={sc.scientific_temperature})")
+    print(f"  Moderator: {cfg.moderator_model}")
     print(f"  num_ctx={cfg.num_ctx} (capped at {MAX_NUM_CTX}) | rounds={cfg.rounds} | word_limit={cfg.word_limit}")
     print(f"  Output: {cfg.output_dir}")
     print(f"{'#'*60}\n")
@@ -782,25 +823,29 @@ def run_experiments(
     manifest: List[Dict[str, Any]] = []
 
     for topic in topics:
-        for r in range(repeats):
-            print(f"\n{'*'*60}")
-            print(f"  TOPIC: {topic.id} ({topic.category}) — run {r + 1}/{repeats}")
-            print(f"  MOTION: {topic.motion}")
-            print(f"{'*'*60}")
+        for run_cfg, swap_label in configs_to_run:
+            for r in range(repeats):
+                variant = "SWAPPED" if swap_label else "NORMAL"
+                print(f"\n{'*'*60}")
+                print(f"  TOPIC: {topic.id} ({topic.category}) — run {r + 1}/{repeats} [{variant}]")
+                print(f"  MOTION: {topic.motion}")
+                print(f"  Models: pro={run_cfg.conspiracy_model}(t={run_cfg.conspiracy_temperature})  opp={run_cfg.scientific_model}(t={run_cfg.scientific_temperature})")
+                print(f"{'*'*60}")
 
-            try:
-                result = run_single_debate(cfg, topic, run_index=r)
-                manifest.append(result)
-                print(f"\n  [OK] {topic.id} run={r} debate_id={result['debate_id']}")
-            except Exception as e:
-                print(f"\n  [ERROR] {topic.id} run={r}: {e}")
-                manifest.append(
-                    {
-                        "topic_id": topic.id,
-                        "run_index": r,
-                        "error": str(e),
-                    }
-                )
+                try:
+                    result = run_single_debate(run_cfg, topic, run_index=r, swap_label=swap_label)
+                    manifest.append(result)
+                    print(f"\n  [OK] {topic.id} run={r} {variant} debate_id={result['debate_id']}")
+                except Exception as e:
+                    print(f"\n  [ERROR] {topic.id} run={r} {variant}: {e}")
+                    manifest.append(
+                        {
+                            "topic_id": topic.id,
+                            "run_index": r,
+                            "swapped": bool(swap_label),
+                            "error": str(e),
+                        }
+                    )
 
     # Save manifest
     manifest_path = os.path.join(
@@ -849,9 +894,15 @@ if __name__ == "__main__":
         default=1,
         help="Number of times to repeat each topic (default: 1)",
     )
+    parser.add_argument(
+        "--swap",
+        action="store_true",
+        default=False,
+        help="Run each topic twice: once normal, once with debater models/temps swapped.",
+    )
     args = parser.parse_args()
 
     cat = args.category.strip() or None
     tids = args.topic_id if args.topic_id else None
 
-    run_experiments(args.config, topic_ids=tids, category=cat, repeats=args.repeats)
+    run_experiments(args.config, topic_ids=tids, category=cat, repeats=args.repeats, swap=args.swap)
