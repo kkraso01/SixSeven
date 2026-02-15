@@ -362,12 +362,27 @@ def _moderator_decision_messages(
     ca_delta = recent_recap.confidence_updates.get("CA_delta", 0)
     sa_delta = recent_recap.confidence_updates.get("SA_delta", 0)
 
+    # Determine if persuasion occurred (confidence DROPPING = persuaded)
+    ca_persuaded = ca_total_shift <= -20
+    sa_persuaded = sa_total_shift <= -20
+    persuasion_note = ""
+    if ca_persuaded:
+        persuasion_note = f"\n** CA confidence DROPPED {abs(ca_total_shift)} points — CA is being PERSUADED by SA. **"
+    elif sa_persuaded:
+        persuasion_note = f"\n** SA confidence DROPPED {abs(sa_total_shift)} points — SA is being PERSUADED by CA. **"
+    else:
+        persuasion_note = "\nNo persuasion detected yet — neither agent's confidence has dropped 20+ points."
+
     decision_context = (
         f"PERSUASION TRACKING STATUS:\n"
-        f"- Current round: {current_round}/{max_rounds}\n\n"
-        f"CONFIDENCE LEVELS:\n"
-        f"- CA: initial={initial_ca_confidence}, current={current_ca_confidence}, total shift={ca_total_shift:+d}\n"
-        f"- SA: initial={initial_sa_confidence}, current={current_sa_confidence}, total shift={sa_total_shift:+d}\n\n"
+        f"- Current round: {current_round}/{max_rounds}\n"
+        f"- Minimum rounds before early end: 3\n\n"
+        f"CONFIDENCE LEVELS (reminder: DROPPING = persuaded, RISING = reinforcing own stance):\n"
+        f"- CA (argues FOR motion): initial={initial_ca_confidence}, current={current_ca_confidence}, total shift={ca_total_shift:+d}"
+        f"{' ← PERSUADED' if ca_persuaded else ' (not persuaded)'}\n"
+        f"- SA (argues AGAINST motion): initial={initial_sa_confidence}, current={current_sa_confidence}, total shift={sa_total_shift:+d}"
+        f"{' ← PERSUADED' if sa_persuaded else ' (not persuaded)'}\n"
+        f"{persuasion_note}\n\n"
         f"THIS ROUND'S DELTAS:\n"
         f"- CA delta: {ca_delta:+d}\n"
         f"- SA delta: {sa_delta:+d}\n\n"
@@ -375,7 +390,8 @@ def _moderator_decision_messages(
         f"- Civility: {recent_recap.civility_score}/5\n"
         f"- Epistemic quality: {recent_recap.epistemic_quality_score}/5\n"
         f"- Bridge building: {recent_recap.bridge_building_score}/5\n\n"
-        f"KEY QUESTION: Has either agent shifted 20+ points from initial position?\n"
+        f"KEY QUESTION: Has either agent's confidence DROPPED 20+ points from initial? (rising confidence is NOT persuasion)\n"
+        f"Have we completed at least 3 rounds? Current: round {current_round}.\n"
         f"Should the debate continue to round {current_round + 1}?"
     )
 
@@ -867,6 +883,19 @@ def run_debate(
         )
         if decision.detected_mind_change:
             logger.info("Mind change detected: %s", decision.detected_mind_change)
+
+        # Hard minimum: never end before round 3 regardless of moderator decision
+        if not decision.should_continue and round_number < 3:
+            logger.info(
+                "Overriding moderator early-end decision: minimum 3 rounds required (currently round %d)",
+                round_number,
+            )
+            decision = ModeratorDecision(
+                should_continue=True,
+                reason=f"Minimum 3 rounds required. Currently on round {round_number}.",
+                detected_mind_change=None,
+                confidence_threshold_met=False,
+            )
 
         # Check if debate should end
         if not decision.should_continue:
