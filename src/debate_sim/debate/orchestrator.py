@@ -100,56 +100,84 @@ def _run_agent_turn_with_search(
     seed: int | None,
     llm,
     search: SearchProvider,
+    max_search_rounds: int = 3,
 ):
-    """Two-phase agent turn: plan search → execute → argue with results.
+    """Agentic search loop: the agent can research up to *max_search_rounds*
+    times before composing its argument.
 
-    Phase 1: Ask the LLM for a SearchPlan (should I search? what query?).
-    Phase 2: If search was requested, run it, inject results into the
-             prompt, then generate the full AgentTurn with evidence.
+    Each iteration:
+      1. Ask the LLM for a ``SearchPlan`` — should I search (more)?
+      2. If yes, execute the search and accumulate results.
+      3. If no (or budget exhausted), break and generate the full argument.
+
+    All accumulated search results are injected into the prompt once before
+    the final argument generation.
     """
-    # ── Phase 1: Search planning ────────────────────────────────────────
-    search_plan_messages = list(agent_messages) + [
-        {
-            "role": "user",
-            "content": (
-                "Before composing your argument, decide whether you need to "
-                "search the web for evidence this turn. Return ONLY a JSON "
-                "with should_search (bool), search_query (string or null), "
-                "and search_rationale (string or null)."
-            ),
-        }
-    ]
+    accumulated_results: list[str] = []
+    last_query: str | None = None
+    last_rationale: str | None = None
 
-    plan = llm.call(
-        SearchPlan,
-        search_plan_messages,
-        model=model,
-        temperature=temperature,
-        max_tokens=300,
-        seed=seed,
-        max_retries=LLM_MAX_RETRIES,
-    )
+    for search_round in range(1, max_search_rounds + 1):
+        # Build the planning prompt with any results gathered so far
+        prior_context = ""
+        if accumulated_results:
+            prior_context = (
+                "\n\nRESEARCH GATHERED SO FAR:\n"
+                + "\n---\n".join(accumulated_results)
+                + "\n\nYou may search again with a DIFFERENT query if you "
+                "need additional evidence, or set should_search=false to "
+                "proceed to your argument."
+            )
 
-    # ── Execute search if requested ─────────────────────────────────────
-    search_results_text: str | None = None
-    if plan.should_search and plan.search_query:
-        print(f"    [{agent_type}] Searching: {plan.search_query}")
+        search_plan_messages = list(agent_messages) + [
+            {
+                "role": "user",
+                "content": (
+                    f"Research round {search_round}/{max_search_rounds}. "
+                    "Before composing your argument, decide whether you need to "
+                    "search the web for evidence this turn. Return ONLY a JSON "
+                    "with should_search (bool), search_query (string or null), "
+                    "and search_rationale (string or null)."
+                    + prior_context
+                ),
+            }
+        ]
+
+        plan = llm.call(
+            SearchPlan,
+            search_plan_messages,
+            model=model,
+            temperature=temperature,
+            max_tokens=300,
+            seed=seed,
+            max_retries=LLM_MAX_RETRIES,
+        )
+
+        if not plan.should_search or not plan.search_query:
+            print(f"    [{agent_type}] No more research needed (round {search_round}/{max_search_rounds})")
+            break
+
+        print(f"    [{agent_type}] Research {search_round}/{max_search_rounds}: {plan.search_query}")
+        last_query = plan.search_query
+        last_rationale = plan.search_rationale
+
         response = search.search(plan.search_query, max_results=SEARCH_MAX_RESULTS)
         if response.success and response.results:
-            search_results_text = search.format_results(response, max_chars=SEARCH_MAX_CHARS)
+            text = search.format_results(response, max_chars=SEARCH_MAX_CHARS)
+            accumulated_results.append(f"[Query: {plan.search_query}]\n{text}")
             print(f"    [{agent_type}] Found {len(response.results)} results")
         else:
             logger.warning("Search returned no results for: %s", plan.search_query)
 
-    # ── Phase 2: Generate full argument ─────────────────────────────────
+    # ── Generate full argument with ALL accumulated evidence ─────────────
     argument_messages = list(agent_messages)
-    if search_results_text:
+    if accumulated_results:
         argument_messages.append(
             {
                 "role": "user",
                 "content": (
-                    f"SEARCH RESULTS (use these as evidence in your argument):\n\n"
-                    f"{search_results_text}"
+                    "SEARCH RESULTS (use these as evidence in your argument):\n\n"
+                    + "\n---\n".join(accumulated_results)
                 ),
             }
         )
@@ -165,13 +193,13 @@ def _run_agent_turn_with_search(
     )
 
     # Attach the search info to the turn so logging picks it up
-    if plan.should_search and plan.search_query:
+    if accumulated_results and last_query:
         from ..core.schemas import SearchRequest
 
         turn.search = SearchRequest(
             should_search=True,
-            search_query=plan.search_query,
-            search_rationale=plan.search_rationale,
+            search_query=last_query,
+            search_rationale=last_rationale,
         )
 
     return turn
@@ -639,6 +667,7 @@ def run_debate(
             seed=config.seed,
             llm=llm,
             search=search,
+            max_search_rounds=config.max_search_rounds,
         )
 
         turn_counter += 1
@@ -692,6 +721,7 @@ def run_debate(
             seed=config.seed,
             llm=llm,
             search=search,
+            max_search_rounds=config.max_search_rounds,
         )
 
         turn_counter += 1

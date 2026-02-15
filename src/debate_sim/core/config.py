@@ -21,6 +21,7 @@ class DebateConfig:
     rounds: int = 3
     word_limit: int = 180
     seed: int | None = None
+    max_search_rounds: int = 3
     output_dir: str = "artifacts"
     run_analysis: bool = True
     analysis_shift_threshold: int = 5
@@ -113,6 +114,7 @@ class DebateConfig:
             rounds=get_int("debate", "rounds", cls.rounds),
             word_limit=get_int("debate", "word_limit", cls.word_limit),
             seed=get_optional_int("debate", "seed"),
+            max_search_rounds=get_int("debate", "max_search_rounds", cls.max_search_rounds),
             output_dir=get_str("output", "output_dir", cls.output_dir),
             run_analysis=get_bool("analysis", "run_analysis", cls.run_analysis),
             analysis_shift_threshold=get_int(

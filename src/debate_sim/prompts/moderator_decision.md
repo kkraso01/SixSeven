@@ -27,6 +27,7 @@ END the debate if:
 3. The debate has become repetitive with no new substantive arguments for 2+ rounds
 4. Maximum rounds ({max_rounds}) has been reached
 5. Either agent's confidence crossed a critical threshold (e.g., CA started at 80, now at 40 = major shift)
+6. Both agents have drifted from the motion's specific claim to meta-epistemology or adjacent topics for 2+ consecutive rounds
 
 CONTINUE the debate if:
 - Both agents maintain meaningfully distinct positions (confidence gap meaningful)
@@ -34,7 +35,7 @@ CONTINUE the debate if:
 - Productive engagement is occurring (agents addressing each other's points)
 - Neither agent has fundamentally shifted their stance
 - Rounds remaining allow for further development
-- The debate quality remains high (not devolving into repetition or hostility)
+- The debate quality remains high (not devolving into repetition, scope drift, or meta-loops)
 
 --------------------
 DECISION CRITERIA
@@ -52,10 +53,12 @@ B. **Quality of recent rounds**:
 C. **Engagement quality**:
    - Are agents addressing each other's specific claims?
    - Or talking past each other?
+   - Are they arguing about mechanisms and evidence, or stuck in meta-epistemology?
 
 D. **Debate trajectory**:
    - Is there productive momentum?
    - Or has the debate stalled?
+   - Is the disagreement narrowing toward a crux, or circling the same themes?
 
 E. **Rounds remaining**:
    - Is there time for meaningful development?
