@@ -352,7 +352,9 @@ def make_llm(cfg: DebateConfig, model: str, temperature: float) -> LLM:
         temperature=temperature,
         max_tokens=cfg.max_tokens,
         seed=cfg.seed,
-        num_ctx=cfg.num_ctx,  # capped at 16000
+        # num_ctx is Ollama-specific; pass via extra_body so it doesn't
+        # become a top-level kwarg to Completions.create()
+        extra_body={"num_ctx": cfg.num_ctx},
     )
 
 
