@@ -23,6 +23,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai.tools import BaseTool
+from pydantic import PrivateAttr
 
 from ddgs import DDGS
 
@@ -172,9 +173,9 @@ class DDGSearchTool(BaseTool):
         "Input should be a plain-text query. Returns top results with title, url, snippet."
     )
 
-    # Private attrs stored outside Pydantic model fields
-    _logger: Any = None
-    _max_results: int = 5
+    # Private attrs using Pydantic's PrivateAttr for proper initialization
+    _logger: Any = PrivateAttr()
+    _max_results: int = PrivateAttr(default=5)
 
     def __init__(self, logger: TurnToolLogger, max_results: int = 5, **kwargs):
         super().__init__(**kwargs)
