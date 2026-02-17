@@ -68,6 +68,26 @@ class PersuasionFlag(BaseModel):
     why_flagged: str
 
 
+class LexiconDimensionSummary(BaseModel):
+    """Counts and normalized rates for one lexicon dimension."""
+
+    counts: dict[str, int]
+    rate_per_1000: dict[str, float]
+    overall_count: int
+    overall_rate_per_1000: float
+
+
+class LanguageUseSummary(BaseModel):
+    """Language feature summary aligned with project NLP objectives."""
+
+    token_count: dict[str, int]
+    uncertainty: LexiconDimensionSummary
+    strong_modality: LexiconDimensionSummary
+    weak_modality: LexiconDimensionSummary
+    moral_framing: dict[str, LexiconDimensionSummary]
+    emotion: dict[str, LexiconDimensionSummary]
+
+
 class AnalysisReport(BaseModel):
     """Complete single-run analysis report."""
 
@@ -80,6 +100,7 @@ class AnalysisReport(BaseModel):
     quality_summary: QualitySummary
     redundancy_summary: RedundancySummary
     persuasion_moments: list[PersuasionFlag]
+    language_use: LanguageUseSummary
     figures: list[str]
     safety_flags: list[str] = Field(default_factory=list)
     limitations: list[str]

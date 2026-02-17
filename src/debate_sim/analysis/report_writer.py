@@ -130,6 +130,44 @@ def _render_markdown(report: AnalysisReport) -> str:
             )
             lines.append(f"| {idx + 1} | {civility} | {epistemic} | {bridge} |")
 
+    lines.extend(["", "## Language Use (NLP Signals)"])
+    lines.append(
+        f"- Token count (CA/SA): {report.language_use.token_count.get('CA', 0)} / "
+        f"{report.language_use.token_count.get('SA', 0)}"
+    )
+    lines.extend(
+        [
+            "",
+            "### Core Dimensions",
+            "| Dimension | CA Count | SA Count | Overall Rate / 1000 tokens |",
+            "| --- | --- | --- | --- |",
+        ]
+    )
+
+    def _dimension_row(label: str, dimension) -> None:
+        lines.append(
+            f"| {label} | {dimension.counts.get('CA', 0)} | {dimension.counts.get('SA', 0)} | "
+            f"{dimension.overall_rate_per_1000:.2f} |"
+        )
+
+    _dimension_row("uncertainty", report.language_use.uncertainty)
+    _dimension_row("strong_modality", report.language_use.strong_modality)
+    _dimension_row("weak_modality", report.language_use.weak_modality)
+
+    lines.extend(["", "### Moral Framing"])
+    for category, summary in report.language_use.moral_framing.items():
+        lines.append(
+            f"- {category}: CA {summary.counts.get('CA', 0)}, SA {summary.counts.get('SA', 0)}, "
+            f"rate {summary.overall_rate_per_1000:.2f}/1000"
+        )
+
+    lines.extend(["", "### Emotion"])
+    for category, summary in report.language_use.emotion.items():
+        lines.append(
+            f"- {category}: CA {summary.counts.get('CA', 0)}, SA {summary.counts.get('SA', 0)}, "
+            f"rate {summary.overall_rate_per_1000:.2f}/1000"
+        )
+
     lines.extend(["", "## Redundancy / Repetition"])
     lines.append(f"- Method: {report.redundancy_summary.method}")
     lines.append(f"- Overall redundancy: {report.redundancy_summary.overall:.2f}")

@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any, cast
 
 from .features import load_run_inputs
+from .language_analysis import language_use_summary_from_logs
 from .metrics import (
     persuasion_moments,
     quality_summary_from_scores,
@@ -49,6 +50,7 @@ def analyze_run(run_dir: str) -> AnalysisReport:
     redundancy = redundancy_summary(inputs.memory, settings.similarity_method)
     persuasion = persuasion_moments(inputs.memory, inputs.transcript, settings.shift_threshold)
     safety = safety_flags(inputs.memory)
+    language_use = language_use_summary_from_logs(inputs.memory.debate_log)
 
     figures_dir = path / "figures"
     figure_paths = []
@@ -71,6 +73,7 @@ def analyze_run(run_dir: str) -> AnalysisReport:
         quality_summary=quality_summary,
         redundancy_summary=redundancy,
         persuasion_moments=persuasion,
+        language_use=language_use,
         safety_flags=safety,
         limitations=_default_limitations(single_run=True),
         run_config=inputs.run_config,
@@ -119,6 +122,7 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
     ]
     bridge_means = [report.quality_summary.aggregates["bridge_building"].mean for report in reports]
     tactic_diversity = [float(report.tactic_summary.diversity.get("CA", 0)) for report in reports]
+    uncertainty_rates = [report.language_use.uncertainty.overall_rate_per_1000 for report in reports]
 
     summaries = [
         RunCaseSummary(
@@ -151,6 +155,7 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
             "epistemic_mean": epistemic_means,
             "bridge_mean": bridge_means,
             "tactic_diversity_ca": tactic_diversity,
+            "uncertainty_rate_per_1000": uncertainty_rates,
         },
         best_cases=best_cases,
         worst_cases=worst_cases,
