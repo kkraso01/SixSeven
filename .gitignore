@@ -163,6 +163,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+crewenv/
+senv/
 
 # Spyder project settings
 .spyderproject
