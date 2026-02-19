@@ -1,0 +1,246 @@
+{
+  "topic": "The assassination of President John F. Kennedy",
+  "motion": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 47,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete, verifiable evidence that definitively proves Lee Harvey Oswald acted alone and disproves the existence of any conspiracy involving elements of the US government."
+    },
+    "SA": {
+      "confidence": 64,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A concrete example of suppressed or ignored contradictory evidence that implicates a conspiracy involving elements of the US government in President Kennedy's assassination."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The assassination of President John F. Kennedy was part of a larger conspiracy involving elements of the US government.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The assassination of President John F. Kennedy was not a conspiracy involving elements of the US government but rather the act of a lone gunman, Lee Harvey Oswald.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:archives.gov JFK Warren Commission Report",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the Warren Commission Report as a central point of contention., Both agents state a confidence level of 55 at the start of the debate., Both agents agree on the importance of evidence in determining the truth of the assassination.\nDisagreements: CA believes the Warren Commission Report is flawed and indicative of a cover-up, while SA defends its findings as based on extensive evidence., CA points to potential motives within the CIA, while SA attributes claims of conspiracy to anecdotal evidence and misinterpretations., CA seeks evidence disproving conspiracy theories, while SA requests specific evidence *for* a conspiracy.\nDetected moves: Appeal to Authority (CA, referencing CIA operations as suggestive of motive without direct link to assassination), Burden of Proof Shift (CA, implying the Warren Commission must *disprove* conspiracy theories), Selective Evidence (Both, each highlighting evidence supporting their position while downplaying opposing evidence)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you address the specific criticisms leveled against the Warren Commission Report regarding witness testimony and evidence handling?, SA: Beyond the Warren Commission Report, what alternative lines of inquiry would you pursue to investigate potential government involvement?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The Warren Commission Report's conclusions are undermined by its own suppression of contradictory evidence and dismissal of alternative viewpoints.",
+      "stance": "pro",
+      "confidence": 53,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The assassination of President John F. Kennedy was not a conspiracy involving elements of the US government but rather the act of a lone gunman, Lee Harvey Oswald.",
+      "stance": "con",
+      "confidence": 56,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that changing their minds requires concrete, verifiable evidence., Both acknowledge the existence of alternative viewpoints regarding the assassination., Both refer to the Warren Commission Report as a central point of contention.\nDisagreements: CA believes the Warren Commission suppressed evidence, while SA defends its thoroughness., CA frames the assassination as potentially involving government elements, while SA maintains Oswald acted alone., They disagree on the plausibility of the 'magic bullet theory' and the interpretation of witness testimonies.\nDetected moves: appeal to authority (both referencing the Warren Commission), selective evidence (both highlight evidence supporting their claims), burden of proof shift (CA asks SA to explain Commission disregard, rather than providing evidence of suppression)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide specific examples of evidence you believe was suppressed by the Warren Commission, and detail how it implicates US government elements?, SA, how do you address the criticisms surrounding the 'magic bullet theory' and the inconsistencies in witness testimonies?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The Warren Commission Report's conclusions are undermined by its own suppression of contradictory evidence and dismissal of alternative viewpoints.",
+      "stance": "pro",
+      "confidence": 53,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The assassination of President John F. Kennedy was not a conspiracy involving elements of the US government but rather the act of a lone gunman, Lee Harvey Oswald.",
+      "stance": "con",
+      "confidence": 57,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents agree the Warren Commission Report is central to the debate., Both agents acknowledge the existence of alternative viewpoints and conspiracy theories., Both agents state that concrete, verifiable evidence is needed to change their minds.\nDisagreements: CA believes the Warren Commission suppressed evidence, while SA defends its conclusions., CA frames the assassination as potentially involving government elements, while SA insists on Oswald acting alone., CA focuses on perceived flaws in the Warren Commission, while SA emphasizes the lack of evidence for a conspiracy.\nDetected moves: burden of proof shift (SA), appeal to authority (SA - referencing the Warren Commission)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide specific examples of the 'contradictory evidence' you believe was suppressed, and detail how it implicates US government elements?, SA, how do you address the criticisms of the 'magic bullet theory' and other aspects of the Warren Commission's evidence that CA has raised?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The Warren Commission's conclusions cannot be trusted due to its suppression of contradictory evidence and dismissal of alternative viewpoints.",
+      "stance": "pro",
+      "confidence": 51,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "The assassination of President John F. Kennedy was not a conspiracy involving elements of the US government but rather the act of a lone gunman, Lee Harvey Oswald.",
+      "stance": "con",
+      "confidence": 58,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents agree that concrete, verifiable evidence is needed to shift their positions., Both acknowledge the existence of alternative viewpoints and conspiracy theories surrounding the assassination., Both agents recognize the Warren Commission Report as a central point of contention.\nDisagreements: CA believes the Warren Commission suppressed evidence and dismissed alternative viewpoints, while SA defends the report's conclusions and methodology., CA frames the assassination as potentially involving a US government conspiracy, while SA maintains Oswald acted alone., They disagree on the plausibility of the 'magic bullet theory' and the strength of evidence supporting a conspiracy.\nDetected moves: appeal to authority (SA citing 'majority of experts'), burden of proof shift (SA asking CA for specific evidence of suppression)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide specific examples of witnesses whose testimony was dismissed and explain how their accounts support a conspiracy?, SA, how do you address the criticisms leveled against the 'magic bullet theory' and the potential for bias within the Warren Commission?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The Warren Commission's conclusions are not to be trusted due to its suppression of contradictory evidence and dismissal of alternative viewpoints.",
+      "stance": "pro",
+      "confidence": 49,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "The Warren Commission's conclusions are reliable as they were based on the evidence and testimonies available at the time. The dismissal of alternative viewpoints does not equate to suppression of contradictory evidence.",
+      "stance": "con",
+      "confidence": 61,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_81d564098674",
+      "claim": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents acknowledge the Warren Commission conducted a thorough investigation, though disagree on its impartiality., Both acknowledge the 'magic bullet theory' is controversial., Both agree that evidence is key to resolving the debate.\nDisagreements: CA believes the Warren Commission actively suppressed evidence of a conspiracy, while SA argues dismissal of witnesses doesn't equal suppression., CA frames the Commission as untrustworthy, while SA defends its reliability based on the information available at the time., They disagree on the strength of evidence supporting a conspiracy vs. Oswald acting alone.\nDetected moves: appeal to authority (both referencing the Warren Commission), selective evidence (CA focuses on dismissed witnesses, SA on the overall investigation)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide the specific examples of suppressed evidence you mentioned, and detail how it implicates US government elements?, SA, how do you address the persistent criticisms of the 'magic bullet theory' and the potential for bias within the Warren Commission?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 3
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

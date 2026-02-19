@@ -1,0 +1,13 @@
+{
+  "topic_id": "5g_health_risks",
+  "topic_category": "technology",
+  "topic_description": "Debate about 5G health and safety concerns",
+  "model_config": "gemma-mod-ca_dolphin-sa",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T22:34:01.286794"
+}

@@ -1,0 +1,44 @@
+{
+  "topic": "Climate Change",
+  "motion": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      80
+    ]
+  },
+  "tactic_counts": {
+    "evidence-based reasoning": 5,
+    "appeal to authority": 2,
+    "rhetorical question": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Proponent",
+      "excerpt": "The IPCC's revisions to historical temperature data demonstrate a clear bias towards exaggerating warming trends.",
+      "why_it_mattered": "This statement introduced a key piece of evidence supporting the claim of data manipulation, shifting the conversation towards questioning the reliability of climate data."
+    },
+    {
+      "round": 4,
+      "speaker": "Opponent",
+      "excerpt": "Despite repeated questioning, the proponent has failed to provide concrete evidence of systematic data manipulation linked to specific policy implementations.",
+      "why_it_mattered": "This effectively challenged the proponent's central claim, highlighting the lack of verifiable evidence and undermining their argument."
+    }
+  ],
+  "outcome_summary": "The opponent successfully cast doubt on the proponent's claims, leading to a shift in audience confidence towards the opposing stance. While the proponent maintained their belief, they failed to persuade the audience.",
+  "limitations": [
+    "Limited data on audience demographics.",
+    "Subjectivity in assessing persuasion moments.",
+    "Potential for bias in tactic categorization."
+  ]
+}

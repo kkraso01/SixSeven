@@ -1,0 +1,246 @@
+{
+  "topic": "The Pearl Harbor attack and US entry into WWII",
+  "motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 39,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "If it were proven that the US government had taken adequate defensive measures despite knowing about the potential attack, my position would weaken."
+    },
+    "SA": {
+      "confidence": 57,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Evidence of a direct order or communication demonstrating intent to allow the attack to proceed, coupled with a clear explanation of the strategic benefit."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The US government's alleged foreknowledge of the Pearl Harbor attack exposes a hidden agenda to enter World War II.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While the US was undoubtedly preparing for potential conflict in late 1941, attributing the Pearl Harbor attack to a deliberate setup to justify war relies on selectively interpreting evidence and overlooks more parsimonious explanations.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the US was preparing for potential conflict in late 1941., Both agree that intelligence failures occurred leading up to the attack., Both identify the need for evidence to support claims of foreknowledge and intent.\nDisagreements: CA asserts the US *allowed* the attack to justify war, while SA argues this requires demonstrating active facilitation, not just passive failures., CA frames the 'Hull Note' as provocative, while SA views it as standard diplomacy., CA emphasizes suspicious inaction, while SA highlights the challenges of wartime intelligence processing.\nDetected moves: Selective Evidence (CA & SA both potentially, focusing on evidence supporting their narrative), Burden of Proof Shift (CA implies US must prove they *didn't* allow the attack), Appeal to Parsimony (SA favors simpler explanations like intelligence failures)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you provide specific examples of how the US government actively facilitated the attack, beyond simply failing to prevent it?, SA: How does the 'distrust-authority' tactic influence your interpretation of historical evidence regarding Pearl Harbor?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The US government's deliberate inaction despite clear signs of an impending attack on Pearl Harbor points to a hidden agenda.",
+      "stance": "pro",
+      "confidence": 52,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Pearl Harbor foreknowledge US government",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "Attributing 'deliberate inaction' requires demonstrating a clear causal link between specific warnings and a conscious decision *not* to act, a link currently unsupported by available evidence.",
+      "stance": "con",
+      "confidence": 48,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that warnings were received prior to the attack on Pearl Harbor., Both agents state that evidence of a direct order to stand down would be pivotal in changing their minds., Both acknowledge the complexity of the situation and the need for evidence to support claims of deliberate inaction/action.\nDisagreements: CA argues 'deliberate inaction' based on perceived strategic neglect and the 'Hull Note,' while SA contends this conflates failure to anticipate scale with conscious allowance., CA relies on a 'distrust-authority' tactic, implying a hidden agenda, while SA emphasizes evidence-based reasoning and alternative hypotheses., CA seeks to prove foreknowledge, while SA challenges the causal link between warnings and inaction.\nDetected moves: post-hoc reconstruction (SA), appeal to motive (CA - implying a hidden agenda), burden of proof shift (CA - asking SA to explain lack of response instead of providing evidence for deliberate inaction)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you elaborate on the specific logistical challenges that would have prevented a more effective defense, given the warnings received?, SA: What specific evidence leads you to believe the 'Hull Note' was intentionally provocative, and how does this connect to a willingness to accept the Pearl Harbor attack?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The US government's deliberate inaction despite clear signs of an impending attack on Pearl Harbor points to a hidden agenda.",
+      "stance": "pro",
+      "confidence": 49,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "Attributing 'deliberate inaction' requires demonstrating a direct causal link between specific warnings and a conscious decision *not* to act, a link that remains unsubstantiated despite repeated assertions.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents agree that warnings were received prior to the attack on Pearl Harbor., Both acknowledge the existence of intelligence failures and communication issues., Both agents state what evidence would change their minds \u2013 a direct order or communication demonstrating intent.\nDisagreements: CA asserts 'deliberate inaction' driven by a 'hidden agenda,' while SA argues this requires proof of intent and causal link., CA focuses on the lack of reinforced defenses as evidence of neglect, while SA attributes this to systemic failures., CA highlights the 'Hull Note' as provocative, while SA demands evidence connecting it to a deliberate strategy.\nDetected moves: appeal to authority (CA implicitly relies on the idea that warnings *must* have led to action), burden of proof shift (CA assumes a hidden agenda without providing evidence), selective evidence (CA focuses on failures without acknowledging broader context)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you specify a warning received before December 7th and detail how acting on it would have demonstrably prevented the attack?, SA, acknowledging the intelligence failures, what level of failure would be consistent with deliberate inaction versus simple incompetence?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The US government's knowledge of impending attacks on Pearl Harbor and their deliberate inaction indicates a manipulative strategy.",
+      "stance": "pro",
+      "confidence": 46,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "Attributing a 'manipulative strategy' to the US government requires demonstrating not only foreknowledge of the attack, but also a plausible motive and a clear causal link between inaction and a desired outcome \u2013 elements currently lacking in the presented argument.",
+      "stance": "con",
+      "confidence": 52,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents agree intelligence failures occurred prior to the attack., Both acknowledge the 'Hull Note' as a point of contention, though interpret its intent differently., Both agree that demonstrating intent is crucial to proving the motion.\nDisagreements: CA asserts deliberate inaction by the US government, while SA argues this is a logical leap requiring more evidence., CA frames the lack of preparedness as manipulative, while SA suggests alternative explanations like systemic failures., CA focuses on perceived strategic negligence, while SA demands a testable hypothesis outlining the US government's intended outcome.\nDetected moves: appeal to authority (CA implicitly relies on the idea that intelligence warnings *automatically* equate to deliberate inaction), burden of proof shift (CA asks SA to disprove intent, rather than providing evidence *for* it), selective evidence (CA highlights failures without acknowledging potential mitigating factors)\nScores: civility=5/5, epistemic=5/5, bridge=3/5\nNext questions: CA: Can you provide specific evidence suggesting the US government *wanted* an attack on Pearl Harbor, beyond simply stating they allowed it to happen?, SA: What level of certainty regarding the attack would have been necessary for the US government to be considered to have acted responsibly, given the information available at the time?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The US government's foreknowledge of the attack on Pearl Harbor and their deliberate inaction are indicative of a manipulative strategy.",
+      "stance": "pro",
+      "confidence": 43,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "Attributing 'deliberate inaction' to a manipulative strategy requires demonstrating a clear causal link between inaction and a desired outcome, a link that remains unsubstantiated despite repeated assertions.",
+      "stance": "con",
+      "confidence": 54,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_921359eef7d2",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents acknowledge the US received intelligence warnings prior to the attack., Both agree that defensive measures were not perfect., Both acknowledge the complexity of anticipating and preventing surprise attacks.\nDisagreements: CA maintains the US government deliberately allowed the attack to justify war, while SA argues this requires demonstrating a causal link between inaction and a strategic benefit, which remains unsubstantiated., CA frames inaction as 'manipulative,' while SA attributes it to systemic failures and logistical challenges., CA focuses on the 'Hull Note' as provocation, while SA argues it doesn't prove a preference for war.\nDetected moves: Burden of proof shift (CA asking SA to explain inaction without providing sufficient evidence for deliberate intent), Appeal to motive (CA implying a manipulative strategy without concrete proof), Selective evidence (CA repeatedly emphasizing the 'Hull Note' without addressing counterarguments)\nScores: civility=5/5, epistemic=5/5, bridge=3/5\nNext questions: CA, can you identify a specific, concrete decision *not* taken that directly facilitated the attack and served a discernible US strategic goal?, SA, acknowledging the intelligence failures, what level of preparedness would be necessary to reasonably refute the claim of 'deliberate inaction'?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -4,
+      "SA_delta": 3
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 5
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

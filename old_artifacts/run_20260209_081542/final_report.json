@@ -1,0 +1,46 @@
+{
+  "topic": "Climate change science and political agendas",
+  "motion": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      25,
+      45,
+      35
+    ],
+    "SA": [
+      90,
+      60,
+      85
+    ]
+  },
+  "tactic_counts": {
+    "distrust-authority": 3,
+    "evidence-based reasoning": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The climate change narrative is suspiciously convenient for those seeking global power and control.",
+      "why_it_mattered": "Introduced the argument that climate change discourse might be driven by ulterior motives."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "While the Paris Agreement undoubtedly involves complex political negotiations and potential power dynamics, framing it solely as a tool for control overlooks its primary objective: mitigating a demonstrably changing climate and the associated risks.",
+      "why_it_mattered": "Countered the argument that the Paris Agreement is primarily about control rather than addressing climate change."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "The claim that climate change is a manufactured crisis to increase taxation and control lacks sufficient evidence and overlooks established scientific consensus regarding anthropogenic climate change.",
+      "why_it_mattered": "Challenged the core argument of the motion by emphasizing the lack of evidence supporting it and pointing to the scientific consensus on climate change."
+    }
+  ],
+  "outcome_summary": "SA shifted their stance from 90 to 85, while CA's stance decreased from 25 to 35. SA primarily used 'evidence-based reasoning' tactic, and CA relied on the 'distrust-authority' tactic. The key persuasion moments included CA introducing the argument about ulterior motives behind climate change discourse, SA countering that argument by emphasizing the primary objective of the Paris Agreement, and SA challenging the core argument of the motion in the final round.",
+  "limitations": [
+    "The debate focused heavily on political aspects rather than scientific evidence for or against climate change.",
+    "Both agents relied heavily on their initial assumptions without providing substantial new information to support their positions."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topic": "Pharmaceutical Industry and Cancer Cures",
+  "motion": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      80
+    ]
+  },
+  "tactic_counts": {
+    "evidence-based reasoning": 2,
+    "appeal to emotion": 1,
+    "logical fallacy": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Pro",
+      "excerpt": "Numerous anecdotal accounts exist of individuals successfully treating cancer with alternative therapies, only to have their stories dismissed by the medical establishment.",
+      "why_it_mattered": "Introduced the idea of suppressed cures and appealed to emotion, shifting initial stance slightly."
+    },
+    {
+      "round": 3,
+      "speaker": "Con",
+      "excerpt": "The rigorous clinical trial process is designed to ensure safety and efficacy. Alternative therapies lack this crucial vetting, making claims of cures unsubstantiated.",
+      "why_it_mattered": "Countered the anecdotal evidence with the importance of scientific validation, reinforcing skepticism."
+    },
+    {
+      "round": 4,
+      "speaker": "Con",
+      "excerpt": "While acknowledging a pattern of prioritizing profitable treatments is concerning, framing this as \u2018suppression\u2019 without demonstrating intentional obstruction is a mischaracterization.",
+      "why_it_mattered": "Reframed the argument, suggesting prioritization rather than active suppression, a key persuasive shift."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in audience stance towards skepticism of the motion, with the Con side successfully arguing that prioritization of profit doesn't equate to suppression of cures.",
+  "limitations": [
+    "Reliance on anecdotal evidence.",
+    "Difficulty in definitively proving intent (suppression vs. prioritization).",
+    "Limited scope of the debate \u2013 a full investigation would require extensive research."
+  ]
+}

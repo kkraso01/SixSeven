@@ -1,0 +1,90 @@
+{
+  "topic": "The safety and efficacy of mRNA vaccine technology",
+  "motion": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+  "round": 1,
+  "agent_states": {
+    "CA": {
+      "confidence": 53,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence of long-term safety and efficacy trials for mRNA vaccines would change my position."
+    },
+    "SA": {
+      "confidence": 76,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence revealing significant long-term adverse effects from mRNA vaccines."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_72da926c7dce",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The rapid development of mRNA vaccines raises concerns about their long-term safety and efficacy.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_72da926c7dce",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While the rapid development of mRNA vaccines may raise concerns, it is crucial to consider that emergency conditions often necessitate accelerated testing and approval processes. The rigorous preclinical and clinical trials conducted provide a strong foundation for their safety and efficacy.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:cdc.gov mRNA vaccine safety",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_72da926c7dce",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents agree that long-term safety and efficacy are important considerations., Both agents state that evidence would be required to change their position.\nDisagreements: CA believes the rapid development inherently creates untrustworthiness, while SA argues it was a necessary response to a crisis and doesn't automatically imply inadequacy., CA focuses on potential risks and lack of transparency, while SA emphasizes the rigor of testing and the urgency of the pandemic., CA questions the thoroughness of testing, while SA points to large-scale clinical trials as evidence of safety.\nDetected moves: appeal to authority (CA implicitly relies on distrust of pharmaceutical companies), burden of proof shift (CA asks SA to prove trustworthiness, rather than demonstrating untrustworthiness), selective evidence (CA highlights speed without acknowledging testing), narrative framing (CA frames the narrative around distrust)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: SA, can you address the concerns about transparency regarding potential long-term side effects?, CA, what specific data gaps would need to be filled to alleviate your concerns about the testing process?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 21
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

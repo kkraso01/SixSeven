@@ -1,0 +1,45 @@
+{
+  "topic": "Cryptocurrency adoption and financial surveillance",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      25,
+      45,
+      35
+    ],
+    "SA": [
+      70,
+      60,
+      65
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 1,
+    "evidence-based reasoning": 2,
+    "anomaly-emphasis": 1,
+    "pattern-seeking": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "opponent",
+      "excerpt": "Central bank digital currencies (CBDCs) are designed to enable total government control over personal finances and eliminate financial privacy. This statement is an exaggeration as CBDCs can offer a more efficient payment system without necessarily implying total control or eliminating privacy altogether.",
+      "why_it_mattered": "Counterargument against the claim that CBDCs inherently enable total government control and eliminate financial privacy."
+    },
+    {
+      "round": 2,
+      "speaker": "proponent",
+      "excerpt": "The Scientific Agent's insistence on 'regulatory measures' as a solution ignores the historical pattern of governments expanding surveillance powers under the guise of security or efficiency \u2013 regulations are rarely barriers when core institutional incentives favor control.",
+      "why_it_mattered": "Argument emphasizing the historical pattern of expanding surveillance powers in financial systems and questioning the effectiveness of regulatory measures in preventing CBDC abuse."
+    },
+    {
+      "round": 3,
+      "speaker": "opponent",
+      "excerpt": "The opponent's argument relies heavily on historical patterns in financial surveillance technology as a predictor for CBDC systems. However, this approach oversimplifies the role of regulation and neglects potential technological advancements that could enhance privacy protections in CBDCs.",
+      "why_it_mattered": "Response to the CA's argument about historical patterns predicting CBDC systems prioritizing control over privacy."
+    }
+  ],
+  "outcome_summary": "The opponent shifted their stance by 5 points while the proponent's stance decreased by 10 points.",
+  "limitations": []
+}

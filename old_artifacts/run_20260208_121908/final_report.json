@@ -1,0 +1,45 @@
+{
+  "topic": "Pearl Harbor Attack",
+  "motion": "The Pearl Harbor attack was a deliberate orchestration by the US government to justify entering World War II.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Anomaly Emphasis": 2,
+    "Burden of Proof Shifting": 2,
+    "Appeal to Parsimony": 1,
+    "Institutional Critique": 1,
+    "Selective Evidence": 1,
+    "Appeal to Probability": 1,
+    "False Dichotomy": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "Anomalies and improbabilities surrounding Pearl Harbor suggest deliberate orchestration, and the demand for definitive proof is a tactic to protect institutions.",
+      "why_it_mattered": "Established the core argument and framed the debate around questioning established narratives."
+    },
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "Extraordinary claims require extraordinary evidence, and systemic failures/miscalculation are more plausible explanations without a demonstrated mechanism for conspiracy.",
+      "why_it_mattered": "Challenged the core argument by demanding evidence and proposing a more parsimonious explanation."
+    }
+  ],
+  "outcome_summary": "The debate remains largely unresolved, with both sides maintaining their initial stances and selectively using evidence to support their claims. A slight shift in confidence towards the Opponent (SA) was observed.",
+  "limitations": [
+    "The debate is limited by the difficulty of definitively proving or disproving a historical conspiracy.",
+    "Reliance on interpretation of historical events and potential biases in evidence selection."
+  ]
+}

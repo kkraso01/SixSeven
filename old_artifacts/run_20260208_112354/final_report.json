@@ -1,0 +1,31 @@
+{
+  "topic": "Social Media Manipulation",
+  "motion": "Social media algorithms are designed to manipulate users.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80
+    ],
+    "SA": [
+      55
+    ]
+  },
+  "tactic_counts": {
+    "red_herring": 1,
+    "shifting_blame": 1,
+    "appeal_to_harm": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The Scientific Agent continues to demand an impossible standard of 'proof' for manipulative *intent*, while ignoring the overwhelming evidence of manipulative *effects*.",
+      "why_it_mattered": "Highlights the core disagreement: focusing on intent vs. demonstrable harm."
+    }
+  ],
+  "outcome_summary": "The CA successfully reframed the debate, shifting the focus from proving intent to acknowledging the observed effects of manipulation.",
+  "limitations": [
+    "This report is based on a single round of debate.",
+    "Assessment of 'manipulative intent' is subjective."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topic": "Central Bank Digital Currencies",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      85
+    ]
+  },
+  "tactic_counts": {
+    "evidence-based reasoning": 3,
+    "rhetorical question": 2,
+    "appeal to authority": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Proponent",
+      "excerpt": "CBDCs, unlike cash, allow for real-time tracking of transactions, creating a comprehensive financial profile of individuals.",
+      "why_it_mattered": "This statement clearly articulated a core mechanism by which CBDCs could enable increased government surveillance, resonating with concerns about privacy."
+    },
+    {
+      "round": 3,
+      "speaker": "Opponent",
+      "excerpt": "Existing financial systems already allow for significant tracking of transactions through credit cards and bank accounts. CBDCs don't fundamentally alter this landscape.",
+      "why_it_mattered": "This attempted to downplay the unique risks of CBDCs by framing them as an extension of existing surveillance capabilities, shifting the debate's focus."
+    },
+    {
+      "round": 4,
+      "speaker": "Opponent",
+      "excerpt": "The proponent consistently frames requests for concrete evidence as a delaying tactic. However, demanding evidence isn't a tactic \u2013 it\u2019s the foundation of rational discourse.",
+      "why_it_mattered": "This directly challenged the proponent's argumentative strategy, highlighting a perceived lack of substantiation and appealing to principles of logical debate."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in stance, with the 'SA' side increasing their confidence significantly. While no one explicitly changed sides, the opponent successfully raised doubts about the proponent's claims of intentional design for total control.",
+  "limitations": [
+    "The analysis is based on a limited sample of debate turns.",
+    "Subjectivity in identifying persuasive moments and their impact.",
+    "Difficulty in quantifying the precise effect of each argument on audience perception."
+  ]
+}

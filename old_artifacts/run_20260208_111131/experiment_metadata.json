@@ -1,0 +1,13 @@
+{
+  "topic_id": "election_fraud",
+  "topic_category": "government",
+  "topic_description": "Debate about voting system security and fraud",
+  "model_config": "gemma3-27b-all",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "gemma3:27b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T11:11:31.835673"
+}

@@ -1,0 +1,246 @@
+{
+  "topic": "Deep state shadow government control",
+  "motion": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 54,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Clear evidence of deep state control overriding elected officials' decisions."
+    },
+    "SA": {
+      "confidence": 55,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A documented case of a policy being enacted *despite* clear legal prohibitions and the explicit, documented opposition of elected officials, with a clear chain of evidence linking the action to an unelected entity."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The deep state's influence is evident in the consistent erosion of democratic processes.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy deep state examples",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While concerns about transparency and accountability within government are valid, attributing policy control to a singular, unified 'deep state' lacks sufficient evidence and relies on potentially misleading interpretations of complex bureaucratic and political processes.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the existence of unelected officials influencing policy but disagree on the extent and nature of their control., Agents agree that evidence is needed to support claims about deep state control, though they differ in how this evidence should be interpreted.\nDisagreements: CA argues for a pervasive 'deep state' controlling government policy, while SA questions the existence of a unified entity and emphasizes the complexity of political processes., CA cites historical examples and whistleblower accounts as evidence, whereas SA demands specific instances of direct control over elected officials and calls for independent corroboration.\nDetected moves: Burden of proof shift: CA asks SA to provide evidence supporting the idea that elected officials maintain full control, while not providing sufficient evidence for their own claim about deep state control., Appeal to authority: CA cites historical knowledge and leaked documents as evidence without questioning potential biases or inaccuracies., Goalpost shift: SA moves from questioning the existence of a singular 'deep state' to demanding specific instances of direct control over elected officials, broadening the scope of required evidence.\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific instances of policy decisions can be attributed to the deep state's influence?, How can we differentiate between legitimate information sharing and covert manipulation within government agencies?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The deep state's influence is evident in the US government through a consistent pattern of policy continuity across administrations.",
+      "stance": "pro",
+      "confidence": 60,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy deep state influence policy continuity",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "While policy continuity exists, attributing it solely to a 'deep state' overlooks more parsimonious explanations rooted in institutional factors and established interests, and lacks demonstrable evidence of overriding elected officials.",
+      "stance": "con",
+      "confidence": 52,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the existence of policy continuity across US administrations., Agents agree that lobbying and interest groups can influence policy regardless of administration changes.\nDisagreements: CA argues deep state control explains consistent policies across elected officials; SA suggests more parsimonious explanations like institutional factors and established interests., SA requests a specific example of policy reversal proving unelected official influence; CA hasn't provided one yet.\nDetected moves: Appeal to Authority: CA cites whistleblower accounts and Russiagate as evidence of deep state manipulation., False Dichotomy: SA presents alternative hypotheses without ruling out the possibility of a 'deep state' coexisting with other factors.\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: How can we quantitatively measure the influence of lobbying and interest groups on policy continuity?, What specific examples exist to demonstrate bureaucratic resistance or defiance against elected officials' policies?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The consistent erosion of democratic processes under the guise of national security is a clear indication of deep state control.",
+      "stance": "pro",
+      "confidence": 58,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "While concerns about national security eroding democratic processes are valid, attributing this solely to a unified 'deep state' requires demonstrating a *mechanism* by which this erosion occurs *despite* the oversight of elected officials and a functioning legal system.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge concerns about national security eroding democratic processes but disagree on the role of a 'deep state' in this phenomenon., Agents are engaging each other's arguments and raising specific examples or criteria for evaluation.\nDisagreements: CA argues that deep state control is indicated by consistent erosion of democratic processes under the guise of national security, citing leaks, whistleblower accounts, and incidents like Russiagate. SA counters that attributing this solely to a 'deep state' requires demonstrating a mechanism for such erosion despite oversight from elected officials and the legal system.\nDetected moves: Appeal to narrative (CA) - using leaks and whistleblower accounts as evidence of deep state control without direct corroboration or legal analysis., Burden of proof shift (SA) - requesting specific examples from opponent to support their argument.\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: Can you provide a specific example of a policy enacted or action taken that demonstrably violated established legal procedures and was implemented against the explicit wishes of elected officials, clearly demonstrating the 'deep state' overriding democratic controls?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The deep state's influence is evident in the consistent erosion of democratic processes under the guise of national security.",
+      "stance": "pro",
+      "confidence": 57,
+      "tactic_used": "narrative-coherence",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "Attributing consistent policy trends solely to a 'deep state' overlooks more parsimonious explanations and lacks demonstrable evidence of control overriding elected officials, despite repeated requests for specific examples.",
+      "stance": "con",
+      "confidence": 52,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the potential for intelligence agencies to shape narratives and manipulate public opinion., SA questions the causal link between alleged deep state actions and specific policy outcomes, seeking verifiable instances of control.\nDisagreements: CA argues that consistent erosion of democratic processes indicates deep state influence, while SA contends that this interpretation lacks direct evidence and alternative explanations., SA requests a specific instance of policy enacted against elected officials' explicit opposition, which CA has not provided.\nDetected moves: narrative-coherence, evidence-based reasoning\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence can be provided to demonstrate a causal link between deep state actions and policy outcomes?, How do alternative explanations, such as lobbying or institutional factors, account for policy continuity across administrations?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The deep state's influence is evident in the consistent erosion of democratic processes under the guise of national security.",
+      "stance": "pro",
+      "confidence": 56,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging potential issues with national security overreach, attributing consistent policy trends to a monolithic 'deep state' requires demonstrating a mechanism for control *despite* existing oversight, a demonstration that remains absent.",
+      "stance": "con",
+      "confidence": 54,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_55b02b38f90f",
+      "claim": "An unelected 'deep state' of bureaucrats and intelligence agencies actually controls government policy regardless of elected officials.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Agents acknowledge the potential influence of national security overreach on democratic processes., Both agents agree that policy continuity can be influenced by various factors, including established interests and bureaucratic inertia.\nDisagreements: The core disagreement is whether a 'deep state' of unelected officials actually controls government policy, overriding elected representatives., Agents disagree on the interpretation of specific events like Russiagate and its attribution to a 'deep state' or other factors.\nDetected moves: Appeal to Analogy: CA uses the Russiagate scandal as an example of deep state control without directly linking it to a broader pattern of control., Burden of Proof Shift: SA challenges CA to provide specific evidence of 'deep state' control rather than relying on anecdotes or general claims.\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence can you provide to demonstrate a consistent pattern of 'deep state' control over government policy?, How do you reconcile the influence of unelected officials with the democratic principle of elected representatives making policy decisions?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 1
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

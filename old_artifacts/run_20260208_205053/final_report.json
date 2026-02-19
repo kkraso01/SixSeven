@@ -1,0 +1,40 @@
+{
+  "topic": "GMO foods",
+  "motion": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 3,
+    "emotional-appeal": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Speaker A",
+      "excerpt": "The demand for empirical evidence ignores the inherent flaws in a regulatory system that consistently prioritizes corporate interests over public safety. The burden of proof lies with those who benefit from GMOs and their continued expansion into our food supply.",
+      "why_it_mattered": "This moment shifted the debate towards questioning the integrity of the regulatory system."
+    },
+    {
+      "round": 4,
+      "speaker": "Speaker B",
+      "excerpt": "GMOs have been repeatedly shown to be safe for human consumption and beneficial for farmers. To argue otherwise is to ignore a wealth of scientific evidence.",
+      "why_it_mattered": "This moment countered the previous speaker's argument by presenting scientific evidence supporting GMO safety."
+    }
+  ],
+  "outcome_summary": "Both speakers changed their stance during the debate.",
+  "limitations": [
+    "The time constraint limited the depth of discussion on certain topics.",
+    "The scope of the motion was broad, which made it challenging to focus on specific aspects of GMO foods."
+  ]
+}

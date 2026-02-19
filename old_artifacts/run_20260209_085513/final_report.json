@@ -1,0 +1,40 @@
+{
+  "topic": "Food additives approved by regulatory agencies are intentionally harmful and designed to create chronic diseases that benefit the medical industry.",
+  "motion": "debate_a615b6a5324c",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "evidence-based reasoning": 3,
+    "ad hominem": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "opponent",
+      "excerpt": "While acknowledging the potential for influence, framing the approval process as \u2018corrupted\u2019 implies intentional and pervasive wrongdoing, a claim unsupported by evidence and requiring a higher standard of proof than demonstrated.",
+      "why_it_mattered": "This statement shifted the perception of the argument from emotional to logical, emphasizing the need for evidence-based reasoning."
+    },
+    {
+      "round": 4,
+      "speaker": "proponent",
+      "excerpt": "The opposition relies heavily on anecdotal evidence and fear-mongering tactics, rather than presenting verifiable facts or scientific studies to support their claims.",
+      "why_it_mattered": "This refutation exposed the weakness in the opponent's argument, highlighting the importance of credible sources for valid information."
+    }
+  ],
+  "outcome_summary": "The proponent successfully persuaded 2 out of 3 judges, while the opponent managed to sway only 1 judge.",
+  "limitations": [
+    "Judges' prior knowledge and predispositions may have influenced their persuasion outcomes.",
+    "The debate format limited the depth of discussion on specific food additives and their potential health effects."
+  ]
+}

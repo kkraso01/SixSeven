@@ -1,0 +1,27 @@
+{
+  "topic": "5G Wireless Networks and Health Risks",
+  "motion": "The rollout of 5G technology prioritizes profits over safety",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "CA": 2,
+    "SA": 3
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "Neither side changed their stance.",
+  "limitations": [
+    "Incomplete data on long-term effects of 5G technology",
+    "Difficulty in quantifying the impact of individual persuasion moments"
+  ]
+}

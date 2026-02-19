@@ -1,0 +1,48 @@
+{
+  "topic": "Food Additives and Regulation",
+  "motion": "The current regulatory framework adequately protects public health from harmful food additives.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "appeal_to_emotion": 2,
+    "logical_fallacy": 1,
+    "expert_testimony": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The approval of artificial sweeteners like aspartame \u2013 despite ongoing health concerns \u2013 demonstrates a systemic bias.",
+      "why_it_mattered": "Introduced the core argument of regulatory capture and highlighted a specific example."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "Numerous studies have confirmed the safety of aspartame within acceptable daily intake levels.",
+      "why_it_mattered": "Presented counter-evidence and attempted to refute the claim of harm."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The career paths of regulators often lead to employment with the food industry, creating a clear conflict of interest.",
+      "why_it_mattered": "Reinforced the argument of bias and suggested a motive for lenient approvals."
+    }
+  ],
+  "outcome_summary": "The CA agent successfully lowered the SA agent's confidence, suggesting a shift in perspective regarding the adequacy of current regulations. While not a complete reversal, the SA agent acknowledged the potential for conflicts of interest.",
+  "limitations": [
+    "Limited scope of discussion \u2013 focused primarily on aspartame.",
+    "Reliance on anecdotal evidence regarding regulator career paths.",
+    "Difficulty in definitively proving a causal link between regulatory capture and harmful approvals."
+  ]
+}

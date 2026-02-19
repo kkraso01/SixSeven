@@ -1,0 +1,60 @@
+{
+  "topic": "Flat Earth Conspiracy",
+  "motion": "The Earth is flat.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      55,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      75,
+      80
+    ]
+  },
+  "tactic_counts": {
+    "Distrust of Authority": 5,
+    "Narrative Coherence": 4,
+    "Burden of Proof Shift": 3,
+    "Evidence-Based Reasoning": 6,
+    "Logical Fallacy Identification": 4,
+    "Demand for Falsifiability": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "The lack of independent verification for CA's claims is a critical flaw.",
+      "why_it_mattered": "SA effectively challenged the foundation of CA's argument by highlighting the need for reliable evidence."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "Attributing a pattern requires statistical significance, not just isolated incidents.",
+      "why_it_mattered": "SA dismantled CA's attempt to establish a pattern of deception without sufficient evidence."
+    },
+    {
+      "round": 4,
+      "speaker": "CA",
+      "excerpt": "NASA has a history of failures, suggesting a cover-up.",
+      "why_it_mattered": "Illustrates CA's reliance on distrust of authority and selective evidence."
+    },
+    {
+      "round": 5,
+      "speaker": "SA",
+      "excerpt": "CA has not provided a testable flat Earth model.",
+      "why_it_mattered": "SA directly challenged CA to provide a falsifiable alternative to the established scientific consensus."
+    }
+  ],
+  "outcome_summary": "SA successfully demonstrated the lack of evidence supporting the flat Earth conspiracy, leading to a weakening of CA's position. SA's arguments were more logically sound and supported by evidence.",
+  "limitations": [
+    "The debate was limited to a short timeframe, preventing a more in-depth exploration of the topic.",
+    "The agents' pre-existing beliefs may have influenced their interpretations of the evidence."
+  ]
+}

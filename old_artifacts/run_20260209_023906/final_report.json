@@ -1,0 +1,47 @@
+{
+  "topic": "AI Ethics",
+  "motion": "This house believes AI development should be paused.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "appeal_to_emotion": 5,
+    "logical_fallacy": 2,
+    "expert_testimony": 8
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "AI poses an existential risk to humanity, and we must prioritize safety.",
+      "why_it_mattered": "Established a strong emotional connection with the audience, framing the debate around high stakes."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "Pausing AI development would stifle innovation and economic growth.",
+      "why_it_mattered": "Introduced a counter-argument focusing on practical benefits, shifting the focus from fear to opportunity."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "Recent AI failures demonstrate the lack of robust safety measures.",
+      "why_it_mattered": "Provided concrete evidence supporting the claim of AI's unreliability, reinforcing the need for caution."
+    }
+  ],
+  "outcome_summary": "The CA side experienced a slight decrease in confidence, while the SA side showed a moderate increase, suggesting a shift in audience perception towards accepting continued AI development with appropriate safeguards.",
+  "limitations": [
+    "Limited sample size of audience responses.",
+    "Subjectivity in interpreting persuasion moments."
+  ]
+}

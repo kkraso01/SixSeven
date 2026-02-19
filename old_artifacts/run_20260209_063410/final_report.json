@@ -1,0 +1,40 @@
+{
+  "topic": "Debate Topic",
+  "motion": "Debate Motion",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "tactic1": 3,
+    "tactic2": 4
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Speaker A",
+      "excerpt": "Persuasive statement by Speaker A",
+      "why_it_mattered": "This statement influenced the audience's opinion."
+    },
+    {
+      "round": 4,
+      "speaker": "Speaker B",
+      "excerpt": "Powerful argument by Speaker B",
+      "why_it_mattered": "It shifted the debate's direction."
+    }
+  ],
+  "outcome_summary": "Neither side convinced the other significantly.",
+  "limitations": [
+    "Insufficient data for comprehensive analysis.",
+    "Time constraints affected the depth of discussion."
+  ]
+}

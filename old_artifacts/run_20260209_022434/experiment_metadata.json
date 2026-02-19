@@ -1,0 +1,13 @@
+{
+  "topic_id": "federal_reserve",
+  "topic_category": "finance",
+  "topic_description": "Debate about Federal Reserve control",
+  "model_config": "gemma-mod-sa_dolphin-ca",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "gemma3:27b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-09T02:24:34.692270"
+}

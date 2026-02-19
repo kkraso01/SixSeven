@@ -1,0 +1,43 @@
+{
+  "topic": "5G Wireless Networks and Health",
+  "motion": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      85
+    ]
+  },
+  "tactic_counts": {
+    "evidence-based reasoning": 3,
+    "appeal to authority": 1,
+    "rhetorical question": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Pro",
+      "excerpt": "Studies have linked radiofrequency radiation to increased cancer rates in animals, raising concerns about the potential long-term effects of 5G exposure on humans.",
+      "why_it_mattered": "This introduced initial evidence suggesting a potential health risk, framing the debate around safety concerns."
+    },
+    {
+      "round": 4,
+      "speaker": "Con",
+      "excerpt": "The assertion that 5G networks cause serious health problems, including immune system damage, remains unsubstantiated. While anecdotal reports of symptoms like headaches and insomnia exist, attributing them to 5G requires demonstrating a biologically plausible mechanism and robust epidemiological evidence, neither of which has been presented.",
+      "why_it_mattered": "This directly refuted the core claim with a demand for scientific evidence, shifting the burden of proof."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in audience stance towards skepticism regarding the claim that 5G poses significant health risks. While some remained concerned, the lack of conclusive evidence presented by the pro side weakened their argument.",
+  "limitations": [
+    "The debate focused primarily on scientific evidence and lacked consideration of potential economic or political factors.",
+    "The audience's pre-existing beliefs likely influenced their interpretation of the arguments presented."
+  ]
+}

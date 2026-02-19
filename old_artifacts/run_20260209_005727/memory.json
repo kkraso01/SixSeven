@@ -1,0 +1,168 @@
+{
+  "topic": "Pharmaceutical industry influence and suppressed cures",
+  "motion": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+  "round": 3,
+  "agent_states": {
+    "CA": {
+      "confidence": 46,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence of pharmaceutical companies intentionally obstructing the development or release of cost-effective treatments."
+    },
+    "SA": {
+      "confidence": 77,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A peer-reviewed study demonstrating a suppressed cure \u2013 a case where a safe, effective, and low-cost treatment was deliberately prevented from reaching patients solely due to profit concerns."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies prioritize profit over patient welfare, leading to suppression of cheap effective cures.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While pharmaceutical companies undoubtedly seek profit, the claim that they actively *suppress* demonstrably effective, cheap cures requires significantly stronger evidence than asserted. The current argument relies on incentive structures and anecdotal examples, which are insufficient to establish suppression as a systemic practice.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge pharmaceutical companies are profit-seeking entities., Both agree that high drug prices are a concern., Both acknowledge the complexity of drug development and regulatory processes.\nDisagreements: CA asserts systemic suppression of cures, while SA argues this requires stronger evidence than currently presented., CA points to incentive structures as proof, while SA emphasizes the need to demonstrate *intentional* suppression., CA relies on a single case (Gilead), while SA demands detailed evidence of suppression beyond pricing/patent strategies.\nDetected moves: Appeal to motive (CA implying suppression *because* of profit), Burden of proof shift (CA asking SA to disprove suppression, rather than proving it), Selective evidence (CA citing one case without addressing counter-examples)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you provide specific examples of regulatory hurdles or manufacturing challenges that demonstrably prevented the development or distribution of a cheap, effective cure?, SA: What specific evidence would constitute 'suppression' beyond pricing and patent strategies, and how would you differentiate between legitimate business practices and intentional obstruction?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies prioritize profit over patient welfare, leading to suppression of cheap effective cures.",
+      "stance": "pro",
+      "confidence": 52,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy affordable cures pharmaceutical companies",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "While profit motives undoubtedly influence pharmaceutical decisions, attributing systematic 'suppression' of cures requires demonstrating intentional obstruction of already proven, cost-effective treatments, not merely highlighting the prioritization of profitable therapies.",
+      "stance": "con",
+      "confidence": 52,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that profit motives influence pharmaceutical company decisions., Both agents acknowledge the existence of high-margin treatments and patent protections within the industry., Both agents define a need for evidence to support claims, though they differ on the threshold for that evidence.\nDisagreements: CA asserts active 'suppression' of cures, while SA argues this requires demonstrating intentional obstruction beyond prioritization of profitable therapies., CA focuses on examples like Gilead Sciences as indicative of a pattern, while SA emphasizes the need to distinguish between prioritization and suppression., CA seeks correlation between research priorities and suppressed cures, while SA demands evidence of deliberate obstruction *after* regulatory approval.\nDetected moves: appeal to authority (CA referencing Reddit), false dichotomy (SA framing prioritization vs. suppression), burden of proof shift (CA expecting examples of promotion of affordable cures)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you elaborate on the regulatory hurdles that legitimately delay treatments, and how those differ from intentional obstruction?, SA: What specific internal documentation would constitute sufficient evidence of suppression, given the complexities of pharmaceutical research and development?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies prioritize profit over patient welfare, leading to the suppression of cheap effective cures.",
+      "stance": "pro",
+      "confidence": 49,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The claim that pharmaceutical companies systematically suppress cheap, effective cures to maintain profits is not currently supported by sufficient evidence and relies heavily on inference rather than direct demonstration of intentional obstruction.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_6fcb77dcf82a",
+      "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents agree profit is a significant motivator for pharmaceutical companies., Both acknowledge the complexity of developing cures for diseases like cancer., Both agree that evidence is crucial to support claims of suppression.\nDisagreements: CA asserts intentional suppression of cures, while SA argues this requires direct evidence of obstruction, not just prioritization of profit., CA points to cases like Gilead Sciences as indicative of a pattern, while SA demands a demonstrably suppressed cure with clear evidence., CA frames the issue as a systemic problem, while SA emphasizes the need to rule out alternative explanations for high treatment costs.\nDetected moves: appeal to authority (CA referencing Gilead Sciences without detailed evidence), burden of proof shift (CA asking for examples of companies *promoting* expensive treatments instead of demonstrating suppression), false dichotomy (SA implying either profit motive or suppression, without acknowledging other factors)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you address the logistical and manufacturing challenges of rapidly scaling up production and distribution of low-cost cures?, SA: What specific evidence would constitute 'intentional obstruction' beyond simply prioritizing more profitable treatments?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -3,
+      "SA_delta": 23
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

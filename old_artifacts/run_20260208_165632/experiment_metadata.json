@@ -1,0 +1,13 @@
+{
+  "topic_id": "jfk_assassination",
+  "topic_category": "history",
+  "topic_description": "Classic JFK assassination conspiracy debate",
+  "model_config": "gemma-mod-dolphin-agents",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T16:56:32.432797"
+}

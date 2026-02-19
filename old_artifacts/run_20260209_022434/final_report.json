@@ -1,0 +1,59 @@
+{
+  "topic": "Federal Reserve Ownership",
+  "motion": "The private ownership of the Federal Reserve is detrimental to the broader public interest.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      70,
+      65,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      65,
+      70,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "burden_of_proof_shift": 5,
+    "appeal_to_complexity": 3,
+    "framing": 4,
+    "evidence_request": 7
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "The opponent has not provided any concrete evidence to support their claim of systemic bias.",
+      "why_it_mattered": "Successfully shifted the burden of proof and highlighted a lack of evidence from the CA."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The inherent conflict of interest within the Federal Reserve's structure is undeniable.",
+      "why_it_mattered": "Reinforced the core argument, though lacked supporting data."
+    },
+    {
+      "round": 4,
+      "speaker": "SA",
+      "excerpt": "Mitigating mechanisms and oversight exist to address potential conflicts of interest.",
+      "why_it_mattered": "Presented a counterargument and challenged the notion of an 'inherent' conflict."
+    },
+    {
+      "round": 5,
+      "speaker": "CA",
+      "excerpt": "Further investigation into wealth inequality trends is needed to understand the impact of Fed policies.",
+      "why_it_mattered": "Acknowledged the need for data, but failed to provide it directly."
+    }
+  ],
+  "outcome_summary": "The SA (opponent) demonstrated a more persuasive argument by consistently requesting evidence and highlighting the complexities of the issue. The CA (proponent) struggled to provide concrete examples to support their claims, leading to a shift in stance towards the SA.",
+  "limitations": [
+    "The analysis is based solely on the provided transcript.",
+    "Subjectivity in assessing persuasion and identifying key moments.",
+    "Limited information about the audience and their prior beliefs."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "topic": "Debate Topic",
+  "motion": "Debate Motion",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "tactic1": 4,
+    "tactic2": 3,
+    "tactic3": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Speaker A",
+      "excerpt": "Persuasive excerpt from Speaker A",
+      "why_it_mattered": "This is why it mattered"
+    },
+    {
+      "round": 3,
+      "speaker": "Speaker B",
+      "excerpt": "Another persuasive excerpt",
+      "why_it_mattered": "And this is why it mattered"
+    }
+  ],
+  "outcome_summary": "Outcome summary of the debate",
+  "limitations": [
+    "Limitation 1",
+    "Limitation 2",
+    "Limitation 3"
+  ]
+}

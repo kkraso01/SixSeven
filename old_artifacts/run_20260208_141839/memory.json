@@ -1,0 +1,207 @@
+{
+  "topic": "The shape of the Earth and space exploration",
+  "motion": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+  "round": 4,
+  "agent_states": {
+    "CA": {
+      "confidence": 19,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Evidence from independent sources confirming NASA's data and images."
+    },
+    "SA": {
+      "confidence": 87,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence or observations from independent sources that demonstrate a flat Earth model would change my position."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Space agencies worldwide are involved in a massive coordinated deception about the Earth's shape.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy NASA obfuscation",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The claim that space agencies worldwide are involved in a massive coordinated deception about the Earth's shape is not supported by evidence. The overwhelming majority of scientific data, including satellite imagery and measurements, supports the spherical model of the Earth.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the existence of space agencies and their role in Earth observation.\nDisagreements: CA believes that space agencies are involved in a global deception about the Earth's shape, while SA argues for the overwhelming scientific evidence supporting the spherical model., SA questions the lack of specific evidence to support CA's conspiracy theory, whereas CA challenges SA's trust in these institutions.\nDetected moves: institutional-critique, evidence-based reasoning\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence do you have to support the claim of a global conspiracy among space agencies?, How can we reconcile satellite technology and physical phenomena consistent with a spherical Earth model within your framework?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The consistent refusal of space agencies to allow direct observation from independent sources indicates a cover-up.",
+      "stance": "pro",
+      "confidence": 35,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy independent verification satellite imagery earth shape",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The consistent refusal of space agencies to allow direct observation from independent sources does not imply a cover-up. Independent verification exists through satellite technology and data accessible to the public.",
+      "stance": "con",
+      "confidence": 85,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the role of space agencies in providing satellite data and imagery., Agents dispute whether access is transparent or part of a cover-up.\nDisagreements: CA claims space agencies are involved in a cover-up by not allowing direct observation from independent sources., SA argues that satellite data and imagery are publicly available and used by various sectors, indicating transparency.\nDetected moves: appeal to ignorance (CA: Why would they hide high-altitude or space footage if the Earth were truly spherical?)\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific examples of organizations or individuals denied access to satellite data or imagery can support the claim of a cover-up?, How does the availability and usage of satellite data by independent researchers or non-agency sources demonstrate transparency in this domain?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.",
+      "stance": "pro",
+      "confidence": 30,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The opponent claims that space agencies worldwide perpetuate the spherical Earth narrative despite a lack of transparent evidence and unexplained phenomena.",
+      "stance": "con",
+      "confidence": 85,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:nasa.gov OR site:esa.int OR site:jpl.nasa.gov 'unexplained phenomena' OR 'anomalies in satellite data'",
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the existence of unexplained phenomena and space agencies' data transparency issues.\nDisagreements: CA argues that space agencies manipulate data and hide evidence supporting a flat Earth model. SA disputes this claim, asking for specific examples., SA questions the relevance of 'unexplained phenomena' to the shape of the Earth or space exploration. CA has not yet clarified this point.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: Can you provide any examples of independent verification of satellite imagery or direct observation from non-agency sources that support the spherical Earth model? (CA), Can you clarify what 'unexplained phenomena' refer to and how they challenge the spherical Earth model? (CA)",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.",
+      "stance": "pro",
+      "confidence": 29,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "The spherical Earth model is supported by multiple lines of evidence, including satellite data and imagery from space agencies worldwide. Independent organizations and private companies also contribute to our understanding of Earth from space, offering alternative sources of information.",
+      "stance": "con",
+      "confidence": 85,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_b74029a3c955",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.\nDisagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 2
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

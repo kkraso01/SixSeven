@@ -1,0 +1,13 @@
+{
+  "topic_id": "social_media_mind_control",
+  "topic_category": "technology",
+  "topic_description": "Debate about social media manipulation",
+  "model_config": "gemma-mod-dolphin-agents",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T16:12:12.218027"
+}
