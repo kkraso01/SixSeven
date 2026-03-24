@@ -1,0 +1,47 @@
+{
+  "topic": "Vaccine Microchips",
+  "motion": "The claim that COVID-19 vaccines contain microchips.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      70,
+      65,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      65,
+      70,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "red_herring": 2,
+    "appeal_to_authority": 3,
+    "burden_shifting": 1,
+    "framing": 4
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "CA successfully broadened the discussion to include general surveillance concerns, shifting the focus away from the specific claim about microchips.",
+      "why_it_mattered": "This tactic allowed CA to highlight legitimate concerns about data privacy, even if it didn't directly address the original motion."
+    },
+    {
+      "round": 4,
+      "speaker": "SA",
+      "excerpt": "SA consistently returned the conversation to the original motion, demanding concrete evidence of microchips in the vaccine.",
+      "why_it_mattered": "This strategy forced CA to defend a claim without providing direct proof, strengthening SA's position."
+    }
+  ],
+  "outcome_summary": "SA successfully defended against the initial proposition, demonstrating a slight shift in the debate towards their stance. CA's attempts to broaden the scope, while raising valid concerns, did not negate the lack of evidence for the original claim.",
+  "limitations": [
+    "The analysis relies on subjective interpretation of argumentative tactics.",
+    "The stance trajectory is based on limited data points (confidence scores).",
+    "The 'tactic_counts' are approximate and may not capture the full complexity of the debate."
+  ]
+}
