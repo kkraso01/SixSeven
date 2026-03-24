@@ -11,9 +11,9 @@ class DebateConfig:
     base_url: str = "http://localhost:11434"
     api_mode: str = "ollama"  # "ollama", "openai", or "gemini"
     gemini_api_key: str | None = None  # Required if api_mode="gemini"
-    moderator_model: str = "llama3.1:8b"
-    conspiracy_model: str = "llama3.1:8b"
-    scientific_model: str = "llama3.1:8b"
+    moderator_model: str = "qwen3:30b"
+    conspiracy_model: str = "gemma3:27b"
+    scientific_model: str = "glm-4.7-flash:latest"
     moderator_temperature: float = 0.2
     conspiracy_temperature: float = 0.6
     scientific_temperature: float = 0.2
