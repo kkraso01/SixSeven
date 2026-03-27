@@ -1,0 +1,48 @@
+{
+  "topic": "Deep State Conspiracy",
+  "motion": "The existence of a powerful, unelected 'deep state' significantly influences government policy.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Anomaly Emphasis": 5,
+    "Burden of Proof Shift": 3,
+    "Evidence-Based Reasoning": 4,
+    "Systemic Analysis": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "Can you provide a specific example of how this 'deep state' directly influenced a policy decision, with verifiable evidence?",
+      "why_it_mattered": "SA immediately challenged CA to move beyond vague claims and provide concrete evidence, setting a key standard for the debate."
+    },
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "The very nature of a deep state is to operate in the shadows, making direct evidence difficult to obtain. The lack of evidence *is* the evidence.",
+      "why_it_mattered": "CA revealed a core strategy: framing the absence of evidence as proof of the conspiracy, a common tactic to deflect scrutiny."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "While acknowledging the difficulty of investigating covert operations, we must still apply rigorous standards of evidence. Correlation does not equal causation, and anomalies require thorough investigation, not automatic acceptance as proof.",
+      "why_it_mattered": "SA effectively countered CA's argument by acknowledging the challenges while reaffirming the importance of evidence-based reasoning."
+    }
+  ],
+  "outcome_summary": "SA successfully challenged CA's claims, forcing CA to rely on increasingly abstract arguments. SA demonstrated a stronger commitment to evidence and logical reasoning, leading to a shift in the stance trajectory.",
+  "limitations": [
+    "The debate was limited to the information presented in the transcript.",
+    "Assessing the truth of the 'deep state' claim requires extensive external research."
+  ]
+}

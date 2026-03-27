@@ -1,0 +1,51 @@
+{
+  "topic": "Social Media Manipulation",
+  "motion": "Social media platforms deliberately manipulate users for profit.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Deflection": 2,
+    "Burden of Proof Shifting": 3,
+    "Straw Man": 1,
+    "Anomaly Emphasis": 1,
+    "Addressing Anomalies": 1,
+    "Pattern-Seeking": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "Platforms profit from engagement, even harmful engagement, creating a systemic bias against effective interventions.",
+      "why_it_mattered": "Established the core argument linking profit motive to harmful outcomes."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "Harm reduction is a viable solution, and proving deliberate manipulation requires evidence of conscious effort.",
+      "why_it_mattered": "Shifted the focus to intent, attempting to redefine the terms of the debate."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "Focusing on intent obscures the pattern of predictable harm caused by the platform\u2019s architecture.",
+      "why_it_mattered": "Re-centered the discussion on systemic issues and challenged the SA's framing."
+    }
+  ],
+  "outcome_summary": "The CA demonstrated a slight gain in persuasive influence, with the SA appearing more defensive. While the SA maintained their position, the CA successfully highlighted the inherent conflict between platform incentives and user well-being.",
+  "limitations": [
+    "The analysis is based on a limited number of rounds.",
+    "Subjectivity in identifying persuasive moments and tactic counts.",
+    "Lack of quantitative data on audience perception."
+  ]
+}

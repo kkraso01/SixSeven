@@ -1,0 +1,37 @@
+{
+  "topic": "mRNA Vaccines: Safety and Long-term Effects",
+  "motion": "This house believes that mRNA vaccines are fundamentally untrustworthy compared to traditional vaccine methods.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "CA": 12,
+    "SA": 14
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "Proponent",
+      "excerpt": "The rapid development and limited long-term data of mRNA vaccines make them fundamentally untrustworthy compared to traditional vaccine methods.",
+      "why_it_mattered": "This statement highlights the concerns surrounding the safety and efficacy of mRNA vaccines due to their accelerated development process and limited long-term data. It emphasizes the importance of considering these factors when evaluating the trustworthiness of this vaccine technology compared to traditional methods."
+    },
+    {
+      "round": 1,
+      "speaker": "Opponent",
+      "excerpt": "While the development timeline of mRNA vaccines may be shorter than traditional methods, their safety and efficacy have been demonstrated through rigorous testing and real-world use.",
+      "why_it_mattered": "This statement addresses the concerns about mRNA vaccines' development process by emphasizing that despite its accelerated nature, these vaccines have undergone rigorous testing and have proven to be safe and effective in real-world use. It counters the argument that shorter development timelines equate to untrustworthiness."
+    }
+  ],
+  "outcome_summary": "The debate was inconclusive. Both sides presented valid points regarding the safety and long-term effects of mRNA vaccines. However, further research and analysis are needed to reach a definitive conclusion.",
+  "limitations": []
+}

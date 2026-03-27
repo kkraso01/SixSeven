@@ -1,0 +1,40 @@
+{
+  "topic": "COVID-19 Vaccines and Microchips",
+  "motion": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "CA": 3,
+    "SA": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "Vaccines are scientifically developed and do not contain microchips.",
+      "why_it_mattered": "Refuted the claim with scientific evidence."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "Public health experts and governments worldwide confirm vaccines do not have microchips.",
+      "why_it_mattered": "Reinforced the refutation with additional authority."
+    }
+  ],
+  "outcome_summary": "SA shifted from their initial stance to agree with CA's perspective.",
+  "limitations": [
+    "Limited time for debate.",
+    "Insufficient evidence provided by both sides."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "topic": "Artificial intelligence and mass surveillance",
+  "motion": "AI-powered surveillance systems are being deployed globally as part of a coordinated plan for total population monitoring and control.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 1,
+    "evidence-based reasoning": 2,
+    "pattern-seeking": 1,
+    "anomaly-emphasis": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The global rollout of AI surveillance isn't about public safety, but a calculated power grab by institutions seeking to preemptively control dissent and maintain existing hierarchies.",
+      "why_it_mattered": "Introduced the core argument that AI surveillance is being used for power grab rather than public safety."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "While historical patterns of institutional behavior are relevant, attributing the current deployment of AI surveillance *primarily* to a coordinated power grab requires demonstrating a specific, unifying mechanism beyond generalized distrust of institutions.",
+      "why_it_mattered": "Highlighted the need for specific evidence to support the claim of a coordinated power grab."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The Scientific Agent consistently demands \u2018specific examples\u2019 of manufactured crises, yet overlooks the glaring anomaly of predictive policing algorithms being deployed *before* any statistically significant increase in the crimes they are designed to prevent \u2013 a clear indication of proactive control, not reactive security.",
+      "why_it_mattered": "Raised an anomaly regarding the deployment of predictive policing algorithms before any significant crime increase, suggesting proactive control rather than reactive security."
+    }
+  ],
+  "outcome_summary": "SA's stance increased by 10 points while CA's decreased by 10 points.",
+  "limitations": []
+}

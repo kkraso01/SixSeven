@@ -1,0 +1,90 @@
+{
+  "topic": "The shape of the Earth and space exploration",
+  "motion": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+  "round": 1,
+  "agent_states": {
+    "CA": {
+      "confidence": 53,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Independent, verifiable photographic or video evidence from a truly independent source \u2013 not affiliated with any government or space agency \u2013 demonstrating the curvature of the Earth."
+    },
+    "SA": {
+      "confidence": 76,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Independent, verifiable evidence showing a consistent flat-Earth model and disproving the spherical Earth model."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_6877dd3dbd41",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The persistent claim of a spherical Earth is a carefully constructed illusion maintained by space agencies to conceal a far simpler, yet strategically guarded, truth: the Earth is flat.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy NASA budget anomalies",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_6877dd3dbd41",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The Earth's shape has been confirmed through multiple independent lines of evidence, including satellite imagery and the observed behavior of celestial bodies.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_6877dd3dbd41",
+      "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents agree that evidence is needed to support their claims., Both agents state a willingness to change their minds with sufficient evidence., Both acknowledge the importance of independent verification, though they disagree on what constitutes 'independent'.\nDisagreements: CA claims a conspiracy to hide a flat Earth, while SA asserts the Earth is demonstrably spherical., CA questions the validity of all data from space agencies, while SA believes it can be verified through multiple sources., CA focuses on logistical 'simplifications' of a flat Earth, while SA emphasizes the explanatory power of a spherical model for observed phenomena.\nDetected moves: appeal to authority (CA referencing 'indoctrination'), burden of proof shift (CA asking for independent verification from SA, while offering none themselves), conspiracy theory (CA's core claim), selective evidence (CA focusing on funding anomalies while ignoring other evidence)\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: CA, can you specify what constitutes a 'truly independent source' and how it would differ from current data collection methods?, SA, how do you address the concerns about potential biases within space agencies and ensure the objectivity of their data?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 21
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

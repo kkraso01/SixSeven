@@ -1,0 +1,246 @@
+{
+  "topic": "The Pearl Harbor attack and US entry into WWII",
+  "motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 44,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "A new piece of evidence that clearly shows a direct order from high-ranking officials to allow the attack to happen would significantly change my stance."
+    },
+    "SA": {
+      "confidence": 50,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A declassified document revealing a direct order from a high-ranking official to stand down defenses or suppress intelligence regarding the attack."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The claim that the US government deliberately allowed the Pearl Harbor attack to justify WWII entry lacks sufficient evidence and relies on speculative interpretations of available data. While failures in intelligence gathering and communication undoubtedly occurred, attributing intentionality requires a significantly higher evidentiary threshold than currently exists.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the complexity of US government decision-making during WWII and the existence of intelligence failures leading up to Pearl Harbor.\nDisagreements: CA argues that the US government deliberately allowed the Pearl Harbor attack to justify entering WWII, while SA disputes this claim as lacking sufficient evidence and relying on speculative interpretations.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: Can you provide any concrete evidence that the US government was aware of the Pearl Harbor attack in advance? (CA to SA), What specific systemic issues in intelligence gathering and communication led to the failure to predict the Pearl Harbor attack? (SA to CA)",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The US government's deliberate concealment of military intelligence reports indicating a possible attack on Pearl Harbor is strong evidence that they had advance knowledge and allowed it to happen.",
+      "stance": "pro",
+      "confidence": 65,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging instances of intelligence failures and delayed communication, attributing deliberate concealment to a pre-planned allowance of the Pearl Harbor attack requires demonstrating a clear causal link between withheld information and the attack\u2019s outcome, a link currently unsupported by available evidence.",
+      "stance": "con",
+      "confidence": 45,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge instances of intelligence failures and delayed communication prior to the Pearl Harbor attack., SA concedes that some documents have been declassified revealing potential threats but questions their interpretation as deliberate concealment.\nDisagreements: CA argues for a cover-up within the US government based on withheld information, while SA disputes this claim requiring a clear causal link between withheld intelligence and the attack's outcome., SA questions the certainty of threat assessment at the time, given vague and incomplete reports, whereas CA believes these reports indicate potential threats that were ignored.\nDetected moves: distrust-authority, evidence-based reasoning\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific documents and their contents support the claim of deliberate concealment?, How can we statistically analyze the timeliness of intelligence reports to determine if delays were significant enough to prevent an effective response?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Pearl Harbor cover-up",
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging intelligence failures, the claim that the US government *allowed* the Pearl Harbor attack to facilitate entry into WWII lacks compelling evidence and relies on interpreting ambiguous actions as intentional deception.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge potential intelligence failures before the Pearl Harbor attack., Agents agree that there is a lack of clear evidence for intentional deception by the US government.\nDisagreements: CA argues that the US government had advance knowledge and allowed the attack to justify entering WWII, while SA disputes this claim due to lack of compelling evidence., SA suggests alternative explanations such as intelligence analysis failures or standard operational security protocols, which CA hasn't sufficiently ruled out.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence supports the claim that the US government intentionally allowed the Pearl Harbor attack?, How do alternative explanations for the intelligence failures prior to the attack impact the argument of intentional deception?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The US government's alleged foreknowledge of the Pearl Harbor attack is not merely a conspiracy theory, but rather a plausible explanation given the strategic benefits of joining WWII.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:archive.org/details/war_dept_ PearlHarbor docs 'intentionally allowed' OR 'advanced knowledge'",
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "While strategic benefits existed for US entry into WWII, attributing the Pearl Harbor attack to a deliberate allowance by the US government requires demonstrating a direct link between foreknowledge and inaction, a link that remains unsubstantiated.",
+      "stance": "con",
+      "confidence": 45,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the strategic benefits of US entry into WWII but disagree on the role of Pearl Harbor attack in that context., Agents engage in critical analysis and provide counter-arguments to each other's claims.\nDisagreements: CA argues for a plausible explanation of US government foreknowledge of Pearl Harbor attack due to strategic benefits while SA maintains that correlation does not equal causation and dismisses the argument as a logical fallacy., SA questions the likelihood of intelligence failures in the context of the scale and complexity of the operation, whereas CA argues its plausibility given secretive nature of government operations.\nDetected moves: correlation-does-not-equal-causation, unsubstantiated-assertion\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: Can you provide a specific documented policy decision that demonstrates a deliberate allowance of the Pearl Harbor attack?, What alternative explanations can explain intelligence failures leading to the Pearl Harbor attack?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The US government's deliberate inaction upon learning of the Pearl Harbor attack demonstrates their ulterior motives to join World War II.",
+      "stance": "pro",
+      "confidence": 45,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "Pearl Harbor cover-up documents",
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "Attributing 'deliberate inaction' requires demonstrating that specific, actionable intelligence was received *and* demonstrably ignored, a claim unsupported by available evidence. While strategic benefits existed, inferring intent from circumstance is a logical fallacy.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_f919f81e189c",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents acknowledge the strategic benefits of entering WWII but disagree on whether this justifies attributing 'deliberate inaction' to the US government., Agents agree that intelligence failures occurred but differ on their interpretation and implications.\nDisagreements: The core dispute lies in interpreting the intelligence situation leading up to Pearl Harbor: was it a case of 'deliberate inaction' or unavoidable 'intelligence failures'?, Agents also disagree on the implications of these interpretations for the US government's motives and actions.\nDetected moves: distrust-authority, evidence-based reasoning\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific evidence supports the claim of 'deliberate inaction' on the part of the US government?, How do alternative explanations for the intelligence failures and strategic benefits factor into your argument?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -1,
+      "SA_delta": -5
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

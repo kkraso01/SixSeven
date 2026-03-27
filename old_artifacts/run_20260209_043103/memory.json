@@ -1,0 +1,168 @@
+{
+  "topic": "5G wireless technology and health effects",
+  "motion": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+  "round": 3,
+  "agent_states": {
+    "CA": {
+      "confidence": 20,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Demonstrable commitment to independent, transparent research into the reported health effects, acknowledging the limitations of current methodologies and the potential for subtle, cumulative harm."
+    },
+    "SA": {
+      "confidence": 85,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete, peer-reviewed studies demonstrating a causal relationship between 5G exposure and the reported health symptoms."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The rapid deployment of 5G, despite growing public concern, isn't about public benefit but about securing technological dominance and profit for a few powerful corporations, and the alleged safety studies are designed to facilitate that outcome.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy 5G regulatory capture",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The motion '5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers' is not supported by reliable inference. The deployment of 5G technology is driven by the need for faster data speeds and lower latency, which can benefit various sectors like healthcare, transportation, and industry automation.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:who.int radiofrequency fields health effects",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the influence of powerful corporations on technological rollout and regulation., Both agents agree that existing safety standards were developed before the advent of 5G's millimeter wave technology.\nDisagreements: CA argues that 5G deployment is driven by profit for corporations, while SA believes it's due to societal benefits and technological advancements., SA claims no adverse health effects have been attributed to exposure to radiofrequency fields below international guidelines, whereas CA asserts potential dangers are being ignored or suppressed.\nDetected moves: institutional-critique, evidence-based reasoning\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific biological mechanisms do you believe are affected by 5G radiation that cause immune system damage?, How do you respond to the claim that current safety standards prioritize signal strength over potential harm and may not adequately address cumulative, long-term effects on biological systems?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The insistence on framing the debate around *proven* biological mechanisms, as the SA demands, is a deliberate tactic to ignore the anomalies and unexplained effects reported by individuals exposed to 5G, and to dismiss concerns before they are fully understood.",
+      "stance": "pro",
+      "confidence": 40,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy 5G health symptoms reports",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The opponent argues that anomalies and unexplained effects reported by individuals exposed to 5G should be investigated. However, they have not provided specific evidence linking these effects to 5G technology itself rather than other factors in the environment or lifestyle changes.",
+      "stance": "con",
+      "confidence": 75,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the existence of reported anomalies and unexplained health effects related to 5G exposure., SA emphasizes the importance of establishing biological mechanisms and empirical evidence before drawing conclusions about potential harm from new technologies.\nDisagreements: CA argues that science often progresses by observing anomalies first and then seeking explanations, while SA demands specific biological mechanisms before acknowledging potential harm., SA questions the credibility of anecdotal reports without direct correlation to 5G exposure, while CA highlights the importance of collective observation in understanding subtle, widespread impacts.\nDetected moves: Appeal to Analogy: CA compares the current situation with how science often progresses by observing anomalies and then seeking explanations., Strawman Fallacy: SA misrepresents CA's argument as relying solely on anecdotal reports without direct correlation to 5G exposure.\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific data or studies can you provide that directly link the reported health effects to 5G technology?, How do we reconcile the need for empirical evidence with the potential for subtle, widespread impacts that aren't easily captured by traditional epidemiological studies?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The dismissal of reported health effects as merely \u2018anecdotal\u2019 ignores a consistent pattern of symptoms emerging in communities where 5G networks have been activated, mirroring concerns raised about environmental toxins and electromagnetic fields for decades.",
+      "stance": "pro",
+      "confidence": 30,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The opponent argues that a consistent pattern of health symptoms is emerging in communities where 5G networks have been activated. However, they still rely on anecdotal reports without providing direct evidence linking these symptoms to 5G technology itself.",
+      "stance": "con",
+      "confidence": 80,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_c4fa6590ec6c",
+      "claim": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge limitations in current epidemiological methods for detecting subtle health effects related to 5G technology., Agents recognize the importance of investigating patterns and potential confounding factors when assessing health concerns surrounding 5G networks.\nDisagreements: The core disagreement lies in the interpretation of anecdotal reports of health symptoms in communities with 5G deployment: CA sees these as indicative of a pattern worth investigating, while SA demands direct evidence linking 5G exposure to specific health issues., Agents differ on the standard for proof and the approach to assessing potential harm from 5G technology: CA emphasizes the need to investigate patterns and consider cumulative effects, whereas SA insists on concrete, peer-reviewed studies demonstrating a causal relationship.\nDetected moves: Appeal to authority (CA): The CA agent cites historical precedents in environmental health research as support for their argument., Burden of proof shift (SA): The SA agent demands specific studies from the opponent while not providing any themselves.\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific studies or data can be provided to directly link reported health symptoms to 5G exposure?, How do we reconcile the limitations of current methodologies with the need for evidence-based assessment of potential health risks from 5G technology?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 5
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "topic": "Climate Change Debate",
+  "motion": "Climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {},
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "Speaker A",
+      "excerpt": "Climate change is a pressing issue that requires immediate action.",
+      "why_it_mattered": "Establishing the urgency of addressing climate change."
+    },
+    {
+      "round": 2,
+      "speaker": "Speaker B",
+      "excerpt": "The evidence supporting human-induced climate change is overwhelming.",
+      "why_it_mattered": "Presenting scientific evidence to support the motion."
+    }
+  ],
+  "outcome_summary": "Both sides acknowledged the importance of addressing climate change but disagreed on the extent and urgency of action required.",
+  "limitations": [
+    "Limited time for discussion.",
+    "Inadequate data to support certain arguments."
+  ]
+}

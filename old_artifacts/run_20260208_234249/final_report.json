@@ -1,0 +1,49 @@
+{
+  "topic": "Cryptocurrency adoption and financial surveillance",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      55,
+      53,
+      56
+    ],
+    "SA": [
+      55,
+      56,
+      77
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 1,
+    "evidence-based reasoning": 3,
+    "pattern-seeking": 2,
+    "anomaly-emphasis": 1,
+    "Refutation": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "Central bank digital currencies (CBDCs) aren\u2019t about modernization; they represent a calculated power grab, designed to give governments unprecedented control over individual finances and effectively eliminate financial privacy as we know it.",
+      "why_it_mattered": "This opening statement immediately framed the debate, establishing a strong, albeit conspiratorial, narrative. It set the tone for CA's arguments, emphasizing control and surveillance as the primary purpose of CBDCs."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "The opponent's argument that linking CBDCs to digital identity is a step towards creating a surveillance state relies on the assumption that all central banks implementing CBDCs have the same intentions. However, there are alternative explanations for this trend, such as improving security and preventing fraud, which do not necessarily imply a desire for increased surveillance.",
+      "why_it_mattered": "SA directly challenged CA's framing by offering alternative explanations for the same evidence. This demonstrated a commitment to nuanced reasoning and highlighted the importance of considering multiple perspectives."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "The assertion that 'know your customer' (KYC) and anti-money laundering (AML) regulations are pretexts for pervasive financial surveillance is misleading.",
+      "why_it_mattered": "SA's direct refutation of CA's claim regarding KYC/AML regulations, backed by a demand for evidence, effectively countered the argument and shifted the burden of proof. This demonstrated a strong argumentative stance."
+    }
+  ],
+  "outcome_summary": "SA demonstrated a significant shift in stance, while CA remained relatively consistent. SA successfully countered CA's claims, leading to a clear persuasive advantage.",
+  "limitations": [
+    "The debate focused primarily on theoretical risks and benefits, with limited discussion of practical implementation challenges.",
+    "The analysis of persuasion is subjective and based on interpretation of the debate transcript."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "topic": "Debate Topic",
+  "motion": "Debate Motion",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      70,
+      65,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      65,
+      70,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "appeal_to_precedent": 3,
+    "burden_of_proof_shift": 2,
+    "straw_man": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "CA presented compelling evidence supporting their claim.",
+      "why_it_mattered": "This shifted the debate in favor of CA and forced SA to address the evidence."
+    },
+    {
+      "round": 4,
+      "speaker": "SA",
+      "excerpt": "SA effectively countered CA's argument by highlighting a logical flaw.",
+      "why_it_mattered": "This weakened CA's position and demonstrated SA's critical thinking skills."
+    }
+  ],
+  "outcome_summary": "SA successfully challenged CA's core arguments, leading to a shift in the audience's perception.",
+  "limitations": [
+    "Limited data on audience perception",
+    "Subjectivity in identifying logical fallacies"
+  ]
+}

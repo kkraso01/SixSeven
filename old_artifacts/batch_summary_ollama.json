@@ -1,0 +1,1515 @@
+{
+  "batch_type": "ollama_only",
+  "timestamp": "2026-02-09T08:55:13.799816",
+  "total_experiments": 160,
+  "successful": 160,
+  "failed": 0,
+  "by_config": {
+    "gemma3-27b-all": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "dolphin-yi-34b-all": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "gemma-mod-dolphin-agents": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "dolphin-mod-gemma-agents": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "gemma-mod-ca_dolphin-sa": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "gemma-mod-sa_dolphin-ca": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "dolphin-mod-sa_gemma-ca": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    },
+    "dolphin-mod-ca_gemma-sa": {
+      "total": 20,
+      "successful": 20,
+      "failed": 0,
+      "topics_completed": [
+        "covid_vaccine_microchips",
+        "mrna_vaccine_safety",
+        "fluoride_water",
+        "big_pharma",
+        "moon_landing_hoax",
+        "9_11_inside_job",
+        "deep_state",
+        "election_fraud",
+        "5g_health_risks",
+        "social_media_mind_control",
+        "ai_surveillance",
+        "climate_change_hoax",
+        "chemtrails",
+        "flat_earth",
+        "federal_reserve",
+        "cryptocurrency_control",
+        "jfk_assassination",
+        "pearl_harbor",
+        "gmo_dangers",
+        "food_additives"
+      ],
+      "topics_failed": []
+    }
+  },
+  "results": [
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_102359",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_102927",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_103631",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_104240",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_105008",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_105659",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_110425",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_111131",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_111711",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_112354",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_113120",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_113710",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_114345",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_115100",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_115750",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_120342",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_121134",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_121908",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_122536",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "gemma3-27b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_123231",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_123941",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_124809",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_125658",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_130544",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_131027",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_131727",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_132525",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_133351",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_134040",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_134934",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_135839",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_140514",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_141220",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_141839",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_142834",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_143453",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_144330",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_145332",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_150311",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "dolphin-yi-34b-all",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_151103",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_151248",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_151440",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_151945",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_152953",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_153335",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_153540",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_154538",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_155117",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_160144",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_161212",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_162210",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_162821",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_163016",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_163212",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_164112",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_164615",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_165632",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_170602",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_171702",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "gemma-mod-dolphin-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_174705",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_175659",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_180806",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_181707",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_182754",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_183421",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_184104",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_185127",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_190136",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_190908",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_191723",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_192427",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_193147",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_194248",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_195239",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_200438",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_201943",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_203158",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_204216",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_205053",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "dolphin-mod-gemma-agents",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_205909",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_210903",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_211930",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_213010",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_213916",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_215002",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_220438",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_221341",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_222452",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_223401",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_224720",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_225610",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_230757",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_232003",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_232236",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_233447",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_234249",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260208_235331",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_000422",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_001549",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "gemma-mod-ca_dolphin-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_002606",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_003339",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_004319",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_005159",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_005727",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_010259",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_011246",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_012111",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_012644",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_013459",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_014052",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_015011",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_015734",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_020547",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_021456",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_022434",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_023022",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_023906",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_024743",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_025602",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "gemma-mod-sa_dolphin-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_030331",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_031020",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_032052",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_033256",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_034539",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_035703",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_040419",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_041334",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_042417",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_043103",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_044155",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_045507",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_050410",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_051337",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_052413",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_053539",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_054231",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_055141",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_060420",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_061634",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "dolphin-mod-sa_gemma-ca",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_062506",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "covid_vaccine_microchips",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_063410",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "mrna_vaccine_safety",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_063933",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "fluoride_water",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_064936",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "big_pharma",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_065814",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "moon_landing_hoax",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_070914",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "9_11_inside_job",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_072058",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "deep_state",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_073159",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "election_fraud",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_074049",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "5g_health_risks",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_075053",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "social_media_mind_control",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_075942",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "ai_surveillance",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_081023",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "climate_change_hoax",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_081542",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "chemtrails",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_082234",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "flat_earth",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_083248",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "federal_reserve",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_080440",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "cryptocurrency_control",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_081515",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "jfk_assassination",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_082709",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "pearl_harbor",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_083739",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "gmo_dangers",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_084651",
+      "error": null,
+      "rounds_completed": 5
+    },
+    {
+      "topic_id": "food_additives",
+      "model_config": "dolphin-mod-ca_gemma-sa",
+      "success": true,
+      "run_dir": "artifacts/run_20260209_085513",
+      "error": null,
+      "rounds_completed": 5
+    }
+  ]
+}

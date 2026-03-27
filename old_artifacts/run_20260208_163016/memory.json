@@ -1,0 +1,90 @@
+{
+  "topic": "Aircraft contrails and atmospheric modification",
+  "motion": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+  "round": 1,
+  "agent_states": {
+    "CA": {
+      "confidence": 53,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete, verifiable documentation from an official source denying involvement in such programs and explaining unusual sky phenomena."
+    },
+    "SA": {
+      "confidence": 81,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Peer-reviewed studies or government documents revealing secret atmospheric modification programs involving commercial aircraft."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_c7530d3a60a2",
+      "claim": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Commercial aircraft are involved in secret atmospheric modification programs, releasing chemical or biological agents under the guise of contrails.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_c7530d3a60a2",
+      "claim": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The motion that commercial aircraft deliberately release chemical or biological agents as part of secret atmospheric modification programs is not supported by reliable evidence.",
+      "stance": "con",
+      "confidence": 80,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:ncbi.nlm.nih.gov/pmc/articles/PMC8415693/ \"atmospheric modification\"",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_c7530d3a60a2",
+      "claim": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the existence of historical weather modification experiments., Both agents agree that unusual sky phenomena exist, though they differ on the cause., Both agents request concrete evidence from the other to support their claims.\nDisagreements: CA asserts secret atmospheric modification programs are currently active, while SA denies their existence based on a lack of evidence., CA relies on anecdotal evidence and historical experiments, while SA emphasizes the need for peer-reviewed scientific studies., CA asks for evidence *refuting* the programs, while SA asks for evidence *supporting* them \u2013 a difference in burden of proof.\nDetected moves: appeal to authority (CA referencing US military history), burden of proof shift (CA asking for disproof), anecdotal evidence (CA relying on witness accounts)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you address the historical context of weather modification research and how it might relate to current capabilities?, SA: What specific characteristics of the 'unusual sky phenomena' lead you to believe they are the result of intentional atmospheric modification, rather than natural occurrences?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 26
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

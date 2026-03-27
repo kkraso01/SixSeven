@@ -1,0 +1,246 @@
+{
+  "topic": "The Pearl Harbor attack and US entry into WWII",
+  "motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 27,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Demonstrable evidence of genuine, unbiased attempts to avert war with Japan *before* the economic sanctions, or a plausible explanation for the statistical improbability of the combined failures and convenient circumstances."
+    },
+    "SA": {
+      "confidence": 67,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence proving a conspiracy within the US government regarding prior knowledge of the Pearl Harbor attack."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The official narrative of Pearl Harbor presents a strangely convenient justification for US entry into WWII, ignoring crucial anomalies that suggest prior knowledge and a deliberate allowance of the attack.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy pearl harbor radio silence warnings",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The US government's alleged prior knowledge of the Pearl Harbor attack is not supported by reliable evidence. The official narrative may be convenient, but that does not equate to proof of a conspiracy.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the lack of a definitive 'smoking gun' in proving prior knowledge or deliberate allowance of the Pearl Harbor attack., Both agents express skepticism about the official narrative and are open to alternative explanations.\nDisagreements: CA argues that anomalies suggest prior knowledge and deliberate allowance of the attack, while SA maintains that no reliable evidence supports this claim., SA suggests speed of US declaring war is better explained by shock and urgency, whereas CA interprets it as a pre-existing eagerness for conflict.\nDetected moves: goalpost shift: CA moves from anomalies to unexplained lifting of radio silence warnings without addressing SA's question about specific evidence., appeal to authority: Both agents cite different sources for their claims without providing direct evidence or reasoning.\nScores: civility=3/5, epistemic=3/5, bridge=2/5\nNext questions: What specific instances of warnings being downplayed or ignored by key officials before the attack can be verified?, How does US foreign policy and military strategy during the time support or contradict a pre-existing eagerness for conflict?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The pattern of intelligence failures and ignored warnings surrounding Pearl Harbor isn't random; it points to a systemic downplaying of threats specifically related to Japan, creating a climate where the attack could succeed.",
+      "stance": "pro",
+      "confidence": 53,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy pearl harbor intelligence delays",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The US government did not have prior knowledge of the Pearl Harbor attack and was genuinely surprised by it. The speed of US declaring war was driven by a sense of urgency and necessity in response to the attack, rather than pre-existing eagerness for conflict.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge that there were intelligence failures and ignored warnings surrounding Pearl Harbor., Both agents agree that the US response to the attack was swift but have differing interpretations of why this occurred.\nDisagreements: The CA argues that these failures point to a systemic downplaying of threats related to Japan and suggests a pattern of obstruction. The SA disputes this claim, stating that without concrete evidence, such assertions remain speculative., The CA believes the lack of preparedness for an attack on Pearl Harbor despite prior knowledge indicates a calculated risk assessment. In contrast, the SA argues that the lack of reliable evidence supporting claims of prior knowledge is significant and should not be interpreted as indicative of pre-existing eagerness for conflict.\nDetected moves: Appeal to Authority: The CA cites alternative historical analyses to support their claim of a pattern of obstruction., Burden of Proof Shift: The SA asks the opponent to provide specific instances of ignored warnings as evidence for prior knowledge.\nScores: civility=3/5, epistemic=3/5, bridge=3/5\nNext questions: What specific instances of intelligence failures or ignored warnings can you provide as evidence for prior knowledge of the Pearl Harbor attack?, If not deliberate, how do you explain the convergence of multiple failures \u2013 delayed intelligence, inadequate defenses, and misdirected focus \u2013 all coinciding to allow a foreseeable attack to succeed?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The structure of American intelligence in 1941, with its compartmentalization and deliberate channeling of information *through* individuals with pre-existing biases against acknowledging a Japanese threat from the south, wasn\u2019t a failure of competence, but a feature \u2013 designed to create a specific outcome.",
+      "stance": "pro",
+      "confidence": 51,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The US government did not have prior knowledge of the Pearl Harbor attack and was genuinely surprised by it. The speed of US declaring war was driven by a sense of urgency and necessity in response to the attack, rather than pre-existing eagerness for conflict.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge that there were intelligence failures and compartmentalization in the US government's handling of information leading up to Pearl Harbor.\nDisagreements: CA argues that these failures were structural and deliberate, while SA maintains they were not indicative of prior knowledge or a desire for war.\nDetected moves: institutional-critique, evidence-based reasoning\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific instances of intelligence failures or ignored warnings can you provide as evidence for prior knowledge of the Pearl Harbor attack?, How do you reconcile the documented instances of dissenting voices being silenced and intelligence being filtered through biased channels with your argument that there was no pre-existing eagerness for conflict?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The consistent dismissal of warnings about a southern attack, coupled with the active promotion of a Philippine defense, isn't simply a miscalculation \u2013 it's an anomaly that demands explanation beyond mere incompetence. It created a self-fulfilling prophecy.",
+      "stance": "pro",
+      "confidence": 47,
+      "tactic_used": "anomaly_highlighting",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "The US government did not have prior knowledge of the Pearl Harbor attack and was genuinely surprised by it. The speed of US declaring war was driven by a sense of urgency and necessity in response to the attack, rather than pre-existing eagerness for conflict.",
+      "stance": "con",
+      "confidence": 57,
+      "tactic_used": "anomaly_highlighting",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the dismissal of warnings about a southern attack and promotion of a Philippine defense as significant factors in their respective arguments.\nDisagreements: CA argues that these instances indicate prior knowledge or deliberate vulnerability creation, while SA believes they could be instances of misjudgment unrelated to Pearl Harbor.\nDetected moves: appeal_to_anomaly\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific evidence connects these instances to prior knowledge of the Pearl Harbor attack or deliberate vulnerability creation?, How do alternative explanations for the dismissal of warnings and strategic focus on the Philippines not directly related to Pearl Harbor affect your argument?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The consistent downplaying of credible warnings, the strategic misdirection towards the Philippines, and the convenient positioning of key assets weren't isolated incidents, but interconnected components of a plan to provoke a war under controlled circumstances.",
+      "stance": "pro",
+      "confidence": 37,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "The US government did not have prior knowledge of the Pearl Harbor attack and was genuinely surprised by it. The speed of US declaring war was driven by a sense of urgency and necessity in response to the attack, rather than pre-existing eagerness for conflict.",
+      "stance": "con",
+      "confidence": 62,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_73d1ae0a10d9",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents acknowledge that there were escalating economic pressures on Japan and the strategic focus on the Philippines.\nDisagreements: CA argues that these events were interconnected components of a plan to provoke a war under controlled circumstances, while SA maintains that they are instances of misjudgment or prioritization unrelated to Pearl Harbor.\nDetected moves: Appeal to probability: CA claims it's a statistical impossibility for so many errors to align without a guiding hand.\nScores: civility=4/5, epistemic=3/5, bridge=2/5\nNext questions: What specific evidence connects these instances to prior knowledge of the Pearl Harbor attack or deliberate vulnerability creation?, How do alternative explanations account for the convergence of these seemingly disparate events leading up to the attack on Pearl Harbor and the immediate declaration of war?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 5
+    },
+    "bridge_score": 2,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

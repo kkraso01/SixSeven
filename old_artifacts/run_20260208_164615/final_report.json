@@ -1,0 +1,47 @@
+{
+  "topic": "Cryptocurrency adoption and financial surveillance",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      55,
+      52,
+      49
+    ],
+    "SA": [
+      70,
+      72,
+      74
+    ]
+  },
+  "tactic_counts": {
+    "distrust-authority": 3,
+    "evidence-based reasoning": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "Central bank digital currencies do not inherently enable total government control over personal finances or eliminate financial privacy. Their design and functionality depend on specific features implemented by central banks.",
+      "why_it_mattered": "SA immediately challenged the inherent claim of the motion, establishing that design choices, not the technology itself, determine privacy implications. This reframed the debate and introduced nuance."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "Central bank digital currencies' potential for privacy-enhancing features is not undermined by the lack of transparency and accountability within central banking systems. Their design can be independent of the institutions implementing them.",
+      "why_it_mattered": "SA directly addressed CA's concerns about central bank trustworthiness by arguing that design can be independent of institutional behavior, shifting the focus to technical solutions."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "Central bank digital currencies' potential for privacy-enhancing features is not inherently undermined by the institutions implementing them. Design choices can prioritize user anonymity and protect financial privacy.",
+      "why_it_mattered": "SA reiterated their core argument, emphasizing the agency of design in shaping CBDC functionality and directly countering CA's claim of inherent control."
+    }
+  ],
+  "outcome_summary": "SA demonstrated a clear shift in CA's confidence over the three rounds, indicating some degree of persuasion. While CA maintained their core skepticism, their confidence decreased from 55 to 49. SA's confidence remained consistently high, demonstrating a strong conviction in their position.",
+  "limitations": [
+    "The debate was limited to three rounds, which may not have been sufficient for a complete exploration of the topic.",
+    "The agents relied heavily on online searches, which may have introduced bias or inaccuracies.",
+    "The moderator's summaries, while helpful, could have inadvertently influenced the agents' thinking."
+  ]
+}

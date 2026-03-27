@@ -1,0 +1,40 @@
+{
+  "topic": "Food additives and chronic diseases",
+  "motion": "Food additives approved by regulatory agencies are intentionally harmful and designed to create chronic diseases that benefit the medical industry.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "pattern-seeking": 3,
+    "emotional appeal": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Proponent A",
+      "excerpt": "There is evidence of systematic influence from the food additive industry on regulatory agencies.",
+      "why_it_mattered": "This revelation shifted the debate towards questioning the integrity of regulatory processes."
+    },
+    {
+      "round": 4,
+      "speaker": "Skeptic B",
+      "excerpt": "While there may be instances of industry influence, it's an overgeneralization to claim all additives are harmful.",
+      "why_it_mattered": "This counterargument introduced skepticism about the proponent's claims and encouraged a more nuanced discussion."
+    }
+  ],
+  "outcome_summary": "The proponents were able to sway some skeptics, but not all. The debate concluded with increased awareness of the issue, but no unanimous conclusion.",
+  "limitations": [
+    "Limited time for discussion hindered an in-depth exploration of evidence and counterarguments.",
+    "The diverse backgrounds of participants introduced varying perspectives that were challenging to reconcile within the debate format."
+  ]
+}

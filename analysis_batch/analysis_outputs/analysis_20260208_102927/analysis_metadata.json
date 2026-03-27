@@ -1,0 +1,27 @@
+{
+  "input_run_folder": "old_artifacts\\run_20260208_102927",
+  "output_analysis_folder": "analysis_outputs\\analysis_20260208_102927",
+  "original_row_count": 12,
+  "analyzed_row_count": 8,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "emotion_columns": [
+    "emotion_joy",
+    "emotion_sadness",
+    "emotion_anger",
+    "emotion_fear",
+    "emotion_love",
+    "emotion_surprise"
+  ],
+  "files_found": {
+    "debate_log.csv": true,
+    "transcript.md": true,
+    "memory.json": true,
+    "final_report.json": true,
+    "metrics.csv": true,
+    "experiment_metadata.json": true,
+    "run_config.json": true
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "topic": "Cryptocurrency adoption and financial surveillance",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "round": 4,
+  "agent_states": {
+    "CA": {
+      "confidence": 20,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence showing that central bank digital currencies are designed with built-in privacy protections and will not lead to total government control over personal finances."
+    },
+    "SA": {
+      "confidence": 70,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Evidence showing that all central banks are implementing policies enabling total government control over personal finances in their digital currency designs."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Central bank digital currencies are designed to create a system of control over personal finances by institutions.",
+      "stance": "pro",
+      "confidence": 60,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "Central bank digital currencies may not necessarily be designed to enable total government control over personal finances and eliminate financial privacy. The design and functionality of these currencies could depend on the specific policies implemented by central banks.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "central bank digital currency policies privacy",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Central banks' historical patterns of seeking control over financial systems, Lack of transparency in central bank digital currency development raises suspicion about surveillance structures, Central banks are motivated to maintain authority and influence which could lead to enabling total government control over personal finances\nDisagreements: Central bank digital currencies may not necessarily be designed to enable total government control over personal finances and eliminate financial privacy, The design and functionality of these currencies could depend on the specific policies implemented by central banks, Central banks are motivated to maintain stability and trust in the financial system which could lead them to design digital currencies with built-in privacy protections\nDetected moves: institutional critique, evidence-based reasoning\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific evidence do you have that central bank digital currencies will enable total government control over personal finances?, Can you provide evidence that central bank digital currencies will not enable financial surveillance?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "Central bank digital currencies are designed to create a system of control over personal finances by institutions.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "Central bank digital currencies may not necessarily be designed to enable total government control over personal finances and eliminate financial privacy. The design and functionality of these currencies could depend on the specific policies implemented by central banks.",
+      "stance": "con",
+      "confidence": 65,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "central bank digital currencies privacy features",
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Central banks maintain significant control over digital currencies' policies and functionality., Privacy-protecting features could be included in the design of these digital currencies.\nDisagreements: Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy., Central banks will implement policies enabling total government control over personal finances in their digital currency designs.\nDetected moves: strawman or misrepresentation\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence do you have that central bank digital currencies will enable total government control over personal finances?, Can you provide evidence that central bank digital currencies will not be used to enable financial surveillance?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "Central bank digital currencies are designed to create a system of control over personal finances by institutions.",
+      "stance": "pro",
+      "confidence": 40,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "Central bank digital currencies may not necessarily be designed to enable total government control over personal finances and eliminate financial privacy. The design and functionality of these currencies could depend on the specific policies implemented by central banks.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "central bank digital currency policies",
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Central banks may have varying policies regarding digital currencies., Privacy-protecting features could be included in the design of central bank digital currencies.\nDisagreements: The claim assumes that all central banks will implement policies enabling total government control over personal finances with their digital currencies., The argument does not consider the potential for privacy-protecting features in these digital currencies.\nDetected moves: strawman or misrepresentation\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific evidence do you have that central bank digital currencies will enable total government control over personal finances?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "Central bank digital currencies are designed to create a system of control over personal finances by institutions.",
+      "stance": "pro",
+      "confidence": 30,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "Central bank digital currencies may not necessarily be designed to enable total government control over personal finances and eliminate financial privacy. The design and functionality of these currencies could depend on the specific policies implemented by central banks.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_e1755a486e66",
+      "claim": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Central banks maintain significant control over digital currencies' policies and functionality., Privacy-protecting features could be included in the design of these digital currencies.\nDisagreements: Total government control over personal finances is assumed for all central bank digital currencies., The potential for privacy-protecting features is not considered in the argument.\nDetected moves: \nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific policies or features do you believe will protect privacy in central bank digital currencies?, How can we compare the level of financial surveillance enabled by different types of digital currencies to evaluate their impact on personal finances and privacy?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 0
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

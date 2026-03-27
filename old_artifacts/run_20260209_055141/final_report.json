@@ -1,0 +1,27 @@
+{
+  "topic": "President Kennedy's assassination conspiracy theory",
+  "motion": "President Kennedy was assassinated by a conspiracy involving elements of the US government, not by a lone gunman.",
+  "rounds_completed": 4,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "anomaly-focused": 1,
+    "evidence-based reasoning": 1
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "The debate concluded with the proponent presenting anomalies as indicative of a cover-up, while the opponent argued for the need of direct evidence linking intelligence agencies to the assassination. The moderator acknowledged both sides' points and suggested further exploration into additional evidence and modern forensic techniques.",
+  "limitations": [
+    "The debate focused heavily on anomalies and covert operations without providing concrete evidence linking specific entities or agendas.",
+    "Both agents referenced the Warren Commission's investigation but did not delve deeply into its limitations and potential manipulation by various entities."
+  ]
+}

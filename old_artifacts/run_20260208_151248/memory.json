@@ -1,0 +1,90 @@
+{
+  "topic": "COVID-19 vaccine technology and government surveillance",
+  "motion": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+  "round": 1,
+  "agent_states": {
+    "CA": {
+      "confidence": 53,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence that vaccine manufacturers and governments have no hidden agenda and that all actions related to these vaccines are solely focused on public health."
+    },
+    "SA": {
+      "confidence": 81,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Peer-reviewed studies or credible sources demonstrating the presence of microchips in COVID-19 vaccines."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_63038aad07e7",
+      "claim": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The COVID-19 vaccines are not just about public health; they are a means for governments to gain unprecedented control over our lives through surveillance.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_63038aad07e7",
+      "claim": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The motion that COVID-19 vaccines contain microchips designed for population tracking and control is unsupported by reliable evidence.",
+      "stance": "con",
+      "confidence": 80,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_63038aad07e7",
+      "claim": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the importance of the COVID-19 vaccines and their impact on public health., Both agents agree that transparency in vaccine development and distribution is crucial., Both agents pose questions to each other, seeking clarification and evidence to support their claims.\nDisagreements: CA believes the vaccines are a tool for government control via surveillance, while SA asserts this claim is unsupported by evidence., CA focuses on potential motives and hidden agendas, while SA emphasizes scientific processes and verifiable facts., CA questions the transparency of vaccine development, while SA highlights the rigorous regulatory oversight involved.\nDetected moves: appeal to authority (CA referencing Bill Gates), burden of proof shift (CA asking SA to disprove the claim), narrative framing (CA framing vaccines as control mechanisms)\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: CA: What specific regulatory mechanisms are in place to *guarantee* public access to all data related to vaccine development and distribution?, SA: How can we address legitimate public concerns about data privacy and potential misuse of health information collected through vaccination programs?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 26
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

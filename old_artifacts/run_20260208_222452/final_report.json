@@ -1,0 +1,53 @@
+{
+  "topic": "Election Security",
+  "motion": "The potential for manipulation of electronic voting systems warrants a transition to fully auditable, publicly-owned voting infrastructure.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      70,
+      65,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      65,
+      70,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "Burden of Proof Shifting": 5,
+    "Appeal to Plausibility": 8,
+    "Evidence-Based Reasoning": 7,
+    "Framing": 4
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "The lack of transparency in these systems *is* the evidence. If everything were above board, we wouldn't have so much secrecy.",
+      "why_it_mattered": "CA successfully framed the absence of evidence as a positive indicator of potential cover-up, shifting the burden of proof."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "But that's a logical fallacy! Absence of evidence isn't evidence of absence. We need concrete examples, not hypotheticals.",
+      "why_it_mattered": "SA directly challenged CA's logic, highlighting the flawed reasoning and demanding empirical support."
+    },
+    {
+      "round": 4,
+      "speaker": "CA",
+      "excerpt": "Even a small vulnerability, exploited by a sophisticated actor, could swing an election. The risk is too great to ignore.",
+      "why_it_mattered": "CA appealed to the potential consequences of manipulation, emphasizing the high stakes and justifying caution."
+    }
+  ],
+  "outcome_summary": "SA remained steadfast in their demand for concrete evidence, while CA became more confident in their assertion that the potential for manipulation is sufficient cause for concern. Neither agent demonstrably changed the other's core stance, but CA successfully highlighted the inherent vulnerabilities of the current system.",
+  "limitations": [
+    "The debate was limited by the lack of technical expertise among the participants.",
+    "The absence of concrete evidence made it difficult to assess the validity of CA's claims.",
+    "The moderator struggled to keep the debate focused on specific examples and avoid abstract arguments."
+  ]
+}

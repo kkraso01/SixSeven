@@ -1,0 +1,53 @@
+{
+  "topic": "The Deep State",
+  "motion": "The national security apparatus operates as a \"deep state,\" subtly influencing policy to serve its own interests.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      -2,
+      -1,
+      0,
+      -1,
+      -2
+    ],
+    "SA": [
+      1,
+      2,
+      1,
+      2,
+      1
+    ]
+  },
+  "tactic_counts": {
+    "Anomaly Emphasis": 8,
+    "Burden of Proof": 5,
+    "Strawmanning": 3,
+    "Institutional Critique": 6
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Moderator",
+      "excerpt": "The moderator correctly identifies a strawman in Round 3, where SA characterizes CA\u2019s argument as solely relying on speculation.",
+      "why_it_mattered": "Highlights a misrepresentation of CA\u2019s argument, clarifying the core disagreement."
+    },
+    {
+      "round": 4,
+      "speaker": "CA",
+      "excerpt": "CA highlights inconsistencies with stated goals, while SA offers conventional explanations (compromises, inertia).",
+      "why_it_mattered": "Demonstrates the central tension: differing interpretations of policy anomalies."
+    },
+    {
+      "round": 5,
+      "speaker": "SA",
+      "excerpt": "SA acknowledges the systemic nature of the issue, but still requiring proof of coordination.",
+      "why_it_mattered": "Shows a slight shift in SA\u2019s stance, acknowledging the complexity of the issue."
+    }
+  ],
+  "outcome_summary": "Neither agent significantly changed their core stance. CA conceded some ground on providing concrete evidence, while SA acknowledged the systemic nature of the issue but maintained the need for proof of coordination.",
+  "limitations": [
+    "The debate focused heavily on abstract concepts and lacked specific, verifiable examples.",
+    "The differing evidentiary standards made it difficult to assess the validity of each argument.",
+    "The limited number of rounds prevented a more thorough exploration of the issue."
+  ]
+}

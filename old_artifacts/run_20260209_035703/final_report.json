@@ -1,0 +1,25 @@
+{
+  "topic": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+  "motion": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      50,
+      50,
+      50
+    ],
+    "SA": [
+      50,
+      50,
+      50
+    ]
+  },
+  "tactic_counts": {
+    "anomaly-emphasis": 8
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "No one changed their mind.",
+  "limitations": [
+    "The debate was too short to reach a conclusion."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "topic": "Flat Earth vs. Spherical Earth",
+  "motion": "The Earth is flat and space agencies are perpetuating a cover-up.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Burden of Proof Shifting": 2,
+    "Appeal to Motive": 2,
+    "Anomaly Emphasis": 3,
+    "Straw Man": 1,
+    "Selective Evidence": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "Anomalies in long-range observation and tracking suggest a systemic downplaying of evidence contradicting the flat Earth model.",
+      "why_it_mattered": "CA attempted to establish a foundational claim by highlighting perceived inconsistencies in observational data, framing them as evidence against the established model."
+    },
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "Attributing anomalies to a global conspiracy requires extraordinary evidence. Simpler explanations involving known atmospheric effects are more plausible.",
+      "why_it_mattered": "SA directly challenged the burden of proof, demanding concrete evidence for the conspiracy rather than accepting anomalies as proof."
+    }
+  ],
+  "outcome_summary": "While neither side definitively changed their core belief, SA presented arguments that appeared to resonate more with the objective assessment, leading to a slight shift in the scoreboard.",
+  "limitations": [
+    "The analysis is based on a single round of debate.",
+    "Subjectivity in identifying and interpreting persuasive moments.",
+    "Limited data on audience perception."
+  ]
+}
