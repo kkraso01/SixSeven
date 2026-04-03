@@ -26,6 +26,8 @@ dependencies = [
 sixseven = "cli.main:main"
 sixseven-analyze = "cli.analyze_results:main"
 sixseven-topics = "cli.view_topics:main"
+sixseven-batch-ollama = "cli.batch_ollama:main"
+sixseven-batch-gemini = "cli.batch_gemini:main"
 
 [tool.poetry]
 packages = [{include = "debate", from = "src"}]

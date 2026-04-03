@@ -81,6 +81,19 @@ Browse and select conspiracy topics from the built-in library.
 - **Standard**: `python cli/view_topics.py all`
 - **Poetry**: `poetry run sixseven-topics all`
 
+### Batch Experiments
+Execute large-scale experiment suites across all 20 topics and various model configurations.
+
+#### 1. Ollama (Local)
+No API limits. Runs continuously on local hardware.
+- **Standard**: `python cli/batch_ollama.py`
+- **Poetry**: `poetry run sixseven-batch-ollama`
+
+#### 2. Gemini (Cloud)
+Requires an API key. Subject to provider rate limits and daily quotas. This runner includes automated resume and backoff handling.
+- **Standard**: `python cli/batch_gemini.py`
+- **Poetry**: `poetry run sixseven-batch-gemini`
+
 ---
 
 ## Project Structure and Results
