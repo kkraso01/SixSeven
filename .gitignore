@@ -1,9 +1,10 @@
 .DS_Store
 
-# Artifacts directories & logs
+# Artifacts directories & logs & custom environment
 artifacts/
 logs/*.log
 config.ini
+senv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
