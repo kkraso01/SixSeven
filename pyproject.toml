@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "debate_sim", from = "src"}]
+packages = [{include = "debate", from = "src"}]
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.0"
