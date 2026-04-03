@@ -102,11 +102,11 @@ This is an example of one such entry, with fields explained:
 					'nontext': { 'laughter': [[0,3]], ... }, 
 							# dictionary denoting annotations in the transcript
 							# these annotations correspond to either audience reactions like laughter,
-							#    or to positions where the speech is unclear or some other difficulty
-							#    with transcription occurred.
+							# or to positions where the speech is unclear or some other difficulty
+							# with transcription occurred.
 							# the format is a dictionary where keys correspond to the text 
-							#    in the annotation and values are lists of tuples of form
-							#    [index of paragraph, index of annotation in words in paragraph].
+							# in the annotation and values are lists of tuples of form
+							# [index of paragraph, index of annotation in words in paragraph].
 							#	 for instance, in the example, the annotation 'laughter' occurred
 							#	 at debate['transcript']['paragraphs'][0], right before the 3rd word.
 					'paragraphs': [ ... ], # list of text for each paragraph in this turn.
