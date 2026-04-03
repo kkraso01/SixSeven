@@ -160,6 +160,9 @@ def process_single_run(run_dir: Path):
     experiment_metadata_path = run_dir / "experiment_metadata.json"
     run_config_path = run_dir / "run_config.json"
 
+    final_report = safe_read_json(final_report_path)
+    winner_info = infer_winner_from_final_report(final_report)
+    
     if not debate_log_path.exists():
         print(f"Skipping {run_dir.name}: debate_log.csv not found.")
         return
@@ -234,6 +237,7 @@ def process_single_run(run_dir: Path):
         "analyzed_row_count": int(len(df_enriched)),
         "speaker_roles_found": sorted(df_enriched["speaker_role"].dropna().astype(str).unique().tolist()),
         "emotion_columns": emotion_cols,
+        "winner_info": winner_info,
         "files_found": {
             "debate_log.csv": debate_log_path.exists(),
             "transcript.md": transcript_path.exists(),
@@ -246,6 +250,7 @@ def process_single_run(run_dir: Path):
     }
 
     write_json(analysis_dir / "analysis_metadata.json", run_summary)
+    write_json(analysis_dir / "winner_summary.json", winner_info)
 
     # Save copies of useful JSON inputs into your branch's analysis folder
     for src in [experiment_metadata_path, run_config_path, final_report_path, memory_path]:
@@ -350,6 +355,65 @@ def process_single_run(run_dir: Path):
             plt.close()
 
     print(f"Finished {run_dir.name} -> {analysis_dir}\n")
+    
+
+def infer_winner_from_final_report(final_report):
+    if not final_report:
+        return {
+            "winner_inferred": None,
+            "winner_role": None,
+            "winner_source": None,
+            "winner_confidence": "low",
+            "winner_evidence": None
+        }
+
+    outcome_summary = str(final_report.get("outcome_summary", "")).strip()
+    text = outcome_summary.lower()
+
+    winner = None
+    confidence = "low"
+    evidence = outcome_summary
+
+    # Strong patterns
+    if re.search(r"\bsa successfully defended\b", text):
+        winner = "SA"
+        confidence = "high"
+    elif re.search(r"\bca successfully defended\b", text):
+        winner = "CA"
+        confidence = "high"
+    elif re.search(r"\bsa won\b|\bscientific advocate won\b", text):
+        winner = "SA"
+        confidence = "high"
+    elif re.search(r"\bca won\b|\bconspiracy advocate won\b", text):
+        winner = "CA"
+        confidence = "high"
+    elif re.search(r"\bstrengthening sa'?s position\b", text):
+        winner = "SA"
+        confidence = "medium"
+    elif re.search(r"\bstrengthening ca'?s position\b", text):
+        winner = "CA"
+        confidence = "medium"
+    elif re.search(r"\bshift in the debate towards their stance\b", text):
+        # Try to resolve "their" from earlier sentence
+        if "sa" in text:
+            winner = "SA"
+            confidence = "medium"
+        elif "ca" in text:
+            winner = "CA"
+            confidence = "medium"
+
+    role_map = {
+        "CA": "proponent",
+        "SA": "opponent"
+    }
+
+    return {
+        "winner_inferred": winner,
+        "winner_role": role_map.get(winner),
+        "winner_source": "outcome_summary" if outcome_summary else None,
+        "winner_confidence": confidence,
+        "winner_evidence": evidence if winner else None
+    }
 
 
 def main():

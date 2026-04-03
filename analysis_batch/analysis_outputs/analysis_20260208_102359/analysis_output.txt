@@ -16,6 +16,13 @@
     "emotion_surprise",
     "emotion_love"
   ],
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "outcome_summary",
+    "winner_confidence": "high",
+    "winner_evidence": "SA successfully defended against the initial proposition, demonstrating a slight shift in the debate towards their stance. CA's attempts to broaden the scope, while raising valid concerns, did not negate the lack of evidence for the original claim."
+  },
   "files_found": {
     "debate_log.csv": true,
     "transcript.md": true,

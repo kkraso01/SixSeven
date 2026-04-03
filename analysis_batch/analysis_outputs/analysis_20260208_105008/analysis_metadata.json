@@ -15,6 +15,13 @@
     "emotion_surprise",
     "emotion_love"
   ],
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": "outcome_summary",
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
   "files_found": {
     "debate_log.csv": true,
     "transcript.md": true,
