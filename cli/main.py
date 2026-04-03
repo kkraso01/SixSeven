@@ -29,5 +29,9 @@ def run_experiment():
     return RunResult(run_dir=str(result.run_dir), bundle=result)
 
 
-if __name__ == "__main__":
+def main():
     run_experiment()
+
+
+if __name__ == "__main__":
+    main()

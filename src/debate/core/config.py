@@ -5,6 +5,12 @@ from configparser import ConfigParser
 from dataclasses import dataclass
 from pathlib import Path
 
+from debate.analysis.lexicons import (
+    MODALITY_STRONG_WORDS,
+    MODALITY_WEAK_WORDS,
+    UNCERTAINTY_WORDS,
+)
+
 
 @dataclass(frozen=True)
 class DebateConfig:
@@ -38,6 +44,14 @@ class DebateConfig:
     max_chars_in_history: int | None = None  # Trim to last N characters
     summarize_if_trimmed: bool = True  # Add moderator summary if history is trimmed
     highlight_opponent_last: bool = True  # Highlight opponent's last message
+
+    # Advanced Analysis (Research Mode)
+    adv_analysis_emotion_model: str = "bhadresh-savani/bert-base-uncased-emotion"
+    adv_analysis_overwrite: bool = True
+    adv_analysis_max_runs: int = 10
+    uncertainty_lexicon: list[str] = sorted(list(UNCERTAINTY_WORDS))
+    strong_modality_lexicon: list[str] = sorted(list(MODALITY_STRONG_WORDS))
+    weak_modality_lexicon: list[str] = sorted(list(MODALITY_WEAK_WORDS))
 
     @classmethod
     def from_ini(cls, config_path: str | Path = "config/config.ini") -> DebateConfig:
@@ -96,6 +110,12 @@ class DebateConfig:
             except ValueError:
                 return None
 
+        def get_list(section: str, key: str, default: list[str]) -> list[str]:
+            value = config.get(section, key, fallback=None)
+            if value is None or value.strip() == "":
+                return default
+            return [item.strip() for item in value.split(",") if item.strip()]
+
         return cls(
             base_url=get_str("api", "base_url", cls.base_url),
             api_mode=get_str("api", "api_mode", cls.api_mode),
@@ -142,6 +162,24 @@ class DebateConfig:
             ),
             highlight_opponent_last=get_bool(
                 "history", "highlight_opponent_last", cls.highlight_opponent_last
+            ),
+            adv_analysis_emotion_model=get_str(
+                "analysis", "emotion_model", cls.adv_analysis_emotion_model
+            ),
+            adv_analysis_overwrite=get_bool(
+                "analysis", "overwrite", cls.adv_analysis_overwrite
+            ),
+            adv_analysis_max_runs=get_int(
+                "analysis", "max_runs", cls.adv_analysis_max_runs
+            ),
+            uncertainty_lexicon=get_list(
+                "analysis", "uncertainty_lexicon", cls.uncertainty_lexicon
+            ),
+            strong_modality_lexicon=get_list(
+                "analysis", "strong_modality_lexicon", cls.strong_modality_lexicon
+            ),
+            weak_modality_lexicon=get_list(
+                "analysis", "weak_modality_lexicon", cls.weak_modality_lexicon
             ),
         )
 

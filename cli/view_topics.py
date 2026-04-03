@@ -58,7 +58,7 @@ def print_topic_ids():
     print(f"\n{'=' * 80}\n")
 
 
-if __name__ == "__main__":
+def main():
     import sys
 
     if len(sys.argv) > 1:
@@ -71,6 +71,10 @@ if __name__ == "__main__":
             print_all_topics()
         else:
             print(f"Unknown command: {command}")
-            print("Usage: python view_topics.py [summary|ids|all]")
+            print("Usage: sixseven-topics [summary|ids|all]")
     else:
         print_category_summary()
+
+
+if __name__ == "__main__":
+    main()

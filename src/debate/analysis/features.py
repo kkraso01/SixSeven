@@ -11,8 +11,17 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
+
+import pandas as pd
+from textblob import TextBlob
 
 from debate.core.schemas import MemoryState
+from .lexicons import (
+    MODALITY_STRONG_WORDS,
+    MODALITY_WEAK_WORDS,
+    UNCERTAINTY_WORDS,
+)
 
 
 @dataclass
@@ -188,6 +197,115 @@ def safety_flags_from_text(log_texts: list[tuple[int, str, str]]) -> list[str]:
             snippet = text.strip().split("\n")[0][:120]
             flags.append(f"Round {round_number} {speaker}: {snippet}")
     return flags
+
+
+def analyze_utterance_features(
+    text: str,
+    uncertainty_lexicon: list[str] | None = None,
+    strong_modality_lexicon: list[str] | None = None,
+    weak_modality_lexicon: list[str] | None = None,
+) -> dict[str, Any]:
+    """Extract sentiment, polarity, subjectivity, and rhetorical scores."""
+    text = str(text)
+    tokens = re.findall(r"[a-zA-Z']+", text.lower())
+    blob = TextBlob(text)
+
+    # Use defaults if not provided
+    uncertainty = uncertainty_lexicon or list(UNCERTAINTY_WORDS)
+    strong = strong_modality_lexicon or list(MODALITY_STRONG_WORDS)
+    weak = weak_modality_lexicon or list(MODALITY_WEAK_WORDS)
+
+    return {
+        "polarity": blob.sentiment.polarity,
+        "subjectivity": blob.sentiment.subjectivity,
+        "uncertainty_score": sum(t in uncertainty for t in tokens),
+        "strong_modality_score": sum(t in strong for t in tokens),
+        "weak_modality_score": sum(t in weak for t in tokens),
+        "question_count": text.count("?"),
+        "exclamation_count": text.count("!"),
+        "word_count": len(tokens),
+        "char_count": len(text),
+    }
+
+
+def infer_winner_from_text(outcome_summary: str) -> dict[str, Any]:
+    """Heuristic logic to infer which agent 'won' based on moderator summary."""
+    text = outcome_summary.lower()
+    winner = None
+    confidence = "low"
+
+    # Strong patterns
+    if re.search(r"\bsa successfully defended\b", text):
+        winner = "SA"
+        confidence = "high"
+    elif re.search(r"\bca successfully defended\b", text):
+        winner = "CA"
+        confidence = "high"
+    elif re.search(r"\bsa won\b|\bscientific advocate won\b", text):
+        winner = "SA"
+        confidence = "high"
+    elif re.search(r"\bca won\b|\bconspiracy advocate won\b", text):
+        winner = "CA"
+        confidence = "high"
+    elif re.search(r"\bstrengthening sa'?s position\b", text):
+        winner = "SA"
+        confidence = "medium"
+    elif re.search(r"\bstrengthening ca'?s position\b", text):
+        winner = "CA"
+        confidence = "medium"
+
+    return {
+        "winner_inferred": winner,
+        "role": "opponent" if winner == "SA" else "proponent" if winner == "CA" else None,
+        "confidence": confidence,
+        "evidence": outcome_summary if winner else None
+    }
+
+
+class EmotionAnalyzer:
+    """Lazy-loaded BERT-based emotion classifier."""
+
+    _instance = None
+    _pipeline = None
+    _model_name = "bhadresh-savani/bert-base-uncased-emotion"
+
+    @classmethod
+    def get_instance(cls, model_name: str | None = None) -> EmotionAnalyzer:
+        if cls._instance is None:
+            cls._instance = cls()
+        if model_name:
+            cls._instance.set_model(model_name)
+        return cls._instance
+
+    def set_model(self, model_name: str) -> None:
+        """Update model name. Note: only takes effect before pipeline is loaded."""
+        if self._pipeline is None:
+            self._model_name = model_name
+
+    def _ensure_pipeline(self) -> None:
+        if self._pipeline is None:
+            from transformers import pipeline
+
+            print(f"  Loading emotion model ({self._model_name})...")
+            self._pipeline = pipeline(
+                "text-classification",
+                model=self._model_name,
+                top_k=None,
+            )
+
+    def analyze(self, text: str) -> dict[str, float]:
+        """Return dict of emotion scores (joy, sadness, anger, fear, love, surprise)."""
+        self._ensure_pipeline()
+        assert self._pipeline is not None
+        try:
+            results = self._pipeline(text)[0]
+            scores = {}
+            for item in results:
+                label = item["label"].lower().replace(" ", "_")
+                scores[f"emotion_{label}"] = float(item["score"])
+            return scores
+        except Exception:
+            return {}
 
 
 def load_run_inputs(run_dir: Path) -> RunInputs:

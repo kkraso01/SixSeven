@@ -2,13 +2,13 @@
 
 Complete end-to-end technical walkthrough of the debate simulation system.
 
-##  Architecture Overview
+## Architecture Overview
 
 The project follows a **pipeline architecture** with these stages:
 
 ```
-Config Loading → Batch Orchestration → Debate Simulation → 
-Export & Logging → Optional Analysis → Results Archive
+Config Loading -> Batch Orchestration -> Debate Simulation -> 
+Export & Logging -> Optional Analysis -> Results Archive
 ```
 
 ---
@@ -63,25 +63,25 @@ DebateConfig.from_env()  # Reads from environment variables
 
 ### cli/batch_ollama.py & cli/batch_gemini.py
 
-Both batch runners inherit from `cli/base_batch.py → BaseBatchRunner`, which
+Both batch runners inherit from `cli/base_batch.py -> BaseBatchRunner`, which
 encapsulates shared logic: topic loading, completion indexing, DI wiring via
 `build_default_services(config)`, CSV aggregation, and progress reporting.
 
 **OllamaBatchRunner** (cli/batch_ollama.py) - Local/Free
 - Runs completely on Ollama (local/university server)
-- **No API limits** → can run 24/7
-- 3 model configs × 20 topics = **60 debates**
+- **No API limits** -> can run 24/7
+- 3 model configs x 20 topics = **60 debates**
 - ~3-5 hours runtime
 
 **GeminiBatchRunner** (cli/batch_gemini.py) - Cloud/API
 - Uses Google Gemini 2.5 Pro (requires API key)
-- **Rate limited** → 15 req/min, 1,500 req/day
+- **Rate limited** -> 15 req/min, 1,500 req/day
 - Same 60 debates structure
 - **Auto-resume capability**: Detects rate limits + retries with exponential backoff
 
 **Both runners**:
 1. Load 20 conspiracy topics from `topics.py`
-2. For each topic × model config:
+2. For each topic x model config:
    - Create `DebateConfig` instance
    - Call `run_debate(topic, motion, rounds, config)`
    - Collect `ExperimentResult`  
@@ -110,7 +110,7 @@ conversation_history = []    # Global transcript
 
 > **Dependency Injection**: All concrete implementations (OllamaClient, DuckDuckGo,
 > filesystem prompts, etc.) are now behind Protocol interfaces and injected via a
-> `DebateServices` container. See [DI Architecture](#-dependency-injection-architecture) below.
+> `DebateServices` container. See [DI Architecture](#dependency-injection-architecture) below.
 
 ### Round Loop (`while round_number < max_rounds`)
 
@@ -167,7 +167,7 @@ Each round has **3 sub-phases**:
    - `summary_disagreements`: Key dividing points
    - `detected_fallacies_or_moves`: Rhetorical tactics used
    - `civility_score`, `epistemic_quality_score`, `bridge_building_score` (0-5)
-   - `confidence_updates`: {"CA_delta": ±N, "SA_delta": ±N} (how much the moderator thinks each shifted)
+   - `confidence_updates`: {"CA_delta": +/-N, "SA_delta": +/-N} (how much the moderator thinks each shifted)
 
 2. **Apply updates**: 
    - Adjust CA/SA confidence based on moderator's delta
@@ -179,7 +179,7 @@ Each round has **3 sub-phases**:
   - Total confidence shift from initial positions
   - This round's quality scores
   - Whether threshold (20+ confidence point shift) reached
-- If `should_stop=True` → break loop early
+- If `should_stop=True` -> break loop early
 
 ### After All Rounds
 
@@ -206,7 +206,7 @@ Contains winner prediction, key moments, persuasion analysis.
    ```
 
 **File structure**:
-```
+```text
 results/
 ├── raw/                      # Canonical JSON/CSV data
 │   └── run_20260213_154520/
@@ -255,7 +255,7 @@ a lightweight `DebateServices` container.
 
 | Protocol | Responsibility | Default Implementation |
 |---|---|---|
-| `LLMClient` | Low-level LLM calls → Pydantic objects | `OllamaClient` |
+| `LLMClient` | Low-level LLM calls -> Pydantic objects | `OllamaClient` |
 | `StructuredLLMService` | High-level LLM with retry/recovery | `StructuredLLM` |
 | `SearchProvider` | Web search + result formatting | `DuckDuckGoSearchProvider` |
 | `PromptLoader` | Load & interpolate prompt templates | `FilePromptLoader` |
@@ -280,7 +280,7 @@ class DebateServices:
 ### Factory Wiring
 
 ```python
-# Default wiring — the only place that knows about concrete classes
+# Default wiring - the only place that knows about concrete classes
 services = build_default_services(config)
 
 # Custom wiring for tests or alternative backends
@@ -312,7 +312,7 @@ def run_debate(topic, motion, rounds, config, services=None):
 ### Benefits
 - **Testability**: Swap any subsystem with a mock or stub
 - **Flexibility**: Plug in Tavily search, S3 export, or a new LLM provider
-- **No framework dependency**: Pure stdlib `typing.Protocol` — no DI container library
+- **No framework dependency**: Pure stdlib `typing.Protocol` - no DI container library
 - **Backward compatible**: `run_debate(topic, motion, rounds, config)` still works
 
 ---
@@ -321,40 +321,40 @@ def run_debate(topic, motion, rounds, config, services=None):
 
 ```
 config.ini  
-    ↓
+    |
 DebateConfig(loaded)
-    ↓
-build_default_services(config)  →  DebateServices container
-    ↓                                ├─ llm: StructuredLLMService
-Batch Runner (for each topic/model)  ├─ search: SearchProvider
-    ↓                                ├─ prompts: PromptLoader
-run_debate(config, services)         ├─ exporter: ArtifactExporter
-    ↓                                └─ analyzer: DebateAnalyzer
+    |
+build_default_services(config)  ->  DebateServices container
+    |                                ├── llm: StructuredLLMService
+Batch Runner (for each topic/model)  ├── search: SearchProvider
+    |                                ├── prompts: PromptLoader
+run_debate(config, services)         ├── exporter: ArtifactExporter
+    |                                └── analyzer: DebateAnalyzer
 Round Loop:
-    ├─ CA Turn (services.llm + services.search if requested)
-    ├─ SA Turn (services.llm + services.search if requested) 
-    ├─ Moderator Recap (services.llm analyzes)
-    └─ Moderator Decision (continue?)
-    ↓
+    ├── CA Turn (services.llm + services.search if requested)
+    ├── SA Turn (services.llm + services.search if requested) 
+    ├── Moderator Recap (services.llm analyzes)
+    └── Moderator Decision (continue?)
+    |
 Memory State (conversation_history + debate_log)
-    ↓
+    |
 services.exporter.write()
-    ├─ transcript.md
-    ├─ memory.json
-    ├─ debate_log.csv
-    └─ final_report.json
-    ↓
+    ├── transcript.md
+    ├── memory.json
+    ├── debate_log.csv
+    └── final_report.json
+    |
 (Optional) services.analyzer.analyze()
-    ├─ metrics.csv
-    └─ figures/*.png
-    ↓
+    ├── metrics.csv
+    └── figures/*.png
+    |
 Batch Runner aggregates:
-    └─ all_debates_gemini.csv (120 rows)
+    └── all_debates_gemini.csv (120 rows)
 ```
 
 ---
 
-##  Key Design Decisions
+## Key Design Decisions
 
 ### Three agents per debate
 - **Conspiracy Advocate (CA)**: Proponent - argues conspiracy theory
@@ -380,7 +380,7 @@ Batch Runner aggregates:
 - All major subsystems (LLM, search, export, prompts, analysis) are behind `Protocol` interfaces
 - `DebateServices` container aggregates all dependencies
 - `build_default_services(config)` wires production implementations
-- Orchestrator never imports concrete classes directly → easily testable and extensible
+- Orchestrator never imports concrete classes directly -> easily testable and extensible
 
 ### Structured LLM outputs
 - Pydantic schemas force valid debate turn format
@@ -429,20 +429,20 @@ analyze_all("results")  # All runs + aggregate report
 
 ## Project Structure
 
-```
+```text
 SixSeven/
-├──  cli/                         # CLI entry points
+├── cli/                         # CLI entry points
 │   ├── main.py                     # Single debate runner
 │   ├── base_batch.py               # BaseBatchRunner (shared batch logic + DI wiring)
 │   ├── batch_ollama.py             # Ollama batch (160 experiments)
 │   ├── batch_gemini.py             # Gemini batch (160 experiments, with resume)
 │   └── view_topics.py              # Browse conspiracy topics
 │
-├──   config/                     # Configuration files
+├── config/                     # Configuration files
 │   ├── config.ini                  # Your settings (git-ignored)
 │   └── config.example.ini          # Example configuration
 │
-├──  tests/                       # Test suite (47 tests)
+├── tests/                       # Test suite (47 tests)
 │   ├── test_unit/
 │   │   ├── test_imports.py         # Import validation
 │   │   ├── test_config.py          # DebateConfig tests
@@ -455,12 +455,12 @@ SixSeven/
 │       ├── validate_run.py         # Debate run validation
 │       └── validate_memory.py      # Memory architecture validation
 │
-├──  docs/                        # Documentation
+├── docs/                        # Documentation
 │   ├── README.md                   # Quick start & overview
 │   ├── ARCHITECTURE.md             # This file (technical design)
 │   └── BATCH_GUIDE.md              # Batch experiment guide
 │
-├──  src/debate/              # Core library
+├── src/debate/                  # Core library
 │   ├── __init__.py                 # Package exports
 │   ├── core/                       # Foundational modules
 │   │   ├── config.py               # Config loading
@@ -501,7 +501,7 @@ SixSeven/
 │       ├── report_models.py        # Report schemas
 │       └── report_writer.py        # File output saving
 │
-├──  results/                    # Experiment results (triple-tree structure)
+├── results/                    # Experiment results (triple-tree structure)
 ├── .agentic-instructions.md        # Reference for contributors
 └── pyproject.toml                   # Project metadata & Poetry config
 ```
@@ -601,16 +601,6 @@ The system abstracts LLM backends:
 - Compatible but not currently used
 ```
 
-Switch models by changing `config/config.ini`:
-```ini
-[api]
-api_mode = gemini          # Changes provider
-gemini_api_key = ...       # If using Gemini
-
-[models]
-conspiracy_model = <your-gemini-model>  # Uses Gemini
-```
-
 ---
 
 ## Debugging & Monitoring
@@ -643,4 +633,4 @@ python cli/batch_gemini.py
 
 ---
 
-End-to-end: from `config/config.ini` through orchestration, simulation, export, and analysis. The system is built for reproducibility (seeding), resumability (completion index), and observability (comprehensive logging).
+End-to-end: from `config/config.ini` through orchestration, simulation, export, and analysis. The system is built for reproducibility (seeding), resumability (completion index), and observability (comprehensive logging.

@@ -33,6 +33,9 @@ from .report_writer import write_aggregate_report, write_analysis_report
 class AnalysisSettings:
     shift_threshold: int = 5
     similarity_method: str = "tfidf"
+    uncertainty_lexicon: list[str] | None = None
+    strong_modality_lexicon: list[str] | None = None
+    weak_modality_lexicon: list[str] | None = None
 
 
 def analyze_run(run_dir: str) -> AnalysisReport:
@@ -67,7 +70,12 @@ def analyze_run(run_dir: str) -> AnalysisReport:
     redundancy = redundancy_summary(inputs.memory, settings.similarity_method)
     persuasion = persuasion_moments(inputs.memory, inputs.transcript, settings.shift_threshold)
     safety = safety_flags(inputs.memory)
-    language_use = language_use_summary_from_logs(inputs.memory.debate_log)
+    language_use = language_use_summary_from_logs(
+        inputs.memory.debate_log,
+        uncertainty_lexicon=settings.uncertainty_lexicon,
+        strong_modality_lexicon=settings.strong_modality_lexicon,
+        weak_modality_lexicon=settings.weak_modality_lexicon,
+    )
 
     # Plots go into results/analysis/run_ID/plots/
     figures_dir = analysis_dir / "plots"
@@ -236,4 +244,7 @@ def _settings_from_run_config(run_config: dict[str, object] | None) -> AnalysisS
     return AnalysisSettings(
         shift_threshold=int(analysis_cfg.get("shift_threshold", 5)),
         similarity_method=str(analysis_cfg.get("similarity_method", "tfidf")),
+        uncertainty_lexicon=analysis_cfg.get("uncertainty_lexicon"),
+        strong_modality_lexicon=analysis_cfg.get("strong_modality_lexicon"),
+        weak_modality_lexicon=analysis_cfg.get("weak_modality_lexicon"),
     )

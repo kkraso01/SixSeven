@@ -20,7 +20,12 @@ from .report_models import LanguageUseSummary, LexiconDimensionSummary
 TOKEN_PATTERN: re.Pattern[str] = re.compile(r"[a-zA-Z']+")
 
 
-def language_use_summary_from_logs(logs: list[DebateLogItem]) -> LanguageUseSummary:
+def language_use_summary_from_logs(
+    logs: list[DebateLogItem],
+    uncertainty_lexicon: list[str] | set[str] | None = None,
+    strong_modality_lexicon: list[str] | set[str] | None = None,
+    weak_modality_lexicon: list[str] | set[str] | None = None,
+) -> LanguageUseSummary:
     """Compute uncertainty, modality, moral framing, and emotion summaries."""
     token_counts: dict[str, int] = {"CA": 0, "SA": 0}
     tokens_by_agent: dict[str, list[str]] = {"CA": [], "SA": []}
@@ -33,9 +38,22 @@ def language_use_summary_from_logs(logs: list[DebateLogItem]) -> LanguageUseSumm
         tokens_by_agent[agent].extend(tokens)
         token_counts[agent] += len(tokens)
 
-    uncertainty = _summarize_dimension(tokens_by_agent, token_counts, UNCERTAINTY_WORDS)
-    strong_modality = _summarize_dimension(tokens_by_agent, token_counts, MODALITY_STRONG_WORDS)
-    weak_modality = _summarize_dimension(tokens_by_agent, token_counts, MODALITY_WEAK_WORDS)
+    # Use defaults if not provided
+    uncertainty_set = (
+        set(uncertainty_lexicon) if uncertainty_lexicon is not None else UNCERTAINTY_WORDS
+    )
+    strong_set = (
+        set(strong_modality_lexicon)
+        if strong_modality_lexicon is not None
+        else MODALITY_STRONG_WORDS
+    )
+    weak_set = (
+        set(weak_modality_lexicon) if weak_modality_lexicon is not None else MODALITY_WEAK_WORDS
+    )
+
+    uncertainty = _summarize_dimension(tokens_by_agent, token_counts, uncertainty_set)
+    strong_modality = _summarize_dimension(tokens_by_agent, token_counts, strong_set)
+    weak_modality = _summarize_dimension(tokens_by_agent, token_counts, weak_set)
     moral = _summarize_categories(tokens_by_agent, token_counts, MORAL_FOUNDATION_LEXICON)
     emotion = _summarize_categories(tokens_by_agent, token_counts, EMOTION_LEXICON)
 

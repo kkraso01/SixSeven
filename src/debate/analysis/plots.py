@@ -91,3 +91,80 @@ def plot_aggregate_scatter(
     plt.savefig(path)
     plt.close()
     return str(path)
+
+
+def plot_sentiment_comparison(
+    output_dir: Path,
+    turn_indices: list[int],
+    sentiment_data: dict[str, list[float]],
+    metric_name: str = "Polarity",
+) -> str:
+    """Plot polarity or subjectivity for both agents over turns."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plt.figure(figsize=(10, 5))
+    colors = {"CA": "firebrick", "SA": "royalblue"}
+    for agent, values in sentiment_data.items():
+        if values:
+            plt.plot(
+                turn_indices[: len(values)],
+                values,
+                marker="o",
+                label=agent,
+                color=colors.get(agent, None),
+            )
+    plt.xlabel("Turn Index")
+    plt.ylabel(metric_name)
+    plt.title(f"Speaker Comparison - {metric_name}")
+    plt.legend()
+    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.tight_layout()
+    path = output_dir / f"comparison_{metric_name.lower()}.png"
+    plt.savefig(path, dpi=300)
+    plt.close()
+    return str(path)
+
+
+def plot_emotion_distribution(output_dir: Path, agent: str, emotion_counts: dict[str, int]) -> str:
+    """Plot a bar chart of dominant emotions for a specific agent."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if not emotion_counts:
+        return ""
+
+    labels = list(emotion_counts.keys())
+    values = list(emotion_counts.values())
+
+    plt.figure(figsize=(8, 5))
+    plt.bar(labels, values, color="mediumpurple")
+    plt.xlabel("Emotion")
+    plt.ylabel("Turn Count")
+    plt.title(f"{agent} - Dominant Emotion Distribution")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    path = output_dir / f"{agent.lower()}_emotion_dist.png"
+    plt.savefig(path, dpi=300)
+    plt.close()
+    return str(path)
+
+
+def plot_rhetorical_markers(
+    output_dir: Path,
+    agent: str,
+    turn_indices: list[int],
+    marker_data: dict[str, list[int]],
+) -> str:
+    """Plot rhetorical markers (uncertainty, modality) over time."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plt.figure(figsize=(10, 5))
+    for label, values in marker_data.items():
+        if values:
+            plt.plot(turn_indices[: len(values)], values, marker="s", label=label.replace("_", " "))
+    plt.xlabel("Turn Index")
+    plt.ylabel("Score / Count")
+    plt.title(f"{agent} - Rhetorical Markers Over Time")
+    plt.legend()
+    plt.grid(True, linestyle="--", alpha=0.5)
+    plt.tight_layout()
+    path = output_dir / f"{agent.lower()}_rhetorical_markers.png"
+    plt.savefig(path, dpi=300)
+    plt.close()
+    return str(path)

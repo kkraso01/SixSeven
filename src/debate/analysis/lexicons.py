@@ -6,46 +6,22 @@ without external resources. Teams can expand or replace these lists later.
 
 from __future__ import annotations
 
+# Consolidated Research Lexicons (Defaults)
 UNCERTAINTY_WORDS: set[str] = {
-    "maybe",
-    "may",
-    "suggest",
-    "suggests",
-    "perhaps",
-    "possibly",
-    "likely",
-    "unlikely",
-    "appears",
-    "seems",
-    "could",
-    "might",
-    "unclear",
-    "allegedly",
-    "reportedly",
+    "maybe", "may", "suggest", "suggests", "perhaps", "possibly", "likely",
+    "unlikely", "appears", "seems", "could", "might", "unclear", "allegedly",
+    "reportedly", "potential", "concern", "concerns", "reasonable", "arguably", "uncertain"
 }
 
 MODALITY_STRONG_WORDS: set[str] = {
-    "must",
-    "will",
-    "cannot",
-    "definitely",
-    "certainly",
-    "always",
-    "prove",
-    "proves",
-    "proven",
-    "undeniable",
+    "must", "will", "cannot", "definitely", "certainly", "always", "prove",
+    "proves", "proven", "undeniable", "clearly", "demonstrates", "never",
+    "obviously", "plainly", "shows", "confirms"
 }
 
 MODALITY_WEAK_WORDS: set[str] = {
-    "may",
-    "might",
-    "could",
-    "can",
-    "sometimes",
-    "possibly",
-    "arguably",
-    "potentially",
+    "may", "might", "could", "can", "sometimes", "possibly", "arguably",
+    "potentially", "perhaps", "suggest", "suggests", "appears", "seems"
 }
 
 MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {
@@ -80,4 +56,3 @@ EMOTION_LEXICON: dict[str, set[str]] = {
     "anticipation": {"expect", "anticipate", "prepare", "forecast"},
     "surprise": {"surprised", "unexpected", "shocking", "astonishing"},
 }
-
