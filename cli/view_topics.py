@@ -1,6 +1,6 @@
 """Helper script to view and select conspiracy topics for experiments."""
 
-from debate_sim.core.topics import (
+from debate.core.topics import (
     CONSPIRACY_TOPICS,
     get_topics_by_category,
     list_categories,

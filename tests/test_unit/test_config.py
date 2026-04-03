@@ -5,7 +5,7 @@ from __future__ import annotations
 import textwrap
 from pathlib import Path
 
-from debate_sim.core.config import DebateConfig
+from debate.core.config import DebateConfig
 
 
 class TestDebateConfigDefaults:

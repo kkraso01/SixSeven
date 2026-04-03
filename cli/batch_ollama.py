@@ -7,7 +7,7 @@ because Ollama has no API rate limits.
 from __future__ import annotations
 
 from cli.base_batch import BaseBatchRunner
-from debate_sim.core.topics import CONSPIRACY_TOPICS
+from debate.core.topics import CONSPIRACY_TOPICS
 
 
 class OllamaBatchRunner(BaseBatchRunner):

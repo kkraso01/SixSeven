@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from debate_sim import DebateConfig, run_debate
-from debate_sim.core.container import build_default_services
-from debate_sim.core.logging import setup_logging
+from debate import DebateConfig, run_debate
+from debate.core.container import build_default_services
+from debate.core.logging import setup_logging
 
 # Configure logging once
 setup_logging()

@@ -10,12 +10,13 @@ from __future__ import annotations
 import re
 import time
 
-from cli.base_batch import BaseBatchRunner, ExperimentResult, ModelConfig
-from debate_sim.core.topics import CONSPIRACY_TOPICS, DebateTopic
-from debate_sim.llm.ollama_client import (
+from debate.providers.llm_client import (
     _RATE_LIMIT_EXTRA_DELAY,
     _RATE_LIMIT_FALLBACK_DELAY,
 )
+
+from cli.base_batch import BaseBatchRunner, ExperimentResult, ModelConfig
+from debate.core.topics import CONSPIRACY_TOPICS, DebateTopic
 
 
 class GeminiBatchRunner(BaseBatchRunner):
@@ -240,9 +241,9 @@ def main():
     # Run batch experiments
     # 20 topics  8 model configs = 160 experiments
     # WARNING: API limits apply! Estimated:
-    #   - Gemini-all: 20 topics  5 rounds  3 calls = 300 API calls
-    #   - Gemini mod/agents: varies by config (100-200 calls each)
-    #   - Total: ~1,200-1,400 API calls
+    # - Gemini-all: 20 topics  5 rounds  3 calls = 300 API calls
+    # - Gemini mod/agents: varies by config (100-200 calls each)
+    # - Total: ~1,200-1,400 API calls
     # Daily limit: 1,500 requests/day
     # Rate limit: 5 requests/minute, 20 requests/day (free tier)
     print("\n  API USAGE WARNING:")

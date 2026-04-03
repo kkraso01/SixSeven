@@ -9,7 +9,7 @@ def check_memory_architecture():
     print("DEBATE MEMORY ARCHITECTURE VALIDATION")
     print("=" * 80)
 
-    from debate_sim.core.config import DebateConfig
+    from debate.core.config import DebateConfig
 
     config = DebateConfig.from_ini("config/config.ini")
 
@@ -62,7 +62,7 @@ def check_memory_architecture():
     print("\n EVIDENCE IN CODE")
     print("-" * 80)
     print("Function: _build_agent_messages_with_history()")
-    print("Location: src/debate_sim/debate/orchestrator.py:272")
+    print("Location: src/debate/simulator/engine/orchestrator.py:401")
     print()
     print("Message construction order:")
     print("  1. Agent role prompt  messages.append({'role': 'system', ...})")
@@ -75,7 +75,7 @@ def check_memory_architecture():
     print("\n CONVERSATION HISTORY TRACKING")
     print("-" * 80)
     print("Variable: conversation_history (List[Dict[str, str]])")
-    print("Location: orchestrator.py:486")
+    print("Location: simulator/engine/orchestrator.py:624")
     print()
     print("After CA speaks:")
     print("  conversation_history.append({")

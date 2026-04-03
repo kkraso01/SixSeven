@@ -3,12 +3,17 @@
 from __future__ import annotations
 
 import sys
+import unittest
 
 
 def test_core_imports():
     """Test core module imports."""
     print("Testing core imports...")
     try:
+        from debate.core.config import DebateConfig
+        from debate.core.container import DebateServices, build_default_services
+        from debate.core.protocols import LLMClient, SearchProvider
+        from debate.core.schemas import MemoryState, AgentTurn
 
         print(" Core imports successful")
         return True
@@ -21,7 +26,7 @@ def test_topic_imports():
     """Test topic/dataset imports."""
     print("\nTesting topic imports...")
     try:
-        from debate_sim.core.topics import (
+        from debate.core.topics import (
             CONSPIRACY_TOPICS,
         )
 
@@ -32,39 +37,48 @@ def test_topic_imports():
         return False
 
 
-def test_export_imports():
-    """Test export functionality imports."""
-    print("\nTesting export imports...")
+def test_io_imports():
+    """Test IO functionality imports (formerly export)."""
+    print("\nTesting IO imports...")
     try:
+        from debate.simulator.io.writer import write_artifacts, ExportBundle
+        from debate.simulator.io.csv_export import export_debate_log_to_csv
+        from debate.simulator.io.templates import render_transcript
 
-        print(" Export imports successful")
+        print(" IO imports successful")
         return True
     except Exception as e:
-        print(f" Export imports failed: {e}")
+        print(f" IO imports failed: {e}")
         return False
 
 
-def test_llm_imports():
-    """Test LLM client imports."""
-    print("\nTesting LLM imports...")
+def test_providers_imports():
+    """Test LLM and search provider imports (formerly llm)."""
+    print("\nTesting provider imports...")
     try:
+        from debate.simulator.providers.llm_client import OllamaClient
+        from debate.simulator.providers.instructor import StructuredLLM
+        from debate.simulator.providers.search import search_web
 
-        print(" LLM imports successful")
+        print(" Provider imports successful")
         return True
     except Exception as e:
-        print(f" LLM imports failed: {e}")
+        print(f" Provider imports failed: {e}")
         return False
 
 
-def test_orchestrator_imports():
-    """Test orchestrator imports."""
-    print("\nTesting orchestrator imports...")
+def test_engine_imports():
+    """Test engine imports (formerly debate and memory)."""
+    print("\nTesting engine imports...")
     try:
+        from debate.simulator.engine.orchestrator import run_debate
+        from debate.simulator.engine.evaluation import build_metrics_table
+        from debate.simulator.engine.memory import initial_memory, append_log
 
-        print(" Orchestrator imports successful")
+        print(" Engine imports successful")
         return True
     except Exception as e:
-        print(f" Orchestrator imports failed: {e}")
+        print(f" Engine imports failed: {e}")
         return False
 
 
@@ -88,7 +102,7 @@ def test_config_loading():
     """Test config.ini loading."""
     print("\nTesting config loading...")
     try:
-        from debate_sim.core.config import DebateConfig
+        from debate.core.config import DebateConfig
 
         config = DebateConfig.from_ini()
         print(" Config loaded successfully")
@@ -104,15 +118,15 @@ def test_config_loading():
 def main():
     """Run all tests."""
     print("=" * 80)
-    print("IMPORT VALIDATION TEST")
+    print("IMPORT VALIDATION TEST - POST RESTRUCTURING")
     print("=" * 80)
 
     results = []
     results.append(("Core imports", test_core_imports()))
     results.append(("Topic imports", test_topic_imports()))
-    results.append(("Export imports", test_export_imports()))
-    results.append(("LLM imports", test_llm_imports()))
-    results.append(("Orchestrator imports", test_orchestrator_imports()))
+    results.append(("IO imports", test_io_imports()))
+    results.append(("Provider imports", test_providers_imports()))
+    results.append(("Engine imports", test_engine_imports()))
     results.append(("Batch runner", test_batch_runner_import()))
     results.append(("Config loading", test_config_loading()))
 
@@ -130,10 +144,10 @@ def main():
     print(f"\nTotal: {passed}/{total} tests passed")
 
     if passed == total:
-        print("\n All tests passed! Project is ready to run.")
+        print("\n All tests passed! Project structure is valid.")
         return 0
     else:
-        print("\n Some tests failed. Please check the errors above.")
+        print("\n Some tests failed. Project structure is BROKEN.")
         return 1
 
 

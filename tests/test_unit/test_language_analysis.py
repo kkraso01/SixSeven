@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from debate_sim.analysis.language_analysis import language_use_summary_from_logs
-from debate_sim.core.schemas import DebateLogItem
+from debate.analysis.language_analysis import language_use_summary_from_logs
+from debate.core.schemas import DebateLogItem
 
 
 def _item(role: str, text: str) -> DebateLogItem:
