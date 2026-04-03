@@ -1,85 +1,103 @@
-# SixSeven: Agentic Debate Simulator
+# SixSeven: Agentic Debate Simulation Framework
 
-> An end-to-end research framework that simulates structured debates between LLM-based agents. SixSeven enables reproducible experiments across multiple models and topics, utilizing a "Research-First" output hierarchy to analyze persuasion dynamics and linguistic patterns.
+SixSeven is a research framework for simulating debates between LLM-based agents. It enables reproducible experiments between divergent worldviews (e.g., Conspiracy theory proponent vs. Scientific consensus) using a multi-agent orchestration pipeline and a results-based output hierarchy.
 
-**Status**: Architecture Refactored | 100% Test Coverage | Documentation Consolidated
+This project was developed as part of the **MAI623-NLP** course for the **MSc in Artificial Intelligence** at the **University of Cyprus (UCY)**.
+
+The framework supports post-debate analysis, including sentiment tracking, BERT-based emotion detection, and rhetorical marker analysis.
+
+## Core Features
+- **Multi-Agent Orchestration**: Structured debates between a Conspiracy Advocate (CA), a Scientific Advocate (SA), and a neutral Moderator (MA).
+- **Structured Knowledge Representation**: Agent turns and moderator recaps use Pydantic models for data integrity and validation.
+- **Rhetorical and Emotional Auditing**: Integrated NLP signals for assessing persuasion dynamics and rhetorical tactics.
+- **Information Retrieval**: Optional real-time search via the DuckDuckGo Search Provider.
+- **Batch Experiments**: Support for large-scale simulations with automated resume and rate-limit handling.
 
 ---
 
-## Quick Start
+## Installation
 
-### 1. Installation
-The project uses a standard `src/` layout. For full isolation, use a virtual environment.
+SixSeven requires Python 3.11 or later.
 
+### Method A: Pip (Standard)
+Installation using `requirements.txt`:
 ```bash
-# Clone and enter
+# Clone the repository
 git clone https://github.com/kkraso01/SixSeven.git && cd SixSeven
 
-# Option A: Pip
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt && pip install -e .
+# Setup virtual environment
+python -m venv .venv
 
-# Option B: Poetry
-python -m pip install poetry
+# Activate (macOS/Linux)
+source .venv/bin/activate
+
+# Activate (Windows)
+.venv\Scripts\activate
+
+# Install dependencies and the local package
+pip install -r requirements.txt && pip install -e .
+```
+
+### Method B: Poetry
+Installation using `pyproject.toml`:
+```bash
+# Clone the repository
+git clone https://github.com/kkraso01/SixSeven.git && cd SixSeven
+
+# Install dependencies
 poetry install
 ```
 
-### 2. Configure Models
-Copy the example configuration and set your preferred models (defaulting to local Ollama).
+---
+
+## Configuration
+
+The system is configured via `config/config.ini`. Copy the template to begin:
 ```bash
 cp config/config.example.ini config/config.ini
 ```
 
-### 3. Run a Single Debate
-Execute the default experiment (mRNA Vaccine safety) using your configured models.
-```bash
-PYTHONPATH=src python cli/main.py
-```
-
-### 4. Advanced Research Mode
-Run the research-grade batch analysis to generate sentiment, emotion, and rhetorical reports.
-```bash
-# This will process ALL runs in results/raw/ using BERT-based emotion detection
-PYTHONPATH=src python cli/analyze_results.py
-```
+### Configuration Sections
+- **[api]**: Settings for LLM providers (Ollama, OpenAI, Google Gemini).
+- **[models]**: Model assignments and temperature settings per role.
+- **[debate]**: Parameters for round limits, word constraints, and search.
+- **[analysis]**: Settings for research audits, including the BERT emotion model and lexicons.
 
 ---
 
-## Research-First Results
-SixSeven uses a structured **`results/`** hierarchy to keep experiment data organized and analysis-ready.
+## Execution
 
-*   **`results/raw/`**: Canonical JSON data, full memory states, and CSV logs for every run.
-*   **`results/transcripts/`**: Human-readable Markdown summaries of every debate.
-*   **`results/analysis/`**: Automated metrics and visualizations (confidence shifts, stance trajectories, emotion distribution).
+### Single Debate Simulation
+- **Standard**: `python cli/main.py`
+- **Poetry**: `poetry run sixseven`
 
----
+### Research Audit
+Processes raw JSON memory states to generate sentiment trajectories, emotional distributions, and rhetorical summaries.
+- **Standard**: `python cli/analyze_results.py --dir results/raw`
+- **Poetry**: `poetry run sixseven-analyze --dir results/raw`
 
-## Project Navigation
-
-```text
-SixSeven/
-├── cli/                  # Entry points for single & batch runs
-├── config/               # Configuration (.ini) templates
-├── docs/                 # Detailed Technical guides
-├── results/              # Output hierarchy (raw, transcripts, analysis)
-├── src/debate/           # Library core
-│   ├── core/             # Container, Protocols, Schemas
-│   ├── simulator/        # Engine, IO, Providers, Prompts
-│   └── analysis/         # Metrics, Plots, Feature Extraction
-└── tests/                # Unit & Validation suites
-```
+### Topic Selection Utility
+Browse and select conspiracy topics from the built-in library.
+- **Standard**: `python cli/view_topics.py all`
+- **Poetry**: `poetry run sixseven-topics all`
 
 ---
 
-## Documentation Index
+## Project Structure and Results
 
-For deep dives into the engine or research methodologies:
-
-1. [Architecture & DI](docs/ARCHITECTURE.md) - How the system is built.
-2. [Research Methodology](docs/RESEARCH_METRICS.md) - How we measure persuasion.
-3. [Batch Experiments](docs/BATCH_GUIDE.md) - Scaling your simulations.
+- **cli/**: Command-line entry points.
+- **config/**: Configuration templates and active settings.
+- **docs/**: Technical and research guides.
+- **results/**: Output root.
+    - **raw/**: JSON memory states, CSV logs, and final reports.
+    - **transcripts/**: Markdown debate summaries.
+    - **analysis/**: Automated metrics (Plots and Analysis reports).
+- **src/debate/**: Core library.
+- **tests/**: Unit and validation test suite.
 
 ---
 
-## License
-MIT
+## Documentation
+1. [Architecture and Dependency Injection](docs/ARCHITECTURE.md)
+2. [Batch Experiment Guide](docs/BATCH_GUIDE.md)
+3. [MAI623-Group Project Instructions](docs/SixSeven-AgenticDebate&PersuasionBetweenConspiracy&ScientificModels.pdf)
