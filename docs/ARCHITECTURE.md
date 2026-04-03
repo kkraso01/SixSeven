@@ -8,7 +8,7 @@ The project follows a **pipeline architecture** with these stages:
 
 ```
 Config Loading → Batch Orchestration → Debate Simulation → 
-Export & Logging → Optional Analysis → Results
+Export & Logging → Optional Analysis → Results Archive
 ```
 
 ---
@@ -35,7 +35,7 @@ Export & Logging → Optional Analysis → Results
 - `seed`: Reproducibility (empty = random)
 
 ### [output]: Storage paths
-- `output_dir`: Where run artifacts get saved (e.g., `artifacts/`)
+- `output_dir`: Where run artifacts get saved (e.g., `results/`)
 
 ### [history]: Context window management
 - `history_mode`: "global_full" (all agents see full transcript) vs "per_agent" vs "memory_only"
@@ -207,15 +207,21 @@ Contains winner prediction, key moments, persuasion analysis.
 
 **File structure**:
 ```
-artifacts/
-├── run_20260213_154520/
-│   ├── transcript.md
-│   ├── memory.json
-│   ├── final_report.json
-│   ├── metrics.csv
-│   └── debate_log.csv
-├── run_20260213_155000/
-└── all_debates_gemini.csv  (batch runner aggregates all runs)
+results/
+├── raw/                      # Canonical JSON/CSV data
+│   └── run_20260213_154520/
+│       ├── transcript.md
+│       ├── memory.json
+│       ├── final_report.json
+│       ├── metrics.csv
+│       ├── debate_log.csv
+│       └── experiment_metadata.json
+├── analysis/                 # Visualizations and metrics
+│   └── run_20260213_154520/
+│       ├── plots/            # (Formerly 'figures/')
+│       └── analysis_report.json
+└── transcripts/              # Human-readable markdown
+    └── run_20260213_154520.md
 ```
 
 ---
@@ -415,8 +421,8 @@ python cli/batch_gemini.py    # rate-limited, requires API key + quota
 ```python
 from debate import analyze_run, analyze_all
 
-analyze_run("artifacts/run_20260213_154520")  # Single run
-analyze_all("artifacts")  # All runs + aggregate report
+analyze_run("results/raw/run_20260213_154520")  # Single run
+analyze_all("results")  # All runs + aggregate report
 ```
 
 ---
@@ -495,7 +501,7 @@ SixSeven/
 │       ├── report_models.py        # Report schemas
 │       └── report_writer.py        # File output saving
 │
-├──  artifacts/                   # Experiment results
+├──  results/                    # Experiment results (triple-tree structure)
 ├── .agentic-instructions.md        # Reference for contributors
 └── pyproject.toml                   # Project metadata & Poetry config
 ```
@@ -531,7 +537,7 @@ config.rounds                # Max debate rounds
 config.word_limit            # Per-turn limit
 config.max_tokens            # LLM generation max
 
-config.output_dir            # Where to save artifacts
+config.output_dir            # Where to save results (default: "results")
 
 config.history_mode          # "global_full", "per_agent", or "memory_only"
 config.history_trim          # "none", "rounds", "messages", or "chars"
@@ -548,7 +554,7 @@ config.run_analysis          # Post-debate metrics
 ```bash
 # Run locally, overnight, no API limits
 python cli/batch_ollama.py
-# Output: artifacts/all_debates_ollama.csv (160 rows)
+# Output: results/all_debates_ollama.csv (160 rows)
 ```
 
 ### Day 2: Gemini Batch
@@ -556,21 +562,21 @@ python cli/batch_ollama.py
 # Run with Gemini API during daytime (monitor quota)
 python cli/batch_gemini.py
 # If rate-limited: auto-resumes on next run
-# Output: artifacts/all_debates_gemini.csv (160 rows)
+# Output: results/all_debates_gemini.csv (160 rows)
 ```
 
 ### Day 3: Analysis
 ```python
 # Combine and analyze
 import pandas as pd
-ollama = pd.read_csv("artifacts/all_debates_ollama.csv")
-gemini = pd.read_csv("artifacts/all_debates_gemini.csv")
+ollama = pd.read_csv("results/all_debates_ollama.csv")
+gemini = pd.read_csv("results/all_debates_gemini.csv")
 combined = pd.concat([ollama, gemini])
 
 # Generate aggregate analysis
 from debate import analyze_all
-analyze_all("artifacts")
-# Output: analysis_report.json + figures/
+analyze_all("results")
+# Output: results/analysis/aggregate/ + plots/
 ```
 
 ---
@@ -612,20 +618,20 @@ conspiracy_model = <your-gemini-model>  # Uses Gemini
 ### Check current run progress
 ```bash
 # Batch runner prints progress to console
-# Check artifacts/ for partial results
-ls -la artifacts/run_*/
+# Check results/ for partial results
+ls -la results/raw/run_*/
 ```
 
 ### Inspect a single debate
 ```bash
 # View readable transcript
-cat artifacts/run_20260213_154520/transcript.md
+cat results/transcripts/run_20260213_154520.md
 
 # Check raw memory state
-cat artifacts/run_20260213_154520/memory.json | python -m json.tool
+cat results/raw/run_20260213_154520/memory.json | python -m json.tool
 
 # See all claims in order
-cat artifacts/run_20260213_154520/debate_log.csv
+cat results/raw/run_20260213_154520/debate_log.csv
 ```
 
 ### Resume failed batch
