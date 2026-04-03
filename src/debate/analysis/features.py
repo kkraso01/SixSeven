@@ -12,7 +12,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from ..core.schemas import MemoryState
+from debate.core.schemas import MemoryState
 
 
 @dataclass

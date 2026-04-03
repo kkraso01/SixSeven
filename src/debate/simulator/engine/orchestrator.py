@@ -7,10 +7,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Literal
 
-from ..core.config import DebateConfig
-from ..core.container import DebateServices, build_default_services
-from ..core.protocols import PromptLoader, SearchProvider
-from ..core.schemas import (
+from debate.core.config import DebateConfig
+from debate.core.container import DebateServices, build_default_services
+from debate.core.protocols import PromptLoader, SearchProvider
+from debate.core.schemas import (
     AgentTurn,
     DebateLogItem,
     FinalReport,
@@ -20,15 +20,16 @@ from ..core.schemas import (
     ScientificTurn,
     SearchPlan,
 )
-from ..export.writer import ExportBundle
-from ..memory.models import (
+from debate.simulator.io.writer import ExportBundle
+
+from .evaluation import build_metrics_table, stance_shift
+from .memory import (
     append_log,
     initial_memory,
     update_agent_state,
     update_round,
     update_scoreboard,
 )
-from .evaluation import build_metrics_table, stance_shift
 
 logger = logging.getLogger(__name__)
 
@@ -194,7 +195,7 @@ def _run_agent_turn_with_search(
 
     # Attach the search info to the turn so logging picks it up
     if accumulated_results and last_query:
-        from ..core.schemas import SearchRequest
+        from debate.core.schemas import SearchRequest
 
         turn.search = SearchRequest(
             should_search=True,

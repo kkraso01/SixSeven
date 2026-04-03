@@ -4,8 +4,8 @@ from typing import TypeVar
 
 from pydantic import BaseModel
 
-from ..core.errors import LLMResponseError
-from ..core.protocols import LLMClient
+from debate.core.errors import LLMResponseError
+from debate.core.protocols import LLMClient
 
 T = TypeVar("T", bound=BaseModel)
 

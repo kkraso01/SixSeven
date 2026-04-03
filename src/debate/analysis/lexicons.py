@@ -8,13 +8,15 @@ from __future__ import annotations
 
 UNCERTAINTY_WORDS: set[str] = {
     "maybe",
+    "may",
+    "suggest",
+    "suggests",
     "perhaps",
     "possibly",
     "likely",
     "unlikely",
     "appears",
     "seems",
-    "suggests",
     "could",
     "might",
     "unclear",

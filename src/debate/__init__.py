@@ -11,7 +11,7 @@ from .core.protocols import (
     SearchProvider,
     StructuredLLMService,
 )
-from .debate.orchestrator import run_debate
+from .simulator.engine.orchestrator import run_debate
 
 __all__ = [
     "DebateConfig",

@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from ..core.schemas import MemoryState, ModeratorRecap
+from debate.core.schemas import MemoryState, ModeratorRecap
 
 
 def stance_shift(previous: MemoryState, current: MemoryState) -> dict[str, int]:

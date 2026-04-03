@@ -6,7 +6,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from ..core.schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
+from debate.core.schemas import DebateLogItem, FinalReport, MemoryState, ModeratorRecap
+
 from .csv_export import export_debate_log_to_csv
 from .templates import render_transcript
 

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from ..core.schemas import DebateLogItem, ModeratorRecap
+from debate.core.schemas import DebateLogItem, ModeratorRecap
 
 
 def render_transcript(

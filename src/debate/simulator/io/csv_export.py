@@ -5,7 +5,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-from ..core.schemas import DebateLogItem
+from debate.core.schemas import DebateLogItem
 
 
 def export_debate_log_to_csv(
@@ -73,7 +73,7 @@ def export_all_debates_to_csv(
     Returns:
         Number of debates exported
     """
-    from ..core.schemas import MemoryState
+    from debate.core.schemas import MemoryState
 
     all_logs: list[DebateLogItem] = []
     debate_count = 0

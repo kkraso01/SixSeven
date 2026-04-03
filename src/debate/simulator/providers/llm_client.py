@@ -11,8 +11,8 @@ import instructor
 from openai import OpenAI
 from pydantic import BaseModel, ValidationError
 
-from ..core.config import DebateConfig
-from ..core.errors import LLMResponseError  # re-export for backwards compat
+from debate.core.config import DebateConfig
+from debate.core.errors import LLMResponseError  # re-export for backwards compat
 
 T = TypeVar("T", bound=BaseModel)
 

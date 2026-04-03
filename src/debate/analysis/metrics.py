@@ -6,7 +6,8 @@ import importlib.util
 import math
 from collections.abc import Iterable
 
-from ..core.schemas import DebateLogItem, MemoryState
+from debate.core.schemas import DebateLogItem, MemoryState
+
 from .features import (
     TranscriptData,
     detect_recap_keyword,

@@ -5,7 +5,8 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from ..core.schemas import DebateLogItem
+from debate.core.schemas import DebateLogItem
+
 from .lexicons import (
     EMOTION_LEXICON,
     MODALITY_STRONG_WORDS,

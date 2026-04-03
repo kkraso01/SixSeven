@@ -37,12 +37,12 @@ class DuckDuckGoSearchProvider:
     """``SearchProvider`` backed by DuckDuckGo (via ``ddgs``)."""
 
     def search(self, query: str, max_results: int = 5) -> Any:
-        from ..llm.search_tool import search_web
+        from debate.simulator.providers.search import search_web
 
         return search_web(query, max_results=max_results)
 
     def format_results(self, response: Any, max_chars: int = 1000) -> str:
-        from ..llm.search_tool import format_search_results_for_prompt
+        from debate.simulator.providers.search import format_search_results_for_prompt
 
         return format_search_results_for_prompt(response, max_chars=max_chars)
 
@@ -52,7 +52,7 @@ class FilePromptLoader:
 
     def __init__(self, prompt_dir: Path | None = None) -> None:
         if prompt_dir is None:
-            prompt_dir = Path(__file__).resolve().parents[1] / "prompts"
+            prompt_dir = Path(__file__).resolve().parents[1] / "simulator" / "prompts"
         self._dir = prompt_dir
 
     def load(self, name: str, values: dict[str, str]) -> str:
@@ -75,7 +75,7 @@ class FileArtifactExporter:
         motion: str,
         run_config: dict | None = None,
     ) -> Any:
-        from ..export.writer import write_artifacts
+        from debate.simulator.io.writer import write_artifacts
 
         return write_artifacts(
             output_dir=output_dir,
@@ -94,7 +94,7 @@ class DefaultDebateAnalyzer:
     """``DebateAnalyzer`` using the built-in analysis runner."""
 
     def analyze(self, run_dir: str) -> Any:
-        from ..analysis.analysis_runner import analyze_run
+        from debate.analysis.analysis_runner import analyze_run
 
         return analyze_run(run_dir)
 
@@ -125,8 +125,8 @@ def build_default_services(config: DebateConfig) -> DebateServices:
 
     This is the single place that knows about concrete classes.
     """
-    from ..llm.instructor_wrapper import StructuredLLM
-    from ..llm.ollama_client import OllamaClient
+    from debate.simulator.providers.instructor import StructuredLLM
+    from debate.simulator.providers.llm_client import OllamaClient
 
     llm_client: LLMClient = OllamaClient(config)
     structured_llm: StructuredLLMService = StructuredLLM(llm_client)

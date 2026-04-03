@@ -6,7 +6,7 @@ All mutation functions return a **new** ``MemoryState`` via
 
 from __future__ import annotations
 
-from ..core.schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
+from debate.core.schemas import AgentState, DebateLogItem, MemoryState, Scoreboard
 
 #: Default initial confidence for both agents.
 DEFAULT_INITIAL_CONFIDENCE: int = 55
