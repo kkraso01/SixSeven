@@ -1,0 +1,49 @@
+{
+  "topic": "Social media algorithms and psychological manipulation",
+  "motion": "Social media platforms use sophisticated algorithms to deliberately manipulate user psychology and political beliefs for profit and control.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      70,
+      67,
+      64
+    ],
+    "SA": [
+      50,
+      48,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 3,
+    "evidence-based reasoning": 4,
+    "distrust-authority": 1,
+    "pattern-seeking": 0
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "While profit motives undoubtedly influence social media platform design, attributing *deliberate manipulation* of user psychology requires stronger evidence than demonstrated so far. Engagement is a key metric, but it doesn't automatically equate to intentional manipulation for political control.",
+      "why_it_mattered": "SA successfully shifted the burden of proof, challenging CA to provide concrete evidence of deliberate manipulation beyond mere correlation with profit motives. This framed the debate around the need for demonstrable intent."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "While platforms demonstrably prioritize engagement, equating this to *deliberate shaping* of political beliefs requires demonstrating intent and a causal mechanism beyond simple amplification of existing trends.",
+      "why_it_mattered": "SA continued to press for a clear causal link between algorithmic design and specific political outcomes, highlighting the difference between amplification and deliberate manipulation. This tactic effectively countered CA's claims of manipulation based solely on engagement metrics."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "While social media algorithms are designed to maximize engagement, attributing *deliberate manipulation* of political beliefs requires demonstrating platforms actively designed algorithms to *cause* specific political outcomes, not merely that engagement and polarization happen to coincide with profit.",
+      "why_it_mattered": "SA's final statement solidified their position by emphasizing the need for proof of intentionality and a direct causal link. This effectively countered CA's argument that profit motive alone constitutes deliberate manipulation."
+    }
+  ],
+  "outcome_summary": "SA demonstrated a significant shift in confidence, while CA's confidence decreased. SA successfully challenged CA to provide evidence of deliberate manipulation beyond correlation, framing the debate around the need for demonstrable intent and a causal mechanism. The debate ended with SA maintaining a stronger position due to their emphasis on evidence and causal reasoning.",
+  "limitations": [
+    "The debate was limited by the lack of access to internal platform data, making it difficult to definitively prove or disprove deliberate manipulation.",
+    "The concept of 'manipulation' is subjective and open to interpretation, leading to potential disagreements on what constitutes deliberate intent.",
+    "The debate focused primarily on the intent behind algorithmic design, potentially overlooking the unintended consequences of engagement optimization."
+  ]
+}

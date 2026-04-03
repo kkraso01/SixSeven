@@ -1,0 +1,40 @@
+{
+  "topic": "Food additives and public health",
+  "motion": "Food additives approved by regulatory agencies are intentionally harmful and designed to create chronic diseases that benefit the medical industry.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "pattern-seeking": 3,
+    "appeal-to-authority": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Proponent A",
+      "excerpt": "The evidence is clear: artificial sweeteners are linked to metabolic disorders.",
+      "why_it_mattered": "This statement shifted public opinion towards the negative effects of food additives."
+    },
+    {
+      "round": 4,
+      "speaker": "Skeptic B",
+      "excerpt": "While there may be isolated incidents, it's a stretch to claim that all food additives are harmful.",
+      "why_it_mattered": "This rebuttal helped counter the proponent's argument by introducing doubt."
+    }
+  ],
+  "outcome_summary": "The audience remained largely unconvinced, with a slight majority leaning towards skepticism.",
+  "limitations": [
+    "Limited sample size of participants.",
+    "Insufficient time for in-depth discussion on each additive."
+  ]
+}

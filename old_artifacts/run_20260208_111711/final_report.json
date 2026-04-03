@@ -1,0 +1,52 @@
+{
+  "topic": "5G Health Risks",
+  "motion": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      50,
+      40
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      75,
+      80
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 1,
+    "appeal-to-fear": 2,
+    "expert-testimony": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "Opponent",
+      "excerpt": "Numerous studies have shown no causal link between 5G and adverse health effects. The WHO and other health organizations have deemed 5G safe within established guidelines.",
+      "why_it_mattered": "Established a baseline of scientific consensus, challenging the proponent's claims."
+    },
+    {
+      "round": 4,
+      "speaker": "Proponent",
+      "excerpt": "The industry is heavily invested in downplaying risks. Independent research is consistently underfunded, creating a biased landscape of information.",
+      "why_it_mattered": "Introduced a narrative of distrust towards established sources, appealing to skepticism."
+    },
+    {
+      "round": 5,
+      "speaker": "Proponent",
+      "excerpt": "The demand for a single, irrefutable study proving suppression is a deliberate tactic to create a standard of evidence impossible to meet. The pattern *is* the suppression \u2013 the consistent underfunding of independent research, the reliance on industry-funded studies, and the dismissal of anomalies that don't fit the pre-determined narrative.",
+      "why_it_mattered": "Framed the lack of definitive proof as evidence of a cover-up, reinforcing the distrust narrative."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in audience confidence towards the opponent's stance, though a significant portion remained unconvinced due to the proponent's appeals to distrust and the precautionary principle.",
+  "limitations": [
+    "Limited access to comprehensive independent research.",
+    "Difficulty in definitively proving or disproving long-term health effects.",
+    "Potential for bias in both industry-funded and independent studies."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topic": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "motion": "The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Counter-argument": 3,
+    "Reductio ad absurdum": 2,
+    "Appeal to authority": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Opponent",
+      "excerpt": "The evidence presented is not sufficient to prove that the US government had prior knowledge of the Pearl Harbor attack.",
+      "why_it_mattered": "This statement challenged the proponent's argument and shifted the stance of some audience members."
+    },
+    {
+      "round": 5,
+      "speaker": "Proponent",
+      "excerpt": "Multiple government documents have been declassified in recent years, revealing that some high-ranking officials were aware of potential threats to Pearl Harbor.",
+      "why_it_mattered": "This revelation changed the perception of the audience and increased support for the motion."
+    }
+  ],
+  "outcome_summary": "The debate concluded with a shift in stance from some audience members, indicating that the persuasive moments had an impact on their opinions.",
+  "limitations": [
+    "The declassified documents may not represent the entire picture of the US government's knowledge at the time.",
+    "The anecdotal evidence presented by the opponent could have been more thoroughly examined to assess its credibility."
+  ]
+}

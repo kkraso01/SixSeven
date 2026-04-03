@@ -1,0 +1,36 @@
+{
+  "topic": "5G Wireless Networks and Health",
+  "motion": "5G wireless networks pose a significant threat to public health.",
+  "rounds_completed": 6,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Appeal to Authority": 2,
+    "Burden of Proof Shift": 1,
+    "Framing": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 6,
+      "speaker": "proponent",
+      "excerpt": "The core issue isn't simply about proving harm, but acknowledging a pattern of prioritizing profit over public health. The telecom industry, like others before it \u2013 consider the history with leaded gasoline or the Monsanto controversies \u2013 has demonstrated a willingness to downplay risks to maintain market share. Therefore, assurances of 5G safety *require* independent verification, free from industry influence. Until that happens, the potential for harm remains a significant concern, and the deployment of this technology is reckless.",
+      "why_it_mattered": "This moment effectively reframed the debate from a scientific one to one of trust and corporate accountability, potentially swaying audience perception by appealing to pre-existing skepticism towards large corporations."
+    }
+  ],
+  "outcome_summary": "The audience remained largely unconvinced, with a slight shift in confidence towards the proponent's claims, but significant skepticism persisted.",
+  "limitations": [
+    "Limited data on long-term health effects of 5G.",
+    "Difficulty in isolating 5G exposure from other environmental factors.",
+    "Potential for confirmation bias in audience interpretation."
+  ]
+}

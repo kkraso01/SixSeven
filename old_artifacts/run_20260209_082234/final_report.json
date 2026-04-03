@@ -1,0 +1,44 @@
+{
+  "topic": "Aircraft contrails and atmospheric modification",
+  "motion": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      25,
+      45,
+      35
+    ],
+    "SA": [
+      90,
+      65,
+      85
+    ]
+  },
+  "tactic_counts": {
+    "pattern-seeking": 2,
+    "evidence-based reasoning": 2,
+    "anomaly-emphasis": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "Commercial aircraft's contrails are not just harmless condensation, but part of a secret atmospheric modification program.",
+      "why_it_mattered": "Introduced the core claim that commercial aircraft deliberately release chemical or biological agents as part of secret atmospheric modification programs."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "The assertion of a 'persistent refusal' to acknowledge concerns about contrails misrepresents the scientific consensus and relies on interpreting silence as confirmation of a conspiracy, a logical fallacy. While acknowledging public interest in atmospheric phenomena, there is no credible evidence supporting deliberate atmospheric modification via contrails.",
+      "why_it_mattered": "Countered the argument of cover-up due to institutional silence by emphasizing the absence of evidence doesn't constitute proof and pointed to alternative explanations."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "The consistent lack of transparency from institutions about the true nature of contrails is a strong indicator that they are not simply harmless condensation.",
+      "why_it_mattered": "Reiterated the argument of institutional silence as an indicator of secret atmospheric modification programs."
+    }
+  ],
+  "outcome_summary": "The motion was rejected, with CA's stance decreasing by 10 and SA's stance increasing by 20.",
+  "limitations": []
+}

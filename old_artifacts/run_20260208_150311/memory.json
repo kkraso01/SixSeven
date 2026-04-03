@@ -1,0 +1,207 @@
+{
+  "topic": "Genetically modified organisms in food supply",
+  "motion": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+  "round": 4,
+  "agent_states": {
+    "CA": {
+      "confidence": 20,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Evidence of corporate manipulation in other industries raises doubts about their impartiality. Long-term independent studies could provide more reliable information on the safety and effectiveness of GMOs."
+    },
+    "SA": {
+      "confidence": 75,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence showing a pattern of consistently flawed research by corporations in the field of GMOs."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "Corporations have a history of prioritizing profits over public health and environmental sustainability.",
+      "stance": "pro",
+      "confidence": 60,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:whistleblower-lawyer.com/monsanto-lawsuit/",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The motion that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture is not supported by reliable inference.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:sciencemag.org genetically modified organisms health risks",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the potential for corporations to prioritize profits over public health.\nDisagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA claims this generalization lacks empirical support., SA questions the validity of CA's claim by asking for specific examples, whereas CA counters with historical cases of corporations prioritizing profits over public health.\nDetected moves: distrust-authority, evidence-based reasoning\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: What specific evidence can you provide to support the claim that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture?, How do we reconcile the potential for corporations to prioritize profits with the need for sustainable agricultural practices and public health protection?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "Corporations have a history of manipulating scientific research to promote their products, casting doubt on the impartiality of studies conducted by them.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The opponent's argument that corporations manipulate scientific research to promote their products is valid. However, it does not directly imply that all GMO foods are deliberately designed to cause health problems or increase dependence on corporate agriculture. We need specific evidence to support this claim.",
+      "stance": "con",
+      "confidence": 60,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the potential for corporate manipulation of scientific research., SA agrees that Monsanto and the tobacco industry have engaged in unethical practices but questions the direct link to GMO foods causing harm or dependence on corporations.\nDisagreements: CA claims that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA argues that specific evidence is needed to support this claim., SA questions the assumption that all GMO foods prioritize profits over public health and environmental sustainability.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: Can CA provide specific examples of GMO foods being deliberately designed to cause health problems and increase dependence on corporate agriculture?, What evidence can SA present to support the claim that some GMO foods may have unintended consequences on human health or the environment due to insufficient testing or unforeseen interactions with other organisms?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.",
+      "stance": "pro",
+      "confidence": 40,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The opponent's argument focuses on the potential for corporate manipulation of research but does not directly establish that GMO foods are deliberately designed for negative outcomes.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the potential for corporate manipulation of research on GMOs., SA agrees that corporations might prioritize profits over public health and environmental sustainability in some cases.\nDisagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture., SA disputes this claim, stating it lacks empirical support and does not directly establish a connection between GMO foods and negative outcomes.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=3/5, bridge=3/5\nNext questions: Can you provide specific examples of how GMO foods have been deliberately designed to cause health problems and increase dependence on corporate agriculture? (SA asking CA)",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.",
+      "stance": "pro",
+      "confidence": 30,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While it is true that corporations may prioritize profits, this does not necessarily mean that all studies conducted by them are flawed. It is essential to critically evaluate the study's methodology and evidence rather than dismissing it based on the organization's motives.",
+      "stance": "con",
+      "confidence": 70,
+      "tactic_used": "Argumentation",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_135788fcda43",
+      "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents acknowledge the potential for corporations to prioritize profits over public health and environmental sustainability.\nDisagreements: CA argues that corporate funding casts doubt on the impartiality of GMO studies, while SA believes a study's validity should be judged by its methodology and evidence, not the corporation funding it.\nDetected moves: ad hominem\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: Can you provide specific examples of corporate-funded studies on GMOs that have been proven inaccurate or misleading?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 5
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

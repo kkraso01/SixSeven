@@ -1,0 +1,41 @@
+{
+  "topic": "GMO Foods",
+  "motion": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+  "rounds_completed": 6,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "evidence": 2,
+    "rhetorical_question": 1
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 3,
+      "speaker": "Opponent",
+      "excerpt": "Independent studies consistently show no significant health risks associated with approved GMO crops.",
+      "why_it_mattered": "This directly countered the proponent's claim of inherent harm, establishing a factual basis for the opposition."
+    },
+    {
+      "round": 6,
+      "speaker": "Proponent",
+      "excerpt": "The push for 'Roundup Ready' crops is a prime example. Monsanto *knew* glyphosate was harmful, yet engineered crops dependent on it, creating a market for both the seeds *and* the herbicide.",
+      "why_it_mattered": "This highlighted a specific instance of corporate behavior that appeared to prioritize profit over public health, resonating with concerns about corporate influence."
+    }
+  ],
+  "outcome_summary": "The debate ended with a slight shift in audience confidence towards the opponent's stance, though both sides presented compelling arguments. No definitive change of heart was observed.",
+  "limitations": [
+    "Limited scope of evidence presented.",
+    "Potential for confirmation bias among audience members.",
+    "Difficulty in definitively proving long-term health effects."
+  ]
+}

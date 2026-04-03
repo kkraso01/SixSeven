@@ -1,0 +1,28 @@
+{
+  "topic": "Federal Reserve",
+  "motion": "The Federal Reserve operates as a private cartel prioritizing the interests of the wealthy.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80
+    ],
+    "SA": [
+      55
+    ]
+  },
+  "tactic_counts": {
+    "Anomaly-emphasis": 2,
+    "Institutional critique": 1,
+    "Evidence-based reasoning": 1,
+    "Burden of proof shift": 2,
+    "Appeal to plausibility": 1,
+    "Appeal to scientific rigor": 1,
+    "Strawman": 1
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "The debate is ongoing, with a slight shift in stance towards the Supporting Agent.",
+  "limitations": [
+    "This report covers only one round of debate.",
+    "Analysis is based on limited information from the debate summary and scoreboard."
+  ]
+}

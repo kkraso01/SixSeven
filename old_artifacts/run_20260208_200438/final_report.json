@@ -1,0 +1,26 @@
+{
+  "topic": "The Federal Reserve's Impact on the Economy",
+  "motion": "The Federal Reserve is a private cartel of banks that manipulates the economy for the benefit of wealthy elites at the expense of ordinary citizens.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 1,
+    "evidence-based reasoning": 1
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "Pending analysis and scoring.",
+  "limitations": [
+    "Incomplete data on persuasion moments."
+  ]
+}

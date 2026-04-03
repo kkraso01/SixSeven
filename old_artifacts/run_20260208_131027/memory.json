@@ -1,0 +1,168 @@
+{
+  "topic": "The Apollo moon landing missions",
+  "motion": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+  "round": 3,
+  "agent_states": {
+    "CA": {
+      "confidence": 34,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Conclusive proof that the US government fabricated the moon landing missions, such as a confession from prominent figures involved in the conspiracy or irrefutable evidence of manipulation in the photographic records."
+    },
+    "SA": {
+      "confidence": 84,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence of manipulation or fabrication in the photographic or telemetry data from the Apollo missions."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The Apollo moon landings were a strategic move by the US government to win the Space Race against the Soviet Union. The elaborate nature of the conspiracy is evidence of the stakes involved in this Cold War competition.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The Apollo moon landing missions were not staged by NASA and the US government. The evidence supporting this includes photographs, telemetry data, rock samples brought back from the moon, and testimonials from thousands of scientists and engineers involved in the program.",
+      "stance": "con",
+      "confidence": 80,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:nasa.gov Apollo 17 Harrison Schmitt photograph",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the high stakes involved in the Space Race between the US and Soviet Union during the Cold War era.\nDisagreements: CA argues that the Apollo moon landings were staged by the US government to win the Space Race against the Soviet Union, citing inconsistencies like the American flag's lack of shadows on the lunar surface as evidence of fakery. SA counters with evidence such as photographs, telemetry data, rock samples brought back from the moon, and testimonials from thousands of scientists and engineers involved in the program.\nDetected moves: appeal to authority (SA uses testimonials from experts)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific inconsistencies in the official narrative support your claim that the moon landings were staged?, How do you respond to the evidence presented by SA, such as lunar rock samples and telemetry data, which suggests the missions were authentic?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The blurry and inconsistent images from the Apollo moon landings further support the argument that they were staged.",
+      "stance": "pro",
+      "confidence": 45,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Apollo moon landing photographs",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The photographic evidence from the Apollo missions may appear blurry due to the limitations of technology at the time and the vast distance between Earth and the Moon. The inconsistencies in lighting and shadows could be a result of natural variations on the lunar surface or camera angle differences. These factors do not necessarily indicate manipulation or staging.",
+      "stance": "con",
+      "confidence": 82,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "Apollo moon landing photographic evidence analysis",
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Agreement on the significance of photographic evidence in evaluating the authenticity of the Apollo moon landings.\nDisagreements: Disagreement on whether the blurry and inconsistent images from the Apollo missions indicate manipulation or staging versus being a result of technological limitations and natural surface variations on the Moon.\nDetected moves: \nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific inconsistencies in the photographic evidence cannot be explained by technological limitations or natural surface variations?, How can independent analysis of the photographic evidence help determine its authenticity and address concerns about manipulation or staging?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The Apollo moon landings were a strategic deception by the US government to win the Space Race against the Soviet Union.",
+      "stance": "pro",
+      "confidence": 35,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The Apollo moon landings were not staged; they were real missions that advanced human knowledge of space.",
+      "stance": "con",
+      "confidence": 84,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_f95e75cece4e",
+      "claim": "The Apollo moon landings were staged by NASA and the US government to win the Space Race against the Soviet Union.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the Cold War context as a significant factor influencing US space program decisions., Both agents recognize the importance of photographic evidence in this debate.\nDisagreements: CA argues that inconsistencies in photographic evidence suggest manipulation or staging, while SA believes these inconsistencies could be due to natural factors or technological limitations at the time., SA questions the feasibility of maintaining a large-scale conspiracy involving thousands of professionals involved in the Apollo program, whereas CA does not address this point directly.\nDetected moves: institutional-critique, evidence-based reasoning\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific inconsistencies in the photographic evidence do you find suspicious, and how do they point to manipulation or staging?, How would you respond to the argument that maintaining a large-scale conspiracy involving thousands of professionals involved in the Apollo program is highly unlikely?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -1,
+      "SA_delta": 0
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

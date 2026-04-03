@@ -1,0 +1,246 @@
+{
+  "topic": "The Pearl Harbor attack and US entry into WWII",
+  "motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 51,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "If the SA acknowledged the possibility of systemic failures and agreed to consider the cumulative weight of circumstantial evidence, rather than demanding irrefutable proof, it would demonstrate a willingness to engage with the issue critically."
+    },
+    "SA": {
+      "confidence": 53,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "A convincing argument from the opponent that demonstrates a clear understanding of historical research methodologies and provides compelling evidence for their claims regarding deliberate manipulation in the Pearl Harbor attack."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The narrative that Pearl Harbor was a surprise attack is a convenient fiction constructed to galvanize public support for a war that was already being planned, and the US government possessed sufficient intelligence to anticipate the attack but chose inaction.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "institutional-critique",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy pearl harbor usable incident",
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The US government's alleged foreknowledge of the Pearl Harbor attack is not supported by reliable evidence. The claim that the US deliberately allowed the attack to justify entering World War II lacks substantive proof and relies on speculation.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the US had broken Japanese codes and intercepted communications., Both agents agree that the intercepted communications were not perfect and contained limitations., Both agents state what evidence would change their mind, focusing on concrete proof of intent or lack thereof.\nDisagreements: CA argues the US *intentionally* allowed the attack to justify war, while SA maintains it was a genuine surprise., CA emphasizes US provocation through Lend-Lease and economic pressure, while SA focuses on broader strategic goals in Europe., CA frames the intelligence failures as manipulation, while SA attributes them to limitations in intelligence capabilities.\nDetected moves: selective evidence (CA - focusing on evidence supporting intentionality while downplaying counter-evidence), burden of proof shift (CA - implying intentionality requires explanation from SA), appeal to conspiracy (CA - referencing Reddit conspiracy theories)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide specific examples of how the intercepted intelligence was 'selectively filtered' and by whom?, SA, how do you account for the unusual positioning of the fleet at Pearl Harbor, given standard naval protocols?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The inconsistencies surrounding the intelligence failures at Pearl Harbor \u2013 specifically, the delayed and selectively disseminated warnings \u2013 aren\u2019t simply errors in communication, but deliberate actions designed to ensure the attack\u2019s success and provide the necessary casus belli.",
+      "stance": "pro",
+      "confidence": 50,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy McCollum memo Pearl Harbor",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The US government's alleged foreknowledge of the Pearl Harbor attack is not supported by reliable evidence. The claim that the US deliberately allowed the attack to justify entering World War II lacks substantive proof and relies on speculation.",
+      "stance": "con",
+      "confidence": 56,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge the existence of intercepted Japanese communications., Both agree that intelligence failures occurred leading up to the attack., Both acknowledge the McCollum memo as a relevant document.\nDisagreements: CA argues these failures were *deliberate* to create a casus belli, while SA attributes them to limitations and lack of concrete evidence., CA emphasizes anomalies and circumstantial evidence, while SA demands direct proof of intentionality., CA frames the issue as obscured information and cover-ups, while SA focuses on the absence of affirmative evidence supporting the claim.\nDetected moves: Appeal to ignorance (CA): 'Absence of evidence isn't evidence of absence.', Burden of proof shift (CA): Demanding unredacted documents from SA to disprove their claim., Selective evidence (both): Each agent highlights evidence supporting their position while downplaying contradicting information.\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you explain why the US military didn't act on the intelligence they *did* have, even if it wasn't a complete picture?, SA: What specific evidence, beyond the McCollum memo, suggests a deliberate attempt to suppress warnings or create a vulnerable situation at Pearl Harbor?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The repeated pattern of downplayed warnings, coupled with the convenient timing of the drill and the McCollum memo\u2019s pre-attack planning, isn\u2019t a series of coincidences, but a deliberately orchestrated sequence of events designed to create a pretext for US intervention in WWII.",
+      "stance": "pro",
+      "confidence": 52,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The opponent's argument that the US deliberately orchestrated the Pearl Harbor attack as a pretext for entering World War II is not supported by reliable evidence.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the existence of warnings prior to the attack., Both agents agree that the McCollum memo is a relevant document., Both acknowledge the importance of intelligence gathering and analysis.\nDisagreements: CA argues the warnings were deliberately downplayed/suppressed, while SA claims there's no concrete evidence of manipulation., CA posits a pre-existing US desire to enter WWII, while SA emphasizes the lack of justification for such orchestration., CA views patterns as deliberate orchestration, while SA attributes them to limitations or coincidence.\nDetected moves: Selective Evidence (CA): Focuses on evidence supporting pre-planning while downplaying counter-evidence., Burden of Proof Shift (CA): Challenges SA to disprove a negative (deliberate inaction)., Appeal to Probability (CA): Claims statistical improbability of downplaying warnings without quantifying it.\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: SA, can you address the specific evidence CA presents regarding delayed translations and denied reconnaissance requests, explaining them as logistical failures rather than deliberate obstruction?, CA, how do you respond to the argument that attributing such a complex event to deliberate orchestration requires a significantly higher burden of proof than you've provided?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The SA\u2019s insistence on \u2018concrete proof\u2019 ignores the inherent nature of covert operations \u2013 evidence of deliberate manipulation is rarely presented directly, but rather revealed through anomalies and inconsistencies in the official narrative.",
+      "stance": "pro",
+      "confidence": 54,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "declassified documents regarding the 'Orange Plan'",
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "The opponent argues that anomalies and inconsistencies in the official narrative can reveal evidence of deliberate manipulation. However, this approach relies heavily on speculation and interpretation rather than concrete evidence. It is crucial to examine specific instances where alleged manipulation occurred and verify them with reliable sources.",
+      "stance": "con",
+      "confidence": 54,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents agree that anomalies and inconsistencies exist in the Pearl Harbor narrative., Both agents acknowledge the difficulty of obtaining 'direct proof' of intent in covert operations., Both agents state that concrete evidence would be required to change their minds.\nDisagreements: CA argues anomalies *imply* deliberate manipulation, while SA insists on concrete evidence *proving* it., CA believes the burden of proof is on SA to disprove manipulation, while SA maintains the burden is on CA to prove it., CA emphasizes the McCollum memo and Orange Plan as suggestive evidence, while SA dismisses them as insufficient.\nDetected moves: Burden of Proof Shift (both agents, though CA more strongly), Occam's Razor (CA), Appeal to Conspiracy (implied in CA's framing)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you prioritize the most compelling anomaly and detail *specifically* how it points to deliberate US action, beyond simply suggesting obstruction?, SA, what level of evidence *would* be sufficient to move you from considering the 'deliberate manipulation' hypothesis as unlikely, to considering it plausible?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The SA\u2019s demand for \u2018definitive proof\u2019 is a tactic employed by institutions to shield themselves from accountability, creating an evidentiary standard impossible to meet when discussing covert actions and systemic failures.",
+      "stance": "pro",
+      "confidence": 53,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "The opponent argues that the SA's demand for definitive proof is a tactic used by institutions to avoid accountability. They claim that this creates an evidentiary standard impossible to meet when discussing covert actions and systemic failures. However, maintaining high standards of evidence helps prevent baseless accusations and promotes intellectual rigor in historical analysis.",
+      "stance": "con",
+      "confidence": 52,
+      "tactic_used": "institutional-critique",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_edace8d7cd42",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents acknowledge the difficulty of obtaining definitive proof regarding covert actions., Both agree that skepticism and critical analysis are important in historical research., Both acknowledge the existence of institutional factors that can influence historical narratives.\nDisagreements: CA argues the SA's evidentiary standard is *intentionally* impossible to meet due to institutional self-preservation, while SA maintains it's a necessary principle of intellectual rigor., CA emphasizes the 'cumulative effect' of circumstantial evidence, while SA focuses on the need for 'definitive proof' and reliable sources., CA frames the debate as a challenge to systemic failures, while SA frames it as upholding standards against baseless accusations.\nDetected moves: Strawman (SA misrepresenting CA's argument as equating skepticism with conspiracy theories), Burden of Proof Shift (CA implying SA must justify the *absence* of evidence), Appeal to Motive (CA attributing self-preservation motives to the SA's evidentiary standard)\nScores: civility=4/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Beyond simply stating the difficulty of obtaining evidence, how does the SA propose to balance the need for rigorous proof with the inherent limitations of investigating historical events involving secrecy and potential cover-ups?, SA: How can the CA differentiate between legitimate skepticism and unsubstantiated claims when evaluating historical narratives, and what specific criteria would they use to assess the reliability of evidence in the context of covert actions?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -4,
+      "SA_delta": 1
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

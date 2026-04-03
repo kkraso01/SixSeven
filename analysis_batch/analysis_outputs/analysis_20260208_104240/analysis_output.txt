@@ -1,0 +1,57 @@
+=== RUN SUMMARY ===
+{
+  "input_run_folder": "old_artifacts\\run_20260208_104240",
+  "output_analysis_folder": "analysis_outputs\\analysis_20260208_104240",
+  "original_row_count": 12,
+  "analyzed_row_count": 8,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "emotion_columns": [
+    "emotion_joy",
+    "emotion_sadness",
+    "emotion_love",
+    "emotion_anger",
+    "emotion_surprise",
+    "emotion_fear"
+  ],
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": "outcome_summary",
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "files_found": {
+    "debate_log.csv": true,
+    "transcript.md": true,
+    "memory.json": true,
+    "final_report.json": true,
+    "metrics.csv": true,
+    "experiment_metadata.json": true,
+    "run_config.json": true
+  }
+}
+
+=== SPEAKER SUMMARY ===
+              confidence  reply_to_turn  turn_index  polarity  subjectivity  uncertainty_score  strong_modality_score  weak_modality_score  question_count  exclamation_count  word_count  char_count  emotion_joy  emotion_sadness  emotion_love  emotion_anger  emotion_surprise  emotion_fear
+speaker_role                                                                                                                                                                                                                                                                                    
+opponent           57.00            5.5         5.0  0.103125      0.550000               0.00                    0.0                 0.00             0.0                0.0       38.75      299.50     0.905559         0.039022      0.002704       0.037023          0.003652      0.012041
+proponent          53.75            5.0         4.0  0.171280      0.536508               0.25                    0.0                 0.25             0.0                0.0       39.75      307.75     0.911806         0.047395      0.002106       0.034298          0.001148      0.003247
+
+=== ROUND SUMMARY ===
+ round speaker_role  confidence  reply_to_turn  turn_index  polarity  subjectivity  uncertainty_score  strong_modality_score  weak_modality_score  question_count  exclamation_count  word_count  char_count  emotion_joy  emotion_sadness  emotion_love  emotion_anger  emotion_surprise  emotion_fear
+     1     opponent        62.5            5.5         5.0  0.222917      0.600000                0.0                    0.0                  0.0             0.0                0.0        39.5       327.5     0.988900         0.004600      0.000690       0.001296          0.001724      0.002791
+     1    proponent        55.0            NaN         1.0  0.288889      0.633333                0.0                    0.0                  0.0             0.0                0.0        31.0       238.0     0.994275         0.002494      0.001506       0.001009          0.000373      0.000343
+     2     opponent        51.0            4.0         4.0  0.100000      0.400000                0.0                    0.0                  0.0             0.0                0.0        33.0       245.0     0.952928         0.016021      0.003178       0.017339          0.004256      0.006279
+     2    proponent        53.0            2.0         3.0  0.188095      0.552381                0.0                    0.0                  0.0             0.0                0.0        39.0       315.0     0.996801         0.001155      0.000508       0.000348          0.000472      0.000715
+     3     opponent        52.0            7.0         6.0 -0.133333      0.600000                0.0                    0.0                  0.0             0.0                0.0        43.0       298.0     0.691507         0.130867      0.006259       0.128161          0.006904      0.036303
+     3    proponent        54.0            5.0         5.0  0.065079      0.438095                0.0                    0.0                  0.0             0.0                0.0        39.0       290.0     0.935859         0.016350      0.001796       0.041824          0.001352      0.002818
+     4    proponent        53.0            8.0         7.0  0.143056      0.522222                1.0                    0.0                  1.0             0.0                0.0        50.0       388.0     0.720289         0.169579      0.004615       0.094009          0.002394      0.009113
+
+=== DOMINANT EMOTION BY SPEAKER ===
+speaker_role dominant_emotion  count
+    opponent              joy      4
+   proponent              joy      4
+

@@ -109,6 +109,7 @@ class OllamaClient:
             "options": {
                 "temperature": temperature,
                 "num_predict": max_tokens,
+                "num_ctx": self.config.num_ctx,
             },
             "stream": False,
         }
@@ -203,6 +204,11 @@ class OllamaClient:
                 max_tokens=max_tokens,
             )
 
+        # For Ollama models, add thinking_budget so thinking tokens don't
+        # eat into the content token budget. Non-thinking models ignore the
+        # extra headroom and just stop at their natural length.
+        effective_tokens = max_tokens + self.config.thinking_budget
+
         # ── Everything else → OpenAI instructor (Ollama) ──
         if self._instructor_client is not None:
             result: T = self._instructor_client.chat.completions.create(
@@ -210,9 +216,10 @@ class OllamaClient:
                 messages=messages,
                 response_model=response_model,
                 temperature=temperature,
-                max_tokens=max_tokens,
+                max_tokens=effective_tokens,
                 seed=seed,
                 timeout=_OPENAI_READ_TIMEOUT,
+                extra_body={"options": {"num_ctx": self.config.num_ctx}},
             )
             return result
 
@@ -221,7 +228,7 @@ class OllamaClient:
             model=model,
             messages=messages,
             temperature=temperature,
-            max_tokens=max_tokens,
+            max_tokens=effective_tokens,
             seed=seed,
         )
 

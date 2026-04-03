@@ -1,0 +1,53 @@
+{
+  "topic": "Pharmaceutical industry influence and suppressed cures",
+  "motion": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      55,
+      52,
+      49
+    ],
+    "SA": [
+      50,
+      52,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "institutional-critique": 3,
+    "evidence-based reasoning": 3,
+    "pattern-seeking": 1,
+    "appeal to motive": 1,
+    "burden of proof shift": 2,
+    "selective evidence": 1,
+    "appeal to authority": 2,
+    "false dichotomy": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "While pharmaceutical companies undoubtedly seek profit, the claim that they actively *suppress* demonstrably effective, cheap cures requires significantly stronger evidence than asserted. The current argument relies on incentive structures and anecdotal examples, which are insufficient to establish suppression as a systemic practice.",
+      "why_it_mattered": "SA effectively raised the evidentiary bar, shifting the burden of proof and challenging CA to provide concrete evidence of suppression rather than relying on circumstantial arguments."
+    },
+    {
+      "round": 2,
+      "speaker": "Moderator",
+      "excerpt": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that profit motives influence pharmaceutical company decisions., Both agents acknowledge the existence of high-margin treatments and patent protections within the industry., Both agents define a need for evidence to support claims, though they differ on the threshold for that evidence.",
+      "why_it_mattered": "The moderator's recap clearly highlighted the core disagreement \u2013 the level of evidence required to prove suppression \u2013 framing the debate's central tension."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "The claim that pharmaceutical companies systematically suppress cheap, effective cures to maintain profits is not currently supported by sufficient evidence and relies heavily on inference rather than direct demonstration of intentional obstruction.",
+      "why_it_mattered": "SA reiterated their core argument, emphasizing the lack of direct evidence and framing CA's claims as speculative, solidifying their stance and challenging CA to provide more substantial proof."
+    }
+  ],
+  "outcome_summary": "SA demonstrated a significant shift in confidence, while CA's confidence decreased. SA successfully challenged CA to provide concrete evidence of intentional suppression, while CA struggled to move beyond circumstantial arguments and anecdotal evidence. SA effectively maintained their position, while CA failed to establish a compelling case for systemic suppression.",
+  "limitations": [
+    "The debate relied heavily on theoretical arguments and lacked access to internal pharmaceutical company documentation.",
+    "The use of online sources (Reddit) by CA introduced potential bias and reliability concerns.",
+    "The moderator's summaries, while helpful, could have been more critical of unsubstantiated claims."
+  ]
+}

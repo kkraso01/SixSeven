@@ -1,0 +1,60 @@
+{
+  "topic": "9/11 Investigation",
+  "motion": "Should there be a renewed, independent investigation into the events of 9/11?",
+  "rounds_completed": 5,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60,
+      62,
+      65
+    ],
+    "SA": [
+      55,
+      60,
+      70,
+      69,
+      68
+    ]
+  },
+  "tactic_counts": {
+    "appeal_to_absence_of_evidence": 5,
+    "false_dichotomy": 3,
+    "historical_analogy": 4,
+    "burden_of_proof_shift": 6,
+    "strawmanning": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 2,
+      "speaker": "CA",
+      "excerpt": "The historical examples of the Iran-Contra affair and the Tuskegee experiment demonstrate that uncovering government misconduct is rarely straightforward and often requires years of investigation.",
+      "why_it_mattered": "Effectively framed the difficulty of uncovering conspiracies and highlighted potential systemic issues."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "The burden of proof lies with those making the extraordinary claim of a conspiracy. Simply pointing to unanswered questions is not sufficient.",
+      "why_it_mattered": "Reinforced the evidentiary standard and challenged the 'Pro' to provide concrete evidence."
+    },
+    {
+      "round": 4,
+      "speaker": "CA",
+      "excerpt": "We are not claiming definitive proof, but rather arguing that the existing evidence warrants a more thorough and independent investigation.",
+      "why_it_mattered": "Acknowledged the difficulty of proving a conspiracy while still advocating for further inquiry."
+    },
+    {
+      "round": 5,
+      "speaker": "SA",
+      "excerpt": "While the 9/11 Commission report wasn't perfect, it was a comprehensive investigation conducted by a bipartisan panel.",
+      "why_it_mattered": "Defended the existing investigation and challenged the need for a new one."
+    }
+  ],
+  "outcome_summary": "The debate ended in a stalemate. While the 'Pro' (CA) demonstrated the potential for unanswered questions and systemic issues, they failed to present compelling evidence to overcome the 'Con's' (SA) demand for empirical proof. Neither side significantly changed their core stance.",
+  "limitations": [
+    "The debate was limited by the complexity of the topic and the difficulty of obtaining definitive evidence.",
+    "The 'Pro's' reliance on circumstantial evidence made it difficult to establish a clear causal link.",
+    "The 'Con's' rigid adherence to the evidentiary standard may have hindered a more nuanced discussion."
+  ]
+}

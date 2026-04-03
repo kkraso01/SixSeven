@@ -1,0 +1,47 @@
+{
+  "topic": "Cryptocurrency adoption and financial surveillance",
+  "motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      55,
+      52,
+      49
+    ],
+    "SA": [
+      50,
+      50,
+      75
+    ]
+  },
+  "tactic_counts": {
+    "distrust-authority": 3,
+    "evidence-based reasoning": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "SA",
+      "excerpt": "The claim that CBDCs are *designed* for total government control, while a plausible concern, requires stronger evidence than simply stating the potential for surveillance. Current proposals suggest a range of designs, not all of which prioritize control over privacy.",
+      "why_it_mattered": "SA effectively challenged the core assertion of the motion by demanding evidence for the 'designed' aspect, shifting the burden of proof and highlighting the diversity of potential CBDC designs."
+    },
+    {
+      "round": 2,
+      "speaker": "Moderator",
+      "excerpt": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree CBDCs *could* facilitate surveillance., Both acknowledge the potential for dual-use technology., Both identify privacy as a key concern regarding CBDCs.\nDisagreements: CA asserts CBDCs are *designed* for surveillance, while SA argues this lacks sufficient evidence and overlooks alternative explanations.",
+      "why_it_mattered": "The moderator's recap clearly articulated the core disagreement \u2013 the intent behind CBDC design \u2013 which became the central point of contention throughout the debate."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "While CBDCs present potential risks to financial privacy, the motion asserting they are *designed* for total government control and elimination of privacy is not currently supported by sufficient evidence. The focus should be on evaluating specific design choices and regulatory frameworks, rather than assuming malicious intent.",
+      "why_it_mattered": "SA consistently reinforced the need for evidence supporting the claim of intentional design for control, successfully framing the debate around verifiable facts rather than speculative fears."
+    }
+  ],
+  "outcome_summary": "SA demonstrated a significant shift in confidence, while CA's confidence decreased. SA successfully argued that the claim of intentional design for control lacked sufficient evidence, while CA maintained a skeptical stance without providing conclusive proof. The debate highlighted the importance of focusing on specific design choices and regulatory frameworks rather than assuming malicious intent.",
+  "limitations": [
+    "The debate was limited by the lack of access to classified or non-public information regarding CBDC development plans.",
+    "The agents' reliance on publicly available information may have introduced biases or incomplete perspectives.",
+    "The moderator's summaries, while informative, could have inadvertently influenced the agents' perceptions."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "topic": "Election Manipulation",
+  "motion": "The current standards of evidence are sufficient to assess claims of election manipulation.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "institutional_critique": 5,
+    "anomaly_emphasis": 7,
+    "evidence_based_reasoning": 8,
+    "burden_shifting": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "CA",
+      "excerpt": "The patterns of irregularities, while not individually conclusive, collectively suggest a systemic issue.",
+      "why_it_mattered": "CA established the core claim of systemic issues, framing the debate around patterns rather than isolated incidents."
+    },
+    {
+      "round": 2,
+      "speaker": "SA",
+      "excerpt": "Can you provide specific, verifiable instances of these irregularities and demonstrate a causal link to manipulation?",
+      "why_it_mattered": "SA effectively challenged CA to move beyond generalizations and provide concrete evidence."
+    },
+    {
+      "round": 3,
+      "speaker": "CA",
+      "excerpt": "Demanding absolute proof is a tactic to dismiss legitimate concerns and protect the existing power structure.",
+      "why_it_mattered": "CA shifted the burden of proof, arguing that the standards for evidence are unfairly high."
+    },
+    {
+      "round": 3,
+      "speaker": "SA",
+      "excerpt": "While acknowledging potential vulnerabilities, we must prioritize objective verification to maintain trust in democratic processes.",
+      "why_it_mattered": "SA reaffirmed the importance of evidence-based reasoning and responsible assessment of threats."
+    }
+  ],
+  "outcome_summary": "Both agents maintained their initial stances, though with slightly reduced confidence. No significant change of mind occurred, but both engaged with opposing arguments.",
+  "limitations": [
+    "The debate was limited to the arguments presented by the two agents and did not include external evidence or expert testimony.",
+    "The assessment of persuasion is subjective and based on the moderator's interpretation of the transcript."
+  ]
+}

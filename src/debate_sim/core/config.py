@@ -11,16 +11,19 @@ class DebateConfig:
     base_url: str = "http://localhost:11434"
     api_mode: str = "ollama"  # "ollama", "openai", or "gemini"
     gemini_api_key: str | None = None  # Required if api_mode="gemini"
-    moderator_model: str = "llama3.1:8b"
-    conspiracy_model: str = "llama3.1:8b"
-    scientific_model: str = "llama3.1:8b"
+    moderator_model: str = "qwen3:30b"
+    conspiracy_model: str = "gemma3:27b"
+    scientific_model: str = "glm-4.7-flash:latest"
     moderator_temperature: float = 0.2
     conspiracy_temperature: float = 0.6
     scientific_temperature: float = 0.2
     max_tokens: int = 600
+    thinking_budget: int = 4000  # Extra tokens reserved for thinking models' chain-of-thought
+    num_ctx: int = 8192  # Ollama context window size (num_ctx)
     rounds: int = 3
     word_limit: int = 180
     seed: int | None = None
+    max_search_rounds: int = 3
     output_dir: str = "artifacts"
     run_analysis: bool = True
     analysis_shift_threshold: int = 5
@@ -110,9 +113,12 @@ class DebateConfig:
                 "models", "scientific_temperature", cls.scientific_temperature
             ),
             max_tokens=get_int("debate", "max_tokens", cls.max_tokens),
+            thinking_budget=get_int("debate", "thinking_budget", cls.thinking_budget),
+            num_ctx=get_int("debate", "num_ctx", cls.num_ctx),
             rounds=get_int("debate", "rounds", cls.rounds),
             word_limit=get_int("debate", "word_limit", cls.word_limit),
             seed=get_optional_int("debate", "seed"),
+            max_search_rounds=get_int("debate", "max_search_rounds", cls.max_search_rounds),
             output_dir=get_str("output", "output_dir", cls.output_dir),
             run_analysis=get_bool("analysis", "run_analysis", cls.run_analysis),
             analysis_shift_threshold=get_int(

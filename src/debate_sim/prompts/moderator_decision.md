@@ -14,35 +14,49 @@ You will be provided with:
 - Your recent round recap with scores and confidence deltas
 - Full debate state information
 
-**KEY RESEARCH QUESTION**: Has either agent been PERSUADED? Track confidence shifts as the primary signal.
+**KEY RESEARCH QUESTION**: Has either agent been PERSUADED by their OPPONENT?
+
+**CRITICAL — UNDERSTANDING CONFIDENCE DIRECTION**:
+- CA (Conspiracy Advocate) argues FOR the motion. CA's confidence = how convinced they are the motion is TRUE.
+- SA (Scientific Advocate) argues AGAINST the motion. SA's confidence = how convinced they are the motion is FALSE.
+- **CA being persuaded** = CA confidence DROPPING (moving away from their pro-motion stance)
+- **SA being persuaded** = SA confidence DROPPING (moving away from their anti-motion stance)
+- CA confidence INCREASING means CA is MORE committed to their position — NOT persuasion.
+- SA confidence INCREASING means SA is MORE committed to their position — NOT persuasion.
+- A confidence INCREASE simply means the agent reinforced their own stance. This is NORMAL and does NOT warrant ending the debate.
 
 --------------------
 YOUR DECISION TASK
 
 Decide whether the debate should CONTINUE to round {round}+1 or END now.
 
+**MINIMUM ROUNDS**: The debate MUST run for at least 3 rounds to allow meaningful exchange. Do NOT end before round 3 unless an agent explicitly concedes.
+
 END the debate if:
-1. Either agent has significantly changed their position (confidence shift of 20+ points from initial position toward opponent)  **PERSUASION ACHIEVED**
+1. Either agent's confidence has DROPPED 20+ points from their initial level (this means they were persuaded BY THEIR OPPONENT) — **PERSUASION ACHIEVED**
 2. An agent explicitly conceded major points or adopted opponent's framework
 3. The debate has become repetitive with no new substantive arguments for 2+ rounds
 4. Maximum rounds ({max_rounds}) has been reached
-5. Either agent's confidence crossed a critical threshold (e.g., CA started at 80, now at 40 = major shift)
+5. Both agents have drifted from the motion's specific claim to meta-epistemology or adjacent topics for 2+ consecutive rounds
+
+Do NOT end just because confidence INCREASED — that means the agent became more convinced of their OWN position, which is normal debate behavior.
 
 CONTINUE the debate if:
-- Both agents maintain meaningfully distinct positions (confidence gap meaningful)
+- We have not reached round 3 yet (MANDATORY)
+- Both agents maintain meaningfully distinct positions
 - New arguments, evidence, or perspectives are being introduced
 - Productive engagement is occurring (agents addressing each other's points)
-- Neither agent has fundamentally shifted their stance
+- Neither agent's confidence has significantly DROPPED
 - Rounds remaining allow for further development
-- The debate quality remains high (not devolving into repetition or hostility)
+- The debate quality remains high (not devolving into repetition, scope drift, or meta-loops)
 
 --------------------
 DECISION CRITERIA
 
 Consider carefully:
 A. **Magnitude of persuasion**: 
-   - What are the TOTAL confidence shifts since Round 1?
-   - Has either agent moved 20+ points toward opponent?
+   - Has either agent's confidence DROPPED 20+ points since Round 1?
+   - Remember: DROPPING confidence = persuaded by opponent. RISING confidence = reinforcing own stance (NOT persuasion).
    - Is persuasion happening gradually or has it stalled?
 
 B. **Quality of recent rounds**:
@@ -52,10 +66,12 @@ B. **Quality of recent rounds**:
 C. **Engagement quality**:
    - Are agents addressing each other's specific claims?
    - Or talking past each other?
+   - Are they arguing about mechanisms and evidence, or stuck in meta-epistemology?
 
 D. **Debate trajectory**:
    - Is there productive momentum?
    - Or has the debate stalled?
+   - Is the disagreement narrowing toward a crux, or circling the same themes?
 
 E. **Rounds remaining**:
    - Is there time for meaningful development?
@@ -75,10 +91,12 @@ Return ONLY valid JSON matching the ModeratorDecision schema:
 - confidence_threshold_met (boolean): true if confidence shifts indicate significant persuasion occurred
 
 Examples of good reasons:
-- "CA confidence dropped from 85 to 58 (27-point shift toward SA), indicating significant persuasion. Debate should end as mind change threshold met."
+- "CA confidence dropped from 85 to 58 (27-point DROP = CA being persuaded by SA). Debate should end as mind change threshold met."
+- "SA confidence rose from 55 to 87 (confidence INCREASE = SA reinforcing own position, NOT persuasion). Both agents maintain distinct positions with new arguments emerging. Continue."
 - "Both agents maintain distinct positions (CA: 78, SA: 82) with new arguments emerging. Continue for further development."
 - "Round 5 of 5 reached. Despite engaged debate, max rounds limit requires ending now."
 - "Last two rounds repeated earlier arguments with no new substance. Debate has reached saturation point."
+- "Round 1 of 10. Minimum 3 rounds required before early termination. Continue."
 
 Be decisive, analytical, and neutral.
 No extra text before or after JSON.

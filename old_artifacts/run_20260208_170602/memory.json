@@ -1,0 +1,246 @@
+{
+  "topic": "The Pearl Harbor attack and US entry into WWII",
+  "motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "round": 5,
+  "agent_states": {
+    "CA": {
+      "confidence": 52,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Clear and concrete evidence that the US government was not aware of the attack beforehand or that they took reasonable steps to address the threats."
+    },
+    "SA": {
+      "confidence": 63,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Concrete evidence or testimony from high-ranking officials involved in the decision-making process at the time that proves foreknowledge of the attack."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "pattern-seeking",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "The Pearl Harbor attack was a surprise to the US government, and there is no evidence supporting the claim that they allowed it to happen to justify entering World War II.",
+      "stance": "con",
+      "confidence": 55,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "Pearl Harbor attack + US foreknowledge",
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the Pearl Harbor attack was a pivotal moment leading to US entry into WWII., Both agents state that concrete evidence is needed to support their respective claims., Both agents have an initial confidence level of 55.\nDisagreements: CA argues the US government had advance knowledge and allowed the attack, while SA maintains it was a surprise., CA focuses on patterns of 'suspicious behavior,' while SA emphasizes the official investigation and historical records., CA questions the official narrative, while SA defends it.\nDetected moves: Pattern-seeking (CA): Identifying patterns without establishing causation., Burden of proof shift (CA): Asking SA to explain inconsistencies in the 'official narrative' rather than providing evidence for their claim., Appeal to authority (SA): Citing the Roberts Commission report as evidence.\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA: Can you provide specific examples of the 'suspicious behavior' and explain how they demonstrate foreknowledge?, SA: How do you respond to claims that intelligence was deliberately withheld from commanders at Pearl Harbor?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "The US government's lack of response to the Pearl Harbor attack despite anticipating potential conflict with Japan is an anomaly that warrants suspicion.",
+      "stance": "pro",
+      "confidence": 53,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Pearl Harbor intercepted messages",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "The lack of preparation by the US government for the Pearl Harbor attack can be explained by the fact that intelligence was not as reliable or deciphered quickly enough to take action.",
+      "stance": "con",
+      "confidence": 56,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents agree that a lack of preparation existed regarding the Pearl Harbor attack., Both acknowledge intercepted messages as relevant to the discussion., Both agents are seeking concrete evidence to support their claims.\nDisagreements: CA argues the lack of response to intercepted messages is *suspicious*, implying deliberate inaction. SA attributes it to intelligence failures and prioritization of other threats., CA frames the situation as an 'anomaly,' while SA presents it as a logical outcome of imperfect intelligence., CA focuses on potential *motives* of the US government, while SA focuses on *capabilities* and logistical challenges.\nDetected moves: anomaly-emphasis (CA) - highlighting a lack of response as inherently suspicious without sufficient justification., appeal to authority (SA - implicit) - referencing the official investigation without detailing its findings., burden of proof shift (SA) - requesting specific messages from CA instead of offering evidence for their own claim initially.\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you elaborate on what specific motives you believe the US government had for allowing the attack to happen?, SA, can you provide more detail on the ambiguity of the intercepted messages and why they weren't considered a clear threat?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The US government's lack of response to intercepted intelligence regarding a potential attack on Pearl Harbor is an anomaly that warrants suspicion.",
+      "stance": "pro",
+      "confidence": 54,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "The lack of preparation by the US government for the Pearl Harbor attack can be explained by the fact that intelligence was not as reliable or deciphered quickly enough to take action.",
+      "stance": "con",
+      "confidence": 58,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "duckduckgo",
+      "tool_query": "intercepted messages pearl harbor",
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents agree that the lack of preparation at Pearl Harbor is a key issue., Both acknowledge the existence of intercepted intelligence prior to the attack., Both agents state that concrete evidence is needed to change their minds.\nDisagreements: CA argues the lack of response to intelligence is *suspicious*, implying deliberate inaction. SA attributes it to unreliable intelligence and prioritization of other threats., CA focuses on the *anomaly* of inaction, while SA emphasizes the *reasonableness* of the response given the information available., CA implies a motive to enter WWII, while SA frames US entry as a response to Axis aggression.\nDetected moves: anomaly-emphasis, appeal to possibility (SA - prioritizing other threats), burden of proof shift (SA requests specific messages from CA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you provide examples of specific intelligence that was clear enough to warrant a stronger response?, SA, how do you address the argument that the intercepted messages, even if imperfect, should have triggered *some* increased level of alert at Pearl Harbor?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "proponent",
+      "utterance": "The US government's lack of response to intercepted intelligence regarding a potential attack on Pearl Harbor is an anomaly that warrants suspicion.",
+      "stance": "pro",
+      "confidence": 56,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": null,
+      "reply_to_turn": 8
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "opponent",
+      "utterance": "The lack of preparation by the US government for the Pearl Harbor attack can be explained by the fact that intelligence was not as reliable or deciphered quickly enough to take action.",
+      "stance": "con",
+      "confidence": 60,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 10
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 4,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 4 Recap]\nAgreements: Both agents agree that the lack of preparation at Pearl Harbor is a key point of contention., Both agents acknowledge the existence of intercepted intelligence prior to the attack.\nDisagreements: CA argues the lack of response to intelligence is *suspicious*, implying deliberate inaction. SA argues it was due to unreliable/untimely intelligence., CA focuses on the *anomaly* of inaction, while SA emphasizes the *lack of direct evidence* of foreknowledge.\nDetected moves: appeal to anomaly (CA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you specify which intercepted messages you believe demonstrate foreknowledge and explain how their content was not adequately addressed?, SA, how do you account for the documented delays in translating and disseminating the intercepted messages, and could these delays have contributed to the lack of preparedness?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "proponent",
+      "utterance": "The consistent lack of action despite intercepted intelligence is a glaring anomaly that should be scrutinized further.",
+      "stance": "pro",
+      "confidence": 54,
+      "tactic_used": "anomaly-emphasis",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy Pearl Harbor intercepted messages",
+      "reply_to_turn": 11
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "opponent",
+      "utterance": "The lack of preparation at Pearl Harbor can be attributed to the fact that intelligence was not reliable or deciphered quickly enough.",
+      "stance": "con",
+      "confidence": 61,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 13
+    },
+    {
+      "debate_id": "debate_cd5fadf14c99",
+      "claim": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+      "round": 5,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 5 Recap]\nAgreements: Both agents agree intercepted intelligence existed prior to the attack., Both acknowledge a lack of preparedness at Pearl Harbor., Both seek concrete evidence to support their claims.\nDisagreements: CA argues inaction regarding intelligence suggests deliberate allowance of the attack, while SA attributes it to unreliable intelligence and limited resources., CA emphasizes an 'anomaly' in the lack of response, while SA frames it as a consequence of logistical and informational challenges., CA focuses on motives and intentions, while SA emphasizes practical limitations.\nDetected moves: anomaly-emphasis, appeal to conspiracy (implied in CA's search query), burden of proof shift (SA requests specific examples from CA), alternative hypotheses (SA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: CA, can you elaborate on what specific actions the US government *should* have taken, given the intelligence available at the time?, SA, how do you account for the documented delays in deciphering and disseminating the intercepted messages?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -2,
+      "SA_delta": 2
+    },
+    "bridge_score": 3,
+    "civility_score": 5,
+    "epistemic_quality": 4
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

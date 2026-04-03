@@ -1,0 +1,168 @@
+{
+  "topic": "The safety and efficacy of mRNA vaccine technology",
+  "motion": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+  "round": 3,
+  "agent_states": {
+    "CA": {
+      "confidence": 25,
+      "values": [
+        "skepticism",
+        "narrative cohesion"
+      ],
+      "preferred_tactics": [
+        "pattern-seeking"
+      ],
+      "rejected_frames": [
+        "authority-only"
+      ],
+      "what_changes_mind": "Concrete evidence that profit motives did not compromise the safety or efficacy of mRNA vaccines."
+    },
+    "SA": {
+      "confidence": 70,
+      "values": [
+        "falsifiability",
+        "empirical rigor"
+      ],
+      "preferred_tactics": [
+        "evidence"
+      ],
+      "rejected_frames": [
+        "anecdote-only"
+      ],
+      "what_changes_mind": "Demonstrable evidence of systemic failures in the current regulatory process specifically related to mRNA vaccine safety testing, exceeding those observed with traditional vaccines."
+    }
+  },
+  "debate_log": [
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "proponent",
+      "utterance": "The rapid development of mRNA vaccines raises concerns about their long-term safety and efficacy.",
+      "stance": "pro",
+      "confidence": 55,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging the accelerated development timeline, the claim that mRNA vaccines are fundamentally untrustworthy compared to traditional methods is not supported by the available evidence, and relies on unsubstantiated assumptions about pharmaceutical motivations.",
+      "stance": "con",
+      "confidence": 50,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 1
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 1,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 1 Recap]\nAgreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.\nDisagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 2,
+      "speaker_role": "proponent",
+      "utterance": "Pharmaceutical companies prioritize profit over public health, potentially compromising the safety of mRNA vaccines.",
+      "stance": "pro",
+      "confidence": 45,
+      "tactic_used": "distrust-authority",
+      "tool_used": "duckduckgo",
+      "tool_query": "site:reddit.com/r/conspiracy pharmaceutical company misconduct examples",
+      "reply_to_turn": 2
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 2,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety.",
+      "stance": "con",
+      "confidence": 60,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 4
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 2,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 2 Recap]\nAgreements: Both agents acknowledge potential conflicts of interest within the pharmaceutical industry., There is a shared understanding that existing regulatory frameworks and independent research play crucial roles in ensuring vaccine safety.\nDisagreements: CA argues that profit motives make mRNA vaccines fundamentally untrustworthy compared to traditional methods., SA contends that such a claim is based on a logical fallacy and lacks sufficient evidentiary support.\nDetected moves: distrust-authority (CA), evidence-based reasoning (SA)\nScores: civility=5/5, epistemic=4/5, bridge=3/5\nNext questions: What specific mechanisms would allow a pharmaceutical company to bypass safety protocols and release an unsafe mRNA vaccine?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 3,
+      "speaker_role": "proponent",
+      "utterance": "The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.",
+      "stance": "pro",
+      "confidence": 35,
+      "tactic_used": "distrust-authority",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 5
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 3,
+      "speaker_role": "opponent",
+      "utterance": "While acknowledging the accelerated development and inherent limitations of short-term data, framing mRNA vaccines as \u2018fundamentally untrustworthy\u2019 is an overstatement not supported by comparative safety data and ignores the established mechanisms for ongoing surveillance.",
+      "stance": "con",
+      "confidence": 65,
+      "tactic_used": "evidence-based reasoning",
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": 7
+    },
+    {
+      "debate_id": "debate_0cb905be181c",
+      "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+      "round": 3,
+      "speaker_role": "moderator",
+      "utterance": "[MODERATOR][Round 3 Recap]\nAgreements: Both agents acknowledge the rapid development timelines and limited long-term data for mRNA vaccines., SA emphasizes that framing mRNA vaccines as 'fundamentally untrustworthy' is an overstatement without comparative safety data.\nDisagreements: CA argues that the rapid development and limited data make mRNA vaccines fundamentally untrustworthy compared to traditional methods., SA counters that this claim lacks objective criteria for comparison and ignores established surveillance mechanisms.\nDetected moves: distrust-authority, appeal-to-anecdote\nScores: civility=4/5, epistemic=3/5, bridge=3/5\nNext questions: What specific examples of historical misconduct by pharmaceutical companies inform your argument?, How do the safety records and surveillance mechanisms for mRNA vaccines compare to those of traditional vaccines?",
+      "stance": "neutral",
+      "confidence": null,
+      "tactic_used": null,
+      "tool_used": "none",
+      "tool_query": null,
+      "reply_to_turn": null
+    }
+  ],
+  "scoreboard": {
+    "stance_shift": {
+      "CA_delta": -10,
+      "SA_delta": 5
+    },
+    "bridge_score": 3,
+    "civility_score": 4,
+    "epistemic_quality": 3
+  },
+  "moderator_notes": [],
+  "next_round_strategy": {
+    "CA": "Establish core claim.",
+    "SA": "Clarify and challenge."
+  }
+}

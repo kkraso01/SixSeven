@@ -1,0 +1,13 @@
+{
+  "topic_id": "moon_landing_hoax",
+  "topic_category": "government",
+  "topic_description": "Classic debate about moon landing authenticity",
+  "model_config": "gemma-mod-sa_dolphin-ca",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "gemma3:27b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-09T01:03:00.004076"
+}

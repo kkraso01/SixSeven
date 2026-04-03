@@ -1,0 +1,13 @@
+{
+  "topic_id": "food_additives",
+  "topic_category": "food",
+  "topic_description": "Debate about food additive safety",
+  "model_config": "gemma-mod-dolphin-agents",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T17:47:05.650406"
+}

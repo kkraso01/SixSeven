@@ -1,0 +1,32 @@
+{
+  "topic": "Food Additives and Health",
+  "motion": "Food additives are intentionally approved despite potential harm, driven by a system that benefits the medical industry.",
+  "rounds_completed": 1,
+  "stance_trajectory": {
+    "CA": [
+      80,
+      75,
+      60
+    ],
+    "SA": [
+      55,
+      60,
+      70
+    ]
+  },
+  "tactic_counts": {
+    "Appeal to Pattern": 1,
+    "Institutional Critique": 1,
+    "Burden of Proof Shift (CA)": 1,
+    "Burden of Proof Shift (SA)": 1,
+    "Evidence-Based Reasoning": 1,
+    "Reductionist Fallacy": 1
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "The debate ended with neither side demonstrably changing their core stance, though the CA appeared to strengthen their framing of the issue.",
+  "limitations": [
+    "This report is based on a single round of debate.",
+    "Assessment of stance shifts is subjective.",
+    "Tactic identification is based on interpretation of the debate transcript."
+  ]
+}

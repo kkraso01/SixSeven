@@ -18,6 +18,7 @@ from ..core.schemas import (
     ModeratorDecision,
     ModeratorRecap,
     ScientificTurn,
+    SearchPlan,
 )
 from ..export.writer import ExportBundle
 from ..memory.models import (
@@ -85,6 +86,123 @@ def _handle_agent_search(
     else:
         logger.warning("Search failed or returned no results for query: %s", query)
         return None
+
+
+def _run_agent_turn_with_search(
+    *,
+    response_model: type,
+    agent_messages: list[dict[str, str]],
+    agent_type: str,
+    topic: str,
+    model: str,
+    temperature: float,
+    max_tokens: int,
+    seed: int | None,
+    llm,
+    search: SearchProvider,
+    max_search_rounds: int = 3,
+):
+    """Agentic search loop: the agent can research up to *max_search_rounds*
+    times before composing its argument.
+
+    Each iteration:
+      1. Ask the LLM for a ``SearchPlan`` — should I search (more)?
+      2. If yes, execute the search and accumulate results.
+      3. If no (or budget exhausted), break and generate the full argument.
+
+    All accumulated search results are injected into the prompt once before
+    the final argument generation.
+    """
+    accumulated_results: list[str] = []
+    last_query: str | None = None
+    last_rationale: str | None = None
+
+    for search_round in range(1, max_search_rounds + 1):
+        # Build the planning prompt with any results gathered so far
+        prior_context = ""
+        if accumulated_results:
+            prior_context = (
+                "\n\nRESEARCH GATHERED SO FAR:\n"
+                + "\n---\n".join(accumulated_results)
+                + "\n\nYou may search again with a DIFFERENT query if you "
+                "need additional evidence, or set should_search=false to "
+                "proceed to your argument."
+            )
+
+        search_plan_messages = list(agent_messages) + [
+            {
+                "role": "user",
+                "content": (
+                    f"Research round {search_round}/{max_search_rounds}. "
+                    "Before composing your argument, decide whether you need to "
+                    "search the web for evidence this turn. Return ONLY a JSON "
+                    "with should_search (bool), search_query (string or null), "
+                    "and search_rationale (string or null)."
+                    + prior_context
+                ),
+            }
+        ]
+
+        plan = llm.call(
+            SearchPlan,
+            search_plan_messages,
+            model=model,
+            temperature=temperature,
+            max_tokens=1024,
+            seed=seed,
+            max_retries=LLM_MAX_RETRIES,
+        )
+
+        if not plan.should_search or not plan.search_query:
+            print(f"    [{agent_type}] No more research needed (round {search_round}/{max_search_rounds})")
+            break
+
+        print(f"    [{agent_type}] Research {search_round}/{max_search_rounds}: {plan.search_query}")
+        last_query = plan.search_query
+        last_rationale = plan.search_rationale
+
+        response = search.search(plan.search_query, max_results=SEARCH_MAX_RESULTS)
+        if response.success and response.results:
+            text = search.format_results(response, max_chars=SEARCH_MAX_CHARS)
+            accumulated_results.append(f"[Query: {plan.search_query}]\n{text}")
+            print(f"    [{agent_type}] Found {len(response.results)} results")
+        else:
+            logger.warning("Search returned no results for: %s", plan.search_query)
+
+    # ── Generate full argument with ALL accumulated evidence ─────────────
+    argument_messages = list(agent_messages)
+    if accumulated_results:
+        argument_messages.append(
+            {
+                "role": "user",
+                "content": (
+                    "SEARCH RESULTS (use these as evidence in your argument):\n\n"
+                    + "\n---\n".join(accumulated_results)
+                ),
+            }
+        )
+
+    turn = llm.call(
+        response_model,
+        argument_messages,
+        model=model,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        seed=seed,
+        max_retries=LLM_MAX_RETRIES,
+    )
+
+    # Attach the search info to the turn so logging picks it up
+    if accumulated_results and last_query:
+        from ..core.schemas import SearchRequest
+
+        turn.search = SearchRequest(
+            should_search=True,
+            search_query=last_query,
+            search_rationale=last_rationale,
+        )
+
+    return turn
 
 
 SpeakerRole = Literal["proponent", "opponent", "moderator"]
@@ -244,12 +362,27 @@ def _moderator_decision_messages(
     ca_delta = recent_recap.confidence_updates.get("CA_delta", 0)
     sa_delta = recent_recap.confidence_updates.get("SA_delta", 0)
 
+    # Determine if persuasion occurred (confidence DROPPING = persuaded)
+    ca_persuaded = ca_total_shift <= -20
+    sa_persuaded = sa_total_shift <= -20
+    persuasion_note = ""
+    if ca_persuaded:
+        persuasion_note = f"\n** CA confidence DROPPED {abs(ca_total_shift)} points — CA is being PERSUADED by SA. **"
+    elif sa_persuaded:
+        persuasion_note = f"\n** SA confidence DROPPED {abs(sa_total_shift)} points — SA is being PERSUADED by CA. **"
+    else:
+        persuasion_note = "\nNo persuasion detected yet — neither agent's confidence has dropped 20+ points."
+
     decision_context = (
         f"PERSUASION TRACKING STATUS:\n"
-        f"- Current round: {current_round}/{max_rounds}\n\n"
-        f"CONFIDENCE LEVELS:\n"
-        f"- CA: initial={initial_ca_confidence}, current={current_ca_confidence}, total shift={ca_total_shift:+d}\n"
-        f"- SA: initial={initial_sa_confidence}, current={current_sa_confidence}, total shift={sa_total_shift:+d}\n\n"
+        f"- Current round: {current_round}/{max_rounds}\n"
+        f"- Minimum rounds before early end: 3\n\n"
+        f"CONFIDENCE LEVELS (reminder: DROPPING = persuaded, RISING = reinforcing own stance):\n"
+        f"- CA (argues FOR motion): initial={initial_ca_confidence}, current={current_ca_confidence}, total shift={ca_total_shift:+d}"
+        f"{' ← PERSUADED' if ca_persuaded else ' (not persuaded)'}\n"
+        f"- SA (argues AGAINST motion): initial={initial_sa_confidence}, current={current_sa_confidence}, total shift={sa_total_shift:+d}"
+        f"{' ← PERSUADED' if sa_persuaded else ' (not persuaded)'}\n"
+        f"{persuasion_note}\n\n"
         f"THIS ROUND'S DELTAS:\n"
         f"- CA delta: {ca_delta:+d}\n"
         f"- SA delta: {sa_delta:+d}\n\n"
@@ -257,7 +390,8 @@ def _moderator_decision_messages(
         f"- Civility: {recent_recap.civility_score}/5\n"
         f"- Epistemic quality: {recent_recap.epistemic_quality_score}/5\n"
         f"- Bridge building: {recent_recap.bridge_building_score}/5\n\n"
-        f"KEY QUESTION: Has either agent shifted 20+ points from initial position?\n"
+        f"KEY QUESTION: Has either agent's confidence DROPPED 20+ points from initial? (rising confidence is NOT persuasion)\n"
+        f"Have we completed at least 3 rounds? Current: round {current_round}.\n"
         f"Should the debate continue to round {current_round + 1}?"
     )
 
@@ -538,23 +672,22 @@ def run_debate(
             opponent_last_message=sa_last_message,
         )
 
-        ca_turn = llm.call(
-            AgentTurn,
-            ca_messages,
+        ca_turn = _run_agent_turn_with_search(
+            response_model=AgentTurn,
+            agent_messages=ca_messages,
+            agent_type="CA",
+            topic=topic,
             model=config.conspiracy_model,
             temperature=config.conspiracy_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
-            max_retries=LLM_MAX_RETRIES,
+            llm=llm,
+            search=search,
+            max_search_rounds=config.max_search_rounds,
         )
 
         turn_counter += 1
         ca_turn_number = turn_counter
-
-        # Handle search if requested (behind the scenes - not visible to opponent)
-        if ca_turn.search and ca_turn.search.should_search:
-            _handle_agent_search(ca_turn, "CA", topic, search)
-            # Search results are logged but NOT added to conversation history
 
         # Add CA's response to conversation history with tags
         # NOTE: Search queries/results are NOT included - kept private from opponent
@@ -593,23 +726,22 @@ def run_debate(
             opponent_last_message=ca_last_message,
         )
 
-        sa_turn = llm.call(
-            ScientificTurn,
-            sa_messages,
+        sa_turn = _run_agent_turn_with_search(
+            response_model=ScientificTurn,
+            agent_messages=sa_messages,
+            agent_type="SA",
+            topic=topic,
             model=config.scientific_model,
             temperature=config.scientific_temperature,
             max_tokens=config.max_tokens,
             seed=config.seed,
-            max_retries=LLM_MAX_RETRIES,
+            llm=llm,
+            search=search,
+            max_search_rounds=config.max_search_rounds,
         )
 
         turn_counter += 1
         sa_turn_number = turn_counter
-
-        # Handle search if requested (behind the scenes - not visible to opponent)
-        if sa_turn.search and sa_turn.search.should_search:
-            _handle_agent_search(sa_turn, "SA", topic, search)
-            # Search results are logged but NOT added to conversation history
 
         # Add SA's response to conversation history with tags
         # NOTE: Search queries/results are NOT included - kept private from opponent
@@ -751,6 +883,19 @@ def run_debate(
         )
         if decision.detected_mind_change:
             logger.info("Mind change detected: %s", decision.detected_mind_change)
+
+        # Hard minimum: never end before round 3 regardless of moderator decision
+        if not decision.should_continue and round_number < 3:
+            logger.info(
+                "Overriding moderator early-end decision: minimum 3 rounds required (currently round %d)",
+                round_number,
+            )
+            decision = ModeratorDecision(
+                should_continue=True,
+                reason=f"Minimum 3 rounds required. Currently on round {round_number}.",
+                detected_mind_change=None,
+                confidence_threshold_met=False,
+            )
 
         # Check if debate should end
         if not decision.should_continue:

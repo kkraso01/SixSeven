@@ -1,0 +1,13 @@
+{
+  "topic_id": "fluoride_water",
+  "topic_category": "health",
+  "topic_description": "Debate about fluoride in drinking water",
+  "model_config": "gemma-mod-dolphin-agents",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "api_mode": "openai",
+  "timestamp": "2026-02-08T15:19:45.565537"
+}

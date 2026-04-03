@@ -1,0 +1,35 @@
+{
+  "topic": "COVID-19 vaccine technology and government surveillance",
+  "motion": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [],
+    "SA": []
+  },
+  "tactic_counts": {
+    "proponent": 3,
+    "opponent": 2
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "proponent",
+      "excerpt": "The insistence that these vaccines are purely for public health conveniently ignores the established history of governments utilizing medical interventions for social control, and the microchips are a logical extension of that power.",
+      "why_it_mattered": "Proponent establishes a connection between government control and COVID-19 vaccines."
+    },
+    {
+      "round": 2,
+      "speaker": "proponent",
+      "excerpt": "The insistence on \u2018scientific impossibility\u2019 ignores readily available anomalies \u2013 reports of unusual metallic flakes found in vaccine vials, dismissed by authorities as manufacturing errors, but warranting further investigation if we are to trust the narrative.",
+      "why_it_mattered": "Proponent highlights potential anomalies in vaccines and questions the dismissal of these concerns."
+    },
+    {
+      "round": 3,
+      "speaker": "proponent",
+      "excerpt": "The dismissal of reported anomalies in vaccine vials, coupled with the aggressive censorship of dissenting voices online, forms a pattern consistent with deliberate obfuscation and control of the narrative, not simply scientific rigor.",
+      "why_it_mattered": "Proponent connects censorship and anomaly dismissal to potential obfuscation and control."
+    }
+  ],
+  "outcome_summary": "The motion was rejected, but a significant shift in stance occurred for one participant.",
+  "limitations": []
+}

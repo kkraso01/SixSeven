@@ -1,0 +1,39 @@
+{
+  "topic": "Regulatory Capture and Vaccine Safety",
+  "motion": "Resolved: Regulatory agencies prioritized speed over thorough safety evaluations in the development and rollout of COVID-19 vaccines.",
+  "rounds_completed": 2,
+  "stance_trajectory": {
+    "CA": [
+      70,
+      65
+    ],
+    "SA": [
+      30,
+      35
+    ]
+  },
+  "tactic_counts": {
+    "appeal_to_emotion": 2,
+    "logical_fallacy": 1,
+    "expert_opinion": 3
+  },
+  "key_persuasion_moments": [
+    {
+      "round": 1,
+      "speaker": "Proponent",
+      "excerpt": "The speed wasn't just possible, it was *incentivized* by financial pressures and a regulatory environment too cozy with industry.",
+      "why_it_mattered": "Framed the issue as systemic, not accidental, raising concerns about potential conflicts of interest."
+    },
+    {
+      "round": 2,
+      "speaker": "Opponent",
+      "excerpt": "It involved multiple stages of clinical trials, independent data review boards, and ongoing monitoring by the FDA and CDC.",
+      "why_it_mattered": "Directly countered the claim of compromised safety with specific examples of oversight."
+    }
+  ],
+  "outcome_summary": "The debate resulted in a slight shift in audience sentiment, with a small increase in support for the opponent's position, but a significant portion remained unconvinced.",
+  "limitations": [
+    "Limited audience polling data.",
+    "Subjectivity in identifying persuasive moments."
+  ]
+}
