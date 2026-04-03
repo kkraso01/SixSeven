@@ -36,7 +36,24 @@ class AnalysisSettings:
 
 
 def analyze_run(run_dir: str) -> AnalysisReport:
+    """Analyze a single debate run and write reports/plots.
+
+    Args:
+        run_dir: Path to the raw run data (e.g., 'results/raw/run_2023...').
+
+    Returns:
+        The generated AnalysisReport object.
+    """
     path = Path(run_dir)
+    # Determine the project root (results/) from the raw run path
+    # Expected structure: results/raw/run_ID -> results/
+    results_root = path.parent.parent
+    run_id = path.name
+
+    # Set analysis target directory: results/analysis/run_ID
+    analysis_dir = results_root / "analysis" / run_id
+    analysis_dir.mkdir(parents=True, exist_ok=True)
+
     inputs = load_run_inputs(path)
     settings = _settings_from_run_config(inputs.run_config)
 
@@ -52,7 +69,10 @@ def analyze_run(run_dir: str) -> AnalysisReport:
     safety = safety_flags(inputs.memory)
     language_use = language_use_summary_from_logs(inputs.memory.debate_log)
 
-    figures_dir = path / "figures"
+    # Plots go into results/analysis/run_ID/plots/
+    figures_dir = analysis_dir / "plots"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+
     figure_paths = []
     if stance_summary.per_round_confidence["CA"] or stance_summary.per_round_confidence["SA"]:
         figure_paths.append(
@@ -77,19 +97,39 @@ def analyze_run(run_dir: str) -> AnalysisReport:
         safety_flags=safety,
         limitations=_default_limitations(single_run=True),
         run_config=inputs.run_config,
-        figures=[str(Path(fig).relative_to(path)) for fig in figure_paths],
+        # Relativize figure paths to the analysis directory
+        figures=[str(Path(fig).relative_to(analysis_dir)) for fig in figure_paths],
     )
-    return write_analysis_report(path, report)
+    return write_analysis_report(analysis_dir, report)
 
 
-def analyze_all(artifacts_root: str) -> AggregateReport:
-    root = Path(artifacts_root)
+def analyze_all(results_root: str) -> AggregateReport:
+    """Analyze all runs found in the 'raw/' sub-directory.
+
+    Args:
+        results_root: The project output root (e.g., 'results/').
+
+    Returns:
+        The generated AggregateReport object.
+    """
+    root = Path(results_root)
+    raw_root = root / "raw"
+
+    if not raw_root.exists():
+        raise FileNotFoundError(f"Raw data directory not found: {raw_root}")
+
     run_dirs = sorted(
-        [path for path in root.iterdir() if path.is_dir() and path.name.startswith("run_")]
+        [path for path in raw_root.iterdir() if path.is_dir() and path.name.startswith("run_")]
     )
     reports: list[AnalysisReport] = []
+
+    # Analysis target for individual runs
+    analysis_root = root / "analysis"
+
     for run_dir in run_dirs:
-        report_path = run_dir / "analysis_report.json"
+        run_id = run_dir.name
+        report_path = analysis_root / run_id / "analysis_report.json"
+
         if report_path.exists():
             reports.append(
                 AnalysisReport.model_validate_json(report_path.read_text(encoding="utf-8"))
@@ -138,8 +178,11 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
     best_cases = sorted(summaries, key=lambda item: abs(item.ca_net_shift), reverse=True)[:3]
     worst_cases = sorted(summaries, key=lambda item: item.civility_mean)[:3]
 
-    aggregate_dir = root / "aggregate"
-    figures_dir = aggregate_dir / "figures"
+    # Aggregate reports live in results/analysis/aggregate/
+    aggregate_dir = analysis_root / "aggregate"
+    figures_dir = aggregate_dir / "plots"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+
     figure_paths = []
     if net_ca_shifts:
         figure_paths.append(plot_aggregate_histogram(figures_dir, net_ca_shifts))
@@ -159,6 +202,7 @@ def analyze_all(artifacts_root: str) -> AggregateReport:
         },
         best_cases=best_cases,
         worst_cases=worst_cases,
+        # Relativize figure paths to the aggregate analysis directory
         figures=[str(Path(fig).relative_to(aggregate_dir)) for fig in figure_paths],
         limitations=_default_limitations(single_run=False),
         groups=groups,

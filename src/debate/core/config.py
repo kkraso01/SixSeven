@@ -24,7 +24,7 @@ class DebateConfig:
     word_limit: int = 180
     seed: int | None = None
     max_search_rounds: int = 3
-    output_dir: str = "artifacts"
+    output_dir: str = "results"
     run_analysis: bool = True
     analysis_shift_threshold: int = 5
     analysis_similarity_method: str = "tfidf"
@@ -62,6 +62,8 @@ class DebateConfig:
         # Helper to safely get values with defaults
         def get_str(section: str, key: str, default: str) -> str:
             value = config.get(section, key, fallback=default)
+            if not value or value.strip() == "":
+                return default
             # ConfigParser does not strip quotes; remove wrapping '"' or "'".
             if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
                 value = value[1:-1]
