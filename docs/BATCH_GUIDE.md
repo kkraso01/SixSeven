@@ -1,3 +1,4 @@
+
 # Split Batch Experiment Guide
 
 ## Why Split?
@@ -96,8 +97,8 @@ python cli/batch_gemini.py
 ```
 
 **Requirements:**
-- ✅ Gemini API key in `config/config.ini`
-- ✅ API quota available (free tier: 20 req/day, 5 req/min)
+-  Gemini API key in `config/config.ini`
+-  API quota available (free tier: 20 req/day, 5 req/min)
 
 **All 8 model configurations** (same permutation pattern, with Gemini + Ollama models):
 1. gemini-all — Gemini for all 3 roles (3 API calls/round)
@@ -170,7 +171,7 @@ gemini_debates = all_debates[all_debates.debate_id.str.contains("gemini")]
 **Option 1: Reduce topics**
 ```python
 # In cli/batch_gemini.py, change topics line
-from debate_sim.core.topics import get_sample_topics
+from debate.core.topics import get_sample_topics
 topics = get_sample_topics(10)  # Only 10 topics instead of 20
 # 10 × 8 = 80 experiments = ~600 API calls
 ```

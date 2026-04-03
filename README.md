@@ -2,36 +2,40 @@
 
 > An end-to-end system that simulates structured debates between LLM-based agents arguing opposing positions on conspiracy theories, moderated by a control agent. Runs reproducible experiments across multiple models and topics, logs all interactions in a canonical debate format, and analyzes persuasion dynamics.
 
-**Team**: SixSeven | **Status**: ✅ Code Complete (Core Systems Ready)
+**Team**: SixSeven | **Status**:  Code Complete (Core Systems Ready)
 
 ---
 
-## 📚 Documentation Guide
+## Documentation Guide
 
 This README combines all key information. For detailed content, see:
 
 ### Core Documentation
 | Document | Purpose |
 |----------|----------|
-| [**SPECIFICATION.md**](SPECIFICATION.md) | Full project specification and objectives |
-| [**ARCHITECTURE.md**](ARCHITECTURE.md) | Technical architecture and design details |
-| [**CHANGELOG.md**](CHANGELOG.md) | Implementation timeline, status, and validation results |
-| [**BATCH_GUIDE.md**](BATCH_GUIDE.md) | How to run 120-debate batch experiments |
+| [**ARCHITECTURE.md**](docs/ARCHITECTURE.md) | Technical architecture and design details |
+| [**BATCH_GUIDE.md**](docs/BATCH_GUIDE.md) | How to run 120-debate batch experiments |
 
 ### Reference
 | Document | Purpose |
 |----------|----------|
-| [**../.agentic-instructions.md**](../.agentic-instructions.md) | Complete reference for agentic coding platforms |
+| [**.agentic-instructions.md**](.agentic-instructions.md) | Complete reference for agentic coding platforms |
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Installation
+
+**Using Pip:**
 ```bash
-git clone <repo>
-cd SixSeven
 pip install -r requirements.txt
+pip install -e .
+```
+
+**Using Poetry:**
+```bash
+poetry install
 ```
 
 ### Run Single Debate
@@ -56,7 +60,7 @@ python cli/view_topics.py summary
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 ### What It Does
 - **Orchestrates debates** between 3 LLM agents (conspiracy proponent, scientific opponent, moderator)
@@ -67,18 +71,18 @@ python cli/view_topics.py summary
 - **Exports results**: JSON, CSV, Markdown, and PNG visualizations
 
 ### Key Capabilities
-✅ Moderator-controlled debate flow  
-✅ 20 conspiracy theory topics dataset  
-✅ 8 model configurations per batch for comparison  
-✅ Batch runner for 300+ experiments  
-✅ Automatic analysis pipeline  
-✅ CSV export for external analysis  
+ Moderator-controlled debate flow  
+ 20 conspiracy theory topics dataset  
+ 8 model configurations per batch for comparison  
+ Batch runner for 300+ experiments  
+ Automatic analysis pipeline  
+ CSV export for external analysis  
 
-See [SPECIFICATION.md](SPECIFICATION.md) for full specification.
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for full project details.
 
 ---
 
-## 📋 System Requirements
+## System Requirements
 
 ### Prerequisites
 - **Python 3.11+**
@@ -92,14 +96,14 @@ See [SPECIFICATION.md](SPECIFICATION.md) for full specification.
 ### Dependencies
 See `requirements.txt` for full list. Key packages:
 - `pydantic` >= 2.0 (schemas)
-- `instructor` (structured LLM outputs)
+- `instructor` (structured LLM outputs via DI architecture)
 - `google-genai` (Gemini API)
 - `ddgs` (DuckDuckGo search)
 - `scikit-learn` (analysis), `matplotlib` (plots)
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Via config.ini
 ```ini
@@ -119,7 +123,7 @@ word_limit = 180
 max_tokens = 600
 ```
 
-**Configuration file location**: `config/config.ini` (copy from `config/config.example.ini`)\n**For complete configuration reference**, see [ARCHITECTURE.md - Configuration](ARCHITECTURE.md#-stage-1-configuration-configini).
+**Configuration file location**: `config/config.ini` (copy from `config/config.example.ini`)\n**For complete configuration reference**, see [docs/ARCHITECTURE.md - Configuration](docs/ARCHITECTURE.md#-stage-1-configuration-configini).
 
 ### Via Environment Variables
 ```bash
@@ -134,11 +138,11 @@ export DEBATE_OUTPUT_DIR="artifacts"
 export DEBATE_RUN_ANALYSIS="true"
 ```
 
-Full configuration reference: [CHANGELOG.md](CHANGELOG.md#configuration)
+Full configuration reference: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#-stage-1-configuration-configini)
 
 ---
 
-## 🎬 Running Experiments
+## Running Experiments
 
 ### Single Debate
 ```bash
@@ -164,11 +168,11 @@ python cli/batch_gemini.py
 # Output: <output_dir>/all_debates_gemini.csv
 ```
 
-**For detailed batch strategy, optimization tips, and per-batch configurations**, see [BATCH_GUIDE.md](BATCH_GUIDE.md).
+**For detailed batch strategy, optimization tips, and per-batch configurations**, see [docs/BATCH_GUIDE.md](docs/BATCH_GUIDE.md).
 
 ---
 
-## 📊 Output Structure
+## Output Structure
 
 Each run creates a timestamped directory: `artifacts/run_YYYYMMDD_HHMMSS/`
 
@@ -208,7 +212,7 @@ run_20240101_120000/
 
 ---
 
-## 🔬 Analysis Pipeline
+## Analysis Pipeline
 
 ### Automatic Metrics (Generated per Debate)
 - **Persuasion**: Stance stability, confidence shifts, winner determination
@@ -218,7 +222,7 @@ run_20240101_120000/
 
 ### Using the Analysis API
 ```python
-from debate_sim.analysis.analysis_runner import analyze_run, analyze_all
+from debate.analysis.analysis_runner import analyze_run, analyze_all
 
 # Analyze single debate
 report = analyze_run("artifacts/run_20240101_120000")
@@ -239,7 +243,7 @@ The orchestrator uses **Protocol-based dependency injection** for all major subs
 
 ### Default Usage (unchanged)
 ```python
-from debate_sim import DebateConfig, run_debate
+from debate import DebateConfig, run_debate
 
 config = DebateConfig.from_ini("config/config.ini")
 run_debate(topic, motion, rounds, config)  # auto-wires defaults
@@ -247,7 +251,7 @@ run_debate(topic, motion, rounds, config)  # auto-wires defaults
 
 ### Explicit Service Wiring
 ```python
-from debate_sim import DebateConfig, DebateServices, build_default_services, run_debate
+from debate import DebateConfig, DebateServices, build_default_services, run_debate
 
 config = DebateConfig.from_ini("config/config.ini")
 services = build_default_services(config)
@@ -256,8 +260,8 @@ run_debate(topic, motion, rounds, config, services=services)
 
 ### Custom Implementations
 ```python
-from debate_sim import DebateServices, run_debate
-from debate_sim.core.container import FilePromptLoader, FileArtifactExporter
+from debate import DebateServices, run_debate
+from debate.core.container import FilePromptLoader, FileArtifactExporter
 
 # Swap in a custom search provider or mock LLM
 services = DebateServices(
@@ -280,20 +284,20 @@ run_debate(topic, motion, rounds, config, services=services)
 | `ArtifactExporter` | Output writing | `FileArtifactExporter` |
 | `DebateAnalyzer` | Post-run analysis | `DefaultDebateAnalyzer` |
 
-See [ARCHITECTURE.md](ARCHITECTURE.md#-dependency-injection-architecture) for full details.
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#-dependency-injection-architecture) for full details.
 
 ---
 
-## �🛠️ Development & Iteration
+## � Development & Iteration
 
 ### Adding a New Conspiracy Topic
-1. Edit `src/debate_sim/core/topics.py`
+1. Edit `src/debate/core/topics.py`
 2. Add entry to `CONSPIRACY_TOPICS` list
 3. Test: `python cli/view_topics.py summary`
 4. Re-run batch experiments
 
 ### Updating Agent Prompts
-1. Edit `src/debate_sim/prompts/{conspiracy.md, scientific.md, moderator.md}`
+1. Edit `src/debate/simulator/prompts/{conspiracy.md, scientific.md, moderator.md}`
 2. **Important**: Keep final line: `Return ONLY valid JSON matching the schema. No extra text.`
 3. Test: `python cli/main.py`
 
@@ -315,7 +319,7 @@ combined.to_csv("artifacts/all_debates_combined.csv", index=False)
 
 ---
 
-## ✅ Validation
+## Validation
 
 ### Validate Run Output
 ```bash
@@ -331,38 +335,38 @@ Analyzes debate memory architecture and configuration.
 
 ---
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
 | "Connection refused" for Ollama | Ensure `ollama serve` is running, check endpoint in `config.ini` |
 | Gemini API errors | Verify API key, check daily quota (1,500 req/day), rate limit (15 req/min) |
-| Schema validation errors | Check `src/debate_sim/core/schemas.py`, verify LLM output is valid JSON |
+| Schema validation errors | Check `src/debate/core/schemas.py`, verify LLM output is valid JSON |
 | Analysis won't run | Check `memory.json` exists, download NLTK data: `python -m nltk.downloader punkt wordnet` |
 | Memory overflow | Reduce `max_tokens`, split batch into smaller runs |
 
-Full troubleshooting: [CHANGELOG.md](CHANGELOG.md#troubleshooting)
+Full troubleshooting: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#troubleshooting) (Coming soon or refer to internal docs)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 **Reorganized for better maintainability:**
 
 ```
 SixSeven/
-├── 🎯 cli/                          # CLI entry points
+├──  cli/                          # CLI entry points
 │   ├── main.py                      # Single debate runner
 │   ├── base_batch.py                # BaseBatchRunner (shared batch logic + DI wiring)
 │   ├── batch_ollama.py              # Ollama batch (160 experiments)
 │   ├── batch_gemini.py              # Gemini batch (160 experiments, with resume)
 │   └── view_topics.py               # Topic browser
 │
-├── ⚙️  config/                      # Configuration
+├──   config/                      # Configuration
 │   ├── config.ini                   # Your settings (git-ignored)
 │   └── config.example.ini           # Example configuration
 │
-├── ✅ tests/                        # Test suite (47 tests)
+├──  tests/                        # Test suite (47 tests)
 │   ├── test_unit/
 │   │   ├── test_imports.py          # Import validator
 │   │   ├── test_config.py           # DebateConfig tests
@@ -375,37 +379,34 @@ SixSeven/
 │       ├── validate_run.py          # Debate run validator
 │       └── validate_memory.py       # Memory architecture validator
 │
-├── 📚 docs/                         # Documentation
-│   ├── README.md                    # This file (quick start & overview)
-│   ├── SPECIFICATION.md             # Project goals and requirements
+├──  docs/                         # Documentation
+│   ├── README.md                    # (Redirects to root README)
 │   ├── ARCHITECTURE.md              # Technical design and deep dive
-│   ├── CHANGELOG.md                 # Implementation status & timeline
 │   └── BATCH_GUIDE.md               # Batch experiment guide
 │
-├── 📖 src/debate_sim/               # Core application (library)
+├──  src/debate/               # Core application (library)
 │   ├── core/                        # Foundational modules
 │   │   ├── config.py                # Config loading
-│   │   ├── errors.py                # Shared exceptions (LLMResponseError)
+│   │   ├── errors.py                # Shared exceptions
 │   │   ├── logging.py               # Centralised logging setup
 │   │   ├── protocols.py             # Protocol ABCs (DI interfaces)
-│   │   ├── container.py             # DebateServices container + adapters
+│   │   ├── container.py             # Service container (wiring logic)
 │   │   ├── schemas.py               # Pydantic models
-│   │   └── topics.py                # 20 conspiracy topics
-│   ├── debate/                      # Debate orchestration (DI-aware)
-│   ├── llm/                         # LLM backends (Ollama, Gemini, DuckDuckGo)
-│   ├── analysis/                    # Analysis pipeline
-│   ├── export/                      # Output generation
-│   ├── memory/                      # Memory state models
-│   └── prompts/                     # Agent prompts
+│   │   └── topics.py                # 20 conspiracy theory topics
+│   ├── simulator/                   # Consolidated simulation engine
+│   │   ├── engine/                  # Orchestration & evaluation
+│   │   ├── providers/               # LLM, Search, & Instructor backends
+│   │   ├── io/                      # Output generation & CSV export
+│   │   └── prompts/                 # Agent role templates
+│   └── analysis/                    # Analysis pipeline
 │
-├── 📁 artifacts/                    # Experiment runs (configurable output_dir)
-├── .agentic-instructions.md         # Agentic platform reference
-└── pyproject.toml                   # Project metadata & tool config
+├──  artifacts/                    # Experiment runs (configurable)
+└── pyproject.toml                   # Project metadata & Poetry config
 ```
 
 ---
 
-## 📚 References & Resources
+## References & Resources
 
 - **CrewAI**: https://www.crewai.com/
 - **LangGraph**: LangChain graph-based orchestration
@@ -416,10 +417,9 @@ SixSeven/
 
 ---
 
-## 📝 Documentation Notes
+## Documentation Notes
 
-- **Agentic Platforms**: See [../.agentic-instructions.md](../.agentic-instructions.md) for development guidelines
-- **All generated markdown** created by agentic coding should be placed in `docs/` directory
+- **Documentation**: All core documentation is now located in the root `README.md` and the `docs/` directory.
 - **Current Status**: All core systems ready, validation passing
 
 **Repository**: [kkraso01/SixSeven](https://github.com/kkraso01/SixSeven)  

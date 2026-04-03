@@ -2,7 +2,7 @@
 
 Complete end-to-end technical walkthrough of the debate simulation system.
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 The project follows a **pipeline architecture** with these stages:
 
@@ -13,7 +13,7 @@ Export & Logging → Optional Analysis → Results
 
 ---
 
-## 📋 Stage 1: Configuration (config/config.ini)
+## Stage 1: Configuration (config/config.ini)
 
 **Purpose**: Centralize all runtime parameters
 
@@ -57,7 +57,7 @@ DebateConfig.from_env()  # Reads from environment variables
 
 ---
 
-## 📊 Stage 2: Batch Orchestration
+## Stage 2: Batch Orchestration
 
 **Two batch runners** for different use cases:
 
@@ -89,7 +89,7 @@ encapsulates shared logic: topic loading, completion indexing, DI wiring via
 
 ---
 
-## 🎭 Stage 3: Core Debate Simulation (orchestrator.py)
+## Stage 3: Core Debate Simulation (orchestrator.py)
 
 This is where the core debate logic runs. Here's the flow:
 
@@ -191,9 +191,9 @@ Contains winner prediction, key moments, persuasion analysis.
 
 ---
 
-## 💾 Stage 4: Export & Logging
+## Stage 4: Export & Logging
 
-[ExportBundle](../src/debate_sim/export/writer.py) writes **6 files** per debate:
+[ExportBundle](../src/debate/simulator/io/writer.py) writes **6 files** per debate:
 
 1. **transcript.md** - Readable markdown with formatted turns
 2. **memory.json** - Full MemoryState object (all agent states, scoreboard, debate log)
@@ -220,7 +220,7 @@ artifacts/
 
 ---
 
-## 📈 Stage 5: Analysis Pipeline (Optional)
+## Stage 5: Analysis Pipeline (Optional)
 
 Enabled by `run_analysis = true` in config.
 
@@ -239,7 +239,7 @@ Enabled by `run_analysis = true` in config.
 
 ---
 
-## � Dependency Injection Architecture
+## Dependency Injection Architecture
 
 The orchestrator no longer instantiates concrete classes directly. Instead, every
 major subsystem is defined as a **Protocol** (structural typing) and injected via
@@ -261,12 +261,15 @@ a lightweight `DebateServices` container.
 ```python
 @dataclass
 class DebateServices:
-    llm: StructuredLLMService      # Protocol
-    search: SearchProvider          # Protocol
-    prompts: PromptLoader           # Protocol
-    exporter: ArtifactExporter      # Protocol
-    analyzer: Optional[DebateAnalyzer] = None  # Protocol (optional)
+    llm: StructuredLLMService      # Protocol (StructuredLLM)
+    search: SearchProvider          # Protocol (DuckDuckGoSearchProvider)
+    prompts: PromptLoader           # Protocol (FilePromptLoader)
+    exporter: ArtifactExporter      # Protocol (FileArtifactExporter)
+    analyzer: Optional[DebateAnalyzer] = None  # Protocol (DefaultDebateAnalyzer)
 ```
+
+> [!NOTE]
+> The `core/container.py` file is the only place that imports concrete adapter implementations. All other components communicate strictly via protocols.
 
 ### Factory Wiring
 
@@ -308,7 +311,7 @@ def run_debate(topic, motion, rounds, config, services=None):
 
 ---
 
-## 🔄 Data Flow Summary
+## Data Flow Summary
 
 ```
 config.ini  
@@ -345,7 +348,7 @@ Batch Runner aggregates:
 
 ---
 
-## 🎛️ Key Design Decisions
+##  Key Design Decisions
 
 ### Three agents per debate
 - **Conspiracy Advocate (CA)**: Proponent - argues conspiracy theory
@@ -395,7 +398,7 @@ Batch Runner aggregates:
 
 ---
 
-## 🚀 Running the Full Pipeline
+## Running the Full Pipeline
 
 ### Quick start (single debate)
 ```bash
@@ -410,7 +413,7 @@ python cli/batch_gemini.py    # rate-limited, requires API key + quota
 
 ### Analysis
 ```python
-from debate_sim import analyze_run, analyze_all
+from debate import analyze_run, analyze_all
 
 analyze_run("artifacts/run_20260213_154520")  # Single run
 analyze_all("artifacts")  # All runs + aggregate report
@@ -418,22 +421,22 @@ analyze_all("artifacts")  # All runs + aggregate report
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 SixSeven/
-├── 🎯 cli/                         # CLI entry points
+├──  cli/                         # CLI entry points
 │   ├── main.py                     # Single debate runner
 │   ├── base_batch.py               # BaseBatchRunner (shared batch logic + DI wiring)
 │   ├── batch_ollama.py             # Ollama batch (160 experiments)
 │   ├── batch_gemini.py             # Gemini batch (160 experiments, with resume)
 │   └── view_topics.py              # Browse conspiracy topics
 │
-├── ⚙️  config/                     # Configuration files
+├──   config/                     # Configuration files
 │   ├── config.ini                  # Your settings (git-ignored)
 │   └── config.example.ini          # Example configuration
 │
-├── ✅ tests/                       # Test suite (47 tests)
+├──  tests/                       # Test suite (47 tests)
 │   ├── test_unit/
 │   │   ├── test_imports.py         # Import validation
 │   │   ├── test_config.py          # DebateConfig tests
@@ -446,63 +449,60 @@ SixSeven/
 │       ├── validate_run.py         # Debate run validation
 │       └── validate_memory.py      # Memory architecture validation
 │
-├── 📚 docs/                        # Documentation
+├──  docs/                        # Documentation
 │   ├── README.md                   # Quick start & overview
 │   ├── ARCHITECTURE.md             # This file (technical design)
-│   ├── SPECIFICATION.md            # Full project specification
-│   ├── CHANGELOG.md                # Implementation status & timeline
 │   └── BATCH_GUIDE.md              # Batch experiment guide
 │
-├── 📖 src/debate_sim/              # Core library
-│   ├── __init__.py                 # Package exports (incl. protocols & container)
+├──  src/debate/              # Core library
+│   ├── __init__.py                 # Package exports
 │   ├── core/                       # Foundational modules
-│   │   ├── config.py               # DebateConfig dataclass
-│   │   ├── errors.py               # Shared exceptions (LLMResponseError)
-│   │   ├── logging.py              # Centralised logging setup
-│   │   ├── protocols.py            # Protocol ABCs (LLMClient, SearchProvider, etc.)
-│   │   ├── container.py            # DebateServices container + concrete adapters
-│   │   ├── schemas.py              # Pydantic models (AgentTurn, ModeratorRecap, etc.)
-│   │   └── topics.py               # 20 conspiracy theory topics dataset
+│   │   ├── config.py               # Config loading
+│   │   ├── errors.py               # Shared exceptions
+│   │   ├── logging.py              # Centralised logging
+│   │   ├── protocols.py            # Protocol definitions (DI interfaces)
+│   │   ├── container.py            # Service wiring container
+│   │   ├── schemas.py              # Pydantic data models
+│   │   └── topics.py               # 20 conspiracy theory topics
 │   │
-│   ├── debate/
-│   │   ├── orchestrator.py         # Main run_debate() logic (DI-aware)
-│   │   └── evaluation.py           # Metrics (stance_shift, confidence_delta)
+│   ├── simulator/                  # Consolidated simulation logic
+│   │   ├── engine/                 # Orchestration & evaluation
+│   │   │   ├── orchestrator.py     # Main run_debate() entry point
+│   │   │   ├── evaluation.py       # Metrics & score calculation
+│   │   │   └── memory.py           # State management & debate history
+│   │   │
+│   │   ├── providers/              # Component backends
+│   │   │   ├── instructor.py       # Structured LLM orchestration
+│   │   │   ├── llm_client.py       # API clients (Ollama/Gemini)
+│   │   │   └── search.py           # DuckDuckGo search adapter
+│   │   │
+│   │   ├── io/                     # Output & persistence
+│   │   │   ├── writer.py           # Multi-format artifact saver
+│   │   │   ├── csv_export.py       # Canonical CSV format
+│   │   │   └── templates.py        # Markdown transcript templates
+│   │   │
+│   │   └── prompts/                # Role-playing templates
+│   │       ├── conspiracy.md       # CA persona
+│   │       ├── scientific.md       # SA persona
+│   │       ├── moderator.md        # Moderator persona
+│   │       └── moderator_decision.md # Early stop logic
 │   │
-│   ├── llm/
-│   │   ├── instructor_wrapper.py   # Structured LLM calls
-│   │   ├── ollama_client.py        # Connection to Ollama API
-│   │   └── search_tool.py          # DuckDuckGo search integration
-│   │
-│   ├── memory/
-│   │   └── models.py               # MemoryState, append_log, update_agent_state
-│   │
-│   ├── export/
-│   │   ├── writer.py               # write_artifacts() - saves JSON/CSV/MD
-│   │   ├── csv_export.py           # Canonical CSV format
-│   │   └── templates.py            # Markdown transcript rendering
-│   │
-│   ├── analysis/
-│   │   ├── analysis_runner.py      # analyze_run(), analyze_all()
-│   │   ├── features.py             # Load run inputs
-│   │   ├── metrics.py              # Persuasion, quality, tactic analysis
-│   │   ├── plots.py                # PNG visualization generation
-│   │   ├── report_models.py        # AnalysisReport, AggregateReport schemas
-│   │   └── report_writer.py        # Report generation
-│   │
-│   └── prompts/
-│       ├── conspiracy.md            # CA role prompt
-│       ├── scientific.md            # SA role prompt
-│       ├── moderator.md             # Moderator role prompt
-│       └── moderator_decision.md    # Early termination decision
+│   └── analysis/                   # Post-run analysis logic
+│       ├── analysis_runner.py      # Batch analysis orchestrator
+│       ├── features.py             # Feature extraction
+│       ├── metrics.py              # Numerical analysis
+│       ├── plots.py                # Visualizations
+│       ├── report_models.py        # Report schemas
+│       └── report_writer.py        # File output saving
 │
-├── 📁 artifacts/                   # Experiment runs (configurable output_dir)
-├── .agentic-instructions.md        # Agentic platform reference
-└── pyproject.toml                   # Project metadata & tool config
+├──  artifacts/                   # Experiment results
+├── .agentic-instructions.md        # Reference for contributors
+└── pyproject.toml                   # Project metadata & Poetry config
 ```
 
 ---
 
-## 🔧 Configuration Flow
+## Configuration Flow
 
 ```python
 # Load from config/config.ini
@@ -542,7 +542,7 @@ config.run_analysis          # Post-debate metrics
 
 ---
 
-## 🎯 Typical Experiment Lifecycle
+## Typical Experiment Lifecycle
 
 ### Day 1: Ollama Batch
 ```bash
@@ -568,14 +568,14 @@ gemini = pd.read_csv("artifacts/all_debates_gemini.csv")
 combined = pd.concat([ollama, gemini])
 
 # Generate aggregate analysis
-from debate_sim import analyze_all
+from debate import analyze_all
 analyze_all("artifacts")
 # Output: analysis_report.json + figures/
 ```
 
 ---
 
-## 🌐 Multi-LLM Support
+## Multi-LLM Support
 
 The system abstracts LLM backends:
 
@@ -607,7 +607,7 @@ conspiracy_model = <your-gemini-model>  # Uses Gemini
 
 ---
 
-## 🐛 Debugging & Monitoring
+## Debugging & Monitoring
 
 ### Check current run progress
 ```bash
