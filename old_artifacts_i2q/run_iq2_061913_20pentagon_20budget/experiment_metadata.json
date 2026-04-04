@@ -1,0 +1,12 @@
+{
+  "topic_id": "061913%20pentagon%20budget",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Political gridlock in Washington triggered across-the-board spending cuts, known as the sequester, in March. As a result, the Pentagon was given six months to eliminate $41 billion from the current year’s budget, and unlike past cuts, this...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

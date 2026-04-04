@@ -1,0 +1,12 @@
+{
+  "topic_id": "091212superpacs",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "The product of two court decisions, Citizens United and SpeechNow.org v. FEC, Super PAC spending is on course to make 2012 the most expensive presidential election in history. These supercharged political action committees may spend and re...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

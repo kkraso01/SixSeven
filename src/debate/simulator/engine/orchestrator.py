@@ -39,8 +39,6 @@ logger = logging.getLogger(__name__)
 SEARCH_MAX_RESULTS: int = 3
 #: Maximum characters included when formatting search results for the prompt.
 SEARCH_MAX_CHARS: int = 800
-#: Messages-per-round estimate used when trimming history by rounds.
-MESSAGES_PER_ROUND: int = 4
 #: Token budget for the final report (needs more space than regular turns).
 FINAL_REPORT_MAX_TOKENS: int = 2500
 #: Default max retries for individual LLM calls.
@@ -262,59 +260,6 @@ def _compact_memory_summary(memory: MemoryState) -> str:
     )
 
 
-def _trim_history(
-    history: list[dict[str, str]], config: DebateConfig, current_round: int
-) -> tuple[list[dict[str, str]], bool]:
-    """Trim conversation history based on config settings. Returns (trimmed_history, was_trimmed)."""
-    if config.history_trim == "none":
-        return history, False
-
-    was_trimmed = False
-    working_history = list(history)
-
-    # Trim by rounds
-    if config.history_trim == "rounds" and config.max_rounds_in_history:
-        # Keep system messages + last N rounds worth of messages
-        system_msgs = [msg for msg in working_history if msg["role"] == "system"]
-        non_system = [msg for msg in working_history if msg["role"] != "system"]
-
-        # Approximate: ~3-4 messages per round (CA, SA, moderator)
-        max_msgs = config.max_rounds_in_history * MESSAGES_PER_ROUND
-        if len(non_system) > max_msgs:
-            non_system = non_system[-max_msgs:]
-            was_trimmed = True
-
-        working_history = system_msgs + non_system
-
-    # Trim by message count
-    if config.history_trim == "messages" and config.max_messages_in_history:
-        system_msgs = [msg for msg in working_history if msg["role"] == "system"]
-        non_system = [msg for msg in working_history if msg["role"] != "system"]
-
-        if len(non_system) > config.max_messages_in_history:
-            non_system = non_system[-config.max_messages_in_history :]
-            was_trimmed = True
-
-        working_history = system_msgs + non_system
-
-    # Trim by character count
-    if config.history_trim == "chars" and config.max_chars_in_history:
-        total_chars = sum(len(msg.get("content", "")) for msg in working_history)
-        if total_chars > config.max_chars_in_history:
-            # Keep system messages, trim from oldest non-system
-            system_msgs = [msg for msg in working_history if msg["role"] == "system"]
-            non_system = [msg for msg in working_history if msg["role"] != "system"]
-
-            while non_system and total_chars > config.max_chars_in_history:
-                removed = non_system.pop(0)
-                total_chars -= len(removed.get("content", ""))
-
-            was_trimmed = True
-            working_history = system_msgs + non_system
-
-    return working_history, was_trimmed
-
-
 def _moderator_messages(
     topic: str,
     motion: str,
@@ -433,30 +378,20 @@ def _build_agent_messages_with_history(
     )
     messages.append({"role": "system", "content": rules})
 
-    # 3. Inject full conversation history (trim if needed)
-    if config.history_mode == "global_full" and conversation_history:
-        trimmed_history, was_trimmed = _trim_history(conversation_history, config, round_number)
+    # 3. Inject full conversation history (always enabled for realism)
+    if conversation_history:
+        messages.extend(conversation_history)
 
-        # Add trimming notice if history was trimmed
-        if was_trimmed and config.summarize_if_trimmed:
-            messages.append(
-                {"role": "user", "content": "[Earlier rounds truncated - showing recent history]"}
-            )
-
-        # Extend with actual chat history (preserves native format)
-        messages.extend(trimmed_history)
-
-    # 4. Compact memory summary
-    if config.include_memory_summary:
-        memory_compact = _compact_memory_summary(memory)
-        messages.append({"role": "user", "content": f"CURRENT STATE: {memory_compact}"})
+    # 4. Compact memory summary (always enabled)
+    memory_compact = _compact_memory_summary(memory)
+    messages.append({"role": "user", "content": f"CURRENT STATE: {memory_compact}"})
 
     # 5. Round instruction
     round_instr = f"Round {round_number}: {_round_plan(round_number)} Respond to the debate so far."
     messages.append({"role": "user", "content": round_instr})
 
-    # 6. Opponent's last message (highlighted) - closest to generation = most salient
-    if config.highlight_opponent_last and opponent_last_message:
+    # 6. Opponent's last message (always highlighted)
+    if opponent_last_message:
         messages.append(
             {
                 "role": "user",
@@ -601,10 +536,9 @@ def run_debate(
     logger.info("Topic: %s", topic)
     logger.info("Motion: %s", motion)
     logger.info(
-        "Max Rounds: %d | Model: %s | History: %s",
+        "Max Rounds: %d | Model: %s | History: global_full",
         rounds,
         config.conspiracy_model,
-        config.history_mode,
     )
 
     # Generate unique debate ID

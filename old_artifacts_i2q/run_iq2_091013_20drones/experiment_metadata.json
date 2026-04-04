@@ -1,0 +1,12 @@
+{
+  "topic_id": "091013%20drones",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Remotely piloted aircraft, or drones, have been the centerpiece of America’s counterterrorism toolkit since the start of the Obama presidency, and the benefits have been clear. Their use has significantly weakened al Qaeda and the Taliban...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

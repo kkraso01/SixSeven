@@ -1,0 +1,12 @@
+{
+  "topic_id": "terrorists-enemy",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "In 2009 the Justice Department announced that 9/11 plotter Khalid Shaikh Mohammed would be tried in New York City, setting off a firestorm of protests. Besides the cost and safety concerns, at issue are whether terrorists should be tried i...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

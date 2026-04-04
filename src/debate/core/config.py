@@ -10,6 +10,7 @@ from debate.analysis.lexicons import (
     MODALITY_WEAK_WORDS,
     UNCERTAINTY_WORDS,
 )
+from debate.core.model_pool import ModelPoolError, get_default_role_models
 
 
 @dataclass(frozen=True)
@@ -35,16 +36,6 @@ class DebateConfig:
     analysis_shift_threshold: int = 5
     analysis_similarity_method: str = "tfidf"
 
-    # History management configuration
-    history_mode: str = "global_full"  # "global_full", "per_agent", or "memory_only"
-    include_memory_summary: bool = True  # Include compact memory summary
-    history_trim: str = "none"  # "none", "rounds", "messages", or "chars"
-    max_rounds_in_history: int | None = None  # Trim to last N rounds
-    max_messages_in_history: int | None = None  # Trim to last N messages
-    max_chars_in_history: int | None = None  # Trim to last N characters
-    summarize_if_trimmed: bool = True  # Add moderator summary if history is trimmed
-    highlight_opponent_last: bool = True  # Highlight opponent's last message
-
     # Advanced Analysis (Research Mode)
     adv_analysis_emotion_model: str = "bhadresh-savani/bert-base-uncased-emotion"
     adv_analysis_overwrite: bool = True
@@ -69,6 +60,16 @@ class DebateConfig:
 
         # Create a default instance to use as fallback for defaults
         default_cfg = cls()
+
+        # Prefer model defaults from model_pool.json when available
+        try:
+            pooled_defaults = get_default_role_models()
+        except ModelPoolError:
+            pooled_defaults = {
+                "moderator": default_cfg.moderator_model,
+                "conspiracy": default_cfg.conspiracy_model,
+                "scientific": default_cfg.scientific_model,
+            }
 
         # If config file doesn't exist, return defaults
         if not config_path.exists():
@@ -119,24 +120,41 @@ class DebateConfig:
                 return default
             return [item.strip() for item in value.split(",") if item.strip()]
 
+        load_models_from_ini = get_bool("models", "load_from_ini", False)
+        moderator_model = (
+            get_str("models", "moderator_model", pooled_defaults["moderator"])
+            if load_models_from_ini
+            else pooled_defaults["moderator"]
+        )
+        conspiracy_model = (
+            get_str("models", "conspiracy_model", pooled_defaults["conspiracy"])
+            if load_models_from_ini
+            else pooled_defaults["conspiracy"]
+        )
+        scientific_model = (
+            get_str("models", "scientific_model", pooled_defaults["scientific"])
+            if load_models_from_ini
+            else pooled_defaults["scientific"]
+        )
+
         return cls(
             base_url=get_str("api", "base_url", default_cfg.base_url),
             api_mode=get_str("api", "api_mode", default_cfg.api_mode),
             gemini_api_key=os.environ.get("GEMINI_API_KEY")
             or get_str("api", "gemini_api_key", "")
             or None,
-            moderator_model=get_str("models", "moderator_model", default_cfg.moderator_model),
-            conspiracy_model=get_str("models", "conspiracy_model", default_cfg.conspiracy_model),
-            scientific_model=get_str("models", "scientific_model", default_cfg.scientific_model),
-            moderator_temperature=get_float(
-                "models", "moderator_temperature", default_cfg.moderator_temperature
-            ),
-            conspiracy_temperature=get_float(
-                "models", "conspiracy_temperature", default_cfg.conspiracy_temperature
-            ),
-            scientific_temperature=get_float(
-                "models", "scientific_temperature", default_cfg.scientific_temperature
-            ),
+            moderator_model=moderator_model,
+            conspiracy_model=conspiracy_model,
+            scientific_model=scientific_model,
+            # moderator_temperature=get_float(
+            #     "models", "moderator_temperature", default_cfg.moderator_temperature
+            # ),
+            # conspiracy_temperature=get_float(
+            #     "models", "conspiracy_temperature", default_cfg.conspiracy_temperature
+            # ),
+            # scientific_temperature=get_float(
+            #     "models", "scientific_temperature", default_cfg.scientific_temperature
+            # ),
             max_tokens=get_int("debate", "max_tokens", default_cfg.max_tokens),
             thinking_budget=get_int("debate", "thinking_budget", default_cfg.thinking_budget),
             num_ctx=get_int("debate", "num_ctx", default_cfg.num_ctx),
@@ -151,20 +169,6 @@ class DebateConfig:
             ),
             analysis_similarity_method=get_str(
                 "analysis", "analysis_similarity_method", default_cfg.analysis_similarity_method
-            ),
-            history_mode=get_str("history", "history_mode", default_cfg.history_mode),
-            include_memory_summary=get_bool(
-                "history", "include_memory_summary", default_cfg.include_memory_summary
-            ),
-            history_trim=get_str("history", "history_trim", default_cfg.history_trim),
-            max_rounds_in_history=get_optional_int("history", "max_rounds_in_history"),
-            max_messages_in_history=get_optional_int("history", "max_messages_in_history"),
-            max_chars_in_history=get_optional_int("history", "max_chars_in_history"),
-            summarize_if_trimmed=get_bool(
-                "history", "summarize_if_trimmed", default_cfg.summarize_if_trimmed
-            ),
-            highlight_opponent_last=get_bool(
-                "history", "highlight_opponent_last", default_cfg.highlight_opponent_last
             ),
             adv_analysis_emotion_model=get_str(
                 "analysis", "emotion_model", default_cfg.adv_analysis_emotion_model

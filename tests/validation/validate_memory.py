@@ -9,29 +9,12 @@ def check_memory_architecture():
     print("DEBATE MEMORY ARCHITECTURE VALIDATION")
     print("=" * 80)
 
-    from debate.core.config import DebateConfig
-
-    config = DebateConfig.from_ini("config/config.ini")
-
     print("\n CONFIGURATION ANALYSIS")
     print("-" * 80)
-    print(f" History Mode: {config.history_mode}")
-    print(
-        f"  - What agents see: {'FULL conversation history with all messages' if config.history_mode == 'global_full' else 'Limited history'}"
-    )
-    print(f" Include Memory Summary: {config.include_memory_summary}")
-    print(
-        f"  - Compact state info: {'YES - agents get confidence scores, round number, scoreboard' if config.include_memory_summary else 'NO'}"
-    )
-    print(f" History Trimming: {config.history_trim}")
-    print(f"  - Max rounds in history: {config.max_rounds_in_history or 'UNLIMITED'}")
-    print(f"  - Max messages in history: {config.max_messages_in_history or 'UNLIMITED'}")
-    print(f"  - Max chars in history: {config.max_chars_in_history or 'UNLIMITED'}")
-    print(f" Highlight Opponent Last: {config.highlight_opponent_last}")
-    print(
-        f"  - Opponent focus: {'YES - last message shown separately for emphasis' if config.highlight_opponent_last else 'NO'}"
-    )
-    print(f" Summarize if Trimmed: {config.summarize_if_trimmed}")
+    print(" History mode: global_full (fixed)")
+    print(" Include memory summary: enabled (fixed)")
+    print(" History trimming: disabled (fixed)")
+    print(" Opponent last-message highlighting: enabled (fixed)")
 
     print("\n WHAT EACH AGENT SEES (Message Stack)")
     print("-" * 80)
@@ -67,7 +50,7 @@ def check_memory_architecture():
     print("Message construction order:")
     print("  1. Agent role prompt  messages.append({'role': 'system', ...})")
     print("  2. Debate rules  messages.append({'role': 'system', ...})")
-    print("  3. Conversation history  messages.extend(trimmed_history)")
+    print("  3. Conversation history  messages.extend(conversation_history)")
     print("  4. Memory summary  messages.append({'role': 'user', ...})")
     print("  5. Round instruction  messages.append({'role': 'user', ...})")
     print("  6. Opponent last message  messages.append({'role': 'user', ...})")
@@ -95,7 +78,7 @@ def check_memory_architecture():
 
     print("\n MEMORY GUARANTEES")
     print("-" * 80)
-    print(" Each agent sees the ENTIRE debate history (unless trimmed)")
+    print(" Each agent sees the ENTIRE debate history")
     print(" History includes opponent's claims, reasons, questions, search results")
     print(" Agents know current confidence levels (theirs and opponent's)")
     print(" Agents see scoreboard metrics (civility, bridge-building, quality)")
@@ -120,9 +103,7 @@ def check_memory_architecture():
     print("\n POTENTIAL CONCERNS")
     print("-" * 80)
     print("1. Token limits with long histories")
-    print(f"   Current setting: history_trim = {config.history_trim}")
-    print("    If 'none', full history always sent (can exceed token limits)")
-    print("    If 'rounds/messages/chars', history automatically trimmed")
+    print("   Full history is always sent (can exceed token limits on very long runs)")
     print()
     print("2. Agents might not parse conversation history perfectly")
     print("    They see formatted text like '[CA][Round 2] ...'")
@@ -137,15 +118,10 @@ def check_memory_architecture():
     print("\n RECOMMENDATIONS")
     print("-" * 80)
     print("Current configuration is GOOD for memory handling:")
-    print(" history_mode = 'global_full' (best for debates)")
-    print(" include_memory_summary = true (agents get scoreboard)")
-    print(" highlight_opponent_last = true (ensures engagement)")
-    print(" history_trim = 'none' (full context, but watch token limits)")
-    print()
-    print("Consider for long debates (>5 rounds):")
-    print("  - Set history_trim = 'rounds'")
-    print("  - Set max_rounds_in_history = 3")
-    print("   Keeps last 3 rounds (~12 messages) to avoid token limits")
+    print(" global_full transcript sharing (fixed)")
+    print(" memory summary included (fixed)")
+    print(" opponent-last emphasis enabled (fixed)")
+    print(" no trimming (fixed; watch token limits on long debates)")
 
     print("\n TESTING RECOMMENDATIONS")
     print("-" * 80)

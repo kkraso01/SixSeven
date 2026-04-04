@@ -1,0 +1,12 @@
+{
+  "topic_id": "clean-energy",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "To drag our economy out of the biggest crisis since the Great Depression, America needs another moon shot. Can the investment of billions into the clean energy sector trigger the creation of millions of jobs and innovation? Or would we sim...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

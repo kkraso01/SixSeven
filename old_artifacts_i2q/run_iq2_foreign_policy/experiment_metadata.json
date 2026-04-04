@@ -1,0 +1,12 @@
+{
+  "topic_id": "foreign-policy",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "What might Machiavelli have made of the 44th President of the United States? Barack Obama set out to change the tone of US foreign policy. And he did. By virtue of his personal story, by dint of his not being George W. Bush, he arrived in...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

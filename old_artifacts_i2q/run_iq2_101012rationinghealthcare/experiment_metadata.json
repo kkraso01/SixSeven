@@ -1,0 +1,12 @@
+{
+  "topic_id": "101012rationinghealthcare",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "PRESENTED IN PARTNERSHIP WITH CHICAGO IDEAS WEEKJust because we can extend life, should we? The U.S. is expected to spend $2.8 trillion on health care in 2012. Medicare alone will cost taxpayers $590 billion, with over 25% going toward pat...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

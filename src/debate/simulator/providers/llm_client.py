@@ -13,6 +13,7 @@ from pydantic import BaseModel, ValidationError
 
 from debate.core.config import DebateConfig
 from debate.core.errors import LLMResponseError  # re-export for backwards compat
+from debate.core.model_pool import get_preferred_gemini_model
 
 T = TypeVar("T", bound=BaseModel)
 
@@ -80,10 +81,11 @@ class OllamaClient:
         )
         if api_key:
             try:
+                preferred_gemini_model = get_preferred_gemini_model()
                 # Ensure the env var is set for from_provider to pick up
                 os.environ["GOOGLE_API_KEY"] = api_key
                 self._instructor_gemini = instructor.from_provider(
-                    "google/gemini-3-flash-preview",  # default model (overridden per-call)
+                    f"google/{preferred_gemini_model}",  # per-call model still overrides this
                     mode=instructor.Mode.GENAI_STRUCTURED_OUTPUTS,
                 )
                 print("  Gemini instructor client ready (via google-genai + instructor)")
@@ -107,7 +109,7 @@ class OllamaClient:
             "model": model,
             "messages": messages,
             "options": {
-                "temperature": temperature,
+                # "temperature": temperature,
                 "num_predict": max_tokens,
                 "num_ctx": self.config.num_ctx,
             },
@@ -156,7 +158,7 @@ class OllamaClient:
                     messages=messages,
                     model=model,
                     generation_config={
-                        "temperature": temperature,
+                        # "temperature": temperature,
                         "max_tokens": max(max_tokens, _GEMINI_MIN_TOKENS),
                     },
                     max_retries=3,  # instructor-level validation retries
@@ -215,7 +217,7 @@ class OllamaClient:
                 model=model,
                 messages=messages,
                 response_model=response_model,
-                temperature=temperature,
+                # temperature=temperature,
                 max_tokens=effective_tokens,
                 seed=seed,
                 timeout=_OPENAI_READ_TIMEOUT,

@@ -7,6 +7,7 @@ because Ollama has no API rate limits.
 from __future__ import annotations
 
 from cli.base_batch import BaseBatchRunner
+from debate.core.model_pool import ModelPoolError, get_batch_model_configs
 from debate.core.topics import CONSPIRACY_TOPICS
 
 
@@ -23,38 +24,27 @@ def main():
         batch_label="ollama",
     )
 
-    # Get models from config.ini
-    config = runner.base_config
-
-    # Fixed moderator from config.ini, swap conspiracy & scientific roles
-    mod = config.moderator_model
-    model_a = config.conspiracy_model   # default conspiracy advocate
-    model_b = config.scientific_model   # default scientific advocate
+    try:
+        pool_configs = get_batch_model_configs("ollama")
+    except ModelPoolError as exc:
+        print(f"\n ERROR: invalid model_pool.json configuration for ollama batch: {exc}")
+        return
 
     model_configs = [
-        # 1. Original assignment: A=conspiracy, B=scientific
         runner.add_model_config(
-            name=f"{model_a}-CA_{model_b}-SA",
-            moderator=mod,
-            conspiracy=model_a,
-            scientific=model_b,
-            api_mode="openai",
-        ),
-        # 2. Swapped: B=conspiracy, A=scientific
-        runner.add_model_config(
-            name=f"{model_b}-CA_{model_a}-SA",
-            moderator=mod,
-            conspiracy=model_b,
-            scientific=model_a,
-            api_mode="openai",
-        ),
+            name=cfg["name"],
+            moderator=cfg["moderator"],
+            conspiracy=cfg["conspiracy"],
+            scientific=cfg["scientific"],
+            api_mode=cfg["api_mode"],
+        )
+        for cfg in pool_configs
     ]
 
     # Use ALL conspiracy topics (20 topics)
     topics = CONSPIRACY_TOPICS
 
-    # Run batch experiments
-    # 20 topics × 2 model configs = 40 experiments
+    # Run batch experiments with generated permutations from model_pool.json
     results = runner.run_batch(topics, model_configs)
 
     print("\n Ollama batch complete!")

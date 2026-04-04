@@ -1,0 +1,12 @@
+{
+  "topic_id": "091615%20Sexual%20Assault",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "High-profile cases have recently put campus sexual assault in the spotlight. One question that has repeatedly come up: why are these cases being handled by campuses at all? Title IX requires that every school receiving federal aid must tak...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

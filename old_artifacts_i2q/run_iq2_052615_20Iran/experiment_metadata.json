@@ -1,0 +1,12 @@
+{
+  "topic_id": "052615%20Iran",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "In April 2015, the P5+1, the 5 permanent members of the UN Security Council plus Germany, negotiated an interim nuclear accord with Iran. Among the key parameters: Iran’s enrichment capacity, enrichment levels, and stockpile would be limit...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

@@ -1,0 +1,12 @@
+{
+  "topic_id": "080913%20syria",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "There are certain international crises that on their face demand the immediate and urgent attention of presidents. We all know them when we see them -- and so does the man in the White House. Saddam's invasion of Kuwait comes to mind -- an...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}
