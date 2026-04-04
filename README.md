@@ -73,8 +73,8 @@ cp config/config.example.ini config/config.ini
 
 ### Research Audit
 Processes raw JSON memory states to generate sentiment trajectories, emotional distributions, and rhetorical summaries.
-- **Standard**: `python cli/analyze_results.py --dir results/raw`
-- **Poetry**: `poetry run sixseven-analyze --dir results/raw`
+- **Standard**: `python cli/analyze_results.py --dir results/batches/ollama/raw`
+- **Poetry**: `poetry run sixseven-analyze --dir results/batches/ollama/raw`
 
 ### Topic Selection Utility
 Browse and select conspiracy topics from the built-in library.
@@ -102,9 +102,10 @@ Requires an API key. Subject to provider rate limits and daily quotas. This runn
 - **config/**: Configuration templates and active settings.
 - **docs/**: Technical and research guides.
 - **results/**: Output root.
-    - **raw/**: JSON memory states, CSV logs, and final reports.
-    - **transcripts/**: Markdown debate summaries.
-    - **analysis/**: Automated metrics (Plots and Analysis reports).
+    - **raw/**: Single-run JSON memory states and reports.
+    - **batches/**: Organized experiment suites (e.g., `ollama/`, `gemini/`).
+    - **transcripts/**: Markdown debate summaries for single runs.
+    - **analysis/**: Automated metrics and plots for single runs.
 - **src/debate/**: Core library.
 - **tests/**: Unit and validation test suite.
 

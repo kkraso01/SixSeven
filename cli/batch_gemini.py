@@ -147,9 +147,6 @@ def main():
     """Run Gemini-only batch experiments (requires API key)."""
     runner = GeminiBatchRunner(
         batch_label="gemini",
-        output_dir="artifacts_gemini",
-        rounds=5,
-        word_limit=180,
     )
 
     # Get models from config.ini
