@@ -30,7 +30,7 @@ sixseven-batch-ollama = "cli.batch_ollama:main"
 sixseven-batch-gemini = "cli.batch_gemini:main"
 
 [tool.poetry]
-packages = [{include = "debate", from = "src"}]
+packages = [{ include = "debate", from = "src" }]
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.0"
