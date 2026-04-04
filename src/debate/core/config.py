@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os
 from configparser import ConfigParser
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from debate.analysis.lexicons import (
@@ -49,9 +49,9 @@ class DebateConfig:
     adv_analysis_emotion_model: str = "bhadresh-savani/bert-base-uncased-emotion"
     adv_analysis_overwrite: bool = True
     adv_analysis_max_runs: int = 10
-    uncertainty_lexicon: list[str] = sorted(list(UNCERTAINTY_WORDS))
-    strong_modality_lexicon: list[str] = sorted(list(MODALITY_STRONG_WORDS))
-    weak_modality_lexicon: list[str] = sorted(list(MODALITY_WEAK_WORDS))
+    uncertainty_lexicon: list[str] = field(default_factory=lambda: sorted(list(UNCERTAINTY_WORDS)))
+    strong_modality_lexicon: list[str] = field(default_factory=lambda: sorted(list(MODALITY_STRONG_WORDS)))
+    weak_modality_lexicon: list[str] = field(default_factory=lambda: sorted(list(MODALITY_WEAK_WORDS)))
 
     @classmethod
     def from_ini(cls, config_path: str | Path = "config/config.ini") -> DebateConfig:
@@ -67,9 +67,12 @@ class DebateConfig:
         config = ConfigParser()
         config_path = Path(config_path)
 
+        # Create a default instance to use as fallback for defaults
+        default_cfg = cls()
+
         # If config file doesn't exist, return defaults
         if not config_path.exists():
-            return cls()
+            return default_cfg
 
         config.read(config_path)
 
@@ -117,69 +120,69 @@ class DebateConfig:
             return [item.strip() for item in value.split(",") if item.strip()]
 
         return cls(
-            base_url=get_str("api", "base_url", cls.base_url),
-            api_mode=get_str("api", "api_mode", cls.api_mode),
+            base_url=get_str("api", "base_url", default_cfg.base_url),
+            api_mode=get_str("api", "api_mode", default_cfg.api_mode),
             gemini_api_key=os.environ.get("GEMINI_API_KEY")
             or get_str("api", "gemini_api_key", "")
             or None,
-            moderator_model=get_str("models", "moderator_model", cls.moderator_model),
-            conspiracy_model=get_str("models", "conspiracy_model", cls.conspiracy_model),
-            scientific_model=get_str("models", "scientific_model", cls.scientific_model),
+            moderator_model=get_str("models", "moderator_model", default_cfg.moderator_model),
+            conspiracy_model=get_str("models", "conspiracy_model", default_cfg.conspiracy_model),
+            scientific_model=get_str("models", "scientific_model", default_cfg.scientific_model),
             moderator_temperature=get_float(
-                "models", "moderator_temperature", cls.moderator_temperature
+                "models", "moderator_temperature", default_cfg.moderator_temperature
             ),
             conspiracy_temperature=get_float(
-                "models", "conspiracy_temperature", cls.conspiracy_temperature
+                "models", "conspiracy_temperature", default_cfg.conspiracy_temperature
             ),
             scientific_temperature=get_float(
-                "models", "scientific_temperature", cls.scientific_temperature
+                "models", "scientific_temperature", default_cfg.scientific_temperature
             ),
-            max_tokens=get_int("debate", "max_tokens", cls.max_tokens),
-            thinking_budget=get_int("debate", "thinking_budget", cls.thinking_budget),
-            num_ctx=get_int("debate", "num_ctx", cls.num_ctx),
-            rounds=get_int("debate", "rounds", cls.rounds),
-            word_limit=get_int("debate", "word_limit", cls.word_limit),
+            max_tokens=get_int("debate", "max_tokens", default_cfg.max_tokens),
+            thinking_budget=get_int("debate", "thinking_budget", default_cfg.thinking_budget),
+            num_ctx=get_int("debate", "num_ctx", default_cfg.num_ctx),
+            rounds=get_int("debate", "rounds", default_cfg.rounds),
+            word_limit=get_int("debate", "word_limit", default_cfg.word_limit),
             seed=get_optional_int("debate", "seed"),
-            max_search_rounds=get_int("debate", "max_search_rounds", cls.max_search_rounds),
-            output_dir=get_str("output", "output_dir", cls.output_dir),
-            run_analysis=get_bool("analysis", "run_analysis", cls.run_analysis),
+            max_search_rounds=get_int("debate", "max_search_rounds", default_cfg.max_search_rounds),
+            output_dir=get_str("output", "output_dir", default_cfg.output_dir),
+            run_analysis=get_bool("analysis", "run_analysis", default_cfg.run_analysis),
             analysis_shift_threshold=get_int(
-                "analysis", "analysis_shift_threshold", cls.analysis_shift_threshold
+                "analysis", "analysis_shift_threshold", default_cfg.analysis_shift_threshold
             ),
             analysis_similarity_method=get_str(
-                "analysis", "analysis_similarity_method", cls.analysis_similarity_method
+                "analysis", "analysis_similarity_method", default_cfg.analysis_similarity_method
             ),
-            history_mode=get_str("history", "history_mode", cls.history_mode),
+            history_mode=get_str("history", "history_mode", default_cfg.history_mode),
             include_memory_summary=get_bool(
-                "history", "include_memory_summary", cls.include_memory_summary
+                "history", "include_memory_summary", default_cfg.include_memory_summary
             ),
-            history_trim=get_str("history", "history_trim", cls.history_trim),
+            history_trim=get_str("history", "history_trim", default_cfg.history_trim),
             max_rounds_in_history=get_optional_int("history", "max_rounds_in_history"),
             max_messages_in_history=get_optional_int("history", "max_messages_in_history"),
             max_chars_in_history=get_optional_int("history", "max_chars_in_history"),
             summarize_if_trimmed=get_bool(
-                "history", "summarize_if_trimmed", cls.summarize_if_trimmed
+                "history", "summarize_if_trimmed", default_cfg.summarize_if_trimmed
             ),
             highlight_opponent_last=get_bool(
-                "history", "highlight_opponent_last", cls.highlight_opponent_last
+                "history", "highlight_opponent_last", default_cfg.highlight_opponent_last
             ),
             adv_analysis_emotion_model=get_str(
-                "analysis", "emotion_model", cls.adv_analysis_emotion_model
+                "analysis", "emotion_model", default_cfg.adv_analysis_emotion_model
             ),
             adv_analysis_overwrite=get_bool(
-                "analysis", "overwrite", cls.adv_analysis_overwrite
+                "analysis", "overwrite", default_cfg.adv_analysis_overwrite
             ),
             adv_analysis_max_runs=get_int(
-                "analysis", "max_runs", cls.adv_analysis_max_runs
+                "analysis", "max_runs", default_cfg.adv_analysis_max_runs
             ),
             uncertainty_lexicon=get_list(
-                "analysis", "uncertainty_lexicon", cls.uncertainty_lexicon
+                "analysis", "uncertainty_lexicon", default_cfg.uncertainty_lexicon
             ),
             strong_modality_lexicon=get_list(
-                "analysis", "strong_modality_lexicon", cls.strong_modality_lexicon
+                "analysis", "strong_modality_lexicon", default_cfg.strong_modality_lexicon
             ),
             weak_modality_lexicon=get_list(
-                "analysis", "weak_modality_lexicon", cls.weak_modality_lexicon
+                "analysis", "weak_modality_lexicon", default_cfg.weak_modality_lexicon
             ),
         )
 
