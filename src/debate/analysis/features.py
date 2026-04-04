@@ -13,10 +13,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import pandas as pd
 from textblob import TextBlob
 
 from debate.core.schemas import MemoryState
+
 from .lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
@@ -298,11 +298,17 @@ class EmotionAnalyzer:
         self._ensure_pipeline()
         assert self._pipeline is not None
         try:
-            results = self._pipeline(text)[0]
-            scores = {}
+            # Type-cast results to avoid MyPy indexing errors on untyped pipeline output
+            raw_results = self._pipeline(text)
+            if not raw_results or not isinstance(raw_results, list):
+                return {}
+
+            results = raw_results[0]
+            scores: dict[str, float] = {}
             for item in results:
-                label = item["label"].lower().replace(" ", "_")
-                scores[f"emotion_{label}"] = float(item["score"])
+                if isinstance(item, dict) and "label" in item and "score" in item:
+                    label = str(item["label"]).lower().replace(" ", "_")
+                    scores[f"emotion_{label}"] = float(item["score"])
             return scores
         except Exception:
             return {}

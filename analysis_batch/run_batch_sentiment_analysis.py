@@ -1,12 +1,11 @@
-import re
 import json
+import re
 from pathlib import Path
 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 from textblob import TextBlob
 from transformers import pipeline
-
 
 # =========================================================
 # CONFIG
@@ -59,7 +58,7 @@ def safe_read_json(path: Path):
     if not path.exists():
         return None
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except Exception:
         return None
@@ -162,7 +161,7 @@ def process_single_run(run_dir: Path):
 
     final_report = safe_read_json(final_report_path)
     winner_info = infer_winner_from_final_report(final_report)
-    
+
     if not debate_log_path.exists():
         print(f"Skipping {run_dir.name}: debate_log.csv not found.")
         return
@@ -355,7 +354,7 @@ def process_single_run(run_dir: Path):
             plt.close()
 
     print(f"Finished {run_dir.name} -> {analysis_dir}\n")
-    
+
 
 def infer_winner_from_final_report(final_report):
     if not final_report:

@@ -22,12 +22,12 @@ from debate.analysis.features import (
     infer_winner_from_text,
     load_run_inputs,
 )
-from debate.core.config import DebateConfig
 from debate.analysis.plots import (
     plot_emotion_distribution,
     plot_rhetorical_markers,
     plot_sentiment_comparison,
 )
+from debate.core.config import DebateConfig
 
 console = Console()
 
@@ -73,7 +73,7 @@ def analyze_single_run(
         transient=True,
     ) as progress:
         progress.add_task(description=f"Analyzing {run_id}...", total=None)
-        
+
         for _, row in df_agents.iterrows():
             text = str(row.get("claim", ""))
             features_list.append(
@@ -90,11 +90,11 @@ def analyze_single_run(
 
     df_feats = pd.DataFrame(features_list)
     df_enriched = pd.concat([df_agents.reset_index(drop=True), df_feats], axis=1)
-    
+
     if emotions_list:
         df_emotions = pd.DataFrame(emotions_list).fillna(0.0)
         df_enriched = pd.concat([df_enriched, df_emotions], axis=1)
-        
+
         # Calculate dominant emotion
         emotion_cols = [c for c in df_emotions.columns if c.startswith("emotion_")]
         df_enriched["dominant_emotion"] = df_enriched[emotion_cols].idxmax(axis=1).str.replace("emotion_", "")
@@ -105,7 +105,7 @@ def analyze_single_run(
 
     # 3. Generating Plots
     turn_indices = list(range(1, len(df_enriched) + 1))
-    
+
     # Polarity Comparison
     sentiment_data = {
         agent: df_enriched[df_enriched["speaker"] == agent]["polarity"].tolist()
@@ -137,7 +137,7 @@ def analyze_single_run(
 
     # 4. Save results
     df_enriched.to_csv(analysis_dir / "enriched_debate_log.csv", index=False)
-    
+
     report = {
         "run_id": run_id,
         "winner_inference": winner_data,
@@ -159,7 +159,7 @@ def main():
 
     config = DebateConfig.from_ini()
     output_root = Path(args.out or config.output_dir)
-    
+
     if args.run:
         run_path = Path(args.run)
         report = analyze_single_run(run_path, output_root, config, skip_emotion=args.no_emotion)
@@ -168,7 +168,7 @@ def main():
     else:
         raw_root = Path(args.dir)
         run_dirs = sorted([p for p in raw_root.iterdir() if p.is_dir() and p.name.startswith("run_")])
-        
+
         if not run_dirs:
             console.print(f"[red]Error:[/] No run directories found in {raw_root}")
             return

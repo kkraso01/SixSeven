@@ -92,7 +92,7 @@ class TestDebateConfigIniParsing:
             tmp_path,
             """\
             [output]
-            output_dir = 
+            output_dir =
         """,
         )
         cfg = DebateConfig.from_ini(ini)

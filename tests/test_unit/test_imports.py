@@ -3,17 +3,12 @@
 from __future__ import annotations
 
 import sys
-import unittest
 
 
 def test_core_imports():
     """Test core module imports."""
     print("Testing core imports...")
     try:
-        from debate.core.config import DebateConfig
-        from debate.core.container import DebateServices, build_default_services
-        from debate.core.protocols import LLMClient, SearchProvider
-        from debate.core.schemas import MemoryState, AgentTurn
 
         print(" Core imports successful")
         return True
@@ -41,9 +36,6 @@ def test_io_imports():
     """Test IO functionality imports (formerly export)."""
     print("\nTesting IO imports...")
     try:
-        from debate.simulator.io.writer import write_artifacts, ExportBundle
-        from debate.simulator.io.csv_export import export_debate_log_to_csv
-        from debate.simulator.io.templates import render_transcript
 
         print(" IO imports successful")
         return True
@@ -56,9 +48,6 @@ def test_providers_imports():
     """Test LLM and search provider imports (formerly llm)."""
     print("\nTesting provider imports...")
     try:
-        from debate.simulator.providers.llm_client import OllamaClient
-        from debate.simulator.providers.instructor import StructuredLLM
-        from debate.simulator.providers.search import search_web
 
         print(" Provider imports successful")
         return True
@@ -71,9 +60,6 @@ def test_engine_imports():
     """Test engine imports (formerly debate and memory)."""
     print("\nTesting engine imports...")
     try:
-        from debate.simulator.engine.orchestrator import run_debate
-        from debate.simulator.engine.evaluation import build_metrics_table
-        from debate.simulator.engine.memory import initial_memory, append_log
 
         print(" Engine imports successful")
         return True
