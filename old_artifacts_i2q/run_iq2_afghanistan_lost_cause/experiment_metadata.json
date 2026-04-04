@@ -1,0 +1,12 @@
+{
+  "topic_id": "afghanistan-lost-cause",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Has the surge in Afghanistan failed, and is it time for the U.S. to admit defeat and start pulling our troops out? Nine years in, what have we accomplished in Afghanistan? Upon taking office in 2009, President Obama ordered an additional 1...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

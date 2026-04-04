@@ -1,0 +1,12 @@
+{
+  "topic_id": "big-government",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Just about everyone has a reason to question how the size of our government affects America’s financial and political future. Is government intervention in everything from economic policy to health care rewarding the “takers,” and not the...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

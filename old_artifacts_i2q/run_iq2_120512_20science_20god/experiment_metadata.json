@@ -1,0 +1,12 @@
+{
+  "topic_id": "120512%20science%20god",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "On the fundamental question--evolution or creation?--Americans are on the fence. According to one survey, while 61% of Americans believe we have evolved over time, 22% believe this evolution was guided by a higher power, with another 31% o...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

@@ -1,0 +1,758 @@
+[
+  {
+    "id": "011514%20Obamacare",
+    "category": "iq2_real_debate",
+    "topic": "Obamacare Is Now Beyond Rescue",
+    "motion": "Obamacare Is Now Beyond Rescue",
+    "description": "With the disastrous launch of the HealthCare.gov website, critics of the Affordable Care Act, or “Obamacare,” were given more fuel for the fire. Is this political hot potato's inevitability once again at stake? And is the medical community..."
+  },
+  {
+    "id": "011515%20Amazon",
+    "category": "iq2_real_debate",
+    "topic": "Amazon Is The Reader's Friend",
+    "motion": "Amazon Is The Reader's Friend",
+    "description": "In late 2014, Amazon and the publishing house Hachette settled a months-long dispute over who should set the price for e-books. In Amazon’s view, lower prices mean more sales and more readers, and that benefits everyone. But for publishers..."
+  },
+  {
+    "id": "011613%20israel%20iran",
+    "category": "iq2_real_debate",
+    "topic": "Israel Can Live With a Nuclear Iran",
+    "motion": "Israel Can Live With a Nuclear Iran",
+    "description": "Over the summer of 2012, despite increased international pressure and economic sanctions, Iran doubled the number of nuclear centrifuges installed in its underground Fordow site, stopping just short of the capacity to produce nuclear fuel...."
+  },
+  {
+    "id": "021115%20American%20Decline",
+    "category": "iq2_real_debate",
+    "topic": "Declinists Be Damned: Bet on America",
+    "motion": "Declinists Be Damned: Bet on America",
+    "description": "America owes $6 trillion to China, our sprawling military complex often appears helpless against disparate threats abroad, and the War on Terror has stripped us of the moral high ground. Washington is paralyzed by bitter partisanship, our..."
+  },
+  {
+    "id": "021214%20Snowden",
+    "category": "iq2_real_debate",
+    "topic": "Snowden Was Justified",
+    "motion": "Snowden Was Justified",
+    "description": "Has Edward Snowden done the U.S. a great service? There is no doubt that his release of highly classified stolen documents has sparked an important public debate, even forcing what could be a major presidential overhaul of the NSA’s survei..."
+  },
+  {
+    "id": "021313%20genetic%20engineering",
+    "category": "iq2_real_debate",
+    "topic": "Prohibit Genetically Engineered Babies",
+    "motion": "Prohibit Genetically Engineered Babies",
+    "description": "Imagine a world free of genetic diseases, where parents control their offspring’s height, eye color and intelligence. The science may be closer than you think. Genes interact in ways that we don’t fully understand and there could be uninte..."
+  },
+  {
+    "id": "022415%20Liberal%20Stifling",
+    "category": "iq2_real_debate",
+    "topic": "Liberals Are Stifling Intellectual Diversity On Campus",
+    "motion": "Liberals Are Stifling Intellectual Diversity On Campus",
+    "description": "What is college for? For many, it’s a time for personal and intellectual growth, to meet new people, and to explore ideas and philosophies that challenge their beliefs. Or is it? Recent cancellations of conservative speakers, rescinded hon..."
+  },
+  {
+    "id": "022714%20Affirmative%20Action",
+    "category": "iq2_real_debate",
+    "topic": "Affirmative Action On Campus Does More Harm Than Good",
+    "motion": "Affirmative Action On Campus Does More Harm Than Good",
+    "description": "Affirmative action, when used as a factor in college admissions, is meant to foster diversity and provide equal opportunities in education for underrepresented minorities. But is it achieving its stated goals and helping the population it..."
+  },
+  {
+    "id": "030514%20Targeted%20Killing",
+    "category": "iq2_real_debate",
+    "topic": "The President Has Constitutional Power To Target And Kill U.S. Citizens Abroad",
+    "motion": "The President Has Constitutional Power To Target And Kill U.S. Citizens Abroad",
+    "description": "With the drone strike on accused terrorist and New Mexico-born Anwar al-Awlaki in Yemen, President Obama has tested the limits of the executive branch’s powers. Does the president have constitutional authority under the due process clause..."
+  },
+  {
+    "id": "031115%20Right%20to%20be%20forgotten",
+    "category": "iq2_real_debate",
+    "topic": "The U.S. Should Adopt the 'Right to Be Forgotten' Online",
+    "motion": "The U.S. Should Adopt the 'Right to Be Forgotten' Online",
+    "description": "In 2014, the European Union’s Court of Justice determined that individuals have a right to be forgotten, “the right—under certain conditions—to ask search engines to remove links with personal information about them.” It is not absolute, b..."
+  },
+  {
+    "id": "031214%20Russia",
+    "category": "iq2_real_debate",
+    "topic": "Russia Is A Marginal Power",
+    "motion": "Russia Is A Marginal Power",
+    "description": "Disarming Syria. Asylum for Edward Snowden. Arming Iran. Deploying troops to Crimea. Is Vladimir Putin flexing his muscles, while our own president fades into the background of world politics, or is it all a global game of smoke and mirror..."
+  },
+  {
+    "id": "031313%20strong%20dollar",
+    "category": "iq2_real_debate",
+    "topic": "America Doesn't Need A Strong Dollar Policy",
+    "motion": "America Doesn't Need A Strong Dollar Policy",
+    "description": "It’s often taken for granted that America needs a strong dollar. When the value of the U.S. dollar is strong relative to other currencies, it becomes attractive to investors and allows Americans to buy foreign goods and services cheaply. B..."
+  },
+  {
+    "id": "033115%20War%20Powers",
+    "category": "iq2_real_debate",
+    "topic": "The President Has Exceeded His Constitutional Authority by Waging War Without Congressional Authorization",
+    "motion": "The President Has Exceeded His Constitutional Authority by Waging War Without Congressional Authorization",
+    "description": "The President has launched a sustained, long-term military campaign against the Islamic State of Iraq and the Levant. But did he have constitutional power to do so? The Constitution carefully divides the war powers of the United States bet..."
+  },
+  {
+    "id": "040214%20MOOCs",
+    "category": "iq2_real_debate",
+    "topic": "More Clicks, Fewer Bricks: The Lecture Hall Is Obsolete",
+    "motion": "More Clicks, Fewer Bricks: The Lecture Hall Is Obsolete",
+    "description": "Is the college of the future online? With the popularity of MOOCs (massive open online courses) and the availability of online degree programs at a fraction of their on-campus price, we are experiencing an exciting experiment in higher edu..."
+  },
+  {
+    "id": "040313%20minimum%20wage",
+    "category": "iq2_real_debate",
+    "topic": "Abolish The Minimum Wage",
+    "motion": "Abolish The Minimum Wage",
+    "description": "The first attempt at establishing a national minimum wage, a part of 1933’s sweeping National Industrial Recovery Act, was struck down by the Supreme Court in 1935. But in 1938, under the Fair Labor Standards Act, President Franklin D. Roo..."
+  },
+  {
+    "id": "040914%20Millennials",
+    "category": "iq2_real_debate",
+    "topic": "Millennials Don't Stand A Chance",
+    "motion": "Millennials Don't Stand A Chance",
+    "description": "Millennials—growing up with revolutionary technology and entering adulthood in a time of recession—have recently been much maligned. Are their critics right? Is this generation uniquely coddled, narcissistic, and lazy? Or have we let conve..."
+  },
+  {
+    "id": "041515%20Death%20Penalty",
+    "category": "iq2_real_debate",
+    "topic": "Abolish the Death Penalty",
+    "motion": "Abolish the Death Penalty",
+    "description": "A recent Gallup poll found that Americans are still largely supportive of the death penalty, with 6 in 10 in favor as punishment for murder. Legal in 32 states, it has come under renewed scrutiny in light of several botched executions in 2..."
+  },
+  {
+    "id": "041713%20gop",
+    "category": "iq2_real_debate",
+    "topic": "The GOP Must Seize The Center Or Die",
+    "motion": "The GOP Must Seize The Center Or Die",
+    "description": "2012 was a disappointing year for Republicans. The failure to win key swing states in the presidential election and surprising losses in the House and Senate have prompted some reflection. Was their embrace of small government, low taxes,..."
+  },
+  {
+    "id": "050714%20Death%20Not%20Final",
+    "category": "iq2_real_debate",
+    "topic": "Death Is Not Final",
+    "motion": "Death Is Not Final",
+    "description": "If consciousness is just the workings of neurons and synapses, how do we explain the phenomenon of near-death experience? By some accounts, about 3% of the U.S. population has had one: an out-of-body experience often characterized by remar..."
+  },
+  {
+    "id": "050813%20fda",
+    "category": "iq2_real_debate",
+    "topic": "The FDA'S Caution Is Hazardous To Our Health",
+    "motion": "The FDA'S Caution Is Hazardous To Our Health",
+    "description": "The Food and Drug Administration, the oldest comprehensive consumer protection agency in the U.S. federal government, is charged with protecting the public health. Under this mandate, it regulates drugs and medical devices for their safety..."
+  },
+  {
+    "id": "051315%20Smart%20Tech",
+    "category": "iq2_real_debate",
+    "topic": "Smart Technology Is Making Us Dumb",
+    "motion": "Smart Technology Is Making Us Dumb",
+    "description": "Smart technology grants us unprecedented, immediate access to knowledge and to each other—a ubiquitous and seamless presence in everyday life. But is there a downside to all of this connectivity? It’s been said that smart technology create..."
+  },
+  {
+    "id": "052615%20Iran",
+    "category": "iq2_real_debate",
+    "topic": "Obama's Iran Deal Is Good For America",
+    "motion": "Obama's Iran Deal Is Good For America",
+    "description": "In April 2015, the P5+1, the 5 permanent members of the UN Security Council plus Germany, negotiated an interim nuclear accord with Iran. Among the key parameters: Iran’s enrichment capacity, enrichment levels, and stockpile would be limit..."
+  },
+  {
+    "id": "060215%20Same-Sex%20Marriage",
+    "category": "iq2_real_debate",
+    "topic": "The Equal Protection Clause Does Not Require States To License Same-Sex Marriages",
+    "motion": "The Equal Protection Clause Does Not Require States To License Same-Sex Marriages",
+    "description": "The Equal Protection Clause of the Fourteenth Amendment provides: “No State shall … deny to any person within its jurisdiction the equal protection of the laws.” On June 26th, 2015, the Supreme Court ruled 5-4 that all states are required..."
+  },
+  {
+    "id": "061913%20pentagon%20budget",
+    "category": "iq2_real_debate",
+    "topic": "Cutting the Pentagon's Budget is a Gift To Our Enemies",
+    "motion": "Cutting the Pentagon's Budget is a Gift To Our Enemies",
+    "description": "Political gridlock in Washington triggered across-the-board spending cuts, known as the sequester, in March. As a result, the Pentagon was given six months to eliminate $41 billion from the current year’s budget, and unlike past cuts, this..."
+  },
+  {
+    "id": "062614%20Independent%20Spending",
+    "category": "iq2_real_debate",
+    "topic": "Individuals and organizations have a constitutional right to unlimited spending on their own political speech",
+    "motion": "Individuals and organizations have a constitutional right to unlimited spending on their own political speech",
+    "description": "Is independent political speech the linchpin of our democracy or its Achilles' heel? For democracy to work, some say, citizens (and corporations, and unions, and media outlets, and other voluntary organizations) must be allowed to express..."
+  },
+  {
+    "id": "080913%20syria",
+    "category": "iq2_real_debate",
+    "topic": "The U.S. Has No Dog In The Fight In Syria",
+    "motion": "The U.S. Has No Dog In The Fight In Syria",
+    "description": "There are certain international crises that on their face demand the immediate and urgent attention of presidents. We all know them when we see them -- and so does the man in the White House. Saddam's invasion of Kuwait comes to mind -- an..."
+  },
+  {
+    "id": "080915%20ISIS",
+    "category": "iq2_real_debate",
+    "topic": "Containment Is Not Enough: ISIS Must Be Defeated",
+    "motion": "Containment Is Not Enough: ISIS Must Be Defeated",
+    "description": "In June 2014, the Sunni militant group ISIS declared that it had established a new caliphate spanning territory in Syria and Iraq. Since then, the region under its control has expanded, despite airstrikes and the deployment of U.S. militar..."
+  },
+  {
+    "id": "090914%20Common%20Core",
+    "category": "iq2_real_debate",
+    "topic": "Embrace The Common Core",
+    "motion": "Embrace The Common Core",
+    "description": "In K-12 education, there is nothing more controversial than the Common Core State Standards, national academic standards in English and math. Adopted by more than 40 states, they were developed, in part, to address concerns that American s..."
+  },
+  {
+    "id": "091013%20drones",
+    "category": "iq2_real_debate",
+    "topic": "The U.S. Drone Program is Fatally Flawed",
+    "motion": "The U.S. Drone Program is Fatally Flawed",
+    "description": "Remotely piloted aircraft, or drones, have been the centerpiece of America’s counterterrorism toolkit since the start of the Obama presidency, and the benefits have been clear. Their use has significantly weakened al Qaeda and the Taliban..."
+  },
+  {
+    "id": "091212superpacs",
+    "category": "iq2_real_debate",
+    "topic": "Two Cheers for Super PACs: Money in Politics is Still Overregulated",
+    "motion": "Two Cheers for Super PACs: Money in Politics is Still Overregulated",
+    "description": "The product of two court decisions, Citizens United and SpeechNow.org v. FEC, Super PAC spending is on course to make 2012 the most expensive presidential election in history. These supercharged political action committees may spend and re..."
+  },
+  {
+    "id": "091615%20Sexual%20Assault",
+    "category": "iq2_real_debate",
+    "topic": "Courts, Not Campuses, Should Decide Sexual Assault Cases",
+    "motion": "Courts, Not Campuses, Should Decide Sexual Assault Cases",
+    "description": "High-profile cases have recently put campus sexual assault in the spotlight. One question that has repeatedly come up: why are these cases being handled by campuses at all? Title IX requires that every school receiving federal aid must tak..."
+  },
+  {
+    "id": "093014%20Middle%20East",
+    "category": "iq2_real_debate",
+    "topic": "Flexing America's Muscles In The Middle East Will Make Things Worse",
+    "motion": "Flexing America's Muscles In The Middle East Will Make Things Worse",
+    "description": "The rise of ISIS, the disintegration of Iraq, Syria’s ongoing civil war, the Israeli-Palestinian conflict, the promise and peril of the Arab Spring... What role should America play in the Middle East? For some, America’s restraint has been..."
+  },
+  {
+    "id": "100412%20islamists",
+    "category": "iq2_real_debate",
+    "topic": "Better Elected Islamists Than Dictators",
+    "motion": "Better Elected Islamists Than Dictators",
+    "description": "The popular uprisings of the Arab Spring have left a leadership void that Islamist parties have been quick to fill. A longtime supporter of former strongmen like Egypt’s Mubarak and Tunisia’s Ben Ali, the U.S. now faces the uncomfortable r..."
+  },
+  {
+    "id": "100714%204th%20Amendment",
+    "category": "iq2_real_debate",
+    "topic": "Mass Collection of U.S. Phone Records Violates the Fourth Amendment",
+    "motion": "Mass Collection of U.S. Phone Records Violates the Fourth Amendment",
+    "description": "Some say that the mass collection of U.S. phone records is a gross invasion of privacy. Others say that it is necessary to keep us safe. But what does the U.S. Constitution say? \"The right of the people to be secure in their persons, house..."
+  },
+  {
+    "id": "101012rationinghealthcare",
+    "category": "iq2_real_debate",
+    "topic": "Ration End-Of-Life Care",
+    "motion": "Ration End-Of-Life Care",
+    "description": "PRESENTED IN PARTNERSHIP WITH CHICAGO IDEAS WEEKJust because we can extend life, should we? The U.S. is expected to spend $2.8 trillion on health care in 2012. Medicare alone will cost taxpayers $590 billion, with over 25% going toward pat..."
+  },
+  {
+    "id": "101613%20big%20banks",
+    "category": "iq2_real_debate",
+    "topic": "Break Up The Big Banks",
+    "motion": "Break Up The Big Banks",
+    "description": "To prevent the collapse of the global financial system in 2008, Treasury committed 245 billion in taxpayer dollars to stabilize America’s banking institutions. Today, banks that were once “too big to fail” have only grown bigger, with JPMo..."
+  },
+  {
+    "id": "101813%20red%20state",
+    "category": "iq2_real_debate",
+    "topic": "For A Better Future, Live In A Red State",
+    "motion": "For A Better Future, Live In A Red State",
+    "description": "While gridlock and division in Washington make it difficult for either party or ideology to set the policy agenda, single-party government prevails in three-quarters of the states. In 24 states Republicans control the governorship and both..."
+  },
+  {
+    "id": "102214%20Income%20Inequality",
+    "category": "iq2_real_debate",
+    "topic": "Income Inequality Impairs The American Dream Of Upward Mobility",
+    "motion": "Income Inequality Impairs The American Dream Of Upward Mobility",
+    "description": "Income inequality has been on the rise for decades. In the last 30 years, the wages of the top 1% have grown by 154%, while the bottom 90% has seen growth of only 17%. As the rungs of the economic ladder move further and further apart, con..."
+  },
+  {
+    "id": "102412%20taxes",
+    "category": "iq2_real_debate",
+    "topic": "The Rich Are Taxed Enough",
+    "motion": "The Rich Are Taxed Enough",
+    "description": "How do we fix the economy? The U.S. government's budget deficit is nearing a trillion dollars for the fourth straight year and unemployment remains high. With the Bush-era tax cuts that are set to expire at the end of 2012, what is the bes..."
+  },
+  {
+    "id": "103013%20jobs",
+    "category": "iq2_real_debate",
+    "topic": "Let Anyone Take A Job Anywhere",
+    "motion": "Let Anyone Take A Job Anywhere",
+    "description": "If we value a free market in goods and free movement of capital, should we embrace the free movement of labor? Reciprocal treaties would allow citizens of the U.S. and other countries to work legally across borders. Would the elimination o..."
+  },
+  {
+    "id": "111314%20Assisted%20Suicide",
+    "category": "iq2_real_debate",
+    "topic": "Legalize Assisted Suicide",
+    "motion": "Legalize Assisted Suicide",
+    "description": "In 1994, Oregon voters passed the Death with Dignity Act, which legalized physician-assisted suicide for the terminally ill. Since then, it has become legal in 4 more states, including New Mexico, where the state court ruling that it is co..."
+  },
+  {
+    "id": "111412%20drugs",
+    "category": "iq2_real_debate",
+    "topic": "Legalize Drugs",
+    "motion": "Legalize Drugs",
+    "description": "It was 1971 when President Richard Nixon declared a \"war on drugs.\" $2.5 trillion dollars later, drug use is half of what it was 30 years ago, and thousands of offenders are successfully diverted to treatment instead of jail. And yet, 22 m..."
+  },
+  {
+    "id": "111413%20guns",
+    "category": "iq2_real_debate",
+    "topic": "The Constitutional Right To Bear Arms Has Outlived Its Usefulness",
+    "motion": "The Constitutional Right To Bear Arms Has Outlived Its Usefulness",
+    "description": "“A well regulated Militia being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed.” –2nd Amendment Recent mass shooting tragedies have renewed the national debate over the 2nd A..."
+  },
+  {
+    "id": "112013%20nsa",
+    "category": "iq2_real_debate",
+    "topic": "Spy On Me, I'd Rather Be Safe",
+    "motion": "Spy On Me, I'd Rather Be Safe",
+    "description": "The NSA collects data on billions of phone calls and internet communications per day. Are these surveillance programs legal? Do they keep us safe? If not for the former NSA contractor Edward Snowden, most Americans would be unaware of the..."
+  },
+  {
+    "id": "120314%20GM%20Food",
+    "category": "iq2_real_debate",
+    "topic": "Genetically Modify Food",
+    "motion": "Genetically Modify Food",
+    "description": "Genetically modified (GM) foods have been around for decades. Created by modifying the DNA of one organism through the introduction of genes from another, they are developed for a number of different reasons—to fight disease, enhance flavo..."
+  },
+  {
+    "id": "120413%20veggies",
+    "category": "iq2_real_debate",
+    "topic": "Don't Eat Anything With A Face",
+    "motion": "Don't Eat Anything With A Face",
+    "description": "According to a 2009 poll, around 1% of American adults reported eating no animal products. In 2011 that number rose to 2.5%--more than double, but still dwarfed by the 48% who reported eating meat, fish or poultry at all of their meals. In..."
+  },
+  {
+    "id": "120512%20science%20god",
+    "category": "iq2_real_debate",
+    "topic": "Science Refutes God",
+    "motion": "Science Refutes God",
+    "description": "On the fundamental question--evolution or creation?--Americans are on the fence. According to one survey, while 61% of Americans believe we have evolved over time, 22% believe this evolution was guided by a higher power, with another 31% o..."
+  },
+  {
+    "id": "AfPak",
+    "category": "iq2_real_debate",
+    "topic": "America Cannot And Will Not Succeed In Afghanistan/Pakistan",
+    "motion": "America Cannot And Will Not Succeed In Afghanistan/Pakistan",
+    "description": "The Obama Administration has implemented a significant change in policy toward Afghanistan and Pakistan, which they view as a single challenge, AfPak. More troops and a new commander have been sent to Afghanistan, and the US has increased..."
+  },
+  {
+    "id": "Affirmative-Action-111307",
+    "category": "iq2_real_debate",
+    "topic": "It's Time to End Affirmative Action",
+    "motion": "It's Time to End Affirmative Action",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Africa-Transcript-120407",
+    "category": "iq2_real_debate",
+    "topic": "Aid to Africa is Doing More Harm Than Good",
+    "motion": "Aid to Africa is Doing More Harm Than Good",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "America-is-Winning-War-in-Iraq-100708",
+    "category": "iq2_real_debate",
+    "topic": "America is Finally Winning the War in Iraq",
+    "motion": "America is Finally Winning the War in Iraq",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "AmericaWorldPoliceman-021208",
+    "category": "iq2_real_debate",
+    "topic": "America Should be the World's Policeman",
+    "motion": "America Should be the World's Policeman",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "ArtMarketLessEthical-020309",
+    "category": "iq2_real_debate",
+    "topic": "The Art Market is Less Ethical than the Stock Market",
+    "motion": "The Art Market is Less Ethical than the Stock Market",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "BetterMoreSurveillance041807",
+    "category": "iq2_real_debate",
+    "topic": "Better More Domestic Surveillance Than Another 9/11",
+    "motion": "Better More Domestic Surveillance Than Another 9/11",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Bush43IsTheWorstPresident-120208",
+    "category": "iq2_real_debate",
+    "topic": "Bush 43 is the Worst President of the Last 50 Years",
+    "motion": "Bush 43 is the Worst President of the Last 50 Years",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "CarbonEmissions-011309",
+    "category": "iq2_real_debate",
+    "topic": "Major Reductions in Carbon Emissions are Not Worth the Money",
+    "motion": "Major Reductions in Carbon Emissions are Not Worth the Money",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "China-051607",
+    "category": "iq2_real_debate",
+    "topic": "Beware the Dragon: A Booming China Spells Trouble for America",
+    "motion": "Beware the Dragon: A Booming China Spells Trouble for America",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Financial-Crisis-031709",
+    "category": "iq2_real_debate",
+    "topic": "Blame Washington More Than Wall Street for the Financial Crisis",
+    "motion": "Blame Washington More Than Wall Street for the Financial Crisis",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "FreedomOfExpression-101806",
+    "category": "iq2_real_debate",
+    "topic": "Freedom of Expression Must Include the License to Offend",
+    "motion": "Freedom of Expression Must Include the License to Offend",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "GlobalWarming-031407",
+    "category": "iq2_real_debate",
+    "topic": "Global Warming is Not a Crisis",
+    "motion": "Global Warming is Not a Crisis",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Google-111808",
+    "category": "iq2_real_debate",
+    "topic": "Google Violates its Don't Be Evil Motto",
+    "motion": "Google Violates its Don't Be Evil Motto",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Guns-Reduce-Crime-102808",
+    "category": "iq2_real_debate",
+    "topic": "Guns Reduce Crime",
+    "motion": "Guns Reduce Crime",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Hamas-Transcript-112906",
+    "category": "iq2_real_debate",
+    "topic": "A Democratically-Elected Hamas is Still a Terrorist Organization",
+    "motion": "A Democratically-Elected Hamas is Still a Terrorist Organization",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Health-Coverage-091608",
+    "category": "iq2_real_debate",
+    "topic": "Universal Health Coverage Should be the Federal Government's Responsibility",
+    "motion": "Universal Health Coverage Should be the Federal Government's Responsibility",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Hollywood-and-antiamericanism-121306",
+    "category": "iq2_real_debate",
+    "topic": "Hollywood has Fueled Anti-Americanism Abroad",
+    "motion": "Hollywood has Fueled Anti-Americanism Abroad",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Iran-transcript-edited-version-092706",
+    "category": "iq2_real_debate",
+    "topic": "We Must Tolerate a Nuclear Iran",
+    "motion": "We Must Tolerate a Nuclear Iran",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "IslamDominatedByRadicals-041508",
+    "category": "iq2_real_debate",
+    "topic": "Islam Is Dominated By Radicals",
+    "motion": "Islam Is Dominated By Radicals",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "OrganMarkets-051308",
+    "category": "iq2_real_debate",
+    "topic": "We Should Legalize the Market for Human Organs",
+    "motion": "We Should Legalize the Market for Human Organs",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "PerformanceEnhancingDrugs-011508",
+    "category": "iq2_real_debate",
+    "topic": "We Should Accept Performance-Enhancing Drugs in Competitive Sports",
+    "motion": "We Should Accept Performance-Enhancing Drugs in Competitive Sports",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Religion-Transcript-020707",
+    "category": "iq2_real_debate",
+    "topic": "America is Too Damn Religious",
+    "motion": "America is Too Damn Religious",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "Russia-103007",
+    "category": "iq2_real_debate",
+    "topic": "Russia is Becoming Our Enemy Again",
+    "motion": "Russia is Becoming Our Enemy Again",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "SpreadingDemocracy-091807",
+    "category": "iq2_real_debate",
+    "topic": "Spreading Democracy in the Middle East is a Bad Idea",
+    "motion": "Spreading Democracy in the Middle East is a Bad Idea",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "ToughInterrogationOfTerrorSuspects-031108",
+    "category": "iq2_real_debate",
+    "topic": "Tough Interrogation of Terror Suspects is Necessary",
+    "motion": "Tough Interrogation of Terror Suspects is Necessary",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "UndocumentedImmigrants-100907",
+    "category": "iq2_real_debate",
+    "topic": "Let's Stop Welcoming Undocumented Immigrants",
+    "motion": "Let's Stop Welcoming Undocumented Immigrants",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "afghanistan-lost-cause",
+    "category": "iq2_real_debate",
+    "topic": "Afghanistan Is A Lost Cause",
+    "motion": "Afghanistan Is A Lost Cause",
+    "description": "Has the surge in Afghanistan failed, and is it time for the U.S. to admit defeat and start pulling our troops out? Nine years in, what have we accomplished in Afghanistan? Upon taking office in 2009, President Obama ordered an additional 1..."
+  },
+  {
+    "id": "airport-profiling",
+    "category": "iq2_real_debate",
+    "topic": "U.S. Airports Should Use Racial And Religious Profiling",
+    "motion": "U.S. Airports Should Use Racial And Religious Profiling",
+    "description": "On Christmas Day, 2009, twenty-three-year-old Umar Farouk Abdulmutallab attempted to blow up Northwest Airlines Flight 253 using explosives hidden in his underwear. A string of missed opportunities and errors by government security agencie..."
+  },
+  {
+    "id": "ban-college-football",
+    "category": "iq2_real_debate",
+    "topic": "Ban College Football",
+    "motion": "Ban College Football",
+    "description": "Corruption and a growing concern for head injury have put college football in the spotlight. Are football programs’ millions in profits exploitation? Or are they still a celebration of amateur sport? Does football’s inherent danger and vio..."
+  },
+  {
+    "id": "big-government",
+    "category": "iq2_real_debate",
+    "topic": "Big Government Is Stifling The American Spirit",
+    "motion": "Big Government Is Stifling The American Spirit",
+    "description": "Just about everyone has a reason to question how the size of our government affects America’s financial and political future. Is government intervention in everything from economic policy to health care rewarding the “takers,” and not the..."
+  },
+  {
+    "id": "buy-american",
+    "category": "iq2_real_debate",
+    "topic": "Buy American/Hire American Policies Will Backfire",
+    "motion": "Buy American/Hire American Policies Will Backfire",
+    "description": "Any project funded by February’s $789 billion stimulus package is meant to use only US made steel and manufactured goods. Any financial institution receiving bail out funds must give preference to citizens. Will these policies backfire? Op..."
+  },
+  {
+    "id": "california-failed",
+    "category": "iq2_real_debate",
+    "topic": "California Is The First Failed State",
+    "motion": "California Is The First Failed State",
+    "description": "California tried. And then it failed. Uniquely charged by its constitution to guarantee the “happiness” of its residents – the state empowered its people to demand by referendum whatever they wanted to spend money on – from better schools..."
+  },
+  {
+    "id": "china-transcript",
+    "category": "iq2_real_debate",
+    "topic": "China Does Capitalism Better Than America",
+    "motion": "China Does Capitalism Better Than America",
+    "description": "For all appearances, China has emerged unscathed from the global economic crisis, in stark contrast to its biggest debtor, America. China’s admirers point to its ability to mobilize state resources, quick decision-making and business-frien..."
+  },
+  {
+    "id": "clean-energy",
+    "category": "iq2_real_debate",
+    "topic": "Clean Energy Can Drive America's Economic Recovery",
+    "motion": "Clean Energy Can Drive America's Economic Recovery",
+    "description": "To drag our economy out of the biggest crisis since the Great Depression, America needs another moon shot. Can the investment of billions into the clean energy sector trigger the creation of millions of jobs and innovation? Or would we sim..."
+  },
+  {
+    "id": "college",
+    "category": "iq2_real_debate",
+    "topic": "Too Many Kids Go To College",
+    "motion": "Too Many Kids Go To College",
+    "description": "PRESENTED IN PARTNERSHIP WITH CHICAGO IDEAS WEEKThe herd mentality that assumes college is the only path to reaching one’s full potential is under fire. Student loan debt has surpassed credit card debt, unemployment for those with bachelor..."
+  },
+  {
+    "id": "cyber-war",
+    "category": "iq2_real_debate",
+    "topic": "The Cyber War Threat Has Been Grossly Exaggerated",
+    "motion": "The Cyber War Threat Has Been Grossly Exaggerated",
+    "description": "It could be the greatest strategic irony of the last twenty years: the American lead in digital technologies – upon which our financial, communications and defense systems are built, and on which they depend – may also represent a serious..."
+  },
+  {
+    "id": "foreign-policy",
+    "category": "iq2_real_debate",
+    "topic": "Obama's Foreign Policy Spells America's Decline",
+    "motion": "Obama's Foreign Policy Spells America's Decline",
+    "description": "What might Machiavelli have made of the 44th President of the United States? Barack Obama set out to change the tone of US foreign policy. And he did. By virtue of his personal story, by dint of his not being George W. Bush, he arrived in..."
+  },
+  {
+    "id": "frackingaspen",
+    "category": "iq2_real_debate",
+    "topic": "No Fracking Way: The Natural Gas Boom Is Doing More Harm Than Good",
+    "motion": "No Fracking Way: The Natural Gas Boom Is Doing More Harm Than Good",
+    "description": "Natural gas, touted for its environmental, economic, and national security benefits, is often thought of as the fuel that will “bridge” our transition from oil and coal to renewables. The ability to extract natural gas from shale formation..."
+  },
+  {
+    "id": "free-press",
+    "category": "iq2_real_debate",
+    "topic": "Freedom of the Press Does Not Extend To State Secrets",
+    "motion": "Freedom of the Press Does Not Extend To State Secrets",
+    "description": "Description: The First Amendment protects freedom of the press, but how do we reconcile the conflict between national security and accountability? Do we err on the side of secrecy or transparency? From the Pentagon Papers to WikiLeaks, joi..."
+  },
+  {
+    "id": "globalization",
+    "category": "iq2_real_debate",
+    "topic": "It's Time To Clip America's Global Wings",
+    "motion": "It's Time To Clip America's Global Wings",
+    "description": "Just two decades ago there seemed to be no limits to American power. 9/11, the financial crisis, and the rise of China are all reminders of what a different world we live in today. What should America’s role be in the new world order? Are..."
+  },
+  {
+    "id": "internet-politics",
+    "category": "iq2_real_debate",
+    "topic": "When It Comes To Politics, The Internet Is Closing Our Minds",
+    "motion": "When It Comes To Politics, The Internet Is Closing Our Minds",
+    "description": "Does the internet poison politics? It’s been argued that the rise of “personalization,” the use of algorithms to filter what you see online, and easy access to the like-minded, have served to reinforce our pre-conceptions. Is the informati..."
+  },
+  {
+    "id": "iran-diplomacy",
+    "category": "iq2_real_debate",
+    "topic": "Diplomacy With Iran Is Going Nowhere",
+    "motion": "Diplomacy With Iran Is Going Nowhere",
+    "description": "Debate description coming soon"
+  },
+  {
+    "id": "islam-peace",
+    "category": "iq2_real_debate",
+    "topic": "Islam Is A Religion Of Peace",
+    "motion": "Islam Is A Religion Of Peace",
+    "description": "Is the rise of terrorism and violence justifiably traced to the teachings of Islam, or is this call to war a twisted interpretation of the true Muslim faith? Most of the world’s 1.5 billion Muslims are moderates who see Islamic terrorism a..."
+  },
+  {
+    "id": "mainstream-media",
+    "category": "iq2_real_debate",
+    "topic": "Good Riddance To Mainstream Media",
+    "motion": "Good Riddance To Mainstream Media",
+    "description": "Mainstream media is dying. The network evening news audience is in steady decline; the big three magazine publishers, Time Inc., Condé Nast and Hearst have all closed or consolidated titles; and the newspaper industry has been especially r..."
+  },
+  {
+    "id": "men-are-finished",
+    "category": "iq2_real_debate",
+    "topic": "Men Are Finished",
+    "motion": "Men Are Finished",
+    "description": "In a modern, post-industrial economy that seems better suited to women than men, many are wondering if men have been permanently left behind. Education and employment statistics point to a clear and growing dominance in women’s status at h..."
+  },
+  {
+    "id": "mexico%20drug%20war%20120109",
+    "category": "iq2_real_debate",
+    "topic": "America Is To Blame For Mexico's Drug War",
+    "motion": "America Is To Blame For Mexico's Drug War",
+    "description": "America is to blame for Mexico's drug war. Nearly 10,000 people in Mexico have died in drug-related violence since January 2007. Who or what is to blame? Some say it is America’s insatiable consumer demand for illicit drugs and the constan..."
+  },
+  {
+    "id": "obama-economic",
+    "category": "iq2_real_debate",
+    "topic": "Obama's Economic Policies Are Working Effectively",
+    "motion": "Obama's Economic Policies Are Working Effectively",
+    "description": "Signs of economic recovery are everywhere. Housing prices have bottomed out; the stock market has rallied; and capital markets are operating normally. Today, economists are debating whether or not the recession is over. When Obama took off..."
+  },
+  {
+    "id": "obama-jobs-act",
+    "category": "iq2_real_debate",
+    "topic": "Congress Should Pass Obama's Jobs Plan - Piece by Piece",
+    "motion": "Congress Should Pass Obama's Jobs Plan - Piece by Piece",
+    "description": "For many Americans, unemployment is at the top of that list. In the face of a double-dip recession and an unprecedented long-term unemployment rate, President Obama unveiled the American Jobs Act before Congress. His plan? Lower the unempl..."
+  },
+  {
+    "id": "obamacare",
+    "category": "iq2_real_debate",
+    "topic": "Repeal Obamacare",
+    "motion": "Repeal Obamacare",
+    "description": "In March 2010 President Obama signed into law the Affordable Care Act, the biggest overhaul of our health care system in decades. According to a November poll from the Kaiser Family Foundation, 40 percent of the public would like Congress..."
+  },
+  {
+    "id": "obesity%20020712",
+    "category": "iq2_real_debate",
+    "topic": "Obesity Is The Government's Business",
+    "motion": "Obesity Is The Government's Business",
+    "description": "With 33% of adults and 17% of children obese, the U.S. is facing an obesity epidemic. A major risk factor for expensive, chronic conditions like heart disease, diabetes, and cancer, it costs our health care system nearly $150 billion a yea..."
+  },
+  {
+    "id": "organic-food",
+    "category": "iq2_real_debate",
+    "topic": "Organic Food Is Marketing Hype",
+    "motion": "Organic Food Is Marketing Hype",
+    "description": "Eating organic used to be a fringe commitment. Not anymore. The idea that the adage “you are what you eat” actually has merit – that America’s industrialized food system is making consumers – literally, consumers – obese, diabetic and prim..."
+  },
+  {
+    "id": "palestine",
+    "category": "iq2_real_debate",
+    "topic": "The U.N. Should Admit Palestine As A Full Member State",
+    "motion": "The U.N. Should Admit Palestine As A Full Member State",
+    "description": "On September 23, 2011, Palestinian President Mahmoud Abbas appeared before the U.N. General Assembly to request full membership for the State of Palestine. America’s veto power renders their bid largely symbolic, but there could be leverag..."
+  },
+  {
+    "id": "religion",
+    "category": "iq2_real_debate",
+    "topic": "The World Would Be Better Off Without Religion",
+    "motion": "The World Would Be Better Off Without Religion",
+    "description": "In the words of Blaise Pascal, mathematician and Catholic, “Men never do evil so completely and cheerfully as when they do it from a religious conviction.” Does religion breed intolerance, violence, and the promotion of medieval ideas? Or..."
+  },
+  {
+    "id": "senior-benefits",
+    "category": "iq2_real_debate",
+    "topic": "Grandma's Benefits Imperil Junior's Future",
+    "motion": "Grandma's Benefits Imperil Junior's Future",
+    "description": "Commitments made to seniors decades ago failed to foresee the harsh economic realities of the present. Do entitlements saddle our children with unmanageable debt, asking them to sacrifice their future for the sake of the elderly? Social Se..."
+  },
+  {
+    "id": "sex-debate",
+    "category": "iq2_real_debate",
+    "topic": "It's Wrong To Pay For Sex",
+    "motion": "It's Wrong To Pay For Sex",
+    "description": "Debate description coming soon."
+  },
+  {
+    "id": "teachers-unions",
+    "category": "iq2_real_debate",
+    "topic": "Don't Blame Teachers Unions For Our Failing Schools",
+    "motion": "Don't Blame Teachers Unions For Our Failing Schools",
+    "description": "Teachers unions: They’re powerful, they’re defensive, and they’re stubborn. And if it seems their leadership places a premium on protecting its members – above all other interests – we should not be surprised, because protecting jobs and w..."
+  },
+  {
+    "id": "terrorists-enemy",
+    "category": "iq2_real_debate",
+    "topic": "Treat Terrorists Like Enemy Combatants, Not Criminals",
+    "motion": "Treat Terrorists Like Enemy Combatants, Not Criminals",
+    "description": "In 2009 the Justice Department announced that 9/11 plotter Khalid Shaikh Mohammed would be tried in New York City, setting off a firestorm of protests. Besides the cost and safety concerns, at issue are whether terrorists should be tried i..."
+  },
+  {
+    "id": "tired-poor",
+    "category": "iq2_real_debate",
+    "topic": "Don't Give Us Your Tired, Your Poor, Your Huddled Masses",
+    "motion": "Don't Give Us Your Tired, Your Poor, Your Huddled Masses",
+    "description": "America, built up by the hard work of its immigrants, now finds itself home to an estimated 11 million illegal immigrants. The federal government, even under the reform-friendly tenure of President George W. Bush, has been unable to find t..."
+  },
+  {
+    "id": "two-party",
+    "category": "iq2_real_debate",
+    "topic": "The Two-Party System Is Making America Ungovernable",
+    "motion": "The Two-Party System Is Making America Ungovernable",
+    "description": "The Republican and Democratic parties are entrenched in calcified partisanship, where politics is played as a zero-sum game. The rise of the Tea Party, liberal backlash, and the exodus of moderate voices from Congress all point toward the..."
+  },
+  {
+    "id": "war-on-terror",
+    "category": "iq2_real_debate",
+    "topic": "It's Time To End The War On Terror",
+    "motion": "It's Time To End The War On Terror",
+    "description": "Days after 9/11, President Bush declared a War on Terror that would “not end until every terrorist group of global reach has been found, stopped and defeated.” Is America in a state of perpetual war, or has the threat of terrorism justifie..."
+  }
+]

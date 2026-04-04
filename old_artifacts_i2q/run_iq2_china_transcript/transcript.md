@@ -1,0 +1,868 @@
+# Debate Transcript
+
+Topic: China Does Capitalism Better Than America
+Motion: China Does Capitalism Better Than America
+
+Debate ID: china-transcript
+
+
+## Round 1
+
+### Moderator
+Claim: And now I would like to introduce the chairman of Intelligence Squared U.S., Mr. Robert Rosenkranz.
+
+### Moderator
+Claim: Thank you. Welcome. It’s good to have you here. My role in these proceedings is to frame the debate. So, "China does capitalism better than America.” Capitalism is the polar opposite of Communism, so how can Communist China be said to do capitalism better than America? It’s because China is Communist in name only. In most of the ways that matter, the Chinese economy is a model of capitalism. Firms and individuals are largely free to buy the labor technology and raw materials they need to produce the products they want in open competition with others and to sell them at whatever prices the market will bear. If you include government-controlled firms, goods produced in a market system account for a substantially larger share of China’s output than they do in America.
+
+Capitalism requires capital to invest, and over the past 30 years, China has saved nearly half of its total output and has invested most of those savings in capital assets-- plants, machinery, infrastructure, and the like. In contrast, the American savings rates have been puny, only recently reaching 6 percent of total production. And the promise of capitalism is that by allowing individuals and firms the freedom to act, resources will be allocated efficiently and the wealth and consumption of most people in the society will grow. China has done a phenomenal job of keeping that promise. Over the past 30 years, its economy has grown approximately tenfold while America’s has barely doubled. In what respects then does America do capitalism better?
+
+Clearly, the rule of law is much more developed here. Property rights are more secure, and we encourage innovation by protecting intellectual property. As a result, the American economy is far more innovative. The Googles and Facebooks and Apples of the world are American companies. Nothing comparable has come from China. We permit individuals to move freely in search of jobs and opportunities. For hundreds of millions of rural Chinese, there is no such freedom. Corruption and abuse of power by government officials is far more prevalent in China. And crony capitalism, which is certainly an aspect of American life, is absolutely rife in China. As usual, there is a lot to be said on both sides. And in the final analysis, this debate is not just about economics but about which system, American democratic capitalism or Chinese state capitalism, will be the model that developing countries around the world admire and seek to emulate.
+
+We have an outstanding panel of experts tonight, and it’s my privilege to turn the evening over to them and to our moderator John Donvan.
+
+### Moderator
+Claim: Thank you.
+
+### Moderator
+Claim: Thank you.
+
+### Moderator
+Claim: Thank you very much. And I would just like to invite one more round of applause for Robert Rosencranz for making these possible. Yes or no to this statement: "China does capitalism better than America.” Well, perception can say a lot, and in a recent poll, 53 percent of Americans identified China as the world’s leading financial power. Only 33 percent said the U.S. is number one. Guess what? The U.S. is still number one. The 53 percent who say that China is first are wrong. Or are they simply early? I’m John Donvan. Welcome to another debate from Intelligence Squared U.S. Our motion is "China does capitalism better than America.”We have four superbly qualified debaters, two teams of two who will argue for this motion and against this motion. We go in three rounds of debate. Then the audience votes to choose the winner, and only one team wins. Our debaters, each connected in his own way to the China story: Orville Schell, who heads the Center for U.S.-China Relations at the Asia Society. Your partner is Peter Schiff who heads Euro Pacific Capital and who has advised Ron Paul. On the side arguing against the motion that China does capitalism better than America, Ian Bremmer, founder and president of Eurasia Group. And your partner Minxin Pei, professor of government at Claremont McKenna College. Schell, many hats on your head. You are a journalist and now an in-house thinker at the Asia Society. You were coming and going to China already 30 years ago when doing such a thing here was seen as really beyond exotic, and then before that as an undergraduate at Harvard, you studied Far Eastern History. So, since you were a teenager, China has counted for you. What sparked this interest for you in the first place?
+
+### Conspiracy Advocate (CA)
+Claim: Well, paradoxically, I think it was the fact that you couldn’t go there, and that lent a kind of a quality to it that was somewhat mysterious and begged effort to bridge that gap.
+
+### Moderator
+Claim: Is that fun over now?
+
+### Conspiracy Advocate (CA)
+Claim: No, because China still is a fickle mistress and a very difficult place to finally divine.
+
+### Moderator
+Claim: All right. Your debating partner is Peter Schiff.
+
+Peter is CEO of Euro Pacific Capital. And Peter, you advised Ron Paul in 2008, and talk about being right early. You called the U.S. housing bubble long before most people even saw it coming. And you’re a guy who makes predictions, and you speak the language of inevitability and you don’t give yourself a lot of room to back away in case you turn out to be wrong. But on China-U.S., what if you turn out to be wrong?
+
+### Conspiracy Advocate (CA)
+Claim: Well, first of all, in fairness to Congressman Ron Paul, he really didn’t need my advice. He should be giving advice to his opponents. But as far as China, being wrong in what respect? Are you talking about my investments in China?
+
+### Moderator
+Claim: For example.
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, you know, I think that China’s story is unfolding, and I think there is tremendous opportunity for investors to make money as China continues on its journey towards capitalism. I think they are abandoning some of the ideas of the past, not necessarily in favor of what America is today.
+
+Hopefully maybe more what America used to be in the past. But if I’m wrong, if the political winds blow in a different direction and China doesn’t live up to the potential that I think it has, I’ve got investments all around the world. It’s not only China.
+
+### Moderator
+Claim: That’s a relief.
+
+### Conspiracy Advocate (CA)
+Claim: But--
+
+### Moderator
+Claim: Thank you Peter Schiff. I just want to bring it over to the other side. Our motion is "China does capitalism better than America.” And Ian Bremmer, you are arguing against that motion. Ian, you went to college when you were 16. You won a MacArthur Fellowship at--
+
+### Scientific Advocate (SA)
+Claim: Fifteen-- I lied about my age, but it was 15.
+
+### Moderator
+Claim: --at age 22. MacArthur Fellowship at 22, Hoover National Fellow at 25. At 28, you founded the global risk consultancy called the Eurasia Group. So, in Ian Bremmer years, it’s like the rest of us are dead and buried. So, with all the work and all the thinking you do, where do you rank China among the things that you think about?
+
+### Scientific Advocate (SA)
+Claim: Oh, you know, over the last couple of years, we’ve been spending our time thinking about the United States in terms of the financial crisis, the European crisis, and now everyone wants to know about Iran. And of course, the fact is-- and this is one thing that all four of us I think will agree on-- the most important question that we need to answer is ultimately the disposition of China over the next five, 10 years. We’ve taken our eye off that ball. It’s going to get back.
+
+### Moderator
+Claim: And your partner also saying that China does not do capitalism better than America, Minxin Pei. Minxin, you are a professor at Claremont McKenna. You were born in China, but you’ve been here 27 years and counting. You’re a dual citizen. You also have another duality. You’re a political scientist with a Harvard Ph.D., but you also have a Master’s in creative writing. So, what does that tell us? What’s the aspiration?
+
+### Scientific Advocate (SA)
+Claim: First of all, I want to correct, I only have U.S. citizenship. The Chinese government will not allow me to have dual citizenship. Well, having two terminal degrees gives me enormous advantage because most political scientists cannot write clearly-- because I have this creative writing degree, I can write more clearly than many of my colleagues.
+
+### Moderator
+Claim: All right. Thank you, Minxin. And let’s let this debate begin. We have explained that we want to have you vote two times tonight. You are our judges are-- you, our live audience, serve as our judges. We have you vote now your conviction on this motion. We have you vote again at the end of the debate to tell us which side you think has actually presented the better argument. So, if you go to the keypads at your seat, our motion is "China does capitalism better than America.” If you agree with the motion, if you’re with this side at this point, you press number one. If you disagree with this side, you push number two. And if you're undecided, you push number three. And you can ignore the other keys and also if you press the wrong key just correct it and the system will lock in your last vote.
+
+And so we're going to hold onto that result and we're going to present both results at the very end of the debate in the moment that we decide-- that you decide who the victor is. Okay, on to round one. Round one is opening statements from each debater in turn. These statements are uninterrupted. They are seven minutes each. And to speak first for the motion, Peter Schiff, CEO for Euro Pacific Capital. You can-- no, we-- I just explained, we save them to the end. They both come at the end, and-- yeah, but the suspense will kill you throughout the evening.
+
+### Conspiracy Advocate (CA)
+Claim: I'll need a timer. All right, it's--
+
+### Moderator
+Claim: I'm going to say some nice things about you for a moment.
+
+### Conspiracy Advocate (CA)
+Claim: Oh, okay. Go right ahead.
+
+### Moderator
+Claim: Very briefly. Peter Schiff is CEO for Euro Pacific Capital.
+
+He writes books, he has a radio show, the radio show is named after you, so there's no burden of false modesty or reticence here-- luckily for us. Ladies and gentlemen--
+
+### Conspiracy Advocate (CA)
+Claim: Well, I'm the only one on the show.
+
+### Moderator
+Claim: --ladies and gentlemen, Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: That's all you can come up with? As was stated, China is a communist nation in name only. It's not communist in the way the Soviet Union was communist. And unfortunately China kind of gives communism a good name in a way that we give capitalism a bad name. And I thought maybe a more appropriate way to have framed this debate is not, you know, "Does China do capitalism better?" but it might-- but might be, "Does America do capitalism worse than China?" because neither modern America or China does capitalism anywhere near as well as we did it in the 19th century. But the problem is China is closer to what America used to be than America is today.
+
+And if you think about America at the end of the 19th century in the year 1900, the government in this country spent 3 percent of the GDP on all levels, 3 percent. Today the American government spends better than 40 percent of our GDP. If you look at China, it's about half as much of the GDP spent. If you look at taxes, which is a real measure of freedom, back in America in the 1900s, we had no income taxes, we had no corporate income tax, no state income taxes, Americans were truly free in the sense that they got to keep the production, the fruits of their labor. If you look at modern America and modern China, taxes are very high. They're just a lot higher here than they are in China. Individual income taxes, the typical American pays a much higher share of his income in taxes when you take income taxes on a federal and state level and payroll taxes and the employer portion that's passed on, paying much higher income taxes on a personal level than the typical Chinese worker does. If you look at corporations, our corporate income tax now is, what, 35 percent, China's 25, we tax dividends at 15 percent, they're at 10 percent, so a significant difference in the amount of money that the individuals are allowed to keep.
+
+You know, the American government is taking a much larger share of what people earn, and that's what's freedom, it's keeping the fruits of your labor. Also, if you look at the regulatory environment in both China and the United States, I would argue that a young entrepreneur in America today is going to face much greater hurdles, bigger obstacles in his path that have been placed there by the government than you would have in China. The costs of complying with all the rules and regulations in America exceeds the costs in China, and not just the rules and regulations, but surviving the litigation that is a byproduct of those rules and regulations. A lot of the things that the government does, if employers don't do them properly, they open themselves up to all sorts of lawsuits, not just by government but by their employees or their customers and you don't face that kind of problem to anywhere near that extent in China.
+
+So if you look at it from the point of view of taxation, you look at it from the point of view of regulation, sure, both countries have a lot of regulation. I mean, China is not as capitalistic as Hong Kong, which is a part of China but is more capitalistic than the mainland. But if you're going to compare it to the United States, the level of taxation, the level of government spending, if you look at the debt, I mean, America has-- our government has an enormous debt. Our debt is now 100 percent of our GDP, and that is if you just count the funded portion of our debt. If you look at the off budget items, the unfunded portion of our debt, it's enormous. The Chinese government doesn't have anywhere near that kind of liability. In fact, if you look at China and the United States and just compare the results of their economy. China is today, the world’s largest creditor nation. America is the world’s biggest debtor nation. China has large trade surpluses. America has enormous trade deficits.
+
+So if you thought about it as a nation, China has got-- I mean if you thought about the nation as a country, or as a corporation rather, China has a lot of assets on its balance sheet and lots of income, lots of profits. America is loaded up with liabilities and we’re hemorrhaging red ink. We have huge losses. So if you think that America is more capitalist than China or China is more socialist, then you must think that socialism is a better economic system because after all, the Chinese are more successful if you want to measure it by the accumulation of assets, by the positive balance of trade. So, and I don’t think that there is a way for a country, if you remember the Soviet Union, which was a Communist country, the Soviet Union didn’t make anything, they didn’t produce anything. We constantly had to give them money so that they can feed themselves. Pretty much everything is being made in China today and the United States; they have this enormous trade surplus.
+
+And more importantly, they’re accumulating massive savings. If you look at China, they have a savings rate of close to 50 percent. We have a savings rate, basically negative. In fact we rely in America on a Ponzi scheme called Social Security. They don’t have Social Security in China. They don’t have a lot of these big government programs that we have in the United States. Look at our monetary system. We have the Federal Reserve, price fixing, interest rates at practically zero. In all the macroeconomics and balances that we create, we micromanage our economy through our tax code. We’ve got the U.S. government subsidizing or guaranteeing of almost 100 percent of all the mortgages in the United States, so it’s not up to the free market. Credit isn’t being allocated by the market; it’s being allocated by government. Government is deciding who should get money and who shouldn’t get money and who it should subsidize and who it should penalize. It does all of this through the tax code and through the Federal Reserve.
+
+Yes, you’ve got something similar going on in China, only in China I think it’s more above board. Yes, there is government and you know that government’s involved and maybe you have to bribe the right bureaucrat, but the same thing is going on in the United States. We’re just not as above board with it. And if you think about the partnership that government has with business in the United States, most of the laws and regulations, and I work in a highly regulated field in the securities industry, but this is the same with industries all over the United States. You have all these regulatory bodies that are created for the specific purpose of destroying competition and trying to prevent smaller firms from coming into existence or competing with these large firms that have captured all the regulatory bodies that oversee them. And that is a function of government, and it’s a combination of big business working with big government to stifle innovation and to stifle capitalism. And when you have the U.S. government taking such an enormous share of our GDP and taking such an enormous share of our output in taxation and then trying to regulate it and micromanage it from Washington D.C., we’re not even close to being a capitalist country anymore in the United States.
+
+The unfortunate thing is that China is closer. But what’s more important is the direction in which the pendulum is swinging. In China, it’s swinging towards capitalism. Unfortunately in America, it’s swinging away.
+
+### Moderator
+Claim: Thank you Peter Schiff. Our motion is "China does capitalism better than America" and our next debater is going to speak against the motion. Ian Bremmer, who’s company Eurasia Group, makes its money by helping companies figure out when investing overseas is risky or not and so being right about China is practically his business model. Ladies and gentlemen, Ian Bremmer.
+
+### Scientific Advocate (SA)
+Claim: First of all, Orville said that China is a fickle mistress. And so getting China right is hard.
+
+And one thing we do all need to admit is that the level of volatility in outcomes in China over the next 10 to 20 years is vastly greater than the level of volatility in the United States or in Europe or Japan. Can China make it? Can they fundamentally transform their economic and political system? A country of 1.3 billion people. We know they need to it. The World Bank just made it very clear. The Chinese government admitted it themselves. Doesn’t mean they can do it, it’s never been done before. It’s a bet. I’d bet against. But it’s a bet. If you have to make a bet, you bet on the United States. Lots of people do, that’s why the U.S. still has the world’s reserve currency. I don’t know even where to start on this frankly, having just heard that China needs to bribe the right bureaucrats--but same in the United States, we’re not as above board about that... That’s on its face ludicrous, right? China is a system where if you want to do well, the highest levels, 52 percent of the GDP-- 62 percent of the GDP is state-owned enterprises, absolutely there is no rule of law. There’s no transparency. You don’t have as many regulations in China as the U.S. That is true. Does that mean China does capitalism better? No. It means that if you’re China and you want to move a village and build a road, you can. It is not clear to me that that is capitalism in its most effective or even most rapacious form. That’s the state doing what it wants to do for the state.
+
+That’s the problem. You want to talk about state intervention? We’ve got it. We’ve got it in China. Look, it’s unfortunate to me we’re even debating this. Five years ago, we wouldn’t. It shames me. It shames me as an American because there are people out there that believe that the United States can’t do capitalism as well as China. There are countries now that are doing capitalism better than the United States. If we were having this debate about Canada, we wouldn’t have as much of a problem. We wouldn’t, right. On a lot of fronts-- I’m willing-- I’m not saying the United States is worse on everything.
+
+I’m saying that life increasingly, if you look at issues like the deficit for the U.S., if you look at financial regulations-- I’m not going to stand behind all that. But I am going to go after China, because ultimately we have a problem. Look, the Chinese system is not just capitalist; it’s state capitalist. State capitalism is a system where the state is the principal actor in the economy. And it uses markets ultimately for their own political gain. If it turns out that profit is useful for their political gain, they’ll go for it. If it turns out it isn’t, they’ll go against it. And that’s true whether we’re talking about Chinese firms or whether we’re talking about Western firms. I mean, Facebook’s doing a pretty good IPO, but they’re not in China. Why? China doesn’t want Facebook in China. It’d make a lot of money. It’d make a lot of money for China. That’s not the point, right. That’s not capitalism. That’s a problem. Ultimately, when we’ve seen state capitalism work globally, it works until it fails.
+
+And it works because despite the fact that the state is massively inefficient, and I suspect Peter admits that the state is massively inefficient, and it is in lots of forms, but it can hide its inefficiency through cheap stuff. Argentina was state capitalist, looked as good as the United States in the Western hemisphere over 100 years ago until they ran out of cheap land. And then they started defaulting. Venezuela looked great on cheap oil. Not so much anymore, right. China’s looked great for 34 years on the basis of cheap labor. China will ultimately run out of cheap labor. So, what we have in China is this extraordinary car with a huge engine going very fast down a long road. And that road has been straight for 34 years, but coming up there’s a big turn in the road…. And we’ve never seen steering. Maybe-- thank you, mom-- maybe-- Maybe they have steering, but we don’t know.
+
+And the fact is that if you are China, there’s one thing you’re going to have a very hard time doing. There are no more Zhu Rongjis and Deng Xiaopings in China. You don’t have strong individual leadership. You have leadership by consensus, individuals that are moving together very incrementally. They’re very cautious. They understand the importance of the stakes they are playing for. The one thing that you will not do well is go after your own intrinsic interests. The state-owned enterprises that are providing you money-- that’s where the inefficiencies are going to be as labor gets more expensive. That’s where the inefficiency will be when the United States and other Western multinationals stop giving them technology to rip off. Another problem with Chinese state capitalism is it creates enemies, you know. There are a lot of folks around Asia. They see the Chinese economic miracle, but they’re begging the United States to maintain a presence.
+
+Why? Because China does capitalism better than the United States? I don’t think so. We got to watch what people do, not what people say, what they do. Did you see that piece in the Wall Street Journal, talked about the disposition of Chinese millionaires, how over 50 percent of Chinese millionaires say they prefer to live in the United States than China? And yeah, it’s about quality of life. Yeah, it’s about the environment. Yeah, it’s about opportunities for their kids. It’s also about no rule of law in China and worrying about corruption and the sanctity of their assets over the long term. Your assets are okay tomorrow. The United States, we’re over-litigious. China doesn’t have that problem. You don’t have to worry about lawyers in China. You have to worry about someone ripping off your stuff or being forced out of the country or not being heard from again. Now, maybe Peter believes that those 50-plus percent of Chinese millionaires are stupid. Because ultimately, the United States is in decline, and so they shouldn’t be coming here, in which case, fine, but then China’s millionaires aren’t that bright. And those are the entrepreneurs, so we shouldn’t bet on them either way. You’re in a catch-22, sir. know, I’m interested in what the Chinese do with their money. I understand that the Chinese are saying that they don’t like the U.S. dollar as a reserve currency, but where are they putting their cash? In the U.S. Now, Ron Paul and Peter say they shouldn’t do that, and then we’re in big trouble. Okay, well, when are they going to stop? Because I don’t believe the Chinese are stupid. For me, that’s not an interesting analytical model. For me, what’s interesting is presuming the Chinese understand their interests and they’re putting all that money into treasuries because they believe that’s safe over the long term. We are entering an environment of fear. We’re entering an environment of volatility. When things get more volatile, we don’t just bet on go-go- growth any more. We put our money under the mattresses. Central banks do that too. And in that environment, the world’s largest economy, also ultimately the most resilient, the United States of America. Thank you very much.
+
+### Moderator
+Claim: Thank you, Ian Bremmer. Here’s our motion: "China does capitalism better than America.” We have heard the first two speakers, and now on to the third. I’ve lost a page here. Orville Schell, I’m just going to vamp. Orville Schell is head of the Center for U.S.- China Relations at the Asian Society. You have also written something like nine books that have the word China in the title and some that don’t have China in the title. You know what you’re talking about. Ladies and gentlemen, Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: Well, I find myself in the awkward position, being an American, deeply believing in this country and its ability to innovate and in its entrepreneurial powers, to defend a Marxist-Leninist economy. And I beg you to marshal every bit of scrutiny you can to my argument and please convince me I am wrong by voting against me at the end of this debate.
+
+I would say that the comparison between capitalism in the United States and China is as much divided by the fact that capitalism here has in many ways failed its promise. And there, in a very counterintuitive way, one we hardly have expected, the Chinese Communist Party has managed to graft on a certain kind of guerilla mobility under Leninist rigidity to make their system actually function in a way which I think all of us would agree, over the past three decades, has been quite extraordinary-- something none of us who were standing in the middle of Tiananmen Square of 1989 when there were a million people demonstrating there, thought could ever possibly happen.
+
+So, I think if we look at America, we find a country that is in quite a bit of psychological self-doubt at this particular moment. We find a country that has had much of its government, many of its leaders besieged by irrationality, religiosity, they don’t believe in evolution, they don’t believe in climate change, we cannot pass a simple measure in Congress to extend the national debt, which is not going to not happen. How can a government that is so paralyzed by its own inability to see reason, how can it be the custodian over that critical part of every economy that a government must preside over?
+
+This is not to say that we don’t venerate entrepreneurs, we don’t venerate innovation, and we don’t believe in a free economy. But let me read you just simply what Adam Smith had to say, the great patron saint of laissez faire capitalism. He said that when the security of the whole society is at stake, natural liberty of a few individuals which might endanger that security ought to be restrained by the laws of all governments, the most free as well as the most despotical. And I think it is precisely here that we have failed. And by doing so, we have lent a greater credence to this curious, cryptic, hybrid version of Leninist capital, which China has employed, to quite a bit of success, I would have to say.
+
+So let's quickly just look at what we see in China. I spoke of the psychological dimension of the problem in this country, and I think everybody in this room feels it. There is a sense of I think lassitude. At the same time, greed is quite a force lost in the land. There's a great deal of self deception at work. If you look at China, who's running the government in China now? They're all engineers. In many ways, the very things that we used to impute to China as a great weakness, namely, a over reliance on ideology, are now the very things that are hampering our own country, while China, governed by engineers and technocrats, tends to look at reason. There are no climate deniers in China. I have never spoken to a Chinese who doubted evolution.
+
+And yet the ranks of the American political houses of Congress are replete with these people, and they're making decisions which govern how we live and govern the American economy. China also has managed in a way that I think it deserves our esteem to combine the public with the private and to act when things need to be done.
+
+When a stimulus program needs to be enacted, they look at the facts and they enact it. Do you remember when we looked at five-year plans as quaint kind of throwbacks to some retrograde period of Stalinist economics? Well, I think the United States could do with a good five-year plan. We can't plan for three months ahead.
+
+We have no ability even to execute policy, much less long range policy. If you go to Washington, you find more and more people utterly despairing of writing policy documents. Why? Because nobody can do anything with them. I think this ability of China to martial facts rationally, to martial its resources and make policy and allocate capital where it needs to be allocated in times of crisis is something that our own country could learn from. I want to read a quick quote from Henny Sender from the Financial Times. "The combination of Chinese SOEs and debt from state owned banks is a powerful alliance that will increasingly resonate outside of China as well as within it." I think that's an interesting statement from a paper that's basically a laissez faire capitalist paper.
+
+So finally I would say that we would do well not to assume that China has nothing to teach the United States. It may be that this system will not endure in the future. It has many structural weaknesses. But to date I would say it has been ascending while our own form of capitalism, replete with the weaknesses that you all well know, has been in a state of decline. And whether we have the ability to grab it at the last minute from its final collapse is a question which will remain for years to come.
+
+### Moderator
+Claim: Thank you, Orville Schell. Our motion is, "China does capitalism better than America." And our final debater speaking against the motion, speaks the Chinese language better than anyone on this stage, he has the advantage of having been born there, but he has been living here for decades, a professor of government at Claremont McKenna, the titles of his books and articles on China's future use phrases like, "China's Trapped Transition,” “Looming Stagnation," so we don't need to ask what he really thinks.
+
+But here's more of what he does think. Ladies and gentlemen, Minxin Pei.
+
+### Scientific Advocate (SA)
+Claim: I'm not going to speak in Chinese. I think that the impression that China is doing capitalism better than the U.S. is understandable. That's because it's a very superficial impression. One reason why that impression is widespread is that China has been growing fast. But there's a reason China is growing fast. Low income countries tend to grow much faster than rich countries because they have much bigger growth potential. Just think of two things. Consumption of energy. Chinese consumption of energy is about one-fourth of the U.S. consumption.
+
+So the Chinese, if they consume more energy, they will grow a lot faster. The same with steel production. China consumes one-tenth of the steel that the average American consumes. So if they want to reach American consumption, they need to build a lot of steel plants, and that makes economic growth. So first of all, do not judge whether a country does capitalism better or worse by just looking at its growth numbers. Second is that when you compare the two countries, the U.S. and China, you have to look at facts. This presentation is nothing but man the facts. So what are the facts? If you look at corporate profits, U.S. companies are far more profitable than Chinese companies. And that is to think that we can trust Chinese accounting. And then you look at tax collection. I have to disagree with Peter.
+
+He says the Chinese, they collect less taxes than U.S. The opposite is true. The U.S. government takes about federal/state, about 30 percent of GDP. The Chinese government collects 35 percent. But that’s not the end of the story. Because in the U.S., you actually get something back from the government in the form of Social Security, health care, Medicare, Medicaid. In China, you get very little back because the bulk of government taxes are spent on government consumption, administration. If you go to China and get treated to a 20-course meal, you think great, that’s Chinese hospitality. But don’t forget, it’s being paid for by Chinese taxpayers. Not in the USA. You do not get that kind of treatment when you go to Washington, D.C. And then you look at whether China’s growth is using less natural resources.
+
+And here the U.S. is three times more efficient as China. Because for every dollar of GDP produced in China, China has to consume three times more in terms of its natural resources, water, clean air, land. The U.S. in other words, is a lot more efficient. Then you look at international comparisons, and here we’re using third-party numbers. And here, China does not look nearly as good as the U.S. Corruption. There’s a NGO based in Berlin called Transparency International. It publishes every year, a global index called Corruption Perception index. This index, the U.S. is ranked 24th in terms of, as the least corrupt country in the world. China is ranked 75. So if you think our average politician in Washington is corrupt, wait until you meet a Chinese politician. you look at overall economic competitiveness because capitalism is known for its efficiency and competitiveness. Here, the U.S. is ranked not number one, number five. What about China? China is number 26. So way, way behind the U.S. Then you look at something like innovation ranking. The U.S. is number seven; China is 29. You look at ease of doing business. This is by the World Bank. Because, a real capitalist country should be one in which it is very easy to do business. Overall ranking for the U.S. is number four in the world. China is number 91. Then starting a business, U.S. is number 13; China is number 151. Getting credit, the U.S. is number four; China is number 67. The list goes on and on and I don’t want to bore you.
+
+Finally, I want to imagine, what will the politburo members think about this debate? If for some reason, they’ve learned that in New York City, they’re debating whether China does capitalism better than the U.S. I think their first reaction is not to laugh. You build the world’s largest high-speed rail at enormous cost. They think the U.S. is falling behind. Then you lend the Americans $2 trillion. They think, China is definitely number one. So, the third thought that would come to their mind is that the Americans have very short memories, because when Sputnik was launched, everybody thought the Soviet Union was to dominate the world.
+
+And then in the late 1980s, I think in this city, people should have good memories about who was buying the Rockefeller Center, right. Japan was dominating the headlines. Everybody thought Japan was doing capitalism better than the U.S. Now, look at where Japan is after 20 years. So, I think what we’re seeing here is not that China does capitalism better than the U.S.; we are experiencing a period of self-doubt. I’m sure the real issue is not about China. The real issue is about the U.S. The U.S. can do capitalism much better than it does, but China, at least for the moment and for the foreseeable future, will not be doing capitalism anywhere better, anywhere close to the U.S. in terms of competition, efficiency, even social justice. Thank you.
+
+## Round 2
+
+### Moderator
+Claim: Thank you, Minxin Pei. And that concludes round one of this Intelligence Squared U.S. debate. When we return, the debaters go head-to-head in round two. We’ll be right back. And now we are right back. We’re just going to have these lecterns removed, and then I’m going to raise my hand for a round of applause. And imagine commercials are playing somewhere. Okay, let’s start again. Thank you. Now, on to round two of this Intelligence Squared U.S. debate. This is where the debaters address each other directly and answer questions from the audience and from me. We have here two teams of two who are arguing out this motion: "China does capitalism better than America.” We’ve heard the team arguing in support of the motion, Peter Schiff and Orville Schell, basically saying that China does capitalism better because there’s actually more freedom to do things that involved capitalism, that there are fewer regulations, that there are lower taxes.
+
+It is not pure capitalism and they’re not arguing that, but they’re saying that it’s more pure than the U.S. has had in the last 100 years. China’s amazing growth rate really seals the argument for them, but they also make the point that possibly an economy operating under the apparatus of what we call a democracy in this country has its downside. And they suggest that maybe a little planning is not such a bad thing. The team arguing against the motion, Ian Bremmer and Minxin Pei. They’re making the argument that what China’s doing, even if it could be called capitalism, is something that’s probably cruising for a crash, that when the government is the biggest player in the market, as they argue that it is, point out that it is, this tends to lead to corruption and to cronyism and ultimately to exposure of the lack of real innovation.
+
+They basically are also making something of a hare and hedgehog argument and pointing out that China is the hare and it’s in a good dash right now, but that the U.S. is the hedgehog, plodding along steadily and more reliably. So, I want to take a question from this side’s argument to that side, and that’s that argument that what we’re seeing from China, this enormous growth rate, your opponents have pointed out, number one, is the result of China coming off a much lower baseline. And when things get really volatile, things can really fall apart there. And they’re essentially saying that what’s happening in China over the long haul is a blip. Is it a blip? Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Well, first of all, there are a lot of countries that are starting on low baselines that are not having any kind of economic growth at all. So, the difference is you do have more capitalism now in China, and it’s that freedom, it’s that-- those market forces that are responsible for the growth, not that because they’re poor, because there were plenty of people that were poor and that didn’t grow at all. As far as whether the trajectory is sustainable, I think not only is it just sustainable, but I think it’s going to get better because the real country that’s headed for a crisis is America.
+
+And I think what’s dragging the Chinese down is their currency peg. They’re loaning America all this money, so American can keep buying the products that Americans really can’t afford. And so, as a result, the Chinese are debasing their currency and they’re creating a lot of inflation, which is destabilizing their economy and, I think, undermining the standard of living of their own citizens, which would be rising even faster if the Chinese government simply let the RMB rise in value, let the dollar tank. If the Chinese government didn’t take so much of the Chinese production and just loan it to America so that it could be squandered on big government and consumption, but I think eventually--
+
+### Moderator
+Claim: So, if that is so unwise by the Chinese government, is this a blip period for them then?
+
+### Conspiracy Advocate (CA)
+Claim: Well, I think they’re going to figure this out, and they’re not going to play this game anymore. And the real crash is coming here, because then interest rates skyrocket, the dollar tanks, consumer prices go through the roof, and we have our Greek moment, only there’s no Europe to bail us out.
+
+### Moderator
+Claim: Ian Bremmer, do you want to respond?
+
+### Scientific Advocate (SA)
+Claim: Well, yeah. We’re not heading for a Greek moment. I mean, comparing us with Greece is almost as ludicrous as comparing us to China.
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, it’s not fair to the Greeks.
+
+### Scientific Advocate (SA)
+Claim: I don’t think you even believe that. But leave it aside. Look, I mean--
+
+### Conspiracy Advocate (CA)
+Claim: You’ve got to read my book.
+
+### Scientific Advocate (SA)
+Claim: No, I’ll get there. I’ll get there. Look, the United States has so many strong intrinsic advantages in terms of not just the matter of where the dollar sits but also, I mean, 30 percent of the world’s calories comes from the United States. People are increasingly fighting over food. That’s a real problem for China. The environment in China is absolutely falling apart. If you look at environment-adjusted GDP, it’s so much worse than the growth you see presently. We already heard from Minxin about just how much more profitable American multinationals are than Chinese SOEs, and yet that China is moving more in the direction towards SOEs, not towards private sectors, especially since 2008.
+
+All of these things are problematic, and the ability of the Chinese to suddenly make a decision to go away from the dollar, you have to go into something. What exactly are you going into? You’re going into the euro in an enormous way. I don’t see that in terms of massive growth opportunities. You’re going into Japan? We already said we had two lost decades there. You’re going to go into gold or hard commodities? You can do some of that. You can only do so much. And as you go away from the dollar, you of course ruin the position that you have in the rest of those dollars. So China’s not going to do that. They haven’t, and they’re not going to.
+
+### Moderator
+Claim: Orville Schell. Let’s bring you into the debate.
+
+### Conspiracy Advocate (CA)
+Claim: You know, this isn’t exclusively about one country or another. We’re doing a comparison here, and we’re talking about recent history, not an idealized America. And we’d be very foolish to idealize China. And I think what we have to reckon with is the chances of each country finding a new state of equipoise, the United States included. It is not a foregone conclusion that we’re going to pull this thing out of the water.
+
+I think if this country cannot grasp reason again, it doesn’t matter how good or bad China will be, China may have an unfair advantage. I think what’s going on in Washington right now is so utterly mad and broken that I put no confidence whatsoever in their ability to play that central role that every government, and I may disagree with you here, Peter, but every government must play. And we are not playing it.
+
+### Moderator
+Claim: And Orville Schell, you, in making that point before, you went on to say that you think that the model of planning, which we used to think was quaint and slightly ridiculous, maybe we should be looking at in a new light now. Minxin Pei, what about that? Is a little planning a good thing after all, or a lot of planning?
+
+### Scientific Advocate (SA)
+Claim: Well, in China, they plan a lot, except they do nothing about the plans they draw up. Because if you look at Chinese five-year plans, you think, my gosh, these guys are very strategic.
+
+And then, five years later, and you do some kind of plan accounting and you see what has been accomplished-- very little, because if they have actually followed through on their promises, China today would indeed be doing capitalism a lot better than the U.S.
+
+### Moderator
+Claim: Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Well, you know--
+
+### Moderator
+Claim: Or do you want to respond to that point?
+
+### Conspiracy Advocate (CA)
+Claim: Not that particular point, but there’s some other points that he made earlier that I’d--
+
+### Moderator
+Claim: All right. Tell us what the point was and go for it.
+
+### Conspiracy Advocate (CA)
+Claim: Well, first of all, one of the things that you mentioned, you said that American citizens, we get all kinds of benefits from our government that the Chinese citizens don’t get. Well, I would say that we get a lot more liability. If you try to figure out what each American share is of the national debt, it is enormous. And what the government is giving the American people is debt. I would much rather-- and if you’re talking about capitalism, you’re defending capitalism by saying we get Social Security, what’s capitalistic about essentially planned retirement that’s financed like Bernie Madoff ran his investment business. I think it’s much better that the Chinese are free to keep their income and plan for their retirement.
+
+### Moderator
+Claim: Minxin Pei, take on the question of whether the existence of Social Security compromises the U.S. claim to be capitalist, which I think is Peter’s point.
+
+### Scientific Advocate (SA)
+Claim: I don’t think so, because capitalism produces efficiency, but it also has a lot of risks. Modern capitalist societies are a lot riskier than traditional agrarian societies because in a modern capitalist society, once you lose your job, you really have no source of income. You cannot grow your own potatoes. Let me just say something about China. The debt we know about-- because Peter says that in the U.S., you-- every citizen gets a lot of-- is responsible for a lot of government debt. The same thing is true of China, because the Chinese national debt is actually higher than the American debt. In China--
+
+### Conspiracy Advocate (CA)
+Claim: What are you talking about?
+
+### Scientific Advocate (SA)
+Claim: Okay. In China, the nominal debt is low, 20 percent, but the Chinese government knows better than Bernie Madoff, okay, does a much better job in hiding its liabilities. It would--
+
+### Conspiracy Advocate (CA)
+Claim: We owe them over $2 trillion.
+
+### Scientific Advocate (SA)
+Claim: No, two trillion dollars is not-- is foreign exchange reserve and I--
+
+### Conspiracy Advocate (CA)
+Claim: Well, that's three trillion, if you want--
+
+### Scientific Advocate (SA)
+Claim: No, no, that's three trillion.
+
+### Conspiracy Advocate (CA)
+Claim: Are you saying that liabilities exceed that?
+
+### Scientific Advocate (SA)
+Claim: Oh, the Chinese liability is about 80 percent of GDP. The U.S. public health debt is about 60 to 65 percent. The trouble with the Chinese people is that after paying taxes, having their government incur so much debt, they get no Social Security, they get no social protection, so that's why I think even capitalists are coming to this country, to enjoy some kind of protection.
+
+### Conspiracy Advocate (CA)
+Claim: Well, certainly--
+
+### Moderator
+Claim: Let's Orville Schell--
+
+### Conspiracy Advocate (CA)
+Claim: Wait a minute.
+
+China is implementing-- trying to implement a health care system, a Social Security system, and when you say the Chinese people have gotten nothing out of the last 30 years of development, you have surely seen the infrastructure that China has built, which benefits everybody in some way or other.
+
+### Moderator
+Claim: Orville, take 10, 15 seconds to describe specifically the kind of infrastructure you're talking about, housing, roads--
+
+### Conspiracy Advocate (CA)
+Claim: Well, you look at the highway system, you look at the rails system, we haven't built a tunnel in New York City since the 1920s and the 1930s. China's throwing these things up overnight, bridges, subway systems, you name it. Now, I don't want to idealize China's system, but I do want to give credit where credit is due, and it is unfair to say that no benefit is derived from the amazing development of the last 30 years.
+
+### Moderator
+Claim: Does this side concede that point?
+
+### Scientific Advocate (SA)
+Claim: No, I don't concede that point at all.
+
+### Moderator
+Claim: Ian Bremmer, do you want to come in on this?
+
+### Scientific Advocate (SA)
+Claim: I wouldn't say that-- to say that Chinese get nothing of course is ludicrous. That's like comparing the United States to Greece. We don't want to do that, right? Clearly Chinese citizens are doing better on average than they were before. There's no question, although if you ask where a lot of the profitability from that development has gone, it's gone to the United States. I mean, you look at Apple, you look at the manufacturing of the iPad, $9, $10 is captured by China, about 60 goes back to Apple and its shareholders, most of whom are American. I like that trade, right? I mean, there's a reason why American multinationals actually do better, but we have a problem in the United States with an increasingly large percentage of Americans, right, a book that I think you probably have read by Charles Murray, "Coming Apart," increasingly, they're not doing as well. They don't have as much opportunity. We have to address that because if not, long term those folks are going to get upset. But they're not going to be as upset as the hundreds of millions of Chinese that will eventually face a crash and will have no opportunity, no option to really revolt against--
+
+### Moderator
+Claim: Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: You talk about the profits of the U.S. corporations, we'll see how real those profits are when interest rates go up and they're facing an entirely different environment.
+
+But you keep talking about living in America, yes, I'm not saying that it's not better to live in America. We still live pretty good because we're able to borrow all this money. We have a phony economy that is perpetuated based on debt. When this debt bubble bursts and this whole thing comes toppling down, it's going to be a whole different story. I don't doubt that people would want to live in America, given our lifestyle. But that's going to change. You're not looking at what's keeping it going. You're not looking at all this debt. And you're saying, "Well, the Chinese are going to throw good amount of money after bad forever because they have no choice." They do have a choice. The more good money they throw after bad, the more money they're going to lose, and the Chinese are figuring this out.
+
+### Scientific Advocate (SA)
+Claim: The Chinese are throwing good money after bad and not just in the United States; they're doing it in China, too. They're building infrastructure, more and more infrastructure that Chinese people can't use but they have to keep the growth going.
+
+### Conspiracy Advocate (CA)
+Claim: It's better than buying treasuries.
+
+### Scientific Advocate (SA)
+Claim: --comparatively horrific.
+
+I mean, I don't know, we can have a long debate about that.
+
+### Conspiracy Advocate (CA)
+Claim: I would prefer they did neither and just let their citizens keep their money.
+
+### Scientific Advocate (SA)
+Claim: Okay, but that--
+
+### Conspiracy Advocate (CA)
+Claim: --unsustainable U.S.--
+
+### Scientific Advocate (SA)
+Claim: Second point, if you want to talk about Chinese profitability compared to American, look at the few-- the dozens of firms in China that are supposed to be some of the best in breed that have wanted to come to the United States to list. And they list, and they-- and we get inside the books, and we realize they're completely cooked, and they get in massive trouble. And even you know sort of billionaire brilliant folks like John Paulson, who figured out the big--
+
+--absolutely lose lots of money on that. But yet we do not have-- these companies are not anywhere near as sustainable or profitable as the Chinese government makes them out to be, and that is a fundamental structural problem.
+
+### Moderator
+Claim: Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: Well, the real question is sustainability of our own enterprise. Ian, you've just written a wonderful book called, "Every Nation for Itself," and I thought it very interesting to read the following. You talk about the serious psychological toll in this country of the financial crisis and the near economic collapse.
+
+And you say, worse still is the fear that America’s leaders can’t fix these problems because the U.S. political system is broken beyond repair. Is it?
+
+### Scientific Advocate (SA)
+Claim: No, that’s the fear that they believe that.
+
+### Conspiracy Advocate (CA)
+Claim: And you don’t, you believe that we will regain our sense and be able to restore reason to our decision making and pull out of this nadir of--
+
+### Scientific Advocate (SA)
+Claim: I thought it was interesting that you brought up the fact that the United States government is trying to get this 1.2, 1.4 trillion in reductions passed. The Democrats and Republicans had a basic agreement about it, some of it was Iraq, some Afghanistan, some was going to be increased airline fees, some was going to be reductions in agriculture subsidies that was fairly easy to do. And then at the last minute, they decided not to do it. But in part the reason they decided not to do it is because they’re not being pressured. In Europe-- one second-- I know you’re excited. In Europe they are being pressured and they’re finally acting. And it got really ugly before it had to happen. The unfortunate lesson that we are all learning since 2008, the world is getting faster.
+
+Governments are not getting faster. And that’s true in the United States. We’re kicking the can. That’s true in Europe; they’ve done a lot of kicking the can. Japan. But the largest can getting kicked hardest down the road is the Chinese can, and that’s by far the one I’d be most worried about.
+
+### Moderator
+Claim: Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Well, if you, first looking at your discussions about debt. We didn’t have any serious discussions. That trillion dollars in cuts was an illusion. It was spread out over 10 years, so it’s 100 billion a year in almost a $4 trillion budget and it was simply reductions in the proposed rate of increases. So we weren’t even talking about dealing with the problem. But you are right, we don’t have to deal with it because both the Federal Reserve continues to print dollars and buy treasuries and the Chinese central bank and foreign central banks continue to print their own currencies and buy dollars and buy treasuries. So we are the ones that are literally living on borrowed time. You’ve got to think, what’s going to happen in America when like Europe, we are forced to deal with the enormity of the consequences.
+
+If you look at our federal debt, which is the funded portion, is financed like a sub-prime mortgage with a teaser rate. How is the U.S. government going to handle 5 or 10 percent interest rates on this national debt? How is the banking system in America going to handle it when all their assets are imploding, their long-term government bonds and mortgages that they have on their books and they can’t get cheap money anymore from the Fed. What happens to our housing market?
+
+### Moderator
+Claim: Minxin Pei. There’s a lot of pessimism about the U.S. on this side. That’s a fair way to argue this, because this is a two part argument, China up and U.S. down. So they’re more heavily I would say on U.S. down than China up. You guys are--
+
+### Scientific Advocate (SA)
+Claim: Well, people inside China are not very optimistic either about the country’s future prospects. The high growth period for China is over. I urge you to read the World Bank’s latest report on China called China 2030. It’s free for downloading on the World Bank’s website. This is what it says. From now on until 2030, if China does well, its average growth will be somewhere between 6 and 7 percent.
+
+And if China does not do the set of reforms the World Bank recommended, probably China cannot even achieve a much reduced level of growth because China is coming into an era where savings will be a lot lower. The population will be a lot older. The environmental costs will be a lot more visible if you-- I’m sure a lot of you have been to Beijing. In the future when you’re in Beijing, you should bring along a space suit.
+
+### Moderator
+Claim: What is the message that’s getting out to the developing world? Who do they want to be more? Do they, do developing countries want to be us or do they want to be China? I’ll put that to either side who wants to take it. Orville Schell, why don’t you take it?
+
+### Conspiracy Advocate (CA)
+Claim: Well, I think it’s interesting, it’s still, the United States has tremendous luster. I mean it is a great dream machine and we have a great country and many Chinese would like to live here. But what is interesting in the last few years is the number of Chinese who’ve gone home.
+
+And they’ve gone home because they see opportunity. They feel-- anyone who’s been to China lately feels an amazing sense of energy. And I would have to say that these great American virtues of get it done, whatever it takes, can do, I feel, and I’m surprised, more and more, have been incarnate in China and less and less in America.
+
+### Moderator
+Claim: Ian Bremmer, same question.
+
+### Scientific Advocate (SA)
+Claim: Yeah, I don’t think that China has that kind of luster internationally. And it’s part because the Chinese system is really one that is focused on China, period. One of the major problems China has is that for them to build the state capital system, they have to support China and the Chinese market. Where the system that the United States supports is really one of having as much access to global competition in markets as possible. And ultimately, that’s a much more efficient system. The United States corporations benefit from it. We’re the ones who are pushing the WTO. We’re the ones who have been pushing the Doha around. When that doesn’t work, we go for the TransPacific Partnership, the TPP.
+
+We want broader markets. The Chinese are saying no. For 4G, we want a Chinese standard. Now, I understand that they’d rather have a Chinese standard than an American standard, but the point is that the Chinese are saying we want a Chinese standard as opposed to a global standard. That-- other countries don’t like that. They want more efficiency, and from that perspective, the Chinese incursion into the global free market-- my last book was called “The End of the Free Market” not because I thought the United States wasn’t going to have a free market anymore but because I thought that the rise of China as the world’s second largest economy eroded what had been global free markets and competition and actually poses an enormous problem for third-party countries. As China gets larger, that challenge grows. And so, not only the domestic challenges, but they will have greater international challenges.
+
+### Moderator
+Claim: I want to go to audience questions now. And what will happen is if you raise your hand, I’ll point to you. If you can stand up, tell us who you are, and a microphone will come to you. Hold the microphone about this distance away from your mouth so that the radio broadcast can hear you quite clearly.
+
+And I really urge you to keep this on topic, to look at what the motion is, to figure out whether your question actually gets these guys talking about something that focuses on the motion itself. And I just need to say this for radio: We are in the question and answer section of this Intelligence Squared U.S. debate. I’m John Donvan. We have two teams of two debating this motion: "China does capitalism better than America.” Questions from the audience. In the front row. I just want to say if you’re sitting in shadow and if you can’t see the numbers on your wristwatch, I can’t see you. So, if you want to ask a question, if you could step forward down the stairs and I’ll try to call on you from there. Sir?
+
+### Moderator
+Claim: I’m Norbert Swisslocki I lived in China for five years. The Chinese workers are known for their hard work. This is a question on labor. To what extent does the labor market in China fuel Chinese economy whereas the labor market in the United States seems too thwart it?
+
+### Moderator
+Claim: Minxin Pei, why don’t you take that first. Then we’ll come to--
+
+### Scientific Advocate (SA)
+Claim: Okay, the labor market in China is still not as free as it appears to be. What China has done in terms of making its growth faster is to move a lot of labor from agriculture into the cities. The moment that happens, automatically, they produce a lot more because that’s urban areas, their jobs actually pay them more. So that’s one. But in terms of labor mobility, rural migrants in China still suffer a lot of discrimination, because if they move to cities, I’m sure some of your workers have experienced-- they do not enjoy the benefits of urban residence. For example, they have to stand there; they cannot enroll their kids in public schools.
+
+They have to send them to substandard private schools. And they do not enjoy any retirement pension protection. That’s available only for state workers.
+
+### Moderator
+Claim: Minxin, how is that statement ammunition for you on this motion?
+
+### Scientific Advocate (SA)
+Claim: For the motion, which is that if you look at the labor market, per se, you would say China’s labor market is not as free, as well developed, or even regulated than the U.S.
+
+### Conspiracy Advocate (CA)
+Claim: I would argue that our labor market is hardly a bastion of freedom either. I mean, first of all, we have a minimum wage law that effectively makes it illegal to hire a pretty sizable chunk of our population that can’t get a job. But even for the Americans who are employed, you have the government dictating to employers all sorts of criteria upon which they have to base their decisions on who to hire and who to promote, and there’re all sorts of mandates that, as an employer, you are required.
+
+You have to do this, you have to do that, at often great expense to yourself. So, I don’t think you have a lot of freedom in the U.S. labor markets. There are so many different ways you can be sued as an employer in this country that a lot of people do what they can to avoid hiring people because they don’t want to get within the crosshairs of the government or the legal system that has sprung as a result of all these mandates. So, I would think that if you’re an employer in China and you’re hiring people, I don’t think that you have to worry about that as much as an employer in America, that you’re going to be sued by your employee because you, you know, you passed them over for a promotion or maybe you didn’t hire somebody and they want to sue you and claim it’s because you’re, you know, you’re handicapped or you’re a different race. I think you have more freedom there. And to try to-- you know, I mean, I don’t even want to hold up--
+
+### Moderator
+Claim: And to nail it to the motion, you’re saying, though, that those conditions make it a better form of-- a more efficient form of capitalism.
+
+### Conspiracy Advocate (CA)
+Claim: Well, I think the fewer rules that you have-- I think labor, employees and employers should be free to negotiate with one another over the terms of their employment without any interference whatsoever from government.
+
+### Moderator
+Claim: Right in the center, sir, very center. And no-- yeah-- the person who was standing should continue to stand and wait for a microphone.
+
+### Moderator
+Claim: Thank you very much. My question is for the panelists in favor of the motion. While you’re arguing the same conclusion, it seems to me that your premises are at odds with each other if I understand them correctly. On the one hand, Mr. Schell seems to say that for America to do capitalism better we need more top-down planning by government presumably, while Mr. Schiff if arguing that we need much less of that and more undirected bottom-up economy. Could you reconcile the drivers behind your conclusions?
+
+### Moderator
+Claim: I want to see this.
+
+### Conspiracy Advocate (CA)
+Claim: The complex answer to your question is no.
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, I guess it would be a debate within a debate, but-- But yeah, I mean, I don’t think the solution is for America to become less free and to try to emulate what China does wrong, but to pick up on what China’s doing right. And I think China needs to do the same thing, not follow the poor example of modern America and all the things that we’ve done to wreck our capitalist economy but to turn back the clock and to try to incorporate the system and the values that were enshrined in the Constitution by the framers. I think that is real capitalism.
+
+### Moderator
+Claim: You know what’s interesting? I’m-- I like to sort of have a gender balance. I don’t see a single woman raising her hand anywhere. And I-- am I wrong? Shout out. Thank you, I heard that. I do see, right down in front.
+
+### Moderator
+Claim: Hi, my name is McKenna Webster I was curious that no one mentioned human rights once this evening. And I’m wondering if you think that that plays a role in a debate on capitalism?
+
+### Moderator
+Claim: Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: You know, I think the United States has, over the last decade, been not exactly exemplary as an evangelist for human rights, which has stilled our voice to some degree. This is an aspect of the Chinese system which is not exemplary. And we don’t need to and wouldn’t want to imitate it. But having said that, I think we have to be honest that authoritarian capitalism has been able to do things that a freer form of capitalism sometimes fails to be able to do.
+
+### Moderator
+Claim: Ian Bremmer.
+
+### Scientific Advocate (SA)
+Claim: I mean, God forbid you’re forced to hire disabled people, right. Yes. But we can’t compare human rights in the United States with China, obviously.
+
+The U.S. still makes-- does a lot of things wrong. That’s like this broader debate. The U.S. does a lot of things wrong on capitalism but still vastly more effective than China. The U.S. has a lot of problems in human rights, but China isn’t in the same league, right, not on the same league sheets. Let’s be very clear. And while I think that a certain level of human rights abuses facilitates rapacious capitalism, especially in the short term, in the long term, it will bite you in the hiney. And there are other places that you get problems, too. I did talk about transparency and the fact that places like Facebook and Google and Twitter are a problem for China because they want to own that data. They want to control it. They want to shape it. They want Chinese state Internet just like they have state capitalism. That’s a problem for them. When I think about responses in terms of general transparency, in the United States you do actually know largely what your officials are up to. Solyndra was a disaster. It was a bad thing for the United States. Peter and I will agree on that. But we found out about it. And we found-- on balance, people got egg on their faces.
+
+In China, they don’t want to tell you about Solyndra. You don’t have media that’s getting inside the dirty laundry of serious Chinese officials. They are engineers that run the country. They are also billionaires. Let’s remember that, okay. And that’s the problem of the lack of human rights and transparency in China. It doesn’t facilitate creative destruction. It doesn’t facilitate allowing the Chinese people to take advantage of a free market. Maybe the Chinese people would be just as good capitalists as we are, but unfortunately, their system doesn’t allow it to be. And that’s a problem.
+
+### Moderator
+Claim: Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: If you’re going to get into the argument that if a government can require or dictate to a private employer and say, “You have to hire somebody with a disability,” that doesn’t create rights, that diminishes individual rights. What you're doing is you're creating a special privilege for one particular protected class.
+
+And when you do that, you diminish freedom, and you diminish liberty in the country, but apart from that, you create all sorts of problems for the businesses because now the businesses have to spend all sorts of money to protect themselves against lawsuits. And in many cases, people that would have tried to bend over backwards to hire the disabled, now they won't touch them because they're too afraid of getting sued.
+
+### Moderator
+Claim: To the question as it was put, then, does human rights have any relevance to this debate about capitalism, you're saying, yes, it does, it gets in the way of capitalism.
+
+### Conspiracy Advocate (CA)
+Claim: Well, I mean, if you're-- are you differentiating-- no-- are you differentiating human rights from individual rights? I mean, I believe in individual freedom and I believe in rights, and it certainly is part of the discussion. And the question is where do you have more individual freedom or individual liberty? Do you have more right now in China or do you have more in the United States? And my argument earlier is that the typical person in China is going to surrender less of his economic output to his government in the form of taxation, and I don't think his day-to-day life is going to be as impacted as heavily as they are in America as far as regulations.
+
+But, we have-- as far as trial, there are political prisoners in the United States, too, it's not just in China, I mean, my father's in prison for politics I believe, in this country.
+
+### Moderator
+Claim: There's a gentleman wearing a-- I believe a green necktie. Everybody is going like this now. Yes, sir.
+
+### Moderator
+Claim: Barry Belgeride--
+
+### Moderator
+Claim: I just need to get the microphone to you. Thank you.
+
+### Moderator
+Claim: Barry Belgeride considering that our government owes 100 percent of GDP, spends 40 percent of GDP, just took over one-seventh of the economy in the face of health care, owns a big part of our biggest heavy equipment manufacturing, which is Detroit, and regulates very heavily the financial industry, do we truly have capitalism in this country?
+
+### Conspiracy Advocate (CA)
+Claim: Well, I already said we don't. I mean, we're not even close to having capitalism. We have-- if I was trying to figure out a word that described it, it's fascism is really what we have. those of you who are-- don't understand what it is, it's not fascism like Hitler or Mussolini, but it's the economic system. It's a socialist system where the government takes over the means of production through taxation and regulation. And that's what we have. I mean, any business, I own my business but the U.S. government makes a lot more money from my business than I do. I mean, it's not even close. The amount of money I earn running my business is tiny in comparison to the taxes the government collects from my business. So the government has effectively nationalized my business and--
+
+### Conspiracy Advocate (CA)
+Claim: Peter, may I respectfully say that the subject of our discussion--
+
+### Moderator
+Claim: Orville Schell. Your teammate, Orville Schell, is speaking.
+
+### Conspiracy Advocate (CA)
+Claim: --is really not this. What we're really discussing is which economy does marketization best.
+
+### Moderator
+Claim: Okay. Well, Ian Bremmer decided to just let all of that happen--
+
+### Scientific Advocate (SA)
+Claim: Yeah.
+
+### Moderator
+Claim: --and now responding, Minxin Pei.
+
+### Scientific Advocate (SA)
+Claim: Well, I'll say, to use debt as a measure of capitalism is not right because private companies can borrow 200 percent of their equity and still be private. I think the best measure of whether a country is capitalist is to look at the contribution to GDP from state-owned companies. And here the U.S. cannot even compare. In China state- owned companies contribute 40 percent to GDP. In the U.S., I don't know about GM-- the U.S. is getting out of GM, incidentally. Now, probably little less than 1 percent. So rest assured, we are still very capitalist.
+
+### Conspiracy Advocate (CA)
+Claim: Well, you can't compare though government debt to corporate debt. If a corporation borrows, it does so to increase its productivity. It's acquiring income generating assets that enable it to service that debt and retire the debt, so that's productive debt. When you're talking about the federal debt, you're talking about money that has been borrowed and spent on consumption on government.
+
+### Scientific Advocate (SA)
+Claim: No, we are--
+
+### Conspiracy Advocate (CA)
+Claim: And there's no means of repaying it. You're looking at--
+
+### Scientific Advocate (SA)
+Claim: The federal government is not the consumer. It is a producer of public goods.
+
+### Conspiracy Advocate (CA)
+Claim: It doesn't produce. It's a giant consumer.
+
+### Scientific Advocate (SA)
+Claim: Of course.
+
+### Conspiracy Advocate (CA)
+Claim: What is it producing?
+
+### Scientific Advocate (SA)
+Claim: Look, when your company goes abroad and invests, where is the security it gets?-- security services it gets from? I think the Pentagon for one thing actually does something in return for the U.S. people.
+
+### Moderator
+Claim: Orville Schell, do you want to butt in this before we move on?
+
+### Conspiracy Advocate (CA)
+Claim: No.
+
+### Moderator
+Claim: Another question, sir.
+
+### Moderator
+Claim: Hi, my name is Guy Wiggins I just wanted to hear from the panel their thoughts on how the one-child policy has affected capitalism in China and what the future means when you have far more men than women, and how that's going to basically I think lead to all kinds of irrational inefficiencies in the market.
+
+### Moderator
+Claim: I wondered how you were going to turn that to the motion. That was very good. That was very good. Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: Here I would say the advantage is emphatically on the American side because we have immigration. China does not and China has one of the most rapidly aging populations. And the lower reaches are not being replenished with the one-child policy, so it’s going to have a huge burden of taking care of elderly people and not have younger people coming in on the bottom to support them. That’s going to be a giant problem.
+
+### Scientific Advocate (SA)
+Claim: I agree with Orville, not surprisingly. And furthermore, it also leads China to export not just capital when they try to extract commodities for example in sub-Saharan Africa, but also labor because they need to do something with those men. That’s a problem for African countries that want to have employment in addition to Chinese cash. And eventually it leads to a backlash. Again, Chinese state capitalism is a problem not just because of domestic inefficiencies but because of the backlash it creates globally. That’s one we haven’t started to experience yet because China isn’t big enough yet. But as it gets bigger, it’s going to get squeezed.
+
+### Conspiracy Advocate (CA)
+Claim: I think a lot of that is going to be taken care of liberalized immigration.
+
+I think women are going to come into China, particularly when the Chinese standard of living is allowed to rise based on a stronger RMB and when the Chinese no longer have to devote such massive resources to propping up the U.S. economy and their own economy is that much more prosperous, I think you’re going to see more immigrants coming into China.
+
+### Moderator
+Claim: Can you, just because you used the term to our radio audience, RMB.
+
+### Conspiracy Advocate (CA)
+Claim: The currency, the Chinese RNB, the yuan.
+
+### Moderator
+Claim: Ma’am. Fourth row.
+
+### Moderator
+Claim: I want to ask--
+
+### Moderator
+Claim: Can you start again, thanks.
+
+### Moderator
+Claim: Before we get into the debate, how do we define capitalism, we talk about it, elements of--
+
+### Moderator
+Claim: Ma’am, can you, we missed a little bit of the beginning. And just for the broadcast, we need also. I’m going to stop talking in a second and then if you can start. Thanks, go ahead.
+
+### Moderator
+Claim: I want to ask each panel how you define capitalism. You talk about, I think different elements that contribute to capitalism or obviously America does something better and China does something better.
+
+If you keep comparing one to one, we never get to a conclusion. How do you-- China does five things better than America, America does five other things better. How do you define which one
+
+### Moderator
+Claim: Okay rather than go one, two, three, four, I just want to let each side pick somebody to answer that question, assuming you agree with each other. Peter Schiff, do you take a side, or take a side for?
+
+### Conspiracy Advocate (CA)
+Claim: Well, I mean, capitalism to me is where the means of production are controlled completely privately. Where the factors of production, production, land, labor and capital are allocated through a market where prices for all goods and services, wages, interest rates, are set by the market. As opposed to a centrally planned or Socialist economy where a lot of these decisions are made by bureaucrats and where the means of production is being micro-managed from a centrally planned authority. Where they’re making decisions based on politics, this should be produced; that should be produced; this should be favored, that should be favored.
+
+And whether the government does it directly, like a Communist would, by nationalizing the means of production and actually owning them, or rather it takes a different route by controlling them through the tax code, through what it taxes and what it subsidies. And how it regulates and what businesses it favors and what it punishes. When you start doing that, you don’t have capitalism, you have something else.
+
+### Moderator
+Claim: So by that definition, neither China nor the United States is capitalist.
+
+### Conspiracy Advocate (CA)
+Claim: Well that’s what I started. I said the question should be, which question does it worse? Not which one does it better.
+
+### Moderator
+Claim: Minxin Pei.
+
+### Scientific Advocate (SA)
+Claim: Well, I cannot have said it better. I think that’s the best description of the Chinese economic system. The part about what capitalism is not. But I would add one more thing. I think modern capitalism also has a legal system. The rule of law. Without the rule of law, there can be no capitalism. And China does not have rule of law.
+
+### Moderator
+Claim: I’ll just let the mic come to you. And name please.
+
+### Moderator
+Claim: Yeah, my name is Dan O’Connor, I’m running for U.S. Congress here in New York City as a Democrat. One hundred thousand Chinese people in my district. I lived in China for six years and I think in order to engage in this debate, we should define the term capitalism.
+
+I think Peter did define that term. I do think you’re all very erudite in your-- and very articulate in comparing the two systems. But I think in terms of capitalism, Peter did define that. But also, I don’t think it’s fair to use World Bank figures because they’re not on the ground.
+
+### Moderator
+Claim: Sir, I need you to get to a question.
+
+### Moderator
+Claim: Okay. Actually, I guess to get right to the question. I’d like to hear a definition of capitalism from everyone.
+
+### Moderator
+Claim: Okay, we just did that. I think we-- we’ll move on then. Right here sir. Wait-- hubbub down. Thank you.
+
+### Moderator
+Claim: Joseph Conzelman
+
+My question is as China, like other low and mid-income countries, moves up the value chain, it’s going to eventually have to start to turn ideas into products instead of just assembling products. How do you expect that to occur in China, given the current status of intellectual property rights and in other related terms like that where it’s just very hard to create ideas and own them in China?
+
+### Moderator
+Claim: Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: This is a huge problem for China. And China is creating intellectual property, and as it does, I think it’s going to bring itself to heel. One hopes it will, and it simply must or it can’t be a world player. But China must move up the value chain, because the labor is getting more expensive. They’re just lower down than we are. America doesn’t do much manufacturing anymore, not as much as it used to. It’s had to move up the value chain into knowledge and information technology. That’s China’s challenge too.
+
+### Moderator
+Claim: I think the question did its work for you.
+
+Do you-- do you want to comment on that.
+
+### Scientific Advocate (SA)
+Claim: No, I think that it’s absolutely a problem, and I guess I would say that I’m more skeptical than Orville they’re going to be able to do it. I see the problem as you do, in part because the educational system doesn’t support it. They create a lot of engineers, but they don’t create a lot of entrepreneurs and a lot of innovators because they’re still teaching by rote as opposed to teaching students to actually question, you know, sort of what’s behind. And there’s a reason why so many folks that create things in the United States are college dropouts or, you know, sort of came from these kind of unusual background systems. They really want to know not just what four times four is but also why it works that way. That doesn’t work well within authoritarian system. Again, human rights are a part of that. Transparency is a part of it. I think when you look at the U.S. system, you have to put it all together. It works in part and it’s resilient in part because it’s so integrated, the political and the economic together. You can’t take the politics out of the Chinese economic system. If you could, they’d be doing much better right now and they’d have a longer term trajectory that I’d be much more supportive of.
+
+### Moderator
+Claim: What we’re debating at this Intelligence Squared U.S. debate, China does capitalism better than America. I’m John Donvan, your moderator.
+
+We have four debaters, two teams of two debating this motion. And we’re taking questions from the audience.
+
+### Moderator
+Claim: Thanks. I’m Peter Goodman with the Huffington Post and former Shanghai bureau chief with the Washington Post. I want to get your thoughts on how the growth slowdown plays out in China. Does that cause the state to double down on the state-owned sector and hang onto control of the state-owned enterprises, or does it tend toward more liberalization in an attempt to get a little bit more vibrance out of the private sector?
+
+### Moderator
+Claim: Are you putting your question to either side?
+
+### Moderator
+Claim: Anybody who’s game. I’d particularly like to hear Ian Brenner and Minxin Pei and Orville, but anybody who wants to jump in.
+
+### Moderator
+Claim: Okay. Minxin Pei.
+
+### Scientific Advocate (SA)
+Claim: As the World Bank’s prognosis shows that the slowdown is coming no matter what. The debate is when it’s going to happen and the speed at which the slowdown is going to happen.
+
+What the Chinese government is going to respond-- there are two paths. One is to double-down and to do the things they’ve been doing, that is a lot of investment in infrastructure that’s going to yield increasing returns and growth will continue to slow. And that will be a dead end. The other will be a very different trajectory; that is, to really become capitalist, which means to increase domestic consumption, to allocate capital much more efficiently, incidentally, in China, the capital market as we know it does not exist. Most of the savings is allocated through the state-controlled banking sector. So, they’ve got to change that. And they’ve got to privatize state-owned enterprises-- lots and lots of things that can be done to avert that kind of dramatic slowdown. But that means China will have to do capitalism.
+
+### Moderator
+Claim: Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: I don’t think he wanted my--
+
+### Moderator
+Claim: No, you’re here. You’ve got the right.
+
+### Conspiracy Advocate (CA)
+Claim: Well, I think, ultimately, and this is the bed that I’m making, the Chinese are going to make-- the biggest problem that is impeding economic growth in China is their currency peg and the misallocations of resources that are being created in that economy by their desire to prop up the dollar so that American consumers can keep buying Chinese products when, in effect, we’re too poor to buy those products because we have nothing to export to pay for them. And I do believe that the Chinese are going to see the error of their ways. And when they allow this change to happen, when they allow an appreciation in the value of their currency and they allow their citizens to more fully reap the rewards of their hard work and their savings, I think you’re going to see a much greater growth trajectory in China. And I think a lot of some of the problems that we’re discussing here will go away as the Chinese economy is allowed to prosper and the government gets out of the way and lets it happen.
+
+### Moderator
+Claim: Right down in front here.
+
+### Moderator
+Claim: My name’s Miles London My question has to do with capitalism implies that there is a capital market. The fact that the U.S. and Europe for that matter has promoted the idea for the general-- for the better of the general good to haircut bond holders in order to save stock holders, is that driving the U.S. capitalism to be more like the Chinese capitalism as has been described?
+
+### Moderator
+Claim: No one’s excited. Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Well, you know, in the original.
+
+### Moderator
+Claim: Oh, all right. Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Well, you know, in the original Wall Street bailouts, it was the stockholders that, in many cases, absorbed the losses. The bond holders got bailed out. But, to your point, in the long run, we are going to wipe out the bondholders, and we’re going to do it through either inflation or default.
+
+Most likely it will be inflation. I mean, it could be default, but the more likely outcome is that we simply print so much money that the bondholders are deprived of their purchasing power. And that is not a free market. A free market would have sound money. It wouldn’t have the government issuing a currency by fiat and then deciding to punish savers at the expense of debtors, which is going to happen in the United States, especially when you realize that the U.S. government, being the largest debtor of us all, is going to benefit more from inflation than any other debtor.
+
+### Scientific Advocate (SA)
+Claim: I think there’s a broad question here that is very interesting, the question of is the United States going to have become a little bit more like China in this environment as the global market becomes a little bit less free. And I think that part of the reason I’m skeptical it will happen is because the U.S. government is so badly set up to do it. I mean, I can’t even write an op-ed in the Wall Street Journal and include the words “industrial policy” because it’s just a no-man’s land.
+
+Nobody wants to talk about it. People in the State Department have said, “Oh, we can’t talk about industrial policy even though it’s kind of what we’re thinking about.” And so we say economic statecraft. U.S. corporations don’t want to coordinate with their competitors. They don’t want to talk to the U.S. government on this stuff the way that in Japan you would if you’re in the Keidanren. Japan has many-- the ministry of economy of trade and industry. In the United States, we’ve got Commerce, which is not exactly where we keep our best bureaucrats. And then we’ve got USTR, which is separate actually and much more capable. You’ve got Energy, which is separate. You’ve got the State Department which owns a lot of this but has very few people who have the background in the private sector, so the U.S. is very badly set up to do state capitalism, and I think that they won’t. But I do think this is going to become an issue we’re going to debate a lot more in this country.
+
+### Moderator
+Claim: Yes, Orville.
+
+### Conspiracy Advocate (CA)
+Claim: Quick comment. You know, I think what Ian said is very true.
+
+I was recently on the Vice President Xi's visit. And we went to California, and I was there with Governor Brown to meet him and meet a bunch of governors. Every one of those governors and party secretaries came with 10 guys in black suits, you know, for trade, for energy, for manufacturing. Brown had me, you know, a non-paid friend. And it was very evident to me that the state capitalism of China had this incredible sort of plug-in mechanism and we didn’t have a socket. And I think that’s going to have to change if we want to do business with China. These guys wanted to do business. They love California, and they can’t find a way to do it. We need it.
+
+### Moderator
+Claim: Okay, we have time for one more question. And last question, sir, blue shirt.
+
+### Moderator
+Claim: My name’s-- hello, my name’s Ed Saper First of all, thank you all for being here tonight. It’s pretty striking to me we’ve been talking about capitalism, I haven’t really heard much discussion about entrepreneurship.
+
+So, I’d be curious to hear from the panelists what’s your view of the link between entrepreneurship and capitalism and which country does it better?
+
+### Moderator
+Claim: Orville Schell.
+
+### Conspiracy Advocate (CA)
+Claim: Well, I have to say, I mean, this is something America does exceedingly well. This is the part of American capitalism that really works-- our innovation, our scaling-- our bringing stuff to market, scaling it up, Silicon Valley. And China does this less well, but I have to say I’ve been around this block for a number of decades. And what I see happening in China is a lot of incredibly interesting self-made entrepreneurs bubbling up from underneath. Where they go, where the private sector of the economy goes, can it become the majority sector? That remains to be seen. But this is a very vibrant place. Don't write it off for one second.
+
+### Moderator
+Claim: So there is innovation. There is innovation.
+
+### Conspiracy Advocate (CA)
+Claim: There is innovation, not full spectrum.
+
+They don't have Nobel Laureates yet at this far end, but there is innovation. These guys are crafty. They are good. They are smart, and boy they're on a roll.
+
+### Conspiracy Advocate (CA)
+Claim: Entrepreneurship is a-- we think about somebody starting at a high tech company, I mean, an entrepreneur could just be a guy that goes out and, you know, starts a fruit stand or a supermarket. You don't have to be innovative. But what you have to do is be able to take control of people and property and put them together and run a business in a way to generate a profit. And there are a lot of entrepreneurs making a lot of profit in China. They're not, not there. There are a lot of them, and the population of entrepreneurs is growing, and are self-made millionaires in China and more and more of them are being created, and that is going to continue. And that's a function of gaining more freedom and moving away from a centrally planned economy and grabbing more of free market principles.
+
+And as I said earlier, I think that as a young person in China wanting to start a small business, whatever it is, I think that young person in China is going to have a better chance of succeeding than his counterpart here. I think there'll be fewer obstacles placed in his path--
+
+### Moderator
+Claim: Okay.
+
+### Conspiracy Advocate (CA)
+Claim: --by government to that success.
+
+### Scientific Advocate (SA)
+Claim: Okay.
+
+### Moderator
+Claim: Minxin Pei.
+
+### Scientific Advocate (SA)
+Claim: I think that young person would be so shocked to hear this because this-- these are the facts, if you are a private entrepreneur in China you cannot go into-- you cannot open a private bank. You cannot get into telecom services. You cannot get into energy. You cannot get international resources. You cannot get into 14 other very important sectors because these are the sectors reserved for state owned companies. You cannot get bank loans. You don't have secure property rights. If you get into a dispute with another entrepreneur, with another businessman, whether you win that dispute does not depend on whether you have a good case, it depends on whether you know the communist party secretary in charge of the legal system.
+
+## Round 3
+
+### Moderator
+Claim: And that concludes round two of this Intelligence Squared U.S. Debate. And here's where we are. We are about to hear brief closing statements from each debater in turn. They will be two minutes each. Remember how you voted before the debate because this is their last chance to convince you that they have argued best. And you're going to be asked to vote again once they finish these statements a few minutes from now, and you will pick the winner by doing so. But, first, on to round three, closing statements-- closing statements by each debater in turn. Our motion is, "China does capitalism better than America." And here to summarize his position against the motion, Ian Bremmer. He is president of Eurasia Group and author of the upcoming book, "Every Nation for Itself: Winners and Losers in a G-Zero World."
+
+### Scientific Advocate (SA)
+Claim: Thank you very much. My colleague partner, Minxin, just talked about all the things you couldn't do to set up in China in terms of entrepreneurship, but he didn't mention fruit stands. you can, and perhaps there's a Tunisian model in the future for China. I think it's an interesting question. Look, I thought I would end with the future. You know, one of the things the United States does better than anyone else in the world is creative destruction. I like independent bookstores, but I tell you, when Amazon came along they got smashed. That may not be a society that you all want to live in. You may like independent bookstores. But it’s a society that does capitalism better. We see that all over the place. Creative destruction is what powers the American market. The single biggest game changing innovation in the world today is fracking and unconventional oil, that is changing the nature of global energy, it is overwhelmingly dominated by U.S. universities and research, U.S. entrepreneurs-- a bunch of Canadians in there, too, don't want to forget my friends to the north-- and U.S.-based multinational corporations.
+
+This matters. I know that the Chinese are doing more patents. They're small, they're engineering patents, there's a slight improvements on processes. Don't take away from them. They're very smart in China. They're being educated well. They're great. But if you want to talk about the game changing stuff that you want to bet on that's going to make the world work over the next 20 years, overwhelmingly that stuff is being driven in the United States of America. I don't know if it's Bill Gates's new battery technology that's going to work and be the next game changer, it's going to be in biotech, it's going to be in nanotech, but if you want to make that bet-- and, by the way, the Chinese central bank wants to make it, too-- you're going to make it here. I love the fact that we live in a society as well where broad ideologies can come together, work together, and make lots of money. I applaud the fact that we live in a place that a guy like Peter Schiff can make an enormous coin for himself, and I think you guys should, too. Thank you very much.
+
+### Moderator
+Claim: Thank you, Ian Bremmer. Our motion is "China does capitalism better than America." And now to summarize his position for the motion, Peter Schiff.
+
+He is CEO and chief global strategist of Euro Pacific Capital. He is also author of the upcoming book, “The Real Crash: A Blueprint for a Bankrupt America." Peter Schiff.
+
+### Conspiracy Advocate (CA)
+Claim: Rebuilding. I think part of the problem having this debate at this particular point in time, it would kind of be like having a debate in 2005 over which country does real estate better, the United States or China. Because in 2005, everybody thought it was great in the U.S. with the housing market. Everybody was buying a house, even the people who couldn’t afford them. Everybody had second homes and it was great. But of course it was a bubble and it couldn’t last. And that’s the same thing with the U.S. economy. If you want to look at the U.S. economy and measure it by how much money we spend and how much we consume. You look at some of these statistics that you reference about our competitiveness, when the reality is if we’re so competitive, where are all the products and why do we have a huge trade deficit? I think what’s really happening here is we have a bubble in the entire economy and it is based on excess consumption, excess debt.
+
+The Chinese, they’re not making a big bet on the U.S. treasury market because they want to. It’s because they think they have to. If they can wave a wand and replace all their treasures with gold, they’d do it. The problem is they’re afraid. Because they know if they try to sell, they’ll crush the market. But we are on the verge of this collapse. And it’s because we abandoned all the principles of capitalism that we once had. And these are the principles that China is now adopting. As I said earlier, what’s really more important is the pendulum and the direction in which it’s swinging. Look at where we started from complete capitalism. And China started, they had none of it. Look at how much ground we’ve surrendered and look at how much the Chinese have gained. Is China perfect? Not at all. They still have a lot of progress to make. But they are making that progress. The problem with us is we’re still moving in the wrong direction. And we’re moving in that direction more rapidly. And when we actually have our crisis; when we have a sovereign debt crisis, when the dollar really plunges and we really have to confront the grim reality of our situation, the fact that we’ve been living beyond our means for generations and it has to come to an end, then we can have this debate again.
+
+And I think we’ll have a much different reaction in the audience as to how well America does capitalism.
+
+### Moderator
+Claim: Thank you Peter Schiff. Our motion is "China does capitalism better than America" and here to summarize his position against the motion, Minxin Pei. He’s professor of government at Claremont McKenna and author of "China’s Trapped Transition: The Limits of Developmental Autocracy."
+
+### Scientific Advocate (SA)
+Claim: Does China do capitalism better than the U.S.? We have to add one adjective. China does do a certain kind of capitalism better than the U.S. That’s crony capitalism. And I don’t think Americans want to excel in that category. Because in China, under that kind of capitalism, you are not going to get clean air to breathe.
+
+You’re afraid to buy baby formula because if you have babies in the household, you’d better go to Hong Kong to buy imported baby formula because crony capitalism cannot provide food safety. And if you are part of the elite, crony capitalism serves you really well. Because I’ve read that elites in China are now installing air filtering systems in their cars, in their homes. But what about ordinary people? The vision of capitalism Peter champions is a vision of 19th century capitalism. Thank God America has come a long way and will not go back. Let’s also imagine 20 years from now, which system will be there. I can safely bet, 20 years from now, democracy, democratic capitalism will still be around in the U.S. But can you say this about the Communist Party in China?
+
+In the next 20 years with this kind of capitalism? I’m not so sure. My bet is that it will not be there. So at the end of the day, it will be American capitalism that triumphs over crony capitalism.
+
+### Moderator
+Claim: Thank you Minxin Pei. This is our motion, "China does capitalism better than America." And here to summarize his position in support of the motion, Orville Schell, an award-winning journalist and director of Asia Society’s Center on U.S., China Relations.
+
+### Conspiracy Advocate (CA)
+Claim: Well Minxin, amen. I really want to agree with you and I truly hope you’re right. It would be nice. But who would have thought five or 10 years ago, that we would be sitting here tonight even having this debate, that there would be any kind of equilibrium even to discuss between these two great economic systems. No one.
+
+Twenty years ago, impossible. Thirty years ago when I first went to China, it was unthinkable. China is undeniably in transition. We are a more finished product trying to regain our balance. And I worry about the United States. I think we have a good model, but I think we haven’t played it very well. I think we’ve deceived ourselves. I think we’ve fallen into a lot of self deception about what has made this country great and strong. It’s a combination between regulation and control and wisdom at the top setting an equitable and fair system and a free market with a vibrant set of entrepreneurs and innovators at the bottom. China is still trying to find its balance between these things. I don’t know where they’re going to go. I don’t know how it’s going to end up. I can’t see the future for us or them, but I can see the last five or 10 years.
+
+And I think everyone in this room should acknowledge that despite all its imperfections, despite the human rights questions, despite all of these other things, that what China has accomplished, as counterintuitive as it was, no one could have predicted it, is pretty extraordinary. Something has been working pretty well. We don’t know where it’s going to go in the future, and all we can do is sit and wait. But if we want to fix something, we’re not going to fix China. The question is are we going to fix ourselves.
+
+### Moderator
+Claim: Thank you, Orville Schell. And that concludes our closing statements. And now it’s time to learn which side our live audience feels has argued best. We’re going to ask you to go to the keypad at your seat that will register your vote. And we’re going to get the readout on this almost instantaneously. Our motion is "China does capitalism better than America.” If you feel the side arguing for this motion, this side argued best, press number one.
+
+If you feel this side, press number two. And if you became or remain undecided, push number three. And we’ll lock out the votes almost instantly. And while we’re waiting for them, I’m going to just do a little bit of housekeeping. First of all, Peter, did I get the name of your book wrong. Did I-- I said “The Real Crash: A Blueprint for a Bankrupt America”--
+
+### Conspiracy Advocate (CA)
+Claim: “Rebuilding a Bankrupt America.”
+
+### Moderator
+Claim: All right, that’s a very important missing word. So--
+
+### Conspiracy Advocate (CA)
+Claim: I do want to try to rebuild it.
+
+### Moderator
+Claim: No, no. I’m working on a book, and if like this, somebody got the name wrong, I would want to shoot myself. So, I want to-- I’m going to read--
+
+### Conspiracy Advocate (CA)
+Claim: Actually, it’s the real-- America is-- no, actually, that’s not even it. It’s “The Real Crash: America’s Coming Bankruptcy. How to Save Yourself and Your Country.” That’s the title.
+
+### Moderator
+Claim: Well. Really, that’s the title?
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, that is it. Yeah.
+
+### Moderator
+Claim: Because I would really like to say it correctly so that we can edit this for the radio broadcast.
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, that was an old working title, which got changed. So the title that is actually on the book, that will be on the bookstands in May is “The Real Crash”--
+
+### Moderator
+Claim: “The Real Crash,” right, yeah. I want to say this--
+
+### Conspiracy Advocate (CA)
+Claim: “America’s Coming Bankruptcy. How to Save Yourself and Your Country.”
+
+### Moderator
+Claim: All right.
+
+### Conspiracy Advocate (CA)
+Claim: I’m pretty sure that’s it.
+
+### Moderator
+Claim: I hope so, because I’m trying to memorize it. “The Real Crash: America’s Coming Bankruptcy and how to--
+
+### Conspiracy Advocate (CA)
+Claim: “Save Yourself and Your Country.”
+
+### Moderator
+Claim: --“and Your Country.” All right. Peter Schiff, CEO and chief global strategist of Euro- Pacific Capital and author of the upcoming book, “The Real Crash: Something Really Bad, Something Terrible.” I’m sorry. We’re going to have to edit around it. The title’s not even finished at this point.
+
+### Conspiracy Advocate (CA)
+Claim: No, it’s finished. It’s-- “The Real Crash: America’s Coming Bankruptcy. How to Save Yourself and Your Country.”
+
+### Moderator
+Claim: All right.
+
+### Conspiracy Advocate (CA)
+Claim: Yes. You can buy it on Amazon since you like it so much. You can preorder it.
+
+### Moderator
+Claim: Our next debate is coming up on April 17th, and here is our motion: “When it comes to politics, the Internet is closing our minds.”Speaking for the motion, we’ll have Eli Pariser. He is a pioneering online organizer and board president of MoveOn.org. His book, “The Filter Bubble,” three words, was the-- so easy, so easy-- was the inspiration for this debate. His partner booked is Lawrence Lessig, a law professor at Harvard and one of the country’s preeminent legal scholars. He’s been called the philosopher king of Internet law by the New York Times and the Elvis of cyber law by Wired Magazine. Against the motion, we’re going to have Evgeny Morozov who is a journalist and author of “The Net Delusion.” He bemoans what he calls slacktivism, which is defined by him as the tendency of the Internet to distract the population from any type of serious political engagement. And his partner, Jacob Weisberg, who first joined the online magazine Slate back in 1996-- that’s when people were just figuring out what the Internet was.
+
+And today he is the chairman and editor-in-chief of the Slate Group. I also want to say that we-- I think all of us with Intelligence Squared are delighted by the spirit with which this panel came to this debate tonight, the level of arguments, the fact that you stuck to ideas, that it didn’t get nasty or personal but was thoughtful and provocative. I want to thank you for the way that you’ve conducted yourselves during this debate. And also, to the audience questions that were on point and really did help move this debate along, thank you to all of you who stood up and asked questions. Okay, and so I now have the results. It’s all in. We have asked you to vote twice, once before the debate and once again after the debate. This is the final result on who wins this argument according to our live audience here. Our motion is "China does capitalism better than America.”Before the debate, 17 percent of you were in favor of the motion, 50 percent against, and 33 percent undecided. After the debate, 9 percent are for the motion-- that’s down 8 percent-- 85 percent support the motion-- that’s up 35 percent-- 6 percent are undecided. The team arguing against the motion, "China does capitalism better than America,” wins this debate. Our congratulations to them. And thank you from me, John Donvan, and Intelligence Squared U.S. We will see you next time.

@@ -1,0 +1,12 @@
+{
+  "topic_id": "obamacare",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "In March 2010 President Obama signed into law the Affordable Care Act, the biggest overhaul of our health care system in decades. According to a November poll from the Kaiser Family Foundation, 40 percent of the public would like Congress...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

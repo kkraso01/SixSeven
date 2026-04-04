@@ -40,15 +40,12 @@ Export & Logging -> Optional Analysis -> Results Archive
 ### [output]: Storage paths
 - `output_dir`: Where run artifacts get saved (e.g., `results/`)
 
-### [history]: Context window management
-- `history_mode`: "global_full" (all agents see full transcript) vs "per_agent" vs "memory_only"
-- `history_trim`: How to reduce context size ("none", "rounds", "messages", "chars")
-- `max_rounds_in_history`: Keep only last N rounds to fit context window
-- `include_memory_summary`: Adds compact scoreboard/state summary
-- `max_messages_in_history`: Keep only last N messages
-- `max_chars_in_history`: Keep only last N characters
-- `summarize_if_trimmed`: Add a moderator summary when history is trimmed
-- `highlight_opponent_last`: Re-inject the opponent's last message to keep it salient
+### History Behavior (Fixed)
+- Full transcript is always shared with both agents (CA and SA).
+- Moderator recap is always included in shared context.
+- Compact memory summary is always included.
+- Opponent's latest message is always highlighted before each turn.
+- History trimming and alternate history modes are no longer configurable.
 
 ### [analysis]: Post-debate analysis
 - `run_analysis`: Enable/disable automated metrics
@@ -556,14 +553,6 @@ config.thinking_budget       # Extra tokens for thinking-capable models
 config.num_ctx               # Context window size for Ollama-compatible backends
 
 config.output_dir            # Where to save results (default: "results")
-
-config.history_mode          # "global_full", "per_agent", or "memory_only"
-config.history_trim          # "none", "rounds", "messages", or "chars"
-config.max_rounds_in_history # Trim if needed
-config.max_messages_in_history
-config.max_chars_in_history
-config.summarize_if_trimmed
-config.highlight_opponent_last
 
 config.run_analysis          # Post-debate metrics
 config.analysis_shift_threshold

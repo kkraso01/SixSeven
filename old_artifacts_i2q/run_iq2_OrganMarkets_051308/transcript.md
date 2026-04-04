@@ -1,0 +1,862 @@
+# Debate Transcript
+
+Topic: We Should Legalize the Market for Human Organs
+Motion: We Should Legalize the Market for Human Organs
+
+Debate ID: OrganMarkets-051308
+
+
+## Round 1
+
+### Moderator
+Claim: Okay, then I’m going to go ahead and introduce the man responsible for this whole shebang here, Robert Rosenkranz, who is chairman of the Rosenkranz Foundation, the sponsor of Intelligence Squared, who’s going to frame tonight’s debate. Bob?
+
+### Moderator
+Claim: Thank you. Well, you know, the notion of a market in human organs, just strikes many as ethically or morally repugnant. Certainly those who choose to sell their organs will be predominantly poor. And, is it not exploitation to take advantage of their duress? Doesn’t this make the growing inequalities between rich and poor rise to a new and disturbing level? Is the human dignity of people who sell their organs compromised? And, and more pragmatically, might the existence of a market create incentives for fraud or dishonesty. Might it undermine the altruism that drives our current model. Well, it’s hard to dispute that the current model has serious flaws. Some 75,000 in this country are on the waiting list for kidney transplants. In the next year, only 18,000 will receive them. Within that year nearly 4000 will die, another 1200 or more will become too sick to transplant. Those on dialysis, have a seriously impaired quality of life, and about half the life expectancy of those receiving transplants. The argument in favor of a market solution, is grounded in basic economics. If you want to increase the supply of available organs, you need to create incentives for donors, is the argument. The easiest case may be a family death benefit, for those who agree to be organ donors when they apply for driver’s licenses, and whose organs are actually used. This addresses the need for livers, lungs, hearts and other transplantable organs. But kidney transplants are the most common, the only organ available from living donors. The—and this is a case that dramatizes the nexus between freedom of contract and personal liberty. Suppose you or your child needs a kidney, and you agree to pay a sum, say $25,000, to a donor. Well in many parts of the world, such a sum is life-changing. Suppose $25,000 enables the donor to get health care for his parents, or an education for his children. Both sides to this bargain receive benefits powerful to them. And there’s no obvious harm to anybody else. So why should this contract be illegal? When legislators who find such bargains repugnant pass laws imposing their views, they are quite literally causing sick people to die. How can this be morally acceptable? Before closing, I’d like to note that this is the final debate of our spring season, and our final debate at Asia Society. This has been a wonderful venue for us, but all of our debates have been sold out and we’ve had to turn hundreds away. We begin again in September at Casprey Auditorium at Rockefeller University, 66th Street and York Avenue. Our new venue is substantially bigger and will meet the demand for the kind of elevated public discourse we at IQ Squared try to provide. Tonight’s resolution is a great example. It raises issues of ethics and economics, and morality, and mortality. We have an outstanding panel and a stellar moderator in Ira Flatow, a veteran NPR science correspondent, award-winning TV journalist. Ira, the evening is yours.
+
+### Moderator
+Claim: Thank you, Bob, thank you very much, Bob Rosenkranz. If at any time during the evening you forget what we’re talking about, right behind me, is a big billboard…with the names of the guests and panelists, we’ve divided them up into…I’m not gonna say left and right, let’s just say pro and con or for and against, for and against is how we’ll describe it. The topic for discussion is, “We should legalize the market for human organs,” pro or con, yes or no, and you actually vote, if you look at the keypad—there’s a keypad attached to the armrest on your left, it should look something like this. No money is going to come out of it if you put in a— Well, I don’t know, maybe something will happen. Now when I prompt you, we’re gonna do—we’re going to take a vote before and then after the debate, and see if your mind has been changed or if you have any different ideas after listening to the debate. And so after I prompt you, press “1” for the motion, “We should legalize the market for human organs,” or “2” to vote against. And if you’re one of the great undecideds, you can even go for “3.” So it is “1” for the motion, “2” against, and “3” if you are undecided. You can vote now. Do I do the “Jeopardy” music here? I don’t think so. We’re going to reveal the outcome of the votes later in the evening, but let’s get right on to the main topic of discussion. I’m going to introduce the panel, and, they’re all well-known people so please, hold your applause until all six are introduced. Now we have for the motion, professor of law at the end of the table, at George Mason University, Lloyd Cohen. He’s Director of Transplantation and Professor of Surgery at SUNY Upstate Medical University, Amy Friedman— Segued too fast to Amy Friedman.
+
+### Conspiracy Advocate (CA)
+Claim: Okay.
+
+### Moderator
+Claim: She’s Director of Transplantation and Professor of Surgery at SUNY Upstate Medical University. Next to her is Sally Satel, she is a psychiatrist and Resident Scholar at the American Enterprise institute for Public Policy Research. Against the motion on my left, we have the Professor of Ethics at the University of Virginia, and Director of the Institute for Practical Ethics in Public Life, James Childress. Welcome. Professor of Surgery at Harvard Medical School and Director of Medical Affairs for the Transplantation Society, Francis Delmonico. And on the end, Professor of Social Medicine and Director of the Center on Medicine as a profession at Columbia University, David Rothman. Welcome all to the program, let’s begin the debate. I’m going call each member of the debating team to the podium, in order, and they’re going to give us their viewpoint and then we’ll move on from there and continue our debate, and first up, in the order of debate, for the proposition is Sally Satel. Sally?
+
+### Conspiracy Advocate (CA)
+Claim: Thank you. Today there are 75,000 people waiting for kidneys. I would still be one of them, but thank goodness, a wonderful friend of mine gave me her right kidney two years ago. But thousands of others are not going to be as lucky as I was. In New York City in fact, patients suffer on dialysis, can suffer for up to eight years before getting a transplant, and so many of them can’t survive that long. Despite decades and decades of public education about the virtues of organ donation, the waiting list just gets longer, and the time to transplantation just gets longer. So it’s no surprise that desperate patients take matters into their own hands and try to find their own organs. They rent billboards begging people to give them—to save them. They join on-line matching services to find a donor, in fact I did that. Some of them go abroad, and maybe if they go abroad to a place like China, they have to live with the sickening knowledge that the organ they got came from an executed prisoner. But you can’t blame these people. They are just trying to save their lives. Now bless all the altruistic souls who have donated organs. But it’s past time to face the fact that altruism is just not enough. Many people need more of an incentive to give. And that’s why we need to be able to compensate people who are willing to give a kidney to a stranger, to save a life. Here’s one proposal. The government should sponsor a regulated system for living donors. Compensation could be something as simple as a contribution to a retirement fund, a tax credit, tuition voucher for the children, possibly health care, all kinds of creative things we could do to benefit people who are willing to give a kidney. And as I said, since the government will be paying, not the patient, everyone can benefit. Now what about the donors. Would the promise of a reward exploit donors whose poverty makes the offer seem impossible to refuse? That’s an important consideration. But a distinction needs to be made. It’s not low-income people who will rush to judgment, and make rash decisions. It’s desperate people. No one wants someone giving up a kidney because they’re in such financial desperation. But, this is something we can guard against. For example we simply don’t offer what desperate people want. Which is immediate cash. So you can build in several months of a waiting period, you can offer the kind of in-kind compensation I mentioned before. I mean, I can go on and on about details of how a system could be constructed. But, you get the idea, I mean you’ve heard the basic idea. Now, what I want to do, is have you hear some of the misguided objections that our opponents are going to wage. You may well hear that any effort to legalize rewards for donors, will end up creating a system that will look exactly like the corrupt organ bazaars that permeate the Third World, in this donors are almost considered no more than cattle, and their organs go to the highest bidder. That is exactly wrong. We are talking about a transparent, regulated system of exchange, under the rule of law, in which donor protections are paramount. In fact, what we’re talking about is the exact opposite of a black market. The donor is free to decide if participating is in his best interest, and then if it is, something miraculous happens. He saves someone with his kidney. You may also hear that the transplant list is really not that bad, it’s kind of bogus, it’s inflated. Really, we don’t have to do anything drastic. Well, we do have to do something drastic, because, of the 75,000 people on the list, it is true, not every one of them is eligible to get a kidney tomorrow. About a third of them are what’s called inactive, meaning that right now they are too sick, if a kidney became available to them tomorrow, they would have to be passed over, because they’re not ready to— they’re too fragile for surgery. But why did that happen? It happened because they waited years and years and deteriorated so far during that time, that now they couldn’t get an organ. Tragically these were people who were healthy when they were first listed. So if anything, the glut, the one-third of folks who are ineligible to get a kidney today, is a sign for urgency, not complacency. You’ll also hear that the transactions involving organs, any transaction involving organs, is an affront to human dignity. But no one can ever explain to me how a fair, safe, and respectable implementation of incentives is an affront to anyone. But what is a disgraceful assault on human dignity, is to sit by and let people die when we have the means to save them. You’ll hear that organs and material gain don’t mix. Well, I reject this. Beautiful acts are performed every day by people who are moved by a combination of humanitarian and financial motives. Are firemen who rush into a burning building any less heroic in our eyes because they were paid to save us? In the end, our critics have a chilling message for patients. Shut up, wait on line, and pray that you’re not one of the 14 people who will die today because no organ became available for you. Now don’t get me wrong, altruism is a beautiful virtue. It should and will continue if there is a parallel system—
+
+—of compensating donation. I know it’s a beautiful virtue because I’m a poster girl for it. But I also know the deadly consequences of following the same failed policy. It’s something we can’t do, and why you must vote for our side. Thank you.
+
+### Moderator
+Claim: One minute, one minute—
+
+### Conspiracy Advocate (CA)
+Claim: —of compensating donation. I know it’s a beautiful virtue because I’m a poster girl for it. But I also know the deadly consequences of following the same failed policy. It’s something we can’t do, and why you must vote for our side. Thank you.
+
+### Moderator
+Claim: Thank you, Sally. Up next speaking against the resolution, is James Childress.
+
+### Scientific Advocate (SA)
+Claim: Defenders of markets for organs often charge that the opponents of a market appeal to the emotions of repugnance, and disgust, the yuck factor. They often imply that the only grounds any reasonable person could have for rejecting a market would be such emotions. Well tonight, we, the opponents of an organ market, will not appeal primarily to emotions. Indeed, I suspect that the proponents of a market will do so. Instead we will offer solid ethical, social, and cultural reasons not to legalize a market in organs. We ask you to consider very carefully, the reasons, the arguments for and against organ markets. Defenders of organ markets also tend to represent an extreme form of what I would call market fundamentalism. They suppose that, any time there’s a problem, such as shortage of organs, we should just throw that problem into the marketplace, and magically, miraculously, the problem will be solved. Market fundamentalism neglects the full range of relevant social values, especially justice and fairness which I will emphasize, and the probable negative effects of a market in organs, which my colleagues will stress. Markets are truly wonderful mechanisms. But they may not be the best mechanism, for organ transfers. Defenders of organ markets appeal to two great social-ethical values, very important ones. Liberty, people should be free to sell their body parts if they want to. Utility, a market in organs would produce the greatest good for the greatest number. Libertarians affirming liberty, utilitarians affirming utility, take these values and join together in an unstable alliance, in support of a market in organs. But both neglect another equally important value, justice, or fairness. As a result they ignore or downplay the injustice or unfairness of exploiting poor and disadvantaged people, as sources of transplantable organs. An illegal or legal organ markets, the main vendors or sellers, and yes, that’s what they are. They’re not paid donors, they are vendors and sellers. They tend to be poor and disadvantaged, or desperate. Of course we could devise a system of compensation for organs that would avoid some injustice and some unfairness, by separating procurement from distribution. Take the unfairness of a rich person’s purchase of organs. We can eliminate that, by having a single purchaser of organs, who would then distribute the organs according to a fair scheme, for example, to patients most in need. But we cannot avoid the poor, disadvantaged, desperate person’s sale. And we should not introduce an organ market into a society with major and increasing inequalities in wealth and advantage. If we did so, we would not, should not expect a positive outcome. Why not. Well consider two possibilities. One possible target of an organ market or compensation system, would aim to increase—would be to increase the number of organs from dead people. Let’s call those cadaveric organs. Another would be to increase the organs from living vendors. Some of the same objections apply to both, for example financial compensation may crowd out donation, especially altruistic donation. But there are differences. Take first a cadaveric organ market. There are strong reasons to believe that compensation for cadaveric organs won’t increase the supply. Imagine a futures market in organs where individuals contract to provide their organs after their deaths, and in return receive a payment now, or designate the payment to be provided after their deaths to their families, or to a charity. Why wouldn’t that work, it seems so obvious. Well, consider that many people don’t sign donor cards now because of distrust or mistrust. They worry about being declared dead prematurely, or even having their deaths hastened, if they have signed a donor card. Well they would certainly be reluctant to enter a futures market, to sign a futures contract, when the only barrier to the delivery of their organs, is the fact that they’re not dead yet. Or consider the family sale. Individuals would have similar reasons to block families from making decisions because of conflicts of interest. And many families would be reluctant to be viewed as profiting from a family member’s death. We do not need to try such a futile market. There are other options for obtaining cadaveric organs. Our current system works fairly well, and can be improved. Indeed, we’re second only to Spain in the number of deceased donor organs obtained per million population. And there are several potential improvements that we can make, some are already underway. We can increase education and the use of donor cards and donor registries. And, when an individual’s not made a decision, we can do a better job in approaching— approaching families after their deaths. Some institutions now obtain consent to donation, from 70 to 75 percent of families of patients declared dead by neurological standards, who are potential candidates for organ donation. And we can consider other sources including those declared dead by cardiopulmonary standards. But now let’s consider a living organ market, mainly for kidneys since people can live, usually live and function well with only one of their two kidneys. In 2007 there were roughly 7250 deceased kidney donors, and 6000 living kidney donors—
+
+A living organ market would probably work better than compensation with cadaveric organs, but there are other problems that my colleagues will emphasize. In conclusion…a market is not an idea whose time has come. A market in organs is a bad idea. It is unnecessary, probably ineffective, possibly counterproductive, and would breach our sense of justice by exploiting poor, disadvantaged, and desperate members of our society. Hence we should not legalize a market in human organs.
+
+### Moderator
+Claim: One minute.
+
+### Scientific Advocate (SA)
+Claim: A living organ market would probably work better than compensation with cadaveric organs, but there are other problems that my colleagues will emphasize. In conclusion…a market is not an idea whose time has come. A market in organs is a bad idea. It is unnecessary, probably ineffective, possibly counterproductive, and would breach our sense of justice by exploiting poor, disadvantaged, and desperate members of our society. Hence we should not legalize a market in human organs.
+
+### Moderator
+Claim: Thank you, James Childress. Up next, for, is Amy Friedman.
+
+### Conspiracy Advocate (CA)
+Claim: As a surgeon, I view the body with reverence. The rights and dignity of every patient are paramount. My expertise is to—is sustaining lives by transplanting organs. It is my inability to do so, because I don’t have the organs to offer, that has persuaded me that rewarding the donor is appropriate. Our opponents tonight would have me tell patients to stay the course. Wait with dignity for the organ that may never come. This message is poorly received, as it should be. Our opponents may tell you, that the waiting list is too long, because it includes the wrong people. I don’t see wrong people, I see human beings, each of whose lives might well be lengthened and improved if I could give them an organ. Desperate patients unwilling to die waiting have fueled a black market, whose magnitude is inadequately quantified, though certainly disturbing in scope. What is known, is that organs are purchased, third-party brokers siphon funds away from donors, and safety is uncertain for both the recipient or the donor. Efforts to shut this market have been as unsuccessful as Prohibition was in inducing an end to the use of alcohol. I agree with our opponents that the black market must be closed. I disagree with asking patients to accept death gracefully, instead of resorting to the black market. My position is that development of a legal, regulated mechanism for donor compensation is the only means of effectively eliminating the demand for this covert activity, closing down the black market, and improving safety for donors and recipients. Today, we educate the kidney patient and family, hoping that a volunteer donor will step forward to surrender a kidney. Most transplant surgeons agree, there would be no justification for ever removing a kidney from a living donor, potentially causing harm to this healthy person, if there were sufficient organs from deceased donors. Why? It may surprise you, that we still cannot tell this volunteer donor about all of the risks that kidney donation entails. Sure, the early risks, such as death, are known, but the long-term consequences are not, particularly for some of the more marginal donors being used in some cases. Nevertheless, we allow and celebrate such a healthy person’s choice to donate, and allow him to accept unknown risks for which there is no compensation. Why are we surprised that more donations don’t take place? Transplanters share nearly universal agreement, that these genuine heroes need lifelong health insurance and intermittent medical supervision. Dr. Delmonico has written that all living donors should be provided with life and disability insurance. But in today’s reality, we have no mechanism for providing these protections. Yet we are not deterred from removing the kidney. The operation itself, and our fees, are covered by the recipient’s insurance. The opportunity to save a life persuades us and the donor to proceed. Compensation for the organ donor’s time and risks, by providing life insurance, lifelong health insurance, and even a direct monetary fee, is more appropriate than for the donation of an egg, the rental of a uterus for a surrogate pregnancy, or the participation in clinical experimentation, all of which are legal. We are talking about saving lives. Let’s also recognize that everyone else involved in the transplant prospers. The recipient gains the organ, life itself. The surgeons, transplant center, and for kidney transplants, even the American taxpayer, you and I, have direct financial benefit when a patient comes off dialysis. Isn’t it disingenuous to exclude the donor from sharing in the tangible benefits resulting from his gift of life? A reasonable system must include protection from nefarious third parties, and be guaranteed by centralized, independent oversight, that ensures equal accessibility to those in need, regardless of their economic means. Lastly and most crucially, a transparent, informed consent process must be the mandatory condition of participation. Our opponents may suggest that payment would be so coerced, as to prevent the donor from giving informed consent. This is paternalistic. Why should financial need prevent one’s ability to consider the balanced presentations of risk and benefit that donors consider in the currently regulated informed-consent process. This is an insult to the poor, in suggesting they are incapable of balanced thought and self-determination. Reasonable people rationalize risk daily, by personal prerogative, at times subjecting themselves to unhealthy conditions, and making unsafe choices such as working deep in the coalmine. Any informed decision balances risk against the prospect of benefit. Though real, the risks of organ donation are likely substantially lower than those assumed by coal miners seeking their livelihoods. Despite the dangers inherent in both cases, the miner but not the donor is legally compensated for these risks. The key difference is dependence on the participation of medical providers, White House are dedicated to doing no harm, to facilitate payment for the gift of life. Therefore, according a donor—
+
+—the highest degree of protection throughout necessitates the involvement of the most highly-trained individuals, and the conditions of greatest safety. This is precisely what does not happen on the black market, where transplants and donations are conducted covertly. There is no dignity in dying without a transplant. Don’t blame the patient for listening to his internal will to live. We must offer protection to the donor who answers the recipient’s call, in a way that is currently legally prohibited. Vote with us to legitimize compensation for the donor’s acceptance of risk. Today, the choice is not whether compensation will exchange hands, but whether or not transplant operations and the sale of organs will be regulated and safe.
+
+### Moderator
+Claim: One minute, one minute—
+
+### Conspiracy Advocate (CA)
+Claim: —the highest degree of protection throughout necessitates the involvement of the most highly-trained individuals, and the conditions of greatest safety. This is precisely what does not happen on the black market, where transplants and donations are conducted covertly. There is no dignity in dying without a transplant. Don’t blame the patient for listening to his internal will to live. We must offer protection to the donor who answers the recipient’s call, in a way that is currently legally prohibited. Vote with us to legitimize compensation for the donor’s acceptance of risk. Today, the choice is not whether compensation will exchange hands, but whether or not transplant operations and the sale of organs will be regulated and safe.
+
+### Moderator
+Claim: Thank you. Up next, speaking against the resolution is Francis Delmonico.
+
+### Scientific Advocate (SA)
+Claim: So I’m a transplant surgeon, and I’ve been involved in transplantation care, oh, for more than 35 years. And, I’ve had the opportunity to travel around this world, to know about transplantation practices, and what we’re discussing here tonight. I mentioned to Robert, wherever he is, that there’s a global impact, of what would be from the United States. What we do here, has a profound influence on the rest of the world. Now, I say that because I’ve been to Manila. And Amy, I should say, it’s not a matter of balanced thought, when a 14-year-old has to sell a kidney, to an American that comes there. It’s not a matter of balanced thought in Pakistan, or in Egypt. What’s been missing, in what you’ve heard, is what would that system look like. Legalize the market for human organs, what would that be. Amy has mentioned that…shouldn’t be a black market. Shouldn’t be covert. It’s not a black market in the sense of covert in Manila, or in Lahore, Pakistan, or in Egypt. It’s very well-known. It’s very transparent, and aware what the situation is. What’s been missing in the debate thus far is, what would this look like, or have to look like, in the United States. And is that indeed attainable. So, if we are to go down this road of a market, what might that be that—we haven’t actually heard, what might that be, to make it transparent, or regulated. Well, there’d have to be a fixed price for the kidney. Now I wanna say something that comes across my mind… I wish to provide care for donors. There should be no mistaking that, and I wish to expand every opportunity there can be, in providing for the people on this list. And that entails care for live donors, that does not exist. But it can’t be a cash payment. It can’t be a market, given the global context of medical tourism and markets. So let me take you back to…what would this be. Well, those that have written about this say it would have to be a fixed price. There’d have to be a prohibition of brokers. There’d have to be a prohibition of Internet arrangements. The kidneys would have to be distributed along with deceased donor kidneys, by the UNOS system. The kidneys would only be available by this, quote- unquote, market system. The vendors and the buyers would have to be restricted to the country of residence. It would only be that the vendor could be within the United States, and so too the recipient. Now just for a moment, I want to ask of a reality check about all of those issues, and whether or not you all could conclude that that in this global environment, of medical tourism, would indeed be attainable. Do you think that such a market could be with a fixed price and a prohibition of brokers and a prohibition of Internet arrangements and only distributed through this system. And that the vendors and buyers would have to be restricted to the United States. Now, in the interest of time—we can’t go through all of those—let’s just start by thinking of that. Fixed price for a kidney. Fixed cash payment. That’s impossible. It’s impossible because there’s no market justification to fix a price. Markets deal in best prices, in cheapest prices. Patients go from the Middle East to Manila because it’s the cheapest price. And, why shouldn’t there be a cheap price, if we’re going to condone markets in the United States, what is the expectation that insurance companies, brokers and patients would simply wait here, why wouldn’t they, with now a legalize market in the United States, go and shop. Shopping is Manila, shopping is Pakistan, shopping is India. Shopping is South America. There are plenty of cheap prices. The prohibition of brokers in this regulated market. The insurance companies become brokers, when they send patients from Israel to Manila. It’s the cheapest price. About 20 patients a month go from Israel to Manila, because of cheap prices. If there’s a market legalized in the United States, in the global context of medical tourism, do you think that the 72—
+
+—72-year-old patient on the list, would wait for a kidney here, versus going to buy a 20-year-old kidney in Manila? I want to bring to attention something about the list, and we’ll do more about this and we can amplify this in our discussion. But there is this piece that I want to just very carefully ask--we better evaluate this wait list. The contention that all on the list would have lived had they gotten a kidney, may not be a reality either. And I’ll wish to amplify that, one other piece…to say that it’s unethical not to permit kidney sales because kidney patients are dying on the list overlooks the unethical development of committing heart and lung and liver and pancreas and intestine patients to die because kidney sales will impact deceased transplantation in this country. It does it around the world. Go to Hong Kong.
+
+Thank you, Ira.
+
+We’ll talk more about this aspect—
+
+Thank you—
+
+So do we get to respond to that—
+
+Fine, yes I do. I think that…here’s how I think it. Medical tourism is going to be a very important aspect for all of us in this room. Countries are now seeking rich patients to come to that country for care. It becomes a very big industry. And, the social inequity of that is, on two ways. If you go to a South American country that is attracting patients to come there, they do so by then making it—patients within that country, unable to receive that care. Because there is an internal brain drain of sort, that is intended for the rich patients to arrive there. Deceased donation has been impacted in the Middle East, because you can go to Asia to buy a kidney. So, in this global context of medical tourism, I think our Presidential candidates are gonna have to think about this, yes indeed.
+
+### Moderator
+Claim: One minute.
+
+### Scientific Advocate (SA)
+Claim: —72-year-old patient on the list, would wait for a kidney here, versus going to buy a 20-year-old kidney in Manila? I want to bring to attention something about the list, and we’ll do more about this and we can amplify this in our discussion. But there is this piece that I want to just very carefully ask--we better evaluate this wait list. The contention that all on the list would have lived had they gotten a kidney, may not be a reality either. And I’ll wish to amplify that, one other piece…to say that it’s unethical not to permit kidney sales because kidney patients are dying on the list overlooks the unethical development of committing heart and lung and liver and pancreas and intestine patients to die because kidney sales will impact deceased transplantation in this country. It does it around the world. Go to Hong Kong.
+
+### Moderator
+Claim: Dr. Delmonico, you—
+
+### Scientific Advocate (SA)
+Claim: Thank you, Ira.
+
+### Moderator
+Claim: Sum up. Thank you—
+
+### Scientific Advocate (SA)
+Claim: We’ll talk more about this aspect—
+
+### Moderator
+Claim: We’ll have more time for discussion later, we’ll have a discussion period, we’ll also have a question-and-answer period from the audience—
+
+### Scientific Advocate (SA)
+Claim: Thank you—
+
+### Moderator
+Claim: —that you can follow up, I have a couple of— Thank you very much. I just have a couple of follow-up questions that struck me, and you made a—raise a couple interesting points, folks on this side did also, now I’ll ask one question for each side. And we’ll go on to the debaters. And that is this question about what role do the insurance companies have in this, this is a good point that Dr. Delmonico made. I mean, we now have to go to our HMO’s, to our health care providers for just—they make just about every decision that influences our health care. Are they now gonna decide whether you get a—in your system that you’re proposing—would they decide whether you’re able to get a kidney or not, you’re healthy enough, you’re not healthy enough, you should be getting one, you shouldn’t be one, I’m not gonna pay for it, I’m not gonna pay for the trip, I’m not gonna pay for the medication, whatever, what role would they have, people are so disgusted with them already, are they going to become more disgusted with a government-run system, even though it’s regulated.
+
+### Conspiracy Advocate (CA)
+Claim: You’re going to ask a physician what role the insurance companies should have—
+
+### Moderator
+Claim: Yes, that’s like picking out a—
+
+### Conspiracy Advocate (CA)
+Claim: No role. No, it’s— You know, in general—
+
+### Moderator
+Claim: Well how is that possible in the system that we have now?
+
+### Conspiracy Advocate (CA)
+Claim: Because in general the insurance companies generally follow Medicare and government guidelines, and as long as the—we set up something that is reasoned, logical and supportable, it’s hard for them to not follow.
+
+### Scientific Advocate (SA)
+Claim: So do we get to respond to that—
+
+### Moderator
+Claim: No, we’ll get, a little later we get to respond to that. I’m not through with the question yet. So if everybody acts very reasonably then, this will work—do you know anybody who acts very reasonably all the time about things like this?
+
+### Conspiracy Advocate (CA)
+Claim: Well I—I shouldn’t comment on that. But I will say that, you know, the concept of how this system would be created requires, um, involvement of multiple parties, in a similar manner to the way UNOS is set up. That there are not just providers, there are not just patients and family members, there are clergy, there are social workers, and yes, I think it would be reasonable to have some representatives from the major insurance companies for example to be part in the development of these multi-disciplinary panels as they agree on what is the best policy for doing this. It has to be a uniform policy, and the way the law would need to be written, and we do need a law written, this is obviously currently an illegal activity, so we definitely need legislative change, would be to require that these activities go through the single processor.
+
+### Moderator
+Claim: Let me just ask the other doctor, Dr. Delmonico, a different question, we’ll get back to this later, you seem to feel very strongly about this issue. Do you think this is a strong enough issue that it should be brought up in this Presidential election year. Do you think this should influence the way we choose our candidates about where they stand perhaps, on this issue.
+
+### Scientific Advocate (SA)
+Claim: Fine, yes I do. I think that…here’s how I think it. Medical tourism is going to be a very important aspect for all of us in this room. Countries are now seeking rich patients to come to that country for care. It becomes a very big industry. And, the social inequity of that is, on two ways. If you go to a South American country that is attracting patients to come there, they do so by then making it—patients within that country, unable to receive that care. Because there is an internal brain drain of sort, that is intended for the rich patients to arrive there. Deceased donation has been impacted in the Middle East, because you can go to Asia to buy a kidney. So, in this global context of medical tourism, I think our Presidential candidates are gonna have to think about this, yes indeed.
+
+### Moderator
+Claim: Good questions, if we ever ask them a question about science or health, you know, if we ever get a chance. Okay, we’re going to— we have to move on—we have topics of discussion coming up later. Don’t shoot the messenger. We have to move right along here, next up for the resolution is, Lloyd Cohen.
+
+### Conspiracy Advocate (CA)
+Claim: Ladies and gentlemen, I want to make the question before you as authentic and personal as possible. Imagine that when you leave here tonight, you learn that your child’s kidneys are failing and that without a transplant she will die. The problem for you is how to obtain an organ for her. She could receive one from a living donor, but she—and both she and the donor can live quite well with one healthy kidney. But what if no relative or friend is both compatible and willing to donate. Well, you look to be, a reasonably well-heeled, group, so perhaps you might pay someone to supply her this superfluous kidney, and thereby save your child’s life. Alas, that would be illegal. You, the vendor, and anyone who aids you in this will be subjected to imprisonment. Odd, isn’t it. That if she were attacked by an assailant, you are permitted to use deadly force to save her life. But when she is attacked by disease, you may not pay a willing vendor to provide an organ. Perhaps this rests on the principle that the rich should not get what the poor are precluded from obtaining. Well then. A private charity or government agency should step in and purchase organs from willing donors, and distribute them on the basis of need. No. That is also forbidden. No one, no institution, no government agency may pay a living donor. Well then, perhaps she can receive a deceased donor organ. Yes, if she is lucky. Now as it happens something between 25 percent and 60 percent of organs suitable for transplantation, are recovered from the deceased. What happens to the rest. They are buried and burned. Why doesn’t a private party or a charity or the government step in and purchase those life-saving organs. Bizarre as this may sound, the law draws no distinctions between organs from the living and organs from the deceased. Here too, offering or accepting compensation for a deceased donor organ, is a felony. Our position, is not that every conceivable market in human organs is ethically acceptable. Rather, it is that at least some are. Our opponents on the other hand, object to, and would prohibit, any and all personal reward being offered to providers of organs. They oppose payments for living donation. They oppose payments to next of kin for the organs of a deceased relative. They propose offering an options contract to healthy people for delivery of their organs after death. They even oppose the life-sharer system of giving a priority to transplant organs, to those willing to make the commitment to their own deceased organ donation. Though in this debate we are not arguing in favor of any particular proposal to reward providers, I will outline one such proposal, the one with which I am most closely associated—an options market in deceased donor organs. I do so in part because I crafted his proposal precisely to try to accommodate every ethical objection I had heard, whether I thought it worthy or not. I leave it to you to judge if there is any substantial ethical objection that should bar its adoption. The market I propose is one in which healthy individuals might contract for the sale of their organs and tissue for delivery after their death. If the vendors’ organs are received and transplanted, a payment in the range of $5000 for each major organ would be made to a person or institution chosen by the donor. What of the objection to the poor being coerced by poverty to endanger their health by selling their organs? I repeat. In an options market, organs would only be acquired from the dead. No one need be induced or even permitted to sacrifice his health or bodily integrity for money. The donation of the organs of the deceased by both rich and poor is currently strongly encouraged, precisely because most of us believe that surrendering the organ represents no sacrifice to the donor. But doesn’t employing a market mean that organs will be allocated on the basis of willingness to pay, and so the rich will be able to buy organs that the poor are precluded from obtaining. Some things it is believed are literally too vital to permit their allocation by ability to pay. Had I the time, I would challenge this objection, and argue that there are fewer ethical problems in allowing people to sacrifice their own treasure to save the lives of those they love, than exist under all—what I, but not my colleague Dr. Friedman, view as the self-righteous yet cramped and craven and misguided UNOS system of allocation. But alas, time does not allow for that. For now I must underscore that my proposed options market does not speak to the question of to whom the organs will be allocated, only how they will be acquired from the original owner and possessor. My proposal is consistent with and can accommodate any conceivable system of acquisition and allocation, including, purchase by a government agency, allocation solely on the basis of medical criteria, and provision to recipients at no charge. Note also, that the options market does not require next of kin to traffic in the flesh of their loved ones. Instead it is one in which people contract to sell their own organs when they are healthy for delivery after their death, thereby taking the next of kin out of the decision-making process. The central premise not merely of my proposal, but of all the others as well, is an obvious, even banal economic proposition. If you compensate people for something, they will provide more of it than if you don’t. Every economist who has written on the question including Nobel Prize-winner Gary Becker, has argued in favor of using personal incentives to increase the supply of transplant organs. The price of the prohibition on the sale of human organs, is the death of many thousands of people each year.
+
+Were the suffering and death of the victims of this pernicious policy more visible, the stale and empty pieties about the sacred human body being despoiled by the profane market would be revealed for the vacuous moral posturings that they are. Such moralizing rather than reflecting an adherence to noble principles, instead bespeaks a fanatical adherence to abstract, inapposite principles, by those who are well isolated from the horrific human consequences of their folly. It is not the payment for organs that offends human dignity, but rather the fanatical unwillingness to save thousands of lives by permitting such payments, that is a great offense to human dignity.
+
+### Moderator
+Claim: One minute.
+
+### Conspiracy Advocate (CA)
+Claim: Were the suffering and death of the victims of this pernicious policy more visible, the stale and empty pieties about the sacred human body being despoiled by the profane market would be revealed for the vacuous moral posturings that they are. Such moralizing rather than reflecting an adherence to noble principles, instead bespeaks a fanatical adherence to abstract, inapposite principles, by those who are well isolated from the horrific human consequences of their folly. It is not the payment for organs that offends human dignity, but rather the fanatical unwillingness to save thousands of lives by permitting such payments, that is a great offense to human dignity.
+
+### Moderator
+Claim: Thank you. Our final speaker against the proposition is David Rothman.
+
+### Scientific Advocate (SA)
+Claim: The question that’s on the slide behind me, “We should legalize the market for human organs,” is a very prominent one, becoming more prominent over the last year or two. And you’ve heard from our opponents some of the reasons for the prominence. I want to focus you clearly on what this one means. It’s not what you just heard from Lloyd Cohen, about a futures option. That’s a wrinkle with building on cadavers. What this is really about, is the sale of organs from living donors. When you go to vote, you’ve got to think not about the cadaver, not about, you know, giving the family a little bit of a burial expense. You have got to think about, do we want to be in a system where we pay people to give us their kidneys. That’s the question. Now I’m going to propose a variety of reasons to you, why I think that would be totally misguided, indeed maybe even self-defeating. Let me start with the first problem. And that is that although it seems very commonsensical to think that if we make a market it will increase the supply, there are very, very good reasons, many drawn from behavioral economics, some drawn from past experience, that suggest that in fact, to create a market might diminish the supply, not increase it. In the first instance, if I can buy it why should I give it. All right, a family member comes down with kidney disease—please do remember there is dialysis as well, this is not just simply life-death. Family member comes down, yes, I could give it, but I’m, you know, I’ve been pretty well-off these days, I can buy it. Yes, the risk is minimal, but why should I take any risk, if I can go out and put down X-teen thousands of dollars to purchase a kidney. It wouldn’t make any sense, I wouldn’t have my children donate if I could purchase. Don’t think easily that, if you create the market, altruism will not dissipate. There’s a wonderful example of this, the name should be familiar to some of you at least, Richard Titmus, English sociologist who studied blood donations in England and the US. What he discovered is that in England, where the sale of blood was not allowed, rates of donation were considerably higher than the US, where the sale of blood was allowed, eventually we move away from sale. The Titmus data’s pretty convincing, watch out about markets. Another example of this, I’ll do it rapidly but it’s a great study, took place in an Israeli nursery. Four o’clock in the afternoon you were supposed to pick up your child. Most made it, some didn’t make it. And there was lateness, you excused yourself, you felt bad, and you tried not to do it again. Then some wise social scientist tried an experiment. They told the day care center, the day care center went along with this, let’s institute a fine. So they instituted a fine, on the theory that if we fine people for coming late, the amount of lateness will go down. You know of course what happened. No sooner did they institute the fine, than the rate of lateness went up. Why, it’s simple. It became not a moral obligation, not my duty to the caretakers, but a price. And if I could afford the price, I would come late. The data came in very nicely, these social scientists then added another wonderful little twist. They took away the fine, and then they watched the rate of lateness. What happened then? The rate of lateness stayed high, much higher than before. Their bottom line, and they weren’t thinking of this in our context but it’s gorgeous, once a commodity, always a commodity. Don’t experiment easily, once a commodity, always a commodity. I want you to take a different kind of intellectual exercise now, than the ones— they’re a little gory and a little Dukakis— reminding of, you know, okay, your loved one needs an organ, what are you going to do. I want you to take a different exercise, and think a little bit about, what it would be like to live in a society where we had a market in organs. Roughly the price, much higher than the folks have been telling you, we could—we would probably, I mean The Economist put it at about 250,000.
+
+Sake of argument, you get about $125,000 if you give your organ. Now, first response of course would be, well, the poor—I’m gonna come to the middle class in a moment. The poor, will be out there donating and haven’t we done well by them. From everything we know in Third World countries, the sale— Frank already mentioned Manila, it’s true in India. Everything we know about it, you sell your organ, you’re out of debt for a very short period of time, you’re back in debt, right thereafter. The reasons for your debt are not gonna be rescued by a sale. Secondly, imagine, even after this administration is gone, you have in your possession right there on either side of you, a $150,000 commodity. Medicaid before you go on Medicaid, you will sell that organ? I mean, think of the welfare system, where everybody’s got, you know, that kind of money, sitting right there—
+
+—and take it away without any problem. Folks say, you know, oh, we’ll keep the foreign from doing it. Why, if it’s such a great benefit, why not a green card, why not an immigrant. As you think about voting, just remember the great Emma Lazarus line on our Statue of Liberty, give me your tired, your poor, the wretched refuse of your teeming shores, dot-dot- dot, so we can have your kidney. Let me close in my 45 seconds, with what it would mean to your kids, and what it would mean to you if they could do it. We’ve got some good, enterprising folks from Wall Street in the audience I’m sure. 125,000 tax-free invested when you’re 18, mighty tempting. When do you tell your prospective bride that you can pay the down payment, what do you do when your father-in-law turns to you and says have you sold your kidney yet. What do you—
+
+—when your kid comes—I’ll close with this— and he says, I want to go the Ivy League, not to my state school, and you as the parent say, I can’t afford it, but you’ve got your kidney.
+
+### Moderator
+Claim: One minute—
+
+### Scientific Advocate (SA)
+Claim: —and take it away without any problem. Folks say, you know, oh, we’ll keep the foreign from doing it. Why, if it’s such a great benefit, why not a green card, why not an immigrant. As you think about voting, just remember the great Emma Lazarus line on our Statue of Liberty, give me your tired, your poor, the wretched refuse of your teeming shores, dot-dot- dot, so we can have your kidney. Let me close in my 45 seconds, with what it would mean to your kids, and what it would mean to you if they could do it. We’ve got some good, enterprising folks from Wall Street in the audience I’m sure. 125,000 tax-free invested when you’re 18, mighty tempting. When do you tell your prospective bride that you can pay the down payment, what do you do when your father-in-law turns to you and says have you sold your kidney yet. What do you—
+
+### Moderator
+Claim: Time’s up—
+
+### Scientific Advocate (SA)
+Claim: —when your kid comes—I’ll close with this— and he says, I want to go the Ivy League, not to my state school, and you as the parent say, I can’t afford it, but you’ve got your kidney.
+
+## Round 2
+
+### Moderator
+Claim: Thank you. I’m going to just take the opportunity before we move on, it’s the prerogative as the host or chair, whatever we call my seat, to ask a couple of questions about what we just heard and I want to ask Lloyd, who is very, very— feels very strongly about it—is very animated about this topic. You just sat here and listened to this.
+
+### Conspiracy Advocate (CA)
+Claim: Gahhh!
+
+### Moderator
+Claim: Was… You know, he made a very emotional case about, you know, everything that you don’t believe in on this topic. What is your reaction to…you know, would you want to live in a society where a kidney sells, where all 18-to-20-year-olds can sell a kidney for $50,000 or $100,000 to pay for an education? Are we going down the road to hell, do we—
+
+### Conspiracy Advocate (CA)
+Claim: No. He—well. First of all, David, he wants you to answer a different question when you vote later. He wants it to be the question on live kidney sales. Well, that isn’t the resolution. The resolution is quite clear, should we legalize the market for human organs. So he gives you the list of horribles of the worst conceivable market, and says, vote against that. I tell you, there’s a slew of possible markets, many of them quite innocent including merely a cadaveric market. Clearly distinguishable. And that falls within this notion of a market in organs. Now, there’s no more reason to think that— or I can see no particular—I can’t imagine a society, in which people would feel pressured, you know, to sell an organ for cash. It’s an evasion. And it’s just a list of horribles, that doesn’t exist—
+
+### Moderator
+Claim: Okay—
+
+### Conspiracy Advocate (CA)
+Claim: —anywhere, and that will not exist here.
+
+### Moderator
+Claim: David, you want to answer that?
+
+### Scientific Advocate (SA)
+Claim: I can do it quickly. Trust me, we wouldn’t be here, if we were talking about annuities for cadaveric organs. The reason we’re here—
+
+### Moderator
+Claim: That’s “cadaver,” right, “cadaveric”—
+
+### Scientific Advocate (SA)
+Claim: Yes, sorry—
+
+### Moderator
+Claim: Okay, just—
+
+### Scientific Advocate (SA)
+Claim: No—
+
+### Moderator
+Claim: My radio thing—
+
+### Scientific Advocate (SA)
+Claim: Oh, okay—
+
+### Moderator
+Claim: —coming through with it.
+
+### Scientific Advocate (SA)
+Claim: We wouldn’t be here if we were talking about futures markets, we’re here for one—
+
+### Conspiracy Advocate (CA)
+Claim: That’s not true.
+
+### Scientific Advocate (SA)
+Claim: What—
+
+### Conspiracy Advocate (CA)
+Claim: I’ve been arguing for this for 20 years—
+
+### Scientific Advocate (SA)
+Claim: You— But you’re not what’s captured the public attention and you’re not what’s driving the interest. What’s driving the interest—
+
+### Conspiracy Advocate (CA)
+Claim: Really—
+
+### Scientific Advocate (SA)
+Claim: —is— You’re not.
+
+### Conspiracy Advocate (CA)
+Claim: I’m very
+
+### Scientific Advocate (SA)
+Claim: What’s driving the interest is, donation from living folks. None of us—look, we could quibble over this or that with a futures market— already I thought we heard—
+
+### Conspiracy Advocate (CA)
+Claim: So you’re willing to switch sides and come to—
+
+### Scientific Advocate (SA)
+Claim: No, no, I’m not—
+
+### Conspiracy Advocate (CA)
+Claim: —this side and be with me on that one.
+
+### Scientific Advocate (SA)
+Claim: No—the reason why I wouldn’t switch sides—
+
+### Conspiracy Advocate (CA)
+Claim: Ah—
+
+### Scientific Advocate (SA)
+Claim: —with you, is because of my fear of the contagion effect. If we—
+
+### Conspiracy Advocate (CA)
+Claim: Oh, the slippery slope nonsense—
+
+### Moderator
+Claim: All right—gentlemen— Gentlemen— We will get a chance—
+
+### Conspiracy Advocate (CA)
+Claim: There is no slope here—
+
+### Moderator
+Claim: Gentlemen—
+
+### Conspiracy Advocate (CA)
+Claim: There are sharp, clear ledges.
+
+### Moderator
+Claim: I’m using the wrong phraseology. Maybe we shouldn’t call you gentlemen. Um— We’ll get this eventually, we’ll get to this, we, we have a time for open discussion, you can open that wound up again and it sounds like it’s got an interesting place to go. But let me move on and announce the result of our pre-debate vote, you all voted on the machines, you’d like to know how you voted. Let me begin by reading the results. They up there on the screen? We had “for,” 44 percent, “against,” 27 percent, and “undecided,” 29 percent. So it was a large… Well, we—it’s a large portion, I’ll read it, “for” was 44 percent, “against” 27 percent, and “undecided,” 29 percent. So we had a more people who are undecided than who are against it, there’s a large percentage of people still trying to decide that vote. We’ll take the vote again later. So we’ll see how the debate may have changed your opinion, but let’s move on now because I think, things are just getting interesting. I’m going to have our panelists pose a question to the other side, one from each side, pose a question themselves and ask them if they have a question they’d like to have somebody answer. Let me begin with, on the “for” side, Sally Satel?
+
+### Conspiracy Advocate (CA)
+Claim: Okay, so I can address my question—
+
+### Moderator
+Claim: You can ask a—
+
+### Conspiracy Advocate (CA)
+Claim: Okay.
+
+### Moderator
+Claim: Preferably to one of them.
+
+### Conspiracy Advocate (CA)
+Claim: Yes, Dr. Childress, I wanted to ask you… In nineteen—I’m going to quote you something you wrote in 1992. And then we work up. You said, “It would be odd to structure a system designed to promote altruistic behavior, with the result of saving human life”—and you’re referring to the UNOS system— “when a system that relied on financial incentives could save more lives.” So I took this to mean that an altruistic system would be preferable to an incentive system, if it saved more lives, an incentive system would be preferable to an altruistic system if it could be shown to save more lives. Well, okay, that was 1992. Fast-forward 14 years to 2006 when you were the head of the Institute of Medicine Report on organ donation. And in answer to the question that the report posed, what should we do about even considering, even pursuing a pilot trial of incentives, you had said—or the report said, but I know you concurred—“it is not time yet.” Now the report spent a lot of time—I’ll be quick—on cadaver donation. I’ll just say very quickly…believe it or not, even though two million people die a year, perhaps 20,000 are eligible to become organ donors, it’s just not that easy to be eligible, as a cadaver, so even if we used every deceased person, there wouldn’t be enough. So your focus on deceased donation would not help. I’m all for it, let a thousand organs bloom, I’ve never heard a policy frankly I didn’t like, that would increase. But that’s not gonna be enough. So my question to you is—
+
+### Moderator
+Claim: I was wondering when we’d get to that—
+
+### Conspiracy Advocate (CA)
+Claim: —if not—we’ll get to—here it is. If it wasn’t time then, in 2006, when is it going to be time. How many more people are going to have to die until we can have your permission, to finally, at least have a trial of incentives.
+
+### Scientific Advocate (SA)
+Claim: First of all, I still affirm all those positions and they’re not incompatible with each other. Basically, my view is that, we should give the kind of system we have preference—and by the way, it’s not simply an altruistic system. People have a lot of different motives for donating organs. We get confused when we identify altruism with donation. People are often donating, say for example because they want to gain some meaning out of a tragedy that’s occurred. They may be donating as a living person, an organ again because of the relationships involved, but don’t have to do specifically with altruism. I think we have not yet given a fair chance to the system we have, in that we have not yet put the resources and energy into it. Okay? That is one person’s judgment about it, I see Amy frowning a great deal but you’ll get to respond to it in a moment, I still have— Since the question was five minutes long I get that much time in response.
+
+### Moderator
+Claim: It was actually two-thirty—
+
+### Conspiracy Advocate (CA)
+Claim: It’s only three minutes.
+
+### Scientific Advocate (SA)
+Claim: Now…there are only 13,000 to 16,000 people who are declared dead by neurological standards, who could probably donate organs. There are another, on a conservative estimate, 20,000-plus who are declared dead by cardiopulmonary standards, and that is a direction that the IRM report recommended, that at least merits a trial but since I happen to agree with Lloyd on this, not much else, but at least on this, that we ought to be giving preference to the cadaveric system over the living in part because as Amy noted, we actually don’t know a lot about the long-term risks, which we do need to know. So it’s a matter of structuring this in terms of preferential systems, and the IRM report did not rule it out completely, that held, that let’s—
+
+### Moderator
+Claim: Okay—
+
+### Scientific Advocate (SA)
+Claim: —see if this will work.
+
+### Moderator
+Claim: I’m going to give you an opportunity now, James, to ask a question if you’d like. You don’t have to—
+
+### Scientific Advocate (SA)
+Claim: Oh, I will—
+
+### Moderator
+Claim: I thought you might, to any of our panelists.
+
+### Scientific Advocate (SA)
+Claim: Lloyd, you know that I find much about your…
+
+### Scientific Advocate (SA)
+Claim: Do we all get a question?
+
+### Moderator
+Claim: Yes.
+
+### Scientific Advocate (SA)
+Claim: Okay.
+
+### Moderator
+Claim: You’ll get— I know you’re chomping at the bit—
+
+### Conspiracy Advocate (CA)
+Claim: Frank, you get two questions.
+
+### Moderator
+Claim: I have to get out the boxing gloves for you guys.
+
+### Scientific Advocate (SA)
+Claim: That’s fine.
+
+### Moderator
+Claim: Okay, go ahead.
+
+### Scientific Advocate (SA)
+Claim: Let me raise this of Lloyd, because, Lloyd, other than, perhaps sensing a kind of market fundamentalism here, I cannot for the life of me see how you think the system you propose would work. If donors, now…people who are potential donors are not willing to sign a donor card because they don’t trust the system, they worry that they’ll be declared dead prematurely, or have their deaths hastened, why would anyone be willing to sign a contract for a delivery of organs after his or her death, for money, when that would seem to me to be the least trustworthy system.
+
+### Moderator
+Claim: All right—
+
+### Scientific Advocate (SA)
+Claim: So if you can answer that—
+
+### Moderator
+Claim: —brief—brief—
+
+### Scientific Advocate (SA)
+Claim: —I’d be grateful—
+
+### Moderator
+Claim: —brief question, brief answer—
+
+### Conspiracy Advocate (CA)
+Claim: Okay—
+
+### Moderator
+Claim: —from Lloyd.
+
+### Conspiracy Advocate (CA)
+Claim: If James… he asserts, people are not willing to sign now, because they’re, they don’t trust the system and they’re afraid of being declared prematurely dead. Where does he get his information from? From idiot surveys. No good social scientist relies on such evidence. You—no economist ever wants to make use of a survey. People say anything in a survey. Surveys are not a test of anything. Use a little bit of introspection as to why it is you may or may not sign an organ donor card. People in general don’t want to contemplate their own violent, immediate, surprising death and dismemberment.
+
+### Scientific Advocate (SA)
+Claim: Okay.
+
+### Conspiracy Advocate (CA)
+Claim: Great surprise! Okay. In my conclusion I’ll explain why it is that the market will work, but I—
+
+### Scientific Advocate (SA)
+Claim: All right, okay—
+
+### Conspiracy Advocate (CA)
+Claim: Ira’s not gonna give me any more time—
+
+### Scientific Advocate (SA)
+Claim: I got it—
+
+### Conspiracy Advocate (CA)
+Claim: Even though I deserve more than anyone else.
+
+### Moderator
+Claim: Just ‘cause you look like Mel Brooks doesn’t mean you get the extra time, so— So hang in there, Amy, it’s your turn to—
+
+### Conspiracy Advocate (CA)
+Claim: Okay, before I get to my question I do wanna respond to what James said about the system—
+
+### Moderator
+Claim: No, no, we’re
+
+### Conspiracy Advocate (CA)
+Claim: No, no, no, he—he specifically, responded—
+
+### Moderator
+Claim: This is gonna be your question then.
+
+### Conspiracy Advocate (CA)
+Claim: Mmm, well, I agree with him, that the system should be given every opportunity, we just can’t wait for all the people to die, right now, so we all want the system to work, we all want all of these efforts, we just can’t wait. Now the question. And this is for James. If you object to paying live donors because the poor would allegedly be coerced by poverty into making an unwise choice, do you have any objections to the middle class selling a kidney. It would not be difficult to restrict organ sales to those whose income is at least 70 percent of the American median. Sure, that would make kidneys more expensive, we could live with that. How about you? Does taking the desperately poor out of the picture make you relent, or do you now move to the paternalistic position that no one should accept any amount of money.
+
+### Scientific Advocate (SA)
+Claim: The issue has to do in part with relative deprivation, disadvantage, I used several different terms in the discussion, disadvantage being one of them, that’s often relative rather than absolute in regard to say, poverty level. I think that the way you’re raising the question here, I focus on obviously the extreme version of it, those in desperate straits— The problem we think we—I think we would have is one that my colleagues also raised and that is, once you set up a system, you’re not going to be able to restrict it to the kind of level you indicated,… set it in terms of income level. Because you’re going to be then charged with discrimination against the poor and their opportunity to obtain it, that—the system would be unstable, the way you’ve sketched it.
+
+### Conspiracy Advocate (CA)
+Claim: So your objection is practical, not ethical or moral?
+
+### Scientific Advocate (SA)
+Claim: No, I’ve given an ethical one but I’m just saying in response to your question, that that would be the problem with the system you’ve proposed.
+
+### Moderator
+Claim: Okay. Next question, Frank, you can—
+
+### Scientific Advocate (SA)
+Claim: So this is for Amy. And I do so asking her in the reality of, now the market exists. The market that Dr. Friedman wants to have, now exists. She’s a transplant surgeon, she’s got a 72-year-old patient in front of her, and by her market system, there’s a 56- year-old middle class, who’s before her as well. The 56-year-old has come forward, and is prepared to sell his or her kidney, his kidney, and now I’d like to know from Dr. Friedman the following. Would you advise your 72-year-old patient to accept a 56- or 60- year-old, when the insurance company of this patient is saying, we can get you to India tomorrow, and we can have a twen— We can get you to Manila tomorrow, and we can have a 20-year- old kidney for you. If the alternative is that the patient could go out of country for a 20-year-old, versus your market system that will only provide the 56- or 60-year-old, what would you advise. Your patient.
+
+### Moderator
+Claim: Dr. Friedman?
+
+### Conspiracy Advocate (CA)
+Claim: The construct of the system has to be along the lines of what we have with Medicare now and that is that, patients who currently go out of this country to have transplants at non-Medicare- approved transplant centers don’t have their medications paid for subsequently.
+
+### Scientific Advocate (SA)
+Claim: That’s not true.
+
+### Conspiracy Advocate (CA)
+Claim: That's prohibited.
+
+### Scientific Advocate (SA)
+Claim: But it’s not true.
+
+### Conspiracy Advocate (CA)
+Claim: What is—
+
+### Scientific Advocate (SA)
+Claim: …end of discussion, that's not true. You can come back and have your medications still, if you're Medicare eligible, you’ll have your medications paid—
+
+### Conspiracy Advocate (CA)
+Claim: Frank, we’re now required to inform every patient—
+
+### Scientific Advocate (SA)
+Claim: Well, let’s go back, let’s go back to—
+
+### Moderator
+Claim: Wait, you asked her a question, let, let—
+
+### Conspiracy Advocate (CA)
+Claim: Frank, we are now required to inform every patient that if they don’t have their transplant performed at a Medicare-approved center, Medicare won't pay for their medications. That’s the type of system that we ought to proceed with, the same kind of—
+
+### Scientific Advocate (SA)
+Claim: Is this patient going out of country, is the patient going out of country or not?
+
+### Conspiracy Advocate (CA)
+Claim: They shouldn't be permitted to, because they won't have access to medications and other care.
+
+### Moderator
+Claim: Okay, Lloyd, you get a chance to ask a question.
+
+### Conspiracy Advocate (CA)
+Claim: Okay, my, mine is a question for Frank. Now, unlike the other participants in this debate, I'm not a good and generous person. It’s true, ask my daughter, she’s there. I am so callous and uncaring that I wrote a codicil to my will disinheriting any member of my family who consents to the donation of any of my organs, unless they are paid at least eight hundred and sixty-four dollars and thirty-seven cents per organ. I posted this on my web page, and other people have downloaded it and amended their wills accordingly. Now, I ask you, Dr. Pangloss, I'm sorry, I mean Dr. Delmonico… Is your objection to my estate profiting from the salvaging of my organs so strong that you think it just and right to threaten innocent sick people with prison for purchasing my organ? Is there some great ethical principle that I do not understand under which the sick should be condemned to die rather than obtain organs from the self-interested and even selfish?
+
+### Scientific Advocate (SA)
+Claim: Well, the problem isn't that they would have to buy your organs, it’s that they would go elsewhere. They won't want your organs, Lloyd. They're going to go to Manila for the twenty year old. Thank you.
+
+### Conspiracy Advocate (CA)
+Claim: I don’t think that was an answer, Frank.
+
+### Scientific Advocate (SA)
+Claim: Well, yes it is an answer. The answer is that they're going to be in a position when you have legalized markets to say, who wants your organs in your circumstance when I can go to Manila to buy one from a twenty year old?
+
+### Conspiracy Advocate (CA)
+Claim: Well—
+
+### Scientific Advocate (SA)
+Claim: That’s the answer.
+
+### Moderator
+Claim: Sally wants, I'm going to break the rules a little, Sally wants to jump in. She’s the only one who’s ever bought an organ here—
+
+### Conspiracy Advocate (CA)
+Claim: Or thought about it.
+
+### Moderator
+Claim: Or thought about it, so—
+
+### Conspiracy Advocate (CA)
+Claim: I did think about it.
+
+### Moderator
+Claim: …let’s get some practical—
+
+### Conspiracy Advocate (CA)
+Claim: Frank, I don’t understand. We can do that now. I can go to Manila now, so I don't see why having a mechanism where organs can be compensated for by a third party makes any difference at all.
+
+### Scientific Advocate (SA)
+Claim: The point is, Sally, that I’d like you to see what it looks like to go to Manila—
+
+### Conspiracy Advocate (CA)
+Claim: Well, the reason I would have to go to Manila—
+
+### Scientific Advocate (SA)
+Claim: And now, and the point is—
+
+### Conspiracy Advocate (CA)
+Claim: …is because I couldn't buy it here—
+
+### Scientific Advocate (SA)
+Claim: …if you say, in the United States, it’s legal to have a market in the US, then you're going to set up a global competition for buyers. And the rich people will, why should we stay here? Why should the insurance companies—
+
+### Conspiracy Advocate (CA)
+Claim: Frank! We can do that now.
+
+### Scientific Advocate (SA)
+Claim: And the point is, you’ll—
+
+### Conspiracy Advocate (CA)
+Claim: And people will stay here if they can get it now.
+
+### Moderator
+Claim: Okay, we can ping pong on this back and forth. David, you have one last shot at asking a question.
+
+### Scientific Advocate (SA)
+Claim: The question I have for Amy or Sally, they can choose—
+
+### Moderator
+Claim: Come on, you’ve got to pick one.
+
+### Scientific Advocate (SA)
+Claim: Oh really?
+
+### Moderator
+Claim: Yeah.
+
+### Scientific Advocate (SA)
+Claim: Well let me—
+
+### Moderator
+Claim: She can refer it to the other one.
+
+### Scientific Advocate (SA)
+Claim: Let me pick Sally, because if I recall correctly, some of your affiliation is with a group that doesn't like all kinds of regulations that some of us do like. Your think tank is not known for its pro- regulatory system. Given that stance in most areas, let me just rattle off a couple of quick points—
+
+### Moderator
+Claim: This has got to be in form—
+
+### Scientific Advocate (SA)
+Claim: Oh, it’s going to be quick—
+
+### Moderator
+Claim: It’s like Jeopardy, it’s in form of a question.
+
+### Scientific Advocate (SA)
+Claim: It is.
+
+### Moderator
+Claim: Okay.
+
+### Scientific Advocate (SA)
+Claim: Given what we know about Enron, given what we know about mortgage, works, given what we know, at least according to some, about the way hedge funds work, given these examples, what makes you confident that a regulatory system where everyone could enter the market could possibly work? Everything we know about regulation suggests that this would be a disaster, and to move us to a regu-, to count on regulation as you do, as Amy did earlier, you're out of your league.
+
+### Moderator
+Claim: All right—
+
+### Conspiracy Advocate (CA)
+Claim: Well, first—
+
+### Moderator
+Claim: Amy or Sally, whatever, which…
+
+### Conspiracy Advocate (CA)
+Claim: Thank you for bringing up AEI, because it’s actually a place where we have more intellectual freedom than most universities, which is why I can talk about a regulated system and don’t have to adhere to a classic free market form. Now, the kind of system I have in mind, really is a straw man I think you guys keep setting up, we are not talking about a classic commercial free for all, or a free market, or an eBay system. We’re talking about a third party payer. For example, today you, Ira, could decide to give a kidney. You’d be called a Good Samaritan donor, you would show up at New York Med, and you would say, please give my organ to the next person on the list in this region, in this hospital, in the country. And they would do it. The only difference in a model that we’re thinking, or I'm thinking about, is where you go and give your organ, and your retirement account is wired forty thousand dollars, end of story. Everything else is the same, the, the screening you go through, the same medical check up, everything.
+
+### Moderator
+Claim: Okay, we now have time for question and answers from the audience, and please make your way out to the microphone, or have the microphone meet you, or a meeting of minds some place in the middle of the aisle. Go ahead, you can stop there and ask, go ahead.
+
+### Moderator
+Claim: My name is—
+
+### Moderator
+Claim: Technology problem with the mic, is it working?
+
+### Moderator
+Claim: Thanks, my name is—
+
+### Moderator
+Claim: We don’t hear you.
+
+### Moderator
+Claim: Can you hear me?
+
+### Moderator
+Claim: All right, go ahead.
+
+### Moderator
+Claim: Well, my name is John Fung, and I'm pleased to say I had no meeting with people on the panel. By disclosure, I was a transplant surgeon at the University of Pittsburgh for twenty years, and now at the Cleveland Clinic. During my years at the Cleveland Clinic, at the University of Pittsburgh I was fortunate to have been involved in the care of Robert Casey, who was then the Governor of Pennsylvania, having been part of the team that had performed a combined heart and liver transplant on him. And shortly after his transplant he met the family of the donor. His mother, the donor’s mother, relayed to Governor Casey at the time that the funeral expenses for her son couldn't, they couldn't come up with the money for it. And as it turns out, to maybe, perhaps the audience doesn't realize, is that, funeral directors charge an additional amount on top of the costs of the preparation for the body on the order of about three hundred dollars because of the donation process. And so Governor Casey at the time, along with some of the transplant procurement centers in the state, came up with Act 102, which provided the opportunity for citizens of Pennsylvania to donate a dollar as part of their annual tax—
+
+### Moderator
+Claim: Mr. Fung, I'm going to have to ask you to get to your question—
+
+### Moderator
+Claim: I'm sorry—
+
+### Moderator
+Claim: I have other people waiting.
+
+### Moderator
+Claim: So the question, all right, and anyway, the three hundred dollars that was assigned to be allowed to pay for these funeral expenses was never implemented, even though it was approved by the state legislature, and the reason was because we didn't, it was thought to be against the federal regulations, the National Organ Transplant Act. One of the issues here is, we’re talking about pro and con, the fact is that we don't have any data whatsoever that says it can be done, or can't be done in the United States. We’re all referring to the Middle East, or South America, whatever. So I think one of the comments for the pro side of this is, why not allow a pilot study?
+
+### Moderator
+Claim: Okay, let me get—
+
+### Moderator
+Claim: The American Medical Association—
+
+### Moderator
+Claim: Okay! You made your point, thank you. Any comments? Why not allow, why not allow a pilot study to see how…?
+
+### Scientific Advocate (SA)
+Claim: Well there, again, I really want to draw the audience’s attention to the fact that the Pennsylvania initiative that Dr. Fung was just alluding to didn't trouble a lot of folks. It was small, the amount of money was relatively trivial, although some wag in the New York Times wrote everybody who’s dying is going to go to Pennsylvania, which I thought was pretty absurd.
+
+### Moderator
+Claim: Not heaven, huh? Oh, I'm sorry. I see, okay, I get it.
+
+### Scientific Advocate (SA)
+Claim: Look, in New York, you know, first prize is one day, second prize is two days in Philadelphia, but that’s another story.
+
+### Moderator
+Claim: We have to give them equal time now.
+
+### Scientific Advocate (SA)
+Claim: This is true. But I can't emphasize enough that the excitement and the interest and the concern about this issue doesn't come from the, you know, the couple of hundred bucks in the cadaver world—
+
+### Moderator
+Claim: David, I have to get to the question, and that was, why not give it a try?
+
+### Scientific Advocate (SA)
+Claim: Well I really don’t have great problems with giving Pennsylvania a try, Frank and Jim may… But that’s not what we’re debating tonight.
+
+### Moderator
+Claim: Okay, Frank, what--would you be willing to give something a try, or anything that they, some, some form of it?
+
+### Scientific Advocate (SA)
+Claim: There’s a guy in Taiwan, Formosa Plastics, a generous man, every time somebody dies whose family donates a kidney, he gives them several hundred dollars for burial expenses. This crowd wouldn't be here if we were debating three hundred bucks for burial expenses.
+
+### Moderator
+Claim: I know, but he’s not, that was a long story, well told, but got the point—
+
+### Scientific Advocate (SA)
+Claim: Three hundred bucks for burial expenses.
+
+### Moderator
+Claim: Let me ask Jim, what—
+
+### Scientific Advocate (SA)
+Claim: First of all, I have no problem with that experiment, I wish it would have been implemented, it’s an expression of gratitude to the donors, that is very different from setting up an incentivized system—
+
+### Scientific Advocate (SA)
+Claim: That’s right.
+
+### Scientific Advocate (SA)
+Claim: …of the sort for living vendors, and they're not donors, they are vendors if we’re paying them to donate. Why not do an experiment, because so much of what we have said today, on both sides, is actually a matter of speculation. We don’t know whether it would be, some of these proposals would be effective or not. We don’t know whether they’ll have bad consequences. I think the main reason we should not change the federal and several state laws in order to allow some of the kinds of experiments that have been proposed would be precisely that we would then cross the barrier that I think David has emphasized, that once you’ve made the organs into a commodity, you won't be able to turn back, and that—
+
+### Moderator
+Claim: Okay.
+
+### Scientific Advocate (SA)
+Claim: …the experiments, I think would be dangerous to do—
+
+### Moderator
+Claim: Well, we got half…
+
+### Conspiracy Advocate (CA)
+Claim: I have to make one, this is directly contrary to what the IOM report of two years ago, of which, weren't you—
+
+### Moderator
+Claim: That’s the Institute of Medicine?
+
+### Conspiracy Advocate (CA)
+Claim: Institute of Medicine Report, which said no experiments, no trials, nothing in—
+
+### Scientific Advocate (SA)
+Claim: The experiments—
+
+### Moderator
+Claim: Well, you pay extra for the furniture, so just, just… All right, let’s go get another question here from the audience.
+
+### Moderator
+Claim: My question is directly a follow up on the preceding question, and it’s directed at Dr. Friedman. Clearly if forty thousand people die every year waiting for these, waiting unsuccessfully for kidneys, and seventy-five thousand suffer on dialysis and lose their strength waiting for kidneys, then the current system is not working despite what James Childress says. It’s not working well enough. Now you pointed out before that there may be some long term consequences to donors, but the number that always appears in literature is that only point oh three percent of donors die as a result, in the long term or even in the short term, of donating a kidney. So, it sounds like a very safe thing to do. Why aren't the major advocacy organizations doing more pilot research to assess whether there are any long terms risks, and also doing research on what types of compensation systems would mitigate some of the objections raised by the other side? I'm amazed that the advocacy organizations have adopted such a do nothing position. And finally, let me just ask Dr. Delmonico, you’ve mentioned several times, and the other members of your panel, that the people on the other side are guilty of market fundamentalism, and I wondered whether perhaps on this side there was an overdose of equality fundamentalism, so that people in this country may be dying waiting because of concerns that in other parts of the world poor people are selling their organs.
+
+### Moderator
+Claim: Okay, let’s, we’ll get, Amy, do you want to handle that?
+
+### Conspiracy Advocate (CA)
+Claim: Yeah, thank you for your comments on lag donor safety. It’s critically important. Nobody has done these long term studies because we don’t have a mechanism to capture and retain information about the donors twenty and thirty years out, and we don’t have the means of paying for it. Right now we can have a donor who has no medical insurance whatsoever come and donate a kidney because the recipients insurance pays for it, but we have no mechanism after they get through the early post- operative period to pay for their care. That’s expensive. And that's a part of what would need to be in a regulated system. And thank you very much, all of the advocacy organizations, the American Society of Transplant Surgeons, the American Society of Transplantation, the government, and everybody at this table, on both sides, very much agrees that we need to capture the information about donors, we just can't afford to, and in the absence of universal health care or a single system, we can't do it because they just escape, we can't track them.
+
+### Moderator
+Claim: Frank, did you want to respond?
+
+### Scientific Advocate (SA)
+Claim: Yes, I do. Four thousand people dying on the list, forty percent of the people who are dying are not in need of kidneys. They would not, the market system would not affect them by having more organs available, because you can't buy a heart, you can't, unless you're in Egypt you can't buy a liver, you can't buy a lung. One of the problems of the proposal is that, and David brought this up, the assumption that those patients would still have a cadre of deceased organs available. But that experiment has been done in Hong Kong and in other places. When you have markets, there is no, the deceased donation is negatively impacted. So, right away, when you say four thousand people are dying on the list, not quite, but almost half are dying in need of organs that he market system will not impact. Now, next, on the kidney front, of those that are dying, we need to make an assessment of why they're dying, and whether or not that is simply because they have not received an organ. Some of the patients that are dying on the list have been on that list for an extended period of time, inactive. And this was a point that we didn't get an opportunity to discuss. Inactive means that you do not receive an offer for a kidney. The market system will not impact an individual that is inactive on the list. Currently, thirty-three percent of the list, waiting for kidneys, twenty-four thousand patients are inactive on the list. That needs to be evaluated further before we go down the road of a market, we better assess the wait list of the premise to have markets.
+
+## Round 3
+
+### Moderator
+Claim: Okay, we’ve run out of time for this section of the audience participation, now we’re going to move to the final last lap here, the closing remarks. Each one of the debaters will get two minutes to sum up or rebut whatever they’d like to say, and I’ll give you a one minute warning, and we’ll start with Jim, you go first.
+
+### Scientific Advocate (SA)
+Claim: Thanks. I have never said that our current system.
+
+### Moderator
+Claim: You can go up there if you’d like to.
+
+### Scientific Advocate (SA)
+Claim: Oh, that's fine, I’ll sit here, I’ll be fine. I’ve never said that our current system is working well enough. I think we have a good system, not yet a great system, and I think we need to do a lot more to improve it, and I think we can do so. And I would just note in response to Amy’s comment, that we simply can't afford to develop a mechanism to follow up on living donors. If we can't afford to do that, then we cannot afford to do what we need to do to make a market in living vendors and sellers for kidneys work. We cannot, I would argue, destroy, we should not, I would argue, damage or destroy our system, which is not working as well as it should, and we need to improve, by adopting a flawed market in organs. Our opponents have proposed a radical change in our organ transplant system, and yet they’ve failed, in my judgement, to satisfy the burden of proof required for a drastic alteration of a system that is working fairly well and that can be further improved. By contrast, we’ve, I think, given good reasons for suspicion of such a market, and I hope that you will vote no for legalizing, that is, against legalizing a market in organs.
+
+Thanks. I have never said that our current system.
+
+### Moderator
+Claim: All right, you have a minute left.
+
+### Scientific Advocate (SA)
+Claim: I'm done.
+
+### Moderator
+Claim: Okay, thank you for—
+
+### Conspiracy Advocate (CA)
+Claim: Can I take his minute?
+
+### Moderator
+Claim: You're, well, I'm going to go to Sally next.
+
+### Conspiracy Advocate (CA)
+Claim: Can he yield his time to—
+
+### Moderator
+Claim: Sally, you have two minutes.
+
+### Conspiracy Advocate (CA)
+Claim: Okay.
+
+### Moderator
+Claim: Sally Satel.
+
+### Conspiracy Advocate (CA)
+Claim: Thanks. Well, during the time we’ve been here tonight, yes, someone has died, and this was a real person with a real family who would have lived if there were enough organs. It may sound maudlin, but it’s very true. And this is why we need to compensate donors. Altruism, or whatever is in that area between being paid and giving an organ is not enough. And insisting that it remain the basis for transplant policy is a reckless and derelict stance that will only guarantee a future of suffering, and not just for the patients, but for, who will languish and die on dialysis, but for black market donors as well. Our opponents hate the black market, well so do we. But somehow we learned something they never did, that the only way to stop elicit transactions is to sanction legal ones. Simply clamping down on elicit sales only drives it further underground, or causes it to blossom somewhere else, and the only way out of this tragic bind is to increase the supply. And the only way to do that is through a fair, transparent, safe, and legal means of exchange. Until then, the fate of third world donors and the patients who need their organs to live will remain tragically entwined. And until then, our opponents, who refuse to allow even experimentation with compensation, will be complicit, yes complicit, in fostering the organ trade. We welcome the other side to work with us, but as you’ve seen, they’ve never met a proposal they didn't reject or attack, they have a dearth of creative ideas, but an abundance of passion for obstructing innovation. In closing, unless we establish a legal market for kidneys in some form, we should brace ourselves for more needless suffering and death. Our side refuses to stand for that. So should you. It’s too high a price for a humane society to bear. Thank you.
+
+Okay.
+
+Can he yield his time to—
+
+Can I take his minute?
+
+### Moderator
+Claim: Now speaking against, Francis Delmonico.
+
+### Scientific Advocate (SA)
+Claim: When Sally says someone has died in just, you know, in the past moments, what you have to understand is that someone has died, and a market system wouldn't have impacted that death. If you're dying in need of a heart, you can't buy a heart. So, someone has died, and we do need more deceased organs, there’s no question about that, but the premise of a market system, by death on the list, is not resolved by a market system. Next, a dearth of creative ideas? Sally and I have met on a number of occasions to talk about what we can do differently to provide care for live donors that does not exist in this country, but is not a cash payment. Sally and Amy are contradictory. When Amy says you can't go out of the country, and Sally says, well, you can go right now out of the country.
+
+### Conspiracy Advocate (CA)
+Claim: I could have gone.
+
+### Scientific Advocate (SA)
+Claim: Exactly. She could have gone, and they do go. And it’s not just that they're going from the United States, but they're going from Canada, and Saudi Arabia, and Israel, and the Gulf Countries, and from Europe. And where are they going? And why wouldn't they go? And the question that was posed to Amy, the seventy- two year old patient that she has, and Ira, excuse me, Ira comes along and he, in the system that they—Ira’s going to be the donor. Wonderful. But why should that seventy-two year old or a fifty year old accept Ira when they can go to Manila, if it’s legalized? Right? Sorry, Ira.
+
+When Sally says someone has died in just, you know, in the past moments, what you have to understand is that someone has died, and a market system wouldn't have impacted that death. If you're dying in need of a heart, you can't buy a heart. So, someone has died, and we do need more deceased organs, there’s no question about that, but the premise of a market system, by death on the list, is not resolved by a market system. Next, a dearth of creative ideas? Sally and I have met on a number of occasions to talk about what we can do differently to provide care for live donors that does not exist in this country, but is not a cash payment. Sally and Amy are contradictory. When Amy says you can't go out of the country, and Sally says, well, you can go right now out of the country.
+
+### Moderator
+Claim: It’s okay.
+
+### Scientific Advocate (SA)
+Claim: Why should they accept—
+
+### Moderator
+Claim: It’s an old kidney, so—
+
+### Scientific Advocate (SA)
+Claim: Why should they accept Ira when they can go for a twenty year old and purchase that, because the United States says it’s okay to buy your kidneys. Let’s have an outlet store in the poor countries of the world to go and buy kidneys. That’s the problem that’s created by the United States saying it’s okay to have a market.
+
+### Moderator
+Claim: Thank you. Moving on to the for side, Amy Friedman.
+
+### Conspiracy Advocate (CA)
+Claim: Our opponents have told you that payment has been tried and is unsafe. Been there, done that. We tell you we know the way it’s being done now is wrong, let’s regulate it and do it right. We have no intention of stopping efforts to increase the number of deceased donor organs. This does not, in any way, affect those efforts. We can't afford independently, as transplant centers, or independent societies of transplant surgeons for example, to follow these live donors. We don’t have those funds. The government could provide the funds to long term provide the safety net and understand what’s happening with live donors. What we propose is the only solution to closing the dangerous black market. They’ve implied the dignity of the donor would be assaulted. We’ve told you there’s no dignity for people dying. We propose an approach that preserves the rights of donors, and compensates them for the risks they do assume.
+
+### Moderator
+Claim: One minute.
+
+### Conspiracy Advocate (CA)
+Claim: We’ll allow them to join us, the club of people who benefit from their life-saving gift. Isn't that treating them in a most dignified manner? This is supposedly an academic debate, and David even called it an exercise, but the ninety-nine thousand people currently waiting for organs, who are there for so long that they become inactive because they're too sick to get the transplant then, need real solutions, and they need you and us to be willing to think out of the box. There are lots of clever people available in this country to devise a system that can do it right, let’s do so.
+
+Our opponents have told you that payment has been tried and is unsafe. Been there, done that. We tell you we know the way it’s being done now is wrong, let’s regulate it and do it right. We have no intention of stopping efforts to increase the number of deceased donor organs. This does not, in any way, affect those efforts. We can't afford independently, as transplant centers, or independent societies of transplant surgeons for example, to follow these live donors. We don’t have those funds. The government could provide the funds to long term provide the safety net and understand what’s happening with live donors. What we propose is the only solution to closing the dangerous black market. They’ve implied the dignity of the donor would be assaulted. We’ve told you there’s no dignity for people dying. We propose an approach that preserves the rights of donors, and compensates them for the risks they do assume.
+
+### Moderator
+Claim: Thank you, on the against side, David Rothman. Your two minutes.
+
+### Scientific Advocate (SA)
+Claim: Well, some quick principles. First, beware of doctors who play regulators and economists. What you’ve heard from the physicians is fantasy. I'm not sure lawyers are much better at it, having heard Lloyd, but you're in a Never-Never Land, truly in a Never-Never Land. We’re going to not have immigrants do it. Why not have immigrants do it? Helter-skelter. Sally came out with a formulation which those of us in New York are a little scared about. The only way to stamp out illicit behavior is to legalize it. I can think of commercial sex work, but I don’t want to go there. Second, don’t think that you're doing the poor a favor. You want to do the poor a favor, start thinking in terms of economic development, watch what China did, watch what India is in the process of doing. Massive infusions of capital, growth, real change. This kind of pittance of giving the poor a little money—
+
+### Moderator
+Claim: One minute.
+
+### Scientific Advocate (SA)
+Claim: …here so that they can, you know, sell their body part, that’s absurd. You want to do something for the poor, do it in a real way, spur economic development. Finally, you're not doing the middle class any favor here either. I made that point with college, there’s got to be a better way to pay for an expensive wedding. Don’t go down that route.
+
+### Moderator
+Claim: Speaking for, final words, Lloyd Cohen.
+
+### Conspiracy Advocate (CA)
+Claim: So much pernicious, pretentious foolishness to refute, so little time. Are you shocked and surprised that anyone would argue that paying for organs will not increase the supply? I was at first, and then it became clear. The prospect of an effective organ market places our opponents behind the eight ball. A market that would recover vital organs now being fed to worms would be the salvation of thousands of patients. As against the saving of innocent lives, poetic statements about the dignity of human life being degraded by commercialism would be revealed as empty moral pieties. Our opponents would therefore prefer to believe that a market would not work, and demand that we must prove that it will. The obvious way to demonstrate the efficacy of a market is to permit one, but of course the law forbids that. So what other evidence or theory can I offer? First, consider the thriving organ markets in living donors in places like India. A market in the US where the interest of donors would be safeguarded by American law would, of course, be much more successful. And there’s no reason to think that somehow the American market would be like the Indian market, in the same way there’s no reason to think, if any of you have been to India, that potable water from the tap was as common in India as it is in the United States.
+
+### Moderator
+Claim: One minute.
+
+### Conspiracy Advocate (CA)
+Claim: And… No! And what does the success of living donor markets say about a market in cadaver organs? The sacrifice is incomparably greater for the living donor than for the deceased, so the supply of deceased donors will be far more responsive to a positive price. Second, look to the very reason that our opponents have such faith in the efficacy of altruism, and at the same time restrict its required application to organs rather than extend it to surgical services, nursing, and hospital care. They believe that altruism should work for transplant organs, because they are of no value to the dead, and of enormous value to the ill. Whatever this vast disparity should say about the power of altruism, it speaks volumes in the world of markets. Everywhere we look markets move goods from low valued uses to high valued ones. Third—
+
+So much pernicious, pretentious foolishness to refute, so little time. Are you shocked and surprised that anyone would argue that paying for organs will not increase the supply? I was at first, and then it became clear. The prospect of an effective organ market places our opponents behind the eight ball. A market that would recover vital organs now being fed to worms would be the salvation of thousands of patients. As against the saving of innocent lives, poetic statements about the dignity of human life being degraded by commercialism would be revealed as empty moral pieties. Our opponents would therefore prefer to believe that a market would not work, and demand that we must prove that it will. The obvious way to demonstrate the efficacy of a market is to permit one, but of course the law forbids that. So what other evidence or theory can I offer? First, consider the thriving organ markets in living donors in places like India. A market in the US where the interest of donors would be safeguarded by American law would, of course, be much more successful. And there’s no reason to think that somehow the American market would be like the Indian market, in the same way there’s no reason to think, if any of you have been to India, that potable water from the tap was as common in India as it is in the United States.
+
+### Moderator
+Claim: Lloyd, I got—
+
+### Conspiracy Advocate (CA)
+Claim: Ah! I’ve got seventeen more reasons, but you’ll have to talk to me privately.
+
+### Moderator
+Claim: There you go. Thank you all.
+
+Time to pull out your little magic clicker and decide, we talk, you decide, so to speak, who’s going to carry the day Pick up your key pad, I’ll tell you how to, once again you can see the motion is, “We should legalize the market for human organs.” If you are for the motion, press one. If you are against the motion, press two. And if you're still undecided, press three. So, cast your votes, and we’ll give you a little bit of time to do that. And while you're doing that I would like to take this opportunity to thank all of our debaters up front here. Lloyd Cohen, professor of law at George Mason University. Amy Friedman, director of transplantation, professor of surgery at SUNY Upstate Medical University. Sally Satel is a psychiatrist and resident scholar at the American Enterprise Institution for Public Policy Research. On my left is James Childress, professor of ethics at the University of Virginia, and director of the Institute for Practical Ethics in Public Life. Francis Delmonico, professor of surgery at Harvard Medical School, and director of medical affairs for the Transplantation Society. And finally, David Rothman, professor of social medicine, and director of the Center on Medicine as a Profession at Columbia. This is the last debate of the second Intelligence Squared US series. This program has been a huge success because of the support of people like you out there in the audience, audience members like yourselves who have been very enthusiastic about hearing both sides of big issues, and great issues they are, arguments that are brought here in all the series debates that have been hosted. Intelligence Squared would also like to thank the Asia Society and Museum for being our venue, right here in this beautiful auditorium, thank you from the very beginning. And as many of you already knew, due to the overwhelming success, and the demand for tickets, they're going to be moving out of this auditorium and into a bigger place. Intelligence Squared is going to resume in the fall at the larger Caspary Auditorium at Rockefeller University. You know that big building that looks like the geodesic dome there at the Caspary Auditorium? That’s at 66th and York. And that first debate is going to be on Tuesday, September 16th. Oh, this is a good one, small little topic, the motion: “Government mandated universal health care means inferior health care.” That’s the motion that you can come and vote on, and a ticket package and individual tickets for the fall in 2008 and spring 2009 series will go on sale later this month. An email alert and a brochure is going to be coming out in the coming weeks, so you're not going to be able to avoid that. You can check the website also for updates. You can also get an edited version of tonight’s Intelligence Squared debate, it can be heard locally on WNYC, AM820, coming up on Sunday, that's May 25th, at 8pm. These debates are also heard on more than a hundred and fifty NPR member stations, and of course, as they say, please check your local member station listings for the dates and times outside of New York City. Also, you can, of course, purchase a DVD from previous debates upstairs from the Intelligence Squared US website. And now here is the result of the final polling. Before the debate we had forty- four percent for the resolution, after the debate we have sixty percent.
+
+### Conspiracy Advocate (CA)
+Claim: Thank you, thank you.
+
+### Conspiracy Advocate (CA)
+Claim: Thank you.
+
+### Moderator
+Claim: Against, against the debate, before we had twenty-seven percent, and it moved up just four points to thirty-one percent against. But it was the, of course, the undecideds who decided this, from twenty-nine percent to nine percent, a twenty point move. So we had sixty percent for, thirty-one percent against, nine percent undecided. Thank you all for coming tonight, we’ll see you on Friday, on Science Friday. Congratulations—

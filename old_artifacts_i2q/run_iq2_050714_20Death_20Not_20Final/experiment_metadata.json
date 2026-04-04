@@ -1,0 +1,12 @@
+{
+  "topic_id": "050714%20Death%20Not%20Final",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "If consciousness is just the workings of neurons and synapses, how do we explain the phenomenon of near-death experience? By some accounts, about 3% of the U.S. population has had one: an out-of-body experience often characterized by remar...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

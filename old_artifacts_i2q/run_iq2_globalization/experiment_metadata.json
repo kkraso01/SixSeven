@@ -1,0 +1,12 @@
+{
+  "topic_id": "globalization",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Just two decades ago there seemed to be no limits to American power. 9/11, the financial crisis, and the rise of China are all reminders of what a different world we live in today. What should America’s role be in the new world order? Are...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

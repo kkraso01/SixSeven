@@ -1,0 +1,12 @@
+{
+  "topic_id": "041713%20gop",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "2012 was a disappointing year for Republicans. The failure to win key swing states in the presidential election and surprising losses in the House and Senate have prompted some reflection. Was their embrace of small government, low taxes,...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

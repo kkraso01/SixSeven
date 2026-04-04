@@ -1,0 +1,12 @@
+{
+  "topic_id": "free-press",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Description: The First Amendment protects freedom of the press, but how do we reconcile the conflict between national security and accountability? Do we err on the side of secrecy or transparency? From the Pentagon Papers to WikiLeaks, joi...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

@@ -1,0 +1,12 @@
+{
+  "topic_id": "111413%20guns",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "“A well regulated Militia being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed.” –2nd Amendment Recent mass shooting tragedies have renewed the national debate over the 2nd A...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

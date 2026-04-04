@@ -1,0 +1,12 @@
+{
+  "topic_id": "mainstream-media",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Mainstream media is dying. The network evening news audience is in steady decline; the big three magazine publishers, Time Inc., Condé Nast and Hearst have all closed or consolidated titles; and the newspaper industry has been especially r...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

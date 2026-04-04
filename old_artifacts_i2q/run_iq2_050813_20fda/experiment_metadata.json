@@ -1,0 +1,12 @@
+{
+  "topic_id": "050813%20fda",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "The Food and Drug Administration, the oldest comprehensive consumer protection agency in the U.S. federal government, is charged with protecting the public health. Under this mandate, it regulates drugs and medical devices for their safety...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

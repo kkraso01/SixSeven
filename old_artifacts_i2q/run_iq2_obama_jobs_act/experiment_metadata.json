@@ -1,0 +1,12 @@
+{
+  "topic_id": "obama-jobs-act",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "For many Americans, unemployment is at the top of that list. In the face of a double-dip recession and an unprecedented long-term unemployment rate, President Obama unveiled the American Jobs Act before Congress. His plan? Lower the unempl...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}
