@@ -125,16 +125,8 @@ conversation_history = []    # Global transcript
 
 ### Round Loop (`while round_number < max_rounds`)
 
-Each round has **3 sub-phases**:
-
-#### Phase 1a: Conspiracy Advocate (CA) Turn
-1. **Build agent messages** with full context:
    - System: CA role prompt ("You are the conspiracy proponent...")
    - System: Debate rules
-   - History: All prior debate messages (trimmed if needed)
-   - User: Memory summary (current confidences, scoreboard)
-   - User: Round instruction
-   - User: Opponent's last message (highlighted if configured)
 
 2. **Call LLM**:
    ```python
@@ -144,7 +136,6 @@ Each round has **3 sub-phases**:
                       max_tokens=config.max_tokens)
    ```
 
-3. **LLM returns structured `AgentTurn`** with:
    - `claim`: Their main argument
    - `reasons`: List of supporting points
    - `confidence`: Updated belief (0-100) - can decrease if persuaded!
@@ -180,7 +171,6 @@ Each round has **3 sub-phases**:
    - `civility_score`, `epistemic_quality_score`, `bridge_building_score` (0-5)
    - `confidence_updates`: {"CA_delta": +/-N, "SA_delta": +/-N} (how much the moderator thinks each shifted)
 
-2. **Apply updates**: 
    - Adjust CA/SA confidence based on moderator's delta
    - Update scoreboard with quality metrics
 
@@ -196,21 +186,15 @@ Each round has **3 sub-phases**:
 
 Generate final report:
 ```python
-final_report = llm.call(FinalReport, messages)
-```
 Contains winner prediction, key moments, persuasion analysis.
 
 ---
 
 ## Stage 4: Export & Logging
-
-[ExportBundle](../src/debate/simulator/io/writer.py) writes **6 files** per debate:
-
 1. **transcript.md** - Readable markdown with formatted turns (stored as `<output_dir>/transcripts/run_<id>.md`)
 2. **memory.json** - Full MemoryState object (all agent states, scoreboard, debate log)
 3. **final_report.json** - Moderator's summary & predictions
 4. **run_config.json** - Exact config used (model names, temperatures, prompt hashes, analysis settings)
-5. **metrics.csv** - Timeseries of quality/confidence per round (if metrics are present)
 6. **debate_log.csv** - Canonical CSV format:
    ```csv
     debate_id, claim, round, speaker_role, utterance, stance, confidence, tactic_used, tool_used, tool_query, reply_to_turn
@@ -219,7 +203,7 @@ Contains winner prediction, key moments, persuasion analysis.
 **File structure**:
 ```text
 results/  # or <output_dir>/
-├── raw/                      # Canonical JSON/CSV data
+├── raw/                      # Single-run data (canonical JSON/CSV)
 │   └── run_20260213_154520/
 │       ├── memory.json
 │       ├── final_report.json
@@ -227,6 +211,15 @@ results/  # or <output_dir>/
 │       ├── metrics.csv
 │       ├── debate_log.csv
 │       └── experiment_metadata.json
+├── batches/                  # Experiment suites
+│   ├── ollama/
+│   │   ├── raw/
+│   │   │   └── run_20260213_154620/
+│   │   └── all_debates_ollama.csv
+│   └── gemini/
+│       ├── raw/
+│       │   └── run_20260213_154720/
+│       └── all_debates_gemini.csv
 ├── analysis/                 # Visualizations and metrics
 │   └── run_20260213_154520/
 │       ├── plots/
@@ -479,7 +472,7 @@ SixSeven/
 │       └── validate_memory.py      # Memory architecture validation
 │
 ├── docs/                        # Documentation
-│   ├── ARCHITECTURE                # This file (technical design)
+│   ├── ARCHITECTURE.md             # This file (technical design)
 │   └── BATCH_GUIDE.md              # Batch experiment guide
 │
 ├── src/debate/                  # Core library
@@ -523,8 +516,8 @@ SixSeven/
 │       ├── report_models.py        # Report schemas
 │       └── report_writer.py        # File output saving
 │
-├── results/                    # Experiment results (triple-tree structure)
-├── README                      # Project overview and usage
+├── results/                    # Experiment results (batches + analysis)
+├── README.md                   # Project overview and usage
 └── pyproject.toml                   # Project metadata & Poetry config
 ```
 
@@ -585,7 +578,7 @@ config.analysis_similarity_method
 ```bash
 # Run locally, overnight, no API limits
 python cli/batch_ollama.py
-# Output: results/all_debates_ollama.csv (40 experiments, log rows per turn)
+# Output: results/batches/ollama/all_debates_ollama.csv (40 experiments, log rows per turn)
 ```
 
 ### Day 2: Gemini Batch
@@ -593,15 +586,15 @@ python cli/batch_ollama.py
 # Run with Gemini API during daytime (monitor quota)
 python cli/batch_gemini.py
 # If rate-limited: auto-resumes on next run
-# Output: artifacts_gemini/all_debates_gemini.csv (160 experiments, log rows per turn)
+# Output: results/batches/gemini/all_debates_gemini.csv (160 experiments, log rows per turn)
 ```
 
 ### Day 3: Analysis
 ```python
 # Combine and analyze
 import pandas as pd
-ollama = pd.read_csv("results/all_debates_ollama.csv")
-gemini = pd.read_csv("artifacts_gemini/all_debates_gemini.csv")
+ollama = pd.read_csv("results/batches/ollama/all_debates_ollama.csv")
+gemini = pd.read_csv("results/batches/gemini/all_debates_gemini.csv")
 combined = pd.concat([ollama, gemini])
 
 # Generate aggregate analysis
@@ -640,21 +633,17 @@ The system abstracts LLM backends:
 ```bash
 # Batch runner prints progress to console
 # Check output_dir for partial results
-ls -la results/raw/run_*/
-# Gemini batch writes to artifacts_gemini/ by default
-ls -la artifacts_gemini/raw/run_*/
+ls -la results/batches/ollama/raw/run_*/
+ls -la results/batches/gemini/raw/run_*/
 ```
 
 ### Inspect a single debate
 ```bash
-# View readable transcript
-cat results/transcripts/run_20260213_154520.md
+# View readable transcript (runs are nested under type/transcripts)
+cat results/batches/ollama/transcripts/run_20260213_154520.md
 
 # Check raw memory state
-cat results/raw/run_20260213_154520/memory.json | python -m json.tool
-
-# See all claims in order
-cat results/raw/run_20260213_154520/debate_log.csv
+cat results/batches/ollama/raw/run_20260213_154520/memory.json | python -m json.tool
 ```
 
 ### Resume failed batch

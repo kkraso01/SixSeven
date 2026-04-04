@@ -79,8 +79,17 @@ class BaseBatchRunner:
     ):
         self.batch_label = batch_label
         self.base_config = base_config or DebateConfig.from_ini("config/config.ini")
-        # Default to config.ini values if not explicitly provided
-        self.output_dir = Path(output_dir or self.base_config.output_dir)
+
+        # Default to results/batches/<label> if no output dir provided
+        if output_dir:
+            self.output_dir = Path(output_dir)
+        elif self.base_config.output_dir:
+            # If config has an output dir, put batches inside it
+            self.output_dir = Path(self.base_config.output_dir) / "batches" / batch_label
+        else:
+            # Fallback to current dir if all else fails (safety)
+            self.output_dir = Path("results/batches") / batch_label
+
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.rounds = rounds if rounds is not None else self.base_config.rounds
         self.word_limit = word_limit if word_limit is not None else self.base_config.word_limit
@@ -92,9 +101,16 @@ class BaseBatchRunner:
     # ── Completion index ───────────────────────────────────────────
 
     def _build_completion_index(self) -> None:
-        """Scan artifact dirs once and index completed (topic_id, model_config) pairs."""
+        """Scan artifact dirs once and index completed (topic_id, model_config) pairs.
+
+        Now scans inside the 'raw/' subdirectory to align with the new hierarchy.
+        """
         count = 0
-        for run_dir in sorted(self.output_dir.glob("run_*")):
+        raw_dir = self.output_dir / "raw"
+        if not raw_dir.exists():
+            return
+
+        for run_dir in sorted(raw_dir.glob("run_*")):
             metadata_file = run_dir / "experiment_metadata.json"
             if not metadata_file.exists():
                 continue
@@ -327,7 +343,8 @@ class BaseBatchRunner:
         self.export_summary()
 
         combined_csv = self.output_dir / f"all_debates_{self.batch_label}.csv"
-        export_all_debates_to_csv(self.output_dir, combined_csv)
+        # The aggregator now scans the 'raw/' subdirectory
+        export_all_debates_to_csv(self.output_dir / "raw", combined_csv)
 
         print(f"\n{'=' * 80}")
         print("BATCH COMPLETED OR INTERRUPTED")
