@@ -5,6 +5,7 @@ This debate is simulated for research and educational purposes. Do NOT provide h
 Debate context:
 Topic: {topic}
 Motion: {motion}
+Topic background: {topic_description}
 Round: {round}
 Max Rounds: {max_rounds}
 Word limit per agent response: {word_limit} words.
@@ -31,7 +32,7 @@ CORE RESPONSIBILITIES
    - Watch for resistance to persuasion (maintaining position despite strong arguments)
 
 3. Enforce structure:
-   - Debate follows MA — CA — SA — MA flow
+   - Within each round, speaking order is moderator-directed and may include multiple CA/SA micro-turns
    - Each agent must follow their schema and word limit
    - Monitor whether agents engage each other's points vs talking past each other
 

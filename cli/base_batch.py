@@ -74,6 +74,7 @@ class BaseBatchRunner:
         batch_label: str,
         output_dir: str | None = None,
         rounds: int | None = None,
+        max_turns_per_round: int | None = None,
         word_limit: int | None = None,
         base_config: DebateConfig | None = None,
     ):
@@ -92,6 +93,11 @@ class BaseBatchRunner:
 
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.rounds = rounds if rounds is not None else self.base_config.rounds
+        self.max_turns_per_round = (
+            max_turns_per_round
+            if max_turns_per_round is not None
+            else self.base_config.max_turns_per_round
+        )
         self.word_limit = word_limit if word_limit is not None else self.base_config.word_limit
         self.results: list[ExperimentResult] = []
         # Index of already-completed experiments: (topic_id, config_name) -> run_dir
@@ -162,6 +168,7 @@ class BaseBatchRunner:
             scientific_temperature=self.base_config.scientific_temperature,
             max_tokens=self.base_config.max_tokens,
             rounds=self.rounds,
+            max_turns_per_round=self.max_turns_per_round,
             word_limit=self.word_limit,
             seed=self.base_config.seed,
             output_dir=str(self.output_dir),
@@ -208,6 +215,7 @@ class BaseBatchRunner:
             rounds=self.rounds,
             config=config,
             services=services,
+            topic_description=topic.description,
         )
 
         # Save experiment metadata
@@ -215,6 +223,7 @@ class BaseBatchRunner:
             "topic_id": topic.id,
             "topic_category": topic.category,
             "topic_description": topic.description,
+            "max_turns_per_round": config.max_turns_per_round,
             "model_config": model_config.name,
             "models": {
                 "moderator": model_config.moderator,

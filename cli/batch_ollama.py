@@ -6,6 +6,8 @@ because Ollama has no API rate limits.
 
 from __future__ import annotations
 
+import argparse
+
 from cli.base_batch import BaseBatchRunner
 from debate.core.model_pool import ModelPoolError, get_batch_model_configs
 from debate.core.topics import CONSPIRACY_TOPICS
@@ -20,8 +22,42 @@ class OllamaBatchRunner(BaseBatchRunner):
 
 def main():
     """Run Ollama-only batch experiments (no API limits)."""
+    parser = argparse.ArgumentParser(description="Run Ollama batch debate experiments")
+    parser.add_argument(
+        "--out",
+        "--output-dir",
+        "--dir",
+        dest="output_dir",
+        type=str,
+        default=None,
+        help="Output root for artifacts",
+    )
+    parser.add_argument(
+        "--rounds",
+        type=int,
+        default=None,
+        help="Override number of rounds",
+    )
+    parser.add_argument(
+        "--max-turns-per-round",
+        type=int,
+        default=None,
+        help="Override moderator-controlled max CA/SA speaking slots per round",
+    )
+    parser.add_argument(
+        "--word-limit",
+        type=int,
+        default=None,
+        help="Override per-turn word limit",
+    )
+    args = parser.parse_args()
+
     runner = OllamaBatchRunner(
         batch_label="ollama",
+        output_dir=args.output_dir,
+        rounds=args.rounds,
+        max_turns_per_round=args.max_turns_per_round,
+        word_limit=args.word_limit,
     )
 
     try:

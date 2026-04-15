@@ -255,6 +255,40 @@ class ModeratorDecision(BaseModel):
         return data
 
 
+class ModeratorTurnControl(BaseModel):
+    """Moderator directive for selecting the next speaker within a round."""
+
+    next_speaker: Literal["CA", "SA", "END_ROUND"] = Field(
+        description="Who should speak next, or END_ROUND to close the current round"
+    )
+    reason: str = Field(description="Brief rationale for this turn-routing decision")
+
+    @model_validator(mode="before")
+    @classmethod
+    def _fix_turn_control_keys(cls, data):
+        """Fix common key/value variants for turn-routing output."""
+        if isinstance(data, dict):
+            _rename_keys(data, {"next speaker": "next_speaker"})
+            speaker = data.get("next_speaker")
+            if isinstance(speaker, str):
+                normalized = speaker.strip().upper().replace(" ", "_")
+                value_map = {
+                    "PRO": "CA",
+                    "PROPONENT": "CA",
+                    "CON": "SA",
+                    "OPPONENT": "SA",
+                    "MODERATOR": "END_ROUND",
+                    "END": "END_ROUND",
+                    "ENDROUND": "END_ROUND",
+                    "END_ROUND": "END_ROUND",
+                    "CA": "CA",
+                    "SA": "SA",
+                }
+                if normalized in value_map:
+                    data["next_speaker"] = value_map[normalized]
+        return data
+
+
 class DebateLogItem(BaseModel):
     """Canonical debate log format matching project specifications."""
 
@@ -335,6 +369,10 @@ class FinalReport(BaseModel):
     key_persuasion_moments: list[PersuasionMoment]
     outcome_summary: str = Field(description="Who changed their mind, or if neither did")
     limitations: list[str]
+    fairness_summary: dict[str, int] | None = Field(
+        default=None,
+        description="Compact fairness metrics for moderator turn routing",
+    )
 
     @model_validator(mode="before")
     @classmethod
@@ -360,4 +398,6 @@ class FinalReport(BaseModel):
                 data["tactic_counts"] = {}
             if "stance_trajectory" not in data:
                 data["stance_trajectory"] = {"CA": [], "SA": []}
+            if "fairness_summary" not in data:
+                data["fairness_summary"] = None
         return data

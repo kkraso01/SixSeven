@@ -28,6 +28,7 @@ class DebateConfig:
     thinking_budget: int = 4000  # Extra tokens reserved for thinking models' chain-of-thought
     num_ctx: int = 8192  # Ollama context window size (num_ctx)
     rounds: int = 3
+    max_turns_per_round: int = 8
     word_limit: int = 180
     seed: int | None = None
     max_search_rounds: int = 3
@@ -159,6 +160,9 @@ class DebateConfig:
             thinking_budget=get_int("debate", "thinking_budget", default_cfg.thinking_budget),
             num_ctx=get_int("debate", "num_ctx", default_cfg.num_ctx),
             rounds=get_int("debate", "rounds", default_cfg.rounds),
+            max_turns_per_round=get_int(
+                "debate", "max_turns_per_round", default_cfg.max_turns_per_round
+            ),
             word_limit=get_int("debate", "word_limit", default_cfg.word_limit),
             seed=get_optional_int("debate", "seed"),
             max_search_rounds=get_int("debate", "max_search_rounds", default_cfg.max_search_rounds),
