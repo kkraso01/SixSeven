@@ -4,13 +4,19 @@
   "rounds_completed": 3,
   "stance_trajectory": {
     "CA": [
+      55,
+      55,
       55
     ],
     "SA": [
+      55,
+      55,
       55
     ]
   },
-  "tactic_counts": {},
+  "tactic_counts": {
+    "human_transcript": 115
+  },
   "key_persuasion_moments": [],
   "outcome_summary": "Imported historical IQ2 debate transcript; no simulated persuasion trajectory computed.",
   "limitations": [

@@ -5,6 +5,7 @@ import json
 import re
 import shutil
 from pathlib import Path
+from typing import Any
 
 
 def _clean_text(paragraphs: list[str] | None) -> str:
@@ -27,7 +28,43 @@ def _map_role_and_stance(speakertype: str) -> tuple[str, str]:
         return "proponent", "pro"
     if st == "against":
         return "opponent", "con"
+    if st in {"mod", "host"}:
+        return "moderator", "neutral"
     return "moderator", "neutral"
+
+
+def _build_speaker_lookup(debate: dict[str, Any]) -> dict[str, tuple[str, str]]:
+    lookup: dict[str, tuple[str, str]] = {}
+    speakers = debate.get("speakers") or {}
+
+    for item in speakers.get("for") or []:
+        name = (item.get("name") or "").strip().lower()
+        if name:
+            lookup[name] = ("proponent", "pro")
+
+    for item in speakers.get("against") or []:
+        name = (item.get("name") or "").strip().lower()
+        if name:
+            lookup[name] = ("opponent", "con")
+
+    moderator = speakers.get("moderator") or {}
+    mod_name = (moderator.get("name") or "").strip().lower()
+    if mod_name:
+        lookup[mod_name] = ("moderator", "neutral")
+
+    return lookup
+
+
+def _map_turn_role(turn: dict[str, Any], speaker_lookup: dict[str, tuple[str, str]]) -> tuple[str, str]:
+    role, stance = _map_role_and_stance(turn.get("speakertype", ""))
+    if (turn.get("speakertype") or "").strip().lower() != "unknown":
+        return role, stance
+
+    speaker_name = (turn.get("speaker") or "").strip().lower()
+    if speaker_name and speaker_name in speaker_lookup:
+        return speaker_lookup[speaker_name]
+
+    return role, stance
 
 
 def _safe_run_suffix(debate_id: str) -> str:
@@ -104,6 +141,8 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
         if not title:
             continue
 
+        speaker_lookup = _build_speaker_lookup(debate)
+
         topic_entry = {
             "id": debate_id,
             "category": "iq2_real_debate",
@@ -121,9 +160,11 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
             if not utterance:
                 continue
 
-            role, stance = _map_role_and_stance(turn.get("speakertype", ""))
+            role, stance = _map_turn_role(turn, speaker_lookup)
             segment = turn.get("segment")
             round_num = int(segment) + 1 if isinstance(segment, int) else 1
+
+            default_confidence = 55 if role in {"proponent", "opponent"} else None
 
             logs.append(
                 {
@@ -133,8 +174,8 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
                     "speaker_role": role,
                     "utterance": utterance,
                     "stance": stance,
-                    "confidence": None,
-                    "tactic_used": None,
+                    "confidence": default_confidence,
+                    "tactic_used": "human_transcript" if role in {"proponent", "opponent"} else None,
                     "tool_used": "none",
                     "tool_query": None,
                     "reply_to_turn": None,
@@ -188,12 +229,18 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
 
         # final_report.json compatible with FinalReport schema
         max_round = max((item["round"] for item in logs), default=0)
+        rounds_sorted = sorted({item["round"] for item in logs})
         final_report = {
             "topic": title,
             "motion": title,
             "rounds_completed": max_round,
-            "stance_trajectory": {"CA": [55], "SA": [55]},
-            "tactic_counts": {},
+            "stance_trajectory": {
+                "CA": [55 for _ in rounds_sorted] or [55],
+                "SA": [55 for _ in rounds_sorted] or [55],
+            },
+            "tactic_counts": {
+                "human_transcript": sum(1 for item in logs if item["tactic_used"] == "human_transcript")
+            },
             "key_persuasion_moments": [],
             "outcome_summary": "Imported historical IQ2 debate transcript; no simulated persuasion trajectory computed.",
             "limitations": [
@@ -246,6 +293,17 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
         with (run_dir / "metrics.csv").open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=metrics_headers)
             writer.writeheader()
+            for round_num in rounds_sorted:
+                writer.writerow(
+                    {
+                        "round": round_num,
+                        "bridge_score": 0,
+                        "civility_score": 0,
+                        "epistemic_quality": 0,
+                        "CA_delta": 0,
+                        "SA_delta": 0,
+                    }
+                )
 
         transcript_text = _render_transcript(title, title, logs)
         (run_dir / "transcript.md").write_text(transcript_text, encoding="utf-8")
