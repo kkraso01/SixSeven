@@ -60,6 +60,11 @@ def write_artifacts(
         run_config_path = raw_dir / "run_config.json"
         run_config_path.write_text(json.dumps(run_config, indent=2), encoding="utf-8")
 
+        routing_audit = run_config.get("moderator_routing_audit")
+        if isinstance(routing_audit, list):
+            routing_audit_path = raw_dir / "moderator_routing_audit.json"
+            routing_audit_path.write_text(json.dumps(routing_audit, indent=2), encoding="utf-8")
+
     metrics_path = None
     if metrics_table:
         metrics_path = raw_dir / "metrics.csv"

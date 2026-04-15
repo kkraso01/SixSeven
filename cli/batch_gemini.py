@@ -7,6 +7,7 @@ Subclass of :class:`BaseBatchRunner` that adds:
 
 from __future__ import annotations
 
+import argparse
 import re
 import time
 
@@ -146,8 +147,42 @@ class GeminiBatchRunner(BaseBatchRunner):
 
 def main():
     """Run Gemini-only batch experiments (requires API key)."""
+    parser = argparse.ArgumentParser(description="Run Gemini batch debate experiments")
+    parser.add_argument(
+        "--out",
+        "--output-dir",
+        "--dir",
+        dest="output_dir",
+        type=str,
+        default=None,
+        help="Output root for artifacts",
+    )
+    parser.add_argument(
+        "--rounds",
+        type=int,
+        default=None,
+        help="Override number of rounds",
+    )
+    parser.add_argument(
+        "--max-turns-per-round",
+        type=int,
+        default=None,
+        help="Override moderator-controlled max CA/SA speaking slots per round",
+    )
+    parser.add_argument(
+        "--word-limit",
+        type=int,
+        default=None,
+        help="Override per-turn word limit",
+    )
+    args = parser.parse_args()
+
     runner = GeminiBatchRunner(
         batch_label="gemini",
+        output_dir=args.output_dir,
+        rounds=args.rounds,
+        max_turns_per_round=args.max_turns_per_round,
+        word_limit=args.word_limit,
     )
 
     # Get models from config.ini

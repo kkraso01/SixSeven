@@ -32,6 +32,7 @@ def run_experiment(
     config_path: str = "config/config.ini",
     output_dir: str | None = None,
     rounds: int | None = None,
+    max_turns_per_round: int | None = None,
     word_limit: int | None = None,
 ) -> RunResult:
     config = DebateConfig.from_ini(config_path)
@@ -39,6 +40,8 @@ def run_experiment(
         config = replace(config, output_dir=output_dir)
     if rounds is not None:
         config = replace(config, rounds=rounds)
+    if max_turns_per_round is not None:
+        config = replace(config, max_turns_per_round=max_turns_per_round)
     if word_limit is not None:
         config = replace(config, word_limit=word_limit)
 
@@ -86,6 +89,12 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Override number of rounds for this run",
     )
     parser.add_argument(
+        "--max-turns-per-round",
+        type=int,
+        default=None,
+        help="Override moderator-controlled maximum CA/SA speaking slots per round",
+    )
+    parser.add_argument(
         "--word-limit",
         type=int,
         default=None,
@@ -103,6 +112,7 @@ def main() -> None:
         config_path=args.config,
         output_dir=args.output_dir,
         rounds=args.rounds,
+        max_turns_per_round=args.max_turns_per_round,
         word_limit=args.word_limit,
     )
     print(f"Run complete: {run_result.run_dir}")

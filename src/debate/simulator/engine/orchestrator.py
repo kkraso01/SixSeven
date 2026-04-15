@@ -17,6 +17,7 @@ from debate.core.schemas import (
     MemoryState,
     ModeratorDecision,
     ModeratorRecap,
+    ModeratorTurnControl,
     ScientificTurn,
     SearchPlan,
 )
@@ -265,6 +266,7 @@ def _moderator_messages(
     motion: str,
     topic_description: str,
     round_number: int,
+    max_rounds: int,
     word_limit: int,
     prompts: PromptLoader,
 ) -> list[dict[str, str]]:
@@ -275,8 +277,8 @@ def _moderator_messages(
             "motion": motion,
             "topic_description": topic_description,
             "round": str(round_number),
+            "max_rounds": str(max_rounds),
             "word_limit": str(word_limit),
-            "max_rounds": "TBD",  # Will be updated when called
         },
     )
     return [{"role": "system", "content": content}]
@@ -346,6 +348,30 @@ def _moderator_decision_messages(
     return [{"role": "system", "content": content}, {"role": "user", "content": decision_context}]
 
 
+def _moderator_turn_messages(
+    topic: str,
+    motion: str,
+    round_number: int,
+    max_rounds: int,
+    turn_in_round: int,
+    max_turns_in_round: int,
+    prompts: PromptLoader,
+) -> list[dict[str, str]]:
+    """Build messages for moderator to route the next speaker in-round."""
+    content = prompts.load(
+        "moderator_turn.md",
+        {
+            "topic": topic,
+            "motion": motion,
+            "round": str(round_number),
+            "max_rounds": str(max_rounds),
+            "turn_in_round": str(turn_in_round),
+            "max_turns_in_round": str(max_turns_in_round),
+        },
+    )
+    return [{"role": "system", "content": content}]
+
+
 def _build_agent_messages_with_history(
     agent_role_prompt: str,
     conversation_history: list[dict[str, str]],
@@ -413,8 +439,12 @@ def _prompt_hashes() -> dict[str, str]:
     return hashes
 
 
-def _run_config(config: DebateConfig, rounds: int) -> dict[str, object]:
-    return {
+def _run_config(
+    config: DebateConfig,
+    rounds: int,
+    moderator_routing_audit: list[dict[str, object]] | None = None,
+) -> dict[str, object]:
+    payload = {
         "timestamp": datetime.now().isoformat(),
         "models": {
             "moderator": config.moderator_model,
@@ -427,6 +457,7 @@ def _run_config(config: DebateConfig, rounds: int) -> dict[str, object]:
             "scientific": config.scientific_temperature,
         },
         "rounds": rounds,
+        "max_turns_per_round": config.max_turns_per_round,
         "word_limit": config.word_limit,
         "max_tokens": config.max_tokens,
         "seed": config.seed,
@@ -436,6 +467,52 @@ def _run_config(config: DebateConfig, rounds: int) -> dict[str, object]:
             "shift_threshold": config.analysis_shift_threshold,
             "similarity_method": config.analysis_similarity_method,
         },
+    }
+    if moderator_routing_audit is not None:
+        payload["moderator_routing_audit"] = moderator_routing_audit
+    return payload
+
+
+def _routing_fairness_summary(audit: list[dict[str, object]]) -> dict[str, int]:
+    """Build compact fairness metrics from moderator turn-routing audit."""
+    ca_turns = 0
+    sa_turns = 0
+    end_round_calls = 0
+    overridden_routes = 0
+    max_ca_streak = 0
+    max_sa_streak = 0
+    current_ca_streak = 0
+    current_sa_streak = 0
+
+    for item in audit:
+        final_speaker = item.get("final_next_speaker")
+        override_reasons = item.get("override_reasons")
+        if isinstance(override_reasons, list) and override_reasons:
+            overridden_routes += 1
+
+        if final_speaker == "CA":
+            ca_turns += 1
+            current_ca_streak += 1
+            current_sa_streak = 0
+            max_ca_streak = max(max_ca_streak, current_ca_streak)
+        elif final_speaker == "SA":
+            sa_turns += 1
+            current_sa_streak += 1
+            current_ca_streak = 0
+            max_sa_streak = max(max_sa_streak, current_sa_streak)
+        elif final_speaker == "END_ROUND":
+            end_round_calls += 1
+            current_ca_streak = 0
+            current_sa_streak = 0
+
+    return {
+        "ca_turns": ca_turns,
+        "sa_turns": sa_turns,
+        "turn_gap_abs": abs(ca_turns - sa_turns),
+        "end_round_calls": end_round_calls,
+        "overridden_routes": overridden_routes,
+        "max_ca_streak": max_ca_streak,
+        "max_sa_streak": max_sa_streak,
     }
 
 
@@ -569,29 +646,11 @@ def run_debate(
     last_sa_turn = None
     last_ca_message: str | None = None
     last_sa_message: str | None = None
+    global_ca_turns = 0
+    global_sa_turns = 0
+    moderator_routing_audit: list[dict[str, object]] = []
 
-    # Load agent role prompts once (via injected PromptLoader)
     description_for_prompt = topic_description or ""
-    ca_role_prompt = prompts.load(
-        "conspiracy.md",
-        {
-            "topic": topic,
-            "motion": motion,
-            "topic_description": description_for_prompt,
-            "round": "1",
-            "word_limit": str(config.word_limit),
-        },
-    )
-    sa_role_prompt = prompts.load(
-        "scientific.md",
-        {
-            "topic": topic,
-            "motion": motion,
-            "topic_description": description_for_prompt,
-            "round": "1",
-            "word_limit": str(config.word_limit),
-        },
-    )
 
     # Moderator-controlled debate loop
     round_number = 0
@@ -608,133 +667,291 @@ def run_debate(
         logger.info("-" * 60)
         logger.info("ROUND %d/%d", round_number, max_rounds)
 
+        # Load agent role prompts for the current round so round-specific guidance stays fresh.
+        ca_role_prompt = prompts.load(
+            "conspiracy.md",
+            {
+                "topic": topic,
+                "motion": motion,
+                "topic_description": description_for_prompt,
+                "round": str(round_number),
+                "word_limit": str(config.word_limit),
+            },
+        )
+        sa_role_prompt = prompts.load(
+            "scientific.md",
+            {
+                "topic": topic,
+                "motion": motion,
+                "topic_description": description_for_prompt,
+                "round": str(round_number),
+                "word_limit": str(config.word_limit),
+            },
+        )
+
         previous_memory = memory
         memory = update_round(memory, round_number)
 
-        # CONSPIRACY ADVOCATE TURN
-        logger.info("Conspiracy Advocate thinking...")
+        max_turns_this_round = max(2, config.max_turns_per_round)
+        round_ca_turns = 0
+        round_sa_turns = 0
+        round_turn_payloads: list[str] = []
+        last_round_speaker: str | None = None
+        same_speaker_streak = 0
 
-        ca_messages = _build_agent_messages_with_history(
-            agent_role_prompt=ca_role_prompt,
-            conversation_history=conversation_history,
-            memory=memory,
-            config=config,
-            round_number=round_number,
-            opponent_last_message=last_sa_message,
-        )
+        for turn_in_round in range(1, max_turns_this_round + 1):
+            moderator_turn_messages = _moderator_turn_messages(
+                topic=topic,
+                motion=motion,
+                round_number=round_number,
+                max_rounds=max_rounds,
+                turn_in_round=turn_in_round,
+                max_turns_in_round=max_turns_this_round,
+                prompts=prompts,
+            )
 
-        ca_turn = _run_agent_turn_with_search(
-            response_model=AgentTurn,
-            agent_messages=ca_messages,
-            agent_type="CA",
-            topic=topic,
-            model=config.conspiracy_model,
-            temperature=config.conspiracy_temperature,
-            max_tokens=config.max_tokens,
-            seed=config.seed,
-            llm=llm,
-            search=search,
-            max_search_rounds=config.max_search_rounds,
-        )
+            recent_history = []
+            for item in conversation_history[-8:]:
+                speaker = item.get("speaker", "?")
+                content = (item.get("content", "") or "")[:240]
+                recent_history.append(f"[{speaker}] {content}")
 
-        turn_counter += 1
-        ca_turn_number = turn_counter
+            moderator_turn_messages.append(
+                {
+                    "role": "user",
+                    "content": (
+                        f"Round {round_number}, turn slot {turn_in_round}/{max_turns_this_round}.\n"
+                        f"CA turns so far: {round_ca_turns}\n"
+                        f"SA turns so far: {round_sa_turns}\n"
+                        f"Last speaker this round: {last_round_speaker or 'none'}\n"
+                        "Recent conversation context:\n"
+                        + ("\n".join(recent_history) if recent_history else "(no prior messages)")
+                    ),
+                }
+            )
 
-        # Add CA's response to conversation history with tags
-        # NOTE: Search queries/results are NOT included - kept private from opponent
-        ca_content = (
-            f"[CA][Round {round_number}] {ca_turn.claim}\n"
-            f"Reasons: {'; '.join(ca_turn.reasons)}\n"
-            f"Question to opponent: {ca_turn.question_to_opponent}\n"
-            f"Confidence: {ca_turn.confidence}\n"
-            f"Tactic: {ca_turn.tactic_used}"
-        )
+            turn_control = llm.call(
+                ModeratorTurnControl,
+                moderator_turn_messages,
+                model=config.moderator_model,
+                temperature=config.moderator_temperature,
+                max_tokens=512,
+                seed=config.seed,
+                max_retries=LLM_MAX_RETRIES,
+            )
 
-        conversation_history.append({"role": "assistant", "content": ca_content, "speaker": "CA"})
-        last_ca_message = ca_turn.claim  # For opponent highlighting
+            proposed_speaker = turn_control.next_speaker
+            next_speaker = proposed_speaker
+            turns_remaining = max_turns_this_round - turn_in_round + 1
+            ca_missing = round_ca_turns == 0
+            sa_missing = round_sa_turns == 0
+            override_reasons: list[str] = []
 
-        print("\n CONSPIRACY ADVOCATE:")
-        print(f"   Claim: {ca_turn.claim}")
-        print(f"   Confidence: {ca_turn.confidence}/100")
-        print(f"   Tactic: {ca_turn.tactic_used}")
-        if ca_turn.search and ca_turn.search.should_search:
-            logger.info("  CA search: %s", ca_turn.search.search_query)
+            # Enforce at least one CA and one SA turn per round.
+            if next_speaker == "END_ROUND" and (ca_missing or sa_missing):
+                next_speaker = "CA" if ca_missing else "SA"
+                override_reasons.append("round_minimum_participation")
 
-        memory = _update_memory_from_turn(
-            memory, ca_turn, debate_id, motion, ca_turn_number, reply_to_turn=last_sa_turn
-        )
-        last_ca_turn = ca_turn_number
+            # Keep turn taking balanced: avoid long same-speaker streaks.
+            if (
+                next_speaker in {"CA", "SA"}
+                and last_round_speaker == next_speaker
+                and same_speaker_streak >= 2
+            ):
+                next_speaker = "SA" if next_speaker == "CA" else "CA"
+                override_reasons.append("anti_streak_guard")
 
-        # SCIENTIFIC ADVOCATE TURN
-        logger.info("Scientific Advocate thinking...")
+            # Keep debate-level participation balanced so one side cannot dominate the whole debate.
+            global_diff = global_ca_turns - global_sa_turns
+            if next_speaker == "CA" and global_diff >= 2:
+                next_speaker = "SA"
+                override_reasons.append("global_balance_guard")
+            elif next_speaker == "SA" and global_diff <= -2:
+                next_speaker = "CA"
+                override_reasons.append("global_balance_guard")
 
-        sa_messages = _build_agent_messages_with_history(
-            agent_role_prompt=sa_role_prompt,
-            conversation_history=conversation_history,
-            memory=memory,
-            config=config,
-            round_number=round_number,
-            opponent_last_message=last_ca_message,
-        )
+            # If this is the final slot, force any missing side to speak.
+            if turns_remaining == 1:
+                if ca_missing:
+                    next_speaker = "CA"
+                    override_reasons.append("final_slot_force_ca")
+                elif sa_missing:
+                    next_speaker = "SA"
+                    override_reasons.append("final_slot_force_sa")
 
-        sa_turn = _run_agent_turn_with_search(
-            response_model=ScientificTurn,
-            agent_messages=sa_messages,
-            agent_type="SA",
-            topic=topic,
-            model=config.scientific_model,
-            temperature=config.scientific_temperature,
-            max_tokens=config.max_tokens,
-            seed=config.seed,
-            llm=llm,
-            search=search,
-            max_search_rounds=config.max_search_rounds,
-        )
+            moderator_routing_audit.append(
+                {
+                    "round": round_number,
+                    "turn_in_round": turn_in_round,
+                    "proposed_next_speaker": proposed_speaker,
+                    "final_next_speaker": next_speaker,
+                    "reason": turn_control.reason,
+                    "override_reasons": override_reasons,
+                    "round_ca_turns_before": round_ca_turns,
+                    "round_sa_turns_before": round_sa_turns,
+                    "global_ca_turns_before": global_ca_turns,
+                    "global_sa_turns_before": global_sa_turns,
+                }
+            )
 
-        turn_counter += 1
-        sa_turn_number = turn_counter
+            if next_speaker == "END_ROUND":
+                logger.info(
+                    "Moderator ended round %d at turn slot %d: %s",
+                    round_number,
+                    turn_in_round,
+                    turn_control.reason,
+                )
+                break
 
-        # Add SA's response to conversation history with tags
-        # NOTE: Search queries/results are NOT included - kept private from opponent
-        sa_content = (
-            f"[SA][Round {round_number}] {sa_turn.claim}\n"
-            f"Clarify: {sa_turn.clarify}\n"
-            f"Gaps identified: {', '.join(sa_turn.evaluate_gaps)}\n"
-            f"Alternative hypotheses: {', '.join(sa_turn.alternative_hypotheses)}\n"
-            f"Discriminating tests: {', '.join(sa_turn.discriminating_tests)}\n"
-            f"Question to opponent: {sa_turn.question_to_opponent}\n"
-            f"Confidence: {sa_turn.confidence}\n"
-            f"Tactic: {sa_turn.tactic_used}"
-        )
+            if next_speaker == "CA":
+                logger.info("Conspiracy Advocate thinking...")
+                ca_messages = _build_agent_messages_with_history(
+                    agent_role_prompt=ca_role_prompt,
+                    conversation_history=conversation_history,
+                    memory=memory,
+                    config=config,
+                    round_number=round_number,
+                    opponent_last_message=last_sa_message,
+                )
 
-        conversation_history.append({"role": "assistant", "content": sa_content, "speaker": "SA"})
-        last_sa_message = sa_turn.claim  # For opponent highlighting
+                ca_turn = _run_agent_turn_with_search(
+                    response_model=AgentTurn,
+                    agent_messages=ca_messages,
+                    agent_type="CA",
+                    topic=topic,
+                    model=config.conspiracy_model,
+                    temperature=config.conspiracy_temperature,
+                    max_tokens=config.max_tokens,
+                    seed=config.seed,
+                    llm=llm,
+                    search=search,
+                    max_search_rounds=config.max_search_rounds,
+                ).model_copy(update={"speaker": "CA", "round": round_number})
 
-        print("\n SCIENTIFIC ADVOCATE:")
-        print(f"   Claim: {sa_turn.claim}")
-        print(f"   Confidence: {sa_turn.confidence}/100")
-        print(f"   Tactic: {sa_turn.tactic_used}")
-        if sa_turn.search and sa_turn.search.should_search:
-            logger.info("  SA search: %s", sa_turn.search.search_query)
+                turn_counter += 1
+                ca_turn_number = turn_counter
 
-        memory = _update_memory_from_turn(
-            memory, sa_turn, debate_id, motion, sa_turn_number, reply_to_turn=last_ca_turn
-        )
-        last_sa_turn = sa_turn_number
+                ca_content = (
+                    f"[CA][Round {round_number}] {ca_turn.claim}\n"
+                    f"Reasons: {'; '.join(ca_turn.reasons)}\n"
+                    f"Question to opponent: {ca_turn.question_to_opponent}\n"
+                    f"Confidence: {ca_turn.confidence}\n"
+                    f"Tactic: {ca_turn.tactic_used}"
+                )
+                conversation_history.append(
+                    {"role": "assistant", "content": ca_content, "speaker": "CA"}
+                )
+                last_ca_message = ca_turn.claim
+                round_ca_turns += 1
+
+                print("\n CONSPIRACY ADVOCATE:")
+                print(f"   Claim: {ca_turn.claim}")
+                print(f"   Confidence: {ca_turn.confidence}/100")
+                print(f"   Tactic: {ca_turn.tactic_used}")
+                if ca_turn.search and ca_turn.search.should_search:
+                    logger.info("  CA search: %s", ca_turn.search.search_query)
+
+                memory = _update_memory_from_turn(
+                    memory, ca_turn, debate_id, motion, ca_turn_number, reply_to_turn=last_sa_turn
+                )
+                last_ca_turn = ca_turn_number
+                global_ca_turns += 1
+                round_turn_payloads.append(
+                    f"CA turn {round_ca_turns}:\n{ca_turn.model_dump_json(indent=2)}"
+                )
+                current_speaker = "CA"
+            else:
+                logger.info("Scientific Advocate thinking...")
+                sa_messages = _build_agent_messages_with_history(
+                    agent_role_prompt=sa_role_prompt,
+                    conversation_history=conversation_history,
+                    memory=memory,
+                    config=config,
+                    round_number=round_number,
+                    opponent_last_message=last_ca_message,
+                )
+
+                sa_turn = _run_agent_turn_with_search(
+                    response_model=ScientificTurn,
+                    agent_messages=sa_messages,
+                    agent_type="SA",
+                    topic=topic,
+                    model=config.scientific_model,
+                    temperature=config.scientific_temperature,
+                    max_tokens=config.max_tokens,
+                    seed=config.seed,
+                    llm=llm,
+                    search=search,
+                    max_search_rounds=config.max_search_rounds,
+                ).model_copy(update={"speaker": "SA", "round": round_number})
+
+                turn_counter += 1
+                sa_turn_number = turn_counter
+
+                sa_content = (
+                    f"[SA][Round {round_number}] {sa_turn.claim}\n"
+                    f"Clarify: {sa_turn.clarify}\n"
+                    f"Gaps identified: {', '.join(sa_turn.evaluate_gaps)}\n"
+                    f"Alternative hypotheses: {', '.join(sa_turn.alternative_hypotheses)}\n"
+                    f"Discriminating tests: {', '.join(sa_turn.discriminating_tests)}\n"
+                    f"Question to opponent: {sa_turn.question_to_opponent}\n"
+                    f"Confidence: {sa_turn.confidence}\n"
+                    f"Tactic: {sa_turn.tactic_used}"
+                )
+                conversation_history.append(
+                    {"role": "assistant", "content": sa_content, "speaker": "SA"}
+                )
+                last_sa_message = sa_turn.claim
+                round_sa_turns += 1
+
+                print("\n SCIENTIFIC ADVOCATE:")
+                print(f"   Claim: {sa_turn.claim}")
+                print(f"   Confidence: {sa_turn.confidence}/100")
+                print(f"   Tactic: {sa_turn.tactic_used}")
+                if sa_turn.search and sa_turn.search.should_search:
+                    logger.info("  SA search: %s", sa_turn.search.search_query)
+
+                memory = _update_memory_from_turn(
+                    memory, sa_turn, debate_id, motion, sa_turn_number, reply_to_turn=last_ca_turn
+                )
+                last_sa_turn = sa_turn_number
+                global_sa_turns += 1
+                round_turn_payloads.append(
+                    f"SA turn {round_sa_turns}:\n{sa_turn.model_dump_json(indent=2)}"
+                )
+                current_speaker = "SA"
+
+            if current_speaker == last_round_speaker:
+                same_speaker_streak += 1
+            else:
+                same_speaker_streak = 1
+                last_round_speaker = current_speaker
+
+        if not round_turn_payloads:
+            logger.warning("No debater turns generated for round %d; ending debate early", round_number)
+            debate_ended_early = True
+            end_reason = f"No debater turns generated in round {round_number}."
+            break
 
         # MODERATOR RECAP
         logger.info("Moderator analyzing...")
 
         moderator_messages = _moderator_messages(
-            topic, motion, description_for_prompt, round_number, config.word_limit, prompts
+            topic,
+            motion,
+            description_for_prompt,
+            round_number,
+            max_rounds,
+            config.word_limit,
+            prompts,
         )
         moderator_messages.append(
             {
                 "role": "user",
                 "content": (
-                    f"Round {round_number} debate:\n\n"
-                    f"CA turn:\n{ca_turn.model_dump_json(indent=2)}\n\n"
-                    f"SA turn:\n{sa_turn.model_dump_json(indent=2)}\n\n"
+                    f"Round {round_number} debate turns:\n\n"
+                    + "\n\n".join(round_turn_payloads)
+                    + "\n\n"
                     f"Provide your analysis and recap."
                 ),
             }
@@ -884,6 +1101,9 @@ def run_debate(
         seed=config.seed,
         max_retries=LLM_MAX_RETRIES,
     )
+    final_report = final_report.model_copy(
+        update={"fairness_summary": _routing_fairness_summary(moderator_routing_audit)}
+    )
 
     logger.info(
         "FINAL REPORT: topic=%s rounds=%d", final_report.topic, final_report.rounds_completed
@@ -906,7 +1126,11 @@ def run_debate(
         metrics_table=metrics_table,
         topic=topic,
         motion=motion,
-        run_config=_run_config(config, round_number),
+        run_config=_run_config(
+            config,
+            round_number,
+            moderator_routing_audit=moderator_routing_audit,
+        ),
     )
 
     logger.info("Artifacts saved to: %s", bundle.run_dir)
