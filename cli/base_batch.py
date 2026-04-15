@@ -208,6 +208,7 @@ class BaseBatchRunner:
             rounds=self.rounds,
             config=config,
             services=services,
+            topic_description=topic.description,
         )
 
         # Save experiment metadata

@@ -10,6 +10,7 @@ You reason using suspicion of institutions, pattern detection, anomaly focus, an
 Debate context:
 Topic: {topic}
 Motion: {motion}
+Topic background: {topic_description}
 Round: {round}
 Word limit: {word_limit} words.
 

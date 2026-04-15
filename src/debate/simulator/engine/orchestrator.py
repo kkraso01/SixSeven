@@ -263,6 +263,7 @@ def _compact_memory_summary(memory: MemoryState) -> str:
 def _moderator_messages(
     topic: str,
     motion: str,
+    topic_description: str,
     round_number: int,
     word_limit: int,
     prompts: PromptLoader,
@@ -272,6 +273,7 @@ def _moderator_messages(
         {
             "topic": topic,
             "motion": motion,
+            "topic_description": topic_description,
             "round": str(round_number),
             "word_limit": str(word_limit),
             "max_rounds": "TBD",  # Will be updated when called
@@ -518,6 +520,7 @@ def run_debate(
     rounds: int,
     config: DebateConfig,
     services: DebateServices | None = None,
+    topic_description: str | None = None,
 ) -> ExportBundle:
     """Run a full debate simulation and return the exported artifact bundle.
 
@@ -535,6 +538,8 @@ def run_debate(
     logger.info("DEBATE SIMULATION STARTING")
     logger.info("Topic: %s", topic)
     logger.info("Motion: %s", motion)
+    if topic_description:
+        logger.info("Topic Description: %s", topic_description)
     logger.info(
         "Max Rounds: %d | Model: %s | History: global_full",
         rounds,
@@ -562,15 +567,30 @@ def run_debate(
     turn_counter = 0
     last_ca_turn = None
     last_sa_turn = None
+    last_ca_message: str | None = None
+    last_sa_message: str | None = None
 
     # Load agent role prompts once (via injected PromptLoader)
+    description_for_prompt = topic_description or ""
     ca_role_prompt = prompts.load(
         "conspiracy.md",
-        {"topic": topic, "motion": motion, "round": "1", "word_limit": str(config.word_limit)},
+        {
+            "topic": topic,
+            "motion": motion,
+            "topic_description": description_for_prompt,
+            "round": "1",
+            "word_limit": str(config.word_limit),
+        },
     )
     sa_role_prompt = prompts.load(
         "scientific.md",
-        {"topic": topic, "motion": motion, "round": "1", "word_limit": str(config.word_limit)},
+        {
+            "topic": topic,
+            "motion": motion,
+            "topic_description": description_for_prompt,
+            "round": "1",
+            "word_limit": str(config.word_limit),
+        },
     )
 
     # Moderator-controlled debate loop
@@ -591,10 +611,6 @@ def run_debate(
         previous_memory = memory
         memory = update_round(memory, round_number)
 
-        # Track opponent's last message for highlighting
-        sa_last_message = None
-        ca_last_message = None
-
         # CONSPIRACY ADVOCATE TURN
         logger.info("Conspiracy Advocate thinking...")
 
@@ -604,7 +620,7 @@ def run_debate(
             memory=memory,
             config=config,
             round_number=round_number,
-            opponent_last_message=sa_last_message,
+            opponent_last_message=last_sa_message,
         )
 
         ca_turn = _run_agent_turn_with_search(
@@ -635,7 +651,7 @@ def run_debate(
         )
 
         conversation_history.append({"role": "assistant", "content": ca_content, "speaker": "CA"})
-        ca_last_message = ca_turn.claim  # For opponent highlighting
+        last_ca_message = ca_turn.claim  # For opponent highlighting
 
         print("\n CONSPIRACY ADVOCATE:")
         print(f"   Claim: {ca_turn.claim}")
@@ -658,7 +674,7 @@ def run_debate(
             memory=memory,
             config=config,
             round_number=round_number,
-            opponent_last_message=ca_last_message,
+            opponent_last_message=last_ca_message,
         )
 
         sa_turn = _run_agent_turn_with_search(
@@ -692,7 +708,7 @@ def run_debate(
         )
 
         conversation_history.append({"role": "assistant", "content": sa_content, "speaker": "SA"})
-        sa_last_message = sa_turn.claim  # For opponent highlighting
+        last_sa_message = sa_turn.claim  # For opponent highlighting
 
         print("\n SCIENTIFIC ADVOCATE:")
         print(f"   Claim: {sa_turn.claim}")
@@ -710,7 +726,7 @@ def run_debate(
         logger.info("Moderator analyzing...")
 
         moderator_messages = _moderator_messages(
-            topic, motion, round_number, config.word_limit, prompts
+            topic, motion, description_for_prompt, round_number, config.word_limit, prompts
         )
         moderator_messages.append(
             {

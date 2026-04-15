@@ -8,6 +8,7 @@ You reason using evidence standards, falsifiability, uncertainty calibration, an
 Debate context:
 Topic: {topic}
 Motion: {motion}
+Topic background: {topic_description}
 Round: {round}
 Word limit: {word_limit} words.
 

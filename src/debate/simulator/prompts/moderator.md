@@ -5,6 +5,7 @@ This debate is simulated for research and educational purposes. Do NOT provide h
 Debate context:
 Topic: {topic}
 Motion: {motion}
+Topic background: {topic_description}
 Round: {round}
 Max Rounds: {max_rounds}
 Word limit per agent response: {word_limit} words.

@@ -35,9 +35,31 @@ def _load_topics() -> list[DebateTopic]:
     if not isinstance(raw_topics, list):
         raise ValueError(f"Topics JSON must contain a list: {topics_path}")
 
+    required_fields = ("id", "category", "topic", "motion", "description")
+    topics: list[DebateTopic] = []
+
     try:
-        return [DebateTopic(**topic) for topic in raw_topics]
-    except TypeError as exc:
+        for idx, topic in enumerate(raw_topics, start=1):
+            if not isinstance(topic, dict):
+                raise ValueError(f"topics[{idx}] must be an object")
+
+            missing = [field for field in required_fields if field not in topic]
+            if missing:
+                raise ValueError(f"topics[{idx}] missing required fields: {', '.join(missing)}")
+
+            # Ignore unknown fields to support richer topic datasets (e.g., IQ2 metadata).
+            topics.append(
+                DebateTopic(
+                    id=topic["id"],
+                    category=topic["category"],
+                    topic=topic["topic"],
+                    motion=topic["motion"],
+                    description=topic["description"],
+                )
+            )
+
+        return topics
+    except (TypeError, ValueError) as exc:
         raise ValueError(f"Invalid topic schema in {topics_path}: {exc}") from exc
 
 
