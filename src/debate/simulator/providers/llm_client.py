@@ -51,15 +51,25 @@ _RATE_LIMIT_FALLBACK_DELAY: float = 20.0
 class OllamaClient:
     def __init__(self, config: DebateConfig) -> None:
         self.config = config
+        raw_base_url = config.base_url.rstrip("/")
+        if raw_base_url.endswith("/v1"):
+            raw_http_base_url = raw_base_url[: -len("/v1")]
+            openai_base_url = raw_base_url
+        else:
+            raw_http_base_url = raw_base_url
+            openai_base_url = (
+                f"{raw_base_url}/v1" if config.api_mode in {"ollama", "openai"} else raw_base_url
+            )
+
         self.http = httpx.Client(
-            base_url=config.base_url, timeout=_HTTP_TIMEOUT, default_encoding="utf-8"
+            base_url=raw_http_base_url, timeout=_HTTP_TIMEOUT, default_encoding="utf-8"
         )
         self._instructor_client: Any | None = None
         self._instructor_gemini: Any | None = None
 
         # ── Always set up OpenAI/Ollama instructor client (for non-Gemini models) ──
         self._openai_client = OpenAI(
-            base_url=config.base_url,
+            base_url=openai_base_url,
             api_key="ollama",
             timeout=httpx.Timeout(_OPENAI_READ_TIMEOUT, connect=_OPENAI_CONNECT_TIMEOUT),
             http_client=httpx.Client(
