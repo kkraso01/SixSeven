@@ -1,0 +1,12 @@
+{
+  "topic_id": "051315%20Smart%20Tech",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Smart technology grants us unprecedented, immediate access to knowledge and to each other—a ubiquitous and seamless presence in everyday life. But is there a downside to all of this connectivity? It’s been said that smart technology create...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

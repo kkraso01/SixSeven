@@ -1,0 +1,20 @@
+{
+  "models": [
+    {
+      "name": "qwen3:30b",
+      "api_mode": "openai"
+    },
+    {
+      "name": "gemma3:27b",
+      "api_mode": "openai"
+    },
+    {
+      "name": "glm-4.7-flash:latest",
+      "api_mode": "openai"
+    },
+    {
+      "name": "gemini-3-flash-preview",
+      "api_mode": "gemini"
+    }
+  ]
+}

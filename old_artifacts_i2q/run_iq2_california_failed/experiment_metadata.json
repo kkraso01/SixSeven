@@ -1,0 +1,12 @@
+{
+  "topic_id": "california-failed",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "California tried. And then it failed. Uniquely charged by its constitution to guarantee the “happiness” of its residents – the state empowered its people to demand by referendum whatever they wanted to spend money on – from better schools...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

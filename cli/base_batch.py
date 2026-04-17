@@ -10,11 +10,12 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from debate_sim import DebateConfig, run_debate
-from debate_sim.core.container import build_default_services
-from debate_sim.core.logging import setup_logging
-from debate_sim.core.topics import DebateTopic
-from debate_sim.export.csv_export import export_all_debates_to_csv
+from debate.simulator.io.csv_export import export_all_debates_to_csv
+
+from debate import DebateConfig, run_debate
+from debate.core.container import build_default_services
+from debate.core.logging import setup_logging
+from debate.core.topics import DebateTopic
 
 # Force UTF-8 on Windows to prevent charmap codec errors
 os.environ.setdefault("PYTHONUTF8", "1")
@@ -73,15 +74,30 @@ class BaseBatchRunner:
         batch_label: str,
         output_dir: str | None = None,
         rounds: int | None = None,
+        max_turns_per_round: int | None = None,
         word_limit: int | None = None,
         base_config: DebateConfig | None = None,
     ):
         self.batch_label = batch_label
         self.base_config = base_config or DebateConfig.from_ini("config/config.ini")
-        # Default to config.ini values if not explicitly provided
-        self.output_dir = Path(output_dir or self.base_config.output_dir)
+
+        # Default to results/batches/<label> if no output dir provided
+        if output_dir:
+            self.output_dir = Path(output_dir)
+        elif self.base_config.output_dir:
+            # If config has an output dir, put batches inside it
+            self.output_dir = Path(self.base_config.output_dir) / "batches" / batch_label
+        else:
+            # Fallback to current dir if all else fails (safety)
+            self.output_dir = Path("results/batches") / batch_label
+
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.rounds = rounds if rounds is not None else self.base_config.rounds
+        self.max_turns_per_round = (
+            max_turns_per_round
+            if max_turns_per_round is not None
+            else self.base_config.max_turns_per_round
+        )
         self.word_limit = word_limit if word_limit is not None else self.base_config.word_limit
         self.results: list[ExperimentResult] = []
         # Index of already-completed experiments: (topic_id, config_name) -> run_dir
@@ -91,9 +107,16 @@ class BaseBatchRunner:
     # ── Completion index ───────────────────────────────────────────
 
     def _build_completion_index(self) -> None:
-        """Scan artifact dirs once and index completed (topic_id, model_config) pairs."""
+        """Scan artifact dirs once and index completed (topic_id, model_config) pairs.
+
+        Now scans inside the 'raw/' subdirectory to align with the new hierarchy.
+        """
         count = 0
-        for run_dir in sorted(self.output_dir.glob("run_*")):
+        raw_dir = self.output_dir / "raw"
+        if not raw_dir.exists():
+            return
+
+        for run_dir in sorted(raw_dir.glob("run_*")):
             metadata_file = run_dir / "experiment_metadata.json"
             if not metadata_file.exists():
                 continue
@@ -145,20 +168,13 @@ class BaseBatchRunner:
             scientific_temperature=self.base_config.scientific_temperature,
             max_tokens=self.base_config.max_tokens,
             rounds=self.rounds,
+            max_turns_per_round=self.max_turns_per_round,
             word_limit=self.word_limit,
             seed=self.base_config.seed,
             output_dir=str(self.output_dir),
             run_analysis=self.base_config.run_analysis,
             analysis_shift_threshold=self.base_config.analysis_shift_threshold,
             analysis_similarity_method=self.base_config.analysis_similarity_method,
-            history_mode=self.base_config.history_mode,
-            include_memory_summary=self.base_config.include_memory_summary,
-            history_trim=self.base_config.history_trim,
-            max_rounds_in_history=self.base_config.max_rounds_in_history,
-            max_messages_in_history=self.base_config.max_messages_in_history,
-            max_chars_in_history=self.base_config.max_chars_in_history,
-            summarize_if_trimmed=self.base_config.summarize_if_trimmed,
-            highlight_opponent_last=self.base_config.highlight_opponent_last,
             max_search_rounds=self.base_config.max_search_rounds,
             thinking_budget=self.base_config.thinking_budget,
             num_ctx=self.base_config.num_ctx,
@@ -199,6 +215,7 @@ class BaseBatchRunner:
             rounds=self.rounds,
             config=config,
             services=services,
+            topic_description=topic.description,
         )
 
         # Save experiment metadata
@@ -206,6 +223,7 @@ class BaseBatchRunner:
             "topic_id": topic.id,
             "topic_category": topic.category,
             "topic_description": topic.description,
+            "max_turns_per_round": config.max_turns_per_round,
             "model_config": model_config.name,
             "models": {
                 "moderator": model_config.moderator,
@@ -326,7 +344,8 @@ class BaseBatchRunner:
         self.export_summary()
 
         combined_csv = self.output_dir / f"all_debates_{self.batch_label}.csv"
-        export_all_debates_to_csv(self.output_dir, combined_csv)
+        # The aggregator now scans the 'raw/' subdirectory
+        export_all_debates_to_csv(self.output_dir / "raw", combined_csv)
 
         print(f"\n{'=' * 80}")
         print("BATCH COMPLETED OR INTERRUPTED")

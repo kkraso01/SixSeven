@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from debate_sim.core.schemas import (
+from debate.core.schemas import (
     AgentTurn,
     FinalReport,
     ModeratorDecision,

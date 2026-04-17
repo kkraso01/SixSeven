@@ -3,8 +3,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from debate_sim.analysis.analysis_runner import analyze_run
-from debate_sim.core.schemas import MemoryState
+from debate.analysis.analysis_runner import analyze_run
+from debate.core.schemas import MemoryState
 
 
 def validate_run(run_dir: str) -> None:

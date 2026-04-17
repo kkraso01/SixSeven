@@ -1,0 +1,12 @@
+{
+  "topic_id": "030514%20Targeted%20Killing",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "With the drone strike on accused terrorist and New Mexico-born Anwar al-Awlaki in Yemen, President Obama has tested the limits of the executive branch’s powers. Does the president have constitutional authority under the due process clause...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-from debate_sim.core.schemas import ModeratorRecap
-from debate_sim.debate.evaluation import build_metrics_table, stance_shift
-from debate_sim.memory.models import initial_memory, update_agent_state
+from debate.core.schemas import ModeratorRecap
+from debate.simulator.engine.evaluation import build_metrics_table, stance_shift
+from debate.simulator.engine.memory import initial_memory, update_agent_state
 
 
 class TestStanceShift:

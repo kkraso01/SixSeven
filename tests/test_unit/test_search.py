@@ -1,6 +1,6 @@
 """Quick test to verify search functionality."""
 
-from debate_sim.llm.search_tool import search_web
+from debate.simulator.providers.search import search_web
 
 # Test search
 print("Testing DuckDuckGo search...")

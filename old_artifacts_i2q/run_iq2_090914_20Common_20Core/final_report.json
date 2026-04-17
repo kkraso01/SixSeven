@@ -1,0 +1,26 @@
+{
+  "topic": "Embrace The Common Core",
+  "motion": "Embrace The Common Core",
+  "rounds_completed": 3,
+  "stance_trajectory": {
+    "CA": [
+      55,
+      55,
+      55
+    ],
+    "SA": [
+      55,
+      55,
+      55
+    ]
+  },
+  "tactic_counts": {
+    "human_transcript": 105
+  },
+  "key_persuasion_moments": [],
+  "outcome_summary": "Imported historical IQ2 debate transcript; no simulated persuasion trajectory computed.",
+  "limitations": [
+    "Confidence, tactics, and search usage are unavailable in source transcript and are left unset.",
+    "Rounds are mapped from IQ2 segments (intro/discussion/conclusion) rather than simulator-generated rounds."
+  ]
+}

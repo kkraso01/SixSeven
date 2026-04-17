@@ -1,0 +1,9 @@
+{
+  "batch_type": "ollama",
+  "timestamp": "2026-04-17T18:48:07.280538",
+  "total_experiments": 0,
+  "successful": 0,
+  "failed": 0,
+  "by_config": {},
+  "results": []
+}

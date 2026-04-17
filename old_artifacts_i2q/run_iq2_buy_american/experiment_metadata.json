@@ -1,0 +1,12 @@
+{
+  "topic_id": "buy-american",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Any project funded by February’s $789 billion stimulus package is meant to use only US made steel and manufactured goods. Any financial institution receiving bail out funds must give preference to citizens. Will these policies backfire? Op...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

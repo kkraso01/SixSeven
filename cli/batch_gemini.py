@@ -7,15 +7,18 @@ Subclass of :class:`BaseBatchRunner` that adds:
 
 from __future__ import annotations
 
+import argparse
 import re
 import time
 
-from cli.base_batch import BaseBatchRunner, ExperimentResult, ModelConfig
-from debate_sim.core.topics import CONSPIRACY_TOPICS, DebateTopic
-from debate_sim.llm.ollama_client import (
+from debate.providers.llm_client import (
     _RATE_LIMIT_EXTRA_DELAY,
     _RATE_LIMIT_FALLBACK_DELAY,
 )
+
+from cli.base_batch import BaseBatchRunner, ExperimentResult, ModelConfig
+from debate.core.model_pool import ModelPoolError, get_batch_model_configs
+from debate.core.topics import CONSPIRACY_TOPICS, DebateTopic
 
 
 class GeminiBatchRunner(BaseBatchRunner):
@@ -144,11 +147,42 @@ class GeminiBatchRunner(BaseBatchRunner):
 
 def main():
     """Run Gemini-only batch experiments (requires API key)."""
+    parser = argparse.ArgumentParser(description="Run Gemini batch debate experiments")
+    parser.add_argument(
+        "--out",
+        "--output-dir",
+        "--dir",
+        dest="output_dir",
+        type=str,
+        default=None,
+        help="Output root for artifacts",
+    )
+    parser.add_argument(
+        "--rounds",
+        type=int,
+        default=None,
+        help="Override number of rounds",
+    )
+    parser.add_argument(
+        "--max-turns-per-round",
+        type=int,
+        default=None,
+        help="Override moderator-controlled max CA/SA speaking slots per round",
+    )
+    parser.add_argument(
+        "--word-limit",
+        type=int,
+        default=None,
+        help="Override per-turn word limit",
+    )
+    args = parser.parse_args()
+
     runner = GeminiBatchRunner(
         batch_label="gemini",
-        output_dir="artifacts_gemini",
-        rounds=5,
-        word_limit=180,
+        output_dir=args.output_dir,
+        rounds=args.rounds,
+        max_turns_per_round=args.max_turns_per_round,
+        word_limit=args.word_limit,
     )
 
     # Get models from config.ini
@@ -165,89 +199,33 @@ def main():
     print("\n Gemini API key configured")
     print(f"   API mode: {config.api_mode}")
 
-    # GEMINI MODELS ONLY - Watch rate limits!
-    # ALL 8 COMBINATIONS of Gemini-3-Flash-Preview and Gemma3-27b
+    try:
+        pool_configs = get_batch_model_configs("gemini")
+    except ModelPoolError as exc:
+        print(f"\n ERROR: invalid model_pool.json configuration for gemini batch: {exc}")
+        return
+
     model_configs = [
-        # 1. All Gemini 3 Flash Preview (3 API calls per round)
         runner.add_model_config(
-            name="gemini-3-flash-all",
-            moderator="gemini-3-flash-preview",
-            conspiracy="gemini-3-flash-preview",
-            scientific="gemini-3-flash-preview",
-            api_mode="gemini",
-        ),
-        # 2. All Gemma3:27b (0 API calls - all Ollama)
-        runner.add_model_config(
-            name="gemma3-27b-all",
-            moderator=config.moderator_model,
-            conspiracy=config.conspiracy_model,
-            scientific=config.scientific_model,
-            api_mode="openai",
-        ),
-        # 3. Gemini moderator, Gemma agents (1 API call per round)
-        runner.add_model_config(
-            name="gemini-flash-mod-gemma-agents",
-            moderator="gemini-3-flash-preview",
-            conspiracy=config.conspiracy_model,
-            scientific=config.scientific_model,
-            api_mode="gemini",
-        ),
-        # 4. Gemma moderator, Gemini agents (2 API calls per round)
-        runner.add_model_config(
-            name="gemma-mod-gemini-flash-agents",
-            moderator=config.moderator_model,
-            conspiracy="gemini-3-flash-preview",
-            scientific="gemini-3-flash-preview",
-            api_mode="openai",
-        ),
-        # 5. Gemini mod+CA, Gemma SA (2 API calls per round)
-        runner.add_model_config(
-            name="gemini-mod-ca_gemma-sa",
-            moderator="gemini-3-flash-preview",
-            conspiracy="gemini-3-flash-preview",
-            scientific=config.scientific_model,
-            api_mode="gemini",
-        ),
-        # 6. Gemini mod+SA, Gemma CA (2 API calls per round)
-        runner.add_model_config(
-            name="gemini-mod-sa_gemma-ca",
-            moderator="gemini-3-flash-preview",
-            conspiracy=config.conspiracy_model,
-            scientific="gemini-3-flash-preview",
-            api_mode="gemini",
-        ),
-        # 7. Gemma mod+SA, Gemini CA (1 API call per round)
-        runner.add_model_config(
-            name="gemma-mod-sa_gemini-ca",
-            moderator=config.moderator_model,
-            conspiracy="gemini-3-flash-preview",
-            scientific=config.scientific_model,
-            api_mode="openai",
-        ),
-        # 8. Gemma mod+CA, Gemini SA (1 API call per round)
-        runner.add_model_config(
-            name="gemma-mod-ca_gemini-sa",
-            moderator=config.moderator_model,
-            conspiracy=config.conspiracy_model,
-            scientific="gemini-3-flash-preview",
-            api_mode="openai",
-        ),
+            name=cfg["name"],
+            moderator=cfg["moderator"],
+            conspiracy=cfg["conspiracy"],
+            scientific=cfg["scientific"],
+            api_mode=cfg["api_mode"],
+        )
+        for cfg in pool_configs
     ]
 
     # Use ALL conspiracy topics (20 topics)
     topics = CONSPIRACY_TOPICS
 
+    total_experiments = len(topics) * len(model_configs)
+
     # Run batch experiments
-    # 20 topics  8 model configs = 160 experiments
-    # WARNING: API limits apply! Estimated:
-    #   - Gemini-all: 20 topics  5 rounds  3 calls = 300 API calls
-    #   - Gemini mod/agents: varies by config (100-200 calls each)
-    #   - Total: ~1,200-1,400 API calls
-    # Daily limit: 1,500 requests/day
-    # Rate limit: 5 requests/minute, 20 requests/day (free tier)
     print("\n  API USAGE WARNING:")
-    print("   Total experiments: 160")
-    print("   Estimated API calls: 1,200-1,400")
+    print(f"   Total experiments: {total_experiments}")
+    print("   Generated from model_pool.json permutations")
+    print("   Estimated API calls: depends on rounds and number of Gemini roles per config")
     print("   Daily limit: 20 requests/day (free tier)")
     print("   This will take MANY days due to rate limiting (5 req/min, 20 req/day)")
     print("   Press Ctrl+C to cancel, or wait 10 seconds to continue...")

@@ -2,15 +2,15 @@
 
 from __future__ import annotations
 
-from debate_sim.analysis.metrics import (
+from debate.analysis.metrics import (
     ROLE_TO_AGENT,
     quality_summary_from_scores,
     safety_flags,
     stance_summary_from_logs,
     tactic_summary_from_logs,
 )
-from debate_sim.core.schemas import DebateLogItem, MemoryState
-from debate_sim.memory.models import append_log, initial_memory
+from debate.core.schemas import DebateLogItem, MemoryState
+from debate.simulator.engine.memory import append_log, initial_memory
 
 
 def _add_turn(

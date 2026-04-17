@@ -1,0 +1,12 @@
+{
+  "topic_id": "040914%20Millennials",
+  "topic_category": "iq2_real_debate",
+  "topic_description": "Millennials—growing up with revolutionary technology and entering adulthood in a time of recession—have recently been much maligned. Are their critics right? Is this generation uniquely coddled, narcissistic, and lazy? Or have we let conve...",
+  "model_config": "iq2_human_transcript",
+  "models": {
+    "moderator": "human_moderator",
+    "conspiracy": "human_for_team",
+    "scientific": "human_against_team"
+  },
+  "api_mode": "offline_dataset"
+}

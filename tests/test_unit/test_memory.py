@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from debate_sim.core.schemas import DebateLogItem, MemoryState
-from debate_sim.memory.models import (
+from debate.core.schemas import DebateLogItem, MemoryState
+from debate.simulator.engine.memory import (
     append_log,
     initial_memory,
     update_agent_state,

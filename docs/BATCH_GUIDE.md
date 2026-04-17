@@ -1,3 +1,4 @@
+
 # Split Batch Experiment Guide
 
 ## Why Split?
@@ -17,26 +18,26 @@ reporting.
 ## Batch Statistics
 
 ### Ollama Batch (`cli/batch_ollama.py`)
-- **Models**: Two Ollama-compatible models (configured in batch script)
-- **Configurations**: 8 model combos (all permutations of 2 models across 3 roles)
-- **Experiments**: 20 topics × 8 configs = **160 experiments**
-- **API Calls**: ~3,200 (all to Ollama endpoint, no limits)
-- **Time**: 8-12 hours
-- **Output**: `<output_dir>/all_debates_ollama.csv`
+- **Models**: Two Ollama-compatible models (configured via `config.ini`, wired in the batch script)
+- **Configurations**: 2 model combos (original + swapped CA/SA)
+- **Experiments**: 20 topics × 2 configs = **40 experiments**
+- **API Calls**: ~800 (5 rounds × ~4 calls/round × 40 experiments; depends on config/search)
+- **Time**: 3-5 hours (depends on hardware)
+- **Output**: `results/batches/ollama/all_debates_ollama.csv`
 - **Features**: Auto-resume on interruption (completion index)
 
 ### Gemini Batch (`cli/batch_gemini.py`)
-- **Models**: One Gemini model + one Ollama model (mixed configs)
+- **Models**: Gemini (gemini-3-flash-preview) + Ollama models (mixed configs)
 - **Configurations**: 8 model combos (all permutations across 3 roles)
 - **Experiments**: 20 topics × 8 configs = **160 experiments**
 - **API Calls**: ~1,200-1,400 (varies by how many roles use Gemini)
 - **Time**: Multiple days (free-tier rate limits: 5 req/min, 20 req/day)
-- **Output**: `<output_dir>/all_debates_gemini.csv`
+- **Output**: `results/batches/gemini/all_debates_gemini.csv`
 - **Features**: Auto-resume, per-minute retry with backoff, daily quota detection
 
 ### Combined Total
-- **320 experiments** (160 Ollama + 160 Gemini)
-- **~1,600 total debate rounds** (5 rounds each)
+- **200 experiments** (40 Ollama + 160 Gemini)
+- **~1,000 total debate rounds** (5 rounds each in Gemini; Ollama uses config.ini rounds)
 - **Two separate CSV files** that can be analyzed together
 
 ---
@@ -58,6 +59,9 @@ BaseBatchRunner (cli/base_batch.py)
         ├── Per-minute rate-limit retry (exponential backoff)
         ├── Daily quota detection → graceful batch stop
         └── Retry delay extraction from error messages
+
+Note: The combined CSV aggregation scans `run_*` under `<output_dir>/raw`, which
+matches the current batch layout.
 ```
 
 ---
@@ -70,22 +74,17 @@ BaseBatchRunner (cli/base_batch.py)
 python cli/batch_ollama.py
 ```
 
-**All 8 model configurations** (all permutations of Model A × Model B across 3 roles):
-1. model-A-all — Model A for all 3 roles
-2. model-B-all — Model B for all 3 roles
-3. A-mod-B-agents — A moderator, B agents
-4. B-mod-A-agents — B moderator, A agents
-5. A-mod-ca_B-sa — A mod+CA, B SA
-6. A-mod-sa_B-ca — A mod+SA, B CA
-7. B-mod-sa_A-ca — B mod+SA, A CA
-8. B-mod-ca_A-sa — B mod+CA, A SA
+**All 2 model configurations** (original + swapped CA/SA):
+1. `<model_a>-CA_<model_b>-SA` — Model A as CA, Model B as SA
+2. `<model_b>-CA_<model_a>-SA` — Model B as CA, Model A as SA
 
 Edit `cli/batch_ollama.py` to set your specific model names in `runner.add_model_config()` calls.
 
 **Output:**
 - `<output_dir>/batch_summary_ollama.json`
+- `<output_dir>/batch_report_ollama.md`
 - `<output_dir>/all_debates_ollama.csv`
-- Individual run folders with transcripts
+- `<output_dir>/raw/run_<id>/...` and `<output_dir>/transcripts/run_<id>.md`
 
 **Estimated time:** 8-12 hours (no rate limits)
 
@@ -96,25 +95,26 @@ python cli/batch_gemini.py
 ```
 
 **Requirements:**
-- ✅ Gemini API key in `config/config.ini`
-- ✅ API quota available (free tier: 20 req/day, 5 req/min)
+-  Gemini API key in `config/config.ini`
+-  API quota available (free tier: 20 req/day, 5 req/min)
 
-**All 8 model configurations** (same permutation pattern, with Gemini + Ollama models):
-1. gemini-all — Gemini for all 3 roles (3 API calls/round)
-2. ollama-all — All Ollama (0 API calls — baseline comparison)
-3. gemini-mod-ollama-agents — Gemini moderator, Ollama agents (1 API call/round)
-4. ollama-mod-gemini-agents — Ollama moderator, Gemini agents (2 API calls/round)
-5. gemini-mod-ca_ollama-sa — Gemini mod+CA, Ollama SA (2 API calls/round)
-6. gemini-mod-sa_ollama-ca — Gemini mod+SA, Ollama CA (2 API calls/round)
-7. ollama-mod-sa_gemini-ca — Ollama mod+SA, Gemini CA (1 API call/round)
-8. ollama-mod-ca_gemini-sa — Ollama mod+CA, Gemini SA (1 API call/round)
+**All 8 model configurations** (as defined in the script):
+1. gemini-3-flash-all — Gemini for all 3 roles (3 API calls/round)
+2. gemma3-27b-all — All Ollama (0 API calls — baseline comparison)
+3. gemini-flash-mod-gemma-agents — Gemini moderator, Ollama agents (1 API call/round)
+4. gemma-mod-gemini-flash-agents — Ollama moderator, Gemini agents (2 API calls/round)
+5. gemini-mod-ca_gemma-sa — Gemini mod+CA, Ollama SA (2 API calls/round)
+6. gemini-mod-sa_gemma-ca — Gemini mod+SA, Ollama CA (2 API calls/round)
+7. gemma-mod-sa_gemini-ca — Ollama mod+SA, Gemini CA (1 API call/round)
+8. gemma-mod-ca_gemini-sa — Ollama mod+CA, Gemini SA (1 API call/round)
 
 Edit `cli/batch_gemini.py` to set your specific model names.
 
 **Output:**
-- `<output_dir>/batch_summary_gemini.json`
-- `<output_dir>/all_debates_gemini.csv`
-- Individual run folders with transcripts
+- `results/batches/gemini/batch_summary_gemini.json`
+- `results/batches/gemini/batch_report_gemini.md`
+- `results/batches/gemini/all_debates_gemini.csv`
+- `results/batches/gemini/raw/run_<id>/...` and `results/batches/gemini/transcripts/run_<id>.md`
 
 **Estimated time:** Multiple days on free tier (rate-limited), 5-8 hours on paid tier
 
@@ -130,8 +130,8 @@ Both CSV files have the same format, so you can combine them:
 import pandas as pd
 
 # Load both datasets
-ollama_df = pd.read_csv("<output_dir>/all_debates_ollama.csv")
-gemini_df = pd.read_csv("<output_dir>/all_debates_gemini.csv")
+ollama_df = pd.read_csv("results/batches/ollama/all_debates_ollama.csv")
+gemini_df = pd.read_csv("results/batches/gemini/all_debates_gemini.csv")
 
 # Combine them
 all_debates = pd.concat([ollama_df, gemini_df], ignore_index=True)
@@ -142,6 +142,8 @@ all_debates.to_csv("all_debates_combined.csv", index=False)
 # Analyze by model type
 ollama_debates = all_debates[all_debates.debate_id.str.contains("gemma|qwen|dolphin")]
 gemini_debates = all_debates[all_debates.debate_id.str.contains("gemini")]
+
+Note: The canonical CSV uses `speaker_role` and `utterance` columns (not `speaker` or `claim`).
 ```
 
 ---
@@ -149,8 +151,8 @@ gemini_debates = all_debates[all_debates.debate_id.str.contains("gemini")]
 ## Expected API Usage
 
 ### Ollama (University Server)
-- **Per experiment**: ~20 API calls (5 rounds × ~4 calls/round)
-- **Total**: 160 experiments × 20 = **~3,200 calls**
+- **Per experiment**: ~20 API calls (5 rounds × ~4 calls/round; depends on config/search)
+- **Total**: 40 experiments × 20 = **~800 calls**
 - **Rate limit**: None
 - **Cost**: Free
 
@@ -158,7 +160,7 @@ gemini_debates = all_debates[all_debates.debate_id.str.contains("gemini")]
 - **Per experiment**: 0-20 API calls (depends on how many roles use Gemini)
 - **Total**: ~1,200-1,400 calls (varies by config)
 - **Free-tier limits**: 5 req/min, 20 req/day
-- **Paid-tier limits**: 15 req/min, 1,500 req/day
+- **Paid-tier limits**: Depends on your plan
 - **Cost**: Free tier available; check your usage
 
 ---
@@ -170,7 +172,7 @@ gemini_debates = all_debates[all_debates.debate_id.str.contains("gemini")]
 **Option 1: Reduce topics**
 ```python
 # In cli/batch_gemini.py, change topics line
-from debate_sim.core.topics import get_sample_topics
+from debate.core.topics import get_sample_topics
 topics = get_sample_topics(10)  # Only 10 topics instead of 20
 # 10 × 8 = 80 experiments = ~600 API calls
 ```
@@ -215,17 +217,20 @@ python cli/batch_gemini.py
 ## Output Structure
 
 ```
-<output_dir>/                           Ollama batch
+results/batches/ollama/               Ollama batch (default output_dir)
 ├── batch_summary_ollama.json           Summary with stats
-├── all_debates_ollama.csv              160 Ollama debates
-├── run_20260214_120000/                Individual debate 1
-├── run_20260214_120500/                Individual debate 2
+├── batch_report_ollama.md              Detailed report
+├── all_debates_ollama.csv              40 Ollama debates
+├── raw/run_20260214_120000/            Individual debate 1 (raw)
+├── transcripts/run_20260214_120000.md  Individual debate 1 (transcript)
 └── ...
 
-<output_dir>/                           Gemini batch
+results/batches/gemini/                Gemini batch (default output_dir)
 ├── batch_summary_gemini.json           Summary with stats
+├── batch_report_gemini.md              Detailed report
 ├── all_debates_gemini.csv              160 Gemini debates
-├── run_20260214_180000/                Individual debate 1
+├── raw/run_20260214_180000/            Individual debate 1 (raw)
+├── transcripts/run_20260214_180000.md  Individual debate 1 (transcript)
 └── ...
 ```
 
@@ -235,20 +240,20 @@ python cli/batch_gemini.py
 
 ### During Ollama Batch
 ```bash
-# Count completed experiments
-ls -d <output_dir>/run_* | wc -l
+# Count completed experiments (raw runs)
+ls -d results/batches/ollama/raw/run_* | wc -l
 
 # Check batch summary
-cat <output_dir>/batch_summary_ollama.json | python -m json.tool | grep successful
+cat results/batches/ollama/batch_summary_ollama.json | python -m json.tool | grep successful
 ```
 
 ### During Gemini Batch
 ```bash
 # Watch for rate limit errors
-cat <output_dir>/batch_summary_gemini.json | python -m json.tool | grep -i "fail\|quota"
+cat results/batches/gemini/batch_summary_gemini.json | python -m json.tool | grep -i "fail\|quota"
 
 # Monitor progress
-ls -d <output_dir>/run_* | wc -l
+ls -d results/batches/gemini/raw/run_* | wc -l
 ```
 
 ---

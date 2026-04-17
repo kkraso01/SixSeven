@@ -5,7 +5,7 @@ from __future__ import annotations
 import textwrap
 from pathlib import Path
 
-from debate_sim.core.config import DebateConfig
+from debate.core.config import DebateConfig
 
 
 class TestDebateConfigDefaults:
@@ -15,7 +15,7 @@ class TestDebateConfigDefaults:
         cfg = DebateConfig.from_ini(tmp_path / "nonexistent.ini")
         assert cfg.api_mode == "ollama"
         assert cfg.rounds == 3
-        assert cfg.output_dir == "artifacts"
+        assert cfg.output_dir == "results"
 
     def test_from_env_delegates_to_from_ini(self) -> None:
         # from_env() is a legacy alias — should not raise
@@ -85,3 +85,15 @@ class TestDebateConfigIniParsing:
         )
         cfg = DebateConfig.from_ini(ini)
         assert cfg.seed is None
+
+    def test_empty_output_dir_fallback(self, tmp_path: Path) -> None:
+        """Empty or whitespace output_dir should fall back to the project default."""
+        ini = self._write_ini(
+            tmp_path,
+            """\
+            [output]
+            output_dir =
+        """,
+        )
+        cfg = DebateConfig.from_ini(ini)
+        assert cfg.output_dir == "results"
