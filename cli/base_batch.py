@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from debate.io.csv_export import export_all_debates_to_csv
+from debate.simulator.io.csv_export import export_all_debates_to_csv
 
 from debate import DebateConfig, run_debate
 from debate.core.container import build_default_services
