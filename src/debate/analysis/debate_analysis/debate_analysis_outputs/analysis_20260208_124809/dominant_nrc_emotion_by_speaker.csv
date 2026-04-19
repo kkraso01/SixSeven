@@ -1,5 +1,5 @@
 speaker_role,dominant_nrc_emotion,count
-opponent,surprise,2
+opponent,joy,3
 opponent,trust,2
-opponent,joy,1
-proponent,surprise,5
+proponent,sadness,4
+proponent,surprise,1

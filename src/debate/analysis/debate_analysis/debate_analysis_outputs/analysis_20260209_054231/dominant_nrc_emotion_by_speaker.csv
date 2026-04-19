@@ -1,6 +1,4 @@
 speaker_role,dominant_nrc_emotion,count
-opponent,anger,1
-opponent,fear,1
+opponent,fear,2
 opponent,trust,1
-proponent,trust,2
-proponent,fear,1
+proponent,trust,3

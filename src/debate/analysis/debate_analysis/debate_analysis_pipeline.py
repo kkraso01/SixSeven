@@ -14,7 +14,8 @@ from transformers import pipeline
 # CONFIG
 # =========================================================
 BASE_DIR = Path(__file__).resolve().parent
-REPO_ROOT = BASE_DIR.parent.parent
+REPO_ROOT = BASE_DIR.parent.parent.parent.parent
+
 
 INPUT_RUNS_DIR = REPO_ROOT / "old_artifacts"
 OUTPUT_ANALYSIS_DIR = BASE_DIR / "debate_analysis_outputs"
@@ -29,14 +30,35 @@ NRC_TRUE_EMOTIONS = {
     "joy", "sadness", "surprise", "trust"
 }
 
+# Strong / weak modality words
+# generic
+# STRONG_MODALITY_WORDS = {
+#     "must", "clearly", "definitely", "certainly", "undeniably",
+#     "always", "never", "prove", "proves", "proved",
+#     "demonstrate", "demonstrates", "demonstrated",
+#     "show", "shows", "showed", "cannot", "can't",
+#     "will", "obviously", "plainly"
+# }
+
+
+# These are given in the project PDF
 STRONG_MODALITY_WORDS = {
     "always", "must", "best", "clearly",
-    "definitely", "definitively", "highest", "lowest",
+    "definitely", "definitively", "hgihest", "lowest",
     "never", "strongly", "unambiguously", "uncompromising",
     "undisputed", "undoubtedly", "unequivocal", "unequivocally",
     "unparalleled", "unsurpassed", "will"
 }
 
+# generic
+# WEAK_MODALITY_WORDS = {
+#     "may", "might", "could", "can", "perhaps", "possibly",
+#     "seems", "seem", "appear", "appears", "appeared",
+#     "suggest", "suggests", "suggested", "likely", "unlikely",
+#     "arguably", "maybe", "potentially", "apparently"
+# }
+
+# from pdf
 WEAK_MODALITY_WORDS = {
     "apparently", "appeared", "appearing", "appears",
     "conceivable", "could", "depend", "depended",
