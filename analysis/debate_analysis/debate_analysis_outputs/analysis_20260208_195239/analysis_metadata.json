@@ -1,0 +1,28 @@
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260208_195239",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260208_195239",
+  "debate_id": "debate_ef7da342b9d1",
+  "claim": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+  "original_row_count": 15,
+  "analyzed_row_count": 10,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "stance_trajectory",
+    "winner_confidence": "medium",
+    "winner_evidence": {
+      "CA_start": 80,
+      "CA_end": 60,
+      "SA_start": 55,
+      "SA_end": 70
+    }
+  },
+  "final_report_present": true
+}

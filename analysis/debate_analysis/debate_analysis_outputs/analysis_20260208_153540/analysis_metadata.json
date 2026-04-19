@@ -1,0 +1,23 @@
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260208_153540",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260208_153540",
+  "debate_id": "debate_137181fe310e",
+  "claim": "The 9/11 attacks were orchestrated by elements within the US government to justify wars in the Middle East.",
+  "original_row_count": 3,
+  "analyzed_row_count": 2,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "outcome_summary",
+    "winner_confidence": "high",
+    "winner_evidence": "SA significantly increased their confidence, while CA's confidence decreased slightly. SA successfully defended the established narrative, while CA struggled to provide concrete evidence supporting their claim. There was no significant shift in overall stance, but SA demonstrated a stronger position."
+  },
+  "final_report_present": true
+}

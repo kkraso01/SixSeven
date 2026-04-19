@@ -1,0 +1,28 @@
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260209_001549",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260209_001549",
+  "debate_id": "debate_c02b68dfb8f7",
+  "claim": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+  "original_row_count": 15,
+  "analyzed_row_count": 10,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "stance_trajectory",
+    "winner_confidence": "medium",
+    "winner_evidence": {
+      "CA_start": 60,
+      "CA_end": 40,
+      "SA_start": 40,
+      "SA_end": 60
+    }
+  },
+  "final_report_present": true
+}

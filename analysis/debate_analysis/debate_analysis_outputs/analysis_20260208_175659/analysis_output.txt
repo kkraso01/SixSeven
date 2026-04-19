@@ -1,0 +1,62 @@
+=== ANALYSIS METADATA ===
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260208_175659",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260208_175659",
+  "debate_id": "debate_4ae475f08a00",
+  "claim": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+  "original_row_count": 15,
+  "analyzed_row_count": 10,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "stance_trajectory",
+    "winner_confidence": "medium",
+    "winner_evidence": {
+      "CA_start": 80,
+      "CA_end": 60,
+      "SA_start": 55,
+      "SA_end": 70
+    }
+  },
+  "final_report_present": true
+}
+
+=== WINNER INFO ===
+{
+  "winner_inferred": "SA",
+  "winner_role": "opponent",
+  "winner_source": "stance_trajectory",
+  "winner_confidence": "medium",
+  "winner_evidence": {
+    "CA_start": 80,
+    "CA_end": 60,
+    "SA_start": 55,
+    "SA_end": 70
+  }
+}
+
+=== SPEAKER SUMMARY ===
+              confidence  reply_to_turn  polarity  subjectivity  question_count  exclamation_count  word_count  char_count  strong_modality_count  weak_modality_count  strong_modality_density  weak_modality_density  modality_balance  nrc_surprise_count  nrc_surprise_density  nrc_anger_count  nrc_anger_density  nrc_disgust_count  nrc_disgust_density  nrc_fear_count  nrc_fear_density  nrc_joy_count  nrc_joy_density  nrc_anticipation_count  nrc_anticipation_density  nrc_trust_count  nrc_trust_density  nrc_sadness_count  nrc_sadness_density  emotion_anger  emotion_fear  emotion_sadness  emotion_joy  emotion_love  emotion_surprise  turn_position
+speaker_role                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+opponent            52.4            7.0  0.123500      0.598667             0.0                0.0        38.4       292.2                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.2            0.00625                0.0                  0.0             0.8          0.025403            0.4         0.008288                     0.6                  0.010909              1.2           0.026663                0.0             0.000000       0.197856      0.145217         0.034448     0.613716      0.004217          0.004547       0.555556
+proponent           52.4            5.2  0.043095      0.503333             0.0                0.0        33.4       253.6                    0.0                  0.0                      0.0                    0.0               0.0                 0.2              0.005714              0.4            0.01127                0.0                  0.0             1.2          0.035825            0.2         0.005556                     0.4                  0.011270              1.4           0.041231                0.2             0.005556       0.585618      0.328649         0.023844     0.057112      0.002130          0.002647       0.444444
+
+=== PHASE SUMMARY ===
+          debate_id                                                                              claim speaker_role  phase  confidence  reply_to_turn  polarity  subjectivity  question_count  exclamation_count  word_count  char_count  strong_modality_count  weak_modality_count  strong_modality_density  weak_modality_density  modality_balance  nrc_surprise_count  nrc_surprise_density  nrc_anger_count  nrc_anger_density  nrc_disgust_count  nrc_disgust_density  nrc_fear_count  nrc_fear_density  nrc_joy_count  nrc_joy_density  nrc_anticipation_count  nrc_anticipation_density  nrc_trust_count  nrc_trust_density  nrc_sadness_count  nrc_sadness_density  emotion_anger  emotion_fear  emotion_sadness  emotion_joy  emotion_love  emotion_surprise  turn_position
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.     opponent  early        50.0            1.0  0.087500      0.733333             0.0                0.0        43.0       342.0                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.0           0.000000                0.0                  0.0             0.0          0.000000            1.0         0.023256                     0.0                  0.000000              2.0           0.046512                0.0             0.000000       0.007372      0.008601         0.009117     0.971455      0.001539          0.001917       0.111111
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.     opponent   late        53.5           11.5  0.115000      0.730000             0.0                0.0        43.0       329.0                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.0           0.000000                0.0                  0.0             0.5          0.016129            0.5         0.009091                     1.5                  0.027273              1.5           0.027273                0.0             0.000000       0.027761      0.092570         0.011504     0.861056      0.002768          0.004341       0.888889
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.     opponent middle        52.5            5.5  0.150000      0.400000             0.0                0.0        31.5       230.5                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.5           0.015625                0.0                  0.0             1.5          0.047379            0.0         0.000000                     0.0                  0.000000              0.5           0.016129                0.0             0.000000       0.463193      0.266170         0.070058     0.187506      0.007006          0.006067       0.444444
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.    proponent  early        54.5            1.0  0.103571      0.333333             0.0                0.0        31.5       231.5                    0.0                  0.0                      0.0                    0.0               0.0                 0.5              0.014286              0.5           0.014286                0.0                  0.0             1.0          0.032143            0.0         0.000000                     0.5                  0.014286              1.0           0.032143                0.0             0.000000       0.977571      0.008432         0.004951     0.007531      0.000794          0.000722       0.111111
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.    proponent   late        50.0            9.5 -0.058333      0.737500             0.0                0.0        36.5       287.0                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.5           0.013889                0.0                  0.0             1.5          0.041291            0.5         0.013889                     0.5                  0.013889              2.0           0.054805                0.5             0.013889       0.278110      0.540479         0.046701     0.127982      0.002668          0.004061       0.777778
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.    proponent middle        53.0            5.0  0.125000      0.375000             0.0                0.0        31.0       231.0                    0.0                  0.0                      0.0                    0.0               0.0                 0.0              0.000000              0.0           0.000000                0.0                  0.0             1.0          0.032258            0.0         0.000000                     0.0                  0.000000              1.0           0.032258                0.0             0.000000       0.416726      0.545425         0.015916     0.014538      0.003724          0.003671       0.444444
+
+=== DEBATE LEVEL FEATURES ===
+          debate_id                                                                              claim winner_role     winner_source winner_confidence_label  n_total_turns  proponent_turns  proponent_confidence_mean  proponent_strong_modality_density_mean  proponent_weak_modality_density_mean  proponent_modality_balance_mean  proponent_polarity_mean  proponent_subjectivity_mean  proponent_word_count_mean  proponent_late_confidence_mean  proponent_late_strong_modality_density_mean  proponent_late_weak_modality_density_mean  proponent_late_modality_balance_mean  opponent_turns  opponent_confidence_mean  opponent_strong_modality_density_mean  opponent_weak_modality_density_mean  opponent_modality_balance_mean  opponent_polarity_mean  opponent_subjectivity_mean  opponent_word_count_mean  opponent_late_confidence_mean  opponent_late_strong_modality_density_mean  opponent_late_weak_modality_density_mean  opponent_late_modality_balance_mean loser_role  winner_minus_loser_confidence_mean  winner_minus_loser_strong_modality_density_mean  winner_minus_loser_weak_modality_density_mean  winner_minus_loser_modality_balance_mean  winner_minus_loser_polarity_mean  winner_minus_loser_subjectivity_mean  winner_minus_loser_word_count_mean  winner_minus_loser_late_confidence_mean  winner_minus_loser_late_strong_modality_density_mean  winner_minus_loser_late_weak_modality_density_mean  winner_minus_loser_late_modality_balance_mean
+debate_4ae475f08a00 COVID-19 vaccines contain microchips designed for population tracking and control.    opponent stance_trajectory                  medium             10                5                       52.4                                     0.0                                   0.0                              0.0                 0.043095                     0.503333                       33.4                            50.0                                          0.0                                        0.0                                   0.0               5                      52.4                                    0.0                                  0.0                             0.0                  0.1235                    0.598667                      38.4                           53.5                                         0.0                                       0.0                                  0.0  proponent                                 0.0                                              0.0                                            0.0                                       0.0                          0.080405                              0.095333                                 5.0                                      3.5                                                   0.0                                                 0.0                                            0.0
