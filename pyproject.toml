@@ -3,8 +3,8 @@ name = "sixseven"
 version = "0.2.0"
 description = "Agentic Debate Simulation: Conspiracy vs Scientific Models"
 authors = [{ name = "suprch4rg3d", email = "emmanueloikonomou@gmail.com" }]
-readme = "docs/README.md"
-requires-python = ">=3.11,<4.0"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
 dependencies = [
     "pydantic==2.12.5",
     "instructor==1.14.5",
@@ -20,6 +20,7 @@ dependencies = [
     "transformers>=4.48.0",
     "torch>=2.5.0",
     "nltk>=3.9.1",
+    "seaborn>=0.13.0",
 ]
 
 [project.scripts]
@@ -28,6 +29,7 @@ sixseven-analyze = "cli.analyze_results:main"
 sixseven-topics = "cli.view_topics:main"
 sixseven-batch-ollama = "cli.batch_ollama:main"
 sixseven-batch-gemini = "cli.batch_gemini:main"
+sixseven-role-analysis = "debate.analysis.role_analysis_man.role_analyzer:main"
 
 [tool.poetry]
 packages = [{ include = "debate", from = "src" }]
