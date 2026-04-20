@@ -6,6 +6,11 @@ without external resources. Teams can expand or replace these lists later.
 
 from __future__ import annotations
 
+import os
+from pathlib import Path
+from collections import defaultdict
+import re
+
 # Consolidated Research Lexicons (Defaults)
 UNCERTAINTY_WORDS: set[str] = {
     "maybe", "may", "suggest", "suggests", "perhaps", "possibly", "likely",
@@ -46,7 +51,7 @@ MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {
     "sanctity_degradation": {"pure", "sacred", "dirty", "contaminate", "unnatural", "toxic"},
 }
 
-EMOTION_LEXICON: dict[str, set[str]] = {
+_BASIC_EMOTION_LEXICON: dict[str, set[str]] = {
     "anger": {"angry", "rage", "furious", "outrage", "hostile"},
     "fear": {"fear", "afraid", "panic", "threat", "danger", "scared"},
     "trust": {"trust", "reliable", "credible", "evidence", "verified"},
@@ -56,3 +61,40 @@ EMOTION_LEXICON: dict[str, set[str]] = {
     "anticipation": {"expect", "anticipate", "prepare", "forecast"},
     "surprise": {"surprised", "unexpected", "shocking", "astonishing"},
 }
+
+def _load_emotion_lexicon() -> dict[str, set[str]]:
+    """
+    Attempt to load the full NRC Emotion Lexicon if available in the repository root.
+    Otherwise, fall back to the lightweight starter set.
+    """
+    try:
+        # Assuming we are running inside the repo, trace to the resources directory
+        current_dir = Path(__file__).resolve().parent
+        # Go up from src/debate/analysis -> src/debate/resources
+        nrc_path = current_dir.parent / "resources" / "lexicons" / "NRC-Emotion-Lexicon" / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
+
+        if nrc_path.exists():
+            lex = defaultdict(set)
+            with open(nrc_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    parts = re.split(r"\s+", line)
+                    if len(parts) == 3:
+                        word, emotion, assoc = parts
+                        if assoc == "1":
+                            lex[emotion.lower()].add(word.lower())
+            
+            # The NRC lexicon contains negative, positive which aren't strictly emotions. 
+            # We usually just use the 8 core emotions.
+            core_emotions = {"anger", "fear", "trust", "disgust", "sadness", "joy", "anticipation", "surprise"}
+            return {k: v for k, v in lex.items() if k in core_emotions}
+            
+    except Exception as e:
+        pass
+        
+    return _BASIC_EMOTION_LEXICON
+
+EMOTION_LEXICON: dict[str, set[str]] = _load_emotion_lexicon()
+
