@@ -452,9 +452,21 @@ def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
             plt.title('The Stubbornness Index (Late vs Early Confidence)')
             plt.xlabel('Speaker Role')
             plt.ylabel('Confidence Delta (Late - Early)')
-            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-            plt.tight_layout()
-            plt.savefig(output_dir / '6_2_stubbornness_index.svg')
+            legend = plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+            
+            interp_text = (
+                "Distribution Guide:\n\n"
+                "• Width: Data point frequency/density.\n"
+                "• Above 0: Net increase over time.\n"
+                "• Below 0: Net decrease over time.\n"
+                "• White dot: Median metric value.\n"
+                "• Thick bar: Interquartile range (IQR)."
+            )
+            text_box = plt.text(1.05, 0.5, interp_text, transform=plt.gca().transAxes, 
+                                fontsize=9, va='center', ha='left', linespacing=1.6,
+                                bbox=dict(boxstyle='round,pad=0.5', facecolor='#f8f9fa', alpha=0.9, edgecolor='gray'))
+            
+            plt.savefig(output_dir / '6_2_stubbornness_index.svg', bbox_extra_artists=(legend, text_box,), bbox_inches='tight')
             plt.close()
 
 def generate_role_summary(df: pd.DataFrame, output_dir: Path):
