@@ -196,7 +196,9 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         bert_melted['Emotion'] = bert_melted['Emotion'].str.replace('bert_emotion_', '').str.title()
         
         plt.figure(figsize=(10, 6))
-        sns.barplot(data=bert_melted, x='Emotion', y='Average Score', hue='speaker_role')
+        ax = sns.barplot(data=bert_melted, x='Emotion', y='Average Score', hue='speaker_role')
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.3f', padding=3, fontsize=8)
         plt.title('Emotional Fingerprint Comparison (BERT Contextual)')
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
@@ -209,13 +211,14 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         nrc_melted['Emotion'] = nrc_melted['Emotion'].str.replace('nrc_emotion_', '').str.title()
         
         plt.figure(figsize=(10, 6))
-        sns.barplot(data=nrc_melted, x='Emotion', y='Average Score', hue='speaker_role')
+        ax = sns.barplot(data=nrc_melted, x='Emotion', y='Average Score', hue='speaker_role')
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.2f', padding=3, fontsize=8)
         plt.title('Emotional Fingerprint Comparison (NRC Lexicon)')
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
         plt.savefig(output_dir / '2_1_emotional_fingerprint_nrc.svg')
         plt.close()
-        
     # 2.2 Modality and Certainty (Density)
     if 'strong_modality_score' in df.columns and 'weak_modality_score' in df.columns and 'word_count' in df.columns:
         # Calculate density (per 100 words) to avoid length bias
