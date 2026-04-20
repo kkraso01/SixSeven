@@ -171,7 +171,9 @@ def analyze_moderator_dynamics(df: pd.DataFrame, output_dir: Path):
         overlaps_df['Phase'] = pd.Categorical(overlaps_df['Phase'], categories=["Early", "Middle", "Late"], ordered=True)
         
         plt.figure(figsize=(8, 6))
-        sns.barplot(data=overlaps_df, x='Phase', y='Jaccard Similarity', errorbar='ci', palette='viridis')
+        ax = sns.barplot(data=overlaps_df, x='Phase', y='Jaccard Similarity', errorbar='ci', palette='viridis')
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.3f', padding=3, fontsize=8)
         plt.title('Moderator Bridge-Building (Vocabulary Overlap) by Phase')
         plt.xlabel('Debate Phase')
         plt.ylabel('Average Jaccard Similarity with Immediate Preceding Turns')
@@ -234,7 +236,9 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         mod_means_melted['Modality Type'] = mod_means_melted['Modality Type'].str.replace('_density', '').str.replace('_', ' ').str.title()
         
         plt.figure(figsize=(8, 6))
-        sns.barplot(data=mod_means_melted, y='speaker_role', x='Density (per 100 words)', hue='Modality Type', orient='h')
+        ax = sns.barplot(data=mod_means_melted, y='speaker_role', x='Density (per 100 words)', hue='Modality Type', orient='h')
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.3f', padding=3, fontsize=8)
         plt.title('The Hedging Gap (Modality Density Comparison)')
         plt.tight_layout()
         plt.savefig(output_dir / '2_2_hedging_gap_density.svg')
@@ -259,7 +263,9 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
         tool_tactic_crosstab['used_search_pct'] = tool_tactic_crosstab['used_search'] * 100
         
         plt.figure(figsize=(10, 6))
-        sns.barplot(data=tool_tactic_crosstab, y='tactic_used', x='used_search_pct', hue='speaker_role')
+        ax = sns.barplot(data=tool_tactic_crosstab, y='tactic_used', x='used_search_pct', hue='speaker_role')
+        for container in ax.containers:
+            ax.bar_label(container, fmt='%.1f%%', padding=3, fontsize=8)
         plt.title('Search Tool Invocation Frequency by Tactic')
         plt.xlabel('% of Turns Using a Search Tool (DuckDuckGo/Tavily)')
         plt.ylabel('Tactic Used')
@@ -410,7 +416,9 @@ def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
         if not stance_df.empty:
             summary = stance_df.groupby('speaker_role')[['Maintained Stance', 'Changed Stance']].mean() * 100
 
-            summary.plot(kind='bar', stacked=True, figsize=(8, 6), color=['#2ca02c', '#d9534f'])
+            ax = summary.plot(kind='bar', stacked=True, figsize=(8, 6), color=['#2ca02c', '#d9534f'])
+            for container in ax.containers:
+                ax.bar_label(container, fmt='%.1f%%', label_type='center', fontsize=10, color='white')
             plt.title('Stance Stability: Do Agents Ever Yield?')
             plt.xlabel('Speaker Role')
             plt.ylabel('Percentage of Debates')
