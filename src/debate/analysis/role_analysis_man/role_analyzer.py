@@ -122,8 +122,13 @@ def analyze_moderator_dynamics(df: pd.DataFrame, output_dir: Path):
         
         plt.figure(figsize=(12, 6))
         # Plot emotion trajectory for debaters
-        sns.lineplot(data=turn_avg[turn_avg['speaker_role'] != 'moderator'], 
+        ax = sns.lineplot(data=turn_avg[turn_avg['speaker_role'] != 'moderator'], 
                      x='turn_index', y='negative_score', hue='speaker_role', marker='o', linewidth=2)
+        
+        # Add numerical labels to data points
+        for _, row in turn_avg[turn_avg['speaker_role'] != 'moderator'].iterrows():
+            ax.text(row['turn_index'], row['negative_score'], f"{row['negative_score']:.2f}",
+                    fontsize=8, ha='center', va='bottom', color='black')
         
         # Add vertical dashed lines for moderator interventions
         mod_turns = turn_avg[turn_avg['speaker_role'] == 'moderator']['turn_index'].unique()
@@ -359,14 +364,32 @@ def analyze_interrogative_doubt(df: pd.DataFrame, output_dir: Path):
         
         # Split Boxplot
         palette = {"Declarative (No Questions)": "#95a5a6", "Interrogative (Has Questions)": "#e74c3c"}
+        order = ['proponent', 'opponent']
+        hue_order = ["Declarative (No Questions)", "Interrogative (Has Questions)"]
         
-        sns.boxplot(
+        ax = sns.boxplot(
             data=agents_df,
             x='speaker_role',
             y='subjectivity',
             hue='utterance_type',
-            palette=palette
+            palette=palette,
+            order=order,
+            hue_order=hue_order
         )
+        
+        # Add numeric markers for medians
+        medians = agents_df.groupby(['speaker_role', 'utterance_type'])['subjectivity'].median()
+        for i, role in enumerate(order):
+            for j, h in enumerate(hue_order):
+                try:
+                    val = medians.loc[(role, h)]
+                    if pd.notna(val):
+                        offset = -0.2 if j == 0 else 0.2
+                        ax.text(i + offset, val + 0.01, f'{val:.3f}', 
+                                ha='center', va='bottom', fontsize=10, color='black', weight='bold',
+                                bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', boxstyle='round,pad=0.2'))
+                except KeyError:
+                    pass
         
         plt.title('Interrogative Doubt ("JAQing Off" Metric)')
         plt.xlabel('Speaker Role')
