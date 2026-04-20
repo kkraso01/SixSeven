@@ -171,7 +171,7 @@ def analyze_moderator_dynamics(df: pd.DataFrame, output_dir: Path):
         overlaps_df['Phase'] = pd.Categorical(overlaps_df['Phase'], categories=["Early", "Middle", "Late"], ordered=True)
         
         plt.figure(figsize=(8, 6))
-        ax = sns.barplot(data=overlaps_df, x='Phase', y='Jaccard Similarity', errorbar='ci', palette='viridis')
+        ax = sns.barplot(data=overlaps_df, x='Phase', y='Jaccard Similarity', hue='Phase', errorbar='ci', palette='viridis', legend=False)
         for container in ax.containers:
             ax.bar_label(container, fmt='%.3f', padding=3, fontsize=8)
         plt.title('Moderator Bridge-Building (Vocabulary Overlap) by Phase')
