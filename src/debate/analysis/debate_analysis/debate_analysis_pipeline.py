@@ -10,9 +10,7 @@ from textblob import TextBlob
 from transformers import pipeline
 
 
-# =========================================================
-# CONFIG
-# =========================================================
+# Constants used in pipeline
 BASE_DIR = Path(__file__).resolve().parent
 REPO_ROOT = BASE_DIR.parent.parent.parent.parent
 
@@ -30,33 +28,17 @@ NRC_TRUE_EMOTIONS = {
     "joy", "sadness", "surprise", "trust"
 }
 
-# Strong / weak modality words
-# generic
-# STRONG_MODALITY_WORDS = {
-#     "must", "clearly", "definitely", "certainly", "undeniably",
-#     "always", "never", "prove", "proves", "proved",
-#     "demonstrate", "demonstrates", "demonstrated",
-#     "show", "shows", "showed", "cannot", "can't",
-#     "will", "obviously", "plainly"
-# }
 
 
 # These are given in the project PDF
 STRONG_MODALITY_WORDS = {
     "always", "must", "best", "clearly",
-    "definitely", "definitively", "hgihest", "lowest",
+    "definitely", "definitively", "highest", "lowest",
     "never", "strongly", "unambiguously", "uncompromising",
     "undisputed", "undoubtedly", "unequivocal", "unequivocally",
     "unparalleled", "unsurpassed", "will"
 }
 
-# generic
-# WEAK_MODALITY_WORDS = {
-#     "may", "might", "could", "can", "perhaps", "possibly",
-#     "seems", "seem", "appear", "appears", "appeared",
-#     "suggest", "suggests", "suggested", "likely", "unlikely",
-#     "arguably", "maybe", "potentially", "apparently"
-# }
 
 # from pdf
 WEAK_MODALITY_WORDS = {
@@ -69,6 +51,7 @@ WEAK_MODALITY_WORDS = {
     "uncertain", "uncertainly"
 }
 
+# Features extracted
 FEATURE_COLS_BASE = [
     "polarity",
     "subjectivity",
@@ -85,13 +68,11 @@ FEATURE_COLS_BASE = [
 ]
 
 
-# =========================================================
-# HELPERS
-# =========================================================
+# Helper functions
 def ensure_dir(path: Path):
     path.mkdir(parents=True, exist_ok=True)
 
-
+# Basic tokenization
 def tokenize(text: str):
     return re.findall(r"[a-zA-Z']+", str(text).lower())
 
@@ -213,9 +194,7 @@ def plot_grouped_bar(df, category_col, value_col, hue_col, title, outpath):
     plt.close()
 
 
-# =========================================================
-# LOAD NRC
-# =========================================================
+#Load NRC for emotions
 def load_nrc(path: Path):
     lex = defaultdict(set)
 
@@ -244,9 +223,7 @@ NRC_LEXICON = load_nrc(NRC_PATH)
 print(f"NRC loaded with {len(NRC_LEXICON)} word entries.\n")
 
 
-# =========================================================
-# LOAD BERT EMOTION MODEL
-# =========================================================
+# Load BERT for emotions
 print("Loading BERT emotion model...")
 emotion_classifier = pipeline(
     "text-classification",
@@ -256,9 +233,7 @@ emotion_classifier = pipeline(
 print("BERT emotion model loaded.\n")
 
 
-# =========================================================
-# WINNER INFERENCE
-# =========================================================
+# Find winner of each debate if possible using final report
 def infer_winner_from_final_report(final_report):
     if not final_report:
         return {
@@ -276,6 +251,7 @@ def infer_winner_from_final_report(final_report):
     confidence = "low"
     evidence = outcome_summary
 
+    # Find phrases that show winner
     if re.search(r"\bsa successfully defended\b", text):
         winner = "SA"
         confidence = "high"
@@ -315,7 +291,7 @@ def infer_winner_from_final_report(final_report):
         "winner_evidence": evidence if winner else None
     }
 
-
+# Find winner based the confidence shift
 def infer_winner_from_stance_trajectory(final_report):
     traj = final_report.get("stance_trajectory", {})
     ca = traj.get("CA", [])
@@ -358,10 +334,9 @@ def infer_winner_from_stance_trajectory(final_report):
     }
 
 
-# =========================================================
-# PER-UTTERANCE ANALYSIS
-# =========================================================
+# Analyze utterance
 def analyze_utterance(text: str):
+    # Make utterance (what is said) into blobs
     text = str(text)
     tokens = tokenize(text)
     word_count = len(tokens)
@@ -376,6 +351,7 @@ def analyze_utterance(text: str):
         "char_count": len(text),
     }
 
+    # Calculate modality
     strong_count = sum(1 for t in tokens if t in STRONG_MODALITY_WORDS)
     weak_count = sum(1 for t in tokens if t in WEAK_MODALITY_WORDS)
 
@@ -385,6 +361,7 @@ def analyze_utterance(text: str):
     scores["weak_modality_density"] = normalize_count(weak_count, word_count)
     scores["modality_balance"] = strong_count - weak_count
 
+    # Calculate emotions
     emotion_counts = Counter()
     for t in tokens:
         if t in NRC_LEXICON:
@@ -407,9 +384,7 @@ def analyze_utterance(text: str):
     return pd.Series(scores)
 
 
-# =========================================================
-# FEATURE BUILDERS
-# =========================================================
+
 def get_top_emotion_label(df, cols, prefix_to_strip):
     if not cols:
         return None
@@ -419,7 +394,7 @@ def get_top_emotion_label(df, cols, prefix_to_strip):
     top_col = means.sort_values(ascending=False).index[0]
     return top_col.replace(prefix_to_strip, "")
 
-
+# Output building
 def build_speaker_features(df_speaker, debate_id, claim, speaker_role, winner_role, emotion_cols, nrc_density_cols):
     row = {
         "debate_id": debate_id,
@@ -523,9 +498,7 @@ def build_debate_level_features(df_enriched, debate_id, claim, winner_info):
     return row
 
 
-# =========================================================
-# SINGLE RUN PROCESSING
-# =========================================================
+#Run for a single debate
 def process_single_run(run_dir: Path):
     suffix = run_dir.name.replace("run_", "")
     analysis_dir = OUTPUT_ANALYSIS_DIR / f"analysis_{suffix}"
@@ -538,6 +511,7 @@ def process_single_run(run_dir: Path):
     plots_dir = analysis_dir / "plots"
     ensure_dir(plots_dir)
 
+    # Find important logs
     debate_log_path = run_dir / "debate_log.csv"
     final_report_path = run_dir / "final_report.json"
 
@@ -775,9 +749,7 @@ def process_single_run(run_dir: Path):
     }
 
 
-# =========================================================
-# CROSS-DEBATE AGGREGATION
-# =========================================================
+# Aggregate all debates
 def aggregate_all_results(results):
     speaker_rows = []
     debate_rows = []
@@ -960,9 +932,7 @@ def aggregate_all_results(results):
     print(f"\nAggregate reports saved to: {aggregate_dir}")
 
 
-# =========================================================
-# MAIN
-# =========================================================
+
 def main():
     if not INPUT_RUNS_DIR.exists():
         raise FileNotFoundError(f"Could not find input folder: {INPUT_RUNS_DIR}")
