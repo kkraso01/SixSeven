@@ -198,6 +198,7 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         plt.figure(figsize=(10, 6))
         sns.barplot(data=bert_melted, x='Emotion', y='Average Score', hue='speaker_role')
         plt.title('Emotional Fingerprint Comparison (BERT Contextual)')
+        plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
         plt.savefig(output_dir / '2_1_emotional_fingerprint_bert.png')
         plt.close()
@@ -210,6 +211,7 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         plt.figure(figsize=(10, 6))
         sns.barplot(data=nrc_melted, x='Emotion', y='Average Score', hue='speaker_role')
         plt.title('Emotional Fingerprint Comparison (NRC Lexicon)')
+        plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
         plt.savefig(output_dir / '2_1_emotional_fingerprint_nrc.png')
         plt.close()
@@ -319,6 +321,7 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
             plt.title('Desperation: Tactics Deployed Following a Confidence Drop')
             plt.xlabel('Magnitude of Confidence Drop (Rolling Avg)')
             plt.ylabel('Tactic Used in Response')
+            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
             plt.grid(True, alpha=0.3)
             plt.tight_layout()
             plt.savefig(output_dir / '3_2_desperation_scatter.png')
@@ -370,6 +373,80 @@ def analyze_interrogative_doubt(df: pd.DataFrame, output_dir: Path):
         plt.close()
 
 
+def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
+    """Deliverable 6: Epistemic Stubbornness & Stance Stability"""
+    console.print("[bold blue]Running Deliverable 6: Epistemic Stubbornness...[/]")
+
+    agents_df = df[df['speaker_role'].isin(['proponent', 'opponent'])].copy()
+
+    if agents_df.empty:
+        return
+
+    # Metric 6.1: Stance Flipping
+    if 'stance' in agents_df.columns:
+        stance_flips = []
+        for (did, role), group in agents_df.groupby(['debate_id', 'speaker_role']):
+            group = group.sort_values('round')
+            if len(group) == 0:
+                continue
+            first_stance = group.iloc[0]['stance']
+            
+            # Changed if stance is different and not NaN
+            is_flipped = False
+            for s in group['stance']:
+                if pd.notna(s) and str(s).lower() != str(first_stance).lower():
+                    is_flipped = True
+                    break
+                    
+            stance_flips.append({
+                'speaker_role': role.title(),
+                'Maintained Stance': not is_flipped,
+                'Changed Stance': is_flipped
+            })
+
+        stance_df = pd.DataFrame(stance_flips)
+        if not stance_df.empty:
+            summary = stance_df.groupby('speaker_role')[['Maintained Stance', 'Changed Stance']].mean() * 100
+
+            summary.plot(kind='bar', stacked=True, figsize=(8, 6), color=['#2ca02c', '#d9534f'])
+            plt.title('Stance Stability: Do Agents Ever Yield?')
+            plt.xlabel('Speaker Role')
+            plt.ylabel('Percentage of Debates')
+            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+            plt.xticks(rotation=0, ha='center')
+            plt.tight_layout()
+            plt.savefig(output_dir / '6_1_stance_stability.png')
+            plt.close()
+
+    # Metric 6.2: The Stubbornness Index (Confidence Resilience)
+    if 'confidence' in agents_df.columns:
+        agents_df['confidence'] = pd.to_numeric(agents_df['confidence'], errors='coerce')
+
+        deltas = []
+        for (did, role), group in agents_df.groupby(['debate_id', 'speaker_role']):
+            group = group.dropna(subset=['confidence']).sort_values('round')
+            if len(group) > 1:
+                early_conf = group.iloc[0]['confidence']
+                late_conf = group.iloc[-1]['confidence']
+                delta = late_conf - early_conf
+                deltas.append({
+                    'speaker_role': role.title(),
+                    'Confidence Delta': delta
+                })
+
+        deltas_df = pd.DataFrame(deltas)
+        if not deltas_df.empty:
+            plt.figure(figsize=(8, 6))
+            sns.violinplot(data=deltas_df, x='speaker_role', y='Confidence Delta', density_norm='width')
+            plt.axhline(0, color='red', linestyle='--', label='No Change (Baseline)')
+            plt.title('The Stubbornness Index (Late vs Early Confidence)')
+            plt.xlabel('Speaker Role')
+            plt.ylabel('Confidence Delta (Late - Early)')
+            plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+            plt.tight_layout()
+            plt.savefig(output_dir / '6_2_stubbornness_index.png')
+            plt.close()
+
 def generate_role_summary(df: pd.DataFrame, output_dir: Path):
     """The Final Output: role_summary.csv"""
     console.print("[bold blue]Running Deliverable 4: Final Summary...[/]")
@@ -417,6 +494,7 @@ def main():
     analyze_persona_profiling(df, output_dir)
     analyze_tactic_asymmetry(df, output_dir)
     analyze_interrogative_doubt(df, output_dir)
+    analyze_epistemic_stubbornness(df, output_dir)
     generate_role_summary(df, output_dir)
     
     console.print(f"\n[bold green]Role analysis complete! Check the {output_dir} folder for results.[/]")
