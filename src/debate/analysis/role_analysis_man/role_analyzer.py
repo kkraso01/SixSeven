@@ -329,48 +329,47 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
 
 
 def analyze_interrogative_doubt(df: pd.DataFrame, output_dir: Path):
-    """Deliverable 5: Interrogative Doubt (The "JAQing Off" Metric)"""
-    console.print("[bold blue]Running Deliverable 5: Interrogative Doubt...[/]")
+    """Deliverable 5.3 Option A: Interrogative Doubt (Split Boxplot)"""
+    console.print("[bold blue]Running Deliverable 5.3: Interrogative Doubt (Option A)...[/]")
     
     # Filter for active debaters
     agents_df = df[df['speaker_role'].isin(['proponent', 'opponent'])].copy()
     
-    if 'question_count' in agents_df.columns and 'subjectivity' in agents_df.columns and 'word_count' in agents_df.columns:
-        # Calculate Question Density per 100 words (handle zero division)
-        valid_words = np.where(agents_df['word_count'] > 0, agents_df['word_count'], 1)
-        agents_df['question_density'] = (agents_df['question_count'] / valid_words) * 100
+    if 'question_count' in agents_df.columns and 'subjectivity' in agents_df.columns:
+        # Global Config for professional rendering
+        sns.set_theme(style="whitegrid", context="talk")
+        
+        # Create categorical column
+        agents_df['utterance_type'] = np.where(
+            agents_df['question_count'] > 0, 
+            "Interrogative (Has Questions)", 
+            "Declarative (No Questions)"
+        )
         
         plt.figure(figsize=(10, 8))
         
-        # 2D KDE contour plot
-        sns.kdeplot(
-            data=agents_df, 
-            x='question_density', 
-            y='subjectivity',
-            hue='speaker_role',
-            fill=True,
-            alpha=0.3,
-            levels=5,
-            common_norm=False
-        )
+        # Split Boxplot
+        palette = {"Declarative (No Questions)": "#95a5a6", "Interrogative (Has Questions)": "#e74c3c"}
         
-        # Overlaid scatter plot with high transparency
-        sns.scatterplot(
+        sns.boxplot(
             data=agents_df,
-            x='question_density',
+            x='speaker_role',
             y='subjectivity',
-            hue='speaker_role',
-            alpha=0.2,
-            legend=False, # We already have a legend from kdeplot
-            s=50
+            hue='utterance_type',
+            palette=palette
         )
         
         plt.title('Interrogative Doubt ("JAQing Off" Metric)')
-        plt.xlabel('Question Density (per 100 words)')
+        plt.xlabel('Speaker Role')
         plt.ylabel('Subjectivity Score')
+        
+        sns.despine()
         plt.tight_layout()
         plt.savefig(output_dir / '5_1_interrogative_doubt.svg')
         plt.close()
+        
+        # Reset Seaborn theme back to default so it doesn't affect other plots
+        sns.reset_orig()
 
 
 def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
