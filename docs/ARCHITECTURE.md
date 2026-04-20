@@ -474,6 +474,8 @@ SixSeven/
 │
 ├── src/debate/                  # Core library
 │   ├── __init__.py                 # Package exports
+│   ├── resources/                  # Static resources and data files
+│   │   └── lexicons/               # NLP lexicons (e.g., NRC emotion, uncertainty)
 │   ├── core/                       # Foundational modules
 │   │   ├── config.py               # Config loading
 │   │   ├── errors.py               # Shared exceptions

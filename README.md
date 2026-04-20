@@ -107,9 +107,11 @@ Requires an API key. Subject to provider rate limits and daily quotas. This runn
     - **transcripts/**: Markdown debate summaries for single runs.
     - **analysis/**: Automated metrics and plots for single runs.
 - **src/debate/**: Core library.
+    - **analysis/**: Post-run analysis logic and metrics.
+    - **core/**: Foundational modules shared across core libary.
+    - **resources/**: Static resources and data files (e.g., lexicons).        
+    - **simulator/**: Consolidated debate orchestration and simulation engines.
 - **tests/**: Unit and validation test suite.
-
----
 
 ## Documentation
 1. [Architecture and Dependency Injection](docs/ARCHITECTURE.md)
