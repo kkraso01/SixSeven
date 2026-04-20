@@ -137,7 +137,7 @@ def analyze_moderator_dynamics(df: pd.DataFrame, output_dir: Path):
         plt.legend()
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
-        plt.savefig(output_dir / '1_1_emotion_dampening_trajectory.png')
+        plt.savefig(output_dir / '1_1_emotion_dampening_trajectory.svg')
         plt.close()
 
     # 1.2 Bridge-Building (Vocabulary Overlap)
@@ -176,7 +176,7 @@ def analyze_moderator_dynamics(df: pd.DataFrame, output_dir: Path):
         plt.xlabel('Debate Phase')
         plt.ylabel('Average Jaccard Similarity with Immediate Preceding Turns')
         plt.tight_layout()
-        plt.savefig(output_dir / '1_2_bridge_building_phase.png')
+        plt.savefig(output_dir / '1_2_bridge_building_phase.svg')
         plt.close()
 
 
@@ -200,7 +200,7 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         plt.title('Emotional Fingerprint Comparison (BERT Contextual)')
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
-        plt.savefig(output_dir / '2_1_emotional_fingerprint_bert.png')
+        plt.savefig(output_dir / '2_1_emotional_fingerprint_bert.svg')
         plt.close()
         
     if nrc_cols:
@@ -213,7 +213,7 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         plt.title('Emotional Fingerprint Comparison (NRC Lexicon)')
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
-        plt.savefig(output_dir / '2_1_emotional_fingerprint_nrc.png')
+        plt.savefig(output_dir / '2_1_emotional_fingerprint_nrc.svg')
         plt.close()
         
     # 2.2 Modality and Certainty (Density)
@@ -234,7 +234,7 @@ def analyze_persona_profiling(df: pd.DataFrame, output_dir: Path):
         sns.barplot(data=mod_means_melted, y='speaker_role', x='Density (per 100 words)', hue='Modality Type', orient='h')
         plt.title('The Hedging Gap (Modality Density Comparison)')
         plt.tight_layout()
-        plt.savefig(output_dir / '2_2_hedging_gap_density.png')
+        plt.savefig(output_dir / '2_2_hedging_gap_density.svg')
         plt.close()
 
 
@@ -261,7 +261,7 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
         plt.xlabel('% of Turns Using a Search Tool (DuckDuckGo/Tavily)')
         plt.ylabel('Tactic Used')
         plt.tight_layout()
-        plt.savefig(output_dir / '3_1_tool_usage_by_tactic.png')
+        plt.savefig(output_dir / '3_1_tool_usage_by_tactic.svg')
         plt.close()
 
         # Evolution of Tool Usage over the Debate
@@ -281,7 +281,7 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
                 plt.ylabel('Percentage')
                 plt.legend(title='Used Search Tool', loc='center left', bbox_to_anchor=(1, 0.5))
                 plt.tight_layout()
-                plt.savefig(output_dir / f'3_1_tool_evolution_{role}.png')
+                plt.savefig(output_dir / f'3_1_tool_evolution_{role}.svg')
                 plt.close()
 
     # 3.2 Desperation (Confidence vs Tactics)
@@ -324,7 +324,7 @@ def analyze_tactic_asymmetry(df: pd.DataFrame, output_dir: Path):
             plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
             plt.grid(True, alpha=0.3)
             plt.tight_layout()
-            plt.savefig(output_dir / '3_2_desperation_scatter.png')
+            plt.savefig(output_dir / '3_2_desperation_scatter.svg')
             plt.close()
 
 
@@ -369,7 +369,7 @@ def analyze_interrogative_doubt(df: pd.DataFrame, output_dir: Path):
         plt.xlabel('Question Density (per 100 words)')
         plt.ylabel('Subjectivity Score')
         plt.tight_layout()
-        plt.savefig(output_dir / '5_1_interrogative_doubt.png')
+        plt.savefig(output_dir / '5_1_interrogative_doubt.svg')
         plt.close()
 
 
@@ -415,7 +415,7 @@ def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
             plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
             plt.xticks(rotation=0, ha='center')
             plt.tight_layout()
-            plt.savefig(output_dir / '6_1_stance_stability.png')
+            plt.savefig(output_dir / '6_1_stance_stability.svg')
             plt.close()
 
     # Metric 6.2: The Stubbornness Index (Confidence Resilience)
@@ -444,7 +444,7 @@ def analyze_epistemic_stubbornness(df: pd.DataFrame, output_dir: Path):
             plt.ylabel('Confidence Delta (Late - Early)')
             plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
             plt.tight_layout()
-            plt.savefig(output_dir / '6_2_stubbornness_index.png')
+            plt.savefig(output_dir / '6_2_stubbornness_index.svg')
             plt.close()
 
 def generate_role_summary(df: pd.DataFrame, output_dir: Path):
