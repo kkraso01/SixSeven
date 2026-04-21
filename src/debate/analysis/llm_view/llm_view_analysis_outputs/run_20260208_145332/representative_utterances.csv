@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,pearl_harbor,history,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the presence of anomalies surrounding the Pearl Harbor attack., Both are open to providing evidence that supports their respective claims.
+Disagreements: CA argues for US government prior knowledge based on observed anomalies, while SA suggests alternative explanations due to miscommunication and poor coordination within the military., Confidence in alternative explanations vs acknowledgement of anomalies as evidence for US government prior knowledge.
+Detected moves: Appeal to Anomaly (CA): Emphasizing suspicious events without considering alternative explanations., Alternative Hypothesis (SA): Providing plausible alternatives to the claim of US government prior knowledge.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be found in communication records and orders issued around the time of the Pearl Harbor attack?, How might broader military strategies and intelligence gathering practices at that time reveal alternative explanations for these events?"
+dolphin-yi-34b,moderator,most_evidence_dense,pearl_harbor,history,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack.
+Disagreements: CA believes that these anomalies can only be explained by acknowledging US government prior knowledge of the attack, while SA argues for alternative explanations unrelated to US government complicity.
+Detected moves: 
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence can be provided to support each side's claims?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,pearl_harbor,history,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the presence of anomalies surrounding the Pearl Harbor attack., Both are open to providing evidence that supports their respective claims.
+Disagreements: CA argues for US government prior knowledge based on observed anomalies, while SA suggests alternative explanations due to miscommunication and poor coordination within the military., Confidence in alternative explanations vs acknowledgement of anomalies as evidence for US government prior knowledge.
+Detected moves: Appeal to Anomaly (CA): Emphasizing suspicious events without considering alternative explanations., Alternative Hypothesis (SA): Providing plausible alternatives to the claim of US government prior knowledge.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be found in communication records and orders issued around the time of the Pearl Harbor attack?, How might broader military strategies and intelligence gathering practices at that time reveal alternative explanations for these events?"
+dolphin-yi-34b,moderator,most_hedged,pearl_harbor,history,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack but disagree on their implications.
+Disagreements: CA argues that these anomalies indicate US government prior knowledge of the attack, while SA suggests alternative explanations such as miscommunication or external factors., SA questions the absence of air raid drills and no alert being issued, attributing them to coincidence or other factors rather than deliberate neglect by the US government.
+Detected moves: appeal-to-anomaly (CA), alternative-hypothesis (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim of US government's prior knowledge of the Pearl Harbor attack?, Are there any other plausible explanations for the observed anomalies that do not involve US government complicity?"
+dolphin-yi-34b,moderator,most_assertive,pearl_harbor,history,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the presence of anomalies surrounding the Pearl Harbor attack., Both are open to providing evidence that supports their respective claims.
+Disagreements: CA argues for US government prior knowledge based on observed anomalies, while SA suggests alternative explanations due to miscommunication and poor coordination within the military., Confidence in alternative explanations vs acknowledgement of anomalies as evidence for US government prior knowledge.
+Detected moves: Appeal to Anomaly (CA): Emphasizing suspicious events without considering alternative explanations., Alternative Hypothesis (SA): Providing plausible alternatives to the claim of US government prior knowledge.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be found in communication records and orders issued around the time of the Pearl Harbor attack?, How might broader military strategies and intelligence gathering practices at that time reveal alternative explanations for these events?"
+dolphin-yi-34b,moderator,most_moral_framed,pearl_harbor,history,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the suspicious actions and anomalies surrounding the Pearl Harbor attack.
+Disagreements: CA believes that these anomalies can only be explained by acknowledging US government prior knowledge of the attack, while SA argues for alternative explanations unrelated to US government complicity.
+Detected moves: 
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence can be provided to support each side's claims?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,pearl_harbor,history,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their claims., Both are open to changing their minds if presented with compelling counter-arguments or new evidence.
+Disagreements: CA argues that anomalies surrounding the Pearl Harbor attack suggest US government prior knowledge., SA counters that these claims lack concrete facts and are mostly speculative.
+Detected moves: Appeal to Anomaly (CA): Emphasizes unusual events as evidence of government cover-up., Burden of Proof Shift (SA): Challenges CA to provide concrete evidence for their claims.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples of 'anomalies' are you referring to?, How would you respond to the argument that these anomalies could be mere coincidences or misinterpretations?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,pearl_harbor,history,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the presence of anomalies surrounding the Pearl Harbor attack., Both are open to providing evidence that supports their respective claims.
+Disagreements: CA argues for US government prior knowledge based on observed anomalies, while SA suggests alternative explanations due to miscommunication and poor coordination within the military., Confidence in alternative explanations vs acknowledgement of anomalies as evidence for US government prior knowledge.
+Detected moves: Appeal to Anomaly (CA): Emphasizing suspicious events without considering alternative explanations., Alternative Hypothesis (SA): Providing plausible alternatives to the claim of US government prior knowledge.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be found in communication records and orders issued around the time of the Pearl Harbor attack?, How might broader military strategies and intelligence gathering practices at that time reveal alternative explanations for these events?"
+dolphin-yi-34b,opponent,highest_confidence,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,opponent,most_evidence_dense,pearl_harbor,history,closing,4,11,57.0,The US government's prior knowledge of the Pearl Harbor attack is not supported by reliable evidence.
+dolphin-yi-34b,opponent,most_rebuttal_dense,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,opponent,most_hedged,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,opponent,most_assertive,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,opponent,most_moral_framed,pearl_harbor,history,closing,4,11,57.0,The US government's prior knowledge of the Pearl Harbor attack is not supported by reliable evidence.
+dolphin-yi-34b,opponent,strongest_stance_proxy,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,opponent,weakest_stance_proxy,pearl_harbor,history,closing,1,14,80.0,The claim that the US government had prior knowledge of the Pearl Harbor attack is based on anecdotal evidence and not concrete facts.
+dolphin-yi-34b,proponent,highest_confidence,pearl_harbor,history,opening,1,1,55.0,The US government's prior knowledge of the Pearl Harbor attack is evidenced by suspicious actions and anomalies that cannot be easily explained.
+dolphin-yi-34b,proponent,most_evidence_dense,pearl_harbor,history,opening,1,1,55.0,The US government's prior knowledge of the Pearl Harbor attack is evidenced by suspicious actions and anomalies that cannot be easily explained.
+dolphin-yi-34b,proponent,most_rebuttal_dense,pearl_harbor,history,opening,2,4,54.0,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.
+dolphin-yi-34b,proponent,most_hedged,pearl_harbor,history,opening,2,4,54.0,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.
+dolphin-yi-34b,proponent,most_assertive,pearl_harbor,history,opening,2,4,54.0,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.
+dolphin-yi-34b,proponent,most_moral_framed,pearl_harbor,history,middle,3,7,54.0,The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.
+dolphin-yi-34b,proponent,strongest_stance_proxy,pearl_harbor,history,opening,2,4,54.0,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.
+dolphin-yi-34b,proponent,weakest_stance_proxy,pearl_harbor,history,opening,2,4,54.0,The suspicious actions and anomalies surrounding the Pearl Harbor attack cannot be sufficiently explained without acknowledging the US government's prior knowledge of the event.

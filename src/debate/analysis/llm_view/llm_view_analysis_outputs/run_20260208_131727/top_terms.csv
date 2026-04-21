@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,16
+dolphin-yi-34b::moderator,2,11,unigram,14
+dolphin-yi-34b::moderator,3,official,unigram,11
+dolphin-yi-34b::moderator,4,sa,unigram,11
+dolphin-yi-34b::moderator,5,ca,unigram,11
+dolphin-yi-34b::moderator,6,narrative,unigram,11
+dolphin-yi-34b::moderator,7,official narrative,bigram,10
+dolphin-yi-34b::moderator,8,systemic incentives,bigram,8
+dolphin-yi-34b::moderator,9,investigation,unigram,8
+dolphin-yi-34b::moderator,10,incentives,unigram,8
+dolphin-yi-34b::moderator,11,systemic,unigram,8
+dolphin-yi-34b::moderator,12,agents,unigram,8
+dolphin-yi-34b::moderator,13,attacks,unigram,7
+dolphin-yi-34b::moderator,14,specific,unigram,7
+dolphin-yi-34b::moderator,15,11 attacks,bigram,7
+dolphin-yi-34b::moderator,16,report,unigram,6
+dolphin-yi-34b::moderator,17,based,unigram,6
+dolphin-yi-34b::moderator,18,evidence expert consensus,trigram,6
+dolphin-yi-34b::moderator,19,expert consensus,bigram,6
+dolphin-yi-34b::moderator,20,expert,unigram,6
+dolphin-yi-34b::moderator,21,evidence expert,bigram,6
+dolphin-yi-34b::moderator,22,claims,unigram,6
+dolphin-yi-34b::moderator,23,consensus,unigram,6
+dolphin-yi-34b::moderator,24,questions,unigram,6
+dolphin-yi-34b::moderator,25,commission report,bigram,6
+dolphin-yi-34b::opponent,1,11,unigram,5
+dolphin-yi-34b::opponent,2,11 attacks,bigram,4
+dolphin-yi-34b::opponent,3,attacks,unigram,4
+dolphin-yi-34b::opponent,4,evidence,unigram,4
+dolphin-yi-34b::opponent,5,narrative,unigram,4
+dolphin-yi-34b::opponent,6,official narrative,bigram,4
+dolphin-yi-34b::opponent,7,official,unigram,4
+dolphin-yi-34b::opponent,8,based evidence investigation,trigram,3
+dolphin-yi-34b::opponent,9,evidence investigation findings,trigram,3
+dolphin-yi-34b::opponent,10,false flag operations,trigram,3
+dolphin-yi-34b::opponent,11,findings,unigram,3
+dolphin-yi-34b::opponent,12,flag,unigram,3
+dolphin-yi-34b::opponent,13,evidence investigation,bigram,3
+dolphin-yi-34b::opponent,14,false,unigram,3
+dolphin-yi-34b::opponent,15,based evidence,bigram,3
+dolphin-yi-34b::opponent,16,based,unigram,3
+dolphin-yi-34b::opponent,17,investigation findings,bigram,3
+dolphin-yi-34b::opponent,18,incentives,unigram,3
+dolphin-yi-34b::opponent,19,false flag,bigram,3
+dolphin-yi-34b::opponent,20,investigation,unigram,3
+dolphin-yi-34b::opponent,21,incentives false,bigram,3
+dolphin-yi-34b::opponent,22,narrative 11,bigram,3
+dolphin-yi-34b::opponent,23,incentives false flag,trigram,3
+dolphin-yi-34b::opponent,24,systemic incentives false,trigram,3
+dolphin-yi-34b::opponent,25,systemic incentives,bigram,3
+dolphin-yi-34b::proponent,1,11,unigram,4
+dolphin-yi-34b::proponent,2,inconsistencies,unigram,3
+dolphin-yi-34b::proponent,3,narrative,unigram,3
+dolphin-yi-34b::proponent,4,investigation,unigram,3
+dolphin-yi-34b::proponent,5,official,unigram,3
+dolphin-yi-34b::proponent,6,comprehensive investigation,bigram,2
+dolphin-yi-34b::proponent,7,comprehensive investigation presence,trigram,2
+dolphin-yi-34b::proponent,8,comprehensive,unigram,2
+dolphin-yi-34b::proponent,9,lack,unigram,2
+dolphin-yi-34b::proponent,10,investigation presence unexplained,trigram,2
+dolphin-yi-34b::proponent,11,lack comprehensive investigation,trigram,2
+dolphin-yi-34b::proponent,12,lack comprehensive,bigram,2
+dolphin-yi-34b::proponent,13,investigation presence,bigram,2
+dolphin-yi-34b::proponent,14,official narrative,bigram,2
+dolphin-yi-34b::proponent,15,narrative 11,bigram,2
+dolphin-yi-34b::proponent,16,official narrative 11,trigram,2
+dolphin-yi-34b::proponent,17,undermined,unigram,2
+dolphin-yi-34b::proponent,18,undermined lack,bigram,2
+dolphin-yi-34b::proponent,19,undermined lack comprehensive,trigram,2
+dolphin-yi-34b::proponent,20,unexplained,unigram,2
+dolphin-yi-34b::proponent,21,unexplained inconsistencies,bigram,2
+dolphin-yi-34b::proponent,22,presence,unigram,2
+dolphin-yi-34b::proponent,23,presence unexplained inconsistencies,trigram,2
+dolphin-yi-34b::proponent,24,presence unexplained,bigram,2
+dolphin-yi-34b::proponent,25,complex provide motive,trigram,1

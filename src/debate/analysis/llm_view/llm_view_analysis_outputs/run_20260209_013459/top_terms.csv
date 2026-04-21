@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,5g,unigram,6
+dolphin-yi-34b::proponent,2,health,unigram,5
+dolphin-yi-34b::proponent,3,rapid,unigram,4
+dolphin-yi-34b::proponent,4,deployment,unigram,3
+dolphin-yi-34b::proponent,5,issues,unigram,3
+dolphin-yi-34b::proponent,6,rapid rollout,bigram,3
+dolphin-yi-34b::proponent,7,health issues,bigram,3
+dolphin-yi-34b::proponent,8,rollout,unigram,3
+dolphin-yi-34b::proponent,9,rapid rollout 5g,trigram,2
+dolphin-yi-34b::proponent,10,including,unigram,2
+dolphin-yi-34b::proponent,11,networks,unigram,2
+dolphin-yi-34b::proponent,12,pattern,unigram,2
+dolphin-yi-34b::proponent,13,emerging,unigram,2
+dolphin-yi-34b::proponent,14,emerging alongside,bigram,2
+dolphin-yi-34b::proponent,15,alongside,unigram,2
+dolphin-yi-34b::proponent,16,5g technology,bigram,2
+dolphin-yi-34b::proponent,17,problems,unigram,2
+dolphin-yi-34b::proponent,18,unexplained health issues,trigram,2
+dolphin-yi-34b::proponent,19,unexplained,unigram,2
+dolphin-yi-34b::proponent,20,unexplained health,bigram,2
+dolphin-yi-34b::proponent,21,technology,unigram,2
+dolphin-yi-34b::proponent,22,rollout 5g technology,trigram,2
+dolphin-yi-34b::proponent,23,rollout 5g,bigram,2
+dolphin-yi-34b::proponent,24,raises,unigram,2
+dolphin-yi-34b::proponent,25,5g technology accompanied,trigram,1
+gemma3:27b::moderator,1,ca,unigram,30
+gemma3:27b::moderator,2,sa,unigram,19
+gemma3:27b::moderator,3,5g,unigram,15
+gemma3:27b::moderator,4,health,unigram,11
+gemma3:27b::moderator,5,evidence,unigram,11
+gemma3:27b::moderator,6,symptoms,unigram,9
+gemma3:27b::moderator,7,potential,unigram,9
+gemma3:27b::moderator,8,agents,unigram,8
+gemma3:27b::moderator,9,safety,unigram,8
+gemma3:27b::moderator,10,historical,unigram,7
+gemma3:27b::moderator,11,correlation,unigram,6
+gemma3:27b::moderator,12,acknowledge,unigram,6
+gemma3:27b::moderator,13,agree,unigram,5
+gemma3:27b::moderator,14,proof,unigram,5
+gemma3:27b::moderator,15,effects,unigram,5
+gemma3:27b::moderator,16,current,unigram,5
+gemma3:27b::moderator,17,reported,unigram,4
+gemma3:27b::moderator,18,agreements agents,bigram,4
+gemma3:27b::moderator,19,agreements,unigram,4
+gemma3:27b::moderator,20,agreements agents acknowledge,trigram,4
+gemma3:27b::moderator,21,recap agreements agents,trigram,4
+gemma3:27b::moderator,22,recap agreements,bigram,4
+gemma3:27b::moderator,23,issues,unigram,4
+gemma3:27b::moderator,24,moderator,unigram,4
+gemma3:27b::moderator,25,questions,unigram,4
+gemma3:27b::opponent,1,5g,unigram,5
+gemma3:27b::opponent,2,evidence,unigram,4
+gemma3:27b::opponent,3,5g networks cause,trigram,3
+gemma3:27b::opponent,4,5g networks,bigram,3
+gemma3:27b::opponent,5,cause health problems,trigram,3
+gemma3:27b::opponent,6,correlation,unigram,3
+gemma3:27b::opponent,7,cause health,bigram,3
+gemma3:27b::opponent,8,cause,unigram,3
+gemma3:27b::opponent,9,problems,unigram,3
+gemma3:27b::opponent,10,networks cause health,trigram,3
+gemma3:27b::opponent,11,networks,unigram,3
+gemma3:27b::opponent,12,networks cause,bigram,3
+gemma3:27b::opponent,13,health problems,bigram,3
+gemma3:27b::opponent,14,health,unigram,3
+gemma3:27b::opponent,15,evidence relies,bigram,3
+gemma3:27b::opponent,16,relies,unigram,3
+gemma3:27b::opponent,17,including immune,bigram,2
+gemma3:27b::opponent,18,including immune damage,trigram,2
+gemma3:27b::opponent,19,problems including immune,trigram,2
+gemma3:27b::opponent,20,health problems including,trigram,2
+gemma3:27b::opponent,21,immune,unigram,2
+gemma3:27b::opponent,22,including,unigram,2
+gemma3:27b::opponent,23,immune damage currently,trigram,2
+gemma3:27b::opponent,24,immune damage,bigram,2
+gemma3:27b::opponent,25,currently supported,bigram,2

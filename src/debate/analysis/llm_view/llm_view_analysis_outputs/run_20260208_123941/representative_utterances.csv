@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,covid_vaccine_microchips,health,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the simultaneous rise of surveillance technologies and COVID-19 vaccine rollout., SA points out that vaccines are developed transparently with disclosed ingredients for public scrutiny.
+Disagreements: CA claims that the aggressive push for mass vaccination coincides with investments in data analytics potentially for nefarious purposes., SA argues that surveillance technologies advance independently of vaccine development due to market forces and technological progress.
+Detected moves: Appeal to authority: CA's claim relies on the assumption that investments in data analytics are for nefarious purposes without providing evidence., Burden of proof shift: SA asks for specific evidence from CA regarding tracking components in vaccines, shifting the burden of proof onto the opponent.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that surveillance technologies are being used for nefarious purposes in relation to COVID-19 vaccines?, Can you provide any examples of surveillance technology advancements that are directly linked to the rollout of COVID-19 vaccines?"
+dolphin-yi-34b,moderator,most_evidence_dense,covid_vaccine_microchips,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for mass surveillance in the context of COVID-19 vaccines.
+Disagreements: CA argues that COVID-19 vaccines contain microchips designed for population tracking and control, while SA refutes this claim as unsupported by reliable evidence.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide any credible sources or evidence supporting the claim that COVID-19 vaccines contain microchips for surveillance?, How do you explain the sudden push for mandatory vaccination and the concurrent rise in data-driven surveillance systems?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,covid_vaccine_microchips,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for mass surveillance in the context of COVID-19 vaccines.
+Disagreements: CA argues that COVID-19 vaccines contain microchips designed for population tracking and control, while SA refutes this claim as unsupported by reliable evidence.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide any credible sources or evidence supporting the claim that COVID-19 vaccines contain microchips for surveillance?, How do you explain the sudden push for mandatory vaccination and the concurrent rise in data-driven surveillance systems?"
+dolphin-yi-34b,moderator,most_hedged,covid_vaccine_microchips,health,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the coincidence of COVID-19 vaccine rollout and rise in surveillance technologies.
+Disagreements: CA believes there may be hidden agendas behind the rapid vaccine rollout related to population tracking and control., SA argues that vaccines are developed independently of surveillance technologies for public health purposes.
+Detected moves: Appeal to Analogy: CA uses historical examples of technological surveillance to support their argument., False Dilemma: SA suggests only two possible explanations for the coincidence without considering other factors.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support the claim that COVID-19 vaccines contain microchips or tracking mechanisms?, How do you explain the coincidence of vaccine rollout and surveillance technology advancements without considering hidden agendas?"
+dolphin-yi-34b,moderator,most_assertive,covid_vaccine_microchips,health,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the simultaneous rise of surveillance technologies and COVID-19 vaccine rollout., SA points out that vaccines are developed transparently with disclosed ingredients for public scrutiny.
+Disagreements: CA claims that the aggressive push for mass vaccination coincides with investments in data analytics potentially for nefarious purposes., SA argues that surveillance technologies advance independently of vaccine development due to market forces and technological progress.
+Detected moves: Appeal to authority: CA's claim relies on the assumption that investments in data analytics are for nefarious purposes without providing evidence., Burden of proof shift: SA asks for specific evidence from CA regarding tracking components in vaccines, shifting the burden of proof onto the opponent.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that surveillance technologies are being used for nefarious purposes in relation to COVID-19 vaccines?, Can you provide any examples of surveillance technology advancements that are directly linked to the rollout of COVID-19 vaccines?"
+dolphin-yi-34b,moderator,most_moral_framed,covid_vaccine_microchips,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for mass surveillance in the context of COVID-19 vaccines.
+Disagreements: CA argues that COVID-19 vaccines contain microchips designed for population tracking and control, while SA refutes this claim as unsupported by reliable evidence.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide any credible sources or evidence supporting the claim that COVID-19 vaccines contain microchips for surveillance?, How do you explain the sudden push for mandatory vaccination and the concurrent rise in data-driven surveillance systems?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,covid_vaccine_microchips,health,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the simultaneous rise of surveillance technologies and COVID-19 vaccine rollout., SA points out that vaccines are developed transparently with disclosed ingredients for public scrutiny.
+Disagreements: CA claims that the aggressive push for mass vaccination coincides with investments in data analytics potentially for nefarious purposes., SA argues that surveillance technologies advance independently of vaccine development due to market forces and technological progress.
+Detected moves: Appeal to authority: CA's claim relies on the assumption that investments in data analytics are for nefarious purposes without providing evidence., Burden of proof shift: SA asks for specific evidence from CA regarding tracking components in vaccines, shifting the burden of proof onto the opponent.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that surveillance technologies are being used for nefarious purposes in relation to COVID-19 vaccines?, Can you provide any examples of surveillance technology advancements that are directly linked to the rollout of COVID-19 vaccines?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,covid_vaccine_microchips,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for mass surveillance in the context of COVID-19 vaccines.
+Disagreements: CA argues that COVID-19 vaccines contain microchips designed for population tracking and control, while SA refutes this claim as unsupported by reliable evidence.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide any credible sources or evidence supporting the claim that COVID-19 vaccines contain microchips for surveillance?, How do you explain the sudden push for mandatory vaccination and the concurrent rise in data-driven surveillance systems?"
+dolphin-yi-34b,opponent,highest_confidence,covid_vaccine_microchips,health,closing,4,11,90.0,The rapid rollout of COVID-19 vaccines is driven by the urgency to address a global health crisis and not directly linked to surveillance technologies. Surveillance technologies advance independently due to various factors unrelated to public health.
+dolphin-yi-34b,opponent,most_evidence_dense,covid_vaccine_microchips,health,opening,1,2,80.0,The motion that COVID-19 vaccines contain microchips designed for population tracking and control is unsupported by reliable evidence.
+dolphin-yi-34b,opponent,most_rebuttal_dense,covid_vaccine_microchips,health,opening,1,2,80.0,The motion that COVID-19 vaccines contain microchips designed for population tracking and control is unsupported by reliable evidence.
+dolphin-yi-34b,opponent,most_hedged,covid_vaccine_microchips,health,middle,3,8,85.0,The rapid rollout of COVID-19 vaccines is driven by the urgency to address a global health crisis and not directly linked to surveillance technologies. Surveillance technologies advance independently due to various factors unrelated to public health.
+dolphin-yi-34b,opponent,most_assertive,covid_vaccine_microchips,health,middle,3,8,85.0,The rapid rollout of COVID-19 vaccines is driven by the urgency to address a global health crisis and not directly linked to surveillance technologies. Surveillance technologies advance independently due to various factors unrelated to public health.
+dolphin-yi-34b,opponent,most_moral_framed,covid_vaccine_microchips,health,opening,1,2,80.0,The motion that COVID-19 vaccines contain microchips designed for population tracking and control is unsupported by reliable evidence.
+dolphin-yi-34b,opponent,strongest_stance_proxy,covid_vaccine_microchips,health,opening,1,2,80.0,The motion that COVID-19 vaccines contain microchips designed for population tracking and control is unsupported by reliable evidence.
+dolphin-yi-34b,opponent,weakest_stance_proxy,covid_vaccine_microchips,health,middle,3,8,85.0,The rapid rollout of COVID-19 vaccines is driven by the urgency to address a global health crisis and not directly linked to surveillance technologies. Surveillance technologies advance independently due to various factors unrelated to public health.
+dolphin-yi-34b,proponent,highest_confidence,covid_vaccine_microchips,health,opening,2,4,60.0,The COVID-19 vaccines' rapid rollout alongside the rise in surveillance technologies is more than a coincidence.
+dolphin-yi-34b,proponent,most_evidence_dense,covid_vaccine_microchips,health,opening,2,4,60.0,The COVID-19 vaccines' rapid rollout alongside the rise in surveillance technologies is more than a coincidence.
+dolphin-yi-34b,proponent,most_rebuttal_dense,covid_vaccine_microchips,health,middle,3,7,50.0,The rapid rollout of COVID-19 vaccines and the concurrent rise in surveillance technologies are not coincidental; they serve as a means for governments to establish population tracking and control.
+dolphin-yi-34b,proponent,most_hedged,covid_vaccine_microchips,health,middle,3,7,50.0,The rapid rollout of COVID-19 vaccines and the concurrent rise in surveillance technologies are not coincidental; they serve as a means for governments to establish population tracking and control.
+dolphin-yi-34b,proponent,most_assertive,covid_vaccine_microchips,health,middle,3,7,50.0,The rapid rollout of COVID-19 vaccines and the concurrent rise in surveillance technologies are not coincidental; they serve as a means for governments to establish population tracking and control.
+dolphin-yi-34b,proponent,most_moral_framed,covid_vaccine_microchips,health,opening,2,4,60.0,The COVID-19 vaccines' rapid rollout alongside the rise in surveillance technologies is more than a coincidence.
+dolphin-yi-34b,proponent,strongest_stance_proxy,covid_vaccine_microchips,health,middle,3,7,50.0,The rapid rollout of COVID-19 vaccines and the concurrent rise in surveillance technologies are not coincidental; they serve as a means for governments to establish population tracking and control.
+dolphin-yi-34b,proponent,weakest_stance_proxy,covid_vaccine_microchips,health,middle,3,7,50.0,The rapid rollout of COVID-19 vaccines and the concurrent rise in surveillance technologies are not coincidental; they serve as a means for governments to establish population tracking and control.

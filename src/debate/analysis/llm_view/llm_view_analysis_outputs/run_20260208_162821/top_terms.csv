@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,scientific,unigram,4
+dolphin-yi-34b::opponent,2,interests,unigram,3
+dolphin-yi-34b::opponent,3,based rigorous scientific,trigram,2
+dolphin-yi-34b::opponent,4,based,unigram,2
+dolphin-yi-34b::opponent,5,climate change,bigram,2
+dolphin-yi-34b::opponent,6,conclusions,unigram,2
+dolphin-yi-34b::opponent,7,climate,unigram,2
+dolphin-yi-34b::opponent,8,based rigorous,bigram,2
+dolphin-yi-34b::opponent,9,environment,unigram,2
+dolphin-yi-34b::opponent,10,evidence human impact,trigram,2
+dolphin-yi-34b::opponent,11,evidence human,bigram,2
+dolphin-yi-34b::opponent,12,evidence,unigram,2
+dolphin-yi-34b::opponent,13,driven,unigram,2
+dolphin-yi-34b::opponent,14,driven overwhelming,bigram,2
+dolphin-yi-34b::opponent,15,conclusions based rigorous,trigram,2
+dolphin-yi-34b::opponent,16,change,unigram,2
+dolphin-yi-34b::opponent,17,human impact,bigram,2
+dolphin-yi-34b::opponent,18,influenced political,bigram,2
+dolphin-yi-34b::opponent,19,influenced political interests,trigram,2
+dolphin-yi-34b::opponent,20,overwhelming,unigram,2
+dolphin-yi-34b::opponent,21,ipcc,unigram,2
+dolphin-yi-34b::opponent,22,ipcc conclusions,bigram,2
+dolphin-yi-34b::opponent,23,ipcc conclusions based,trigram,2
+dolphin-yi-34b::opponent,24,influenced,unigram,2
+dolphin-yi-34b::opponent,25,impact,unigram,2
+dolphin-yi-34b::proponent,1,interests,unigram,3
+dolphin-yi-34b::proponent,2,based,unigram,2
+dolphin-yi-34b::proponent,3,based scientific evidence,trigram,2
+dolphin-yi-34b::proponent,4,based scientific,bigram,2
+dolphin-yi-34b::proponent,5,conclusions heavily influenced,trigram,2
+dolphin-yi-34b::proponent,6,conclusions,unigram,2
+dolphin-yi-34b::proponent,7,interests solely,bigram,2
+dolphin-yi-34b::proponent,8,conclusions heavily,bigram,2
+dolphin-yi-34b::proponent,9,heavily influenced political,trigram,2
+dolphin-yi-34b::proponent,10,influenced political interests,trigram,2
+dolphin-yi-34b::proponent,11,influenced,unigram,2
+dolphin-yi-34b::proponent,12,influenced political,bigram,2
+dolphin-yi-34b::proponent,13,heavily,unigram,2
+dolphin-yi-34b::proponent,14,heavily influenced,bigram,2
+dolphin-yi-34b::proponent,15,evidence,unigram,2
+dolphin-yi-34b::proponent,16,ipcc conclusions,bigram,2
+dolphin-yi-34b::proponent,17,ipcc conclusions heavily,trigram,2
+dolphin-yi-34b::proponent,18,interests solely based,trigram,2
+dolphin-yi-34b::proponent,19,ipcc,unigram,2
+dolphin-yi-34b::proponent,20,scientific,unigram,2
+dolphin-yi-34b::proponent,21,political interests solely,trigram,2
+dolphin-yi-34b::proponent,22,solely,unigram,2
+dolphin-yi-34b::proponent,23,political interests,bigram,2
+dolphin-yi-34b::proponent,24,political,unigram,2
+dolphin-yi-34b::proponent,25,solely based,bigram,2
+gemma3:27b::moderator,1,ca,unigram,23
+gemma3:27b::moderator,2,sa,unigram,15
+gemma3:27b::moderator,3,ipcc,unigram,13
+gemma3:27b::moderator,4,climate,unigram,11
+gemma3:27b::moderator,5,change,unigram,10
+gemma3:27b::moderator,6,climate change,bigram,10
+gemma3:27b::moderator,7,political,unigram,9
+gemma3:27b::moderator,8,agents,unigram,9
+gemma3:27b::moderator,9,influence,unigram,8
+gemma3:27b::moderator,10,evidence,unigram,8
+gemma3:27b::moderator,11,scientific,unigram,7
+gemma3:27b::moderator,12,questions,unigram,6
+gemma3:27b::moderator,13,policies,unigram,6
+gemma3:27b::moderator,14,specific,unigram,6
+gemma3:27b::moderator,15,control,unigram,5
+gemma3:27b::moderator,16,political influence,bigram,5
+gemma3:27b::moderator,17,burden,unigram,4
+gemma3:27b::moderator,18,framing,unigram,4
+gemma3:27b::moderator,19,proof,unigram,4
+gemma3:27b::moderator,20,burden proof,bigram,4
+gemma3:27b::moderator,21,sa disprove,bigram,3
+gemma3:27b::moderator,22,referencing,unigram,3
+gemma3:27b::moderator,23,referencing history elite,trigram,3
+gemma3:27b::moderator,24,recap agreements agents,trigram,3
+gemma3:27b::moderator,25,shift ca asking,trigram,3

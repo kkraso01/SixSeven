@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,policy,unigram,20
+dolphin-yi-34b::moderator,2,government policy,bigram,16
+dolphin-yi-34b::moderator,3,government,unigram,16
+dolphin-yi-34b::moderator,4,intelligence agencies,bigram,14
+dolphin-yi-34b::moderator,5,intelligence,unigram,14
+dolphin-yi-34b::moderator,6,agencies,unigram,14
+dolphin-yi-34b::moderator,7,intelligence agencies bureaucracies,trigram,13
+dolphin-yi-34b::moderator,8,sa,unigram,13
+dolphin-yi-34b::moderator,9,bureaucracies,unigram,13
+dolphin-yi-34b::moderator,10,agencies bureaucracies,bigram,13
+dolphin-yi-34b::moderator,11,control,unigram,13
+dolphin-yi-34b::moderator,12,ca,unigram,13
+dolphin-yi-34b::moderator,13,evidence,unigram,12
+dolphin-yi-34b::moderator,14,systemic,unigram,12
+dolphin-yi-34b::moderator,15,systemic incentives,bigram,12
+dolphin-yi-34b::moderator,16,incentives,unigram,12
+dolphin-yi-34b::moderator,17,state,unigram,10
+dolphin-yi-34b::moderator,18,deep,unigram,10
+dolphin-yi-34b::moderator,19,deep state,bigram,10
+dolphin-yi-34b::moderator,20,examples,unigram,9
+dolphin-yi-34b::moderator,21,agents,unigram,9
+dolphin-yi-34b::moderator,22,specific,unigram,8
+dolphin-yi-34b::moderator,23,claim,unigram,7
+dolphin-yi-34b::moderator,24,questions,unigram,7
+dolphin-yi-34b::moderator,25,support,unigram,6
+dolphin-yi-34b::opponent,1,deep state,bigram,5
+dolphin-yi-34b::opponent,2,evidence,unigram,5
+dolphin-yi-34b::opponent,3,deep,unigram,5
+dolphin-yi-34b::opponent,4,government,unigram,5
+dolphin-yi-34b::opponent,5,policy,unigram,5
+dolphin-yi-34b::opponent,6,notion,unigram,5
+dolphin-yi-34b::opponent,7,government policy,bigram,5
+dolphin-yi-34b::opponent,8,state,unigram,5
+dolphin-yi-34b::opponent,9,evidence relies anecdotal,trigram,4
+dolphin-yi-34b::opponent,10,evidence relies,bigram,4
+dolphin-yi-34b::opponent,11,examples,unigram,4
+dolphin-yi-34b::opponent,12,deep state controlling,trigram,4
+dolphin-yi-34b::opponent,13,controlling government policy,trigram,4
+dolphin-yi-34b::opponent,14,anecdotal examples,bigram,4
+dolphin-yi-34b::opponent,15,controlling,unigram,4
+dolphin-yi-34b::opponent,16,anecdotal,unigram,4
+dolphin-yi-34b::opponent,17,policy lacks robust,trigram,4
+dolphin-yi-34b::opponent,18,notion deep,bigram,4
+dolphin-yi-34b::opponent,19,policy lacks,bigram,4
+dolphin-yi-34b::opponent,20,notion deep state,trigram,4
+dolphin-yi-34b::opponent,21,lacks robust,bigram,4
+dolphin-yi-34b::opponent,22,lacks,unigram,4
+dolphin-yi-34b::opponent,23,lacks robust evidence,trigram,4
+dolphin-yi-34b::opponent,24,government policy lacks,trigram,4
+dolphin-yi-34b::opponent,25,relies anecdotal,bigram,4
+dolphin-yi-34b::proponent,1,control,unigram,8
+dolphin-yi-34b::proponent,2,agencies,unigram,5
+dolphin-yi-34b::proponent,3,deep,unigram,5
+dolphin-yi-34b::proponent,4,deep state,bigram,5
+dolphin-yi-34b::proponent,5,evident,unigram,5
+dolphin-yi-34b::proponent,6,state,unigram,5
+dolphin-yi-34b::proponent,7,intelligence agencies,bigram,5
+dolphin-yi-34b::proponent,8,intelligence,unigram,5
+dolphin-yi-34b::proponent,9,power,unigram,5
+dolphin-yi-34b::proponent,10,control government policy,trigram,4
+dolphin-yi-34b::proponent,11,bureaucracies maintain,bigram,4
+dolphin-yi-34b::proponent,12,control government,bigram,4
+dolphin-yi-34b::proponent,13,deep state control,trigram,4
+dolphin-yi-34b::proponent,14,bureaucracies maintain power,trigram,4
+dolphin-yi-34b::proponent,15,agencies bureaucracies maintain,trigram,4
+dolphin-yi-34b::proponent,16,agencies bureaucracies,bigram,4
+dolphin-yi-34b::proponent,17,government policy evident,trigram,4
+dolphin-yi-34b::proponent,18,government policy,bigram,4
+dolphin-yi-34b::proponent,19,government,unigram,4
+dolphin-yi-34b::proponent,20,policy,unigram,4
+dolphin-yi-34b::proponent,21,systemic,unigram,4
+dolphin-yi-34b::proponent,22,state control government,trigram,4
+dolphin-yi-34b::proponent,23,state control,bigram,4
+dolphin-yi-34b::proponent,24,policy evident,bigram,4
+dolphin-yi-34b::proponent,25,intelligence agencies bureaucracies,trigram,4

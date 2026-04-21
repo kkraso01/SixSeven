@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260209_002606",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260209_002606",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "food_additives",
+  "topic_category": "food",
+  "topic_title": "Food additives and preservatives",
+  "topic_motion": "Food additives approved by regulatory agencies are intentionally harmful and designed to create chronic diseases that benefit the medical industry.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

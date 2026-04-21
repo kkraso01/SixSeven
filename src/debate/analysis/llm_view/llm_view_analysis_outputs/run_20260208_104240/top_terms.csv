@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,26
+gemma3:27b::moderator,2,sa,unigram,23
+gemma3:27b::moderator,3,suppression,unigram,16
+gemma3:27b::moderator,4,evidence,unigram,14
+gemma3:27b::moderator,5,agents,unigram,9
+gemma3:27b::moderator,6,pattern,unigram,8
+gemma3:27b::moderator,7,research,unigram,8
+gemma3:27b::moderator,8,systemic,unigram,8
+gemma3:27b::moderator,9,proof,unigram,7
+gemma3:27b::moderator,10,specific,unigram,6
+gemma3:27b::moderator,11,industry,unigram,6
+gemma3:27b::moderator,12,agree,unigram,6
+gemma3:27b::moderator,13,acknowledge,unigram,6
+gemma3:27b::moderator,14,cures,unigram,6
+gemma3:27b::moderator,15,intent,unigram,5
+gemma3:27b::moderator,16,intentional,unigram,5
+gemma3:27b::moderator,17,profit,unigram,4
+gemma3:27b::moderator,18,recap agreements agents,trigram,4
+gemma3:27b::moderator,19,round recap,bigram,4
+gemma3:27b::moderator,20,agreements,unigram,4
+gemma3:27b::moderator,21,agreements agents,bigram,4
+gemma3:27b::moderator,22,questions,unigram,4
+gemma3:27b::moderator,23,moderator round recap,trigram,4
+gemma3:27b::moderator,24,moderator round,bigram,4
+gemma3:27b::moderator,25,prioritizing,unigram,4
+gemma3:27b::opponent,1,alternative,unigram,3
+gemma3:27b::opponent,2,alternative explanations,bigram,3
+gemma3:27b::opponent,3,profit,unigram,3
+gemma3:27b::opponent,4,explanations,unigram,3
+gemma3:27b::opponent,5,suppression,unigram,3
+gemma3:27b::opponent,6,cures,unigram,3
+gemma3:27b::opponent,7,suppress,unigram,2
+gemma3:27b::opponent,8,requires,unigram,2
+gemma3:27b::opponent,9,pharmaceutical,unigram,2
+gemma3:27b::opponent,10,pharmaceutical companies,bigram,2
+gemma3:27b::opponent,11,maintain,unigram,2
+gemma3:27b::opponent,12,plausible,unigram,2
+gemma3:27b::opponent,13,exist,unigram,2
+gemma3:27b::opponent,14,existing,unigram,2
+gemma3:27b::opponent,15,prioritization,unigram,2
+gemma3:27b::opponent,16,access,unigram,2
+gemma3:27b::opponent,17,evidence,unigram,2
+gemma3:27b::opponent,18,equate,unigram,2
+gemma3:27b::opponent,19,cures maintain,bigram,2
+gemma3:27b::opponent,20,doesn,unigram,2
+gemma3:27b::opponent,21,claim pharmaceutical,bigram,2
+gemma3:27b::opponent,22,claim pharmaceutical companies,trigram,2
+gemma3:27b::opponent,23,companies,unigram,2
+gemma3:27b::opponent,24,claim,unigram,2
+gemma3:27b::opponent,25,actively,unigram,2
+gemma3:27b::proponent,1,suppression,unigram,5
+gemma3:27b::proponent,2,sa,unigram,3
+gemma3:27b::proponent,3,pattern,unigram,3
+gemma3:27b::proponent,4,pharmaceutical,unigram,3
+gemma3:27b::proponent,5,rigorous,unigram,2
+gemma3:27b::proponent,6,systemic,unigram,2
+gemma3:27b::proponent,7,promising,unigram,2
+gemma3:27b::proponent,8,regardless,unigram,2
+gemma3:27b::proponent,9,pharmaceutical industry,bigram,2
+gemma3:27b::proponent,10,natural,unigram,2
+gemma3:27b::proponent,11,natural compounds,bigram,2
+gemma3:27b::proponent,12,ignores,unigram,2
+gemma3:27b::proponent,13,industry,unigram,2
+gemma3:27b::proponent,14,cures,unigram,2
+gemma3:27b::proponent,15,compounds,unigram,2
+gemma3:27b::proponent,16,consistent,unigram,2
+gemma3:27b::proponent,17,treatments,unigram,2
+gemma3:27b::proponent,18,versions effectively,bigram,1
+gemma3:27b::proponent,19,versions,unigram,1
+gemma3:27b::proponent,20,treatments pattern masked,trigram,1
+gemma3:27b::proponent,21,treatments pattern,bigram,1
+gemma3:27b::proponent,22,treatments genuine cures,trigram,1
+gemma3:27b::proponent,23,treatments genuine,bigram,1
+gemma3:27b::proponent,24,traditional medicine,bigram,1
+gemma3:27b::proponent,25,traditional,unigram,1

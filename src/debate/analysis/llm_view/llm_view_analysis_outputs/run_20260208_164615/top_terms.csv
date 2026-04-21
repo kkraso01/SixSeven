@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,central,unigram,5
+dolphin-yi-34b::opponent,2,privacy,unigram,4
+dolphin-yi-34b::opponent,3,bank digital currencies,trigram,3
+dolphin-yi-34b::opponent,4,bank,unigram,3
+dolphin-yi-34b::opponent,5,central bank digital,trigram,3
+dolphin-yi-34b::opponent,6,central bank,bigram,3
+dolphin-yi-34b::opponent,7,currencies,unigram,3
+dolphin-yi-34b::opponent,8,bank digital,bigram,3
+dolphin-yi-34b::opponent,9,features,unigram,3
+dolphin-yi-34b::opponent,10,digital currencies,bigram,3
+dolphin-yi-34b::opponent,11,digital,unigram,3
+dolphin-yi-34b::opponent,12,design,unigram,3
+dolphin-yi-34b::opponent,13,currencies potential privacy,trigram,2
+dolphin-yi-34b::opponent,14,digital currencies potential,trigram,2
+dolphin-yi-34b::opponent,15,enhancing,unigram,2
+dolphin-yi-34b::opponent,16,enhancing features,bigram,2
+dolphin-yi-34b::opponent,17,inherently,unigram,2
+dolphin-yi-34b::opponent,18,potential,unigram,2
+dolphin-yi-34b::opponent,19,institutions implementing,bigram,2
+dolphin-yi-34b::opponent,20,potential privacy enhancing,trigram,2
+dolphin-yi-34b::opponent,21,privacy enhancing features,trigram,2
+dolphin-yi-34b::opponent,22,privacy enhancing,bigram,2
+dolphin-yi-34b::opponent,23,undermined,unigram,2
+dolphin-yi-34b::opponent,24,potential privacy,bigram,2
+dolphin-yi-34b::opponent,25,financial privacy,bigram,2
+dolphin-yi-34b::proponent,1,bank,unigram,3
+dolphin-yi-34b::proponent,2,bank digital,bigram,3
+dolphin-yi-34b::proponent,3,bank digital currencies,trigram,3
+dolphin-yi-34b::proponent,4,central,unigram,3
+dolphin-yi-34b::proponent,5,central bank,bigram,3
+dolphin-yi-34b::proponent,6,central bank digital,trigram,3
+dolphin-yi-34b::proponent,7,currencies,unigram,3
+dolphin-yi-34b::proponent,8,digital,unigram,3
+dolphin-yi-34b::proponent,9,digital currencies,bigram,3
+dolphin-yi-34b::proponent,10,financial,unigram,3
+dolphin-yi-34b::proponent,11,government,unigram,3
+dolphin-yi-34b::proponent,12,financial privacy,bigram,3
+dolphin-yi-34b::proponent,13,privacy,unigram,3
+dolphin-yi-34b::proponent,14,government surveillance loss,trigram,2
+dolphin-yi-34b::proponent,15,increased,unigram,2
+dolphin-yi-34b::proponent,16,design,unigram,2
+dolphin-yi-34b::proponent,17,loss financial,bigram,2
+dolphin-yi-34b::proponent,18,increased government,bigram,2
+dolphin-yi-34b::proponent,19,inherent design,bigram,2
+dolphin-yi-34b::proponent,20,inherent,unigram,2
+dolphin-yi-34b::proponent,21,lead increased,bigram,2
+dolphin-yi-34b::proponent,22,lead increased government,trigram,2
+dolphin-yi-34b::proponent,23,loss,unigram,2
+dolphin-yi-34b::proponent,24,lead,unigram,2
+dolphin-yi-34b::proponent,25,increased government surveillance,trigram,2
+gemma3:27b::moderator,1,ca,unigram,19
+gemma3:27b::moderator,2,sa,unigram,13
+gemma3:27b::moderator,3,central,unigram,13
+gemma3:27b::moderator,4,privacy,unigram,12
+gemma3:27b::moderator,5,evidence,unigram,12
+gemma3:27b::moderator,6,cbdcs,unigram,11
+gemma3:27b::moderator,7,central banks,bigram,9
+gemma3:27b::moderator,8,banks,unigram,9
+gemma3:27b::moderator,9,surveillance,unigram,8
+gemma3:27b::moderator,10,cbdc,unigram,7
+gemma3:27b::moderator,11,design,unigram,7
+gemma3:27b::moderator,12,fully,unigram,6
+gemma3:27b::moderator,13,bank,unigram,4
+gemma3:27b::moderator,14,implementations,unigram,4
+gemma3:27b::moderator,15,prioritize,unigram,4
+gemma3:27b::moderator,16,asks,unigram,4
+gemma3:27b::moderator,17,historical,unigram,4
+gemma3:27b::moderator,18,history,unigram,4
+gemma3:27b::moderator,19,agents,unigram,4
+gemma3:27b::moderator,20,financial,unigram,4
+gemma3:27b::moderator,21,features,unigram,4
+gemma3:27b::moderator,22,banks sa,bigram,4
+gemma3:27b::moderator,23,asks evidence,bigram,4
+gemma3:27b::moderator,24,central bank,bigram,4
+gemma3:27b::moderator,25,central banks sa,trigram,4

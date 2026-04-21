@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,climate change,bigram,5
+dolphin-yi-34b::opponent,2,change,unigram,5
+dolphin-yi-34b::opponent,3,climate,unigram,5
+dolphin-yi-34b::opponent,4,collective,unigram,5
+dolphin-yi-34b::opponent,5,global warming,bigram,5
+dolphin-yi-34b::opponent,6,global,unigram,5
+dolphin-yi-34b::opponent,7,scientific,unigram,5
+dolphin-yi-34b::opponent,8,warming,unigram,5
+dolphin-yi-34b::opponent,9,based,unigram,4
+dolphin-yi-34b::opponent,10,based scientific,bigram,4
+dolphin-yi-34b::opponent,11,assessments necessary emissions,trigram,4
+dolphin-yi-34b::opponent,12,based scientific assessments,trigram,4
+dolphin-yi-34b::opponent,13,assessments necessary,bigram,4
+dolphin-yi-34b::opponent,14,2050 goal,bigram,4
+dolphin-yi-34b::opponent,15,abandonment practical,bigram,4
+dolphin-yi-34b::opponent,16,2050,unigram,4
+dolphin-yi-34b::opponent,17,change abandonment,bigram,4
+dolphin-yi-34b::opponent,18,change abandonment practical,trigram,4
+dolphin-yi-34b::opponent,19,emissions reductions,bigram,4
+dolphin-yi-34b::opponent,20,emissions reductions limit,trigram,4
+dolphin-yi-34b::opponent,21,goal based scientific,trigram,4
+dolphin-yi-34b::opponent,22,goal based,bigram,4
+dolphin-yi-34b::opponent,23,goal,unigram,4
+dolphin-yi-34b::opponent,24,global warming represents,trigram,4
+dolphin-yi-34b::opponent,25,collective commitment,bigram,4
+gemma3:27b::moderator,1,ca,unigram,38
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,climate,unigram,22
+gemma3:27b::moderator,4,agents,unigram,13
+gemma3:27b::moderator,5,questions,unigram,12
+gemma3:27b::moderator,6,evidence,unigram,11
+gemma3:27b::moderator,7,change,unigram,10
+gemma3:27b::moderator,8,climate change,bigram,9
+gemma3:27b::moderator,9,policies,unigram,8
+gemma3:27b::moderator,10,specific,unigram,7
+gemma3:27b::moderator,11,scientific,unigram,7
+gemma3:27b::moderator,12,potential,unigram,7
+gemma3:27b::moderator,13,emphasizes,unigram,6
+gemma3:27b::moderator,14,concerns,unigram,6
+gemma3:27b::moderator,15,claim,unigram,6
+gemma3:27b::moderator,16,scores,unigram,5
+gemma3:27b::moderator,17,negative,unigram,5
+gemma3:27b::moderator,18,appeal,unigram,5
+gemma3:27b::moderator,19,moves,unigram,5
+gemma3:27b::moderator,20,moderator,unigram,5
+gemma3:27b::moderator,21,moderator round,bigram,5
+gemma3:27b::moderator,22,moderator round recap,trigram,5
+gemma3:27b::moderator,23,ipcc,unigram,5
+gemma3:27b::moderator,24,agreements agents,bigram,5
+gemma3:27b::moderator,25,round recap agreements,trigram,5
+gemma3:27b::proponent,1,climate,unigram,4
+gemma3:27b::proponent,2,insistence,unigram,3
+gemma3:27b::proponent,3,environmental,unigram,3
+gemma3:27b::proponent,4,solutions,unigram,2
+gemma3:27b::proponent,5,like,unigram,2
+gemma3:27b::proponent,6,environmental concerns,bigram,2
+gemma3:27b::proponent,7,economic,unigram,2
+gemma3:27b::proponent,8,change,unigram,2
+gemma3:27b::proponent,9,costs,unigram,2
+gemma3:27b::proponent,10,climate change,bigram,2
+gemma3:27b::proponent,11,concerns,unigram,2
+gemma3:27b::proponent,12,unelected bodies like,trigram,1
+gemma3:27b::proponent,13,unelected bodies,bigram,1
+gemma3:27b::proponent,14,unelected,unigram,1
+gemma3:27b::proponent,15,underlying political agendas,trigram,1
+gemma3:27b::proponent,16,underlying political,bigram,1
+gemma3:27b::proponent,17,underlying,unigram,1
+gemma3:27b::proponent,18,technologies like lithium,trigram,1
+gemma3:27b::proponent,19,technologies like,bigram,1
+gemma3:27b::proponent,20,technologies,unigram,1
+gemma3:27b::proponent,21,technological limitations economic,trigram,1
+gemma3:27b::proponent,22,technological limitations,bigram,1
+gemma3:27b::proponent,23,technological,unigram,1
+gemma3:27b::proponent,24,symbolic goal prioritized,trigram,1
+gemma3:27b::proponent,25,symbolic goal,bigram,1

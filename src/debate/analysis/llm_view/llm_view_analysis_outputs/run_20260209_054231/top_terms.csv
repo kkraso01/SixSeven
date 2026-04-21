@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,12
+dolphin-yi-34b::moderator,2,cbdcs,unigram,12
+dolphin-yi-34b::moderator,3,ca,unigram,11
+dolphin-yi-34b::moderator,4,privacy,unigram,11
+dolphin-yi-34b::moderator,5,systems,unigram,10
+dolphin-yi-34b::moderator,6,cbdc,unigram,8
+dolphin-yi-34b::moderator,7,potential,unigram,8
+dolphin-yi-34b::moderator,8,historical,unigram,7
+dolphin-yi-34b::moderator,9,cbdc systems,bigram,7
+dolphin-yi-34b::moderator,10,financial,unigram,7
+dolphin-yi-34b::moderator,11,control,unigram,7
+dolphin-yi-34b::moderator,12,regulation,unigram,6
+dolphin-yi-34b::moderator,13,total,unigram,5
+dolphin-yi-34b::moderator,14,agents,unigram,5
+dolphin-yi-34b::moderator,15,surveillance,unigram,5
+dolphin-yi-34b::moderator,16,features,unigram,5
+dolphin-yi-34b::moderator,17,offer,unigram,4
+dolphin-yi-34b::moderator,18,argues,unigram,4
+dolphin-yi-34b::moderator,19,regulatory,unigram,4
+dolphin-yi-34b::moderator,20,regulation evolve,bigram,4
+dolphin-yi-34b::moderator,21,technological,unigram,4
+dolphin-yi-34b::moderator,22,pattern,unigram,4
+dolphin-yi-34b::moderator,23,evolve,unigram,4
+dolphin-yi-34b::moderator,24,features cbdcs,bigram,4
+dolphin-yi-34b::moderator,25,advancements,unigram,4
+dolphin-yi-34b::opponent,1,privacy,unigram,5
+dolphin-yi-34b::opponent,2,cbdcs,unigram,3
+dolphin-yi-34b::opponent,3,advancements enhance privacy,trigram,2
+dolphin-yi-34b::opponent,4,advancements,unigram,2
+dolphin-yi-34b::opponent,5,control,unigram,2
+dolphin-yi-34b::opponent,6,cbdc,unigram,2
+dolphin-yi-34b::opponent,7,cbdc systems,bigram,2
+dolphin-yi-34b::opponent,8,advancements enhance,bigram,2
+dolphin-yi-34b::opponent,9,enhance,unigram,2
+dolphin-yi-34b::opponent,10,enhance privacy,bigram,2
+dolphin-yi-34b::opponent,11,enhance privacy protections,trigram,2
+dolphin-yi-34b::opponent,12,opponent,unigram,2
+dolphin-yi-34b::opponent,13,patterns,unigram,2
+dolphin-yi-34b::opponent,14,historical,unigram,2
+dolphin-yi-34b::opponent,15,historical patterns,bigram,2
+dolphin-yi-34b::opponent,16,argument,unigram,2
+dolphin-yi-34b::opponent,17,potential,unigram,2
+dolphin-yi-34b::opponent,18,potential technological,bigram,2
+dolphin-yi-34b::opponent,19,neglects,unigram,2
+dolphin-yi-34b::opponent,20,neglects potential technological,trigram,2
+dolphin-yi-34b::opponent,21,neglects potential,bigram,2
+dolphin-yi-34b::opponent,22,oversimplifies role regulation,trigram,2
+dolphin-yi-34b::opponent,23,oversimplifies role,bigram,2
+dolphin-yi-34b::opponent,24,oversimplifies,unigram,2
+dolphin-yi-34b::opponent,25,total,unigram,2
+gemma3:27b::proponent,1,control,unigram,3
+gemma3:27b::proponent,2,financial,unigram,3
+gemma3:27b::proponent,3,pattern,unigram,3
+gemma3:27b::proponent,4,agent,unigram,2
+gemma3:27b::proponent,5,institutions,unigram,2
+gemma3:27b::proponent,6,scientific agent,bigram,2
+gemma3:27b::proponent,7,scientific,unigram,2
+gemma3:27b::proponent,8,privacy,unigram,2
+gemma3:27b::proponent,9,surveillance,unigram,2
+gemma3:27b::proponent,10,bank digital,bigram,1
+gemma3:27b::proponent,11,bank digital currencies,trigram,1
+gemma3:27b::proponent,12,barriers,unigram,1
+gemma3:27b::proponent,13,bank,unigram,1
+gemma3:27b::proponent,14,aren,unigram,1
+gemma3:27b::proponent,15,agent insistence regulatory,trigram,1
+gemma3:27b::proponent,16,agent consistently focuses,trigram,1
+gemma3:27b::proponent,17,calculated power,bigram,1
+gemma3:27b::proponent,18,calculated power grab,trigram,1
+gemma3:27b::proponent,19,cbdcs aren,bigram,1
+gemma3:27b::proponent,20,cbdcs,unigram,1
+gemma3:27b::proponent,21,central,unigram,1
+gemma3:27b::proponent,22,central bank,bigram,1
+gemma3:27b::proponent,23,central bank digital,trigram,1
+gemma3:27b::proponent,24,cbdcs aren modernization,trigram,1
+gemma3:27b::proponent,25,consistently,unigram,1

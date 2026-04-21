@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,research,unigram,18
+gemma3:27b::moderator,4,evidence,unigram,16
+gemma3:27b::moderator,5,systemic,unigram,11
+gemma3:27b::moderator,6,harm,unigram,8
+gemma3:27b::moderator,7,industry,unigram,8
+gemma3:27b::moderator,8,agents,unigram,8
+gemma3:27b::moderator,9,funding,unigram,8
+gemma3:27b::moderator,10,corporate,unigram,8
+gemma3:27b::moderator,11,potential,unigram,7
+gemma3:27b::moderator,12,acknowledge,unigram,7
+gemma3:27b::moderator,13,influence,unigram,7
+gemma3:27b::moderator,14,methodological,unigram,7
+gemma3:27b::moderator,15,studies,unigram,6
+gemma3:27b::moderator,16,round,unigram,6
+gemma3:27b::moderator,17,focuses,unigram,6
+gemma3:27b::moderator,18,gmos,unigram,6
+gemma3:27b::moderator,19,gmo,unigram,6
+gemma3:27b::moderator,20,agree,unigram,6
+gemma3:27b::moderator,21,questions,unigram,6
+gemma3:27b::moderator,22,framing,unigram,6
+gemma3:27b::moderator,23,need,unigram,5
+gemma3:27b::moderator,24,moderator round,bigram,5
+gemma3:27b::moderator,25,rigor,unigram,5
+gemma3:27b::opponent,1,research,unigram,5
+gemma3:27b::opponent,2,acknowledging,unigram,4
+gemma3:27b::opponent,3,influence,unigram,3
+gemma3:27b::opponent,4,potential,unigram,3
+gemma3:27b::opponent,5,effects,unigram,3
+gemma3:27b::opponent,6,harm,unigram,3
+gemma3:27b::opponent,7,acknowledging potential,bigram,3
+gemma3:27b::opponent,8,robust,unigram,2
+gemma3:27b::opponent,9,necessitates,unigram,2
+gemma3:27b::opponent,10,biases,unigram,2
+gemma3:27b::opponent,11,funding,unigram,2
+gemma3:27b::opponent,12,evidence,unigram,2
+gemma3:27b::opponent,13,demonstrating,unigram,2
+gemma3:27b::opponent,14,crucial,unigram,2
+gemma3:27b::opponent,15,requires,unigram,2
+gemma3:27b::opponent,16,bias,unigram,2
+gemma3:27b::opponent,17,corporate,unigram,2
+gemma3:27b::opponent,18,deliberate,unigram,2
+gemma3:27b::opponent,19,attributing,unigram,2
+gemma3:27b::opponent,20,attributing deliberate,bigram,2
+gemma3:27b::opponent,21,studies,unigram,2
+gemma3:27b::opponent,22,suppressed,unigram,2
+gemma3:27b::opponent,23,suppressed research,bigram,2
+gemma3:27b::opponent,24,systemic,unigram,1
+gemma3:27b::opponent,25,suppressed research necessitates,trigram,1
+gemma3:27b::proponent,1,scientific,unigram,4
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,research,unigram,4
+gemma3:27b::proponent,4,agent,unigram,4
+gemma3:27b::proponent,5,industry,unigram,3
+gemma3:27b::proponent,6,funding,unigram,3
+gemma3:27b::proponent,7,ignores,unigram,3
+gemma3:27b::proponent,8,pattern,unigram,3
+gemma3:27b::proponent,9,power imbalance,bigram,2
+gemma3:27b::proponent,10,power,unigram,2
+gemma3:27b::proponent,11,landscape,unigram,2
+gemma3:27b::proponent,12,narrative,unigram,2
+gemma3:27b::proponent,13,insistence,unigram,2
+gemma3:27b::proponent,14,scientific agent insistence,trigram,2
+gemma3:27b::proponent,15,single,unigram,2
+gemma3:27b::proponent,16,bias,unigram,2
+gemma3:27b::proponent,17,gmo,unigram,2
+gemma3:27b::proponent,18,imbalance,unigram,2
+gemma3:27b::proponent,19,inherent,unigram,2
+gemma3:27b::proponent,20,evidence,unigram,2
+gemma3:27b::proponent,21,control,unigram,2
+gemma3:27b::proponent,22,creating,unigram,2
+gemma3:27b::proponent,23,agent insistence,bigram,2
+gemma3:27b::proponent,24,suppression,unigram,2
+gemma3:27b::proponent,25,trajectories,unigram,1

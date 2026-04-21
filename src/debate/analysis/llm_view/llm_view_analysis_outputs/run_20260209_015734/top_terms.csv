@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,climate,unigram,7
+dolphin-yi-34b::proponent,2,change,unigram,6
+dolphin-yi-34b::proponent,3,climate change,bigram,6
+dolphin-yi-34b::proponent,4,change science,bigram,4
+dolphin-yi-34b::proponent,5,climate change science,trigram,4
+dolphin-yi-34b::proponent,6,political,unigram,4
+dolphin-yi-34b::proponent,7,science,unigram,4
+dolphin-yi-34b::proponent,8,ipcc,unigram,3
+dolphin-yi-34b::proponent,9,doubt,unigram,2
+dolphin-yi-34b::proponent,10,heavily influenced,bigram,2
+dolphin-yi-34b::proponent,11,heavily influenced political,trigram,2
+dolphin-yi-34b::proponent,12,heavily,unigram,2
+dolphin-yi-34b::proponent,13,doubt objectivity climate,trigram,2
+dolphin-yi-34b::proponent,14,doubt objectivity,bigram,2
+dolphin-yi-34b::proponent,15,composition,unigram,2
+dolphin-yi-34b::proponent,16,agendas,unigram,2
+dolphin-yi-34b::proponent,17,influenced,unigram,2
+dolphin-yi-34b::proponent,18,influenced political,bigram,2
+dolphin-yi-34b::proponent,19,objectivity climate change,trigram,2
+dolphin-yi-34b::proponent,20,political agendas,bigram,2
+dolphin-yi-34b::proponent,21,objectivity climate,bigram,2
+dolphin-yi-34b::proponent,22,objectivity,unigram,2
+dolphin-yi-34b::proponent,23,data,unigram,2
+dolphin-yi-34b::proponent,24,influenced political agendas,trigram,2
+dolphin-yi-34b::proponent,25,alterations climate data,trigram,1
+gemma3:27b::moderator,1,ca,unigram,31
+gemma3:27b::moderator,2,sa,unigram,23
+gemma3:27b::moderator,3,evidence,unigram,13
+gemma3:27b::moderator,4,ipcc,unigram,12
+gemma3:27b::moderator,5,data,unigram,11
+gemma3:27b::moderator,6,manipulation,unigram,11
+gemma3:27b::moderator,7,proof,unigram,10
+gemma3:27b::moderator,8,specific,unigram,8
+gemma3:27b::moderator,9,agents,unigram,8
+gemma3:27b::moderator,10,climate,unigram,8
+gemma3:27b::moderator,11,political,unigram,8
+gemma3:27b::moderator,12,alterations,unigram,6
+gemma3:27b::moderator,13,revisions,unigram,6
+gemma3:27b::moderator,14,bias,unigram,5
+gemma3:27b::moderator,15,influence,unigram,5
+gemma3:27b::moderator,16,potential,unigram,5
+gemma3:27b::moderator,17,burden,unigram,5
+gemma3:27b::moderator,18,questions,unigram,5
+gemma3:27b::moderator,19,burden proof,bigram,5
+gemma3:27b::moderator,20,composition,unigram,5
+gemma3:27b::moderator,21,agreements,unigram,4
+gemma3:27b::moderator,22,round recap,bigram,4
+gemma3:27b::moderator,23,questions ca,bigram,4
+gemma3:27b::moderator,24,recap agreements,bigram,4
+gemma3:27b::moderator,25,scientific,unigram,4
+gemma3:27b::opponent,1,evidence,unigram,6
+gemma3:27b::opponent,2,attributing,unigram,3
+gemma3:27b::opponent,3,independent,unigram,3
+gemma3:27b::opponent,4,ipcc,unigram,3
+gemma3:27b::opponent,5,scientific,unigram,3
+gemma3:27b::opponent,6,political,unigram,3
+gemma3:27b::opponent,7,claim,unigram,2
+gemma3:27b::opponent,8,claim climate,bigram,2
+gemma3:27b::opponent,9,consensus,unigram,2
+gemma3:27b::opponent,10,crisis,unigram,2
+gemma3:27b::opponent,11,manufactured,unigram,2
+gemma3:27b::opponent,12,lines evidence,bigram,2
+gemma3:27b::opponent,13,lacks sufficient evidence,trigram,2
+gemma3:27b::opponent,14,change,unigram,2
+gemma3:27b::opponent,15,climate,unigram,2
+gemma3:27b::opponent,16,climate change,bigram,2
+gemma3:27b::opponent,17,lines,unigram,2
+gemma3:27b::opponent,18,manufactured crisis,bigram,2
+gemma3:27b::opponent,19,lacks sufficient,bigram,2
+gemma3:27b::opponent,20,lacks,unigram,2
+gemma3:27b::opponent,21,multiple,unigram,2
+gemma3:27b::opponent,22,scientific consensus,bigram,2
+gemma3:27b::opponent,23,claim climate change,trigram,2
+gemma3:27b::opponent,24,conclusions,unigram,2
+gemma3:27b::opponent,25,sufficient evidence,bigram,2

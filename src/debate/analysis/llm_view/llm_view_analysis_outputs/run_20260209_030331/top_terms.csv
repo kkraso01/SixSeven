@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,food,unigram,4
+dolphin-yi-34b::proponent,2,fda,unigram,4
+dolphin-yi-34b::proponent,3,leading,unigram,4
+dolphin-yi-34b::proponent,4,approval,unigram,3
+dolphin-yi-34b::proponent,5,fda approval,bigram,3
+dolphin-yi-34b::proponent,6,fda approval process,trigram,3
+dolphin-yi-34b::proponent,7,harmful,unigram,3
+dolphin-yi-34b::proponent,8,approval process,bigram,3
+dolphin-yi-34b::proponent,9,harmful substances food,trigram,3
+dolphin-yi-34b::proponent,10,harmful substances,bigram,3
+dolphin-yi-34b::proponent,11,influence leading potential,trigram,3
+dolphin-yi-34b::proponent,12,leading potential,bigram,3
+dolphin-yi-34b::proponent,13,industry influence leading,trigram,3
+dolphin-yi-34b::proponent,14,industry influence,bigram,3
+dolphin-yi-34b::proponent,15,influence,unigram,3
+dolphin-yi-34b::proponent,16,food supply,bigram,3
+dolphin-yi-34b::proponent,17,industry,unigram,3
+dolphin-yi-34b::proponent,18,influence leading,bigram,3
+dolphin-yi-34b::proponent,19,potential release harmful,trigram,3
+dolphin-yi-34b::proponent,20,process,unigram,3
+dolphin-yi-34b::proponent,21,potential release,bigram,3
+dolphin-yi-34b::proponent,22,potential,unigram,3
+dolphin-yi-34b::proponent,23,leading potential release,trigram,3
+dolphin-yi-34b::proponent,24,release,unigram,3
+dolphin-yi-34b::proponent,25,substances food supply,trigram,3
+gemma3:27b::moderator,1,ca,unigram,27
+gemma3:27b::moderator,2,sa,unigram,23
+gemma3:27b::moderator,3,industry,unigram,14
+gemma3:27b::moderator,4,harm,unigram,11
+gemma3:27b::moderator,5,fda,unigram,11
+gemma3:27b::moderator,6,intentional harm,bigram,10
+gemma3:27b::moderator,7,intentional,unigram,10
+gemma3:27b::moderator,8,influence,unigram,10
+gemma3:27b::moderator,9,evidence,unigram,9
+gemma3:27b::moderator,10,industry influence,bigram,9
+gemma3:27b::moderator,11,approval,unigram,8
+gemma3:27b::moderator,12,specific,unigram,8
+gemma3:27b::moderator,13,regulatory,unigram,7
+gemma3:27b::moderator,14,agents,unigram,7
+gemma3:27b::moderator,15,harmful,unigram,7
+gemma3:27b::moderator,16,potential,unigram,6
+gemma3:27b::moderator,17,additives,unigram,5
+gemma3:27b::moderator,18,deliberate,unigram,5
+gemma3:27b::moderator,19,agree,unigram,5
+gemma3:27b::moderator,20,acknowledge,unigram,5
+gemma3:27b::moderator,21,questions ca,bigram,4
+gemma3:27b::moderator,22,angell,unigram,4
+gemma3:27b::moderator,23,angell burden proof,trigram,4
+gemma3:27b::moderator,24,agencies,unigram,4
+gemma3:27b::moderator,25,scores civility epistemic,trigram,4
+gemma3:27b::opponent,1,industry,unigram,6
+gemma3:27b::opponent,2,harmful,unigram,4
+gemma3:27b::opponent,3,additives,unigram,3
+gemma3:27b::opponent,4,approved,unigram,3
+gemma3:27b::opponent,5,industry influence,bigram,3
+gemma3:27b::opponent,6,evidence,unigram,3
+gemma3:27b::opponent,7,concern,unigram,3
+gemma3:27b::opponent,8,influence,unigram,3
+gemma3:27b::opponent,9,benefiting,unigram,2
+gemma3:27b::opponent,10,benefiting medical,bigram,2
+gemma3:27b::opponent,11,create,unigram,2
+gemma3:27b::opponent,12,additives intentionally harmful,trigram,2
+gemma3:27b::opponent,13,approved food additives,trigram,2
+gemma3:27b::opponent,14,approved food,bigram,2
+gemma3:27b::opponent,15,approval,unigram,2
+gemma3:27b::opponent,16,additives intentionally,bigram,2
+gemma3:27b::opponent,17,create chronic,bigram,2
+gemma3:27b::opponent,18,food,unigram,2
+gemma3:27b::opponent,19,food additives intentionally,trigram,2
+gemma3:27b::opponent,20,food additives,bigram,2
+gemma3:27b::opponent,21,harmful designed create,trigram,2
+gemma3:27b::opponent,22,harmful substances,bigram,2
+gemma3:27b::opponent,23,industry lacks,bigram,2
+gemma3:27b::opponent,24,harmful designed,bigram,2
+gemma3:27b::opponent,25,designed create,bigram,2

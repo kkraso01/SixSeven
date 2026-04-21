@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,assassination,unigram,5
+dolphin-yi-34b::proponent,2,anomalies,unigram,4
+dolphin-yi-34b::proponent,3,kennedy,unigram,4
+dolphin-yi-34b::proponent,4,government,unigram,4
+dolphin-yi-34b::proponent,5,president,unigram,4
+dolphin-yi-34b::proponent,6,president kennedy,bigram,4
+dolphin-yi-34b::proponent,7,elements,unigram,3
+dolphin-yi-34b::proponent,8,kennedy assassination,bigram,3
+dolphin-yi-34b::proponent,9,narrative,unigram,3
+dolphin-yi-34b::proponent,10,official narrative,bigram,3
+dolphin-yi-34b::proponent,11,official,unigram,3
+dolphin-yi-34b::proponent,12,conspiracy,unigram,3
+dolphin-yi-34b::proponent,13,president kennedy assassination,trigram,3
+dolphin-yi-34b::proponent,14,point,unigram,3
+dolphin-yi-34b::proponent,15,elements government,bigram,3
+dolphin-yi-34b::proponent,16,involving elements government,trigram,2
+dolphin-yi-34b::proponent,17,narrative president kennedy,trigram,2
+dolphin-yi-34b::proponent,18,official narrative president,trigram,2
+dolphin-yi-34b::proponent,19,involving,unigram,2
+dolphin-yi-34b::proponent,20,jfk,unigram,2
+dolphin-yi-34b::proponent,21,involving elements,bigram,2
+dolphin-yi-34b::proponent,22,conspiracy involving,bigram,2
+dolphin-yi-34b::proponent,23,conspiracy involving elements,trigram,2
+dolphin-yi-34b::proponent,24,narrative president,bigram,2
+dolphin-yi-34b::proponent,25,involved,unigram,2
+gemma3:27b::moderator,1,ca,unigram,37
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,evidence,unigram,24
+gemma3:27b::moderator,4,anomalies,unigram,22
+gemma3:27b::moderator,5,conspiracy,unigram,22
+gemma3:27b::moderator,6,proof,unigram,11
+gemma3:27b::moderator,7,government,unigram,10
+gemma3:27b::moderator,8,specific,unigram,9
+gemma3:27b::moderator,9,agents,unigram,9
+gemma3:27b::moderator,10,assassination,unigram,6
+gemma3:27b::moderator,11,acknowledge,unigram,6
+gemma3:27b::moderator,12,explanation,unigram,6
+gemma3:27b::moderator,13,argues,unigram,6
+gemma3:27b::moderator,14,shift,unigram,6
+gemma3:27b::moderator,15,round,unigram,5
+gemma3:27b::moderator,16,scores civility epistemic,trigram,5
+gemma3:27b::moderator,17,agreements,unigram,5
+gemma3:27b::moderator,18,agreements agents acknowledge,trigram,5
+gemma3:27b::moderator,19,questions,unigram,5
+gemma3:27b::moderator,20,questions ca,bigram,5
+gemma3:27b::moderator,21,proof shift,bigram,5
+gemma3:27b::moderator,22,recap,unigram,5
+gemma3:27b::moderator,23,recap agreements,bigram,5
+gemma3:27b::moderator,24,recap agreements agents,trigram,5
+gemma3:27b::moderator,25,proof shift ca,trigram,5
+gemma3:27b::opponent,1,conspiracy,unigram,6
+gemma3:27b::opponent,2,government,unigram,5
+gemma3:27b::opponent,3,evidence,unigram,4
+gemma3:27b::opponent,4,anomalies,unigram,4
+gemma3:27b::opponent,5,exist,unigram,3
+gemma3:27b::opponent,6,mechanism,unigram,3
+gemma3:27b::opponent,7,government conspiracy,bigram,3
+gemma3:27b::opponent,8,acknowledging,unigram,3
+gemma3:27b::opponent,9,attributing government,bigram,2
+gemma3:27b::opponent,10,attributing government conspiracy,trigram,2
+gemma3:27b::opponent,11,explanations,unigram,2
+gemma3:27b::opponent,12,explanation,unigram,2
+gemma3:27b::opponent,13,conspiracy requires,bigram,2
+gemma3:27b::opponent,14,assassination,unigram,2
+gemma3:27b::opponent,15,anomalies exist,bigram,2
+gemma3:27b::opponent,16,alternative,unigram,2
+gemma3:27b::opponent,17,demonstrating,unigram,2
+gemma3:27b::opponent,18,plausible,unigram,2
+gemma3:27b::opponent,19,kennedy assassination,bigram,2
+gemma3:27b::opponent,20,requires demonstrating,bigram,2
+gemma3:27b::opponent,21,requires,unigram,2
+gemma3:27b::opponent,22,plausible mechanism,bigram,2
+gemma3:27b::opponent,23,parsimonious,unigram,2
+gemma3:27b::opponent,24,parsimonious explanation,bigram,2
+gemma3:27b::opponent,25,involvement,unigram,2

@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_111711",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_111711",
+  "analysis_schema_version": 3,
+  "row_count": 12,
+  "topic_id": "5g_health_risks",
+  "topic_category": "technology",
+  "topic_title": "5G wireless technology and health effects",
+  "topic_motion": "5G wireless networks cause serious health problems including immune system damage and are being deployed despite known dangers.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

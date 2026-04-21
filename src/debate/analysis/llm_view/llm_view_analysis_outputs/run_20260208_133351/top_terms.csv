@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,voting,unigram,22
+dolphin-yi-34b::moderator,2,electronic,unigram,22
+dolphin-yi-34b::moderator,3,electronic voting,bigram,22
+dolphin-yi-34b::moderator,4,systems,unigram,20
+dolphin-yi-34b::moderator,5,manipulation,unigram,17
+dolphin-yi-34b::moderator,6,ca,unigram,14
+dolphin-yi-34b::moderator,7,modern,unigram,14
+dolphin-yi-34b::moderator,8,voting systems,bigram,12
+dolphin-yi-34b::moderator,9,sa,unigram,12
+dolphin-yi-34b::moderator,10,electronic voting systems,trigram,12
+dolphin-yi-34b::moderator,11,evidence,unigram,11
+dolphin-yi-34b::moderator,12,machines,unigram,11
+dolphin-yi-34b::moderator,13,security,unigram,10
+dolphin-yi-34b::moderator,14,voting machines,bigram,10
+dolphin-yi-34b::moderator,15,electronic voting machines,trigram,10
+dolphin-yi-34b::moderator,16,powerful,unigram,9
+dolphin-yi-34b::moderator,17,specific,unigram,9
+dolphin-yi-34b::moderator,18,powerful elites,bigram,9
+dolphin-yi-34b::moderator,19,elites,unigram,9
+dolphin-yi-34b::moderator,20,questions,unigram,8
+dolphin-yi-34b::moderator,21,manipulation powerful,bigram,7
+dolphin-yi-34b::moderator,22,measures,unigram,7
+dolphin-yi-34b::moderator,23,modern electronic voting,trigram,7
+dolphin-yi-34b::moderator,24,security measures,bigram,7
+dolphin-yi-34b::moderator,25,modern electronic,bigram,7
+dolphin-yi-34b::opponent,1,electronic voting,bigram,6
+dolphin-yi-34b::opponent,2,electronic,unigram,6
+dolphin-yi-34b::opponent,3,voting,unigram,6
+dolphin-yi-34b::opponent,4,systems,unigram,5
+dolphin-yi-34b::opponent,5,evidence,unigram,4
+dolphin-yi-34b::opponent,6,modern,unigram,4
+dolphin-yi-34b::opponent,7,claim,unigram,4
+dolphin-yi-34b::opponent,8,electronic voting machines,trigram,4
+dolphin-yi-34b::opponent,9,voting machines,bigram,4
+dolphin-yi-34b::opponent,10,security,unigram,4
+dolphin-yi-34b::opponent,11,manipulation,unigram,4
+dolphin-yi-34b::opponent,12,machines,unigram,4
+dolphin-yi-34b::opponent,13,opponent claim,bigram,3
+dolphin-yi-34b::opponent,14,opponent,unigram,3
+dolphin-yi-34b::opponent,15,modern systems,bigram,3
+dolphin-yi-34b::opponent,16,measures,unigram,3
+dolphin-yi-34b::opponent,17,claim electronic voting,trigram,3
+dolphin-yi-34b::opponent,18,security measures,bigram,3
+dolphin-yi-34b::opponent,19,past,unigram,3
+dolphin-yi-34b::opponent,20,supported,unigram,3
+dolphin-yi-34b::opponent,21,claim electronic,bigram,3
+dolphin-yi-34b::opponent,22,implemented modern,bigram,2
+dolphin-yi-34b::opponent,23,manipulation powerful elites,trigram,2
+dolphin-yi-34b::opponent,24,supported specific evidence,trigram,2
+dolphin-yi-34b::opponent,25,past modern,bigram,2
+dolphin-yi-34b::proponent,1,electronic,unigram,6
+dolphin-yi-34b::proponent,2,electronic voting,bigram,6
+dolphin-yi-34b::proponent,3,voting,unigram,6
+dolphin-yi-34b::proponent,4,electronic voting machines,trigram,4
+dolphin-yi-34b::proponent,5,powerful,unigram,4
+dolphin-yi-34b::proponent,6,powerful elites,bigram,4
+dolphin-yi-34b::proponent,7,machines,unigram,4
+dolphin-yi-34b::proponent,8,elites,unigram,4
+dolphin-yi-34b::proponent,9,voting machines,bigram,4
+dolphin-yi-34b::proponent,10,manipulation powerful,bigram,3
+dolphin-yi-34b::proponent,11,manipulation powerful elites,trigram,3
+dolphin-yi-34b::proponent,12,manipulation,unigram,3
+dolphin-yi-34b::proponent,13,anomalies,unigram,2
+dolphin-yi-34b::proponent,14,design,unigram,2
+dolphin-yi-34b::proponent,15,inherent,unigram,2
+dolphin-yi-34b::proponent,16,inherent design,bigram,2
+dolphin-yi-34b::proponent,17,lack transparency,bigram,2
+dolphin-yi-34b::proponent,18,lack,unigram,2
+dolphin-yi-34b::proponent,19,elites inherent design,trigram,2
+dolphin-yi-34b::proponent,20,integrity,unigram,2
+dolphin-yi-34b::proponent,21,powerful elites inherent,trigram,2
+dolphin-yi-34b::proponent,22,susceptible,unigram,2
+dolphin-yi-34b::proponent,23,susceptible manipulation powerful,trigram,2
+dolphin-yi-34b::proponent,24,susceptible manipulation,bigram,2
+dolphin-yi-34b::proponent,25,transparency,unigram,2

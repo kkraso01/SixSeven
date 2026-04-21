@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,30
+gemma3:27b::moderator,2,sa,unigram,27
+gemma3:27b::moderator,3,evidence,unigram,13
+gemma3:27b::moderator,4,research,unigram,10
+gemma3:27b::moderator,5,specific,unigram,9
+gemma3:27b::moderator,6,5g,unigram,8
+gemma3:27b::moderator,7,acknowledge,unigram,7
+gemma3:27b::moderator,8,safety,unigram,7
+gemma3:27b::moderator,9,independent,unigram,6
+gemma3:27b::moderator,10,biological,unigram,6
+gemma3:27b::moderator,11,proof,unigram,6
+gemma3:27b::moderator,12,agents,unigram,6
+gemma3:27b::moderator,13,effects,unigram,6
+gemma3:27b::moderator,14,harm,unigram,6
+gemma3:27b::moderator,15,agree,unigram,6
+gemma3:27b::moderator,16,shift,unigram,5
+gemma3:27b::moderator,17,questions,unigram,5
+gemma3:27b::moderator,18,suppression,unigram,5
+gemma3:27b::moderator,19,industry,unigram,5
+gemma3:27b::moderator,20,health,unigram,5
+gemma3:27b::moderator,21,agreements,unigram,4
+gemma3:27b::moderator,22,round recap,bigram,4
+gemma3:27b::moderator,23,recap agreements agents,trigram,4
+gemma3:27b::moderator,24,needed,unigram,4
+gemma3:27b::moderator,25,appeal,unigram,4
+gemma3:27b::opponent,1,5g,unigram,4
+gemma3:27b::opponent,2,health,unigram,3
+gemma3:27b::opponent,3,demonstrating,unigram,3
+gemma3:27b::opponent,4,evidence,unigram,3
+gemma3:27b::opponent,5,acknowledging,unigram,3
+gemma3:27b::opponent,6,requires demonstrating,bigram,2
+gemma3:27b::opponent,7,requires,unigram,2
+gemma3:27b::opponent,8,biological,unigram,2
+gemma3:27b::opponent,9,industry,unigram,2
+gemma3:27b::opponent,10,mechanistic,unigram,2
+gemma3:27b::opponent,11,problems,unigram,2
+gemma3:27b::opponent,12,health problems,bigram,2
+gemma3:27b::opponent,13,5g requires,bigram,2
+gemma3:27b::opponent,14,5g requires demonstrating,trigram,2
+gemma3:27b::opponent,15,tales,unigram,1
+gemma3:27b::opponent,16,systems solely focusing,trigram,1
+gemma3:27b::opponent,17,systems solely,bigram,1
+gemma3:27b::opponent,18,systems,unigram,1
+gemma3:27b::opponent,19,systemic issues doesn,trigram,1
+gemma3:27b::opponent,20,systemic issues,bigram,1
+gemma3:27b::opponent,21,systemic,unigram,1
+gemma3:27b::opponent,22,suppression evidence merely,trigram,1
+gemma3:27b::opponent,23,suppression evidence,bigram,1
+gemma3:27b::opponent,24,suppression,unigram,1
+gemma3:27b::opponent,25,sufficient evidence relies,trigram,1
+gemma3:27b::proponent,1,public,unigram,3
+gemma3:27b::proponent,2,5g,unigram,2
+gemma3:27b::proponent,3,technological,unigram,2
+gemma3:27b::proponent,4,5g despite,bigram,2
+gemma3:27b::proponent,5,scientific,unigram,2
+gemma3:27b::proponent,6,rapid,unigram,2
+gemma3:27b::proponent,7,prioritizing,unigram,2
+gemma3:27b::proponent,8,pattern,unigram,2
+gemma3:27b::proponent,9,genuine,unigram,2
+gemma3:27b::proponent,10,existing,unigram,2
+gemma3:27b::proponent,11,effects,unigram,2
+gemma3:27b::proponent,12,deployment,unigram,2
+gemma3:27b::proponent,13,deployment 5g,bigram,2
+gemma3:27b::proponent,14,deployment 5g despite,trigram,2
+gemma3:27b::proponent,15,despite,unigram,2
+gemma3:27b::proponent,16,willing,unigram,1
+gemma3:27b::proponent,17,widespread deployment 5g,trigram,1
+gemma3:27b::proponent,18,widespread deployment,bigram,1
+gemma3:27b::proponent,19,widespread,unigram,1
+gemma3:27b::proponent,20,voices delaying crucial,trigram,1
+gemma3:27b::proponent,21,voices delaying,bigram,1
+gemma3:27b::proponent,22,voices,unigram,1
+gemma3:27b::proponent,23,uncertainty reveals pattern,trigram,1
+gemma3:27b::proponent,24,uncertainty reveals,bigram,1
+gemma3:27b::proponent,25,uncertainty,unigram,1

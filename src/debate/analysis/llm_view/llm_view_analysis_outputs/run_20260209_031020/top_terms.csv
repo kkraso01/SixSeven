@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,vaccines,unigram,13
+dolphin-yi-34b::moderator,2,microchips,unigram,12
+dolphin-yi-34b::moderator,3,evidence,unigram,11
+dolphin-yi-34b::moderator,4,ca,unigram,9
+dolphin-yi-34b::moderator,5,sa,unigram,8
+dolphin-yi-34b::moderator,6,agents,unigram,8
+dolphin-yi-34b::moderator,7,19 vaccines,bigram,6
+dolphin-yi-34b::moderator,8,covid,unigram,6
+dolphin-yi-34b::moderator,9,microchips vaccines,bigram,6
+dolphin-yi-34b::moderator,10,covid 19,bigram,6
+dolphin-yi-34b::moderator,11,covid 19 vaccines,trigram,6
+dolphin-yi-34b::moderator,12,19,unigram,6
+dolphin-yi-34b::moderator,13,vaccine,unigram,5
+dolphin-yi-34b::moderator,14,claim,unigram,5
+dolphin-yi-34b::moderator,15,control,unigram,5
+dolphin-yi-34b::moderator,16,specific evidence,bigram,4
+dolphin-yi-34b::moderator,17,questions,unigram,4
+dolphin-yi-34b::moderator,18,specific,unigram,4
+dolphin-yi-34b::moderator,19,19 vaccines contain,trigram,4
+dolphin-yi-34b::moderator,20,contain microchips,bigram,4
+dolphin-yi-34b::moderator,21,contain,unigram,4
+dolphin-yi-34b::moderator,22,vaccines contain microchips,trigram,4
+dolphin-yi-34b::moderator,23,vaccines contain,bigram,4
+dolphin-yi-34b::moderator,24,round recap,bigram,3
+dolphin-yi-34b::moderator,25,scores,unigram,3
+dolphin-yi-34b::opponent,1,conspiracy theories,bigram,3
+dolphin-yi-34b::opponent,2,conspiracy theories scientific,trigram,3
+dolphin-yi-34b::opponent,3,conspiracy,unigram,3
+dolphin-yi-34b::opponent,4,theories scientific,bigram,3
+dolphin-yi-34b::opponent,5,unfounded,unigram,3
+dolphin-yi-34b::opponent,6,theories,unigram,3
+dolphin-yi-34b::opponent,7,unfounded conspiracy,bigram,3
+dolphin-yi-34b::opponent,8,evidence,unigram,3
+dolphin-yi-34b::opponent,9,scientific,unigram,3
+dolphin-yi-34b::opponent,10,unfounded conspiracy theories,trigram,3
+dolphin-yi-34b::opponent,11,claim based,bigram,2
+dolphin-yi-34b::opponent,12,control,unigram,2
+dolphin-yi-34b::opponent,13,claim,unigram,2
+dolphin-yi-34b::opponent,14,19 vaccines,bigram,2
+dolphin-yi-34b::opponent,15,19 vaccines contain,trigram,2
+dolphin-yi-34b::opponent,16,19,unigram,2
+dolphin-yi-34b::opponent,17,control claim based,trigram,2
+dolphin-yi-34b::opponent,18,covid,unigram,2
+dolphin-yi-34b::opponent,19,covid 19,bigram,2
+dolphin-yi-34b::opponent,20,covid 19 vaccines,trigram,2
+dolphin-yi-34b::opponent,21,designed,unigram,2
+dolphin-yi-34b::opponent,22,control claim,bigram,2
+dolphin-yi-34b::opponent,23,scientific evidence,bigram,2
+dolphin-yi-34b::opponent,24,population tracking control,trigram,2
+dolphin-yi-34b::opponent,25,designed population,bigram,2
+gemma3:27b::proponent,1,anomalies,unigram,2
+gemma3:27b::proponent,2,control,unigram,2
+gemma3:27b::proponent,3,insistence,unigram,2
+gemma3:27b::proponent,4,ignores,unigram,2
+gemma3:27b::proponent,5,narrative,unigram,2
+gemma3:27b::proponent,6,vaccine vials,bigram,2
+gemma3:27b::proponent,7,vials,unigram,2
+gemma3:27b::proponent,8,scientific,unigram,2
+gemma3:27b::proponent,9,vaccine,unigram,2
+gemma3:27b::proponent,10,authorities manufacturing,bigram,1
+gemma3:27b::proponent,11,authorities manufacturing errors,trigram,1
+gemma3:27b::proponent,12,available,unigram,1
+gemma3:27b::proponent,13,authorities,unigram,1
+gemma3:27b::proponent,14,anomalies reports,bigram,1
+gemma3:27b::proponent,15,aggressive censorship,bigram,1
+gemma3:27b::proponent,16,aggressive,unigram,1
+gemma3:27b::proponent,17,censorship dissenting,bigram,1
+gemma3:27b::proponent,18,censorship dissenting voices,trigram,1
+gemma3:27b::proponent,19,consistent deliberate,bigram,1
+gemma3:27b::proponent,20,consistent,unigram,1
+gemma3:27b::proponent,21,consistent deliberate obfuscation,trigram,1
+gemma3:27b::proponent,22,control microchips,bigram,1
+gemma3:27b::proponent,23,control microchips logical,trigram,1
+gemma3:27b::proponent,24,control narrative,bigram,1
+gemma3:27b::proponent,25,control narrative simply,trigram,1

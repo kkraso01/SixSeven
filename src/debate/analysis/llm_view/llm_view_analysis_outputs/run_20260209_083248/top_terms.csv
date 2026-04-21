@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,earth,unigram,19
+dolphin-yi-34b::moderator,2,sa,unigram,13
+dolphin-yi-34b::moderator,3,evidence,unigram,12
+dolphin-yi-34b::moderator,4,ca,unigram,11
+dolphin-yi-34b::moderator,5,space,unigram,10
+dolphin-yi-34b::moderator,6,flat,unigram,9
+dolphin-yi-34b::moderator,7,questions,unigram,7
+dolphin-yi-34b::moderator,8,model,unigram,7
+dolphin-yi-34b::moderator,9,agencies,unigram,7
+dolphin-yi-34b::moderator,10,earth model,bigram,7
+dolphin-yi-34b::moderator,11,flat earth,bigram,6
+dolphin-yi-34b::moderator,12,agents,unigram,6
+dolphin-yi-34b::moderator,13,space agencies,bigram,6
+dolphin-yi-34b::moderator,14,agreements,unigram,5
+dolphin-yi-34b::moderator,15,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,16,round,unigram,5
+dolphin-yi-34b::moderator,17,recap agreements,bigram,5
+dolphin-yi-34b::moderator,18,moderator round,bigram,5
+dolphin-yi-34b::moderator,19,phenomena,unigram,5
+dolphin-yi-34b::moderator,20,like,unigram,5
+dolphin-yi-34b::moderator,21,bridge,unigram,5
+dolphin-yi-34b::moderator,22,bridge questions,bigram,5
+dolphin-yi-34b::moderator,23,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,24,flat earth model,trigram,5
+dolphin-yi-34b::moderator,25,moderator,unigram,5
+dolphin-yi-34b::proponent,1,earth,unigram,5
+dolphin-yi-34b::proponent,2,space,unigram,4
+dolphin-yi-34b::proponent,3,space agencies,bigram,3
+dolphin-yi-34b::proponent,4,agencies,unigram,3
+dolphin-yi-34b::proponent,5,flat,unigram,2
+dolphin-yi-34b::proponent,6,lack,unigram,2
+dolphin-yi-34b::proponent,7,deception,unigram,2
+dolphin-yi-34b::proponent,8,agencies worldwide,bigram,2
+dolphin-yi-34b::proponent,9,lack transparency,bigram,2
+dolphin-yi-34b::proponent,10,space agencies worldwide,trigram,2
+dolphin-yi-34b::proponent,11,shape,unigram,2
+dolphin-yi-34b::proponent,12,transparency,unigram,2
+dolphin-yi-34b::proponent,13,worldwide,unigram,2
+dolphin-yi-34b::proponent,14,affiliations,unigram,1
+dolphin-yi-34b::proponent,15,agencies continue,bigram,1
+dolphin-yi-34b::proponent,16,agencies continue produce,trigram,1
+dolphin-yi-34b::proponent,17,consistent,unigram,1
+dolphin-yi-34b::proponent,18,claims lack transparency,trigram,1
+dolphin-yi-34b::proponent,19,continue,unigram,1
+dolphin-yi-34b::proponent,20,consistent observations,bigram,1
+dolphin-yi-34b::proponent,21,continue produce,bigram,1
+dolphin-yi-34b::proponent,22,continue produce hollow,trigram,1
+dolphin-yi-34b::proponent,23,curved,unigram,1
+dolphin-yi-34b::proponent,24,consistent observations historical,trigram,1
+dolphin-yi-34b::proponent,25,curved sphere,bigram,1
+gemma3:27b::opponent,1,evidence,unigram,6
+gemma3:27b::opponent,2,earth,unigram,6
+gemma3:27b::opponent,3,claim,unigram,3
+gemma3:27b::opponent,4,space,unigram,3
+gemma3:27b::opponent,5,supporting,unigram,3
+gemma3:27b::opponent,6,conspiracy,unigram,3
+gemma3:27b::opponent,7,spherical,unigram,3
+gemma3:27b::opponent,8,spherical earth,bigram,3
+gemma3:27b::opponent,9,lack,unigram,3
+gemma3:27b::opponent,10,flat,unigram,3
+gemma3:27b::opponent,11,global,unigram,3
+gemma3:27b::opponent,12,global conspiracy,bigram,3
+gemma3:27b::opponent,13,space agencies,bigram,2
+gemma3:27b::opponent,14,supporting spherical earth,trigram,2
+gemma3:27b::opponent,15,systemic,unigram,2
+gemma3:27b::opponent,16,supporting spherical,bigram,2
+gemma3:27b::opponent,17,overwhelming evidence supporting,trigram,2
+gemma3:27b::opponent,18,overwhelming evidence,bigram,2
+gemma3:27b::opponent,19,overwhelming,unigram,2
+gemma3:27b::opponent,20,support flat earth,trigram,2
+gemma3:27b::opponent,21,support,unigram,2
+gemma3:27b::opponent,22,support flat,bigram,2
+gemma3:27b::opponent,23,transparency,unigram,2
+gemma3:27b::opponent,24,perceived lack,bigram,2
+gemma3:27b::opponent,25,lack transparency,bigram,2

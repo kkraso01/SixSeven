@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,algorithms,unigram,3
+dolphin-yi-34b::proponent,2,beliefs,unigram,3
+dolphin-yi-34b::proponent,3,media,unigram,3
+dolphin-yi-34b::proponent,4,media platforms,bigram,3
+dolphin-yi-34b::proponent,5,profit,unigram,3
+dolphin-yi-34b::proponent,6,political,unigram,3
+dolphin-yi-34b::proponent,7,political beliefs,bigram,3
+dolphin-yi-34b::proponent,8,platforms,unigram,3
+dolphin-yi-34b::proponent,9,social,unigram,3
+dolphin-yi-34b::proponent,10,social media,bigram,3
+dolphin-yi-34b::proponent,11,social media platforms,trigram,3
+dolphin-yi-34b::proponent,12,media platforms algorithms,trigram,2
+dolphin-yi-34b::proponent,13,divisive content shaping,trigram,2
+dolphin-yi-34b::proponent,14,content shaping political,trigram,2
+dolphin-yi-34b::proponent,15,divisive content,bigram,2
+dolphin-yi-34b::proponent,16,content shaping,bigram,2
+dolphin-yi-34b::proponent,17,platforms algorithms,bigram,2
+dolphin-yi-34b::proponent,18,engagement,unigram,2
+dolphin-yi-34b::proponent,19,content,unigram,2
+dolphin-yi-34b::proponent,20,divisive,unigram,2
+dolphin-yi-34b::proponent,21,shaping,unigram,2
+dolphin-yi-34b::proponent,22,shaping political beliefs,trigram,2
+dolphin-yi-34b::proponent,23,user,unigram,2
+dolphin-yi-34b::proponent,24,shaping political,bigram,2
+dolphin-yi-34b::proponent,25,amplifying divisive,bigram,1
+gemma3:27b::moderator,1,ca,unigram,19
+gemma3:27b::moderator,2,sa,unigram,16
+gemma3:27b::moderator,3,manipulation,unigram,14
+gemma3:27b::moderator,4,engagement,unigram,11
+gemma3:27b::moderator,5,evidence,unigram,10
+gemma3:27b::moderator,6,deliberate,unigram,9
+gemma3:27b::moderator,7,algorithms,unigram,7
+gemma3:27b::moderator,8,social media,bigram,6
+gemma3:27b::moderator,9,argues,unigram,6
+gemma3:27b::moderator,10,political,unigram,6
+gemma3:27b::moderator,11,media,unigram,6
+gemma3:27b::moderator,12,social,unigram,6
+gemma3:27b::moderator,13,deliberate manipulation,bigram,6
+gemma3:27b::moderator,14,content,unigram,6
+gemma3:27b::moderator,15,profit,unigram,5
+gemma3:27b::moderator,16,manipulation sa,bigram,5
+gemma3:27b::moderator,17,beliefs,unigram,4
+gemma3:27b::moderator,18,evidence manipulation,bigram,4
+gemma3:27b::moderator,19,questions,unigram,4
+gemma3:27b::moderator,20,platforms,unigram,4
+gemma3:27b::moderator,21,evidence manipulation sa,trigram,4
+gemma3:27b::moderator,22,proof,unigram,4
+gemma3:27b::moderator,23,shift,unigram,4
+gemma3:27b::moderator,24,specific,unigram,4
+gemma3:27b::moderator,25,round recap agreements,trigram,3
+gemma3:27b::opponent,1,engagement,unigram,4
+gemma3:27b::opponent,2,political,unigram,4
+gemma3:27b::opponent,3,manipulation,unigram,3
+gemma3:27b::opponent,4,deliberate,unigram,3
+gemma3:27b::opponent,5,requires,unigram,3
+gemma3:27b::opponent,6,beliefs requires demonstrating,trigram,2
+gemma3:27b::opponent,7,beliefs requires,bigram,2
+gemma3:27b::opponent,8,attributing deliberate,bigram,2
+gemma3:27b::opponent,9,deliberate manipulation,bigram,2
+gemma3:27b::opponent,10,designed,unigram,2
+gemma3:27b::opponent,11,demonstrating,unigram,2
+gemma3:27b::opponent,12,attributing,unigram,2
+gemma3:27b::opponent,13,manipulation political,bigram,2
+gemma3:27b::opponent,14,media,unigram,2
+gemma3:27b::opponent,15,beliefs,unigram,2
+gemma3:27b::opponent,16,algorithms,unigram,2
+gemma3:27b::opponent,17,social media,bigram,2
+gemma3:27b::opponent,18,social,unigram,2
+gemma3:27b::opponent,19,requires demonstrating,bigram,2
+gemma3:27b::opponent,20,profit,unigram,2
+gemma3:27b::opponent,21,political beliefs,bigram,2
+gemma3:27b::opponent,22,political beliefs requires,trigram,2
+gemma3:27b::opponent,23,platforms,unigram,2
+gemma3:27b::opponent,24,attributing deliberate manipulation,trigram,2
+gemma3:27b::opponent,25,automatically equate,bigram,1

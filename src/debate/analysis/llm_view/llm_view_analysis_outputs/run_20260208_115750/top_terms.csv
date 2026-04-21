@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,32
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,proof,unigram,11
+gemma3:27b::moderator,4,fed,unigram,10
+gemma3:27b::moderator,5,evidence,unigram,10
+gemma3:27b::moderator,6,acknowledge,unigram,10
+gemma3:27b::moderator,7,structure,unigram,9
+gemma3:27b::moderator,8,qe,unigram,8
+gemma3:27b::moderator,9,specific,unigram,7
+gemma3:27b::moderator,10,argues,unigram,7
+gemma3:27b::moderator,11,outcomes,unigram,6
+gemma3:27b::moderator,12,ca argues,bigram,6
+gemma3:27b::moderator,13,burden,unigram,6
+gemma3:27b::moderator,14,intent,unigram,6
+gemma3:27b::moderator,15,burden proof,bigram,6
+gemma3:27b::moderator,16,questions,unigram,6
+gemma3:27b::moderator,17,economic,unigram,6
+gemma3:27b::moderator,18,complexity,unigram,6
+gemma3:27b::moderator,19,agreements agents,bigram,5
+gemma3:27b::moderator,20,recap agreements,bigram,5
+gemma3:27b::moderator,21,recap,unigram,5
+gemma3:27b::moderator,22,questions ca,bigram,5
+gemma3:27b::moderator,23,recap agreements agents,trigram,5
+gemma3:27b::moderator,24,reserve,unigram,5
+gemma3:27b::moderator,25,round recap agreements,trigram,5
+gemma3:27b::opponent,1,attributing,unigram,4
+gemma3:27b::opponent,2,requires,unigram,4
+gemma3:27b::opponent,3,intentional,unigram,4
+gemma3:27b::opponent,4,reserve,unigram,3
+gemma3:27b::opponent,5,federal,unigram,3
+gemma3:27b::opponent,6,federal reserve,bigram,3
+gemma3:27b::opponent,7,structure,unigram,3
+gemma3:27b::opponent,8,demonstrably,unigram,3
+gemma3:27b::opponent,9,requires demonstrating,bigram,2
+gemma3:27b::opponent,10,solely,unigram,2
+gemma3:27b::opponent,11,attributing solely,bigram,2
+gemma3:27b::opponent,12,public,unigram,2
+gemma3:27b::opponent,13,intentional manipulation,bigram,2
+gemma3:27b::opponent,14,manipulation,unigram,2
+gemma3:27b::opponent,15,forecasting,unigram,2
+gemma3:27b::opponent,16,bailouts,unigram,2
+gemma3:27b::opponent,17,feasible,unigram,2
+gemma3:27b::opponent,18,benefit,unigram,2
+gemma3:27b::opponent,19,economic,unigram,2
+gemma3:27b::opponent,20,evidence,unigram,2
+gemma3:27b::opponent,21,demonstrating,unigram,2
+gemma3:27b::opponent,22,conflicts,unigram,2
+gemma3:27b::opponent,23,acknowledging,unigram,2
+gemma3:27b::opponent,24,alternative,unigram,2
+gemma3:27b::opponent,25,systemic,unigram,2
+gemma3:27b::proponent,1,reserve,unigram,4
+gemma3:27b::proponent,2,federal,unigram,4
+gemma3:27b::proponent,3,federal reserve,bigram,4
+gemma3:27b::proponent,4,isn,unigram,3
+gemma3:27b::proponent,5,economic,unigram,3
+gemma3:27b::proponent,6,citizens,unigram,3
+gemma3:27b::proponent,7,systemic,unigram,2
+gemma3:27b::proponent,8,banks,unigram,2
+gemma3:27b::proponent,9,pattern,unigram,2
+gemma3:27b::proponent,10,ordinary citizens,bigram,2
+gemma3:27b::proponent,11,ordinary,unigram,2
+gemma3:27b::proponent,12,private,unigram,2
+gemma3:27b::proponent,13,public,unigram,2
+gemma3:27b::proponent,14,elite,unigram,2
+gemma3:27b::proponent,15,consistent,unigram,2
+gemma3:27b::proponent,16,wellbeing average,bigram,1
+gemma3:27b::proponent,17,wellbeing,unigram,1
+gemma3:27b::proponent,18,wealthy elite eroding,trigram,1
+gemma3:27b::proponent,19,wealthy elite,bigram,1
+gemma3:27b::proponent,20,wealthy,unigram,1
+gemma3:27b::proponent,21,wages stagnate isn,trigram,1
+gemma3:27b::proponent,22,wages stagnate,bigram,1
+gemma3:27b::proponent,23,wages,unigram,1
+gemma3:27b::proponent,24,vast resources modeling,trigram,1
+gemma3:27b::proponent,25,vast resources,bigram,1

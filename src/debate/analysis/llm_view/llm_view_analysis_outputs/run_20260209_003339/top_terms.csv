@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,vaccines,unigram,5
+dolphin-yi-34b::proponent,2,19,unigram,4
+dolphin-yi-34b::proponent,3,covid,unigram,4
+dolphin-yi-34b::proponent,4,19 vaccines,bigram,4
+dolphin-yi-34b::proponent,5,covid 19,bigram,4
+dolphin-yi-34b::proponent,6,covid 19 vaccines,trigram,4
+dolphin-yi-34b::proponent,7,giants,unigram,3
+dolphin-yi-34b::proponent,8,agenda,unigram,3
+dolphin-yi-34b::proponent,9,tech,unigram,3
+dolphin-yi-34b::proponent,10,development,unigram,3
+dolphin-yi-34b::proponent,11,collaborate,unigram,2
+dolphin-yi-34b::proponent,12,collaborate closely,bigram,2
+dolphin-yi-34b::proponent,13,control,unigram,2
+dolphin-yi-34b::proponent,14,accelerated development,bigram,2
+dolphin-yi-34b::proponent,15,closely,unigram,2
+dolphin-yi-34b::proponent,16,agenda seemingly unrelated,trigram,2
+dolphin-yi-34b::proponent,17,involvement,unigram,2
+dolphin-yi-34b::proponent,18,giants involvement,bigram,2
+dolphin-yi-34b::proponent,19,giants involvement distribution,trigram,2
+dolphin-yi-34b::proponent,20,hint hidden,bigram,2
+dolphin-yi-34b::proponent,21,hint,unigram,2
+dolphin-yi-34b::proponent,22,hidden agenda seemingly,trigram,2
+dolphin-yi-34b::proponent,23,hidden agenda,bigram,2
+dolphin-yi-34b::proponent,24,hidden,unigram,2
+dolphin-yi-34b::proponent,25,distribution hint,bigram,2
+gemma3:27b::moderator,1,ca,unigram,27
+gemma3:27b::moderator,2,sa,unigram,18
+gemma3:27b::moderator,3,evidence,unigram,13
+gemma3:27b::moderator,4,vaccine,unigram,12
+gemma3:27b::moderator,5,tech,unigram,12
+gemma3:27b::moderator,6,agents,unigram,9
+gemma3:27b::moderator,7,development,unigram,8
+gemma3:27b::moderator,8,passports,unigram,6
+gemma3:27b::moderator,9,control,unigram,6
+gemma3:27b::moderator,10,data,unigram,6
+gemma3:27b::moderator,11,tracking,unigram,6
+gemma3:27b::moderator,12,acknowledge,unigram,5
+gemma3:27b::moderator,13,attributes,unigram,5
+gemma3:27b::moderator,14,suspicious,unigram,5
+gemma3:27b::moderator,15,sa attributes,bigram,5
+gemma3:27b::moderator,16,vaccine development,bigram,5
+gemma3:27b::moderator,17,collaboration,unigram,5
+gemma3:27b::moderator,18,companies,unigram,5
+gemma3:27b::moderator,19,vaccine passports,bigram,5
+gemma3:27b::moderator,20,vaccines,unigram,5
+gemma3:27b::moderator,21,motives,unigram,4
+gemma3:27b::moderator,22,bridge questions ca,trigram,4
+gemma3:27b::moderator,23,moves,unigram,4
+gemma3:27b::moderator,24,potential,unigram,4
+gemma3:27b::moderator,25,scores civility,bigram,4
+gemma3:27b::opponent,1,tracking,unigram,4
+gemma3:27b::opponent,2,19,unigram,3
+gemma3:27b::opponent,3,covid,unigram,3
+gemma3:27b::opponent,4,covid 19,bigram,3
+gemma3:27b::opponent,5,health,unigram,3
+gemma3:27b::opponent,6,microchips,unigram,3
+gemma3:27b::opponent,7,evidence,unigram,3
+gemma3:27b::opponent,8,contain,unigram,3
+gemma3:27b::opponent,9,vaccines,unigram,3
+gemma3:27b::opponent,10,vaccines contain,bigram,3
+gemma3:27b::opponent,11,companies,unigram,2
+gemma3:27b::opponent,12,control,unigram,2
+gemma3:27b::opponent,13,collaboration,unigram,2
+gemma3:27b::opponent,14,contain microchips,bigram,2
+gemma3:27b::opponent,15,covid 19 vaccines,trigram,2
+gemma3:27b::opponent,16,best explained,bigram,2
+gemma3:27b::opponent,17,evidence relies,bigram,2
+gemma3:27b::opponent,18,misinterpretations,unigram,2
+gemma3:27b::opponent,19,initiatives,unigram,2
+gemma3:27b::opponent,20,health initiatives,bigram,2
+gemma3:27b::opponent,21,explained,unigram,2
+gemma3:27b::opponent,22,pharmaceutical,unigram,2
+gemma3:27b::opponent,23,motion,unigram,2
+gemma3:27b::opponent,24,best,unigram,2
+gemma3:27b::opponent,25,population,unigram,2

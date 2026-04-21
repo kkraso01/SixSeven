@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,5g,unigram,12
+dolphin-yi-34b::moderator,2,sa,unigram,9
+dolphin-yi-34b::moderator,3,health,unigram,9
+dolphin-yi-34b::moderator,4,ca,unigram,9
+dolphin-yi-34b::moderator,5,evidence,unigram,6
+dolphin-yi-34b::moderator,6,questions,unigram,5
+dolphin-yi-34b::moderator,7,effects,unigram,5
+dolphin-yi-34b::moderator,8,agents,unigram,4
+dolphin-yi-34b::moderator,9,reported,unigram,4
+dolphin-yi-34b::moderator,10,reported health,bigram,4
+dolphin-yi-34b::moderator,11,research,unigram,4
+dolphin-yi-34b::moderator,12,health anomalies,bigram,4
+dolphin-yi-34b::moderator,13,anomalies,unigram,4
+dolphin-yi-34b::moderator,14,reported health anomalies,trigram,4
+dolphin-yi-34b::moderator,15,deployment,unigram,4
+dolphin-yi-34b::moderator,16,potential,unigram,4
+dolphin-yi-34b::moderator,17,round recap agreements,trigram,3
+dolphin-yi-34b::moderator,18,agents acknowledge,bigram,3
+dolphin-yi-34b::moderator,19,recap agreements,bigram,3
+dolphin-yi-34b::moderator,20,recap,unigram,3
+dolphin-yi-34b::moderator,21,recap agreements agents,trigram,3
+dolphin-yi-34b::moderator,22,moderator round,bigram,3
+dolphin-yi-34b::moderator,23,round,unigram,3
+dolphin-yi-34b::moderator,24,round recap,bigram,3
+dolphin-yi-34b::moderator,25,moderator round recap,trigram,3
+gemma3:27b::opponent,1,5g,unigram,4
+gemma3:27b::opponent,2,attributing,unigram,2
+gemma3:27b::opponent,3,health,unigram,2
+gemma3:27b::opponent,4,evidence,unigram,2
+gemma3:27b::opponent,5,monitoring,unigram,2
+gemma3:27b::opponent,6,5g deployment requires,trigram,1
+gemma3:27b::opponent,7,5g alongside need,trigram,1
+gemma3:27b::opponent,8,5g alongside,bigram,1
+gemma3:27b::opponent,9,5g understandable attributing,trigram,1
+gemma3:27b::opponent,10,acknowledges,unigram,1
+gemma3:27b::opponent,11,acknowledges benefits,bigram,1
+gemma3:27b::opponent,12,acknowledges benefits 5g,trigram,1
+gemma3:27b::opponent,13,acknowledging,unigram,1
+gemma3:27b::opponent,14,5g networks,bigram,1
+gemma3:27b::opponent,15,5g networks cause,trigram,1
+gemma3:27b::opponent,16,5g deployment,bigram,1
+gemma3:27b::opponent,17,alongside,unigram,1
+gemma3:27b::opponent,18,alongside need,bigram,1
+gemma3:27b::opponent,19,alternative,unigram,1
+gemma3:27b::opponent,20,alongside need continued,trigram,1
+gemma3:27b::opponent,21,alternative explanations invoking,trigram,1
+gemma3:27b::opponent,22,anomalies,unigram,1
+gemma3:27b::opponent,23,anomalies crucial,bigram,1
+gemma3:27b::opponent,24,alternative explanations,bigram,1
+gemma3:27b::opponent,25,anomalies crucial attributing,trigram,1
+gemma3:27b::proponent,1,5g,unigram,3
+gemma3:27b::proponent,2,deployment,unigram,3
+gemma3:27b::proponent,3,health,unigram,3
+gemma3:27b::proponent,4,deployment 5g,bigram,2
+gemma3:27b::proponent,5,genuine,unigram,2
+gemma3:27b::proponent,6,pattern,unigram,2
+gemma3:27b::proponent,7,public,unigram,2
+gemma3:27b::proponent,8,potential,unigram,2
+gemma3:27b::proponent,9,rapid,unigram,2
+gemma3:27b::proponent,10,accountability potential,bigram,1
+gemma3:27b::proponent,11,advancement,unigram,1
+gemma3:27b::proponent,12,advancement genuine,bigram,1
+gemma3:27b::proponent,13,advancement genuine public,trigram,1
+gemma3:27b::proponent,14,accountability potential long,trigram,1
+gemma3:27b::proponent,15,5g despite growing,trigram,1
+gemma3:27b::proponent,16,5g deployment,bigram,1
+gemma3:27b::proponent,17,avoid,unigram,1
+gemma3:27b::proponent,18,avoid accountability,bigram,1
+gemma3:27b::proponent,19,avoid accountability potential,trigram,1
+gemma3:27b::proponent,20,avoids,unigram,1
+gemma3:27b::proponent,21,avoids investigating,bigram,1
+gemma3:27b::proponent,22,avoids investigating potential,trigram,1
+gemma3:27b::proponent,23,biological,unigram,1
+gemma3:27b::proponent,24,biological mechanisms,bigram,1
+gemma3:27b::proponent,25,caution,unigram,1

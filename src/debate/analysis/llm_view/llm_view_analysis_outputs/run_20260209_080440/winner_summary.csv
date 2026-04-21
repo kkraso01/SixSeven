@@ -1,0 +1,4 @@
+model_name,debate_role,winner_role,debate_count,total_debates,winner_rate
+dolphin-yi-34b,moderator,opponent,1,1,1.0
+dolphin-yi-34b,proponent,opponent,1,1,1.0
+gemma3:27b,opponent,opponent,1,1,1.0

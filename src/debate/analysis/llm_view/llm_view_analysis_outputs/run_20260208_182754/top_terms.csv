@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,15
+dolphin-yi-34b::moderator,2,sa,unigram,13
+dolphin-yi-34b::moderator,3,pharmaceutical,unigram,13
+dolphin-yi-34b::moderator,4,evidence,unigram,11
+dolphin-yi-34b::moderator,5,research,unigram,9
+dolphin-yi-34b::moderator,6,funding,unigram,9
+dolphin-yi-34b::moderator,7,pharmaceutical industry,bigram,6
+dolphin-yi-34b::moderator,8,therapies,unigram,6
+dolphin-yi-34b::moderator,9,effective,unigram,6
+dolphin-yi-34b::moderator,10,cures,unigram,6
+dolphin-yi-34b::moderator,11,industry,unigram,6
+dolphin-yi-34b::moderator,12,round,unigram,5
+dolphin-yi-34b::moderator,13,support,unigram,5
+dolphin-yi-34b::moderator,14,round recap,bigram,4
+dolphin-yi-34b::moderator,15,scores,unigram,4
+dolphin-yi-34b::moderator,16,scores civility epistemic,trigram,4
+dolphin-yi-34b::moderator,17,questions,unigram,4
+dolphin-yi-34b::moderator,18,bridge,unigram,4
+dolphin-yi-34b::moderator,19,bridge questions,bigram,4
+dolphin-yi-34b::moderator,20,moderator,unigram,4
+dolphin-yi-34b::moderator,21,epistemic,unigram,4
+dolphin-yi-34b::moderator,22,epistemic bridge,bigram,4
+dolphin-yi-34b::moderator,23,epistemic bridge questions,trigram,4
+dolphin-yi-34b::moderator,24,moderator round,bigram,4
+dolphin-yi-34b::moderator,25,pharmaceutical companies,bigram,4
+gemma3:27b::opponent,1,suppression,unigram,4
+gemma3:27b::opponent,2,pharmaceutical,unigram,4
+gemma3:27b::opponent,3,cures,unigram,4
+gemma3:27b::opponent,4,acknowledging potential,bigram,3
+gemma3:27b::opponent,5,profit,unigram,3
+gemma3:27b::opponent,6,effective,unigram,3
+gemma3:27b::opponent,7,potential,unigram,3
+gemma3:27b::opponent,8,acknowledging,unigram,3
+gemma3:27b::opponent,9,decisions,unigram,3
+gemma3:27b::opponent,10,deliberate,unigram,3
+gemma3:27b::opponent,11,evidence,unigram,3
+gemma3:27b::opponent,12,research,unigram,3
+gemma3:27b::opponent,13,requires,unigram,2
+gemma3:27b::opponent,14,suppression cures,bigram,2
+gemma3:27b::opponent,15,attributing,unigram,2
+gemma3:27b::opponent,16,obstruction,unigram,2
+gemma3:27b::opponent,17,influence,unigram,2
+gemma3:27b::opponent,18,lacks,unigram,2
+gemma3:27b::opponent,19,pharmaceutical companies,bigram,2
+gemma3:27b::opponent,20,obstruction effective,bigram,2
+gemma3:27b::opponent,21,companies,unigram,2
+gemma3:27b::opponent,22,deliberate obstruction,bigram,2
+gemma3:27b::opponent,23,deliberate obstruction effective,trigram,2
+gemma3:27b::opponent,24,effective cures,bigram,2
+gemma3:27b::opponent,25,demonstrating,unigram,2
+gemma3:27b::proponent,1,actively,unigram,2
+gemma3:27b::proponent,2,suppression,unigram,2
+gemma3:27b::proponent,3,sa,unigram,2
+gemma3:27b::proponent,4,resources,unigram,2
+gemma3:27b::proponent,5,pattern,unigram,2
+gemma3:27b::proponent,6,mechanisms,unigram,2
+gemma3:27b::proponent,7,insistence,unigram,2
+gemma3:27b::proponent,8,genuinely,unigram,2
+gemma3:27b::proponent,9,evidence,unigram,2
+gemma3:27b::proponent,10,approaches,unigram,2
+gemma3:27b::proponent,11,therapies,unigram,2
+gemma3:27b::proponent,12,treatments,unigram,2
+gemma3:27b::proponent,13,unconventional approaches starved,trigram,1
+gemma3:27b::proponent,14,unconventional approaches,bigram,1
+gemma3:27b::proponent,15,unconventional,unigram,1
+gemma3:27b::proponent,16,treatments promoting expensive,trigram,1
+gemma3:27b::proponent,17,treatments promoting,bigram,1
+gemma3:27b::proponent,18,therapies remain underfunded,trigram,1
+gemma3:27b::proponent,19,therapies remain,bigram,1
+gemma3:27b::proponent,20,therapies pattern evident,trigram,1
+gemma3:27b::proponent,21,therapies pattern,bigram,1
+gemma3:27b::proponent,22,term therapies pattern,trigram,1
+gemma3:27b::proponent,23,term therapies,bigram,1
+gemma3:27b::proponent,24,term,unigram,1
+gemma3:27b::proponent,25,suppression sets impossibly,trigram,1

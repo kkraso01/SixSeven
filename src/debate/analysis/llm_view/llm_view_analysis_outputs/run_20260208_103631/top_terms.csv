@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,38
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,15
+gemma3:27b::moderator,4,studies,unigram,10
+gemma3:27b::moderator,5,agents,unigram,10
+gemma3:27b::moderator,6,fluoridation,unigram,10
+gemma3:27b::moderator,7,potential,unigram,10
+gemma3:27b::moderator,8,research,unigram,9
+gemma3:27b::moderator,9,acknowledge,unigram,9
+gemma3:27b::moderator,10,questions,unigram,7
+gemma3:27b::moderator,11,pattern,unigram,7
+gemma3:27b::moderator,12,concerns,unigram,7
+gemma3:27b::moderator,13,health,unigram,7
+gemma3:27b::moderator,14,appeal,unigram,6
+gemma3:27b::moderator,15,funding,unigram,6
+gemma3:27b::moderator,16,scientific,unigram,6
+gemma3:27b::moderator,17,methodological,unigram,6
+gemma3:27b::moderator,18,recap agreements agents,trigram,5
+gemma3:27b::moderator,19,moderator round recap,trigram,5
+gemma3:27b::moderator,20,agree,unigram,5
+gemma3:27b::moderator,21,argues,unigram,5
+gemma3:27b::moderator,22,moves,unigram,5
+gemma3:27b::moderator,23,moves appeal,bigram,5
+gemma3:27b::moderator,24,moderator round,bigram,5
+gemma3:27b::moderator,25,agreements agents,bigram,5
+gemma3:27b::opponent,1,acknowledging,unigram,4
+gemma3:27b::opponent,2,deliberate,unigram,4
+gemma3:27b::opponent,3,research,unigram,3
+gemma3:27b::opponent,4,scientific,unigram,3
+gemma3:27b::opponent,5,potential,unigram,3
+gemma3:27b::opponent,6,program,unigram,3
+gemma3:27b::opponent,7,evidence,unigram,3
+gemma3:27b::opponent,8,requires,unigram,3
+gemma3:27b::opponent,9,reduce,unigram,2
+gemma3:27b::opponent,10,research funding,bigram,2
+gemma3:27b::opponent,11,reduce cognitive function,trigram,2
+gemma3:27b::opponent,12,reduce cognitive,bigram,2
+gemma3:27b::opponent,13,program reduce,bigram,2
+gemma3:27b::opponent,14,program reduce cognitive,trigram,2
+gemma3:27b::opponent,15,studies,unigram,2
+gemma3:27b::opponent,16,attributing,unigram,2
+gemma3:27b::opponent,17,institutional,unigram,2
+gemma3:27b::opponent,18,lacks,unigram,2
+gemma3:27b::opponent,19,historical,unigram,2
+gemma3:27b::opponent,20,function,unigram,2
+gemma3:27b::opponent,21,claim,unigram,2
+gemma3:27b::opponent,22,cognitive,unigram,2
+gemma3:27b::opponent,23,cognitive function,bigram,2
+gemma3:27b::opponent,24,funding,unigram,2
+gemma3:27b::opponent,25,fluoridation,unigram,2
+gemma3:27b::proponent,1,agent,unigram,3
+gemma3:27b::proponent,2,scientific,unigram,3
+gemma3:27b::proponent,3,scientific agent,bigram,3
+gemma3:27b::proponent,4,pattern,unigram,3
+gemma3:27b::proponent,5,methodological,unigram,3
+gemma3:27b::proponent,6,studies,unigram,2
+gemma3:27b::proponent,7,neurological,unigram,2
+gemma3:27b::proponent,8,research,unigram,2
+gemma3:27b::proponent,9,maintaining,unigram,2
+gemma3:27b::proponent,10,isn,unigram,2
+gemma3:27b::proponent,11,health,unigram,2
+gemma3:27b::proponent,12,fluoridation,unigram,2
+gemma3:27b::proponent,13,dismissing,unigram,2
+gemma3:27b::proponent,14,tactic,unigram,2
+gemma3:27b::proponent,15,water fluoridation isn,trigram,1
+gemma3:27b::proponent,16,water fluoridation,bigram,1
+gemma3:27b::proponent,17,water,unigram,1
+gemma3:27b::proponent,18,voices maintaining status,trigram,1
+gemma3:27b::proponent,19,voices maintaining,bigram,1
+gemma3:27b::proponent,20,voices,unigram,1
+gemma3:27b::proponent,21,vested maintaining docile,trigram,1
+gemma3:27b::proponent,22,vested maintaining,bigram,1
+gemma3:27b::proponent,23,vested,unigram,1
+gemma3:27b::proponent,24,tactic institutional deflection,trigram,1
+gemma3:27b::proponent,25,tactic institutional,bigram,1

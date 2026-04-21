@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,manipulation,unigram,6
+dolphin-yi-34b::opponent,2,evidence,unigram,5
+dolphin-yi-34b::opponent,3,anomalies,unigram,4
+dolphin-yi-34b::opponent,4,argument,unigram,4
+dolphin-yi-34b::opponent,5,election,unigram,4
+dolphin-yi-34b::opponent,6,opponent,unigram,4
+dolphin-yi-34b::opponent,7,electronic voting,bigram,4
+dolphin-yi-34b::opponent,8,electronic,unigram,4
+dolphin-yi-34b::opponent,9,voting,unigram,4
+dolphin-yi-34b::opponent,10,systems,unigram,4
+dolphin-yi-34b::opponent,11,relies,unigram,4
+dolphin-yi-34b::opponent,12,electronic voting systems,trigram,3
+dolphin-yi-34b::opponent,13,relies speculation,bigram,3
+dolphin-yi-34b::opponent,14,claim,unigram,3
+dolphin-yi-34b::opponent,15,voting systems,bigram,3
+dolphin-yi-34b::opponent,16,speculation,unigram,3
+dolphin-yi-34b::opponent,17,concrete,unigram,2
+dolphin-yi-34b::opponent,18,concrete evidence,bigram,2
+dolphin-yi-34b::opponent,19,companies,unigram,2
+dolphin-yi-34b::opponent,20,does provide concrete,trigram,2
+dolphin-yi-34b::opponent,21,election result,bigram,2
+dolphin-yi-34b::opponent,22,election result manipulation,trigram,2
+dolphin-yi-34b::opponent,23,does,unigram,2
+dolphin-yi-34b::opponent,24,does provide,bigram,2
+dolphin-yi-34b::opponent,25,claim relies,bigram,2
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,32
+gemma3:27b::moderator,3,manipulation,unigram,26
+gemma3:27b::moderator,4,evidence,unigram,11
+gemma3:27b::moderator,5,election,unigram,9
+gemma3:27b::moderator,6,systemic,unigram,8
+gemma3:27b::moderator,7,agents,unigram,8
+gemma3:27b::moderator,8,specific,unigram,8
+gemma3:27b::moderator,9,proof,unigram,8
+gemma3:27b::moderator,10,audits,unigram,7
+gemma3:27b::moderator,11,potential,unigram,7
+gemma3:27b::moderator,12,questions,unigram,6
+gemma3:27b::moderator,13,systems,unigram,6
+gemma3:27b::moderator,14,argues,unigram,6
+gemma3:27b::moderator,15,manipulation sa,bigram,6
+gemma3:27b::moderator,16,acknowledge,unigram,6
+gemma3:27b::moderator,17,anomalies,unigram,6
+gemma3:27b::moderator,18,voting,unigram,6
+gemma3:27b::moderator,19,independent,unigram,6
+gemma3:27b::moderator,20,round,unigram,5
+gemma3:27b::moderator,21,appeal,unigram,5
+gemma3:27b::moderator,22,round recap agreements,trigram,5
+gemma3:27b::moderator,23,recap,unigram,5
+gemma3:27b::moderator,24,recap agreements,bigram,5
+gemma3:27b::moderator,25,round recap,bigram,5
+gemma3:27b::proponent,1,lack,unigram,3
+gemma3:27b::proponent,2,manipulation,unigram,3
+gemma3:27b::proponent,3,designed,unigram,3
+gemma3:27b::proponent,4,electronic voting,bigram,3
+gemma3:27b::proponent,5,electronic,unigram,3
+gemma3:27b::proponent,6,voting,unigram,3
+gemma3:27b::proponent,7,systems,unigram,2
+gemma3:27b::proponent,8,proof,unigram,2
+gemma3:27b::proponent,9,lack independent,bigram,2
+gemma3:27b::proponent,10,manipulation ignores,bigram,2
+gemma3:27b::proponent,11,results,unigram,2
+gemma3:27b::proponent,12,independent,unigram,2
+gemma3:27b::proponent,13,exploit,unigram,2
+gemma3:27b::proponent,14,ignores,unigram,2
+gemma3:27b::proponent,15,insistence,unigram,2
+gemma3:27b::proponent,16,subtle,unigram,2
+gemma3:27b::proponent,17,demonstrable,unigram,2
+gemma3:27b::proponent,18,anomalies,unigram,2
+gemma3:27b::proponent,19,vulnerabilities,unigram,2
+gemma3:27b::proponent,20,voting systems relies,trigram,1
+gemma3:27b::proponent,21,voting systems,bigram,1
+gemma3:27b::proponent,22,voting machines presented,trigram,1
+gemma3:27b::proponent,23,voting machines,bigram,1
+gemma3:27b::proponent,24,voting fact conclusive,trigram,1
+gemma3:27b::proponent,25,voting fact,bigram,1

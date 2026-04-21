@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,16
+dolphin-yi-34b::moderator,2,sa,unigram,15
+dolphin-yi-34b::moderator,3,safety,unigram,12
+dolphin-yi-34b::moderator,4,specific,unigram,11
+dolphin-yi-34b::moderator,5,mrna,unigram,11
+dolphin-yi-34b::moderator,6,potential,unigram,9
+dolphin-yi-34b::moderator,7,vaccine,unigram,9
+dolphin-yi-34b::moderator,8,vaccines,unigram,8
+dolphin-yi-34b::moderator,9,mrna vaccines,bigram,7
+dolphin-yi-34b::moderator,10,evidence,unigram,7
+dolphin-yi-34b::moderator,11,long term,bigram,7
+dolphin-yi-34b::moderator,12,long,unigram,7
+dolphin-yi-34b::moderator,13,questions,unigram,7
+dolphin-yi-34b::moderator,14,term,unigram,7
+dolphin-yi-34b::moderator,15,systemic,unigram,7
+dolphin-yi-34b::moderator,16,agents,unigram,7
+dolphin-yi-34b::moderator,17,development,unigram,6
+dolphin-yi-34b::moderator,18,studies,unigram,6
+dolphin-yi-34b::moderator,19,argues,unigram,5
+dolphin-yi-34b::moderator,20,round,unigram,5
+dolphin-yi-34b::moderator,21,regulatory,unigram,5
+dolphin-yi-34b::moderator,22,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,23,round recap,bigram,5
+dolphin-yi-34b::moderator,24,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,25,agreements,unigram,5
+gemma3:27b::opponent,1,evidence,unigram,5
+gemma3:27b::opponent,2,systemic,unigram,3
+gemma3:27b::opponent,3,acknowledging,unigram,3
+gemma3:27b::opponent,4,vaccines,unigram,2
+gemma3:27b::opponent,5,safety,unigram,2
+gemma3:27b::opponent,6,relies,unigram,2
+gemma3:27b::opponent,7,systems,unigram,2
+gemma3:27b::opponent,8,term,unigram,2
+gemma3:27b::opponent,9,mrna,unigram,2
+gemma3:27b::opponent,10,long term,bigram,2
+gemma3:27b::opponent,11,mrna vaccines,bigram,2
+gemma3:27b::opponent,12,long,unigram,2
+gemma3:27b::opponent,13,framing,unigram,2
+gemma3:27b::opponent,14,historical,unigram,2
+gemma3:27b::opponent,15,vaccine,unigram,1
+gemma3:27b::opponent,16,untrustworthy supported available,trigram,1
+gemma3:27b::opponent,17,untrustworthy supported,bigram,1
+gemma3:27b::opponent,18,untrustworthy,unigram,1
+gemma3:27b::opponent,19,unsubstantiated accusations bias,trigram,1
+gemma3:27b::opponent,20,unsubstantiated accusations,bigram,1
+gemma3:27b::opponent,21,unsubstantiated,unigram,1
+gemma3:27b::opponent,22,truncated long term,trigram,1
+gemma3:27b::opponent,23,truncated long,bigram,1
+gemma3:27b::opponent,24,truncated,unigram,1
+gemma3:27b::opponent,25,timelines require careful,trigram,1
+gemma3:27b::proponent,1,term,unigram,4
+gemma3:27b::proponent,2,safety,unigram,4
+gemma3:27b::proponent,3,long term,bigram,4
+gemma3:27b::proponent,4,long,unigram,4
+gemma3:27b::proponent,5,term safety,bigram,3
+gemma3:27b::proponent,6,long term safety,trigram,3
+gemma3:27b::proponent,7,systemic,unigram,3
+gemma3:27b::proponent,8,systemic factors,bigram,2
+gemma3:27b::proponent,9,mrna,unigram,2
+gemma3:27b::proponent,10,pattern,unigram,2
+gemma3:27b::proponent,11,specific,unigram,2
+gemma3:27b::proponent,12,necessarily,unigram,2
+gemma3:27b::proponent,13,insistence,unigram,2
+gemma3:27b::proponent,14,factors,unigram,2
+gemma3:27b::proponent,15,development,unigram,2
+gemma3:27b::proponent,16,capture,unigram,2
+gemma3:27b::proponent,17,vaccine,unigram,2
+gemma3:27b::proponent,18,vaccine rollout vested,trigram,1
+gemma3:27b::proponent,19,vaccine rollout,bigram,1
+gemma3:27b::proponent,20,vaccine development presented,trigram,1
+gemma3:27b::proponent,21,vaccine development,bigram,1
+gemma3:27b::proponent,22,untrustworthy assessment compared,trigram,1
+gemma3:27b::proponent,23,untrustworthy assessment,bigram,1
+gemma3:27b::proponent,24,untrustworthy,unigram,1
+gemma3:27b::proponent,25,unprecedented speed mrna,trigram,1

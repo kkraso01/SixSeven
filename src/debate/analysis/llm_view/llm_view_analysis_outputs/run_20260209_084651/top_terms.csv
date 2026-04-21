@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,health,unigram,18
+dolphin-yi-34b::moderator,2,ca,unigram,11
+dolphin-yi-34b::moderator,3,gmo,unigram,11
+dolphin-yi-34b::moderator,4,sa,unigram,10
+dolphin-yi-34b::moderator,5,evidence,unigram,9
+dolphin-yi-34b::moderator,6,gmos,unigram,9
+dolphin-yi-34b::moderator,7,gmo consumption,bigram,7
+dolphin-yi-34b::moderator,8,consumption,unigram,7
+dolphin-yi-34b::moderator,9,causal,unigram,6
+dolphin-yi-34b::moderator,10,claim,unigram,6
+dolphin-yi-34b::moderator,11,specific,unigram,6
+dolphin-yi-34b::moderator,12,health problems,bigram,5
+dolphin-yi-34b::moderator,13,observed,unigram,5
+dolphin-yi-34b::moderator,14,problems,unigram,5
+dolphin-yi-34b::moderator,15,corporate,unigram,5
+dolphin-yi-34b::moderator,16,questions,unigram,5
+dolphin-yi-34b::moderator,17,agents,unigram,5
+dolphin-yi-34b::moderator,18,moderator round recap,trigram,4
+dolphin-yi-34b::moderator,19,potential,unigram,4
+dolphin-yi-34b::moderator,20,observed health,bigram,4
+dolphin-yi-34b::moderator,21,moderator,unigram,4
+dolphin-yi-34b::moderator,22,ca argues,bigram,4
+dolphin-yi-34b::moderator,23,moderator round,bigram,4
+dolphin-yi-34b::moderator,24,agreements agents acknowledge,trigram,4
+dolphin-yi-34b::moderator,25,recap,unigram,4
+dolphin-yi-34b::proponent,1,health,unigram,5
+dolphin-yi-34b::proponent,2,causal,unigram,2
+dolphin-yi-34b::proponent,3,consistent pattern,bigram,2
+dolphin-yi-34b::proponent,4,causal relationship,bigram,2
+dolphin-yi-34b::proponent,5,consumption,unigram,2
+dolphin-yi-34b::proponent,6,corporate,unigram,2
+dolphin-yi-34b::proponent,7,gmo,unigram,2
+dolphin-yi-34b::proponent,8,consistent,unigram,2
+dolphin-yi-34b::proponent,9,linked,unigram,2
+dolphin-yi-34b::proponent,10,gmos,unigram,2
+dolphin-yi-34b::proponent,11,linked gmo,bigram,2
+dolphin-yi-34b::proponent,12,linked gmo consumption,trigram,2
+dolphin-yi-34b::proponent,13,gmo consumption,bigram,2
+dolphin-yi-34b::proponent,14,relationship,unigram,2
+dolphin-yi-34b::proponent,15,profit,unigram,2
+dolphin-yi-34b::proponent,16,pattern,unigram,2
+dolphin-yi-34b::proponent,17,public,unigram,2
+dolphin-yi-34b::proponent,18,profit public health,trigram,2
+dolphin-yi-34b::proponent,19,profit public,bigram,2
+dolphin-yi-34b::proponent,20,public health,bigram,2
+dolphin-yi-34b::proponent,21,consumption suggests,bigram,1
+dolphin-yi-34b::proponent,22,corporate entities promoting,trigram,1
+dolphin-yi-34b::proponent,23,creation,unigram,1
+dolphin-yi-34b::proponent,24,corporate agricultural giants,trigram,1
+dolphin-yi-34b::proponent,25,creation gmos,bigram,1
+gemma3:27b::opponent,1,gmos,unigram,4
+gemma3:27b::opponent,2,health,unigram,4
+gemma3:27b::opponent,3,attributing,unigram,3
+gemma3:27b::opponent,4,demonstrating,unigram,3
+gemma3:27b::opponent,5,harm,unigram,3
+gemma3:27b::opponent,6,requires,unigram,3
+gemma3:27b::opponent,7,confounding,unigram,2
+gemma3:27b::opponent,8,causal,unigram,2
+gemma3:27b::opponent,9,gmo,unigram,2
+gemma3:27b::opponent,10,profit motives,bigram,2
+gemma3:27b::opponent,11,requires demonstrating,bigram,2
+gemma3:27b::opponent,12,standard,unigram,2
+gemma3:27b::opponent,13,problems,unigram,2
+gemma3:27b::opponent,14,profit,unigram,2
+gemma3:27b::opponent,15,mechanism,unigram,2
+gemma3:27b::opponent,16,confounding variables,bigram,2
+gemma3:27b::opponent,17,motives,unigram,2
+gemma3:27b::opponent,18,variables,unigram,2
+gemma3:27b::opponent,19,causal link gmos,trigram,1
+gemma3:27b::opponent,20,causal link,bigram,1
+gemma3:27b::opponent,21,causal relationship requires,trigram,1
+gemma3:27b::opponent,22,cause,unigram,1
+gemma3:27b::opponent,23,cause health,bigram,1
+gemma3:27b::opponent,24,causal relationship,bigram,1
+gemma3:27b::opponent,25,burden proof away,trigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,accurate,unigram,3
+dolphin-yi-34b::opponent,2,accurate claim,bigram,3
+dolphin-yi-34b::opponent,3,accurate claim designed,trigram,3
+dolphin-yi-34b::opponent,4,alternative,unigram,3
+dolphin-yi-34b::opponent,5,alternative explanations,bigram,3
+dolphin-yi-34b::opponent,6,alternative explanations issues,trigram,3
+dolphin-yi-34b::opponent,7,claim,unigram,3
+dolphin-yi-34b::opponent,8,claim designed,bigram,3
+dolphin-yi-34b::opponent,9,claim designed specifically,trigram,3
+dolphin-yi-34b::opponent,10,designed,unigram,3
+dolphin-yi-34b::opponent,11,designed specifically,bigram,3
+dolphin-yi-34b::opponent,12,designed specifically manipulation,trigram,3
+dolphin-yi-34b::opponent,13,election,unigram,3
+dolphin-yi-34b::opponent,14,election results,bigram,3
+dolphin-yi-34b::opponent,15,election results powerful,trigram,3
+dolphin-yi-34b::opponent,16,electronic,unigram,3
+dolphin-yi-34b::opponent,17,electronic voting,bigram,3
+dolphin-yi-34b::opponent,18,electronic voting machines,trigram,3
+dolphin-yi-34b::opponent,19,elites,unigram,3
+dolphin-yi-34b::opponent,20,elites alternative,bigram,3
+dolphin-yi-34b::opponent,21,elites alternative explanations,trigram,3
+dolphin-yi-34b::opponent,22,explanations,unigram,3
+dolphin-yi-34b::opponent,23,explanations issues,bigram,3
+dolphin-yi-34b::opponent,24,issues,unigram,3
+dolphin-yi-34b::opponent,25,machines,unigram,3
+dolphin-yi-34b::proponent,1,electronic,unigram,3
+dolphin-yi-34b::proponent,2,electronic voting,bigram,3
+dolphin-yi-34b::proponent,3,electronic voting machines,trigram,3
+dolphin-yi-34b::proponent,4,machines,unigram,3
+dolphin-yi-34b::proponent,5,voting,unigram,3
+dolphin-yi-34b::proponent,6,voting machines,bigram,3
+dolphin-yi-34b::proponent,7,facilitate,unigram,2
+dolphin-yi-34b::proponent,8,facilitate undetectable,bigram,2
+dolphin-yi-34b::proponent,9,inherent,unigram,2
+dolphin-yi-34b::proponent,10,opacity,unigram,2
+dolphin-yi-34b::proponent,11,manipulation,unigram,2
+dolphin-yi-34b::proponent,12,machines facilitate undetectable,trigram,2
+dolphin-yi-34b::proponent,13,machines facilitate,bigram,2
+dolphin-yi-34b::proponent,14,inherent opacity potential,trigram,2
+dolphin-yi-34b::proponent,15,facilitate undetectable manipulation,trigram,2
+dolphin-yi-34b::proponent,16,election,unigram,2
+dolphin-yi-34b::proponent,17,potential vulnerabilities,bigram,2
+dolphin-yi-34b::proponent,18,potential,unigram,2
+dolphin-yi-34b::proponent,19,undetectable manipulation,bigram,2
+dolphin-yi-34b::proponent,20,undetectable,unigram,2
+dolphin-yi-34b::proponent,21,opacity potential vulnerabilities,trigram,2
+dolphin-yi-34b::proponent,22,results,unigram,2
+dolphin-yi-34b::proponent,23,voting machines facilitate,trigram,2
+dolphin-yi-34b::proponent,24,vulnerabilities,unigram,2
+dolphin-yi-34b::proponent,25,inherent opacity,bigram,2
+gemma3:27b::moderator,1,ca,unigram,20
+gemma3:27b::moderator,2,manipulation,unigram,18
+gemma3:27b::moderator,3,sa,unigram,15
+gemma3:27b::moderator,4,machines,unigram,10
+gemma3:27b::moderator,5,evidence,unigram,8
+gemma3:27b::moderator,6,intentional,unigram,8
+gemma3:27b::moderator,7,security,unigram,8
+gemma3:27b::moderator,8,vulnerabilities,unigram,8
+gemma3:27b::moderator,9,manipulation sa,bigram,7
+gemma3:27b::moderator,10,voting,unigram,7
+gemma3:27b::moderator,11,design,unigram,6
+gemma3:27b::moderator,12,electronic voting,bigram,5
+gemma3:27b::moderator,13,designed manipulation,bigram,5
+gemma3:27b::moderator,14,designed,unigram,5
+gemma3:27b::moderator,15,agents,unigram,5
+gemma3:27b::moderator,16,electronic,unigram,5
+gemma3:27b::moderator,17,burden,unigram,4
+gemma3:27b::moderator,18,shift,unigram,4
+gemma3:27b::moderator,19,intentional design,bigram,4
+gemma3:27b::moderator,20,evidence intentional,bigram,4
+gemma3:27b::moderator,21,intentional manipulation,bigram,4
+gemma3:27b::moderator,22,electronic voting machines,trigram,4
+gemma3:27b::moderator,23,argues,unigram,4
+gemma3:27b::moderator,24,acknowledge,unigram,4
+gemma3:27b::moderator,25,reddit,unigram,4

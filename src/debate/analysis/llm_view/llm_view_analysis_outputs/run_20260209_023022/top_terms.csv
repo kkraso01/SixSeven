@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,bank,unigram,3
+dolphin-yi-34b::proponent,2,bank digital,bigram,3
+dolphin-yi-34b::proponent,3,bank digital currencies,trigram,3
+dolphin-yi-34b::proponent,4,central,unigram,3
+dolphin-yi-34b::proponent,5,central bank,bigram,3
+dolphin-yi-34b::proponent,6,central bank digital,trigram,3
+dolphin-yi-34b::proponent,7,currencies,unigram,3
+dolphin-yi-34b::proponent,8,digital,unigram,3
+dolphin-yi-34b::proponent,9,digital currencies,bigram,3
+dolphin-yi-34b::proponent,10,financial,unigram,3
+dolphin-yi-34b::proponent,11,surveillance,unigram,3
+dolphin-yi-34b::proponent,12,currencies designed instruments,trigram,2
+dolphin-yi-34b::proponent,13,designed instruments mass,trigram,2
+dolphin-yi-34b::proponent,14,designed instruments,bigram,2
+dolphin-yi-34b::proponent,15,digital currencies designed,trigram,2
+dolphin-yi-34b::proponent,16,currencies designed,bigram,2
+dolphin-yi-34b::proponent,17,instruments mass surveillance,trigram,2
+dolphin-yi-34b::proponent,18,instruments,unigram,2
+dolphin-yi-34b::proponent,19,efficiency,unigram,2
+dolphin-yi-34b::proponent,20,financial inclusion,bigram,2
+dolphin-yi-34b::proponent,21,financial inclusion efficiency,trigram,2
+dolphin-yi-34b::proponent,22,instruments mass,bigram,2
+dolphin-yi-34b::proponent,23,inclusion,unigram,2
+dolphin-yi-34b::proponent,24,inclusion efficiency,bigram,2
+dolphin-yi-34b::proponent,25,tools,unigram,2
+gemma3:27b::moderator,1,ca,unigram,22
+gemma3:27b::moderator,2,sa,unigram,15
+gemma3:27b::moderator,3,surveillance,unigram,12
+gemma3:27b::moderator,4,cbdcs,unigram,12
+gemma3:27b::moderator,5,privacy,unigram,7
+gemma3:27b::moderator,6,evidence,unigram,6
+gemma3:27b::moderator,7,potential,unigram,6
+gemma3:27b::moderator,8,surveillance sa,bigram,5
+gemma3:27b::moderator,9,cbdc,unigram,5
+gemma3:27b::moderator,10,historical,unigram,5
+gemma3:27b::moderator,11,central,unigram,5
+gemma3:27b::moderator,12,financial,unigram,4
+gemma3:27b::moderator,13,shift,unigram,4
+gemma3:27b::moderator,14,authority,unigram,4
+gemma3:27b::moderator,15,proof,unigram,4
+gemma3:27b::moderator,16,argument,unigram,4
+gemma3:27b::moderator,17,design,unigram,4
+gemma3:27b::moderator,18,control,unigram,4
+gemma3:27b::moderator,19,specific,unigram,4
+gemma3:27b::moderator,20,agree,unigram,4
+gemma3:27b::moderator,21,asserts cbdcs,bigram,3
+gemma3:27b::moderator,22,asserts cbdcs designed,trigram,3
+gemma3:27b::moderator,23,sa argues,bigram,3
+gemma3:27b::moderator,24,round recap,bigram,3
+gemma3:27b::moderator,25,scores civility,bigram,3
+gemma3:27b::opponent,1,cbdcs,unigram,3
+gemma3:27b::opponent,2,control,unigram,3
+gemma3:27b::opponent,3,evidence,unigram,3
+gemma3:27b::opponent,4,designed,unigram,3
+gemma3:27b::opponent,5,privacy,unigram,3
+gemma3:27b::opponent,6,designed total,bigram,2
+gemma3:27b::opponent,7,asserting designed,bigram,2
+gemma3:27b::opponent,8,designed total government,trigram,2
+gemma3:27b::opponent,9,government,unigram,2
+gemma3:27b::opponent,10,government control,bigram,2
+gemma3:27b::opponent,11,potential,unigram,2
+gemma3:27b::opponent,12,plausible,unigram,2
+gemma3:27b::opponent,13,financial,unigram,2
+gemma3:27b::opponent,14,asserting,unigram,2
+gemma3:27b::opponent,15,sufficient evidence,bigram,2
+gemma3:27b::opponent,16,sufficient,unigram,2
+gemma3:27b::opponent,17,surveillance,unigram,2
+gemma3:27b::opponent,18,total government control,trigram,2
+gemma3:27b::opponent,19,total,unigram,2
+gemma3:27b::opponent,20,total government,bigram,2
+gemma3:27b::opponent,21,cbdcs present,bigram,1
+gemma3:27b::opponent,22,cbdcs present potential,trigram,1
+gemma3:27b::opponent,23,claim cbdcs designed,trigram,1
+gemma3:27b::opponent,24,choices regulatory frameworks,trigram,1
+gemma3:27b::opponent,25,concern,unigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,21
+dolphin-yi-34b::moderator,2,government,unigram,15
+dolphin-yi-34b::moderator,3,support,unigram,11
+dolphin-yi-34b::moderator,4,conspiracy,unigram,11
+dolphin-yi-34b::moderator,5,agents,unigram,10
+dolphin-yi-34b::moderator,6,assassination,unigram,10
+dolphin-yi-34b::moderator,7,ca,unigram,9
+dolphin-yi-34b::moderator,8,elements,unigram,9
+dolphin-yi-34b::moderator,9,sa,unigram,8
+dolphin-yi-34b::moderator,10,specific,unigram,8
+dolphin-yi-34b::moderator,11,elements government,bigram,8
+dolphin-yi-34b::moderator,12,commission,unigram,7
+dolphin-yi-34b::moderator,13,commission report,bigram,7
+dolphin-yi-34b::moderator,14,specific evidence,bigram,7
+dolphin-yi-34b::moderator,15,report,unigram,7
+dolphin-yi-34b::moderator,16,oswald,unigram,7
+dolphin-yi-34b::moderator,17,lone,unigram,7
+dolphin-yi-34b::moderator,18,warren,unigram,7
+dolphin-yi-34b::moderator,19,warren commission report,trigram,7
+dolphin-yi-34b::moderator,20,warren commission,bigram,7
+dolphin-yi-34b::moderator,21,multiple,unigram,6
+dolphin-yi-34b::moderator,22,conspiracy involving,bigram,6
+dolphin-yi-34b::moderator,23,lone gunman,bigram,6
+dolphin-yi-34b::moderator,24,multiple gunmen,bigram,6
+dolphin-yi-34b::moderator,25,questions,unigram,6
+dolphin-yi-34b::opponent,1,evidence,unigram,6
+dolphin-yi-34b::opponent,2,lone,unigram,5
+dolphin-yi-34b::opponent,3,lone gunman,bigram,5
+dolphin-yi-34b::opponent,4,oswald lone,bigram,5
+dolphin-yi-34b::opponent,5,oswald lone gunman,trigram,5
+dolphin-yi-34b::opponent,6,gunman,unigram,5
+dolphin-yi-34b::opponent,7,oswald,unigram,5
+dolphin-yi-34b::opponent,8,available evidence,bigram,3
+dolphin-yi-34b::opponent,9,explanation given,bigram,3
+dolphin-yi-34b::opponent,10,gunman theory remains,trigram,3
+dolphin-yi-34b::opponent,11,given,unigram,3
+dolphin-yi-34b::opponent,12,available,unigram,3
+dolphin-yi-34b::opponent,13,given available evidence,trigram,3
+dolphin-yi-34b::opponent,14,explanation given available,trigram,3
+dolphin-yi-34b::opponent,15,explanation,unigram,3
+dolphin-yi-34b::opponent,16,given available,bigram,3
+dolphin-yi-34b::opponent,17,gunman theory,bigram,3
+dolphin-yi-34b::opponent,18,president,unigram,3
+dolphin-yi-34b::opponent,19,plausible explanation given,trigram,3
+dolphin-yi-34b::opponent,20,president kennedy,bigram,3
+dolphin-yi-34b::opponent,21,kennedy,unigram,3
+dolphin-yi-34b::opponent,22,lone gunman theory,trigram,3
+dolphin-yi-34b::opponent,23,plausible,unigram,3
+dolphin-yi-34b::opponent,24,plausible explanation,bigram,3
+dolphin-yi-34b::opponent,25,theory remains,bigram,3
+dolphin-yi-34b::proponent,1,assassination,unigram,5
+dolphin-yi-34b::proponent,2,government,unigram,4
+dolphin-yi-34b::proponent,3,government motive,bigram,3
+dolphin-yi-34b::proponent,4,jfk,unigram,3
+dolphin-yi-34b::proponent,5,jfk assassination,bigram,3
+dolphin-yi-34b::proponent,6,motive,unigram,3
+dolphin-yi-34b::proponent,7,orchestrate,unigram,3
+dolphin-yi-34b::proponent,8,covert,unigram,2
+dolphin-yi-34b::proponent,9,maintain,unigram,2
+dolphin-yi-34b::proponent,10,kennedy,unigram,2
+dolphin-yi-34b::proponent,11,kennedy assassination,bigram,2
+dolphin-yi-34b::proponent,12,control,unigram,2
+dolphin-yi-34b::proponent,13,maintain power control,trigram,2
+dolphin-yi-34b::proponent,14,maintain power,bigram,2
+dolphin-yi-34b::proponent,15,operations,unigram,2
+dolphin-yi-34b::proponent,16,covert operations,bigram,2
+dolphin-yi-34b::proponent,17,president kennedy,bigram,2
+dolphin-yi-34b::proponent,18,president kennedy assassination,trigram,2
+dolphin-yi-34b::proponent,19,orchestrating jfk,bigram,2
+dolphin-yi-34b::proponent,20,orchestrating,unigram,2
+dolphin-yi-34b::proponent,21,orchestrate president kennedy,trigram,2
+dolphin-yi-34b::proponent,22,orchestrate president,bigram,2
+dolphin-yi-34b::proponent,23,president,unigram,2
+dolphin-yi-34b::proponent,24,power control,bigram,2
+dolphin-yi-34b::proponent,25,orchestrating jfk assassination,trigram,2

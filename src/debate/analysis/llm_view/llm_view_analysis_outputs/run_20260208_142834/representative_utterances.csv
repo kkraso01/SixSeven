@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,moderator,most_evidence_dense,federal_reserve,finance,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Central banks aim to maintain economic stability rather than favor specific institutions or perpetuate inequality.
+Disagreements: The Federal Reserve and other central banks may inadvertently favor certain institutions and perpetuate inequality through their policies.
+Detected moves: 
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support the claim that central banks systematically favor certain institutions?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,moderator,most_hedged,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,moderator,most_assertive,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,moderator,most_moral_framed,federal_reserve,finance,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Central banks aim to maintain economic stability rather than favor specific institutions or perpetuate inequality.
+Disagreements: The Federal Reserve and other central banks may inadvertently favor certain institutions and perpetuate inequality through their policies.
+Detected moves: 
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support the claim that central banks systematically favor certain institutions?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,federal_reserve,finance,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Central banks may implement policies that have unequal effects on different institutions due to economic conditions and market structures., Central banks prioritize maintaining price stability and promoting maximum employment over favoring specific institutions.
+Disagreements: Central banks like the Fed favor certain institutions and perpetuate inequality through their policies., The 'Too Big To Fail' saga reveals how central banks protect wealthy interests by bailing out failing institutions rather than preventing economic crises that affect ordinary citizens.
+Detected moves: appeal to anecdote, misinterpretation of institutional mandates
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What empirical evidence supports the claim that central banks favor specific institutions?, How do you reconcile the 'Too Big To Fail' narrative with central bank mandates to maintain price stability and promote maximum employment?"
+dolphin-yi-34b,opponent,highest_confidence,federal_reserve,finance,closing,4,11,71.0,The claim that central banks favor certain institutions and perpetuate inequality through their policies requires empirical evidence to support it.
+dolphin-yi-34b,opponent,most_evidence_dense,federal_reserve,finance,closing,4,11,71.0,The claim that central banks favor certain institutions and perpetuate inequality through their policies requires empirical evidence to support it.
+dolphin-yi-34b,opponent,most_rebuttal_dense,federal_reserve,finance,opening,1,2,55.0,"The Federal Reserve's operations and policies are not inherently detrimental to ordinary citizens. Rather, they aim to maintain economic stability and promote growth."
+dolphin-yi-34b,opponent,most_hedged,federal_reserve,finance,opening,1,2,55.0,"The Federal Reserve's operations and policies are not inherently detrimental to ordinary citizens. Rather, they aim to maintain economic stability and promote growth."
+dolphin-yi-34b,opponent,most_assertive,federal_reserve,finance,opening,1,2,55.0,"The Federal Reserve's operations and policies are not inherently detrimental to ordinary citizens. Rather, they aim to maintain economic stability and promote growth."
+dolphin-yi-34b,opponent,most_moral_framed,federal_reserve,finance,closing,1,14,70.0,Central banks do not inherently favor certain institutions or perpetuate inequality through their policies.
+dolphin-yi-34b,opponent,strongest_stance_proxy,federal_reserve,finance,opening,1,2,55.0,"The Federal Reserve's operations and policies are not inherently detrimental to ordinary citizens. Rather, they aim to maintain economic stability and promote growth."
+dolphin-yi-34b,opponent,weakest_stance_proxy,federal_reserve,finance,opening,1,2,55.0,"The Federal Reserve's operations and policies are not inherently detrimental to ordinary citizens. Rather, they aim to maintain economic stability and promote growth."
+dolphin-yi-34b,proponent,highest_confidence,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,most_evidence_dense,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,most_rebuttal_dense,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,most_hedged,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,most_assertive,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,most_moral_framed,federal_reserve,finance,opening,1,1,55.0,The Federal Reserve's private status and manipulative actions harm ordinary citizens.
+dolphin-yi-34b,proponent,strongest_stance_proxy,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.
+dolphin-yi-34b,proponent,weakest_stance_proxy,federal_reserve,finance,opening,2,4,60.0,The Federal Reserve's policies disproportionately benefit wealthy elites by propping up failing institutions and perpetuating economic inequality.

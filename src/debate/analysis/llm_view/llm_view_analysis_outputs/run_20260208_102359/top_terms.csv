@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,data,unigram,19
+gemma3:27b::moderator,4,surveillance,unigram,15
+gemma3:27b::moderator,5,vaccine,unigram,11
+gemma3:27b::moderator,6,evidence,unigram,9
+gemma3:27b::moderator,7,agents,unigram,9
+gemma3:27b::moderator,8,acknowledge,unigram,9
+gemma3:27b::moderator,9,data collection,bigram,8
+gemma3:27b::moderator,10,microchips,unigram,8
+gemma3:27b::moderator,11,collection,unigram,8
+gemma3:27b::moderator,12,existing,unigram,7
+gemma3:27b::moderator,13,potential,unigram,7
+gemma3:27b::moderator,14,concerns,unigram,7
+gemma3:27b::moderator,15,proof,unigram,7
+gemma3:27b::moderator,16,specific,unigram,7
+gemma3:27b::moderator,17,burden,unigram,6
+gemma3:27b::moderator,18,agree,unigram,6
+gemma3:27b::moderator,19,infrastructure,unigram,6
+gemma3:27b::moderator,20,burden proof,bigram,6
+gemma3:27b::moderator,21,claim,unigram,6
+gemma3:27b::moderator,22,moderator round,bigram,5
+gemma3:27b::moderator,23,moderator round recap,trigram,5
+gemma3:27b::moderator,24,moves appeal,bigram,5
+gemma3:27b::moderator,25,questions,unigram,5
+gemma3:27b::opponent,1,claim,unigram,4
+gemma3:27b::opponent,2,surveillance,unigram,4
+gemma3:27b::opponent,3,acknowledging,unigram,4
+gemma3:27b::opponent,4,evidence,unigram,4
+gemma3:27b::opponent,5,framing,unigram,3
+gemma3:27b::opponent,6,data,unigram,3
+gemma3:27b::opponent,7,19 vaccines,bigram,2
+gemma3:27b::opponent,8,19,unigram,2
+gemma3:27b::opponent,9,potential,unigram,2
+gemma3:27b::opponent,10,microchips,unigram,2
+gemma3:27b::opponent,11,microchips tracking,bigram,2
+gemma3:27b::opponent,12,motion,unigram,2
+gemma3:27b::opponent,13,19 vaccines contain,trigram,2
+gemma3:27b::opponent,14,tracking,unigram,2
+gemma3:27b::opponent,15,specific,unigram,2
+gemma3:27b::opponent,16,specific claim,bigram,2
+gemma3:27b::opponent,17,existing,unigram,2
+gemma3:27b::opponent,18,infrastructure,unigram,2
+gemma3:27b::opponent,19,institutions,unigram,2
+gemma3:27b::opponent,20,legitimate,unigram,2
+gemma3:27b::opponent,21,does address,bigram,2
+gemma3:27b::opponent,22,concerns,unigram,2
+gemma3:27b::opponent,23,does,unigram,2
+gemma3:27b::opponent,24,existing digital,bigram,2
+gemma3:27b::opponent,25,digital,unigram,2
+gemma3:27b::proponent,1,surveillance,unigram,5
+gemma3:27b::proponent,2,insistence,unigram,5
+gemma3:27b::proponent,3,pattern,unigram,3
+gemma3:27b::proponent,4,tactic,unigram,2
+gemma3:27b::proponent,5,public,unigram,2
+gemma3:27b::proponent,6,proof,unigram,2
+gemma3:27b::proponent,7,microchips,unigram,2
+gemma3:27b::proponent,8,institutions,unigram,2
+gemma3:27b::proponent,9,ignores,unigram,2
+gemma3:27b::proponent,10,infrastructure,unigram,2
+gemma3:27b::proponent,11,health,unigram,2
+gemma3:27b::proponent,12,existing,unigram,2
+gemma3:27b::proponent,13,existing digital,bigram,2
+gemma3:27b::proponent,14,governments,unigram,2
+gemma3:27b::proponent,15,digital,unigram,2
+gemma3:27b::proponent,16,vaccine,unigram,2
+gemma3:27b::proponent,17,utilizing existing digital,trigram,1
+gemma3:27b::proponent,18,utilizing existing,bigram,1
+gemma3:27b::proponent,19,utilizing,unigram,1
+gemma3:27b::proponent,20,uncovering covert surveillance,trigram,1
+gemma3:27b::proponent,21,uncovering covert,bigram,1
+gemma3:27b::proponent,22,uncovering,unigram,1
+gemma3:27b::proponent,23,tracking occur existing,trigram,1
+gemma3:27b::proponent,24,tracking occur,bigram,1
+gemma3:27b::proponent,25,tracking,unigram,1

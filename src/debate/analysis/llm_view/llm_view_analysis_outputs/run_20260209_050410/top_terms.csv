@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,climate,unigram,22
+dolphin-yi-34b::moderator,2,ca,unigram,15
+dolphin-yi-34b::moderator,3,evidence,unigram,14
+dolphin-yi-34b::moderator,4,change,unigram,14
+dolphin-yi-34b::moderator,5,climate change,bigram,14
+dolphin-yi-34b::moderator,6,sa,unigram,13
+dolphin-yi-34b::moderator,7,global,unigram,11
+dolphin-yi-34b::moderator,8,questions,unigram,8
+dolphin-yi-34b::moderator,9,addressing,unigram,8
+dolphin-yi-34b::moderator,10,addressing climate change,trigram,7
+dolphin-yi-34b::moderator,11,economic,unigram,7
+dolphin-yi-34b::moderator,12,addressing climate,bigram,7
+dolphin-yi-34b::moderator,13,policies,unigram,7
+dolphin-yi-34b::moderator,14,agreements,unigram,7
+dolphin-yi-34b::moderator,15,specific,unigram,6
+dolphin-yi-34b::moderator,16,specific evidence,bigram,6
+dolphin-yi-34b::moderator,17,claim,unigram,6
+dolphin-yi-34b::moderator,18,control,unigram,6
+dolphin-yi-34b::moderator,19,agents,unigram,5
+dolphin-yi-34b::moderator,20,political,unigram,5
+dolphin-yi-34b::moderator,21,recap,unigram,4
+dolphin-yi-34b::moderator,22,authority ca,bigram,4
+dolphin-yi-34b::moderator,23,round,unigram,4
+dolphin-yi-34b::moderator,24,round recap agreements,trigram,4
+dolphin-yi-34b::moderator,25,scores civility,bigram,4
+dolphin-yi-34b::opponent,1,climate,unigram,6
+dolphin-yi-34b::opponent,2,address,unigram,4
+dolphin-yi-34b::opponent,3,complex,unigram,4
+dolphin-yi-34b::opponent,4,protection,unigram,4
+dolphin-yi-34b::opponent,5,issue,unigram,4
+dolphin-yi-34b::opponent,6,environmental protection,bigram,4
+dolphin-yi-34b::opponent,7,environmental,unigram,4
+dolphin-yi-34b::opponent,8,balance economic considerations,trigram,3
+dolphin-yi-34b::opponent,9,change,unigram,3
+dolphin-yi-34b::opponent,10,primarily,unigram,3
+dolphin-yi-34b::opponent,11,opponent,unigram,3
+dolphin-yi-34b::opponent,12,protection order address,trigram,3
+dolphin-yi-34b::opponent,13,order address,bigram,3
+dolphin-yi-34b::opponent,14,protection order,bigram,3
+dolphin-yi-34b::opponent,15,balance,unigram,3
+dolphin-yi-34b::opponent,16,balance economic,bigram,3
+dolphin-yi-34b::opponent,17,order,unigram,3
+dolphin-yi-34b::opponent,18,ignores fact,bigram,3
+dolphin-yi-34b::opponent,19,considerations environmental protection,trigram,3
+dolphin-yi-34b::opponent,20,ignores,unigram,3
+dolphin-yi-34b::opponent,21,complex issue,bigram,3
+dolphin-yi-34b::opponent,22,necessary,unigram,3
+dolphin-yi-34b::opponent,23,necessary balance economic,trigram,3
+dolphin-yi-34b::opponent,24,necessary balance,bigram,3
+dolphin-yi-34b::opponent,25,opponent argues,bigram,3
+gemma3:27b::proponent,1,climate,unigram,4
+gemma3:27b::proponent,2,change,unigram,3
+gemma3:27b::proponent,3,climate change,bigram,3
+gemma3:27b::proponent,4,control,unigram,3
+gemma3:27b::proponent,5,affordable energy sources,trigram,2
+gemma3:27b::proponent,6,affordable,unigram,2
+gemma3:27b::proponent,7,affordable energy,bigram,2
+gemma3:27b::proponent,8,environmental protection,bigram,2
+gemma3:27b::proponent,9,energy sources,bigram,2
+gemma3:27b::proponent,10,energy,unigram,2
+gemma3:27b::proponent,11,isn,unigram,2
+gemma3:27b::proponent,12,global,unigram,2
+gemma3:27b::proponent,13,environmental,unigram,2
+gemma3:27b::proponent,14,wealth,unigram,2
+gemma3:27b::proponent,15,sources,unigram,2
+gemma3:27b::proponent,16,protection,unigram,2
+gemma3:27b::proponent,17,attempt,unigram,1
+gemma3:27b::proponent,18,attempt solve,bigram,1
+gemma3:27b::proponent,19,authorities,unigram,1
+gemma3:27b::proponent,20,attempt solve climate,trigram,1
+gemma3:27b::proponent,21,carbon markets,bigram,1
+gemma3:27b::proponent,22,carbon markets isn,trigram,1
+gemma3:27b::proponent,23,centralized,unigram,1
+gemma3:27b::proponent,24,carbon,unigram,1
+gemma3:27b::proponent,25,centralized carbon,bigram,1

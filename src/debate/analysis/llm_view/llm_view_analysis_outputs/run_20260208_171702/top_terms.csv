@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,gmo,unigram,7
+dolphin-yi-34b::opponent,2,corporate,unigram,6
+dolphin-yi-34b::opponent,3,gmo research,bigram,5
+dolphin-yi-34b::opponent,4,research,unigram,5
+dolphin-yi-34b::opponent,5,conducted independently,bigram,2
+dolphin-yi-34b::opponent,6,conducted,unigram,2
+dolphin-yi-34b::opponent,7,cause,unigram,2
+dolphin-yi-34b::opponent,8,agriculture,unigram,2
+dolphin-yi-34b::opponent,9,crucial differentiate isolated,trigram,2
+dolphin-yi-34b::opponent,10,deliberately,unigram,2
+dolphin-yi-34b::opponent,11,crucial differentiate,bigram,2
+dolphin-yi-34b::opponent,12,crucial,unigram,2
+dolphin-yi-34b::opponent,13,corporate misconduct,bigram,2
+dolphin-yi-34b::opponent,14,corporate misconduct systemic,trigram,2
+dolphin-yi-34b::opponent,15,cause health problems,trigram,2
+dolphin-yi-34b::opponent,16,cause health,bigram,2
+dolphin-yi-34b::opponent,17,dependence,unigram,2
+dolphin-yi-34b::opponent,18,dependence corporate,bigram,2
+dolphin-yi-34b::opponent,19,deliberately designed,bigram,2
+dolphin-yi-34b::opponent,20,deliberately designed cause,trigram,2
+dolphin-yi-34b::opponent,21,dependence corporate agriculture,trigram,2
+dolphin-yi-34b::opponent,22,designed,unigram,2
+dolphin-yi-34b::opponent,23,foods deliberately,bigram,2
+dolphin-yi-34b::opponent,24,gmo foods deliberately,trigram,2
+dolphin-yi-34b::opponent,25,differentiate isolated,bigram,2
+dolphin-yi-34b::proponent,1,corporations,unigram,4
+dolphin-yi-34b::proponent,2,effects,unigram,4
+dolphin-yi-34b::proponent,3,negative,unigram,4
+dolphin-yi-34b::proponent,4,negative effects,bigram,4
+dolphin-yi-34b::proponent,5,effects gmos,bigram,3
+dolphin-yi-34b::proponent,6,effects gmos studies,trigram,3
+dolphin-yi-34b::proponent,7,corporations history manipulating,trigram,3
+dolphin-yi-34b::proponent,8,corporations history,bigram,3
+dolphin-yi-34b::proponent,9,history manipulating,bigram,3
+dolphin-yi-34b::proponent,10,hiding,unigram,3
+dolphin-yi-34b::proponent,11,hiding negative effects,trigram,3
+dolphin-yi-34b::proponent,12,history,unigram,3
+dolphin-yi-34b::proponent,13,hiding negative,bigram,3
+dolphin-yi-34b::proponent,14,manipulating,unigram,3
+dolphin-yi-34b::proponent,15,gmos studies,bigram,3
+dolphin-yi-34b::proponent,16,gmos,unigram,3
+dolphin-yi-34b::proponent,17,negative effects gmos,trigram,3
+dolphin-yi-34b::proponent,18,studies,unigram,3
+dolphin-yi-34b::proponent,19,manipulating hiding negative,trigram,2
+dolphin-yi-34b::proponent,20,manipulating hiding,bigram,2
+dolphin-yi-34b::proponent,21,history manipulating hiding,trigram,2
+dolphin-yi-34b::proponent,22,despite regulatory,bigram,1
+dolphin-yi-34b::proponent,23,difficult,unigram,1
+dolphin-yi-34b::proponent,24,effects products,bigram,1
+dolphin-yi-34b::proponent,25,corporate agriculture,bigram,1
+gemma3:27b::moderator,1,ca,unigram,29
+gemma3:27b::moderator,2,sa,unigram,24
+gemma3:27b::moderator,3,corporate,unigram,21
+gemma3:27b::moderator,4,research,unigram,20
+gemma3:27b::moderator,5,evidence,unigram,13
+gemma3:27b::moderator,6,agents,unigram,12
+gemma3:27b::moderator,7,manipulation,unigram,10
+gemma3:27b::moderator,8,systemic,unigram,10
+gemma3:27b::moderator,9,acknowledge,unigram,8
+gemma3:27b::moderator,10,gmos,unigram,8
+gemma3:27b::moderator,11,proof,unigram,7
+gemma3:27b::moderator,12,gmo,unigram,7
+gemma3:27b::moderator,13,generalization,unigram,6
+gemma3:27b::moderator,14,accusations,unigram,6
+gemma3:27b::moderator,15,shift,unigram,6
+gemma3:27b::moderator,16,burden proof,bigram,6
+gemma3:27b::moderator,17,burden,unigram,6
+gemma3:27b::moderator,18,questions,unigram,5
+gemma3:27b::moderator,19,recap agreements,bigram,5
+gemma3:27b::moderator,20,recap,unigram,5
+gemma3:27b::moderator,21,agreements,unigram,5
+gemma3:27b::moderator,22,argues,unigram,5
+gemma3:27b::moderator,23,proof shift,bigram,5
+gemma3:27b::moderator,24,gmo research,bigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5

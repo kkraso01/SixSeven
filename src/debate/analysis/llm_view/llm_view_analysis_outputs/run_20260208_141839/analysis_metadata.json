@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_141839",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_141839",
+  "analysis_schema_version": 3,
+  "row_count": 12,
+  "topic_id": "flat_earth",
+  "topic_category": "science",
+  "topic_title": "The shape of the Earth and space exploration",
+  "topic_motion": "The Earth is actually flat and space agencies worldwide are involved in a massive coordinated deception about its spherical shape.",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

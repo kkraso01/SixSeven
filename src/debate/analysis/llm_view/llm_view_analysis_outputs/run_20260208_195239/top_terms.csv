@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,18
+dolphin-yi-34b::moderator,2,space,unigram,15
+dolphin-yi-34b::moderator,3,sa,unigram,15
+dolphin-yi-34b::moderator,4,evidence,unigram,14
+dolphin-yi-34b::moderator,5,earth,unigram,12
+dolphin-yi-34b::moderator,6,agencies,unigram,10
+dolphin-yi-34b::moderator,7,data,unigram,10
+dolphin-yi-34b::moderator,8,model,unigram,10
+dolphin-yi-34b::moderator,9,earth model,bigram,9
+dolphin-yi-34b::moderator,10,space agencies,bigram,9
+dolphin-yi-34b::moderator,11,scientific,unigram,9
+dolphin-yi-34b::moderator,12,specific,unigram,7
+dolphin-yi-34b::moderator,13,questions,unigram,7
+dolphin-yi-34b::moderator,14,deception,unigram,7
+dolphin-yi-34b::moderator,15,based,unigram,7
+dolphin-yi-34b::moderator,16,agents,unigram,6
+dolphin-yi-34b::moderator,17,recap,unigram,5
+dolphin-yi-34b::moderator,18,anomalies,unigram,5
+dolphin-yi-34b::moderator,19,round,unigram,5
+dolphin-yi-34b::moderator,20,round recap,bigram,5
+dolphin-yi-34b::moderator,21,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,22,recap agreements,bigram,5
+dolphin-yi-34b::moderator,23,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,24,flat,unigram,5
+dolphin-yi-34b::moderator,25,argues,unigram,5
+gemma3:27b::opponent,1,evidence,unigram,4
+gemma3:27b::opponent,2,acknowledging,unigram,3
+gemma3:27b::opponent,3,relies,unigram,3
+gemma3:27b::opponent,4,challenges,unigram,3
+gemma3:27b::opponent,5,deception,unigram,3
+gemma3:27b::opponent,6,dismissing,unigram,3
+gemma3:27b::opponent,7,earth,unigram,3
+gemma3:27b::opponent,8,acknowledging potential,bigram,2
+gemma3:27b::opponent,9,potential institutional,bigram,2
+gemma3:27b::opponent,10,potential,unigram,2
+gemma3:27b::opponent,11,space,unigram,2
+gemma3:27b::opponent,12,acknowledging potential institutional,trigram,2
+gemma3:27b::opponent,13,evidence relies,bigram,2
+gemma3:27b::opponent,14,institutional,unigram,2
+gemma3:27b::opponent,15,lacks,unigram,2
+gemma3:27b::opponent,16,coordinated,unigram,2
+gemma3:27b::opponent,17,coordinated deception,bigram,2
+gemma3:27b::opponent,18,data,unigram,2
+gemma3:27b::opponent,19,claim,unigram,2
+gemma3:27b::opponent,20,agencies,unigram,2
+gemma3:27b::opponent,21,space agencies,bigram,2
+gemma3:27b::opponent,22,systemic,unigram,2
+gemma3:27b::opponent,23,unsubstantiated,unigram,2
+gemma3:27b::opponent,24,systemic manipulation,bigram,1
+gemma3:27b::opponent,25,systemic challenges scientific,trigram,1
+gemma3:27b::proponent,1,scientific,unigram,4
+gemma3:27b::proponent,2,narrative,unigram,4
+gemma3:27b::proponent,3,agent,unigram,3
+gemma3:27b::proponent,4,deception,unigram,3
+gemma3:27b::proponent,5,insistence,unigram,3
+gemma3:27b::proponent,6,scientific agent,bigram,3
+gemma3:27b::proponent,7,earth,unigram,3
+gemma3:27b::proponent,8,documented,unigram,3
+gemma3:27b::proponent,9,verifiable,unigram,2
+gemma3:27b::proponent,10,model,unigram,2
+gemma3:27b::proponent,11,spherical earth,bigram,2
+gemma3:27b::proponent,12,spherical,unigram,2
+gemma3:27b::proponent,13,genuine,unigram,2
+gemma3:27b::proponent,14,ignores,unigram,2
+gemma3:27b::proponent,15,conveniently ignores,bigram,2
+gemma3:27b::proponent,16,conveniently,unigram,2
+gemma3:27b::proponent,17,anomalies nasa imagery,trigram,1
+gemma3:27b::proponent,18,argument,unigram,1
+gemma3:27b::proponent,19,argument protects,bigram,1
+gemma3:27b::proponent,20,argument protects established,trigram,1
+gemma3:27b::proponent,21,asymmetry,unigram,1
+gemma3:27b::proponent,22,asymmetry power,bigram,1
+gemma3:27b::proponent,23,asymmetry power documented,trigram,1
+gemma3:27b::proponent,24,based,unigram,1
+gemma3:27b::proponent,25,agent consistently,bigram,1

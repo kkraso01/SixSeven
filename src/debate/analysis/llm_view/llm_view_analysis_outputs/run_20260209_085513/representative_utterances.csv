@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential influence of industry interests on regulatory agencies., SA questions the validity of CA's claims by pointing out logical fallacies and calls for quantitative data to establish a pattern.
+Disagreements: CA argues that regulatory agencies often prioritize industry interests over public health when approving food additives., SA disputes this claim, stating that demonstrating instances of influence doesn't prove a systemic prioritization and calls for statistical analysis to establish a pattern.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support your claim that regulatory agencies prioritize industry interests over public health? (CA), How would you respond to the alternative hypotheses proposed by SA regarding political pressure and unavoidable uncertainties in assessing long-term health effects of food additives? (CA)"
+dolphin-yi-34b,moderator,most_evidence_dense,food_additives,food,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the potential for corporate influence on food additive approvals., SA questions the use of 'corrupted' as an oversimplification and calls for higher evidentiary standards.
+Disagreements: CA claims a corrupted approval process due to corporate interests; SA disputes this characterization without sufficient evidence., SA suggests alternative explanations for regulatory decisions, while CA demands specific examples of corruption.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim of corruption in the approval process?, How would you differentiate between acceptable lobbying and corrupt influence on regulatory decisions?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential influence of industry interests on regulatory agencies., SA questions the validity of CA's claims by pointing out logical fallacies and calls for quantitative data to establish a pattern.
+Disagreements: CA argues that regulatory agencies often prioritize industry interests over public health when approving food additives., SA disputes this claim, stating that demonstrating instances of influence doesn't prove a systemic prioritization and calls for statistical analysis to establish a pattern.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support your claim that regulatory agencies prioritize industry interests over public health? (CA), How would you respond to the alternative hypotheses proposed by SA regarding political pressure and unavoidable uncertainties in assessing long-term health effects of food additives? (CA)"
+dolphin-yi-34b,moderator,most_hedged,food_additives,food,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the potential for corporate influence on food additive approvals., SA questions the use of 'corrupted' as an oversimplification and calls for higher evidentiary standards.
+Disagreements: CA claims a corrupted approval process due to corporate interests; SA disputes this characterization without sufficient evidence., SA suggests alternative explanations for regulatory decisions, while CA demands specific examples of corruption.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim of corruption in the approval process?, How would you differentiate between acceptable lobbying and corrupt influence on regulatory decisions?"
+dolphin-yi-34b,moderator,most_assertive,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential influence of industry interests on regulatory agencies., SA questions the validity of CA's claims by pointing out logical fallacies and calls for quantitative data to establish a pattern.
+Disagreements: CA argues that regulatory agencies often prioritize industry interests over public health when approving food additives., SA disputes this claim, stating that demonstrating instances of influence doesn't prove a systemic prioritization and calls for statistical analysis to establish a pattern.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support your claim that regulatory agencies prioritize industry interests over public health? (CA), How would you respond to the alternative hypotheses proposed by SA regarding political pressure and unavoidable uncertainties in assessing long-term health effects of food additives? (CA)"
+dolphin-yi-34b,moderator,most_moral_framed,food_additives,food,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge potential issues with regulatory agencies' approval process for food additives.
+Disagreements: CA argues that regulatory agencies are not fully trustworthy and may intentionally approve harmful additives. SA counters by stating that while there might be room for improvement in the approval process, it doesn't logically lead to intentional harm.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: Can CA provide specific examples of additives that were known to be harmful at the time of approval?, How can SA further address concerns about potential conflicts of interest in regulatory agencies?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential influence of industry interests on regulatory agencies., SA questions the validity of CA's claims by pointing out logical fallacies and calls for quantitative data to establish a pattern.
+Disagreements: CA argues that regulatory agencies often prioritize industry interests over public health when approving food additives., SA disputes this claim, stating that demonstrating instances of influence doesn't prove a systemic prioritization and calls for statistical analysis to establish a pattern.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support your claim that regulatory agencies prioritize industry interests over public health? (CA), How would you respond to the alternative hypotheses proposed by SA regarding political pressure and unavoidable uncertainties in assessing long-term health effects of food additives? (CA)"
+dolphin-yi-34b,moderator,weakest_stance_proxy,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential influence of industry interests on regulatory agencies., SA questions the validity of CA's claims by pointing out logical fallacies and calls for quantitative data to establish a pattern.
+Disagreements: CA argues that regulatory agencies often prioritize industry interests over public health when approving food additives., SA disputes this claim, stating that demonstrating instances of influence doesn't prove a systemic prioritization and calls for statistical analysis to establish a pattern.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What evidence can you provide to support your claim that regulatory agencies prioritize industry interests over public health? (CA), How would you respond to the alternative hypotheses proposed by SA regarding political pressure and unavoidable uncertainties in assessing long-term health effects of food additives? (CA)"
+dolphin-yi-34b,proponent,highest_confidence,food_additives,food,opening,1,1,55.0,Regulatory agencies are not fully trustworthy when it comes to food additives.
+dolphin-yi-34b,proponent,most_evidence_dense,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+dolphin-yi-34b,proponent,most_rebuttal_dense,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+dolphin-yi-34b,proponent,most_hedged,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+dolphin-yi-34b,proponent,most_assertive,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+dolphin-yi-34b,proponent,most_moral_framed,food_additives,food,opening,1,1,55.0,Regulatory agencies are not fully trustworthy when it comes to food additives.
+dolphin-yi-34b,proponent,strongest_stance_proxy,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+dolphin-yi-34b,proponent,weakest_stance_proxy,food_additives,food,closing,4,10,50.0,"The approval process for food additives is corrupted by corporate interests, leading to potential negligence or misjudgment in the decision-making process."
+gemma3:27b,opponent,highest_confidence,food_additives,food,closing,4,11,88.0,"While acknowledging the potential for influence, framing the approval process as ‘corrupted’ implies intentional and pervasive wrongdoing, a claim unsupported by evidence and requiring a higher standard of proof than demonstrated."
+gemma3:27b,opponent,most_evidence_dense,food_additives,food,opening,1,2,55.0,"While acknowledging potential conflicts of interest, the claim that regulatory agencies intentionally approve harmful additives to benefit the medical industry lacks sufficient evidence and relies on unsubstantiated assumptions about systemic malice."
+gemma3:27b,opponent,most_rebuttal_dense,food_additives,food,closing,4,11,88.0,"While acknowledging the potential for influence, framing the approval process as ‘corrupted’ implies intentional and pervasive wrongdoing, a claim unsupported by evidence and requiring a higher standard of proof than demonstrated."
+gemma3:27b,opponent,most_hedged,food_additives,food,middle,1,8,85.0,The motion—that approved food additives are intentionally harmful and designed to create chronic diseases for medical industry benefit—is not supported by available evidence and relies on unsubstantiated claims of malicious intent.
+gemma3:27b,opponent,most_assertive,food_additives,food,middle,1,8,85.0,The motion—that approved food additives are intentionally harmful and designed to create chronic diseases for medical industry benefit—is not supported by available evidence and relies on unsubstantiated claims of malicious intent.
+gemma3:27b,opponent,most_moral_framed,food_additives,food,opening,1,2,55.0,"While acknowledging potential conflicts of interest, the claim that regulatory agencies intentionally approve harmful additives to benefit the medical industry lacks sufficient evidence and relies on unsubstantiated assumptions about systemic malice."
+gemma3:27b,opponent,strongest_stance_proxy,food_additives,food,middle,1,8,85.0,The motion—that approved food additives are intentionally harmful and designed to create chronic diseases for medical industry benefit—is not supported by available evidence and relies on unsubstantiated claims of malicious intent.
+gemma3:27b,opponent,weakest_stance_proxy,food_additives,food,middle,1,8,85.0,The motion—that approved food additives are intentionally harmful and designed to create chronic diseases for medical industry benefit—is not supported by available evidence and relies on unsubstantiated claims of malicious intent.

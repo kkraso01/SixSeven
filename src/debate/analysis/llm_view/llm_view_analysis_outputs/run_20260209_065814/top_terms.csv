@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,13
+dolphin-yi-34b::moderator,2,ca,unigram,13
+dolphin-yi-34b::moderator,3,pharmaceutical,unigram,9
+dolphin-yi-34b::moderator,4,evidence,unigram,9
+dolphin-yi-34b::moderator,5,questions,unigram,7
+dolphin-yi-34b::moderator,6,cures,unigram,6
+dolphin-yi-34b::moderator,7,development,unigram,6
+dolphin-yi-34b::moderator,8,agents,unigram,6
+dolphin-yi-34b::moderator,9,pharmaceutical companies,bigram,5
+dolphin-yi-34b::moderator,10,specific,unigram,5
+dolphin-yi-34b::moderator,11,drug,unigram,5
+dolphin-yi-34b::moderator,12,companies,unigram,5
+dolphin-yi-34b::moderator,13,profit,unigram,5
+dolphin-yi-34b::moderator,14,scores civility,bigram,4
+dolphin-yi-34b::moderator,15,sa scores,bigram,4
+dolphin-yi-34b::moderator,16,agreements agents,bigram,4
+dolphin-yi-34b::moderator,17,reasoning sa,bigram,4
+dolphin-yi-34b::moderator,18,round recap agreements,trigram,4
+dolphin-yi-34b::moderator,19,authority ca,bigram,4
+dolphin-yi-34b::moderator,20,authority,unigram,4
+dolphin-yi-34b::moderator,21,based reasoning sa,trigram,4
+dolphin-yi-34b::moderator,22,bridge,unigram,4
+dolphin-yi-34b::moderator,23,based reasoning,bigram,4
+dolphin-yi-34b::moderator,24,based,unigram,4
+dolphin-yi-34b::moderator,25,recap,unigram,4
+dolphin-yi-34b::proponent,1,profit,unigram,4
+dolphin-yi-34b::proponent,2,pharmaceutical,unigram,4
+dolphin-yi-34b::proponent,3,companies,unigram,3
+dolphin-yi-34b::proponent,4,welfare,unigram,3
+dolphin-yi-34b::proponent,5,patient,unigram,3
+dolphin-yi-34b::proponent,6,patient welfare,bigram,3
+dolphin-yi-34b::proponent,7,pharmaceutical companies,bigram,3
+dolphin-yi-34b::proponent,8,profit patient,bigram,3
+dolphin-yi-34b::proponent,9,profit patient welfare,trigram,3
+dolphin-yi-34b::proponent,10,evidenced marketing lobbying,trigram,2
+dolphin-yi-34b::proponent,11,marketing lobbying,bigram,2
+dolphin-yi-34b::proponent,12,marketing,unigram,2
+dolphin-yi-34b::proponent,13,lobbying,unigram,2
+dolphin-yi-34b::proponent,14,evidenced,unigram,2
+dolphin-yi-34b::proponent,15,evidenced marketing,bigram,2
+dolphin-yi-34b::proponent,16,prioritize profit,bigram,2
+dolphin-yi-34b::proponent,17,prioritize,unigram,2
+dolphin-yi-34b::proponent,18,patient welfare evidenced,trigram,2
+dolphin-yi-34b::proponent,19,welfare evidenced,bigram,2
+dolphin-yi-34b::proponent,20,welfare evidenced marketing,trigram,2
+dolphin-yi-34b::proponent,21,prioritize profit patient,trigram,2
+dolphin-yi-34b::proponent,22,driven profit,bigram,1
+dolphin-yi-34b::proponent,23,driven profit patient,trigram,1
+dolphin-yi-34b::proponent,24,budgets,unigram,1
+dolphin-yi-34b::proponent,25,continue,unigram,1
+gemma3:27b::opponent,1,profit,unigram,4
+gemma3:27b::opponent,2,companies,unigram,3
+gemma3:27b::opponent,3,development,unigram,3
+gemma3:27b::opponent,4,drug,unigram,3
+gemma3:27b::opponent,5,lacks sufficient,bigram,3
+gemma3:27b::opponent,6,lacks sufficient evidence,trigram,3
+gemma3:27b::opponent,7,evidence,unigram,3
+gemma3:27b::opponent,8,cures,unigram,3
+gemma3:27b::opponent,9,lacks,unigram,3
+gemma3:27b::opponent,10,pharmaceutical companies,bigram,3
+gemma3:27b::opponent,11,pharmaceutical,unigram,3
+gemma3:27b::opponent,12,sufficient,unigram,3
+gemma3:27b::opponent,13,sufficient evidence,bigram,3
+gemma3:27b::opponent,14,drug development,bigram,3
+gemma3:27b::opponent,15,evidence relies,bigram,2
+gemma3:27b::opponent,16,cures lacks,bigram,2
+gemma3:27b::opponent,17,effective,unigram,2
+gemma3:27b::opponent,18,effective cures,bigram,2
+gemma3:27b::opponent,19,inherent,unigram,2
+gemma3:27b::opponent,20,cures lacks sufficient,trigram,2
+gemma3:27b::opponent,21,suppress cheap,bigram,2
+gemma3:27b::opponent,22,suppress cheap effective,trigram,2
+gemma3:27b::opponent,23,undoubtedly,unigram,2
+gemma3:27b::opponent,24,sufficient evidence relies,trigram,2
+gemma3:27b::opponent,25,relies,unigram,2

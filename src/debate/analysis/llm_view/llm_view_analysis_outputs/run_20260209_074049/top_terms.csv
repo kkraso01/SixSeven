@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,voting,unigram,14
+dolphin-yi-34b::moderator,2,manipulation,unigram,14
+dolphin-yi-34b::moderator,3,electronic,unigram,12
+dolphin-yi-34b::moderator,4,electronic voting,bigram,12
+dolphin-yi-34b::moderator,5,ca,unigram,9
+dolphin-yi-34b::moderator,6,machine,unigram,8
+dolphin-yi-34b::moderator,7,voting machine,bigram,8
+dolphin-yi-34b::moderator,8,electronic voting machine,trigram,8
+dolphin-yi-34b::moderator,9,evidence,unigram,7
+dolphin-yi-34b::moderator,10,agents,unigram,6
+dolphin-yi-34b::moderator,11,opacity,unigram,5
+dolphin-yi-34b::moderator,12,elites,unigram,5
+dolphin-yi-34b::moderator,13,sa,unigram,5
+dolphin-yi-34b::moderator,14,argument,unigram,5
+dolphin-yi-34b::moderator,15,questions,unigram,5
+dolphin-yi-34b::moderator,16,anomalies,unigram,5
+dolphin-yi-34b::moderator,17,recap,unigram,4
+dolphin-yi-34b::moderator,18,scores civility epistemic,trigram,4
+dolphin-yi-34b::moderator,19,powerful,unigram,4
+dolphin-yi-34b::moderator,20,powerful elites,bigram,4
+dolphin-yi-34b::moderator,21,moves,unigram,4
+dolphin-yi-34b::moderator,22,moderator round,bigram,4
+dolphin-yi-34b::moderator,23,moderator round recap,trigram,4
+dolphin-yi-34b::moderator,24,moderator,unigram,4
+dolphin-yi-34b::moderator,25,recap agreements,bigram,4
+dolphin-yi-34b::proponent,1,electronic voting,bigram,4
+dolphin-yi-34b::proponent,2,elites,unigram,4
+dolphin-yi-34b::proponent,3,electronic,unigram,4
+dolphin-yi-34b::proponent,4,powerful,unigram,4
+dolphin-yi-34b::proponent,5,powerful elites,bigram,4
+dolphin-yi-34b::proponent,6,voting,unigram,4
+dolphin-yi-34b::proponent,7,manipulation,unigram,3
+dolphin-yi-34b::proponent,8,manipulation powerful,bigram,3
+dolphin-yi-34b::proponent,9,manipulation powerful elites,trigram,3
+dolphin-yi-34b::proponent,10,voting machine,bigram,2
+dolphin-yi-34b::proponent,11,machines,unigram,2
+dolphin-yi-34b::proponent,12,creates,unigram,2
+dolphin-yi-34b::proponent,13,electronic voting machine,trigram,2
+dolphin-yi-34b::proponent,14,electronic voting machines,trigram,2
+dolphin-yi-34b::proponent,15,machine,unigram,2
+dolphin-yi-34b::proponent,16,voting machines,bigram,2
+dolphin-yi-34b::proponent,17,claims,unigram,1
+dolphin-yi-34b::proponent,18,concrete,unigram,1
+dolphin-yi-34b::proponent,19,concrete evidence provided,trigram,1
+dolphin-yi-34b::proponent,20,concrete evidence,bigram,1
+dolphin-yi-34b::proponent,21,conducive manipulation,bigram,1
+dolphin-yi-34b::proponent,22,conducive manipulation powerful,trigram,1
+dolphin-yi-34b::proponent,23,control,unigram,1
+dolphin-yi-34b::proponent,24,activities,unigram,1
+dolphin-yi-34b::proponent,25,anomaly electronic voting,trigram,1
+gemma3:27b::opponent,1,manipulation,unigram,6
+gemma3:27b::opponent,2,elites,unigram,4
+gemma3:27b::opponent,3,evidence,unigram,4
+gemma3:27b::opponent,4,attributing manipulation,bigram,2
+gemma3:27b::opponent,5,doesn,unigram,2
+gemma3:27b::opponent,6,elites requires,bigram,2
+gemma3:27b::opponent,7,attributing,unigram,2
+gemma3:27b::opponent,8,attributing manipulation powerful,trigram,2
+gemma3:27b::opponent,9,powerful elites,bigram,2
+gemma3:27b::opponent,10,requires,unigram,2
+gemma3:27b::opponent,11,powerful,unigram,2
+gemma3:27b::opponent,12,reported,unigram,2
+gemma3:27b::opponent,13,manipulation powerful,bigram,2
+gemma3:27b::opponent,14,powerful elites requires,trigram,2
+gemma3:27b::opponent,15,manipulation powerful elites,trigram,2
+gemma3:27b::opponent,16,anomalies attributing,bigram,1
+gemma3:27b::opponent,17,arise various sources,trigram,1
+gemma3:27b::opponent,18,arise various,bigram,1
+gemma3:27b::opponent,19,arise,unigram,1
+gemma3:27b::opponent,20,automatically,unigram,1
+gemma3:27b::opponent,21,automatically imply,bigram,1
+gemma3:27b::opponent,22,automatically imply intentional,trigram,1
+gemma3:27b::opponent,23,centralized,unigram,1
+gemma3:27b::opponent,24,centralized control,bigram,1
+gemma3:27b::opponent,25,centralized control electronic,trigram,1

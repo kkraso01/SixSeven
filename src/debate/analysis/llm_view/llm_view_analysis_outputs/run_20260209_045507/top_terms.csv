@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,surveillance,unigram,24
+dolphin-yi-34b::moderator,2,control,unigram,22
+dolphin-yi-34b::moderator,3,sa,unigram,16
+dolphin-yi-34b::moderator,4,ca,unigram,15
+dolphin-yi-34b::moderator,5,ai,unigram,14
+dolphin-yi-34b::moderator,6,coordinated,unigram,13
+dolphin-yi-34b::moderator,7,global control,bigram,13
+dolphin-yi-34b::moderator,8,global,unigram,13
+dolphin-yi-34b::moderator,9,coordinated global,bigram,12
+dolphin-yi-34b::moderator,10,coordinated global control,trigram,12
+dolphin-yi-34b::moderator,11,expansion,unigram,11
+dolphin-yi-34b::moderator,12,systems,unigram,11
+dolphin-yi-34b::moderator,13,security,unigram,11
+dolphin-yi-34b::moderator,14,powered,unigram,9
+dolphin-yi-34b::moderator,15,ai powered surveillance,trigram,9
+dolphin-yi-34b::moderator,16,ai powered,bigram,9
+dolphin-yi-34b::moderator,17,powered surveillance,bigram,9
+dolphin-yi-34b::moderator,18,threats,unigram,9
+dolphin-yi-34b::moderator,19,agents,unigram,9
+dolphin-yi-34b::moderator,20,surveillance systems,bigram,8
+dolphin-yi-34b::moderator,21,security threats,bigram,8
+dolphin-yi-34b::moderator,22,surveillance expansion,bigram,7
+dolphin-yi-34b::moderator,23,specific,unigram,7
+dolphin-yi-34b::moderator,24,questions,unigram,7
+dolphin-yi-34b::moderator,25,driven,unigram,7
+dolphin-yi-34b::opponent,1,surveillance,unigram,6
+dolphin-yi-34b::opponent,2,control,unigram,5
+dolphin-yi-34b::opponent,3,coordinated,unigram,4
+dolphin-yi-34b::opponent,4,security,unigram,4
+dolphin-yi-34b::opponent,5,global,unigram,3
+dolphin-yi-34b::opponent,6,expansions,unigram,3
+dolphin-yi-34b::opponent,7,opponent,unigram,3
+dolphin-yi-34b::opponent,8,global control,bigram,3
+dolphin-yi-34b::opponent,9,coordinated global,bigram,3
+dolphin-yi-34b::opponent,10,systems,unigram,3
+dolphin-yi-34b::opponent,11,ai,unigram,3
+dolphin-yi-34b::opponent,12,coordinated global control,trigram,3
+dolphin-yi-34b::opponent,13,surveillance systems,bigram,2
+dolphin-yi-34b::opponent,14,security threats drive,trigram,2
+dolphin-yi-34b::opponent,15,security threats,bigram,2
+dolphin-yi-34b::opponent,16,ai surveillance,bigram,2
+dolphin-yi-34b::opponent,17,opponent argues,bigram,2
+dolphin-yi-34b::opponent,18,policing,unigram,2
+dolphin-yi-34b::opponent,19,opponent argues ai,trigram,2
+dolphin-yi-34b::opponent,20,overlooks,unigram,2
+dolphin-yi-34b::opponent,21,argues ai surveillance,trigram,2
+dolphin-yi-34b::opponent,22,assumes,unigram,2
+dolphin-yi-34b::opponent,23,overlooks genuine,bigram,2
+dolphin-yi-34b::opponent,24,overlooks genuine security,trigram,2
+dolphin-yi-34b::opponent,25,assumes coordinated global,trigram,2
+gemma3:27b::proponent,1,surveillance,unigram,7
+gemma3:27b::proponent,2,control,unigram,6
+gemma3:27b::proponent,3,security,unigram,5
+gemma3:27b::proponent,4,threats,unigram,4
+gemma3:27b::proponent,5,security threats,bigram,3
+gemma3:27b::proponent,6,genuine,unigram,3
+gemma3:27b::proponent,7,scientific agent,bigram,3
+gemma3:27b::proponent,8,ai surveillance,bigram,3
+gemma3:27b::proponent,9,genuine security threats,trigram,3
+gemma3:27b::proponent,10,conveniently,unigram,3
+gemma3:27b::proponent,11,ai,unigram,3
+gemma3:27b::proponent,12,agent,unigram,3
+gemma3:27b::proponent,13,genuine security,bigram,3
+gemma3:27b::proponent,14,framing,unigram,3
+gemma3:27b::proponent,15,scientific,unigram,3
+gemma3:27b::proponent,16,response genuine,bigram,2
+gemma3:27b::proponent,17,insistence,unigram,2
+gemma3:27b::proponent,18,insistence framing,bigram,2
+gemma3:27b::proponent,19,pattern,unigram,2
+gemma3:27b::proponent,20,inherent,unigram,2
+gemma3:27b::proponent,21,response genuine security,trigram,2
+gemma3:27b::proponent,22,scientific agent continued,trigram,2
+gemma3:27b::proponent,23,response,unigram,2
+gemma3:27b::proponent,24,ignores,unigram,2
+gemma3:27b::proponent,25,expansion,unigram,2

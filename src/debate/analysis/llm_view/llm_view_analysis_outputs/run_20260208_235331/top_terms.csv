@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,conspiracy,unigram,5
+dolphin-yi-34b::opponent,2,assassination,unigram,4
+dolphin-yi-34b::opponent,3,argues,unigram,3
+dolphin-yi-34b::opponent,4,evidence,unigram,3
+dolphin-yi-34b::opponent,5,government,unigram,3
+dolphin-yi-34b::opponent,6,opponent argues,bigram,3
+dolphin-yi-34b::opponent,7,opponent,unigram,3
+dolphin-yi-34b::opponent,8,gunman,unigram,2
+dolphin-yi-34b::opponent,9,president,unigram,2
+dolphin-yi-34b::opponent,10,kennedy,unigram,2
+dolphin-yi-34b::opponent,11,lone,unigram,2
+dolphin-yi-34b::opponent,12,lone gunman,bigram,2
+dolphin-yi-34b::opponent,13,jfk,unigram,2
+dolphin-yi-34b::opponent,14,jfk assassination,bigram,2
+dolphin-yi-34b::opponent,15,evidence conspiracy,bigram,2
+dolphin-yi-34b::opponent,16,agency motivations,bigram,1
+dolphin-yi-34b::opponent,17,assassination documents,bigram,1
+dolphin-yi-34b::opponent,18,assassination documents variety,trigram,1
+dolphin-yi-34b::opponent,19,assassination errors,bigram,1
+dolphin-yi-34b::opponent,20,assassination errors perception,trigram,1
+dolphin-yi-34b::opponent,21,assassination president,bigram,1
+dolphin-yi-34b::opponent,22,assassination president john,trigram,1
+dolphin-yi-34b::opponent,23,assumptions,unigram,1
+dolphin-yi-34b::opponent,24,assumptions agency,bigram,1
+dolphin-yi-34b::opponent,25,argues conflicting witness,trigram,1
+gemma3:27b::moderator,1,ca,unigram,33
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,25
+gemma3:27b::moderator,4,conspiracy,unigram,13
+gemma3:27b::moderator,5,agents,unigram,11
+gemma3:27b::moderator,6,proof,unigram,10
+gemma3:27b::moderator,7,direct,unigram,9
+gemma3:27b::moderator,8,questions,unigram,7
+gemma3:27b::moderator,9,involvement,unigram,7
+gemma3:27b::moderator,10,assassination,unigram,7
+gemma3:27b::moderator,11,commission,unigram,7
+gemma3:27b::moderator,12,warren commission,bigram,7
+gemma3:27b::moderator,13,warren,unigram,7
+gemma3:27b::moderator,14,specific,unigram,6
+gemma3:27b::moderator,15,anomalies,unigram,6
+gemma3:27b::moderator,16,shift,unigram,6
+gemma3:27b::moderator,17,direct evidence,bigram,6
+gemma3:27b::moderator,18,burden,unigram,6
+gemma3:27b::moderator,19,recap agreements,bigram,5
+gemma3:27b::moderator,20,agreements agents,bigram,5
+gemma3:27b::moderator,21,proof shift,bigram,5
+gemma3:27b::moderator,22,moderator round,bigram,5
+gemma3:27b::moderator,23,individual,unigram,5
+gemma3:27b::moderator,24,moderator round recap,trigram,5
+gemma3:27b::moderator,25,questions ca,bigram,5
+gemma3:27b::proponent,1,assassination,unigram,4
+gemma3:27b::proponent,2,simply,unigram,2
+gemma3:27b::proponent,3,shield,unigram,2
+gemma3:27b::proponent,4,particularly,unigram,2
+gemma3:27b::proponent,5,lone,unigram,2
+gemma3:27b::proponent,6,jfk,unigram,2
+gemma3:27b::proponent,7,jfk assassination,bigram,2
+gemma3:27b::proponent,8,key,unigram,2
+gemma3:27b::proponent,9,information,unigram,2
+gemma3:27b::proponent,10,involvement,unigram,2
+gemma3:27b::proponent,11,government,unigram,2
+gemma3:27b::proponent,12,documented,unigram,2
+gemma3:27b::proponent,13,deliberate,unigram,2
+gemma3:27b::proponent,14,surrounding,unigram,2
+gemma3:27b::proponent,15,testimonies,unigram,1
+gemma3:27b::proponent,16,targeting foreign leaders,trigram,1
+gemma3:27b::proponent,17,targeting foreign,bigram,1
+gemma3:27b::proponent,18,targeting,unigram,1
+gemma3:27b::proponent,19,systematic failures fbi,trigram,1
+gemma3:27b::proponent,20,systematic failures,bigram,1
+gemma3:27b::proponent,21,systematic,unigram,1
+gemma3:27b::proponent,22,surrounding jfk assassination,trigram,1
+gemma3:27b::proponent,23,surrounding jfk,bigram,1
+gemma3:27b::proponent,24,surrounding assassination strongly,trigram,1
+gemma3:27b::proponent,25,surrounding assassination,bigram,1

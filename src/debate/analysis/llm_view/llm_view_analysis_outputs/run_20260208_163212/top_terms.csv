@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,earth,unigram,2
+dolphin-yi-34b::opponent,2,agencies,unigram,1
+dolphin-yi-34b::opponent,3,agencies worldwide involved,trigram,1
+dolphin-yi-34b::opponent,4,agencies worldwide,bigram,1
+dolphin-yi-34b::opponent,5,claim space,bigram,1
+dolphin-yi-34b::opponent,6,claim space agencies,trigram,1
+dolphin-yi-34b::opponent,7,coordinated,unigram,1
+dolphin-yi-34b::opponent,8,claim,unigram,1
+dolphin-yi-34b::opponent,9,coordinated deception,bigram,1
+dolphin-yi-34b::opponent,10,coordinated deception shape,trigram,1
+dolphin-yi-34b::opponent,11,data including,bigram,1
+dolphin-yi-34b::opponent,12,data,unigram,1
+dolphin-yi-34b::opponent,13,data including satellite,trigram,1
+dolphin-yi-34b::opponent,14,deception,unigram,1
+dolphin-yi-34b::opponent,15,deception shape,bigram,1
+dolphin-yi-34b::opponent,16,deception shape earth,trigram,1
+dolphin-yi-34b::opponent,17,earth supported,bigram,1
+dolphin-yi-34b::opponent,18,earth supported evidence,trigram,1
+dolphin-yi-34b::opponent,19,evidence,unigram,1
+dolphin-yi-34b::opponent,20,evidence overwhelming,bigram,1
+dolphin-yi-34b::opponent,21,evidence overwhelming majority,trigram,1
+dolphin-yi-34b::opponent,22,imagery,unigram,1
+dolphin-yi-34b::opponent,23,imagery measurements,bigram,1
+dolphin-yi-34b::opponent,24,imagery measurements supports,trigram,1
+dolphin-yi-34b::opponent,25,including,unigram,1
+dolphin-yi-34b::proponent,1,agencies,unigram,1
+dolphin-yi-34b::proponent,2,agencies worldwide,bigram,1
+dolphin-yi-34b::proponent,3,agencies worldwide involved,trigram,1
+dolphin-yi-34b::proponent,4,coordinated,unigram,1
+dolphin-yi-34b::proponent,5,coordinated deception,bigram,1
+dolphin-yi-34b::proponent,6,coordinated deception true,trigram,1
+dolphin-yi-34b::proponent,7,deception,unigram,1
+dolphin-yi-34b::proponent,8,deception true,bigram,1
+dolphin-yi-34b::proponent,9,deception true shape,trigram,1
+dolphin-yi-34b::proponent,10,earth,unigram,1
+dolphin-yi-34b::proponent,11,involved,unigram,1
+dolphin-yi-34b::proponent,12,involved massive,bigram,1
+dolphin-yi-34b::proponent,13,involved massive coordinated,trigram,1
+dolphin-yi-34b::proponent,14,massive,unigram,1
+dolphin-yi-34b::proponent,15,massive coordinated,bigram,1
+dolphin-yi-34b::proponent,16,massive coordinated deception,trigram,1
+dolphin-yi-34b::proponent,17,shape,unigram,1
+dolphin-yi-34b::proponent,18,shape earth,bigram,1
+dolphin-yi-34b::proponent,19,space,unigram,1
+dolphin-yi-34b::proponent,20,space agencies,bigram,1
+dolphin-yi-34b::proponent,21,space agencies worldwide,trigram,1
+dolphin-yi-34b::proponent,22,true,unigram,1
+dolphin-yi-34b::proponent,23,true shape,bigram,1
+dolphin-yi-34b::proponent,24,true shape earth,trigram,1
+dolphin-yi-34b::proponent,25,worldwide,unigram,1
+gemma3:27b::moderator,1,ca,unigram,8
+gemma3:27b::moderator,2,evidence,unigram,6
+gemma3:27b::moderator,3,earth,unigram,4
+gemma3:27b::moderator,4,sa,unigram,4
+gemma3:27b::moderator,5,conspiracy,unigram,3
+gemma3:27b::moderator,6,agents,unigram,3
+gemma3:27b::moderator,7,question,unigram,2
+gemma3:27b::moderator,8,space,unigram,2
+gemma3:27b::moderator,9,honesty,unigram,2
+gemma3:27b::moderator,10,frames,unigram,2
+gemma3:27b::moderator,11,institutions,unigram,2
+gemma3:27b::moderator,12,institutions sa,bigram,2
+gemma3:27b::moderator,13,flat earth,bigram,2
+gemma3:27b::moderator,14,questions,unigram,2
+gemma3:27b::moderator,15,specific,unigram,2
+gemma3:27b::moderator,16,scientific,unigram,2
+gemma3:27b::moderator,17,distrust authority,bigram,2
+gemma3:27b::moderator,18,distrust,unigram,2
+gemma3:27b::moderator,19,flat,unigram,2
+gemma3:27b::moderator,20,data,unigram,2
+gemma3:27b::moderator,21,authority,unigram,2
+gemma3:27b::moderator,22,supports,unigram,2
+gemma3:27b::moderator,23,supports spherical,bigram,1
+gemma3:27b::moderator,24,supports flat earth,trigram,1
+gemma3:27b::moderator,25,supports flat,bigram,1

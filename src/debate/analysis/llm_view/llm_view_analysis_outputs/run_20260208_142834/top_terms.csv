@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,central,unigram,19
+dolphin-yi-34b::moderator,2,banks,unigram,17
+dolphin-yi-34b::moderator,3,central banks,bigram,17
+dolphin-yi-34b::moderator,4,institutions,unigram,12
+dolphin-yi-34b::moderator,5,favor,unigram,8
+dolphin-yi-34b::moderator,6,specific,unigram,7
+dolphin-yi-34b::moderator,7,policies,unigram,7
+dolphin-yi-34b::moderator,8,economic,unigram,7
+dolphin-yi-34b::moderator,9,ordinary citizens,bigram,6
+dolphin-yi-34b::moderator,10,ordinary,unigram,6
+dolphin-yi-34b::moderator,11,federal,unigram,6
+dolphin-yi-34b::moderator,12,federal reserve,bigram,6
+dolphin-yi-34b::moderator,13,citizens,unigram,6
+dolphin-yi-34b::moderator,14,reserve,unigram,6
+dolphin-yi-34b::moderator,15,scores civility,bigram,5
+dolphin-yi-34b::moderator,16,round,unigram,5
+dolphin-yi-34b::moderator,17,moves,unigram,5
+dolphin-yi-34b::moderator,18,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,19,moderator round,bigram,5
+dolphin-yi-34b::moderator,20,moderator,unigram,5
+dolphin-yi-34b::moderator,21,scores,unigram,5
+dolphin-yi-34b::moderator,22,favor certain institutions,trigram,5
+dolphin-yi-34b::moderator,23,bridge questions,bigram,5
+dolphin-yi-34b::moderator,24,bridge,unigram,5
+dolphin-yi-34b::moderator,25,inequality,unigram,5
+dolphin-yi-34b::opponent,1,policies,unigram,5
+dolphin-yi-34b::opponent,2,banks,unigram,3
+dolphin-yi-34b::opponent,3,central,unigram,3
+dolphin-yi-34b::opponent,4,certain,unigram,3
+dolphin-yi-34b::opponent,5,certain institutions perpetuate,trigram,3
+dolphin-yi-34b::opponent,6,certain institutions,bigram,3
+dolphin-yi-34b::opponent,7,favor certain,bigram,3
+dolphin-yi-34b::opponent,8,central banks,bigram,3
+dolphin-yi-34b::opponent,9,inequality policies,bigram,3
+dolphin-yi-34b::opponent,10,institutions,unigram,3
+dolphin-yi-34b::opponent,11,institutions perpetuate inequality,trigram,3
+dolphin-yi-34b::opponent,12,institutions perpetuate,bigram,3
+dolphin-yi-34b::opponent,13,inequality,unigram,3
+dolphin-yi-34b::opponent,14,favor certain institutions,trigram,3
+dolphin-yi-34b::opponent,15,perpetuate,unigram,3
+dolphin-yi-34b::opponent,16,favor,unigram,3
+dolphin-yi-34b::opponent,17,perpetuate inequality,bigram,3
+dolphin-yi-34b::opponent,18,perpetuate inequality policies,trigram,3
+dolphin-yi-34b::opponent,19,growth,unigram,2
+dolphin-yi-34b::opponent,20,federal reserve,bigram,2
+dolphin-yi-34b::opponent,21,economic,unigram,2
+dolphin-yi-34b::opponent,22,federal,unigram,2
+dolphin-yi-34b::opponent,23,inherently,unigram,2
+dolphin-yi-34b::opponent,24,maintain economic stability,trigram,2
+dolphin-yi-34b::opponent,25,aim maintain economic,trigram,2
+dolphin-yi-34b::proponent,1,inequality,unigram,4
+dolphin-yi-34b::proponent,2,institutions,unigram,4
+dolphin-yi-34b::proponent,3,policies,unigram,4
+dolphin-yi-34b::proponent,4,banks,unigram,3
+dolphin-yi-34b::proponent,5,central banks like,trigram,3
+dolphin-yi-34b::proponent,6,certain,unigram,3
+dolphin-yi-34b::proponent,7,certain institutions perpetuate,trigram,3
+dolphin-yi-34b::proponent,8,banks like,bigram,3
+dolphin-yi-34b::proponent,9,favor,unigram,3
+dolphin-yi-34b::proponent,10,favor certain,bigram,3
+dolphin-yi-34b::proponent,11,favor certain institutions,trigram,3
+dolphin-yi-34b::proponent,12,inequality policies,bigram,3
+dolphin-yi-34b::proponent,13,federal,unigram,3
+dolphin-yi-34b::proponent,14,federal reserve,bigram,3
+dolphin-yi-34b::proponent,15,central,unigram,3
+dolphin-yi-34b::proponent,16,certain institutions,bigram,3
+dolphin-yi-34b::proponent,17,like,unigram,3
+dolphin-yi-34b::proponent,18,institutions perpetuate inequality,trigram,3
+dolphin-yi-34b::proponent,19,institutions perpetuate,bigram,3
+dolphin-yi-34b::proponent,20,perpetuate,unigram,3
+dolphin-yi-34b::proponent,21,perpetuate inequality,bigram,3
+dolphin-yi-34b::proponent,22,perpetuate inequality policies,trigram,3
+dolphin-yi-34b::proponent,23,reserve,unigram,3
+dolphin-yi-34b::proponent,24,central banks,bigram,3
+dolphin-yi-34b::proponent,25,fed,unigram,2

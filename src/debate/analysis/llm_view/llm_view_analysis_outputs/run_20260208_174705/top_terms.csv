@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,agencies,unigram,6
+dolphin-yi-34b::opponent,2,regulatory,unigram,6
+dolphin-yi-34b::opponent,3,harm,unigram,5
+dolphin-yi-34b::opponent,4,does,unigram,5
+dolphin-yi-34b::opponent,5,imply,unigram,5
+dolphin-yi-34b::opponent,6,industry,unigram,5
+dolphin-yi-34b::opponent,7,regulatory agencies,bigram,5
+dolphin-yi-34b::opponent,8,food,unigram,5
+dolphin-yi-34b::opponent,9,approval,unigram,4
+dolphin-yi-34b::opponent,10,approvals driven,bigram,4
+dolphin-yi-34b::opponent,11,approvals driven systemic,trigram,4
+dolphin-yi-34b::opponent,12,criteria place,bigram,4
+dolphin-yi-34b::opponent,13,agencies industry,bigram,4
+dolphin-yi-34b::opponent,14,approval processes,bigram,4
+dolphin-yi-34b::opponent,15,additive approvals driven,trigram,4
+dolphin-yi-34b::opponent,16,additive,unigram,4
+dolphin-yi-34b::opponent,17,crucial examine specific,trigram,4
+dolphin-yi-34b::opponent,18,decision making,bigram,4
+dolphin-yi-34b::opponent,19,door regulatory agencies,trigram,4
+dolphin-yi-34b::opponent,20,decision making criteria,trigram,4
+dolphin-yi-34b::opponent,21,does necessarily imply,trigram,4
+dolphin-yi-34b::opponent,22,door,unigram,4
+dolphin-yi-34b::opponent,23,does necessarily,bigram,4
+dolphin-yi-34b::opponent,24,door regulatory,bigram,4
+dolphin-yi-34b::opponent,25,criteria,unigram,4
+dolphin-yi-34b::proponent,1,additives,unigram,5
+dolphin-yi-34b::proponent,2,agencies,unigram,5
+dolphin-yi-34b::proponent,3,regulatory agencies,bigram,5
+dolphin-yi-34b::proponent,4,industry,unigram,5
+dolphin-yi-34b::proponent,5,regulatory,unigram,5
+dolphin-yi-34b::proponent,6,creates,unigram,4
+dolphin-yi-34b::proponent,7,agencies industry,bigram,4
+dolphin-yi-34b::proponent,8,creates systemic incentive,trigram,4
+dolphin-yi-34b::proponent,9,food,unigram,4
+dolphin-yi-34b::proponent,10,incentive,unigram,4
+dolphin-yi-34b::proponent,11,harm,unigram,4
+dolphin-yi-34b::proponent,12,food additives,bigram,4
+dolphin-yi-34b::proponent,13,door,unigram,4
+dolphin-yi-34b::proponent,14,creates systemic,bigram,4
+dolphin-yi-34b::proponent,15,door regulatory agencies,trigram,4
+dolphin-yi-34b::proponent,16,door regulatory,bigram,4
+dolphin-yi-34b::proponent,17,revolving door regulatory,trigram,4
+dolphin-yi-34b::proponent,18,revolving door,bigram,4
+dolphin-yi-34b::proponent,19,revolving,unigram,4
+dolphin-yi-34b::proponent,20,regulatory agencies industry,trigram,4
+dolphin-yi-34b::proponent,21,systemic,unigram,4
+dolphin-yi-34b::proponent,22,systemic incentive,bigram,4
+dolphin-yi-34b::proponent,23,health,unigram,3
+dolphin-yi-34b::proponent,24,incentive approval food,trigram,3
+dolphin-yi-34b::proponent,25,food additives harm,trigram,3
+gemma3:27b::moderator,1,ca,unigram,28
+gemma3:27b::moderator,2,sa,unigram,25
+gemma3:27b::moderator,3,door,unigram,12
+gemma3:27b::moderator,4,revolving door,bigram,12
+gemma3:27b::moderator,5,regulatory,unigram,12
+gemma3:27b::moderator,6,industry,unigram,12
+gemma3:27b::moderator,7,revolving,unigram,12
+gemma3:27b::moderator,8,scientific,unigram,11
+gemma3:27b::moderator,9,approval,unigram,11
+gemma3:27b::moderator,10,harmful,unigram,11
+gemma3:27b::moderator,11,influence,unigram,10
+gemma3:27b::moderator,12,process,unigram,10
+gemma3:27b::moderator,13,proof,unigram,10
+gemma3:27b::moderator,14,evidence,unigram,10
+gemma3:27b::moderator,15,agents,unigram,9
+gemma3:27b::moderator,16,asks,unigram,9
+gemma3:27b::moderator,17,argues,unigram,9
+gemma3:27b::moderator,18,additives,unigram,9
+gemma3:27b::moderator,19,specific,unigram,8
+gemma3:27b::moderator,20,harm,unigram,8
+gemma3:27b::moderator,21,harmful additives,bigram,7
+gemma3:27b::moderator,22,regulatory agencies,bigram,7
+gemma3:27b::moderator,23,capture,unigram,7
+gemma3:27b::moderator,24,approvals,unigram,7
+gemma3:27b::moderator,25,acknowledge,unigram,7

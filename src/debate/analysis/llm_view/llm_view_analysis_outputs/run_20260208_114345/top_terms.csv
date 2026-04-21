@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,26
+gemma3:27b::moderator,3,data,unigram,12
+gemma3:27b::moderator,4,evidence,unigram,12
+gemma3:27b::moderator,5,agents,unigram,11
+gemma3:27b::moderator,6,scientific,unigram,10
+gemma3:27b::moderator,7,agree,unigram,8
+gemma3:27b::moderator,8,research,unigram,7
+gemma3:27b::moderator,9,anomalies,unigram,7
+gemma3:27b::moderator,10,acknowledge,unigram,7
+gemma3:27b::moderator,11,argues,unigram,7
+gemma3:27b::moderator,12,questions,unigram,6
+gemma3:27b::moderator,13,atmospheric,unigram,6
+gemma3:27b::moderator,14,round recap agreements,trigram,5
+gemma3:27b::moderator,15,agreements agents,bigram,5
+gemma3:27b::moderator,16,round,unigram,5
+gemma3:27b::moderator,17,recap agreements agents,trigram,5
+gemma3:27b::moderator,18,recap agreements,bigram,5
+gemma3:27b::moderator,19,proof,unigram,5
+gemma3:27b::moderator,20,agreements,unigram,5
+gemma3:27b::moderator,21,questions ca,bigram,5
+gemma3:27b::moderator,22,shift,unigram,5
+gemma3:27b::moderator,23,independent,unigram,5
+gemma3:27b::moderator,24,epistemic,unigram,5
+gemma3:27b::moderator,25,moderator,unigram,5
+gemma3:27b::opponent,1,acknowledging,unigram,5
+gemma3:27b::opponent,2,atmospheric,unigram,3
+gemma3:27b::opponent,3,evidence,unigram,3
+gemma3:27b::opponent,4,alternative explanations,bigram,2
+gemma3:27b::opponent,5,atmospheric modification,bigram,2
+gemma3:27b::opponent,6,potential,unigram,2
+gemma3:27b::opponent,7,modification,unigram,2
+gemma3:27b::opponent,8,alternative,unigram,2
+gemma3:27b::opponent,9,instances,unigram,2
+gemma3:27b::opponent,10,inherently,unigram,2
+gemma3:27b::opponent,11,explanations,unigram,2
+gemma3:27b::opponent,12,dismissing,unigram,2
+gemma3:27b::opponent,13,deliberate,unigram,2
+gemma3:27b::opponent,14,deliberate atmospheric,bigram,2
+gemma3:27b::opponent,15,deliberate atmospheric modification,trigram,2
+gemma3:27b::opponent,16,anomalies,unigram,2
+gemma3:27b::opponent,17,conspiracy,unigram,2
+gemma3:27b::opponent,18,acknowledging potential,bigram,2
+gemma3:27b::opponent,19,support,unigram,1
+gemma3:27b::opponent,20,sufficient support relies,trigram,1
+gemma3:27b::opponent,21,sufficient support,bigram,1
+gemma3:27b::opponent,22,sufficient,unigram,1
+gemma3:27b::opponent,23,specific evidentiary requirements,trigram,1
+gemma3:27b::opponent,24,specific evidentiary,bigram,1
+gemma3:27b::opponent,25,specific,unigram,1
+gemma3:27b::proponent,1,anomalies,unigram,3
+gemma3:27b::proponent,2,atmospheric,unigram,3
+gemma3:27b::proponent,3,pattern,unigram,3
+gemma3:27b::proponent,4,ignores,unigram,3
+gemma3:27b::proponent,5,data,unigram,3
+gemma3:27b::proponent,6,systemic bias,bigram,2
+gemma3:27b::proponent,7,systemic,unigram,2
+gemma3:27b::proponent,8,atmospheric modification,bigram,2
+gemma3:27b::proponent,9,phenomena,unigram,2
+gemma3:27b::proponent,10,objective,unigram,2
+gemma3:27b::proponent,11,modification,unigram,2
+gemma3:27b::proponent,12,institutional,unigram,2
+gemma3:27b::proponent,13,ignores documented,bigram,2
+gemma3:27b::proponent,14,ignores documented instances,trigram,2
+gemma3:27b::proponent,15,trails,unigram,2
+gemma3:27b::proponent,16,regarding,unigram,2
+gemma3:27b::proponent,17,instances,unigram,2
+gemma3:27b::proponent,18,insistence,unigram,2
+gemma3:27b::proponent,19,documented,unigram,2
+gemma3:27b::proponent,20,bias,unigram,2
+gemma3:27b::proponent,21,documented instances,bigram,2
+gemma3:27b::proponent,22,environmental,unigram,2
+gemma3:27b::proponent,23,conveniently,unigram,2
+gemma3:27b::proponent,24,creating,unigram,2
+gemma3:27b::proponent,25,continued,unigram,2

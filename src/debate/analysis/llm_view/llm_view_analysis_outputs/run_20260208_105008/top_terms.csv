@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,37
+gemma3:27b::moderator,2,sa,unigram,24
+gemma3:27b::moderator,3,data,unigram,15
+gemma3:27b::moderator,4,nasa,unigram,12
+gemma3:27b::moderator,5,evidence,unigram,11
+gemma3:27b::moderator,6,anomalies,unigram,10
+gemma3:27b::moderator,7,agents,unigram,10
+gemma3:27b::moderator,8,acknowledge,unigram,9
+gemma3:27b::moderator,9,apollo,unigram,7
+gemma3:27b::moderator,10,proof,unigram,6
+gemma3:27b::moderator,11,questions,unigram,6
+gemma3:27b::moderator,12,specific,unigram,6
+gemma3:27b::moderator,13,argues,unigram,6
+gemma3:27b::moderator,14,agents acknowledge,bigram,5
+gemma3:27b::moderator,15,round,unigram,5
+gemma3:27b::moderator,16,recap,unigram,5
+gemma3:27b::moderator,17,agreements,unigram,5
+gemma3:27b::moderator,18,questions ca,bigram,5
+gemma3:27b::moderator,19,recap agreements agents,trigram,5
+gemma3:27b::moderator,20,recap agreements,bigram,5
+gemma3:27b::moderator,21,round recap,bigram,5
+gemma3:27b::moderator,22,moderator,unigram,5
+gemma3:27b::moderator,23,fabrication,unigram,5
+gemma3:27b::moderator,24,appeal,unigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::opponent,1,anomalies,unigram,5
+gemma3:27b::opponent,2,acknowledging,unigram,4
+gemma3:27b::opponent,3,evidence,unigram,4
+gemma3:27b::opponent,4,requires,unigram,3
+gemma3:27b::opponent,5,data,unigram,3
+gemma3:27b::opponent,6,explanations,unigram,3
+gemma3:27b::opponent,7,demonstrating,unigram,3
+gemma3:27b::opponent,8,alternative explanations,bigram,2
+gemma3:27b::opponent,9,requires demonstrating,bigram,2
+gemma3:27b::opponent,10,regarding,unigram,2
+gemma3:27b::opponent,11,potential,unigram,2
+gemma3:27b::opponent,12,alternative,unigram,2
+gemma3:27b::opponent,13,solely,unigram,2
+gemma3:27b::opponent,14,solely cover,bigram,2
+gemma3:27b::opponent,15,scientific,unigram,2
+gemma3:27b::opponent,16,relies,unigram,2
+gemma3:27b::opponent,17,incentive,unigram,2
+gemma3:27b::opponent,18,institutional,unigram,2
+gemma3:27b::opponent,19,landings,unigram,2
+gemma3:27b::opponent,20,plausible,unigram,2
+gemma3:27b::opponent,21,proof,unigram,2
+gemma3:27b::opponent,22,apollo,unigram,2
+gemma3:27b::opponent,23,attributing,unigram,2
+gemma3:27b::opponent,24,apollo landings,bigram,2
+gemma3:27b::opponent,25,fabrication,unigram,2
+gemma3:27b::proponent,1,anomalies,unigram,4
+gemma3:27b::proponent,2,apollo,unigram,4
+gemma3:27b::proponent,3,evidence,unigram,3
+gemma3:27b::proponent,4,narrative,unigram,3
+gemma3:27b::proponent,5,pattern,unigram,2
+gemma3:27b::proponent,6,official,unigram,2
+gemma3:27b::proponent,7,strategy,unigram,2
+gemma3:27b::proponent,8,protect,unigram,2
+gemma3:27b::proponent,9,government,unigram,2
+gemma3:27b::proponent,10,mere,unigram,2
+gemma3:27b::proponent,11,data,unigram,2
+gemma3:27b::proponent,12,designed,unigram,2
+gemma3:27b::proponent,13,control narrative,bigram,2
+gemma3:27b::proponent,14,control,unigram,2
+gemma3:27b::proponent,15,consistent,unigram,2
+gemma3:27b::proponent,16,transparency calculated pr,trigram,1
+gemma3:27b::proponent,17,transparency calculated,bigram,1
+gemma3:27b::proponent,18,transparency,unigram,1
+gemma3:27b::proponent,19,technological superiority cold,trigram,1
+gemma3:27b::proponent,20,technological superiority,bigram,1
+gemma3:27b::proponent,21,technological,unigram,1
+gemma3:27b::proponent,22,technical limitations misinterpretations,trigram,1
+gemma3:27b::proponent,23,technical limitations,bigram,1
+gemma3:27b::proponent,24,technical,unigram,1
+gemma3:27b::proponent,25,tactic avoid addressing,trigram,1

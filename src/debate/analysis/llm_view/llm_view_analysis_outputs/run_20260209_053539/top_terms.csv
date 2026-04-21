@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,15
+dolphin-yi-34b::moderator,2,sa,unigram,14
+dolphin-yi-34b::moderator,3,private,unigram,12
+dolphin-yi-34b::moderator,4,reserve,unigram,12
+dolphin-yi-34b::moderator,5,federal reserve,bigram,12
+dolphin-yi-34b::moderator,6,federal,unigram,12
+dolphin-yi-34b::moderator,7,complexity,unigram,10
+dolphin-yi-34b::moderator,8,evidence,unigram,10
+dolphin-yi-34b::moderator,9,banks,unigram,9
+dolphin-yi-34b::moderator,10,unintended,unigram,9
+dolphin-yi-34b::moderator,11,systemic,unigram,9
+dolphin-yi-34b::moderator,12,unintended consequences,bigram,9
+dolphin-yi-34b::moderator,13,consequences,unigram,9
+dolphin-yi-34b::moderator,14,economic,unigram,8
+dolphin-yi-34b::moderator,15,systemic bias,bigram,8
+dolphin-yi-34b::moderator,16,bias,unigram,8
+dolphin-yi-34b::moderator,17,agents,unigram,8
+dolphin-yi-34b::moderator,18,deliberate,unigram,8
+dolphin-yi-34b::moderator,19,interests,unigram,7
+dolphin-yi-34b::moderator,20,manipulation,unigram,7
+dolphin-yi-34b::moderator,21,financial,unigram,7
+dolphin-yi-34b::moderator,22,private banks,bigram,7
+dolphin-yi-34b::moderator,23,specific,unigram,6
+dolphin-yi-34b::moderator,24,policies,unigram,6
+dolphin-yi-34b::moderator,25,fed,unigram,6
+dolphin-yi-34b::opponent,1,federal,unigram,5
+dolphin-yi-34b::opponent,2,federal reserve,bigram,5
+dolphin-yi-34b::opponent,3,reserve,unigram,5
+dolphin-yi-34b::opponent,4,deliberately manipulating economy,trigram,4
+dolphin-yi-34b::opponent,5,federal reserve policies,trigram,4
+dolphin-yi-34b::opponent,6,economy,unigram,4
+dolphin-yi-34b::opponent,7,deliberately manipulating,bigram,4
+dolphin-yi-34b::opponent,8,deliberately,unigram,4
+dolphin-yi-34b::opponent,9,manipulating economy,bigram,4
+dolphin-yi-34b::opponent,10,policies,unigram,4
+dolphin-yi-34b::opponent,11,private,unigram,4
+dolphin-yi-34b::opponent,12,reserve policies,bigram,4
+dolphin-yi-34b::opponent,13,manipulating,unigram,4
+dolphin-yi-34b::opponent,14,dynamics deliberately manipulating,trigram,3
+dolphin-yi-34b::opponent,15,economic,unigram,3
+dolphin-yi-34b::opponent,16,complex,unigram,3
+dolphin-yi-34b::opponent,17,economy private,bigram,3
+dolphin-yi-34b::opponent,18,favor certain,bigram,3
+dolphin-yi-34b::opponent,19,favor,unigram,3
+dolphin-yi-34b::opponent,20,favor certain groups,trigram,3
+dolphin-yi-34b::opponent,21,groups complex economic,trigram,3
+dolphin-yi-34b::opponent,22,groups complex,bigram,3
+dolphin-yi-34b::opponent,23,interests,unigram,3
+dolphin-yi-34b::opponent,24,groups,unigram,3
+dolphin-yi-34b::opponent,25,certain,unigram,3
+gemma3:27b::proponent,1,policies,unigram,4
+gemma3:27b::proponent,2,reserve,unigram,3
+gemma3:27b::proponent,3,financial,unigram,3
+gemma3:27b::proponent,4,federal reserve,bigram,3
+gemma3:27b::proponent,5,federal,unigram,3
+gemma3:27b::proponent,6,consistently,unigram,3
+gemma3:27b::proponent,7,street,unigram,2
+gemma3:27b::proponent,8,private,unigram,2
+gemma3:27b::proponent,9,main,unigram,2
+gemma3:27b::proponent,10,pattern,unigram,2
+gemma3:27b::proponent,11,policies benefit,bigram,2
+gemma3:27b::proponent,12,main street,bigram,2
+gemma3:27b::proponent,13,insistence,unigram,2
+gemma3:27b::proponent,14,interests,unigram,2
+gemma3:27b::proponent,15,institutions,unigram,2
+gemma3:27b::proponent,16,benefit,unigram,2
+gemma3:27b::proponent,17,ignores,unigram,2
+gemma3:27b::proponent,18,fed,unigram,2
+gemma3:27b::proponent,19,demonstrably,unigram,2
+gemma3:27b::proponent,20,crisis,unigram,2
+gemma3:27b::proponent,21,wealthy,unigram,1
+gemma3:27b::proponent,22,wealth,unigram,1
+gemma3:27b::proponent,23,wage growth,bigram,1
+gemma3:27b::proponent,24,wage,unigram,1
+gemma3:27b::proponent,25,unintentional ignores clear,trigram,1

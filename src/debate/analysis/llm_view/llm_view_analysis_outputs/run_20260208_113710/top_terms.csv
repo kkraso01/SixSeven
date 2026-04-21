@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,28
+gemma3:27b::moderator,2,sa,unigram,24
+gemma3:27b::moderator,3,climate,unigram,16
+gemma3:27b::moderator,4,agents,unigram,10
+gemma3:27b::moderator,5,evidence,unigram,10
+gemma3:27b::moderator,6,policies,unigram,10
+gemma3:27b::moderator,7,impacts,unigram,6
+gemma3:27b::moderator,8,acknowledge,unigram,6
+gemma3:27b::moderator,9,questions,unigram,5
+gemma3:27b::moderator,10,focuses,unigram,5
+gemma3:27b::moderator,11,views,unigram,5
+gemma3:27b::moderator,12,scores civility epistemic,trigram,4
+gemma3:27b::moderator,13,scores,unigram,4
+gemma3:27b::moderator,14,referencing,unigram,4
+gemma3:27b::moderator,15,recap agreements,bigram,4
+gemma3:27b::moderator,16,round recap agreements,trigram,4
+gemma3:27b::moderator,17,questions ca,bigram,4
+gemma3:27b::moderator,18,agreements,unigram,4
+gemma3:27b::moderator,19,agreements agents,bigram,4
+gemma3:27b::moderator,20,agreements agents acknowledge,trigram,4
+gemma3:27b::moderator,21,proof,unigram,4
+gemma3:27b::moderator,22,potential,unigram,4
+gemma3:27b::moderator,23,recap,unigram,4
+gemma3:27b::moderator,24,recap agreements agents,trigram,4
+gemma3:27b::moderator,25,agree,unigram,4
+gemma3:27b::opponent,1,climate,unigram,4
+gemma3:27b::opponent,2,overlooks,unigram,3
+gemma3:27b::opponent,3,evidence,unigram,3
+gemma3:27b::opponent,4,policy,unigram,3
+gemma3:27b::opponent,5,policies,unigram,3
+gemma3:27b::opponent,6,action,unigram,2
+gemma3:27b::opponent,7,influence,unigram,2
+gemma3:27b::opponent,8,attributing,unigram,2
+gemma3:27b::opponent,9,energy,unigram,2
+gemma3:27b::opponent,10,control,unigram,2
+gemma3:27b::opponent,11,climate action,bigram,2
+gemma3:27b::opponent,12,undoubtedly influence,bigram,1
+gemma3:27b::opponent,13,undoubtedly,unigram,1
+gemma3:27b::opponent,14,transitions trade offs,trigram,1
+gemma3:27b::opponent,15,transitions trade,bigram,1
+gemma3:27b::opponent,16,transitions,unigram,1
+gemma3:27b::opponent,17,transfer lacks sufficient,trigram,1
+gemma3:27b::opponent,18,transfer lacks,bigram,1
+gemma3:27b::opponent,19,transfer,unigram,1
+gemma3:27b::opponent,20,trade offs involved,trigram,1
+gemma3:27b::opponent,21,trade offs,bigram,1
+gemma3:27b::opponent,22,trade,unigram,1
+gemma3:27b::opponent,23,technologies demonstrates hidden,trigram,1
+gemma3:27b::opponent,24,technologies demonstrates,bigram,1
+gemma3:27b::opponent,25,technologies,unigram,1
+gemma3:27b::proponent,1,climate,unigram,3
+gemma3:27b::proponent,2,simultaneously,unigram,2
+gemma3:27b::proponent,3,like,unigram,2
+gemma3:27b::proponent,4,isn,unigram,2
+gemma3:27b::proponent,5,genuine,unigram,2
+gemma3:27b::proponent,6,environmental,unigram,2
+gemma3:27b::proponent,7,corporations,unigram,2
+gemma3:27b::proponent,8,insistence,unigram,2
+gemma3:27b::proponent,9,control,unigram,2
+gemma3:27b::proponent,10,change,unigram,2
+gemma3:27b::proponent,11,climate change,bigram,2
+gemma3:27b::proponent,12,true,unigram,1
+gemma3:27b::proponent,13,trading offset schemes,trigram,1
+gemma3:27b::proponent,14,trading offset,bigram,1
+gemma3:27b::proponent,15,trading,unigram,1
+gemma3:27b::proponent,16,technologies like certain,trigram,1
+gemma3:27b::proponent,17,technologies like,bigram,1
+gemma3:27b::proponent,18,technologies,unigram,1
+gemma3:27b::proponent,19,strategy consolidate power,trigram,1
+gemma3:27b::proponent,20,strategy consolidate,bigram,1
+gemma3:27b::proponent,21,strategy,unigram,1
+gemma3:27b::proponent,22,specific economically damaging,trigram,1
+gemma3:27b::proponent,23,specific economically,bigram,1
+gemma3:27b::proponent,24,specific,unigram,1
+gemma3:27b::proponent,25,solutions climate change,trigram,1

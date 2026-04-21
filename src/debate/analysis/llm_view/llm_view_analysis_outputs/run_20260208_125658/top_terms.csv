@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,fluoridation,unigram,23
+dolphin-yi-34b::moderator,2,water fluoridation,bigram,19
+dolphin-yi-34b::moderator,3,water,unigram,19
+dolphin-yi-34b::moderator,4,evidence,unigram,15
+dolphin-yi-34b::moderator,5,ca,unigram,13
+dolphin-yi-34b::moderator,6,sa,unigram,13
+dolphin-yi-34b::moderator,7,health,unigram,13
+dolphin-yi-34b::moderator,8,control,unigram,12
+dolphin-yi-34b::moderator,9,agents,unigram,8
+dolphin-yi-34b::moderator,10,questions,unigram,8
+dolphin-yi-34b::moderator,11,claim,unigram,7
+dolphin-yi-34b::moderator,12,global,unigram,7
+dolphin-yi-34b::moderator,13,social,unigram,7
+dolphin-yi-34b::moderator,14,social control,bigram,7
+dolphin-yi-34b::moderator,15,claim water,bigram,6
+dolphin-yi-34b::moderator,16,public health,bigram,6
+dolphin-yi-34b::moderator,17,global health organizations,trigram,6
+dolphin-yi-34b::moderator,18,claim water fluoridation,trigram,6
+dolphin-yi-34b::moderator,19,public,unigram,6
+dolphin-yi-34b::moderator,20,organizations,unigram,6
+dolphin-yi-34b::moderator,21,global health,bigram,6
+dolphin-yi-34b::moderator,22,health organizations,bigram,6
+dolphin-yi-34b::moderator,23,bridge questions,bigram,5
+dolphin-yi-34b::moderator,24,bridge questions specific,trigram,5
+dolphin-yi-34b::moderator,25,scores civility,bigram,5
+dolphin-yi-34b::opponent,1,decay,unigram,5
+dolphin-yi-34b::opponent,2,fluoridation public health,trigram,5
+dolphin-yi-34b::opponent,3,health,unigram,5
+dolphin-yi-34b::opponent,4,fluoridation,unigram,5
+dolphin-yi-34b::opponent,5,fluoridation public,bigram,5
+dolphin-yi-34b::opponent,6,tooth,unigram,5
+dolphin-yi-34b::opponent,7,public health,bigram,5
+dolphin-yi-34b::opponent,8,public,unigram,5
+dolphin-yi-34b::opponent,9,tooth decay,bigram,5
+dolphin-yi-34b::opponent,10,water,unigram,5
+dolphin-yi-34b::opponent,11,water fluoridation public,trigram,5
+dolphin-yi-34b::opponent,12,water fluoridation,bigram,5
+dolphin-yi-34b::opponent,13,decay rates,bigram,4
+dolphin-yi-34b::opponent,14,aimed,unigram,4
+dolphin-yi-34b::opponent,15,aimed reducing tooth,trigram,4
+dolphin-yi-34b::opponent,16,aimed reducing,bigram,4
+dolphin-yi-34b::opponent,17,rates,unigram,4
+dolphin-yi-34b::opponent,18,reducing tooth,bigram,4
+dolphin-yi-34b::opponent,19,rates means,bigram,4
+dolphin-yi-34b::opponent,20,rates means social,trigram,4
+dolphin-yi-34b::opponent,21,reducing,unigram,4
+dolphin-yi-34b::opponent,22,reducing tooth decay,trigram,4
+dolphin-yi-34b::opponent,23,social control,bigram,4
+dolphin-yi-34b::opponent,24,social,unigram,4
+dolphin-yi-34b::opponent,25,public health intervention,trigram,4
+dolphin-yi-34b::proponent,1,control,unigram,5
+dolphin-yi-34b::proponent,2,fluoridation,unigram,5
+dolphin-yi-34b::proponent,3,water,unigram,5
+dolphin-yi-34b::proponent,4,water fluoridation,bigram,5
+dolphin-yi-34b::proponent,5,health,unigram,4
+dolphin-yi-34b::proponent,6,control populations,bigram,3
+dolphin-yi-34b::proponent,7,populations,unigram,3
+dolphin-yi-34b::proponent,8,control populations manipulate,trigram,2
+dolphin-yi-34b::proponent,9,genuine health measure,trigram,2
+dolphin-yi-34b::proponent,10,genuine health,bigram,2
+dolphin-yi-34b::proponent,11,genuine,unigram,2
+dolphin-yi-34b::proponent,12,government,unigram,2
+dolphin-yi-34b::proponent,13,fluoridation subtle means,trigram,2
+dolphin-yi-34b::proponent,14,social control genuine,trigram,2
+dolphin-yi-34b::proponent,15,fluoridation subtle,bigram,2
+dolphin-yi-34b::proponent,16,control genuine health,trigram,2
+dolphin-yi-34b::proponent,17,means,unigram,2
+dolphin-yi-34b::proponent,18,populations manipulate,bigram,2
+dolphin-yi-34b::proponent,19,populations manipulate public,trigram,2
+dolphin-yi-34b::proponent,20,public health,bigram,2
+dolphin-yi-34b::proponent,21,public,unigram,2
+dolphin-yi-34b::proponent,22,social control,bigram,2
+dolphin-yi-34b::proponent,23,measure,unigram,2
+dolphin-yi-34b::proponent,24,outcomes,unigram,2
+dolphin-yi-34b::proponent,25,manipulate,unigram,2

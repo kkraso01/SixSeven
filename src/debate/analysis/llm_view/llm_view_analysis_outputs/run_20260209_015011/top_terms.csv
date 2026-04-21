@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,ai,unigram,5
+dolphin-yi-34b::proponent,2,surveillance,unigram,5
+dolphin-yi-34b::proponent,3,control,unigram,4
+dolphin-yi-34b::proponent,4,ai surveillance,bigram,4
+dolphin-yi-34b::proponent,5,coordinated,unigram,4
+dolphin-yi-34b::proponent,6,coincidence,unigram,4
+dolphin-yi-34b::proponent,7,coordinated plan total,trigram,3
+dolphin-yi-34b::proponent,8,global,unigram,3
+dolphin-yi-34b::proponent,9,mere coincidence,bigram,3
+dolphin-yi-34b::proponent,10,plan total,bigram,3
+dolphin-yi-34b::proponent,11,population,unigram,3
+dolphin-yi-34b::proponent,12,plan,unigram,3
+dolphin-yi-34b::proponent,13,mere,unigram,3
+dolphin-yi-34b::proponent,14,plan total population,trigram,3
+dolphin-yi-34b::proponent,15,coordinated plan,bigram,3
+dolphin-yi-34b::proponent,16,total,unigram,3
+dolphin-yi-34b::proponent,17,total population,bigram,3
+dolphin-yi-34b::proponent,18,rise,unigram,2
+dolphin-yi-34b::proponent,19,indicative coordinated,bigram,2
+dolphin-yi-34b::proponent,20,rise ai,bigram,2
+dolphin-yi-34b::proponent,21,surveillance systems,bigram,2
+dolphin-yi-34b::proponent,22,population control,bigram,2
+dolphin-yi-34b::proponent,23,rise ai surveillance,trigram,2
+dolphin-yi-34b::proponent,24,mere coincidence indicative,trigram,2
+dolphin-yi-34b::proponent,25,indicative,unigram,2
+gemma3:27b::moderator,1,ca,unigram,31
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,20
+gemma3:27b::moderator,4,coordinated,unigram,13
+gemma3:27b::moderator,5,plan,unigram,11
+gemma3:27b::moderator,6,coordinated plan,bigram,10
+gemma3:27b::moderator,7,surveillance,unigram,9
+gemma3:27b::moderator,8,coordination,unigram,9
+gemma3:27b::moderator,9,alternative,unigram,8
+gemma3:27b::moderator,10,control,unigram,8
+gemma3:27b::moderator,11,total,unigram,8
+gemma3:27b::moderator,12,agents,unigram,8
+gemma3:27b::moderator,13,explanations,unigram,7
+gemma3:27b::moderator,14,alternative explanations,bigram,7
+gemma3:27b::moderator,15,specific,unigram,7
+gemma3:27b::moderator,16,similarities,unigram,7
+gemma3:27b::moderator,17,proof,unigram,7
+gemma3:27b::moderator,18,agree,unigram,6
+gemma3:27b::moderator,19,shift,unigram,6
+gemma3:27b::moderator,20,argues,unigram,6
+gemma3:27b::moderator,21,ai surveillance,bigram,6
+gemma3:27b::moderator,22,burden proof,bigram,6
+gemma3:27b::moderator,23,patterns,unigram,6
+gemma3:27b::moderator,24,burden,unigram,6
+gemma3:27b::moderator,25,ai,unigram,6
+gemma3:27b::opponent,1,ai,unigram,5
+gemma3:27b::opponent,2,ai surveillance,bigram,5
+gemma3:27b::opponent,3,coordinated,unigram,5
+gemma3:27b::opponent,4,surveillance,unigram,5
+gemma3:27b::opponent,5,control,unigram,4
+gemma3:27b::opponent,6,attributing coordinated,bigram,4
+gemma3:27b::opponent,7,evidence,unigram,4
+gemma3:27b::opponent,8,attributing,unigram,4
+gemma3:27b::opponent,9,plan total,bigram,4
+gemma3:27b::opponent,10,requires,unigram,4
+gemma3:27b::opponent,11,plan,unigram,4
+gemma3:27b::opponent,12,total,unigram,4
+gemma3:27b::opponent,13,coordinated plan,bigram,3
+gemma3:27b::opponent,14,coordinated plan total,trigram,3
+gemma3:27b::opponent,15,control requires,bigram,3
+gemma3:27b::opponent,16,correlation,unigram,3
+gemma3:27b::opponent,17,population,unigram,3
+gemma3:27b::opponent,18,total population,bigram,3
+gemma3:27b::opponent,19,plan total population,trigram,3
+gemma3:27b::opponent,20,total population control,trigram,2
+gemma3:27b::opponent,21,remains,unigram,2
+gemma3:27b::opponent,22,population control,bigram,2
+gemma3:27b::opponent,23,requires demonstrating,bigram,2
+gemma3:27b::opponent,24,overlooks,unigram,2
+gemma3:27b::opponent,25,exist attributing coordinated,trigram,2

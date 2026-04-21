@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,health,unigram,13
+dolphin-yi-34b::moderator,2,sa,unigram,12
+dolphin-yi-34b::moderator,3,gmo,unigram,11
+dolphin-yi-34b::moderator,4,ca,unigram,10
+dolphin-yi-34b::moderator,5,gmo foods,bigram,10
+dolphin-yi-34b::moderator,6,corporate,unigram,10
+dolphin-yi-34b::moderator,7,foods,unigram,10
+dolphin-yi-34b::moderator,8,questions,unigram,7
+dolphin-yi-34b::moderator,9,evidence,unigram,7
+dolphin-yi-34b::moderator,10,dependence,unigram,7
+dolphin-yi-34b::moderator,11,gmo foods deliberately,trigram,6
+dolphin-yi-34b::moderator,12,deliberately designed cause,trigram,6
+dolphin-yi-34b::moderator,13,cause,unigram,6
+dolphin-yi-34b::moderator,14,specific,unigram,6
+dolphin-yi-34b::moderator,15,deliberately,unigram,6
+dolphin-yi-34b::moderator,16,agriculture,unigram,6
+dolphin-yi-34b::moderator,17,problems,unigram,6
+dolphin-yi-34b::moderator,18,cause health problems,trigram,6
+dolphin-yi-34b::moderator,19,cause health,bigram,6
+dolphin-yi-34b::moderator,20,profits,unigram,6
+dolphin-yi-34b::moderator,21,increase,unigram,6
+dolphin-yi-34b::moderator,22,increase dependence,bigram,6
+dolphin-yi-34b::moderator,23,increase dependence corporate,trigram,6
+dolphin-yi-34b::moderator,24,corporate agriculture,bigram,6
+dolphin-yi-34b::moderator,25,problems increase dependence,trigram,6
+dolphin-yi-34b::opponent,1,corporate,unigram,3
+dolphin-yi-34b::opponent,2,designed,unigram,3
+dolphin-yi-34b::opponent,3,deliberately,unigram,3
+dolphin-yi-34b::opponent,4,deliberately designed,bigram,3
+dolphin-yi-34b::opponent,5,does,unigram,3
+dolphin-yi-34b::opponent,6,gmo foods deliberately,trigram,3
+dolphin-yi-34b::opponent,7,foods deliberately designed,trigram,3
+dolphin-yi-34b::opponent,8,gmo,unigram,3
+dolphin-yi-34b::opponent,9,gmo foods,bigram,3
+dolphin-yi-34b::opponent,10,foods deliberately,bigram,3
+dolphin-yi-34b::opponent,11,foods,unigram,3
+dolphin-yi-34b::opponent,12,dependence corporate agriculture,trigram,2
+dolphin-yi-34b::opponent,13,dependence,unigram,2
+dolphin-yi-34b::opponent,14,agriculture,unigram,2
+dolphin-yi-34b::opponent,15,cause health problems,trigram,2
+dolphin-yi-34b::opponent,16,argument,unigram,2
+dolphin-yi-34b::opponent,17,deliberately designed cause,trigram,2
+dolphin-yi-34b::opponent,18,does directly,bigram,2
+dolphin-yi-34b::opponent,19,designed cause health,trigram,2
+dolphin-yi-34b::opponent,20,directly,unigram,2
+dolphin-yi-34b::opponent,21,health problems increase,trigram,2
+dolphin-yi-34b::opponent,22,increase dependence corporate,trigram,2
+dolphin-yi-34b::opponent,23,increase dependence,bigram,2
+dolphin-yi-34b::opponent,24,health problems,bigram,2
+dolphin-yi-34b::opponent,25,health,unigram,2
+dolphin-yi-34b::proponent,1,corporations history,bigram,4
+dolphin-yi-34b::proponent,2,corporations,unigram,4
+dolphin-yi-34b::proponent,3,history,unigram,4
+dolphin-yi-34b::proponent,4,conducted,unigram,3
+dolphin-yi-34b::proponent,5,doubt,unigram,3
+dolphin-yi-34b::proponent,6,corporations history prioritizing,trigram,3
+dolphin-yi-34b::proponent,7,doubt impartiality,bigram,3
+dolphin-yi-34b::proponent,8,environmental,unigram,3
+dolphin-yi-34b::proponent,9,history prioritizing,bigram,3
+dolphin-yi-34b::proponent,10,history prioritizing profits,trigram,3
+dolphin-yi-34b::proponent,11,impartiality,unigram,3
+dolphin-yi-34b::proponent,12,health environmental sustainability,trigram,3
+dolphin-yi-34b::proponent,13,health,unigram,3
+dolphin-yi-34b::proponent,14,health environmental,bigram,3
+dolphin-yi-34b::proponent,15,environmental sustainability,bigram,3
+dolphin-yi-34b::proponent,16,doubt impartiality studies,trigram,3
+dolphin-yi-34b::proponent,17,impartiality studies conducted,trigram,3
+dolphin-yi-34b::proponent,18,impartiality studies,bigram,3
+dolphin-yi-34b::proponent,19,public health,bigram,3
+dolphin-yi-34b::proponent,20,public,unigram,3
+dolphin-yi-34b::proponent,21,studies,unigram,3
+dolphin-yi-34b::proponent,22,studies conducted,bigram,3
+dolphin-yi-34b::proponent,23,sustainability,unigram,3
+dolphin-yi-34b::proponent,24,public health environmental,trigram,3
+dolphin-yi-34b::proponent,25,profits public,bigram,3

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,31
+gemma3:27b::moderator,2,sa,unigram,21
+gemma3:27b::moderator,3,control,unigram,14
+gemma3:27b::moderator,4,privacy,unigram,12
+gemma3:27b::moderator,5,cbdcs,unigram,12
+gemma3:27b::moderator,6,surveillance,unigram,9
+gemma3:27b::moderator,7,central,unigram,8
+gemma3:27b::moderator,8,evidence,unigram,8
+gemma3:27b::moderator,9,potential,unigram,7
+gemma3:27b::moderator,10,design,unigram,6
+gemma3:27b::moderator,11,cbdc,unigram,6
+gemma3:27b::moderator,12,acknowledge,unigram,6
+gemma3:27b::moderator,13,agents,unigram,6
+gemma3:27b::moderator,14,financial,unigram,5
+gemma3:27b::moderator,15,questions,unigram,5
+gemma3:27b::moderator,16,specific,unigram,5
+gemma3:27b::moderator,17,central banks,bigram,5
+gemma3:27b::moderator,18,existing,unigram,5
+gemma3:27b::moderator,19,banks,unigram,5
+gemma3:27b::moderator,20,questions ca,bigram,4
+gemma3:27b::moderator,21,recap agreements,bigram,4
+gemma3:27b::moderator,22,round,unigram,4
+gemma3:27b::moderator,23,recap agreements agents,trigram,4
+gemma3:27b::moderator,24,like,unigram,4
+gemma3:27b::moderator,25,agreements,unigram,4
+gemma3:27b::opponent,1,control,unigram,5
+gemma3:27b::opponent,2,total,unigram,4
+gemma3:27b::opponent,3,cbdcs,unigram,3
+gemma3:27b::opponent,4,requires,unigram,3
+gemma3:27b::opponent,5,government,unigram,3
+gemma3:27b::opponent,6,designed total,bigram,3
+gemma3:27b::opponent,7,potential,unigram,3
+gemma3:27b::opponent,8,privacy,unigram,3
+gemma3:27b::opponent,9,designed,unigram,3
+gemma3:27b::opponent,10,requires stronger,bigram,2
+gemma3:27b::opponent,11,stronger evidence,bigram,2
+gemma3:27b::opponent,12,resistance,unigram,2
+gemma3:27b::opponent,13,requires stronger evidence,trigram,2
+gemma3:27b::opponent,14,stronger,unigram,2
+gemma3:27b::opponent,15,cbdcs present,bigram,2
+gemma3:27b::opponent,16,cbdc,unigram,2
+gemma3:27b::opponent,17,evidence,unigram,2
+gemma3:27b::opponent,18,financial,unigram,2
+gemma3:27b::opponent,19,government control,bigram,2
+gemma3:27b::opponent,20,present,unigram,2
+gemma3:27b::opponent,21,claim designed total,trigram,2
+gemma3:27b::opponent,22,claim designed,bigram,2
+gemma3:27b::opponent,23,designed total government,trigram,2
+gemma3:27b::opponent,24,claim,unigram,2
+gemma3:27b::opponent,25,control requires,bigram,2
+gemma3:27b::proponent,1,agent,unigram,3
+gemma3:27b::proponent,2,central,unigram,3
+gemma3:27b::proponent,3,control,unigram,3
+gemma3:27b::proponent,4,scientific,unigram,3
+gemma3:27b::proponent,5,scientific agent,bigram,3
+gemma3:27b::proponent,6,central bank,bigram,2
+gemma3:27b::proponent,7,cbdcs,unigram,2
+gemma3:27b::proponent,8,bank,unigram,2
+gemma3:27b::proponent,9,incentives,unigram,2
+gemma3:27b::proponent,10,privacy,unigram,2
+gemma3:27b::proponent,11,behavior,unigram,2
+gemma3:27b::proponent,12,technologies,unigram,2
+gemma3:27b::proponent,13,surveillance,unigram,2
+gemma3:27b::proponent,14,consistently,unigram,2
+gemma3:27b::proponent,15,agent focus incremental,trigram,1
+gemma3:27b::proponent,16,agent consistently focuses,trigram,1
+gemma3:27b::proponent,17,anomalous behavior central,trigram,1
+gemma3:27b::proponent,18,anomalous behavior,bigram,1
+gemma3:27b::proponent,19,aren modernization,bigram,1
+gemma3:27b::proponent,20,aren,unigram,1
+gemma3:27b::proponent,21,bank behavior,bigram,1
+gemma3:27b::proponent,22,bank behavior incentives,trigram,1
+gemma3:27b::proponent,23,bank digital,bigram,1
+gemma3:27b::proponent,24,aren modernization represent,trigram,1
+gemma3:27b::proponent,25,bank digital currencies,trigram,1

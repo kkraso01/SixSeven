@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,vaccines,unigram,10
+dolphin-yi-34b::moderator,2,mrna,unigram,9
+dolphin-yi-34b::moderator,3,mrna vaccines,bigram,8
+dolphin-yi-34b::moderator,4,safety,unigram,7
+dolphin-yi-34b::moderator,5,sa,unigram,6
+dolphin-yi-34b::moderator,6,ca,unigram,5
+dolphin-yi-34b::moderator,7,surveillance,unigram,4
+dolphin-yi-34b::moderator,8,rapid,unigram,4
+dolphin-yi-34b::moderator,9,rapid development,bigram,4
+dolphin-yi-34b::moderator,10,development,unigram,4
+dolphin-yi-34b::moderator,11,long,unigram,4
+dolphin-yi-34b::moderator,12,data,unigram,4
+dolphin-yi-34b::moderator,13,pharmaceutical,unigram,4
+dolphin-yi-34b::moderator,14,long term,bigram,4
+dolphin-yi-34b::moderator,15,term,unigram,4
+dolphin-yi-34b::moderator,16,agents,unigram,4
+dolphin-yi-34b::moderator,17,untrustworthy,unigram,4
+dolphin-yi-34b::moderator,18,traditional,unigram,4
+dolphin-yi-34b::moderator,19,bridge questions specific,trigram,3
+dolphin-yi-34b::moderator,20,bridge,unigram,3
+dolphin-yi-34b::moderator,21,bridge questions,bigram,3
+dolphin-yi-34b::moderator,22,compared,unigram,3
+dolphin-yi-34b::moderator,23,based,unigram,3
+dolphin-yi-34b::moderator,24,scores,unigram,3
+dolphin-yi-34b::moderator,25,ca argues,bigram,3
+dolphin-yi-34b::proponent,1,mrna,unigram,3
+dolphin-yi-34b::proponent,2,mrna vaccines,bigram,3
+dolphin-yi-34b::proponent,3,vaccines,unigram,3
+dolphin-yi-34b::proponent,4,development,unigram,2
+dolphin-yi-34b::proponent,5,long term,bigram,2
+dolphin-yi-34b::proponent,6,safety,unigram,2
+dolphin-yi-34b::proponent,7,development mrna vaccines,trigram,2
+dolphin-yi-34b::proponent,8,long,unigram,2
+dolphin-yi-34b::proponent,9,rapid development mrna,trigram,2
+dolphin-yi-34b::proponent,10,rapid development,bigram,2
+dolphin-yi-34b::proponent,11,rapid,unigram,2
+dolphin-yi-34b::proponent,12,development mrna,bigram,2
+dolphin-yi-34b::proponent,13,term,unigram,2
+dolphin-yi-34b::proponent,14,companies,unigram,1
+dolphin-yi-34b::proponent,15,compromising safety,bigram,1
+dolphin-yi-34b::proponent,16,compromising safety mrna,trigram,1
+dolphin-yi-34b::proponent,17,data make fundamentally,trigram,1
+dolphin-yi-34b::proponent,18,data make,bigram,1
+dolphin-yi-34b::proponent,19,data,unigram,1
+dolphin-yi-34b::proponent,20,concerns long term,trigram,1
+dolphin-yi-34b::proponent,21,fundamentally untrustworthy,bigram,1
+dolphin-yi-34b::proponent,22,fundamentally untrustworthy compared,trigram,1
+dolphin-yi-34b::proponent,23,efficacy,unigram,1
+dolphin-yi-34b::proponent,24,fundamentally,unigram,1
+dolphin-yi-34b::proponent,25,health potentially,bigram,1
+gemma3:27b::opponent,1,acknowledging,unigram,3
+gemma3:27b::opponent,2,mrna,unigram,3
+gemma3:27b::opponent,3,mrna vaccines,bigram,3
+gemma3:27b::opponent,4,vaccines,unigram,3
+gemma3:27b::opponent,5,acknowledging accelerated development,trigram,2
+gemma3:27b::opponent,6,data,unigram,2
+gemma3:27b::opponent,7,acknowledging accelerated,bigram,2
+gemma3:27b::opponent,8,accelerated,unigram,2
+gemma3:27b::opponent,9,fundamentally,unigram,2
+gemma3:27b::opponent,10,fundamentally untrustworthy,bigram,2
+gemma3:27b::opponent,11,mrna vaccines fundamentally,trigram,2
+gemma3:27b::opponent,12,pharmaceutical,unigram,2
+gemma3:27b::opponent,13,development,unigram,2
+gemma3:27b::opponent,14,untrustworthy,unigram,2
+gemma3:27b::opponent,15,safety,unigram,2
+gemma3:27b::opponent,16,accelerated development,bigram,2
+gemma3:27b::opponent,17,supported,unigram,2
+gemma3:27b::opponent,18,vaccines fundamentally,bigram,2
+gemma3:27b::opponent,19,vaccines fundamentally untrustworthy,trigram,2
+gemma3:27b::opponent,20,available evidence relies,trigram,1
+gemma3:27b::opponent,21,available evidence,bigram,1
+gemma3:27b::opponent,22,claim,unigram,1
+gemma3:27b::opponent,23,claim mrna,bigram,1
+gemma3:27b::opponent,24,claim mrna vaccines,trigram,1
+gemma3:27b::opponent,25,comparative,unigram,1

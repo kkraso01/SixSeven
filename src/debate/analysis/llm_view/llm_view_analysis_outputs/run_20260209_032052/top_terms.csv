@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,safety,unigram,17
+dolphin-yi-34b::moderator,2,ca,unigram,12
+dolphin-yi-34b::moderator,3,sa,unigram,11
+dolphin-yi-34b::moderator,4,vaccine,unigram,10
+dolphin-yi-34b::moderator,5,vaccines,unigram,9
+dolphin-yi-34b::moderator,6,evidence,unigram,9
+dolphin-yi-34b::moderator,7,scientific,unigram,8
+dolphin-yi-34b::moderator,8,mrna,unigram,7
+dolphin-yi-34b::moderator,9,mrna vaccines,bigram,7
+dolphin-yi-34b::moderator,10,appeal,unigram,6
+dolphin-yi-34b::moderator,11,questions,unigram,6
+dolphin-yi-34b::moderator,12,vaccine safety,bigram,6
+dolphin-yi-34b::moderator,13,agents,unigram,6
+dolphin-yi-34b::moderator,14,adverse,unigram,5
+dolphin-yi-34b::moderator,15,scientific evidence,bigram,5
+dolphin-yi-34b::moderator,16,long,unigram,5
+dolphin-yi-34b::moderator,17,long term,bigram,5
+dolphin-yi-34b::moderator,18,efficacy,unigram,5
+dolphin-yi-34b::moderator,19,potential,unigram,5
+dolphin-yi-34b::moderator,20,term,unigram,5
+dolphin-yi-34b::moderator,21,data,unigram,5
+dolphin-yi-34b::moderator,22,scores civility,bigram,4
+dolphin-yi-34b::moderator,23,safety efficacy,bigram,4
+dolphin-yi-34b::moderator,24,argues,unigram,4
+dolphin-yi-34b::moderator,25,term safety,bigram,4
+dolphin-yi-34b::opponent,1,vaccines,unigram,5
+dolphin-yi-34b::opponent,2,safety,unigram,5
+dolphin-yi-34b::opponent,3,development,unigram,4
+dolphin-yi-34b::opponent,4,efficacy,unigram,3
+dolphin-yi-34b::opponent,5,mrna vaccines,bigram,3
+dolphin-yi-34b::opponent,6,mrna,unigram,3
+dolphin-yi-34b::opponent,7,assumptions motivations,bigram,2
+dolphin-yi-34b::opponent,8,based scientific,bigram,2
+dolphin-yi-34b::opponent,9,based scientific evidence,trigram,2
+dolphin-yi-34b::opponent,10,efficacy mrna,bigram,2
+dolphin-yi-34b::opponent,11,based,unigram,2
+dolphin-yi-34b::opponent,12,efficacy mrna vaccines,trigram,2
+dolphin-yi-34b::opponent,13,does,unigram,2
+dolphin-yi-34b::opponent,14,assumptions motivations vaccine,trigram,2
+dolphin-yi-34b::opponent,15,anecdotal,unigram,2
+dolphin-yi-34b::opponent,16,assumptions,unigram,2
+dolphin-yi-34b::opponent,17,evaluated based scientific,trigram,2
+dolphin-yi-34b::opponent,18,evidence,unigram,2
+dolphin-yi-34b::opponent,19,evidence anecdotal,bigram,2
+dolphin-yi-34b::opponent,20,evidence anecdotal reports,trigram,2
+dolphin-yi-34b::opponent,21,mrna vaccines evaluated,trigram,2
+dolphin-yi-34b::opponent,22,motivations vaccine development,trigram,2
+dolphin-yi-34b::opponent,23,motivations,unigram,2
+dolphin-yi-34b::opponent,24,motivations vaccine,bigram,2
+dolphin-yi-34b::opponent,25,evaluated based,bigram,2
+gemma3:27b::proponent,1,vaccine,unigram,5
+gemma3:27b::proponent,2,safety,unigram,3
+gemma3:27b::proponent,3,genuine,unigram,2
+gemma3:27b::proponent,4,insistence,unigram,2
+gemma3:27b::proponent,5,narrative,unigram,2
+gemma3:27b::proponent,6,scientific,unigram,2
+gemma3:27b::proponent,7,actively,unigram,1
+gemma3:27b::proponent,8,actively hinders,bigram,1
+gemma3:27b::proponent,9,anomalies post vaccination,trigram,1
+gemma3:27b::proponent,10,causally,unigram,1
+gemma3:27b::proponent,11,causally linked,bigram,1
+gemma3:27b::proponent,12,causally linked isn,trigram,1
+gemma3:27b::proponent,13,adverse event,bigram,1
+gemma3:27b::proponent,14,adverse event reports,trigram,1
+gemma3:27b::proponent,15,actively hinders genuine,trigram,1
+gemma3:27b::proponent,16,adverse,unigram,1
+gemma3:27b::proponent,17,consistent,unigram,1
+gemma3:27b::proponent,18,consistent dismissal,bigram,1
+gemma3:27b::proponent,19,consistent dismissal early,trigram,1
+gemma3:27b::proponent,20,control,unigram,1
+gemma3:27b::proponent,21,control genuine,bigram,1
+gemma3:27b::proponent,22,control genuine scientific,trigram,1
+gemma3:27b::proponent,23,countermeasures,unigram,1
+gemma3:27b::proponent,24,countermeasures suppress,bigram,1
+gemma3:27b::proponent,25,countermeasures suppress dissenting,trigram,1

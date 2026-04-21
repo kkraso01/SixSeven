@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_200438",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_200438",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "federal_reserve",
+  "topic_category": "finance",
+  "topic_title": "Central banking and monetary policy",
+  "topic_motion": "The Federal Reserve is a private cartel of banks that manipulates the economy for the benefit of wealthy elites at the expense of ordinary citizens.",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

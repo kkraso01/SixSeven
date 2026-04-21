@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,anomalies,unigram,13
+dolphin-yi-34b::moderator,2,government,unigram,13
+dolphin-yi-34b::moderator,3,sa,unigram,11
+dolphin-yi-34b::moderator,4,attack,unigram,10
+dolphin-yi-34b::moderator,5,evidence,unigram,10
+dolphin-yi-34b::moderator,6,prior,unigram,9
+dolphin-yi-34b::moderator,7,prior knowledge,bigram,9
+dolphin-yi-34b::moderator,8,alternative,unigram,9
+dolphin-yi-34b::moderator,9,government prior,bigram,9
+dolphin-yi-34b::moderator,10,ca,unigram,9
+dolphin-yi-34b::moderator,11,knowledge,unigram,9
+dolphin-yi-34b::moderator,12,government prior knowledge,trigram,9
+dolphin-yi-34b::moderator,13,explanations,unigram,8
+dolphin-yi-34b::moderator,14,pearl harbor,bigram,7
+dolphin-yi-34b::moderator,15,alternative explanations,bigram,7
+dolphin-yi-34b::moderator,16,pearl,unigram,7
+dolphin-yi-34b::moderator,17,pearl harbor attack,trigram,7
+dolphin-yi-34b::moderator,18,harbor,unigram,7
+dolphin-yi-34b::moderator,19,harbor attack,bigram,7
+dolphin-yi-34b::moderator,20,questions,unigram,6
+dolphin-yi-34b::moderator,21,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,22,argues,unigram,5
+dolphin-yi-34b::moderator,23,anomalies surrounding,bigram,5
+dolphin-yi-34b::moderator,24,recap agreements,bigram,5
+dolphin-yi-34b::moderator,25,anomalies surrounding pearl,trigram,5
+dolphin-yi-34b::opponent,1,attack,unigram,5
+dolphin-yi-34b::opponent,2,pearl,unigram,5
+dolphin-yi-34b::opponent,3,pearl harbor attack,trigram,5
+dolphin-yi-34b::opponent,4,pearl harbor,bigram,5
+dolphin-yi-34b::opponent,5,prior knowledge,bigram,5
+dolphin-yi-34b::opponent,6,harbor,unigram,5
+dolphin-yi-34b::opponent,7,harbor attack,bigram,5
+dolphin-yi-34b::opponent,8,prior,unigram,5
+dolphin-yi-34b::opponent,9,knowledge,unigram,5
+dolphin-yi-34b::opponent,10,government,unigram,5
+dolphin-yi-34b::opponent,11,government prior knowledge,trigram,4
+dolphin-yi-34b::opponent,12,government prior,bigram,4
+dolphin-yi-34b::opponent,13,evidence,unigram,3
+dolphin-yi-34b::opponent,14,anomalies,unigram,2
+dolphin-yi-34b::opponent,15,actions anomalies explained,trigram,2
+dolphin-yi-34b::opponent,16,actions,unigram,2
+dolphin-yi-34b::opponent,17,explained factors,bigram,2
+dolphin-yi-34b::opponent,18,explained factors unrelated,trigram,2
+dolphin-yi-34b::opponent,19,explained,unigram,2
+dolphin-yi-34b::opponent,20,factors unrelated,bigram,2
+dolphin-yi-34b::opponent,21,factors unrelated government,trigram,2
+dolphin-yi-34b::opponent,22,anomalies explained,bigram,2
+dolphin-yi-34b::opponent,23,anomalies explained factors,trigram,2
+dolphin-yi-34b::opponent,24,actions anomalies,bigram,2
+dolphin-yi-34b::opponent,25,attack suspicious actions,trigram,2
+dolphin-yi-34b::proponent,1,attack,unigram,5
+dolphin-yi-34b::proponent,2,harbor,unigram,5
+dolphin-yi-34b::proponent,3,knowledge,unigram,5
+dolphin-yi-34b::proponent,4,government,unigram,5
+dolphin-yi-34b::proponent,5,harbor attack,bigram,5
+dolphin-yi-34b::proponent,6,pearl harbor attack,trigram,5
+dolphin-yi-34b::proponent,7,pearl harbor,bigram,5
+dolphin-yi-34b::proponent,8,pearl,unigram,5
+dolphin-yi-34b::proponent,9,knowledge pearl,bigram,4
+dolphin-yi-34b::proponent,10,prior knowledge,bigram,4
+dolphin-yi-34b::proponent,11,knowledge pearl harbor,trigram,4
+dolphin-yi-34b::proponent,12,prior,unigram,4
+dolphin-yi-34b::proponent,13,government prior,bigram,4
+dolphin-yi-34b::proponent,14,government prior knowledge,trigram,4
+dolphin-yi-34b::proponent,15,prior knowledge pearl,trigram,3
+dolphin-yi-34b::proponent,16,actions,unigram,2
+dolphin-yi-34b::proponent,17,harbor attack evident,trigram,2
+dolphin-yi-34b::proponent,18,evident,unigram,2
+dolphin-yi-34b::proponent,19,evident unusual,bigram,2
+dolphin-yi-34b::proponent,20,unusual,unigram,2
+dolphin-yi-34b::proponent,21,unusual events,bigram,2
+dolphin-yi-34b::proponent,22,unusual events leading,trigram,2
+dolphin-yi-34b::proponent,23,suspicious actions anomalies,trigram,2
+dolphin-yi-34b::proponent,24,leading,unigram,2
+dolphin-yi-34b::proponent,25,events leading,bigram,2

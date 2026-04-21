@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,33
+gemma3:27b::moderator,2,sa,unigram,23
+gemma3:27b::moderator,3,safety,unigram,11
+gemma3:27b::moderator,4,evidence,unigram,8
+gemma3:27b::moderator,5,acknowledge,unigram,8
+gemma3:27b::moderator,6,data,unigram,7
+gemma3:27b::moderator,7,vaccines,unigram,7
+gemma3:27b::moderator,8,argues,unigram,6
+gemma3:27b::moderator,9,frames,unigram,5
+gemma3:27b::moderator,10,false,unigram,5
+gemma3:27b::moderator,11,potential,unigram,5
+gemma3:27b::moderator,12,proof,unigram,5
+gemma3:27b::moderator,13,ca frames,bigram,5
+gemma3:27b::moderator,14,mrna,unigram,5
+gemma3:27b::moderator,15,adverse,unigram,4
+gemma3:27b::moderator,16,scores civility,bigram,4
+gemma3:27b::moderator,17,agents acknowledge,bigram,4
+gemma3:27b::moderator,18,agreements,unigram,4
+gemma3:27b::moderator,19,agreements agents acknowledge,trigram,4
+gemma3:27b::moderator,20,agreements agents,bigram,4
+gemma3:27b::moderator,21,questions ca,bigram,4
+gemma3:27b::moderator,22,prove,unigram,4
+gemma3:27b::moderator,23,recap,unigram,4
+gemma3:27b::moderator,24,recap agreements agents,trigram,4
+gemma3:27b::moderator,25,round,unigram,4
+gemma3:27b::opponent,1,requires,unigram,3
+gemma3:27b::opponent,2,attributing,unigram,2
+gemma3:27b::opponent,3,systemic,unigram,2
+gemma3:27b::opponent,4,safety,unigram,2
+gemma3:27b::opponent,5,relationships,unigram,2
+gemma3:27b::opponent,6,mrna,unigram,2
+gemma3:27b::opponent,7,evidence,unigram,2
+gemma3:27b::opponent,8,acknowledging,unigram,2
+gemma3:27b::opponent,9,virus assuming,bigram,1
+gemma3:27b::opponent,10,virus,unigram,1
+gemma3:27b::opponent,11,valid points scrutiny,trigram,1
+gemma3:27b::opponent,12,valid points,bigram,1
+gemma3:27b::opponent,13,valid,unigram,1
+gemma3:27b::opponent,14,vaccines fundamentally untrustworthy,trigram,1
+gemma3:27b::opponent,15,vaccines fundamentally,bigram,1
+gemma3:27b::opponent,16,vaccines,unigram,1
+gemma3:27b::opponent,17,vaccine rollout interpreting,trigram,1
+gemma3:27b::opponent,18,vaccine rollout,bigram,1
+gemma3:27b::opponent,19,vaccine,unigram,1
+gemma3:27b::opponent,20,untrustworthy necessitate different,trigram,1
+gemma3:27b::opponent,21,untrustworthy necessitate,bigram,1
+gemma3:27b::opponent,22,untrustworthy,unigram,1
+gemma3:27b::opponent,23,technological failure,bigram,1
+gemma3:27b::opponent,24,technological,unigram,1
+gemma3:27b::opponent,25,anecdotal reports,bigram,1
+gemma3:27b::proponent,1,safety,unigram,3
+gemma3:27b::proponent,2,pattern,unigram,3
+gemma3:27b::proponent,3,vaccine,unigram,3
+gemma3:27b::proponent,4,agencies,unigram,2
+gemma3:27b::proponent,5,regulatory,unigram,2
+gemma3:27b::proponent,6,regulatory agencies,bigram,2
+gemma3:27b::proponent,7,systemic,unigram,2
+gemma3:27b::proponent,8,reveals,unigram,2
+gemma3:27b::proponent,9,rapid,unigram,2
+gemma3:27b::proponent,10,profit,unigram,2
+gemma3:27b::proponent,11,genuine,unigram,2
+gemma3:27b::proponent,12,coupled,unigram,2
+gemma3:27b::proponent,13,waning immunity emerging,trigram,1
+gemma3:27b::proponent,14,waning immunity,bigram,1
+gemma3:27b::proponent,15,waning,unigram,1
+gemma3:27b::proponent,16,voices reveals pattern,trigram,1
+gemma3:27b::proponent,17,voices reveals,bigram,1
+gemma3:27b::proponent,18,voices,unigram,1
+gemma3:27b::proponent,19,vaccines,unigram,1
+gemma3:27b::proponent,20,vaccine platform pattern,trigram,1
+gemma3:27b::proponent,21,vaccine platform,bigram,1
+gemma3:27b::proponent,22,vaccine development coupled,trigram,1
+gemma3:27b::proponent,23,vaccine development,bigram,1
+gemma3:27b::proponent,24,vaccine associated injuries,trigram,1
+gemma3:27b::proponent,25,vaccine associated,bigram,1

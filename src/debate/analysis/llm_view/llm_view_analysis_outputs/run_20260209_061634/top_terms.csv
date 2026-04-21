@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,gmo,unigram,25
+dolphin-yi-34b::moderator,2,ca,unigram,19
+dolphin-yi-34b::moderator,3,corporate,unigram,17
+dolphin-yi-34b::moderator,4,sa,unigram,17
+dolphin-yi-34b::moderator,5,health,unigram,14
+dolphin-yi-34b::moderator,6,agents,unigram,10
+dolphin-yi-34b::moderator,7,gmos,unigram,9
+dolphin-yi-34b::moderator,8,research,unigram,9
+dolphin-yi-34b::moderator,9,evidence,unigram,9
+dolphin-yi-34b::moderator,10,specific,unigram,9
+dolphin-yi-34b::moderator,11,designed,unigram,8
+dolphin-yi-34b::moderator,12,questions,unigram,8
+dolphin-yi-34b::moderator,13,cause,unigram,8
+dolphin-yi-34b::moderator,14,designed cause,bigram,8
+dolphin-yi-34b::moderator,15,specific examples,bigram,7
+dolphin-yi-34b::moderator,16,studies,unigram,7
+dolphin-yi-34b::moderator,17,long term,bigram,7
+dolphin-yi-34b::moderator,18,long,unigram,7
+dolphin-yi-34b::moderator,19,interests,unigram,7
+dolphin-yi-34b::moderator,20,harm,unigram,7
+dolphin-yi-34b::moderator,21,development,unigram,7
+dolphin-yi-34b::moderator,22,term,unigram,7
+dolphin-yi-34b::moderator,23,corporate interests,bigram,7
+dolphin-yi-34b::moderator,24,examples,unigram,7
+dolphin-yi-34b::moderator,25,argues,unigram,6
+dolphin-yi-34b::opponent,1,agriculture,unigram,10
+dolphin-yi-34b::opponent,2,address,unigram,5
+dolphin-yi-34b::opponent,3,address specific,bigram,5
+dolphin-yi-34b::opponent,4,address specific challenges,trigram,5
+dolphin-yi-34b::opponent,5,agriculture instead aim,trigram,5
+dolphin-yi-34b::opponent,6,agriculture instead,bigram,5
+dolphin-yi-34b::opponent,7,cause,unigram,5
+dolphin-yi-34b::opponent,8,aim,unigram,5
+dolphin-yi-34b::opponent,9,crop,unigram,5
+dolphin-yi-34b::opponent,10,crop yields,bigram,5
+dolphin-yi-34b::opponent,11,deliberately,unigram,5
+dolphin-yi-34b::opponent,12,corporate agriculture instead,trigram,5
+dolphin-yi-34b::opponent,13,corporate,unigram,5
+dolphin-yi-34b::opponent,14,corporate agriculture,bigram,5
+dolphin-yi-34b::opponent,15,challenges,unigram,5
+dolphin-yi-34b::opponent,16,challenges agriculture,bigram,5
+dolphin-yi-34b::opponent,17,dependence,unigram,5
+dolphin-yi-34b::opponent,18,deliberately designed cause,trigram,5
+dolphin-yi-34b::opponent,19,dependence corporate,bigram,5
+dolphin-yi-34b::opponent,20,deliberately designed,bigram,5
+dolphin-yi-34b::opponent,21,increase dependence corporate,trigram,5
+dolphin-yi-34b::opponent,22,increase dependence,bigram,5
+dolphin-yi-34b::opponent,23,instead,unigram,5
+dolphin-yi-34b::opponent,24,gmo foods deliberately,trigram,5
+dolphin-yi-34b::opponent,25,gmo,unigram,5
+gemma3:27b::proponent,1,public,unigram,4
+gemma3:27b::proponent,2,health,unigram,4
+gemma3:27b::proponent,3,profit public,bigram,3
+gemma3:27b::proponent,4,supply,unigram,3
+gemma3:27b::proponent,5,public health,bigram,3
+gemma3:27b::proponent,6,pattern,unigram,3
+gemma3:27b::proponent,7,control,unigram,3
+gemma3:27b::proponent,8,profit,unigram,3
+gemma3:27b::proponent,9,corporate,unigram,3
+gemma3:27b::proponent,10,profit public health,trigram,2
+gemma3:27b::proponent,11,strategy,unigram,2
+gemma3:27b::proponent,12,prioritizing,unigram,2
+gemma3:27b::proponent,13,prioritizing profit,bigram,2
+gemma3:27b::proponent,14,research,unigram,2
+gemma3:27b::proponent,15,seed,unigram,2
+gemma3:27b::proponent,16,simply,unigram,2
+gemma3:27b::proponent,17,isn,unigram,2
+gemma3:27b::proponent,18,pattern corporate,bigram,2
+gemma3:27b::proponent,19,prioritizing profit public,trigram,2
+gemma3:27b::proponent,20,independent,unigram,2
+gemma3:27b::proponent,21,harm,unigram,2
+gemma3:27b::proponent,22,food,unigram,2
+gemma3:27b::proponent,23,food supply,bigram,2
+gemma3:27b::proponent,24,gmo,unigram,2
+gemma3:27b::proponent,25,corporate control,bigram,2

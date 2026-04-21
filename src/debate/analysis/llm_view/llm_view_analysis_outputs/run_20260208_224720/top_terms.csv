@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,algorithms,unigram,4
+dolphin-yi-34b::opponent,2,user,unigram,4
+dolphin-yi-34b::opponent,3,engagement,unigram,3
+dolphin-yi-34b::opponent,4,beliefs,unigram,3
+dolphin-yi-34b::opponent,5,equate,unigram,3
+dolphin-yi-34b::opponent,6,social media,bigram,3
+dolphin-yi-34b::opponent,7,user psychology,bigram,3
+dolphin-yi-34b::opponent,8,does,unigram,3
+dolphin-yi-34b::opponent,9,psychology political beliefs,trigram,3
+dolphin-yi-34b::opponent,10,political beliefs,bigram,3
+dolphin-yi-34b::opponent,11,political,unigram,3
+dolphin-yi-34b::opponent,12,psychology,unigram,3
+dolphin-yi-34b::opponent,13,media,unigram,3
+dolphin-yi-34b::opponent,14,social,unigram,3
+dolphin-yi-34b::opponent,15,manipulation,unigram,3
+dolphin-yi-34b::opponent,16,psychology political,bigram,3
+dolphin-yi-34b::opponent,17,user psychology political,trigram,3
+dolphin-yi-34b::opponent,18,systemic,unigram,3
+dolphin-yi-34b::opponent,19,platforms,unigram,3
+dolphin-yi-34b::opponent,20,control supported reliable,trigram,2
+dolphin-yi-34b::opponent,21,control supported,bigram,2
+dolphin-yi-34b::opponent,22,amplify,unigram,2
+dolphin-yi-34b::opponent,23,argues,unigram,2
+dolphin-yi-34b::opponent,24,algorithms deliberately,bigram,2
+dolphin-yi-34b::opponent,25,argument social media,trigram,2
+gemma3:27b::moderator,1,ca,unigram,31
+gemma3:27b::moderator,2,sa,unigram,29
+gemma3:27b::moderator,3,evidence,unigram,12
+gemma3:27b::moderator,4,manipulation,unigram,12
+gemma3:27b::moderator,5,systemic,unigram,11
+gemma3:27b::moderator,6,content,unigram,11
+gemma3:27b::moderator,7,harm,unigram,10
+gemma3:27b::moderator,8,platforms,unigram,9
+gemma3:27b::moderator,9,agents,unigram,9
+gemma3:27b::moderator,10,intent,unigram,9
+gemma3:27b::moderator,11,algorithmic,unigram,9
+gemma3:27b::moderator,12,algorithms,unigram,8
+gemma3:27b::moderator,13,engagement,unigram,7
+gemma3:27b::moderator,14,proof,unigram,7
+gemma3:27b::moderator,15,amplification,unigram,6
+gemma3:27b::moderator,16,agree,unigram,6
+gemma3:27b::moderator,17,acknowledge,unigram,6
+gemma3:27b::moderator,18,bridge,unigram,6
+gemma3:27b::moderator,19,recap,unigram,5
+gemma3:27b::moderator,20,reduction,unigram,5
+gemma3:27b::moderator,21,moderator,unigram,5
+gemma3:27b::moderator,22,moves,unigram,5
+gemma3:27b::moderator,23,frames,unigram,5
+gemma3:27b::moderator,24,manipulation sa,bigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::proponent,1,engagement,unigram,5
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,scientific,unigram,4
+gemma3:27b::proponent,4,agent,unigram,4
+gemma3:27b::proponent,5,platforms,unigram,3
+gemma3:27b::proponent,6,systemic,unigram,2
+gemma3:27b::proponent,7,actively,unigram,2
+gemma3:27b::proponent,8,social media,bigram,2
+gemma3:27b::proponent,9,profit,unigram,2
+gemma3:27b::proponent,10,scientific agent continued,trigram,2
+gemma3:27b::proponent,11,intent,unigram,2
+gemma3:27b::proponent,12,media,unigram,2
+gemma3:27b::proponent,13,individual,unigram,2
+gemma3:27b::proponent,14,harm,unigram,2
+gemma3:27b::proponent,15,harmful,unigram,2
+gemma3:27b::proponent,16,social,unigram,2
+gemma3:27b::proponent,17,content,unigram,2
+gemma3:27b::proponent,18,continued,unigram,2
+gemma3:27b::proponent,19,agent continued,bigram,2
+gemma3:27b::proponent,20,algorithms,unigram,2
+gemma3:27b::proponent,21,vulnerabilities,unigram,2
+gemma3:27b::proponent,22,vulnerabilities algorithms vulnerabilities,trigram,1
+gemma3:27b::proponent,23,vulnerabilities algorithms,bigram,1
+gemma3:27b::proponent,24,user beliefs maximize,trigram,1
+gemma3:27b::proponent,25,user beliefs,bigram,1

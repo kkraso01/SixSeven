@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,fluoridation,unigram,27
+dolphin-yi-34b::moderator,2,sa,unigram,21
+dolphin-yi-34b::moderator,3,ca,unigram,19
+dolphin-yi-34b::moderator,4,water fluoridation,bigram,17
+dolphin-yi-34b::moderator,5,water,unigram,17
+dolphin-yi-34b::moderator,6,health,unigram,16
+dolphin-yi-34b::moderator,7,evidence,unigram,13
+dolphin-yi-34b::moderator,8,research,unigram,11
+dolphin-yi-34b::moderator,9,agents,unigram,11
+dolphin-yi-34b::moderator,10,potential,unigram,10
+dolphin-yi-34b::moderator,11,specific,unigram,9
+dolphin-yi-34b::moderator,12,questions,unigram,9
+dolphin-yi-34b::moderator,13,specific evidence,bigram,8
+dolphin-yi-34b::moderator,14,public,unigram,7
+dolphin-yi-34b::moderator,15,historical,unigram,7
+dolphin-yi-34b::moderator,16,public health,bigram,7
+dolphin-yi-34b::moderator,17,fluoride,unigram,7
+dolphin-yi-34b::moderator,18,negative outcomes,bigram,6
+dolphin-yi-34b::moderator,19,outcomes,unigram,6
+dolphin-yi-34b::moderator,20,negative,unigram,6
+dolphin-yi-34b::moderator,21,studies,unigram,6
+dolphin-yi-34b::moderator,22,round,unigram,5
+dolphin-yi-34b::moderator,23,questions specific,bigram,5
+dolphin-yi-34b::moderator,24,ca argues,bigram,5
+dolphin-yi-34b::moderator,25,scores civility epistemic,trigram,5
+dolphin-yi-34b::opponent,1,health,unigram,8
+dolphin-yi-34b::opponent,2,fluoridation,unigram,6
+dolphin-yi-34b::opponent,3,water fluoridation,bigram,5
+dolphin-yi-34b::opponent,4,water,unigram,5
+dolphin-yi-34b::opponent,5,research,unigram,4
+dolphin-yi-34b::opponent,6,reducing tooth decay,trigram,4
+dolphin-yi-34b::opponent,7,reducing tooth,bigram,4
+dolphin-yi-34b::opponent,8,decay,unigram,4
+dolphin-yi-34b::opponent,9,scientific research,bigram,4
+dolphin-yi-34b::opponent,10,supported,unigram,4
+dolphin-yi-34b::opponent,11,tooth,unigram,4
+dolphin-yi-34b::opponent,12,tooth decay,bigram,4
+dolphin-yi-34b::opponent,13,reducing,unigram,4
+dolphin-yi-34b::opponent,14,scientific,unigram,4
+dolphin-yi-34b::opponent,15,public health,bigram,3
+dolphin-yi-34b::opponent,16,public,unigram,3
+dolphin-yi-34b::opponent,17,extensive,unigram,2
+dolphin-yi-34b::opponent,18,fluoridation public health,trigram,2
+dolphin-yi-34b::opponent,19,health organizations,bigram,2
+dolphin-yi-34b::opponent,20,health measure aimed,trigram,2
+dolphin-yi-34b::opponent,21,health benefits supported,trigram,2
+dolphin-yi-34b::opponent,22,health measure,bigram,2
+dolphin-yi-34b::opponent,23,measure aimed reducing,trigram,2
+dolphin-yi-34b::opponent,24,improving,unigram,2
+dolphin-yi-34b::opponent,25,health benefits,bigram,2
+gemma3:27b::proponent,1,health,unigram,6
+gemma3:27b::proponent,2,public,unigram,5
+gemma3:27b::proponent,3,public health,bigram,5
+gemma3:27b::proponent,4,fluoridation,unigram,4
+gemma3:27b::proponent,5,water fluoridation,bigram,3
+gemma3:27b::proponent,6,water,unigram,3
+gemma3:27b::proponent,7,isn,unigram,2
+gemma3:27b::proponent,8,purely,unigram,2
+gemma3:27b::proponent,9,historical,unigram,2
+gemma3:27b::proponent,10,governments,unigram,2
+gemma3:27b::proponent,11,fluoridation isn,bigram,2
+gemma3:27b::proponent,12,fluoridation purely,bigram,2
+gemma3:27b::proponent,13,dental,unigram,2
+gemma3:27b::proponent,14,fluoride,unigram,2
+gemma3:27b::proponent,15,control,unigram,2
+gemma3:27b::proponent,16,consistent,unigram,2
+gemma3:27b::proponent,17,water fluoridation isn,trigram,2
+gemma3:27b::proponent,18,web industrial,bigram,1
+gemma3:27b::proponent,19,web,unigram,1
+gemma3:27b::proponent,20,water fluoridation purely,trigram,1
+gemma3:27b::proponent,21,transparent motives suggesting,trigram,1
+gemma3:27b::proponent,22,transparent motives,bigram,1
+gemma3:27b::proponent,23,transparent,unigram,1
+gemma3:27b::proponent,24,term strategy subtly,trigram,1
+gemma3:27b::proponent,25,term strategy,bigram,1
