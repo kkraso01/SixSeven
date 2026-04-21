@@ -17,7 +17,7 @@ What it creates
 Usage
 -----
 python visualize_top_words.py \
-  --input_txt top_words_by_topic_and_role.txt \
+  --input_txt /path/to/top_words_by_topic_and_role.txt \
   --output_dir top_words_visuals \
   --top_n 10 \
   --heatmap_terms 30
