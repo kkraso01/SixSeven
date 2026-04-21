@@ -1,0 +1,4 @@
+speaker_role,dominant_bert_emotion,count
+opponent,anger,2
+opponent,joy,2
+proponent,joy,6

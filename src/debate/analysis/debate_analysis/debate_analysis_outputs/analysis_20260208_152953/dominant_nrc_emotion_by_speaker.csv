@@ -1,0 +1,5 @@
+speaker_role,dominant_nrc_emotion,count
+opponent,sadness,4
+opponent,disgust,1
+proponent,sadness,4
+proponent,anticipation,1

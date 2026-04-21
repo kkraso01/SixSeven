@@ -1,0 +1,12 @@
+{
+  "winner_inferred": "SA",
+  "winner_role": "opponent",
+  "winner_source": "stance_trajectory",
+  "winner_confidence": "medium",
+  "winner_evidence": {
+    "CA_start": 55,
+    "CA_end": 50,
+    "SA_start": 70,
+    "SA_end": 73
+  }
+}

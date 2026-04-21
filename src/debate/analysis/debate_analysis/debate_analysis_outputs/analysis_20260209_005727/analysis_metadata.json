@@ -1,0 +1,28 @@
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260209_005727",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\src\\debate\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260209_005727",
+  "debate_id": "debate_6fcb77dcf82a",
+  "claim": "Pharmaceutical companies have suppressed cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.",
+  "original_row_count": 9,
+  "analyzed_row_count": 6,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "stance_trajectory",
+    "winner_confidence": "medium",
+    "winner_evidence": {
+      "CA_start": 55,
+      "CA_end": 49,
+      "SA_start": 50,
+      "SA_end": 75
+    }
+  },
+  "final_report_present": true
+}

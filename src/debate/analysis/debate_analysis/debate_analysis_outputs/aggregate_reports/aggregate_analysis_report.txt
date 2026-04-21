@@ -1,0 +1,64 @@
+=== WINNER VS LOSER SUMMARY ===
+Top features where winners are higher:
+                    feature  winner_mean  loser_mean  winner_minus_loser
+            char_count_mean   256.634127  205.313492           51.320635
+late_minus_early_confidence     8.587379   -6.177885           14.765263
+       late_confidence_mean    62.528571   47.923077           14.605495
+             char_count_std    45.122831   36.459674            8.663158
+            confidence_mean    58.345556   51.246190            7.099365
+            word_count_mean    35.245238   28.436508            6.808730
+     middle_confidence_mean    55.990385   50.436893            5.553491
+           confidence_slope     1.724313   -1.246154            2.970467
+             word_count_std     6.318516    5.251582            1.066934
+             confidence_std     5.289710    4.783055            0.506655
+
+Top features where losers are higher:
+                     feature  winner_mean  loser_mean  winner_minus_loser
+  late_modality_balance_mean    -0.066667   -0.038462           -0.028205
+   late_minus_early_polarity    -0.020200    0.021690           -0.041890
+          emotion_anger_mean     0.240162    0.282709           -0.042547
+           emotion_fear_mean     0.157932    0.210611           -0.052679
+       modality_balance_mean    -0.101587   -0.028730           -0.072857
+ early_modality_balance_mean    -0.106796   -0.014286           -0.092510
+middle_modality_balance_mean    -0.158654   -0.048544           -0.110110
+       early_confidence_mean    53.640777   54.109524           -0.468747
+            word_count_slope    -0.605014    0.899038           -1.504052
+            char_count_slope    -4.136332    6.698634          -10.834966
+
+=== DEBATE-LEVEL AVERAGES ===
+n_total_turns                                            8.625000
+proponent_turns                                          4.318750
+proponent_confidence_mean                               51.150625
+proponent_strong_modality_density_mean                   0.001135
+proponent_weak_modality_density_mean                     0.002426
+proponent_modality_balance_mean                         -0.031563
+proponent_polarity_mean                                  0.053802
+proponent_subjectivity_mean                              0.365360
+proponent_word_count_mean                               27.978750
+proponent_late_confidence_mean                          46.951299
+proponent_late_strong_modality_density_mean              0.001334
+proponent_late_weak_modality_density_mean                0.002975
+proponent_late_modality_balance_mean                    -0.042208
+opponent_turns                                           4.306250
+opponent_confidence_mean                                59.781042
+opponent_strong_modality_density_mean                    0.001336
+opponent_weak_modality_density_mean                      0.004250
+opponent_modality_balance_mean                          -0.115729
+opponent_polarity_mean                                   0.061801
+opponent_subjectivity_mean                               0.390086
+opponent_word_count_mean                                35.159375
+opponent_late_confidence_mean                           63.968750
+opponent_late_strong_modality_density_mean               0.000781
+opponent_late_weak_modality_density_mean                 0.003559
+opponent_late_modality_balance_mean                     -0.106250
+winner_minus_loser_confidence_mean                       7.099365
+winner_minus_loser_strong_modality_density_mean          0.000498
+winner_minus_loser_weak_modality_density_mean            0.001877
+winner_minus_loser_modality_balance_mean                -0.072857
+winner_minus_loser_polarity_mean                         0.012206
+winner_minus_loser_subjectivity_mean                     0.028788
+winner_minus_loser_word_count_mean                       6.808730
+winner_minus_loser_late_confidence_mean                 14.437500
+winner_minus_loser_late_strong_modality_density_mean    -0.000105
+winner_minus_loser_late_weak_modality_density_mean       0.000173
+winner_minus_loser_late_modality_balance_mean           -0.028846
