@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,evidence,unigram,6
+dolphin-yi-34b::opponent,2,attack,unigram,5
+dolphin-yi-34b::opponent,3,reliable,unigram,4
+dolphin-yi-34b::opponent,4,claim,unigram,3
+dolphin-yi-34b::opponent,5,entering,unigram,3
+dolphin-yi-34b::opponent,6,entering world,bigram,3
+dolphin-yi-34b::opponent,7,deliberately,unigram,3
+dolphin-yi-34b::opponent,8,alleged,unigram,3
+dolphin-yi-34b::opponent,9,harbor,unigram,3
+dolphin-yi-34b::opponent,10,harbor attack,bigram,3
+dolphin-yi-34b::opponent,11,ii,unigram,3
+dolphin-yi-34b::opponent,12,opponent,unigram,3
+dolphin-yi-34b::opponent,13,pearl harbor,bigram,3
+dolphin-yi-34b::opponent,14,pearl harbor attack,trigram,3
+dolphin-yi-34b::opponent,15,pearl,unigram,3
+dolphin-yi-34b::opponent,16,entering world war,trigram,3
+dolphin-yi-34b::opponent,17,war ii,bigram,3
+dolphin-yi-34b::opponent,18,reliable evidence,bigram,3
+dolphin-yi-34b::opponent,19,relies,unigram,3
+dolphin-yi-34b::opponent,20,speculation,unigram,3
+dolphin-yi-34b::opponent,21,world war ii,trigram,3
+dolphin-yi-34b::opponent,22,supported,unigram,3
+dolphin-yi-34b::opponent,23,supported reliable evidence,trigram,3
+dolphin-yi-34b::opponent,24,supported reliable,bigram,3
+dolphin-yi-34b::opponent,25,proof,unigram,3
+gemma3:27b::moderator,1,ca,unigram,37
+gemma3:27b::moderator,2,sa,unigram,29
+gemma3:27b::moderator,3,evidence,unigram,25
+gemma3:27b::moderator,4,proof,unigram,13
+gemma3:27b::moderator,5,agents,unigram,11
+gemma3:27b::moderator,6,deliberate,unigram,9
+gemma3:27b::moderator,7,acknowledge,unigram,8
+gemma3:27b::moderator,8,burden,unigram,8
+gemma3:27b::moderator,9,burden proof,bigram,7
+gemma3:27b::moderator,10,intelligence,unigram,6
+gemma3:27b::moderator,11,recap agreements agents,trigram,5
+gemma3:27b::moderator,12,recap,unigram,5
+gemma3:27b::moderator,13,round recap,bigram,5
+gemma3:27b::moderator,14,scores civility,bigram,5
+gemma3:27b::moderator,15,shift,unigram,5
+gemma3:27b::moderator,16,agents acknowledge,bigram,5
+gemma3:27b::moderator,17,agreements agents,bigram,5
+gemma3:27b::moderator,18,questions,unigram,5
+gemma3:27b::moderator,19,recap agreements,bigram,5
+gemma3:27b::moderator,20,argues,unigram,5
+gemma3:27b::moderator,21,epistemic bridge,bigram,5
+gemma3:27b::moderator,22,epistemic bridge questions,trigram,5
+gemma3:27b::moderator,23,epistemic,unigram,5
+gemma3:27b::moderator,24,failures,unigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::proponent,1,attack,unigram,4
+gemma3:27b::proponent,2,warnings,unigram,2
+gemma3:27b::proponent,3,sa,unigram,2
+gemma3:27b::proponent,4,proof,unigram,2
+gemma3:27b::proponent,5,pearl,unigram,2
+gemma3:27b::proponent,6,pearl harbor,bigram,2
+gemma3:27b::proponent,7,narrative,unigram,2
+gemma3:27b::proponent,8,intelligence,unigram,2
+gemma3:27b::proponent,9,harbor,unigram,2
+gemma3:27b::proponent,10,inconsistencies,unigram,2
+gemma3:27b::proponent,11,failures,unigram,2
+gemma3:27b::proponent,12,deliberate,unigram,2
+gemma3:27b::proponent,13,designed,unigram,2
+gemma3:27b::proponent,14,covert,unigram,2
+gemma3:27b::proponent,15,convenient,unigram,2
+gemma3:27b::proponent,16,actions,unigram,2
+gemma3:27b::proponent,17,war,unigram,1
+gemma3:27b::proponent,18,timing drill mccollum,trigram,1
+gemma3:27b::proponent,19,timing drill,bigram,1
+gemma3:27b::proponent,20,timing,unigram,1
+gemma3:27b::proponent,21,tactic employed institutions,trigram,1
+gemma3:27b::proponent,22,tactic employed,bigram,1
+gemma3:27b::proponent,23,tactic,unigram,1
+gemma3:27b::proponent,24,systemic failures,bigram,1
+gemma3:27b::proponent,25,systemic,unigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,15
+gemma3:27b::moderator,4,failures,unigram,11
+gemma3:27b::moderator,5,attack,unigram,9
+gemma3:27b::moderator,6,proof,unigram,8
+gemma3:27b::moderator,7,anomalies,unigram,7
+gemma3:27b::moderator,8,agents,unigram,7
+gemma3:27b::moderator,9,acknowledge,unigram,7
+gemma3:27b::moderator,10,intent,unigram,7
+gemma3:27b::moderator,11,harbor,unigram,6
+gemma3:27b::moderator,12,argues,unigram,6
+gemma3:27b::moderator,13,orchestration,unigram,6
+gemma3:27b::moderator,14,appeal,unigram,6
+gemma3:27b::moderator,15,pearl,unigram,6
+gemma3:27b::moderator,16,specific,unigram,6
+gemma3:27b::moderator,17,pearl harbor,bigram,6
+gemma3:27b::moderator,18,burden proof,bigram,6
+gemma3:27b::moderator,19,burden,unigram,6
+gemma3:27b::moderator,20,recap agreements agents,trigram,5
+gemma3:27b::moderator,21,round,unigram,5
+gemma3:27b::moderator,22,agreements agents acknowledge,trigram,5
+gemma3:27b::moderator,23,miscalculation,unigram,5
+gemma3:27b::moderator,24,moderator,unigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::opponent,1,acknowledging,unigram,5
+gemma3:27b::opponent,2,alternative,unigram,3
+gemma3:27b::opponent,3,deliberate,unigram,3
+gemma3:27b::opponent,4,requires,unigram,3
+gemma3:27b::opponent,5,failures,unigram,3
+gemma3:27b::opponent,6,evidence,unigram,3
+gemma3:27b::opponent,7,attributing,unigram,3
+gemma3:27b::opponent,8,pearl,unigram,2
+gemma3:27b::opponent,9,orchestration,unigram,2
+gemma3:27b::opponent,10,plausible,unigram,2
+gemma3:27b::opponent,11,pearl harbor,bigram,2
+gemma3:27b::opponent,12,orchestration requires,bigram,2
+gemma3:27b::opponent,13,harbor,unigram,2
+gemma3:27b::opponent,14,mechanism,unigram,2
+gemma3:27b::opponent,15,alternative explanations,bigram,2
+gemma3:27b::opponent,16,requires demonstrating,bigram,2
+gemma3:27b::opponent,17,explanations,unigram,2
+gemma3:27b::opponent,18,orchestration requires demonstrating,trigram,2
+gemma3:27b::opponent,19,demonstrating,unigram,2
+gemma3:27b::opponent,20,deliberate orchestration,bigram,2
+gemma3:27b::opponent,21,anomalies,unigram,2
+gemma3:27b::opponent,22,attack,unigram,2
+gemma3:27b::opponent,23,communication,unigram,2
+gemma3:27b::opponent,24,deliberate orchestration requires,trigram,2
+gemma3:27b::opponent,25,attributing deliberate,bigram,2
+gemma3:27b::proponent,1,attack,unigram,4
+gemma3:27b::proponent,2,wasn,unigram,3
+gemma3:27b::proponent,3,pearl harbor,bigram,2
+gemma3:27b::proponent,4,pearl,unigram,2
+gemma3:27b::proponent,5,harbor,unigram,2
+gemma3:27b::proponent,6,fleet,unigram,2
+gemma3:27b::proponent,7,fleet concentration,bigram,2
+gemma3:27b::proponent,8,intelligence,unigram,2
+gemma3:27b::proponent,9,deliberately,unigram,2
+gemma3:27b::proponent,10,concentration,unigram,2
+gemma3:27b::proponent,11,convenient,unigram,2
+gemma3:27b::proponent,12,warnings,unigram,2
+gemma3:27b::proponent,13,wasn strategic,bigram,1
+gemma3:27b::proponent,14,wasn series isolated,trigram,1
+gemma3:27b::proponent,15,wasn series,bigram,1
+gemma3:27b::proponent,16,wasn rogue operation,trigram,1
+gemma3:27b::proponent,17,wasn rogue,bigram,1
+gemma3:27b::proponent,18,warnings strategically vulnerable,trigram,1
+gemma3:27b::proponent,19,warnings strategically,bigram,1
+gemma3:27b::proponent,20,warnings convenient absence,trigram,1
+gemma3:27b::proponent,21,warnings convenient,bigram,1
+gemma3:27b::proponent,22,war,unigram,1
+gemma3:27b::proponent,23,vulnerable fleet concentration,trigram,1
+gemma3:27b::proponent,24,vulnerable fleet,bigram,1
+gemma3:27b::proponent,25,vulnerable,unigram,1

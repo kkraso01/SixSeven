@@ -1,0 +1,4 @@
+model_name,debate_role,debates,stance_flip_count,avg_abs_stance_shift,avg_signed_stance_shift,stance_flip_rate
+dolphin-yi-34b,moderator,1,0,0.0,0.0,0.0
+dolphin-yi-34b,opponent,1,0,1.0,-1.0,0.0
+gemma3:27b,proponent,1,0,1.0,-1.0,0.0

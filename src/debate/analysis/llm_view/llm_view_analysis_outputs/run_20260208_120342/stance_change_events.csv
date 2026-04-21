@@ -1,0 +1,4 @@
+run_id,model_name,debate_role,initial_stance_proxy,final_stance_proxy,stance_proxy_delta,initial_stance_sign,final_stance_sign,stance_flip,turns_in_group
+run_20260208_120342,gemma3:27b,moderator,-1.0,1.0,2.0,-1,1,1,4
+run_20260208_120342,gemma3:27b,opponent,-0.0,-0.0,0.0,0,0,0,4
+run_20260208_120342,gemma3:27b,proponent,0.0,-1.0,-1.0,0,-1,0,4

@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,moderator,most_evidence_dense,5g_health_risks,technology,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the historical track record of some companies prioritizing profit over public safety.
+Disagreements: CA argues that telecom companies prioritize profit over public safety in 5G deployment based on their historical track record. SA disputes this generalization and calls for specific evidence related to 5G networks.
+Detected moves: Hasty Generalization: CA's claim that telecom companies prioritize profit over public safety in 5G deployment due to their historical track record may be a hasty generalization based on limited examples.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of telecom companies prioritizing profit over public safety in the deployment of 5G networks?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,moderator,most_hedged,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,moderator,most_assertive,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,moderator,most_moral_framed,5g_health_risks,technology,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the historical track record of some companies prioritizing profit over public safety.
+Disagreements: CA argues that telecom companies prioritize profit over public safety in 5G deployment based on their historical track record. SA disputes this generalization and calls for specific evidence related to 5G networks.
+Detected moves: Hasty Generalization: CA's claim that telecom companies prioritize profit over public safety in 5G deployment due to their historical track record may be a hasty generalization based on limited examples.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of telecom companies prioritizing profit over public safety in the deployment of 5G networks?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,5g_health_risks,technology,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential risks of 5G technology and the importance of safety testing.
+Disagreements: CA argues that 5G networks are being deployed without proper safety testing or public oversight, while SA believes that rigorous regulatory frameworks and safety tests exist in many countries.
+Detected moves: Hasty Generalization: CA generalizes from past wireless technologies to current 5G technology regarding radiation levels and potential health risks.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that telecom companies are prioritizing profit over public safety in the deployment of 5G networks?, Can you provide examples of countries or regions where 5G technology has been deployed with comprehensive safety testing and public oversight?"
+dolphin-yi-34b,opponent,highest_confidence,5g_health_risks,technology,closing,4,11,70.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,opponent,most_evidence_dense,5g_health_risks,technology,middle,2,5,60.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,opponent,most_rebuttal_dense,5g_health_risks,technology,middle,2,5,60.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,opponent,most_hedged,5g_health_risks,technology,middle,2,5,60.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,opponent,most_assertive,5g_health_risks,technology,middle,2,5,60.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,opponent,most_moral_framed,5g_health_risks,technology,opening,1,2,55.0,The rollout of 5G networks does not inherently imply a lack of safety testing or public oversight. Many countries have rigorous regulatory frameworks in place to assess the safety and efficacy of new wireless technologies before deployment.
+dolphin-yi-34b,opponent,strongest_stance_proxy,5g_health_risks,technology,opening,1,2,55.0,The rollout of 5G networks does not inherently imply a lack of safety testing or public oversight. Many countries have rigorous regulatory frameworks in place to assess the safety and efficacy of new wireless technologies before deployment.
+dolphin-yi-34b,opponent,weakest_stance_proxy,5g_health_risks,technology,middle,2,5,60.0,"While it is true that some companies may prioritize profit over public safety in certain instances, this does not necessarily mean that all telecom companies are doing so with the deployment of 5G networks. It would be beneficial to examine specific cases and evidence to determine if there is a consistent pattern of prioritizing profit over safety."
+dolphin-yi-34b,proponent,highest_confidence,5g_health_risks,technology,opening,1,1,70.0,5G networks are being rolled out by telecom companies and governments without proper safety testing or public oversight.
+dolphin-yi-34b,proponent,most_evidence_dense,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.
+dolphin-yi-34b,proponent,most_rebuttal_dense,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.
+dolphin-yi-34b,proponent,most_hedged,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.
+dolphin-yi-34b,proponent,most_assertive,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.
+dolphin-yi-34b,proponent,most_moral_framed,5g_health_risks,technology,opening,1,1,70.0,5G networks are being rolled out by telecom companies and governments without proper safety testing or public oversight.
+dolphin-yi-34b,proponent,strongest_stance_proxy,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.
+dolphin-yi-34b,proponent,weakest_stance_proxy,5g_health_risks,technology,opening,2,4,65.0,Telecom companies prioritize profit over public safety in the deployment of 5G networks due to their historical track record.

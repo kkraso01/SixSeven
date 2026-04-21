@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,14
+dolphin-yi-34b::moderator,2,ca,unigram,13
+dolphin-yi-34b::moderator,3,regulatory,unigram,10
+dolphin-yi-34b::moderator,4,gmo,unigram,9
+dolphin-yi-34b::moderator,5,evidence,unigram,8
+dolphin-yi-34b::moderator,6,independent,unigram,7
+dolphin-yi-34b::moderator,7,potential,unigram,7
+dolphin-yi-34b::moderator,8,specific,unigram,7
+dolphin-yi-34b::moderator,9,research,unigram,6
+dolphin-yi-34b::moderator,10,questions,unigram,6
+dolphin-yi-34b::moderator,11,safety,unigram,6
+dolphin-yi-34b::moderator,12,health,unigram,5
+dolphin-yi-34b::moderator,13,gmos,unigram,5
+dolphin-yi-34b::moderator,14,independent research,bigram,5
+dolphin-yi-34b::moderator,15,examples,unigram,5
+dolphin-yi-34b::moderator,16,argues,unigram,5
+dolphin-yi-34b::moderator,17,corporate,unigram,5
+dolphin-yi-34b::moderator,18,recap,unigram,4
+dolphin-yi-34b::moderator,19,recap agreements,bigram,4
+dolphin-yi-34b::moderator,20,recap agreements agents,trigram,4
+dolphin-yi-34b::moderator,21,scores civility,bigram,4
+dolphin-yi-34b::moderator,22,scores,unigram,4
+dolphin-yi-34b::moderator,23,moderator,unigram,4
+dolphin-yi-34b::moderator,24,scores civility epistemic,trigram,4
+dolphin-yi-34b::moderator,25,round recap,bigram,4
+gemma3:27b::opponent,1,requires,unigram,4
+gemma3:27b::opponent,2,demonstrating,unigram,4
+gemma3:27b::opponent,3,attributing,unigram,4
+gemma3:27b::opponent,4,acknowledging,unigram,3
+gemma3:27b::opponent,5,potential,unigram,3
+gemma3:27b::opponent,6,deliberate,unigram,3
+gemma3:27b::opponent,7,requires demonstrating,bigram,3
+gemma3:27b::opponent,8,regulatory,unigram,3
+gemma3:27b::opponent,9,corporate,unigram,3
+gemma3:27b::opponent,10,acknowledging potential,bigram,3
+gemma3:27b::opponent,11,safety,unigram,2
+gemma3:27b::opponent,12,potential regulatory,bigram,2
+gemma3:27b::opponent,13,protocols,unigram,2
+gemma3:27b::opponent,14,safety protocols,bigram,2
+gemma3:27b::opponent,15,research,unigram,2
+gemma3:27b::opponent,16,bias,unigram,2
+gemma3:27b::opponent,17,disregard,unigram,2
+gemma3:27b::opponent,18,established,unigram,2
+gemma3:27b::opponent,19,health,unigram,2
+gemma3:27b::opponent,20,mechanism,unigram,2
+gemma3:27b::opponent,21,consistently,unigram,2
+gemma3:27b::opponent,22,acknowledging potential regulatory,trigram,2
+gemma3:27b::opponent,23,approvals,unigram,2
+gemma3:27b::opponent,24,approvals consistently,bigram,2
+gemma3:27b::opponent,25,valid concern framing,trigram,1
+gemma3:27b::proponent,1,health,unigram,3
+gemma3:27b::proponent,2,public,unigram,3
+gemma3:27b::proponent,3,gmos,unigram,2
+gemma3:27b::proponent,4,corporate interests,bigram,2
+gemma3:27b::proponent,5,gmo,unigram,2
+gemma3:27b::proponent,6,ignores,unigram,2
+gemma3:27b::proponent,7,interests,unigram,2
+gemma3:27b::proponent,8,corporate,unigram,2
+gemma3:27b::proponent,9,long,unigram,2
+gemma3:27b::proponent,10,safety,unigram,2
+gemma3:27b::proponent,11,regulatory,unigram,2
+gemma3:27b::proponent,12,public health,bigram,2
+gemma3:27b::proponent,13,pattern,unigram,2
+gemma3:27b::proponent,14,long term,bigram,2
+gemma3:27b::proponent,15,term,unigram,2
+gemma3:27b::proponent,16,actively,unigram,1
+gemma3:27b::proponent,17,biased evaluation,bigram,1
+gemma3:27b::proponent,18,calculated,unigram,1
+gemma3:27b::proponent,19,calculated control,bigram,1
+gemma3:27b::proponent,20,calculated control food,trigram,1
+gemma3:27b::proponent,21,capture,unigram,1
+gemma3:27b::proponent,22,capture pointing,bigram,1
+gemma3:27b::proponent,23,capture pointing deliberate,trigram,1
+gemma3:27b::proponent,24,actively harming,bigram,1
+gemma3:27b::proponent,25,anomalies surrounding gmo,trigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,accelerated,unigram,1
+dolphin-yi-34b::opponent,2,accelerated testing,bigram,1
+dolphin-yi-34b::opponent,3,accelerated testing approval,trigram,1
+dolphin-yi-34b::opponent,4,approval,unigram,1
+dolphin-yi-34b::opponent,5,approval processes,bigram,1
+dolphin-yi-34b::opponent,6,approval processes rigorous,trigram,1
+dolphin-yi-34b::opponent,7,clinical,unigram,1
+dolphin-yi-34b::opponent,8,clinical trials,bigram,1
+dolphin-yi-34b::opponent,9,clinical trials conducted,trigram,1
+dolphin-yi-34b::opponent,10,concerns,unigram,1
+dolphin-yi-34b::opponent,11,concerns crucial,bigram,1
+dolphin-yi-34b::opponent,12,concerns crucial consider,trigram,1
+dolphin-yi-34b::opponent,13,conditions,unigram,1
+dolphin-yi-34b::opponent,14,conditions necessitate,bigram,1
+dolphin-yi-34b::opponent,15,conditions necessitate accelerated,trigram,1
+dolphin-yi-34b::opponent,16,conducted,unigram,1
+dolphin-yi-34b::opponent,17,conducted provide,bigram,1
+dolphin-yi-34b::opponent,18,conducted provide strong,trigram,1
+dolphin-yi-34b::opponent,19,consider,unigram,1
+dolphin-yi-34b::opponent,20,consider emergency,bigram,1
+dolphin-yi-34b::opponent,21,consider emergency conditions,trigram,1
+dolphin-yi-34b::opponent,22,crucial,unigram,1
+dolphin-yi-34b::opponent,23,crucial consider,bigram,1
+dolphin-yi-34b::opponent,24,crucial consider emergency,trigram,1
+dolphin-yi-34b::opponent,25,development,unigram,1
+dolphin-yi-34b::proponent,1,concerns,unigram,1
+dolphin-yi-34b::proponent,2,concerns long,bigram,1
+dolphin-yi-34b::proponent,3,concerns long term,trigram,1
+dolphin-yi-34b::proponent,4,development,unigram,1
+dolphin-yi-34b::proponent,5,development mrna,bigram,1
+dolphin-yi-34b::proponent,6,development mrna vaccines,trigram,1
+dolphin-yi-34b::proponent,7,efficacy,unigram,1
+dolphin-yi-34b::proponent,8,long,unigram,1
+dolphin-yi-34b::proponent,9,long term,bigram,1
+dolphin-yi-34b::proponent,10,long term safety,trigram,1
+dolphin-yi-34b::proponent,11,mrna,unigram,1
+dolphin-yi-34b::proponent,12,mrna vaccines,bigram,1
+dolphin-yi-34b::proponent,13,mrna vaccines raises,trigram,1
+dolphin-yi-34b::proponent,14,raises,unigram,1
+dolphin-yi-34b::proponent,15,raises concerns,bigram,1
+dolphin-yi-34b::proponent,16,raises concerns long,trigram,1
+dolphin-yi-34b::proponent,17,rapid,unigram,1
+dolphin-yi-34b::proponent,18,rapid development,bigram,1
+dolphin-yi-34b::proponent,19,rapid development mrna,trigram,1
+dolphin-yi-34b::proponent,20,safety,unigram,1
+dolphin-yi-34b::proponent,21,safety efficacy,bigram,1
+dolphin-yi-34b::proponent,22,term,unigram,1
+dolphin-yi-34b::proponent,23,term safety,bigram,1
+dolphin-yi-34b::proponent,24,term safety efficacy,trigram,1
+dolphin-yi-34b::proponent,25,vaccines,unigram,1
+gemma3:27b::moderator,1,ca,unigram,8
+gemma3:27b::moderator,2,sa,unigram,5
+gemma3:27b::moderator,3,testing,unigram,4
+gemma3:27b::moderator,4,evidence,unigram,3
+gemma3:27b::moderator,5,agents,unigram,3
+gemma3:27b::moderator,6,rapid,unigram,2
+gemma3:27b::moderator,7,safety,unigram,2
+gemma3:27b::moderator,8,term,unigram,2
+gemma3:27b::moderator,9,potential,unigram,2
+gemma3:27b::moderator,10,questions,unigram,2
+gemma3:27b::moderator,11,long,unigram,2
+gemma3:27b::moderator,12,narrative,unigram,2
+gemma3:27b::moderator,13,long term,bigram,2
+gemma3:27b::moderator,14,development,unigram,2
+gemma3:27b::moderator,15,rapid development,bigram,2
+gemma3:27b::moderator,16,untrustworthiness,unigram,2
+gemma3:27b::moderator,17,concerns,unigram,2
+gemma3:27b::moderator,18,distrust,unigram,2
+gemma3:27b::moderator,19,transparency,unigram,2
+gemma3:27b::moderator,20,trustworthiness,unigram,1
+gemma3:27b::moderator,21,trials evidence safety,trigram,1
+gemma3:27b::moderator,22,trials evidence,bigram,1
+gemma3:27b::moderator,23,trials,unigram,1
+gemma3:27b::moderator,24,transparency sa emphasizes,trigram,1
+gemma3:27b::moderator,25,transparency sa,bigram,1

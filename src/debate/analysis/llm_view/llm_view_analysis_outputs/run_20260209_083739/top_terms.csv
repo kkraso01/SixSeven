@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,intelligence,unigram,14
+dolphin-yi-34b::moderator,2,attack,unigram,13
+dolphin-yi-34b::moderator,3,sa,unigram,12
+dolphin-yi-34b::moderator,4,pearl,unigram,12
+dolphin-yi-34b::moderator,5,harbor,unigram,12
+dolphin-yi-34b::moderator,6,government,unigram,12
+dolphin-yi-34b::moderator,7,pearl harbor,bigram,12
+dolphin-yi-34b::moderator,8,ca,unigram,11
+dolphin-yi-34b::moderator,9,pearl harbor attack,trigram,10
+dolphin-yi-34b::moderator,10,harbor attack,bigram,10
+dolphin-yi-34b::moderator,11,evidence,unigram,10
+dolphin-yi-34b::moderator,12,failures,unigram,10
+dolphin-yi-34b::moderator,13,intelligence failures,bigram,9
+dolphin-yi-34b::moderator,14,agents,unigram,9
+dolphin-yi-34b::moderator,15,questions,unigram,8
+dolphin-yi-34b::moderator,16,deliberate,unigram,6
+dolphin-yi-34b::moderator,17,claim,unigram,6
+dolphin-yi-34b::moderator,18,round recap,bigram,5
+dolphin-yi-34b::moderator,19,moderator round,bigram,5
+dolphin-yi-34b::moderator,20,moderator,unigram,5
+dolphin-yi-34b::moderator,21,argues,unigram,5
+dolphin-yi-34b::moderator,22,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,23,recap,unigram,5
+dolphin-yi-34b::moderator,24,recap agreements,bigram,5
+dolphin-yi-34b::moderator,25,round,unigram,5
+dolphin-yi-34b::proponent,1,attack,unigram,5
+dolphin-yi-34b::proponent,2,harbor,unigram,5
+dolphin-yi-34b::proponent,3,government,unigram,5
+dolphin-yi-34b::proponent,4,pearl,unigram,5
+dolphin-yi-34b::proponent,5,pearl harbor,bigram,5
+dolphin-yi-34b::proponent,6,pearl harbor attack,trigram,4
+dolphin-yi-34b::proponent,7,harbor attack,bigram,4
+dolphin-yi-34b::proponent,8,allowed happen,bigram,3
+dolphin-yi-34b::proponent,9,happen,unigram,3
+dolphin-yi-34b::proponent,10,advance,unigram,3
+dolphin-yi-34b::proponent,11,allowed,unigram,3
+dolphin-yi-34b::proponent,12,knowledge,unigram,3
+dolphin-yi-34b::proponent,13,ii,unigram,3
+dolphin-yi-34b::proponent,14,advance knowledge,bigram,3
+dolphin-yi-34b::proponent,15,war ii,bigram,3
+dolphin-yi-34b::proponent,16,war,unigram,3
+dolphin-yi-34b::proponent,17,world war,bigram,3
+dolphin-yi-34b::proponent,18,world,unigram,3
+dolphin-yi-34b::proponent,19,world war ii,trigram,3
+dolphin-yi-34b::proponent,20,government advance knowledge,trigram,2
+dolphin-yi-34b::proponent,21,government deliberate,bigram,2
+dolphin-yi-34b::proponent,22,entering,unigram,2
+dolphin-yi-34b::proponent,23,justify,unigram,2
+dolphin-yi-34b::proponent,24,justify entering world,trigram,2
+dolphin-yi-34b::proponent,25,harbor attack allowed,trigram,2
+gemma3:27b::opponent,1,attack,unigram,5
+gemma3:27b::opponent,2,requires,unigram,4
+gemma3:27b::opponent,3,pearl harbor,bigram,4
+gemma3:27b::opponent,4,intelligence,unigram,4
+gemma3:27b::opponent,5,link,unigram,4
+gemma3:27b::opponent,6,pearl harbor attack,trigram,4
+gemma3:27b::opponent,7,pearl,unigram,4
+gemma3:27b::opponent,8,attributing,unigram,4
+gemma3:27b::opponent,9,harbor,unigram,4
+gemma3:27b::opponent,10,harbor attack,bigram,4
+gemma3:27b::opponent,11,evidence,unigram,4
+gemma3:27b::opponent,12,government,unigram,3
+gemma3:27b::opponent,13,available,unigram,3
+gemma3:27b::opponent,14,failures,unigram,3
+gemma3:27b::opponent,15,requires demonstrating,bigram,3
+gemma3:27b::opponent,16,demonstrating,unigram,3
+gemma3:27b::opponent,17,deliberate,unigram,3
+gemma3:27b::opponent,18,claim,unigram,3
+gemma3:27b::opponent,19,entry,unigram,3
+gemma3:27b::opponent,20,wwii,unigram,3
+gemma3:27b::opponent,21,lacks,unigram,2
+gemma3:27b::opponent,22,relies,unigram,2
+gemma3:27b::opponent,23,allowed pearl,bigram,2
+gemma3:27b::opponent,24,intelligence failures,bigram,2
+gemma3:27b::opponent,25,inaction,unigram,2

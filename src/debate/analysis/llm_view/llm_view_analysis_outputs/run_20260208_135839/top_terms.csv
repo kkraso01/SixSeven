@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,surveillance,unigram,22
+dolphin-yi-34b::moderator,2,ai,unigram,21
+dolphin-yi-34b::moderator,3,ai surveillance,bigram,20
+dolphin-yi-34b::moderator,4,global,unigram,12
+dolphin-yi-34b::moderator,5,sa,unigram,12
+dolphin-yi-34b::moderator,6,ca,unigram,12
+dolphin-yi-34b::moderator,7,coordinated,unigram,9
+dolphin-yi-34b::moderator,8,plan,unigram,9
+dolphin-yi-34b::moderator,9,coordinating force,bigram,8
+dolphin-yi-34b::moderator,10,hidden coordinating,bigram,8
+dolphin-yi-34b::moderator,11,hidden,unigram,8
+dolphin-yi-34b::moderator,12,force,unigram,8
+dolphin-yi-34b::moderator,13,hidden coordinating force,trigram,8
+dolphin-yi-34b::moderator,14,agents,unigram,8
+dolphin-yi-34b::moderator,15,coordinating,unigram,8
+dolphin-yi-34b::moderator,16,countries,unigram,8
+dolphin-yi-34b::moderator,17,adoption,unigram,8
+dolphin-yi-34b::moderator,18,systems,unigram,8
+dolphin-yi-34b::moderator,19,needs,unigram,7
+dolphin-yi-34b::moderator,20,adoption ai surveillance,trigram,7
+dolphin-yi-34b::moderator,21,evidence,unigram,7
+dolphin-yi-34b::moderator,22,adoption ai,bigram,7
+dolphin-yi-34b::moderator,23,technological,unigram,7
+dolphin-yi-34b::moderator,24,global plan,bigram,6
+dolphin-yi-34b::moderator,25,local,unigram,6
+dolphin-yi-34b::opponent,1,ai,unigram,5
+dolphin-yi-34b::opponent,2,systems,unigram,5
+dolphin-yi-34b::opponent,3,surveillance,unigram,5
+dolphin-yi-34b::opponent,4,adoption,unigram,4
+dolphin-yi-34b::opponent,5,coordinating,unigram,4
+dolphin-yi-34b::opponent,6,coordinating force,bigram,4
+dolphin-yi-34b::opponent,7,ai surveillance,bigram,4
+dolphin-yi-34b::opponent,8,cultures,unigram,4
+dolphin-yi-34b::opponent,9,force,unigram,4
+dolphin-yi-34b::opponent,10,hidden coordinating force,trigram,4
+dolphin-yi-34b::opponent,11,systems cultures,bigram,4
+dolphin-yi-34b::opponent,12,political,unigram,4
+dolphin-yi-34b::opponent,13,political systems cultures,trigram,4
+dolphin-yi-34b::opponent,14,simultaneous,unigram,4
+dolphin-yi-34b::opponent,15,hidden coordinating,bigram,4
+dolphin-yi-34b::opponent,16,hidden,unigram,4
+dolphin-yi-34b::opponent,17,political systems,bigram,4
+dolphin-yi-34b::opponent,18,does,unigram,3
+dolphin-yi-34b::opponent,19,different political systems,trigram,3
+dolphin-yi-34b::opponent,20,does necessarily,bigram,3
+dolphin-yi-34b::opponent,21,does necessarily indicate,trigram,3
+dolphin-yi-34b::opponent,22,simultaneous adoption,bigram,3
+dolphin-yi-34b::opponent,23,necessarily indicate hidden,trigram,3
+dolphin-yi-34b::opponent,24,necessarily indicate,bigram,3
+dolphin-yi-34b::opponent,25,indicate,unigram,3
+dolphin-yi-34b::proponent,1,ai,unigram,5
+dolphin-yi-34b::proponent,2,surveillance,unigram,5
+dolphin-yi-34b::proponent,3,diverse,unigram,4
+dolphin-yi-34b::proponent,4,ai surveillance,bigram,4
+dolphin-yi-34b::proponent,5,indicative,unigram,4
+dolphin-yi-34b::proponent,6,systems,unigram,4
+dolphin-yi-34b::proponent,7,adoption ai surveillance,trigram,3
+dolphin-yi-34b::proponent,8,adoption ai,bigram,3
+dolphin-yi-34b::proponent,9,diverse political systems,trigram,3
+dolphin-yi-34b::proponent,10,diverse political,bigram,3
+dolphin-yi-34b::proponent,11,control,unigram,3
+dolphin-yi-34b::proponent,12,political systems cultures,trigram,3
+dolphin-yi-34b::proponent,13,indicative larger,bigram,3
+dolphin-yi-34b::proponent,14,ai surveillance diverse,trigram,3
+dolphin-yi-34b::proponent,15,cultures,unigram,3
+dolphin-yi-34b::proponent,16,adoption,unigram,3
+dolphin-yi-34b::proponent,17,political,unigram,3
+dolphin-yi-34b::proponent,18,larger,unigram,3
+dolphin-yi-34b::proponent,19,surveillance diverse,bigram,3
+dolphin-yi-34b::proponent,20,political systems,bigram,3
+dolphin-yi-34b::proponent,21,systems cultures,bigram,3
+dolphin-yi-34b::proponent,22,total,unigram,3
+dolphin-yi-34b::proponent,23,total population,bigram,3
+dolphin-yi-34b::proponent,24,surveillance diverse political,trigram,3
+dolphin-yi-34b::proponent,25,population,unigram,3

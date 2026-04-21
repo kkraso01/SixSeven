@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,14
+dolphin-yi-34b::moderator,2,ca,unigram,14
+dolphin-yi-34b::moderator,3,treatments,unigram,13
+dolphin-yi-34b::moderator,4,pharmaceutical,unigram,12
+dolphin-yi-34b::moderator,5,profit,unigram,11
+dolphin-yi-34b::moderator,6,suppression,unigram,10
+dolphin-yi-34b::moderator,7,systemic,unigram,10
+dolphin-yi-34b::moderator,8,agents,unigram,9
+dolphin-yi-34b::moderator,9,evidence,unigram,9
+dolphin-yi-34b::moderator,10,cures,unigram,9
+dolphin-yi-34b::moderator,11,questions,unigram,7
+dolphin-yi-34b::moderator,12,research,unigram,7
+dolphin-yi-34b::moderator,13,companies,unigram,7
+dolphin-yi-34b::moderator,14,incentives,unigram,7
+dolphin-yi-34b::moderator,15,pharmaceutical companies,bigram,6
+dolphin-yi-34b::moderator,16,development,unigram,6
+dolphin-yi-34b::moderator,17,scores civility,bigram,5
+dolphin-yi-34b::moderator,18,agreements,unigram,5
+dolphin-yi-34b::moderator,19,scores,unigram,5
+dolphin-yi-34b::moderator,20,round recap,bigram,5
+dolphin-yi-34b::moderator,21,round,unigram,5
+dolphin-yi-34b::moderator,22,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,23,appeal,unigram,5
+dolphin-yi-34b::moderator,24,moves,unigram,5
+dolphin-yi-34b::moderator,25,recap agreements,bigram,5
+dolphin-yi-34b::opponent,1,pharmaceutical,unigram,4
+dolphin-yi-34b::opponent,2,treatments,unigram,4
+dolphin-yi-34b::opponent,3,suppression,unigram,4
+dolphin-yi-34b::opponent,4,profit,unigram,4
+dolphin-yi-34b::opponent,5,conspiracy,unigram,3
+dolphin-yi-34b::opponent,6,active,unigram,3
+dolphin-yi-34b::opponent,7,active suppression conspiracy,trigram,3
+dolphin-yi-34b::opponent,8,active suppression,bigram,3
+dolphin-yi-34b::opponent,9,pharmaceutical companies,bigram,3
+dolphin-yi-34b::opponent,10,potential,unigram,3
+dolphin-yi-34b::opponent,11,expensive,unigram,3
+dolphin-yi-34b::opponent,12,argument,unigram,3
+dolphin-yi-34b::opponent,13,suppression conspiracy,bigram,3
+dolphin-yi-34b::opponent,14,companies,unigram,3
+dolphin-yi-34b::opponent,15,expensive treatments,bigram,3
+dolphin-yi-34b::opponent,16,companies consistently,bigram,2
+dolphin-yi-34b::opponent,17,favor,unigram,2
+dolphin-yi-34b::opponent,18,factors scientific,bigram,2
+dolphin-yi-34b::opponent,19,evidence active,bigram,2
+dolphin-yi-34b::opponent,20,evidence active suppression,trigram,2
+dolphin-yi-34b::opponent,21,factors,unigram,2
+dolphin-yi-34b::opponent,22,expensive treatments evidence,trigram,2
+dolphin-yi-34b::opponent,23,evidence,unigram,2
+dolphin-yi-34b::opponent,24,factors scientific uncertainty,trigram,2
+dolphin-yi-34b::opponent,25,cost therapies,bigram,2
+gemma3:27b::proponent,1,suppression,unigram,4
+gemma3:27b::proponent,2,sa,unigram,4
+gemma3:27b::proponent,3,pharmaceutical,unigram,4
+gemma3:27b::proponent,4,proof,unigram,3
+gemma3:27b::proponent,5,profit,unigram,3
+gemma3:27b::proponent,6,creating,unigram,3
+gemma3:27b::proponent,7,pharmaceutical industry,bigram,3
+gemma3:27b::proponent,8,systemic,unigram,3
+gemma3:27b::proponent,9,industry,unigram,3
+gemma3:27b::proponent,10,treatments,unigram,3
+gemma3:27b::proponent,11,cures,unigram,3
+gemma3:27b::proponent,12,research,unigram,2
+gemma3:27b::proponent,13,proof suppression,bigram,2
+gemma3:27b::proponent,14,systemic bias,bigram,2
+gemma3:27b::proponent,15,sa demand,bigram,2
+gemma3:27b::proponent,16,consistently,unigram,2
+gemma3:27b::proponent,17,pattern,unigram,2
+gemma3:27b::proponent,18,profit genuine cures,trigram,2
+gemma3:27b::proponent,19,profit genuine,bigram,2
+gemma3:27b::proponent,20,prioritizes profit genuine,trigram,2
+gemma3:27b::proponent,21,prioritizes,unigram,2
+gemma3:27b::proponent,22,prioritizes profit,bigram,2
+gemma3:27b::proponent,23,outcome,unigram,2
+gemma3:27b::proponent,24,incentives,unigram,2
+gemma3:27b::proponent,25,genuine,unigram,2

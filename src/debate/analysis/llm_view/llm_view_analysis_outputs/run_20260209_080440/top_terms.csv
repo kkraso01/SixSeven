@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,structure,unigram,16
+dolphin-yi-34b::moderator,2,manipulation,unigram,15
+dolphin-yi-34b::moderator,3,federal,unigram,13
+dolphin-yi-34b::moderator,4,reserve,unigram,12
+dolphin-yi-34b::moderator,5,federal reserve,bigram,12
+dolphin-yi-34b::moderator,6,fed,unigram,11
+dolphin-yi-34b::moderator,7,sa,unigram,10
+dolphin-yi-34b::moderator,8,ca,unigram,10
+dolphin-yi-34b::moderator,9,wealth,unigram,8
+dolphin-yi-34b::moderator,10,evidence,unigram,8
+dolphin-yi-34b::moderator,11,policy,unigram,6
+dolphin-yi-34b::moderator,12,specific,unigram,6
+dolphin-yi-34b::moderator,13,potential,unigram,6
+dolphin-yi-34b::moderator,14,scores,unigram,5
+dolphin-yi-34b::moderator,15,recap agreements,bigram,5
+dolphin-yi-34b::moderator,16,questions,unigram,5
+dolphin-yi-34b::moderator,17,recap,unigram,5
+dolphin-yi-34b::moderator,18,civility epistemic bridge,trigram,5
+dolphin-yi-34b::moderator,19,fed structure,bigram,5
+dolphin-yi-34b::moderator,20,civility,unigram,5
+dolphin-yi-34b::moderator,21,civility epistemic,bigram,5
+dolphin-yi-34b::moderator,22,inequality,unigram,5
+dolphin-yi-34b::moderator,23,moderator round,bigram,5
+dolphin-yi-34b::moderator,24,moderator,unigram,5
+dolphin-yi-34b::moderator,25,oversight,unigram,5
+dolphin-yi-34b::proponent,1,federal reserve,bigram,5
+dolphin-yi-34b::proponent,2,federal,unigram,5
+dolphin-yi-34b::proponent,3,reserve,unigram,5
+dolphin-yi-34b::proponent,4,federal reserve hybrid,trigram,4
+dolphin-yi-34b::proponent,5,hybrid structure,bigram,4
+dolphin-yi-34b::proponent,6,manipulation,unigram,4
+dolphin-yi-34b::proponent,7,structure,unigram,4
+dolphin-yi-34b::proponent,8,hybrid,unigram,4
+dolphin-yi-34b::proponent,9,reserve hybrid structure,trigram,4
+dolphin-yi-34b::proponent,10,reserve hybrid,bigram,4
+dolphin-yi-34b::proponent,11,private,unigram,3
+dolphin-yi-34b::proponent,12,branches public,bigram,2
+dolphin-yi-34b::proponent,13,blurs lines accountability,trigram,2
+dolphin-yi-34b::proponent,14,branches,unigram,2
+dolphin-yi-34b::proponent,15,banks owning,bigram,2
+dolphin-yi-34b::proponent,16,accountability,unigram,2
+dolphin-yi-34b::proponent,17,fosters potential,bigram,2
+dolphin-yi-34b::proponent,18,conflicts opacity operations,trigram,2
+dolphin-yi-34b::proponent,19,conflicts opacity,bigram,2
+dolphin-yi-34b::proponent,20,environment,unigram,2
+dolphin-yi-34b::proponent,21,environment manipulation,bigram,2
+dolphin-yi-34b::proponent,22,fomc blurs,bigram,2
+dolphin-yi-34b::proponent,23,fomc,unigram,2
+dolphin-yi-34b::proponent,24,environment manipulation occur,trigram,2
+dolphin-yi-34b::proponent,25,fosters potential manipulation,trigram,2
+gemma3:27b::opponent,1,structure,unigram,8
+gemma3:27b::opponent,2,manipulation,unigram,6
+gemma3:27b::opponent,3,federal reserve,bigram,5
+gemma3:27b::opponent,4,federal reserve structure,trigram,5
+gemma3:27b::opponent,5,reserve structure,bigram,5
+gemma3:27b::opponent,6,reserve,unigram,5
+gemma3:27b::opponent,7,federal,unigram,5
+gemma3:27b::opponent,8,conflicts,unigram,4
+gemma3:27b::opponent,9,structure presents,bigram,3
+gemma3:27b::opponent,10,presents,unigram,3
+gemma3:27b::opponent,11,potential conflicts,bigram,3
+gemma3:27b::opponent,12,reserve structure presents,trigram,3
+gemma3:27b::opponent,13,potential,unigram,3
+gemma3:27b::opponent,14,demonstrating,unigram,3
+gemma3:27b::opponent,15,claim,unigram,2
+gemma3:27b::opponent,16,conflicts claim,bigram,2
+gemma3:27b::opponent,17,evidence,unigram,2
+gemma3:27b::opponent,18,instances,unigram,2
+gemma3:27b::opponent,19,instances manipulation,bigram,2
+gemma3:27b::opponent,20,overlooks,unigram,2
+gemma3:27b::opponent,21,occurs,unigram,2
+gemma3:27b::opponent,22,provides environment manipulation,trigram,2
+gemma3:27b::opponent,23,provides,unigram,2
+gemma3:27b::opponent,24,provides environment,bigram,2
+gemma3:27b::opponent,25,environment manipulation,bigram,2

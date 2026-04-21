@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,flat_earth,science,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.
+Disagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?"
+dolphin-yi-34b,moderator,most_evidence_dense,flat_earth,science,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the existence of space agencies and their role in Earth observation.
+Disagreements: CA believes that space agencies are involved in a global deception about the Earth's shape, while SA argues for the overwhelming scientific evidence supporting the spherical model., SA questions the lack of specific evidence to support CA's conspiracy theory, whereas CA challenges SA's trust in these institutions.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have to support the claim of a global conspiracy among space agencies?, How can we reconcile satellite technology and physical phenomena consistent with a spherical Earth model within your framework?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,flat_earth,science,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.
+Disagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?"
+dolphin-yi-34b,moderator,most_hedged,flat_earth,science,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.
+Disagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?"
+dolphin-yi-34b,moderator,most_assertive,flat_earth,science,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.
+Disagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?"
+dolphin-yi-34b,moderator,most_moral_framed,flat_earth,science,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the existence of space agencies and their role in Earth observation.
+Disagreements: CA believes that space agencies are involved in a global deception about the Earth's shape, while SA argues for the overwhelming scientific evidence supporting the spherical model., SA questions the lack of specific evidence to support CA's conspiracy theory, whereas CA challenges SA's trust in these institutions.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have to support the claim of a global conspiracy among space agencies?, How can we reconcile satellite technology and physical phenomena consistent with a spherical Earth model within your framework?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,flat_earth,science,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the role of space agencies in providing satellite data and imagery., Agents dispute whether access is transparent or part of a cover-up.
+Disagreements: CA claims space agencies are involved in a cover-up by not allowing direct observation from independent sources., SA argues that satellite data and imagery are publicly available and used by various sectors, indicating transparency.
+Detected moves: appeal to ignorance (CA: Why would they hide high-altitude or space footage if the Earth were truly spherical?)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples of organizations or individuals denied access to satellite data or imagery can support the claim of a cover-up?, How does the availability and usage of satellite data by independent researchers or non-agency sources demonstrate transparency in this domain?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,flat_earth,science,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the existence of evidence supporting their respective models of the Earth., SA points out that multiple lines of evidence support the spherical Earth model, while CA raises doubts about space agencies' transparency and credibility.
+Disagreements: CA questions the credibility of space agencies and satellite data, whereas SA defends their transparency and scientific consensus around the spherical Earth model., SA seeks specific examples of unexplained phenomena challenging the spherical Earth model, while CA asks for independent verification of satellite imagery or observations from non-agency sources supporting it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific unexplained phenomena challenge the spherical Earth model?, Can you provide examples of independent verification of satellite imagery or direct observation from non-agency sources supporting the spherical Earth model?"
+dolphin-yi-34b,opponent,highest_confidence,flat_earth,science,closing,4,11,85.0,"The spherical Earth model is supported by multiple lines of evidence, including satellite data and imagery from space agencies worldwide. Independent organizations and private companies also contribute to our understanding of Earth from space, offering alternative sources of information."
+dolphin-yi-34b,opponent,most_evidence_dense,flat_earth,science,closing,4,11,85.0,"The spherical Earth model is supported by multiple lines of evidence, including satellite data and imagery from space agencies worldwide. Independent organizations and private companies also contribute to our understanding of Earth from space, offering alternative sources of information."
+dolphin-yi-34b,opponent,most_rebuttal_dense,flat_earth,science,middle,3,8,85.0,The opponent claims that space agencies worldwide perpetuate the spherical Earth narrative despite a lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,opponent,most_hedged,flat_earth,science,opening,1,2,75.0,"The claim that space agencies worldwide are involved in a massive coordinated deception about the Earth's shape is not supported by evidence. The overwhelming majority of scientific data, including satellite imagery and measurements, supports the spherical model of the Earth."
+dolphin-yi-34b,opponent,most_assertive,flat_earth,science,opening,1,2,75.0,"The claim that space agencies worldwide are involved in a massive coordinated deception about the Earth's shape is not supported by evidence. The overwhelming majority of scientific data, including satellite imagery and measurements, supports the spherical model of the Earth."
+dolphin-yi-34b,opponent,most_moral_framed,flat_earth,science,middle,3,8,85.0,The opponent claims that space agencies worldwide perpetuate the spherical Earth narrative despite a lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,opponent,strongest_stance_proxy,flat_earth,science,opening,1,2,75.0,"The claim that space agencies worldwide are involved in a massive coordinated deception about the Earth's shape is not supported by evidence. The overwhelming majority of scientific data, including satellite imagery and measurements, supports the spherical model of the Earth."
+dolphin-yi-34b,opponent,weakest_stance_proxy,flat_earth,science,closing,4,11,85.0,"The spherical Earth model is supported by multiple lines of evidence, including satellite data and imagery from space agencies worldwide. Independent organizations and private companies also contribute to our understanding of Earth from space, offering alternative sources of information."
+dolphin-yi-34b,proponent,highest_confidence,flat_earth,science,opening,1,1,55.0,Space agencies worldwide are involved in a massive coordinated deception about the Earth's shape.
+dolphin-yi-34b,proponent,most_evidence_dense,flat_earth,science,opening,2,4,35.0,The consistent refusal of space agencies to allow direct observation from independent sources indicates a cover-up.
+dolphin-yi-34b,proponent,most_rebuttal_dense,flat_earth,science,middle,3,7,30.0,Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,proponent,most_hedged,flat_earth,science,middle,3,7,30.0,Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,proponent,most_assertive,flat_earth,science,middle,3,7,30.0,Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,proponent,most_moral_framed,flat_earth,science,opening,1,1,55.0,Space agencies worldwide are involved in a massive coordinated deception about the Earth's shape.
+dolphin-yi-34b,proponent,strongest_stance_proxy,flat_earth,science,middle,3,7,30.0,Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.
+dolphin-yi-34b,proponent,weakest_stance_proxy,flat_earth,science,middle,3,7,30.0,Space agencies worldwide continue to perpetuate the spherical Earth narrative despite the lack of transparent evidence and unexplained phenomena.

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,pearl,unigram,5
+dolphin-yi-34b::opponent,2,pearl harbor,bigram,5
+dolphin-yi-34b::opponent,3,harbor,unigram,5
+dolphin-yi-34b::opponent,4,attack,unigram,4
+dolphin-yi-34b::opponent,5,fact,unigram,4
+dolphin-yi-34b::opponent,6,deciphered,unigram,4
+dolphin-yi-34b::opponent,7,fact intelligence reliable,trigram,4
+dolphin-yi-34b::opponent,8,fact intelligence,bigram,4
+dolphin-yi-34b::opponent,9,intelligence reliable,bigram,4
+dolphin-yi-34b::opponent,10,intelligence reliable deciphered,trigram,4
+dolphin-yi-34b::opponent,11,lack preparation,bigram,4
+dolphin-yi-34b::opponent,12,intelligence,unigram,4
+dolphin-yi-34b::opponent,13,harbor attack,bigram,4
+dolphin-yi-34b::opponent,14,government,unigram,4
+dolphin-yi-34b::opponent,15,deciphered quickly,bigram,4
+dolphin-yi-34b::opponent,16,lack,unigram,4
+dolphin-yi-34b::opponent,17,pearl harbor attack,trigram,4
+dolphin-yi-34b::opponent,18,preparation,unigram,4
+dolphin-yi-34b::opponent,19,reliable,unigram,4
+dolphin-yi-34b::opponent,20,quickly,unigram,4
+dolphin-yi-34b::opponent,21,reliable deciphered quickly,trigram,4
+dolphin-yi-34b::opponent,22,reliable deciphered,bigram,4
+dolphin-yi-34b::opponent,23,government pearl harbor,trigram,3
+dolphin-yi-34b::opponent,24,lack preparation government,trigram,3
+dolphin-yi-34b::opponent,25,explained fact intelligence,trigram,3
+dolphin-yi-34b::proponent,1,anomaly,unigram,4
+dolphin-yi-34b::proponent,2,attack,unigram,4
+dolphin-yi-34b::proponent,3,harbor,unigram,4
+dolphin-yi-34b::proponent,4,government,unigram,4
+dolphin-yi-34b::proponent,5,lack,unigram,4
+dolphin-yi-34b::proponent,6,pearl harbor,bigram,4
+dolphin-yi-34b::proponent,7,pearl,unigram,4
+dolphin-yi-34b::proponent,8,government lack,bigram,3
+dolphin-yi-34b::proponent,9,intercepted,unigram,3
+dolphin-yi-34b::proponent,10,intelligence,unigram,3
+dolphin-yi-34b::proponent,11,intercepted intelligence,bigram,3
+dolphin-yi-34b::proponent,12,potential,unigram,3
+dolphin-yi-34b::proponent,13,lack response,bigram,3
+dolphin-yi-34b::proponent,14,government lack response,trigram,3
+dolphin-yi-34b::proponent,15,anomaly warrants suspicion,trigram,3
+dolphin-yi-34b::proponent,16,anomaly warrants,bigram,3
+dolphin-yi-34b::proponent,17,suspicion,unigram,3
+dolphin-yi-34b::proponent,18,warrants,unigram,3
+dolphin-yi-34b::proponent,19,response,unigram,3
+dolphin-yi-34b::proponent,20,warrants suspicion,bigram,3
+dolphin-yi-34b::proponent,21,potential attack,bigram,2
+dolphin-yi-34b::proponent,22,potential attack pearl,trigram,2
+dolphin-yi-34b::proponent,23,pearl harbor attack,trigram,2
+dolphin-yi-34b::proponent,24,intelligence regarding,bigram,2
+dolphin-yi-34b::proponent,25,intercepted intelligence regarding,trigram,2
+gemma3:27b::moderator,1,sa,unigram,27
+gemma3:27b::moderator,2,ca,unigram,27
+gemma3:27b::moderator,3,intelligence,unigram,14
+gemma3:27b::moderator,4,lack,unigram,11
+gemma3:27b::moderator,5,agents,unigram,10
+gemma3:27b::moderator,6,intercepted,unigram,10
+gemma3:27b::moderator,7,messages,unigram,9
+gemma3:27b::moderator,8,response,unigram,8
+gemma3:27b::moderator,9,evidence,unigram,8
+gemma3:27b::moderator,10,attack,unigram,8
+gemma3:27b::moderator,11,anomaly,unigram,8
+gemma3:27b::moderator,12,harbor,unigram,7
+gemma3:27b::moderator,13,pearl,unigram,7
+gemma3:27b::moderator,14,pearl harbor,bigram,7
+gemma3:27b::moderator,15,intercepted messages,bigram,7
+gemma3:27b::moderator,16,specific,unigram,7
+gemma3:27b::moderator,17,suspicious,unigram,6
+gemma3:27b::moderator,18,inaction,unigram,6
+gemma3:27b::moderator,19,focuses,unigram,6
+gemma3:27b::moderator,20,argues,unigram,6
+gemma3:27b::moderator,21,questions,unigram,6
+gemma3:27b::moderator,22,questions ca,bigram,5
+gemma3:27b::moderator,23,moderator,unigram,5
+gemma3:27b::moderator,24,moderator round recap,trigram,5
+gemma3:27b::moderator,25,appeal,unigram,5

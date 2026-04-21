@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,collapse,unigram,10
+dolphin-yi-34b::moderator,2,sa,unigram,8
+dolphin-yi-34b::moderator,3,ca,unigram,8
+dolphin-yi-34b::moderator,4,wtc,unigram,7
+dolphin-yi-34b::moderator,5,evidence,unigram,7
+dolphin-yi-34b::moderator,6,wtc collapse,bigram,6
+dolphin-yi-34b::moderator,7,questions,unigram,5
+dolphin-yi-34b::moderator,8,agents,unigram,5
+dolphin-yi-34b::moderator,9,institutional,unigram,5
+dolphin-yi-34b::moderator,10,official,unigram,5
+dolphin-yi-34b::moderator,11,scientific,unigram,4
+dolphin-yi-34b::moderator,12,narrative,unigram,4
+dolphin-yi-34b::moderator,13,specific,unigram,4
+dolphin-yi-34b::moderator,14,scores civility,bigram,3
+dolphin-yi-34b::moderator,15,round,unigram,3
+dolphin-yi-34b::moderator,16,scores,unigram,3
+dolphin-yi-34b::moderator,17,recap agreements agents,trigram,3
+dolphin-yi-34b::moderator,18,recap,unigram,3
+dolphin-yi-34b::moderator,19,recap agreements,bigram,3
+dolphin-yi-34b::moderator,20,agreements agents,bigram,3
+dolphin-yi-34b::moderator,21,agreements agents acknowledge,trigram,3
+dolphin-yi-34b::moderator,22,argues,unigram,3
+dolphin-yi-34b::moderator,23,independent,unigram,3
+dolphin-yi-34b::moderator,24,moderator round recap,trigram,3
+dolphin-yi-34b::moderator,25,appeal,unigram,3
+dolphin-yi-34b::opponent,1,evidence,unigram,3
+dolphin-yi-34b::opponent,2,11,unigram,2
+dolphin-yi-34b::opponent,3,argument,unigram,2
+dolphin-yi-34b::opponent,4,11 attacks,bigram,2
+dolphin-yi-34b::opponent,5,collapse,unigram,2
+dolphin-yi-34b::opponent,6,attacks,unigram,2
+dolphin-yi-34b::opponent,7,government,unigram,2
+dolphin-yi-34b::opponent,8,argument suggests,bigram,2
+dolphin-yi-34b::opponent,9,opponent argument,bigram,2
+dolphin-yi-34b::opponent,10,opponent argument suggests,trigram,2
+dolphin-yi-34b::opponent,11,opponent,unigram,2
+dolphin-yi-34b::opponent,12,reliable,unigram,2
+dolphin-yi-34b::opponent,13,suggests,unigram,2
+dolphin-yi-34b::opponent,14,supported,unigram,2
+dolphin-yi-34b::opponent,15,scientific,unigram,2
+dolphin-yi-34b::opponent,16,anomalies like,bigram,1
+dolphin-yi-34b::opponent,17,argument suggests pattern,trigram,1
+dolphin-yi-34b::opponent,18,approach requires specific,trigram,1
+dolphin-yi-34b::opponent,19,attacks orchestrated,bigram,1
+dolphin-yi-34b::opponent,20,argument suggests relying,trigram,1
+dolphin-yi-34b::opponent,21,attacks scientific,bigram,1
+dolphin-yi-34b::opponent,22,attacks scientific approach,trigram,1
+dolphin-yi-34b::opponent,23,building,unigram,1
+dolphin-yi-34b::opponent,24,attacks orchestrated elements,trigram,1
+dolphin-yi-34b::opponent,25,building explained,bigram,1
+gemma3:27b::proponent,1,anomalies,unigram,2
+gemma3:27b::proponent,2,collapse,unigram,2
+gemma3:27b::proponent,3,pre,unigram,2
+gemma3:27b::proponent,4,isn,unigram,2
+gemma3:27b::proponent,5,narrative,unigram,2
+gemma3:27b::proponent,6,official,unigram,2
+gemma3:27b::proponent,7,11 narrative contains,trigram,1
+gemma3:27b::proponent,8,11,unigram,1
+gemma3:27b::proponent,9,anomalies like,bigram,1
+gemma3:27b::proponent,10,anomalies like wtc,trigram,1
+gemma3:27b::proponent,11,anomalies particularly regarding,trigram,1
+gemma3:27b::proponent,12,anomalies particularly,bigram,1
+gemma3:27b::proponent,13,analysis,unigram,1
+gemma3:27b::proponent,14,analysis isn,bigram,1
+gemma3:27b::proponent,15,analysis isn commitment,trigram,1
+gemma3:27b::proponent,16,11 narrative,bigram,1
+gemma3:27b::proponent,17,collapse building,bigram,1
+gemma3:27b::proponent,18,collapse building suggesting,trigram,1
+gemma3:27b::proponent,19,collapse isn,bigram,1
+gemma3:27b::proponent,20,collapse isn simply,trigram,1
+gemma3:27b::proponent,21,commitment,unigram,1
+gemma3:27b::proponent,22,commitment scientific,bigram,1
+gemma3:27b::proponent,23,commitment scientific rigor,trigram,1
+gemma3:27b::proponent,24,contains,unigram,1
+gemma3:27b::proponent,25,contains critical,bigram,1

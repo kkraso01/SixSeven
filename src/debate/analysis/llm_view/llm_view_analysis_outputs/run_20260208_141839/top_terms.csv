@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,earth,unigram,14
+dolphin-yi-34b::moderator,2,ca,unigram,14
+dolphin-yi-34b::moderator,3,space,unigram,11
+dolphin-yi-34b::moderator,4,sa,unigram,11
+dolphin-yi-34b::moderator,5,spherical,unigram,10
+dolphin-yi-34b::moderator,6,model,unigram,10
+dolphin-yi-34b::moderator,7,satellite,unigram,9
+dolphin-yi-34b::moderator,8,space agencies,bigram,9
+dolphin-yi-34b::moderator,9,evidence,unigram,9
+dolphin-yi-34b::moderator,10,earth model,bigram,9
+dolphin-yi-34b::moderator,11,agencies,unigram,9
+dolphin-yi-34b::moderator,12,spherical earth,bigram,8
+dolphin-yi-34b::moderator,13,spherical earth model,trigram,8
+dolphin-yi-34b::moderator,14,questions,unigram,7
+dolphin-yi-34b::moderator,15,data,unigram,7
+dolphin-yi-34b::moderator,16,imagery,unigram,6
+dolphin-yi-34b::moderator,17,phenomena,unigram,6
+dolphin-yi-34b::moderator,18,specific,unigram,6
+dolphin-yi-34b::moderator,19,supporting,unigram,5
+dolphin-yi-34b::moderator,20,support,unigram,5
+dolphin-yi-34b::moderator,21,sources,unigram,5
+dolphin-yi-34b::moderator,22,satellite data,bigram,5
+dolphin-yi-34b::moderator,23,transparency,unigram,5
+dolphin-yi-34b::moderator,24,agents,unigram,5
+dolphin-yi-34b::moderator,25,unexplained phenomena,bigram,5
+dolphin-yi-34b::opponent,1,earth,unigram,5
+dolphin-yi-34b::opponent,2,space,unigram,5
+dolphin-yi-34b::opponent,3,space agencies,bigram,4
+dolphin-yi-34b::opponent,4,agencies,unigram,4
+dolphin-yi-34b::opponent,5,independent,unigram,3
+dolphin-yi-34b::opponent,6,evidence,unigram,3
+dolphin-yi-34b::opponent,7,data,unigram,3
+dolphin-yi-34b::opponent,8,agencies worldwide,bigram,3
+dolphin-yi-34b::opponent,9,spherical,unigram,3
+dolphin-yi-34b::opponent,10,satellite,unigram,3
+dolphin-yi-34b::opponent,11,worldwide,unigram,3
+dolphin-yi-34b::opponent,12,space agencies worldwide,trigram,3
+dolphin-yi-34b::opponent,13,model,unigram,2
+dolphin-yi-34b::opponent,14,including,unigram,2
+dolphin-yi-34b::opponent,15,imagery,unigram,2
+dolphin-yi-34b::opponent,16,including satellite,bigram,2
+dolphin-yi-34b::opponent,17,supported,unigram,2
+dolphin-yi-34b::opponent,18,spherical earth,bigram,2
+dolphin-yi-34b::opponent,19,sources,unigram,2
+dolphin-yi-34b::opponent,20,claims,unigram,1
+dolphin-yi-34b::opponent,21,claims space agencies,trigram,1
+dolphin-yi-34b::opponent,22,companies,unigram,1
+dolphin-yi-34b::opponent,23,companies contribute,bigram,1
+dolphin-yi-34b::opponent,24,claims space,bigram,1
+dolphin-yi-34b::opponent,25,claim space,bigram,1
+dolphin-yi-34b::proponent,1,agencies,unigram,4
+dolphin-yi-34b::proponent,2,space agencies,bigram,4
+dolphin-yi-34b::proponent,3,space,unigram,4
+dolphin-yi-34b::proponent,4,agencies worldwide,bigram,3
+dolphin-yi-34b::proponent,5,worldwide,unigram,3
+dolphin-yi-34b::proponent,6,space agencies worldwide,trigram,3
+dolphin-yi-34b::proponent,7,earth,unigram,3
+dolphin-yi-34b::proponent,8,agencies worldwide continue,trigram,2
+dolphin-yi-34b::proponent,9,despite lack,bigram,2
+dolphin-yi-34b::proponent,10,despite lack transparent,trigram,2
+dolphin-yi-34b::proponent,11,earth narrative,bigram,2
+dolphin-yi-34b::proponent,12,earth narrative despite,trigram,2
+dolphin-yi-34b::proponent,13,continue perpetuate spherical,trigram,2
+dolphin-yi-34b::proponent,14,continue,unigram,2
+dolphin-yi-34b::proponent,15,despite,unigram,2
+dolphin-yi-34b::proponent,16,continue perpetuate,bigram,2
+dolphin-yi-34b::proponent,17,narrative,unigram,2
+dolphin-yi-34b::proponent,18,narrative despite,bigram,2
+dolphin-yi-34b::proponent,19,lack transparent evidence,trigram,2
+dolphin-yi-34b::proponent,20,narrative despite lack,trigram,2
+dolphin-yi-34b::proponent,21,perpetuate spherical earth,trigram,2
+dolphin-yi-34b::proponent,22,phenomena,unigram,2
+dolphin-yi-34b::proponent,23,perpetuate spherical,bigram,2
+dolphin-yi-34b::proponent,24,perpetuate,unigram,2
+dolphin-yi-34b::proponent,25,lack transparent,bigram,2

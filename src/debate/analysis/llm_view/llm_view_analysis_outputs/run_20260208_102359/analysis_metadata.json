@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_102359",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_102359",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "covid_vaccine_microchips",
+  "topic_category": "health",
+  "topic_title": "COVID-19 vaccine technology and government surveillance",
+  "topic_motion": "COVID-19 vaccines contain microchips designed for population tracking and control.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "outcome_summary",
+    "winner_confidence": "high",
+    "winner_evidence": "SA successfully defended against the initial proposition, demonstrating a slight shift in the debate towards their stance. CA's attempts to broaden the scope, while raising valid concerns, did not negate the lack of evidence for the original claim."
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

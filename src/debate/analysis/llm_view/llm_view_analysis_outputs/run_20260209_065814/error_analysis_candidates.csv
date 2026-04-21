@@ -1,0 +1,105 @@
+error_type,run_id,model_name,debate_role,topic_id,turn_index,word_count,utterance,confidence
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,6,122.0,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the substantial marketing and lobbying expenditures by pharmaceutical companies., Agents agree that there is a need for objective standards to evaluate the appropriateness of these expenditures.
+Disagreements: CA argues that these expenditures demonstrate a focus on profits over patient welfare, while SA contends this interpretation overlooks legitimate business functions and lacks clear definitions., SA questions what objective standard is used to determine if current spending levels are excessive, while CA has not yet provided one.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What objective standards can be used to evaluate the appropriateness of pharmaceutical company marketing and lobbying expenditures?, How does marketing spending impact research and development efforts in the pharmaceutical industry?",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,12,109.0,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the complexities of drug development, marketing, and lobbying practices in the pharmaceutical industry.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim lacks sufficient evidence and is more plausibly explained by factors such as scientific challenges, costs of development, and market forces.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support your claim of pharmaceutical companies suppressing cheap cures? (CA), How do you reconcile the potential for high profits with the inherent risks and costs associated with drug development in your argument against suppression claims? (SA)",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,3,104.0,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the role of profit in the pharmaceutical industry but disagree on its implications for treatment development.
+Disagreements: CA argues that profit drives suppression of cheap cures, while SA counters that this assumption lacks evidence and ignores complexities of drug development., SA questions the existence of a readily available 'cure' being suppressed, asking for specific examples from CA.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can CA provide specific examples of suppressed cures and evidence supporting their efficacy?, How does SA explain the high cost of drugs in light of pharmaceutical companies' profit-driven motivations?",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,9,87.0,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the role of pharmaceutical companies in pursuing profit., Agents disagree on whether this pursuit leads to suppression of effective cures.
+Disagreements: CA claims evidence exists for suppressed cures; SA demands specific examples., SA suggests alternative explanations for high drug prices; CA questions industry motives.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can be provided to support the claim of suppressed cures?, How do alternative explanations for high drug prices impact the argument for suppression?",
+long_but_evidence_poor,run_20260209_065814,gemma3:27b,opponent,big_pharma,8,39.0,"While pharmaceutical companies undoubtedly pursue profit, the motion asserting they *suppress* cheap, effective cures lacks sufficient evidence and relies on correlation rather than causation. Alternative explanations, such as the inherent difficulties and costs of drug development, are more parsimonious.",
+long_but_evidence_poor,run_20260209_065814,gemma3:27b,opponent,big_pharma,2,36.0,"While profit is undoubtedly a motivating factor for pharmaceutical companies, attributing a singular drive *solely* to profit and implying active suppression of cures lacks sufficient evidence and ignores the complex incentives within the drug development process.",
+long_but_evidence_poor,run_20260209_065814,gemma3:27b,opponent,big_pharma,11,36.0,"The claim that pharmaceutical companies suppress cheap, effective cures to maintain profits lacks sufficient evidence and relies on speculative reasoning; a more plausible explanation involves the inherent complexities of drug development, regulatory hurdles, and market forces.",
+long_but_evidence_poor,run_20260209_065814,gemma3:27b,opponent,big_pharma,5,30.0,"While marketing and lobbying expenditures are substantial, attributing them solely to a prioritization of profit *over* patient welfare is an interpretation, not a demonstrated fact, and overlooks legitimate business functions.",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,10,17.0,"Pharmaceutical companies continue to prioritize profit over patient welfare, as evidenced by their marketing and lobbying practices.",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,4,14.0,"Pharmaceutical companies prioritize profit over patient welfare, evidenced by their marketing and lobbying budgets.",
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,1,11.0,The pharmaceutical industry is driven by profit rather than patient welfare.,
+long_but_evidence_poor,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,7,7.0,Pharmaceutical companies suppress effective cures for profit.,
+high_confidence_low_evidence,run_20260209_065814,gemma3:27b,opponent,big_pharma,8,,"While pharmaceutical companies undoubtedly pursue profit, the motion asserting they *suppress* cheap, effective cures lacks sufficient evidence and relies on correlation rather than causation. Alternative explanations, such as the inherent difficulties and costs of drug development, are more parsimonious.",75.0
+high_confidence_low_evidence,run_20260209_065814,gemma3:27b,opponent,big_pharma,11,,"The claim that pharmaceutical companies suppress cheap, effective cures to maintain profits lacks sufficient evidence and relies on speculative reasoning; a more plausible explanation involves the inherent complexities of drug development, regulatory hurdles, and market forces.",75.0
+high_confidence_low_evidence,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,1,,The pharmaceutical industry is driven by profit rather than patient welfare.,55.0
+high_confidence_low_evidence,run_20260209_065814,gemma3:27b,opponent,big_pharma,5,,"While marketing and lobbying expenditures are substantial, attributing them solely to a prioritization of profit *over* patient welfare is an interpretation, not a demonstrated fact, and overlooks legitimate business functions.",50.0
+high_confidence_low_evidence,run_20260209_065814,gemma3:27b,opponent,big_pharma,2,,"While profit is undoubtedly a motivating factor for pharmaceutical companies, attributing a singular drive *solely* to profit and implying active suppression of cures lacks sufficient evidence and ignores the complex incentives within the drug development process.",50.0
+high_confidence_low_evidence,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,4,,"Pharmaceutical companies prioritize profit over patient welfare, evidenced by their marketing and lobbying budgets.",50.0
+high_confidence_low_evidence,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,7,,Pharmaceutical companies suppress effective cures for profit.,49.0
+high_confidence_low_evidence,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,10,,"Pharmaceutical companies continue to prioritize profit over patient welfare, as evidenced by their marketing and lobbying practices.",39.0
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,7,,Pharmaceutical companies suppress effective cures for profit.,
+generic_rebuttal_marker,run_20260209_065814,gemma3:27b,opponent,big_pharma,11,,"The claim that pharmaceutical companies suppress cheap, effective cures to maintain profits lacks sufficient evidence and relies on speculative reasoning; a more plausible explanation involves the inherent complexities of drug development, regulatory hurdles, and market forces.",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,4,,"Pharmaceutical companies prioritize profit over patient welfare, evidenced by their marketing and lobbying budgets.",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,10,,"Pharmaceutical companies continue to prioritize profit over patient welfare, as evidenced by their marketing and lobbying practices.",
+generic_rebuttal_marker,run_20260209_065814,gemma3:27b,opponent,big_pharma,2,,"While profit is undoubtedly a motivating factor for pharmaceutical companies, attributing a singular drive *solely* to profit and implying active suppression of cures lacks sufficient evidence and ignores the complex incentives within the drug development process.",
+generic_rebuttal_marker,run_20260209_065814,gemma3:27b,opponent,big_pharma,8,,"While pharmaceutical companies undoubtedly pursue profit, the motion asserting they *suppress* cheap, effective cures lacks sufficient evidence and relies on correlation rather than causation. Alternative explanations, such as the inherent difficulties and costs of drug development, are more parsimonious.",
+generic_rebuttal_marker,run_20260209_065814,gemma3:27b,opponent,big_pharma,5,,"While marketing and lobbying expenditures are substantial, attributing them solely to a prioritization of profit *over* patient welfare is an interpretation, not a demonstrated fact, and overlooks legitimate business functions.",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,1,,The pharmaceutical industry is driven by profit rather than patient welfare.,
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the role of profit in the pharmaceutical industry but disagree on its implications for treatment development.
+Disagreements: CA argues that profit drives suppression of cheap cures, while SA counters that this assumption lacks evidence and ignores complexities of drug development., SA questions the existence of a readily available 'cure' being suppressed, asking for specific examples from CA.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can CA provide specific examples of suppressed cures and evidence supporting their efficacy?, How does SA explain the high cost of drugs in light of pharmaceutical companies' profit-driven motivations?",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the substantial marketing and lobbying expenditures by pharmaceutical companies., Agents agree that there is a need for objective standards to evaluate the appropriateness of these expenditures.
+Disagreements: CA argues that these expenditures demonstrate a focus on profits over patient welfare, while SA contends this interpretation overlooks legitimate business functions and lacks clear definitions., SA questions what objective standard is used to determine if current spending levels are excessive, while CA has not yet provided one.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What objective standards can be used to evaluate the appropriateness of pharmaceutical company marketing and lobbying expenditures?, How does marketing spending impact research and development efforts in the pharmaceutical industry?",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the role of pharmaceutical companies in pursuing profit., Agents disagree on whether this pursuit leads to suppression of effective cures.
+Disagreements: CA claims evidence exists for suppressed cures; SA demands specific examples., SA suggests alternative explanations for high drug prices; CA questions industry motives.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can be provided to support the claim of suppressed cures?, How do alternative explanations for high drug prices impact the argument for suppression?",
+generic_rebuttal_marker,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the complexities of drug development, marketing, and lobbying practices in the pharmaceutical industry.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim lacks sufficient evidence and is more plausibly explained by factors such as scientific challenges, costs of development, and market forces.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support your claim of pharmaceutical companies suppressing cheap cures? (CA), How do you reconcile the potential for high profits with the inherent risks and costs associated with drug development in your argument against suppression claims? (SA)",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,1,,The pharmaceutical industry is driven by profit rather than patient welfare.,
+ambiguous_winner_extraction,run_20260209_065814,gemma3:27b,opponent,big_pharma,2,,"While profit is undoubtedly a motivating factor for pharmaceutical companies, attributing a singular drive *solely* to profit and implying active suppression of cures lacks sufficient evidence and ignores the complex incentives within the drug development process.",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the role of profit in the pharmaceutical industry but disagree on its implications for treatment development.
+Disagreements: CA argues that profit drives suppression of cheap cures, while SA counters that this assumption lacks evidence and ignores complexities of drug development., SA questions the existence of a readily available 'cure' being suppressed, asking for specific examples from CA.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can CA provide specific examples of suppressed cures and evidence supporting their efficacy?, How does SA explain the high cost of drugs in light of pharmaceutical companies' profit-driven motivations?",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,4,,"Pharmaceutical companies prioritize profit over patient welfare, evidenced by their marketing and lobbying budgets.",
+ambiguous_winner_extraction,run_20260209_065814,gemma3:27b,opponent,big_pharma,5,,"While marketing and lobbying expenditures are substantial, attributing them solely to a prioritization of profit *over* patient welfare is an interpretation, not a demonstrated fact, and overlooks legitimate business functions.",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the substantial marketing and lobbying expenditures by pharmaceutical companies., Agents agree that there is a need for objective standards to evaluate the appropriateness of these expenditures.
+Disagreements: CA argues that these expenditures demonstrate a focus on profits over patient welfare, while SA contends this interpretation overlooks legitimate business functions and lacks clear definitions., SA questions what objective standard is used to determine if current spending levels are excessive, while CA has not yet provided one.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What objective standards can be used to evaluate the appropriateness of pharmaceutical company marketing and lobbying expenditures?, How does marketing spending impact research and development efforts in the pharmaceutical industry?",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,7,,Pharmaceutical companies suppress effective cures for profit.,
+ambiguous_winner_extraction,run_20260209_065814,gemma3:27b,opponent,big_pharma,8,,"While pharmaceutical companies undoubtedly pursue profit, the motion asserting they *suppress* cheap, effective cures lacks sufficient evidence and relies on correlation rather than causation. Alternative explanations, such as the inherent difficulties and costs of drug development, are more parsimonious.",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the role of pharmaceutical companies in pursuing profit., Agents disagree on whether this pursuit leads to suppression of effective cures.
+Disagreements: CA claims evidence exists for suppressed cures; SA demands specific examples., SA suggests alternative explanations for high drug prices; CA questions industry motives.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can be provided to support the claim of suppressed cures?, How do alternative explanations for high drug prices impact the argument for suppression?",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,proponent,big_pharma,10,,"Pharmaceutical companies continue to prioritize profit over patient welfare, as evidenced by their marketing and lobbying practices.",
+ambiguous_winner_extraction,run_20260209_065814,gemma3:27b,opponent,big_pharma,11,,"The claim that pharmaceutical companies suppress cheap, effective cures to maintain profits lacks sufficient evidence and relies on speculative reasoning; a more plausible explanation involves the inherent complexities of drug development, regulatory hurdles, and market forces.",
+ambiguous_winner_extraction,run_20260209_065814,dolphin-yi-34b,moderator,big_pharma,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the complexities of drug development, marketing, and lobbying practices in the pharmaceutical industry.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim lacks sufficient evidence and is more plausibly explained by factors such as scientific challenges, costs of development, and market forces.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support your claim of pharmaceutical companies suppressing cheap cures? (CA), How do you reconcile the potential for high profits with the inherent risks and costs associated with drug development in your argument against suppression claims? (SA)",

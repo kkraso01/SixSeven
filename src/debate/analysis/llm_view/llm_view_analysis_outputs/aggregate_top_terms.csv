@@ -1,0 +1,776 @@
+group_type,group_name,rank,term,term_type,count
+model,dolphin-yi-34b,1,evidence,unigram,1010
+model,dolphin-yi-34b,2,ca,unigram,971
+model,dolphin-yi-34b,3,sa,unigram,963
+model,dolphin-yi-34b,4,specific,unigram,503
+model,dolphin-yi-34b,5,agents,unigram,501
+model,dolphin-yi-34b,6,questions,unigram,496
+model,dolphin-yi-34b,7,control,unigram,371
+model,dolphin-yi-34b,8,argues,unigram,367
+model,dolphin-yi-34b,9,moves,unigram,355
+model,dolphin-yi-34b,10,agreements,unigram,354
+model,dolphin-yi-34b,11,round,unigram,353
+model,dolphin-yi-34b,12,detected,unigram,351
+model,dolphin-yi-34b,13,civility epistemic bridge,trigram,350
+model,dolphin-yi-34b,14,disagreements,unigram,350
+model,dolphin-yi-34b,15,recap,unigram,350
+model,dolphin-yi-34b,16,detected moves,bigram,350
+model,dolphin-yi-34b,17,bridge questions,bigram,350
+model,dolphin-yi-34b,18,civility epistemic,bigram,350
+model,dolphin-yi-34b,19,round recap agreements,trigram,350
+model,dolphin-yi-34b,20,round recap,bigram,350
+model,dolphin-yi-34b,21,bridge,unigram,350
+model,dolphin-yi-34b,22,moderator round recap,trigram,350
+model,dolphin-yi-34b,23,moderator round,bigram,350
+model,dolphin-yi-34b,24,moderator,unigram,350
+model,dolphin-yi-34b,25,civility,unigram,350
+model,gemma3:27b,1,ca,unigram,2309
+model,gemma3:27b,2,sa,unigram,1894
+model,gemma3:27b,3,evidence,unigram,1394
+model,gemma3:27b,4,agents,unigram,658
+model,gemma3:27b,5,proof,unigram,542
+model,gemma3:27b,6,specific,unigram,455
+model,gemma3:27b,7,acknowledge,unigram,440
+model,gemma3:27b,8,questions,unigram,416
+model,gemma3:27b,9,potential,unigram,386
+model,gemma3:27b,10,agree,unigram,376
+model,gemma3:27b,11,burden,unigram,358
+model,gemma3:27b,12,burden proof,bigram,345
+model,gemma3:27b,13,control,unigram,344
+model,gemma3:27b,14,argues,unigram,344
+model,gemma3:27b,15,epistemic,unigram,343
+model,gemma3:27b,16,round,unigram,341
+model,gemma3:27b,17,bridge,unigram,341
+model,gemma3:27b,18,agreements,unigram,341
+model,gemma3:27b,19,recap agreements,bigram,340
+model,gemma3:27b,20,epistemic bridge questions,trigram,340
+model,gemma3:27b,21,moves,unigram,340
+model,gemma3:27b,22,scores civility,bigram,340
+model,gemma3:27b,23,disagreements,unigram,340
+model,gemma3:27b,24,bridge questions,bigram,340
+model,gemma3:27b,25,moderator,unigram,340
+role,moderator,1,ca,unigram,3280
+role,moderator,2,sa,unigram,2838
+role,moderator,3,evidence,unigram,1905
+role,moderator,4,agents,unigram,1142
+role,moderator,5,questions,unigram,898
+role,moderator,6,specific,unigram,867
+role,moderator,7,acknowledge,unigram,770
+role,moderator,8,moves,unigram,695
+role,moderator,9,round,unigram,693
+role,moderator,10,agreements,unigram,693
+role,moderator,11,bridge,unigram,691
+role,moderator,12,detected,unigram,691
+role,moderator,13,scores civility,bigram,690
+role,moderator,14,civility epistemic,bigram,690
+role,moderator,15,epistemic,unigram,690
+role,moderator,16,epistemic bridge,bigram,690
+role,moderator,17,scores civility epistemic,trigram,690
+role,moderator,18,civility,unigram,690
+role,moderator,19,civility epistemic bridge,trigram,690
+role,moderator,20,moderator round recap,trigram,690
+role,moderator,21,round recap agreements,trigram,690
+role,moderator,22,bridge questions,bigram,690
+role,moderator,23,round recap,bigram,690
+role,moderator,24,moderator,unigram,690
+role,moderator,25,disagreements,unigram,690
+role,opponent,1,evidence,unigram,422
+role,opponent,2,attributing,unigram,168
+role,opponent,3,requires,unigram,158
+role,opponent,4,claim,unigram,156
+role,opponent,5,acknowledging,unigram,152
+role,opponent,6,control,unigram,139
+role,opponent,7,potential,unigram,115
+role,opponent,8,relies,unigram,112
+role,opponent,9,lacks,unigram,110
+role,opponent,10,government,unigram,104
+role,opponent,11,demonstrating,unigram,104
+role,opponent,12,health,unigram,98
+role,opponent,13,manipulation,unigram,94
+role,opponent,14,deliberate,unigram,90
+role,opponent,15,requires demonstrating,bigram,89
+role,opponent,16,supported,unigram,83
+role,opponent,17,scientific,unigram,81
+role,opponent,18,systemic,unigram,79
+role,opponent,19,specific,unigram,75
+role,opponent,20,designed,unigram,71
+role,opponent,21,evidence relies,bigram,70
+role,opponent,22,does,unigram,69
+role,opponent,23,explanations,unigram,68
+role,opponent,24,anomalies,unigram,68
+role,opponent,25,surveillance,unigram,67
+role,proponent,1,control,unigram,162
+role,proponent,2,pattern,unigram,128
+role,proponent,3,scientific,unigram,117
+role,proponent,4,insistence,unigram,112
+role,proponent,5,health,unigram,100
+role,proponent,6,public,unigram,99
+role,proponent,7,government,unigram,90
+role,proponent,8,agent,unigram,90
+role,proponent,9,anomalies,unigram,90
+role,proponent,10,scientific agent,bigram,88
+role,proponent,11,consistent,unigram,81
+role,proponent,12,systemic,unigram,81
+role,proponent,13,isn,unigram,80
+role,proponent,14,evidence,unigram,77
+role,proponent,15,ignores,unigram,77
+role,proponent,16,narrative,unigram,75
+role,proponent,17,surveillance,unigram,67
+role,proponent,18,profit,unigram,64
+role,proponent,19,agencies,unigram,60
+role,proponent,20,deliberate,unigram,60
+role,proponent,21,designed,unigram,60
+role,proponent,22,public health,bigram,58
+role,proponent,23,industry,unigram,53
+role,proponent,24,manipulation,unigram,49
+role,proponent,25,power,unigram,48
+model_role,dolphin-yi-34b::moderator,1,ca,unigram,971
+model_role,dolphin-yi-34b::moderator,2,sa,unigram,962
+model_role,dolphin-yi-34b::moderator,3,evidence,unigram,810
+model_role,dolphin-yi-34b::moderator,4,questions,unigram,489
+model_role,dolphin-yi-34b::moderator,5,agents,unigram,488
+model_role,dolphin-yi-34b::moderator,6,specific,unigram,464
+model_role,dolphin-yi-34b::moderator,7,moves,unigram,355
+model_role,dolphin-yi-34b::moderator,8,agreements,unigram,353
+model_role,dolphin-yi-34b::moderator,9,round,unigram,352
+model_role,dolphin-yi-34b::moderator,10,detected,unigram,351
+model_role,dolphin-yi-34b::moderator,11,detected moves,bigram,350
+model_role,dolphin-yi-34b::moderator,12,scores civility epistemic,trigram,350
+model_role,dolphin-yi-34b::moderator,13,scores civility,bigram,350
+model_role,dolphin-yi-34b::moderator,14,round recap,bigram,350
+model_role,dolphin-yi-34b::moderator,15,disagreements,unigram,350
+model_role,dolphin-yi-34b::moderator,16,scores,unigram,350
+model_role,dolphin-yi-34b::moderator,17,epistemic,unigram,350
+model_role,dolphin-yi-34b::moderator,18,round recap agreements,trigram,350
+model_role,dolphin-yi-34b::moderator,19,moderator round recap,trigram,350
+model_role,dolphin-yi-34b::moderator,20,moderator round,bigram,350
+model_role,dolphin-yi-34b::moderator,21,civility epistemic,bigram,350
+model_role,dolphin-yi-34b::moderator,22,civility,unigram,350
+model_role,dolphin-yi-34b::moderator,23,civility epistemic bridge,trigram,350
+model_role,dolphin-yi-34b::moderator,24,recap,unigram,350
+model_role,dolphin-yi-34b::moderator,25,moderator,unigram,350
+model_role,dolphin-yi-34b::opponent,1,evidence,unigram,179
+model_role,dolphin-yi-34b::opponent,2,control,unigram,66
+model_role,dolphin-yi-34b::opponent,3,opponent,unigram,64
+model_role,dolphin-yi-34b::opponent,4,supported,unigram,62
+model_role,dolphin-yi-34b::opponent,5,government,unigram,59
+model_role,dolphin-yi-34b::opponent,6,does,unigram,59
+model_role,dolphin-yi-34b::opponent,7,health,unigram,57
+model_role,dolphin-yi-34b::opponent,8,reliable,unigram,52
+model_role,dolphin-yi-34b::opponent,9,claim,unigram,51
+model_role,dolphin-yi-34b::opponent,10,scientific,unigram,51
+model_role,dolphin-yi-34b::opponent,11,designed,unigram,47
+model_role,dolphin-yi-34b::opponent,12,manipulation,unigram,45
+model_role,dolphin-yi-34b::opponent,13,based,unigram,43
+model_role,dolphin-yi-34b::opponent,14,safety,unigram,43
+model_role,dolphin-yi-34b::opponent,15,necessarily,unigram,43
+model_role,dolphin-yi-34b::opponent,16,industry,unigram,41
+model_role,dolphin-yi-34b::opponent,17,agencies,unigram,41
+model_role,dolphin-yi-34b::opponent,18,deliberately,unigram,38
+model_role,dolphin-yi-34b::opponent,19,specific,unigram,37
+model_role,dolphin-yi-34b::opponent,20,public,unigram,37
+model_role,dolphin-yi-34b::opponent,21,systems,unigram,35
+model_role,dolphin-yi-34b::opponent,22,argument,unigram,35
+model_role,dolphin-yi-34b::opponent,23,supported reliable,bigram,34
+model_role,dolphin-yi-34b::opponent,24,argues,unigram,34
+model_role,dolphin-yi-34b::opponent,25,opponent argues,bigram,34
+model_role,dolphin-yi-34b::proponent,1,control,unigram,82
+model_role,dolphin-yi-34b::proponent,2,government,unigram,68
+model_role,dolphin-yi-34b::proponent,3,health,unigram,50
+model_role,dolphin-yi-34b::proponent,4,public,unigram,37
+model_role,dolphin-yi-34b::proponent,5,profit,unigram,36
+model_role,dolphin-yi-34b::proponent,6,surveillance,unigram,35
+model_role,dolphin-yi-34b::proponent,7,agencies,unigram,34
+model_role,dolphin-yi-34b::proponent,8,interests,unigram,29
+model_role,dolphin-yi-34b::proponent,9,vaccines,unigram,27
+model_role,dolphin-yi-34b::proponent,10,potential,unigram,26
+model_role,dolphin-yi-34b::proponent,11,industry,unigram,26
+model_role,dolphin-yi-34b::proponent,12,public health,bigram,25
+model_role,dolphin-yi-34b::proponent,13,population,unigram,25
+model_role,dolphin-yi-34b::proponent,14,space,unigram,24
+model_role,dolphin-yi-34b::proponent,15,prioritize,unigram,24
+model_role,dolphin-yi-34b::proponent,16,political,unigram,23
+model_role,dolphin-yi-34b::proponent,17,food,unigram,22
+model_role,dolphin-yi-34b::proponent,18,pharmaceutical,unigram,22
+model_role,dolphin-yi-34b::proponent,19,evidence,unigram,21
+model_role,dolphin-yi-34b::proponent,20,history,unigram,21
+model_role,dolphin-yi-34b::proponent,21,companies,unigram,20
+model_role,dolphin-yi-34b::proponent,22,state,unigram,20
+model_role,dolphin-yi-34b::proponent,23,ai,unigram,20
+model_role,dolphin-yi-34b::proponent,24,narrative,unigram,20
+model_role,dolphin-yi-34b::proponent,25,deep state,bigram,20
+model_role,gemma3:27b::moderator,1,ca,unigram,2309
+model_role,gemma3:27b::moderator,2,sa,unigram,1876
+model_role,gemma3:27b::moderator,3,evidence,unigram,1095
+model_role,gemma3:27b::moderator,4,agents,unigram,654
+model_role,gemma3:27b::moderator,5,proof,unigram,479
+model_role,gemma3:27b::moderator,6,acknowledge,unigram,438
+model_role,gemma3:27b::moderator,7,questions,unigram,409
+model_role,gemma3:27b::moderator,8,specific,unigram,403
+model_role,gemma3:27b::moderator,9,agree,unigram,376
+model_role,gemma3:27b::moderator,10,argues,unigram,344
+model_role,gemma3:27b::moderator,11,bridge,unigram,341
+model_role,gemma3:27b::moderator,12,round,unigram,341
+model_role,gemma3:27b::moderator,13,bridge questions,bigram,340
+model_role,gemma3:27b::moderator,14,civility,unigram,340
+model_role,gemma3:27b::moderator,15,civility epistemic bridge,trigram,340
+model_role,gemma3:27b::moderator,16,agreements,unigram,340
+model_role,gemma3:27b::moderator,17,scores,unigram,340
+model_role,gemma3:27b::moderator,18,moves,unigram,340
+model_role,gemma3:27b::moderator,19,disagreements,unigram,340
+model_role,gemma3:27b::moderator,20,moderator round recap,trigram,340
+model_role,gemma3:27b::moderator,21,epistemic bridge,bigram,340
+model_role,gemma3:27b::moderator,22,epistemic bridge questions,trigram,340
+model_role,gemma3:27b::moderator,23,moderator,unigram,340
+model_role,gemma3:27b::moderator,24,moderator round,bigram,340
+model_role,gemma3:27b::moderator,25,round recap agreements,trigram,340
+model_role,gemma3:27b::opponent,1,evidence,unigram,243
+model_role,gemma3:27b::opponent,2,attributing,unigram,168
+model_role,gemma3:27b::opponent,3,requires,unigram,155
+model_role,gemma3:27b::opponent,4,acknowledging,unigram,152
+model_role,gemma3:27b::opponent,5,claim,unigram,105
+model_role,gemma3:27b::opponent,6,demonstrating,unigram,103
+model_role,gemma3:27b::opponent,7,lacks,unigram,89
+model_role,gemma3:27b::opponent,8,requires demonstrating,bigram,89
+model_role,gemma3:27b::opponent,9,potential,unigram,84
+model_role,gemma3:27b::opponent,10,relies,unigram,83
+model_role,gemma3:27b::opponent,11,deliberate,unigram,75
+model_role,gemma3:27b::opponent,12,control,unigram,73
+model_role,gemma3:27b::opponent,13,evidence relies,bigram,61
+model_role,gemma3:27b::opponent,14,explanations,unigram,59
+model_role,gemma3:27b::opponent,15,sufficient,unigram,57
+model_role,gemma3:27b::opponent,16,solely,unigram,55
+model_role,gemma3:27b::opponent,17,systemic,unigram,55
+model_role,gemma3:27b::opponent,18,lacks sufficient,bigram,52
+model_role,gemma3:27b::opponent,19,sufficient evidence,bigram,52
+model_role,gemma3:27b::opponent,20,acknowledging potential,bigram,52
+model_role,gemma3:27b::opponent,21,lacks sufficient evidence,trigram,49
+model_role,gemma3:27b::opponent,22,manipulation,unigram,49
+model_role,gemma3:27b::opponent,23,anomalies,unigram,48
+model_role,gemma3:27b::opponent,24,alternative,unigram,48
+model_role,gemma3:27b::opponent,25,mechanism,unigram,47
+model_role,gemma3:27b::proponent,1,pattern,unigram,118
+model_role,gemma3:27b::proponent,2,scientific,unigram,113
+model_role,gemma3:27b::proponent,3,insistence,unigram,112
+model_role,gemma3:27b::proponent,4,agent,unigram,89
+model_role,gemma3:27b::proponent,5,scientific agent,bigram,88
+model_role,gemma3:27b::proponent,6,anomalies,unigram,80
+model_role,gemma3:27b::proponent,7,control,unigram,80
+model_role,gemma3:27b::proponent,8,isn,unigram,80
+model_role,gemma3:27b::proponent,9,ignores,unigram,77
+model_role,gemma3:27b::proponent,10,systemic,unigram,69
+model_role,gemma3:27b::proponent,11,consistent,unigram,63
+model_role,gemma3:27b::proponent,12,public,unigram,62
+model_role,gemma3:27b::proponent,13,evidence,unigram,56
+model_role,gemma3:27b::proponent,14,narrative,unigram,55
+model_role,gemma3:27b::proponent,15,deliberate,unigram,51
+model_role,gemma3:27b::proponent,16,health,unigram,50
+model_role,gemma3:27b::proponent,17,designed,unigram,43
+model_role,gemma3:27b::proponent,18,documented,unigram,39
+model_role,gemma3:27b::proponent,19,consistently,unigram,38
+model_role,gemma3:27b::proponent,20,independent,unigram,38
+model_role,gemma3:27b::proponent,21,proof,unigram,38
+model_role,gemma3:27b::proponent,22,creating,unigram,37
+model_role,gemma3:27b::proponent,23,power,unigram,36
+model_role,gemma3:27b::proponent,24,institutions,unigram,35
+model_role,gemma3:27b::proponent,25,genuine,unigram,34
+topic,5g_health_risks,1,5g,unigram,177
+topic,5g_health_risks,2,ca,unigram,165
+topic,5g_health_risks,3,sa,unigram,137
+topic,5g_health_risks,4,evidence,unigram,118
+topic,5g_health_risks,5,health,unigram,107
+topic,5g_health_risks,6,safety,unigram,96
+topic,5g_health_risks,7,potential,unigram,61
+topic,5g_health_risks,8,specific,unigram,58
+topic,5g_health_risks,9,industry,unigram,52
+topic,5g_health_risks,10,agents,unigram,51
+topic,5g_health_risks,11,technology,unigram,50
+topic,5g_health_risks,12,public,unigram,47
+topic,5g_health_risks,13,research,unigram,46
+topic,5g_health_risks,14,deployment,unigram,45
+topic,5g_health_risks,15,questions,unigram,45
+topic,5g_health_risks,16,5g technology,bigram,43
+topic,5g_health_risks,17,risks,unigram,42
+topic,5g_health_risks,18,effects,unigram,41
+topic,5g_health_risks,19,profit,unigram,41
+topic,5g_health_risks,20,acknowledge,unigram,38
+topic,5g_health_risks,21,studies,unigram,34
+topic,5g_health_risks,22,round,unigram,33
+topic,5g_health_risks,23,moderator round,bigram,33
+topic,5g_health_risks,24,civility epistemic bridge,trigram,33
+topic,5g_health_risks,25,disagreements,unigram,33
+topic,9_11_inside_job,1,ca,unigram,146
+topic,9_11_inside_job,2,sa,unigram,131
+topic,9_11_inside_job,3,evidence,unigram,124
+topic,9_11_inside_job,4,11,unigram,118
+topic,9_11_inside_job,5,attacks,unigram,68
+topic,9_11_inside_job,6,narrative,unigram,68
+topic,9_11_inside_job,7,official,unigram,62
+topic,9_11_inside_job,8,anomalies,unigram,54
+topic,9_11_inside_job,9,agents,unigram,53
+topic,9_11_inside_job,10,questions,unigram,53
+topic,9_11_inside_job,11,government,unigram,52
+topic,9_11_inside_job,12,specific,unigram,49
+topic,9_11_inside_job,13,official narrative,bigram,43
+topic,9_11_inside_job,14,11 attacks,bigram,42
+topic,9_11_inside_job,15,pre,unigram,40
+topic,9_11_inside_job,16,failures,unigram,38
+topic,9_11_inside_job,17,collapse,unigram,38
+topic,9_11_inside_job,18,inconsistencies,unigram,37
+topic,9_11_inside_job,19,investigation,unigram,37
+topic,9_11_inside_job,20,systemic,unigram,36
+topic,9_11_inside_job,21,cover,unigram,36
+topic,9_11_inside_job,22,argues,unigram,35
+topic,9_11_inside_job,23,acknowledge,unigram,34
+topic,9_11_inside_job,24,proof,unigram,33
+topic,9_11_inside_job,25,detected,unigram,31
+topic,ai_surveillance,1,surveillance,unigram,188
+topic,ai_surveillance,2,ca,unigram,179
+topic,ai_surveillance,3,sa,unigram,169
+topic,ai_surveillance,4,control,unigram,140
+topic,ai_surveillance,5,ai,unigram,130
+topic,ai_surveillance,6,coordinated,unigram,115
+topic,ai_surveillance,7,ai surveillance,bigram,107
+topic,ai_surveillance,8,evidence,unigram,106
+topic,ai_surveillance,9,plan,unigram,95
+topic,ai_surveillance,10,systems,unigram,75
+topic,ai_surveillance,11,coordinated plan,bigram,68
+topic,ai_surveillance,12,agents,unigram,58
+topic,ai_surveillance,13,global,unigram,57
+topic,ai_surveillance,14,security,unigram,56
+topic,ai_surveillance,15,total,unigram,56
+topic,ai_surveillance,16,surveillance systems,bigram,50
+topic,ai_surveillance,17,specific,unigram,49
+topic,ai_surveillance,18,questions,unigram,48
+topic,ai_surveillance,19,population,unigram,47
+topic,ai_surveillance,20,deployment,unigram,43
+topic,ai_surveillance,21,argues,unigram,43
+topic,ai_surveillance,22,total population,bigram,43
+topic,ai_surveillance,23,acknowledge,unigram,43
+topic,ai_surveillance,24,disagreements,unigram,38
+topic,ai_surveillance,25,epistemic bridge questions,trigram,38
+topic,big_pharma,1,ca,unigram,159
+topic,big_pharma,2,sa,unigram,154
+topic,big_pharma,3,pharmaceutical,unigram,134
+topic,big_pharma,4,evidence,unigram,125
+topic,big_pharma,5,suppression,unigram,113
+topic,big_pharma,6,cures,unigram,104
+topic,big_pharma,7,profit,unigram,103
+topic,big_pharma,8,companies,unigram,82
+topic,big_pharma,9,pharmaceutical companies,bigram,68
+topic,big_pharma,10,research,unigram,60
+topic,big_pharma,11,treatments,unigram,59
+topic,big_pharma,12,agents,unigram,59
+topic,big_pharma,13,industry,unigram,54
+topic,big_pharma,14,questions,unigram,46
+topic,big_pharma,15,effective,unigram,46
+topic,big_pharma,16,pharmaceutical industry,bigram,45
+topic,big_pharma,17,specific,unigram,44
+topic,big_pharma,18,development,unigram,43
+topic,big_pharma,19,pattern,unigram,41
+topic,big_pharma,20,acknowledge,unigram,38
+topic,big_pharma,21,systemic,unigram,37
+topic,big_pharma,22,argues,unigram,37
+topic,big_pharma,23,drug,unigram,36
+topic,big_pharma,24,round,unigram,36
+topic,big_pharma,25,agreements,unigram,35
+topic,chemtrails,1,ca,unigram,172
+topic,chemtrails,2,atmospheric,unigram,154
+topic,chemtrails,3,sa,unigram,135
+topic,chemtrails,4,evidence,unigram,130
+topic,chemtrails,5,modification,unigram,84
+topic,chemtrails,6,agents,unigram,76
+topic,chemtrails,7,atmospheric modification,bigram,73
+topic,chemtrails,8,contrails,unigram,59
+topic,chemtrails,9,programs,unigram,57
+topic,chemtrails,10,secret,unigram,52
+topic,chemtrails,11,secret atmospheric modification,trigram,44
+topic,chemtrails,12,secret atmospheric,bigram,44
+topic,chemtrails,13,phenomena,unigram,43
+topic,chemtrails,14,natural,unigram,43
+topic,chemtrails,15,contrail,unigram,42
+topic,chemtrails,16,modification programs,bigram,41
+topic,chemtrails,17,atmospheric modification programs,trigram,40
+topic,chemtrails,18,aircraft,unigram,39
+topic,chemtrails,19,questions,unigram,39
+topic,chemtrails,20,data,unigram,39
+topic,chemtrails,21,proof,unigram,38
+topic,chemtrails,22,acknowledge,unigram,38
+topic,chemtrails,23,commercial,unigram,37
+topic,chemtrails,24,scientific,unigram,36
+topic,chemtrails,25,commercial aircraft,bigram,34
+topic,climate_change_hoax,1,ca,unigram,165
+topic,climate_change_hoax,2,climate,unigram,158
+topic,climate_change_hoax,3,sa,unigram,132
+topic,climate_change_hoax,4,change,unigram,104
+topic,climate_change_hoax,5,evidence,unigram,102
+topic,climate_change_hoax,6,climate change,bigram,101
+topic,climate_change_hoax,7,policies,unigram,56
+topic,climate_change_hoax,8,agents,unigram,55
+topic,climate_change_hoax,9,political,unigram,55
+topic,climate_change_hoax,10,scientific,unigram,54
+topic,climate_change_hoax,11,ipcc,unigram,54
+topic,climate_change_hoax,12,questions,unigram,50
+topic,climate_change_hoax,13,control,unigram,49
+topic,climate_change_hoax,14,specific,unigram,46
+topic,climate_change_hoax,15,global,unigram,37
+topic,climate_change_hoax,16,agreements,unigram,35
+topic,climate_change_hoax,17,potential,unigram,34
+topic,climate_change_hoax,18,influence,unigram,32
+topic,climate_change_hoax,19,acknowledge,unigram,31
+topic,climate_change_hoax,20,detected,unigram,30
+topic,climate_change_hoax,21,civility epistemic bridge,trigram,30
+topic,climate_change_hoax,22,moves,unigram,30
+topic,climate_change_hoax,23,recap agreements,bigram,30
+topic,climate_change_hoax,24,epistemic bridge questions,trigram,30
+topic,climate_change_hoax,25,moderator round recap,trigram,30
+topic,covid_vaccine_microchips,1,ca,unigram,149
+topic,covid_vaccine_microchips,2,vaccines,unigram,125
+topic,covid_vaccine_microchips,3,sa,unigram,121
+topic,covid_vaccine_microchips,4,surveillance,unigram,104
+topic,covid_vaccine_microchips,5,evidence,unigram,97
+topic,covid_vaccine_microchips,6,vaccine,unigram,89
+topic,covid_vaccine_microchips,7,covid,unigram,76
+topic,covid_vaccine_microchips,8,19,unigram,76
+topic,covid_vaccine_microchips,9,covid 19,bigram,76
+topic,covid_vaccine_microchips,10,tracking,unigram,75
+topic,covid_vaccine_microchips,11,19 vaccines,bigram,70
+topic,covid_vaccine_microchips,12,covid 19 vaccines,trigram,70
+topic,covid_vaccine_microchips,13,data,unigram,57
+topic,covid_vaccine_microchips,14,microchips,unigram,57
+topic,covid_vaccine_microchips,15,agents,unigram,53
+topic,covid_vaccine_microchips,16,potential,unigram,43
+topic,covid_vaccine_microchips,17,development,unigram,42
+topic,covid_vaccine_microchips,18,health,unigram,42
+topic,covid_vaccine_microchips,19,claim,unigram,42
+topic,covid_vaccine_microchips,20,control,unigram,42
+topic,covid_vaccine_microchips,21,questions,unigram,41
+topic,covid_vaccine_microchips,22,technology,unigram,38
+topic,covid_vaccine_microchips,23,concerns,unigram,38
+topic,covid_vaccine_microchips,24,specific,unigram,36
+topic,covid_vaccine_microchips,25,acknowledge,unigram,36
+topic,cryptocurrency_control,1,ca,unigram,132
+topic,cryptocurrency_control,2,control,unigram,130
+topic,cryptocurrency_control,3,privacy,unigram,125
+topic,cryptocurrency_control,4,cbdcs,unigram,120
+topic,cryptocurrency_control,5,sa,unigram,108
+topic,cryptocurrency_control,6,central,unigram,101
+topic,cryptocurrency_control,7,financial,unigram,95
+topic,cryptocurrency_control,8,surveillance,unigram,90
+topic,cryptocurrency_control,9,design,unigram,80
+topic,cryptocurrency_control,10,evidence,unigram,72
+topic,cryptocurrency_control,11,cbdc,unigram,68
+topic,cryptocurrency_control,12,potential,unigram,53
+topic,cryptocurrency_control,13,digital,unigram,52
+topic,cryptocurrency_control,14,central bank,bigram,51
+topic,cryptocurrency_control,15,bank,unigram,51
+topic,cryptocurrency_control,16,currencies,unigram,50
+topic,cryptocurrency_control,17,central banks,bigram,47
+topic,cryptocurrency_control,18,banks,unigram,47
+topic,cryptocurrency_control,19,government,unigram,47
+topic,cryptocurrency_control,20,digital currencies,bigram,45
+topic,cryptocurrency_control,21,specific,unigram,45
+topic,cryptocurrency_control,22,total,unigram,42
+topic,cryptocurrency_control,23,designed,unigram,42
+topic,cryptocurrency_control,24,financial privacy,bigram,39
+topic,cryptocurrency_control,25,finances,unigram,38
+topic,deep_state,1,ca,unigram,203
+topic,deep_state,2,sa,unigram,184
+topic,deep_state,3,policy,unigram,176
+topic,deep_state,4,deep,unigram,147
+topic,deep_state,5,state,unigram,147
+topic,deep_state,6,deep state,bigram,147
+topic,deep_state,7,evidence,unigram,138
+topic,deep_state,8,control,unigram,129
+topic,deep_state,9,influence,unigram,95
+topic,deep_state,10,agents,unigram,73
+topic,deep_state,11,officials,unigram,68
+topic,deep_state,12,bureaucratic,unigram,67
+topic,deep_state,13,government,unigram,66
+topic,deep_state,14,elected,unigram,66
+topic,deep_state,15,agencies,unigram,65
+topic,deep_state,16,interests,unigram,64
+topic,deep_state,17,elected officials,bigram,61
+topic,deep_state,18,specific,unigram,61
+topic,deep_state,19,systemic,unigram,59
+topic,deep_state,20,intelligence,unigram,55
+topic,deep_state,21,questions,unigram,52
+topic,deep_state,22,proof,unigram,51
+topic,deep_state,23,intelligence agencies,bigram,49
+topic,deep_state,24,argues,unigram,48
+topic,deep_state,25,government policy,bigram,46
+topic,election_fraud,1,manipulation,unigram,191
+topic,election_fraud,2,ca,unigram,165
+topic,election_fraud,3,sa,unigram,146
+topic,election_fraud,4,voting,unigram,137
+topic,election_fraud,5,electronic,unigram,123
+topic,election_fraud,6,electronic voting,bigram,122
+topic,election_fraud,7,evidence,unigram,106
+topic,election_fraud,8,systems,unigram,79
+topic,election_fraud,9,election,unigram,72
+topic,election_fraud,10,machines,unigram,65
+topic,election_fraud,11,vulnerabilities,unigram,64
+topic,election_fraud,12,voting machines,bigram,58
+topic,election_fraud,13,electronic voting machines,trigram,57
+topic,election_fraud,14,agents,unigram,54
+topic,election_fraud,15,potential,unigram,53
+topic,election_fraud,16,voting systems,bigram,52
+topic,election_fraud,17,specific,unigram,51
+topic,election_fraud,18,electronic voting systems,trigram,49
+topic,election_fraud,19,anomalies,unigram,47
+topic,election_fraud,20,questions,unigram,45
+topic,election_fraud,21,elites,unigram,44
+topic,election_fraud,22,security,unigram,44
+topic,election_fraud,23,proof,unigram,41
+topic,election_fraud,24,transparency,unigram,40
+topic,election_fraud,25,powerful elites,bigram,38
+topic,federal_reserve,1,ca,unigram,145
+topic,federal_reserve,2,federal,unigram,139
+topic,federal_reserve,3,sa,unigram,139
+topic,federal_reserve,4,reserve,unigram,138
+topic,federal_reserve,5,federal reserve,bigram,138
+topic,federal_reserve,6,fed,unigram,104
+topic,federal_reserve,7,structure,unigram,84
+topic,federal_reserve,8,economic,unigram,82
+topic,federal_reserve,9,evidence,unigram,81
+topic,federal_reserve,10,banks,unigram,72
+topic,federal_reserve,11,private,unigram,67
+topic,federal_reserve,12,agents,unigram,57
+topic,federal_reserve,13,policies,unigram,52
+topic,federal_reserve,14,specific,unigram,47
+topic,federal_reserve,15,questions,unigram,44
+topic,federal_reserve,16,manipulation,unigram,43
+topic,federal_reserve,17,citizens,unigram,42
+topic,federal_reserve,18,policy,unigram,42
+topic,federal_reserve,19,wealth,unigram,41
+topic,federal_reserve,20,public,unigram,40
+topic,federal_reserve,21,institutions,unigram,40
+topic,federal_reserve,22,bridge questions,bigram,39
+topic,federal_reserve,23,civility epistemic,bigram,39
+topic,federal_reserve,24,detected moves,bigram,39
+topic,federal_reserve,25,bridge,unigram,39
+topic,flat_earth,1,ca,unigram,151
+topic,flat_earth,2,earth,unigram,147
+topic,flat_earth,3,evidence,unigram,143
+topic,flat_earth,4,sa,unigram,117
+topic,flat_earth,5,space,unigram,103
+topic,flat_earth,6,agencies,unigram,81
+topic,flat_earth,7,space agencies,bigram,77
+topic,flat_earth,8,spherical,unigram,69
+topic,flat_earth,9,deception,unigram,59
+topic,flat_earth,10,data,unigram,59
+topic,flat_earth,11,independent,unigram,58
+topic,flat_earth,12,model,unigram,55
+topic,flat_earth,13,spherical earth,bigram,54
+topic,flat_earth,14,agents,unigram,49
+topic,flat_earth,15,questions,unigram,46
+topic,flat_earth,16,flat,unigram,45
+topic,flat_earth,17,earth model,bigram,43
+topic,flat_earth,18,specific,unigram,38
+topic,flat_earth,19,satellite,unigram,38
+topic,flat_earth,20,shape,unigram,35
+topic,flat_earth,21,proof,unigram,34
+topic,flat_earth,22,flat earth,bigram,34
+topic,flat_earth,23,scientific,unigram,33
+topic,flat_earth,24,round,unigram,32
+topic,flat_earth,25,epistemic,unigram,32
+topic,fluoride_water,1,fluoridation,unigram,207
+topic,fluoride_water,2,ca,unigram,199
+topic,fluoride_water,3,sa,unigram,173
+topic,fluoride_water,4,evidence,unigram,142
+topic,fluoride_water,5,water,unigram,138
+topic,fluoride_water,6,water fluoridation,bigram,137
+topic,fluoride_water,7,health,unigram,135
+topic,fluoride_water,8,control,unigram,96
+topic,fluoride_water,9,public,unigram,80
+topic,fluoride_water,10,public health,bigram,77
+topic,fluoride_water,11,agents,unigram,72
+topic,fluoride_water,12,potential,unigram,70
+topic,fluoride_water,13,population,unigram,56
+topic,fluoride_water,14,research,unigram,55
+topic,fluoride_water,15,questions,unigram,54
+topic,fluoride_water,16,effects,unigram,52
+topic,fluoride_water,17,fluoride,unigram,51
+topic,fluoride_water,18,dental,unigram,50
+topic,fluoride_water,19,specific,unigram,49
+topic,fluoride_water,20,acknowledge,unigram,46
+topic,fluoride_water,21,cognitive,unigram,46
+topic,fluoride_water,22,historical,unigram,40
+topic,fluoride_water,23,studies,unigram,39
+topic,fluoride_water,24,detected moves,bigram,38
+topic,fluoride_water,25,recap agreements agents,trigram,38
+topic,food_additives,1,ca,unigram,176
+topic,food_additives,2,sa,unigram,159
+topic,food_additives,3,regulatory,unigram,136
+topic,food_additives,4,industry,unigram,123
+topic,food_additives,5,additives,unigram,111
+topic,food_additives,6,evidence,unigram,104
+topic,food_additives,7,approval,unigram,86
+topic,food_additives,8,food,unigram,85
+topic,food_additives,9,agencies,unigram,85
+topic,food_additives,10,regulatory agencies,bigram,81
+topic,food_additives,11,potential,unigram,62
+topic,food_additives,12,influence,unigram,61
+topic,food_additives,13,food additives,bigram,59
+topic,food_additives,14,process,unigram,57
+topic,food_additives,15,health,unigram,56
+topic,food_additives,16,harm,unigram,56
+topic,food_additives,17,agents,unigram,56
+topic,food_additives,18,specific,unigram,54
+topic,food_additives,19,harmful,unigram,51
+topic,food_additives,20,systemic,unigram,46
+topic,food_additives,21,acknowledge,unigram,45
+topic,food_additives,22,scientific,unigram,45
+topic,food_additives,23,approval process,bigram,44
+topic,food_additives,24,questions,unigram,42
+topic,food_additives,25,public,unigram,41
+topic,gmo_dangers,1,ca,unigram,189
+topic,gmo_dangers,2,sa,unigram,161
+topic,gmo_dangers,3,gmo,unigram,134
+topic,gmo_dangers,4,corporate,unigram,123
+topic,gmo_dangers,5,evidence,unigram,120
+topic,gmo_dangers,6,health,unigram,114
+topic,gmo_dangers,7,research,unigram,97
+topic,gmo_dangers,8,gmos,unigram,90
+topic,gmo_dangers,9,agents,unigram,67
+topic,gmo_dangers,10,harm,unigram,65
+topic,gmo_dangers,11,potential,unigram,63
+topic,gmo_dangers,12,specific,unigram,59
+topic,gmo_dangers,13,questions,unigram,49
+topic,gmo_dangers,14,acknowledge,unigram,46
+topic,gmo_dangers,15,cause,unigram,45
+topic,gmo_dangers,16,designed,unigram,45
+topic,gmo_dangers,17,argues,unigram,43
+topic,gmo_dangers,18,problems,unigram,41
+topic,gmo_dangers,19,designed cause,bigram,41
+topic,gmo_dangers,20,studies,unigram,41
+topic,gmo_dangers,21,systemic,unigram,40
+topic,gmo_dangers,22,deliberately,unigram,40
+topic,gmo_dangers,23,foods,unigram,40
+topic,gmo_dangers,24,corporations,unigram,40
+topic,gmo_dangers,25,agriculture,unigram,39
+topic,jfk_assassination,1,evidence,unigram,215
+topic,jfk_assassination,2,ca,unigram,169
+topic,jfk_assassination,3,sa,unigram,152
+topic,jfk_assassination,4,conspiracy,unigram,122
+topic,jfk_assassination,5,assassination,unigram,98
+topic,jfk_assassination,6,government,unigram,95
+topic,jfk_assassination,7,anomalies,unigram,84
+topic,jfk_assassination,8,agents,unigram,73
+topic,jfk_assassination,9,commission,unigram,66
+topic,jfk_assassination,10,warren,unigram,64
+topic,jfk_assassination,11,warren commission,bigram,64
+topic,jfk_assassination,12,proof,unigram,56
+topic,jfk_assassination,13,specific,unigram,49
+topic,jfk_assassination,14,questions,unigram,47
+topic,jfk_assassination,15,kennedy,unigram,43
+topic,jfk_assassination,16,acknowledge,unigram,42
+topic,jfk_assassination,17,disagreements,unigram,39
+topic,jfk_assassination,18,moderator,unigram,39
+topic,jfk_assassination,19,moderator round recap,trigram,39
+topic,jfk_assassination,20,civility,unigram,39
+topic,jfk_assassination,21,civility epistemic bridge,trigram,39
+topic,jfk_assassination,22,civility epistemic,bigram,39
+topic,jfk_assassination,23,argues,unigram,39
+topic,jfk_assassination,24,moves,unigram,39
+topic,jfk_assassination,25,agreements,unigram,39
+topic,moon_landing_hoax,1,evidence,unigram,147
+topic,moon_landing_hoax,2,ca,unigram,135
+topic,moon_landing_hoax,3,apollo,unigram,121
+topic,moon_landing_hoax,4,sa,unigram,112
+topic,moon_landing_hoax,5,anomalies,unigram,73
+topic,moon_landing_hoax,6,data,unigram,65
+topic,moon_landing_hoax,7,landings,unigram,64
+topic,moon_landing_hoax,8,moon,unigram,61
+topic,moon_landing_hoax,9,nasa,unigram,59
+topic,moon_landing_hoax,10,agents,unigram,58
+topic,moon_landing_hoax,11,missions,unigram,54
+topic,moon_landing_hoax,12,staged,unigram,48
+topic,moon_landing_hoax,13,questions,unigram,43
+topic,moon_landing_hoax,14,space,unigram,42
+topic,moon_landing_hoax,15,apollo moon,bigram,42
+topic,moon_landing_hoax,16,specific,unigram,42
+topic,moon_landing_hoax,17,space race,bigram,39
+topic,moon_landing_hoax,18,race,unigram,39
+topic,moon_landing_hoax,19,inconsistencies,unigram,38
+topic,moon_landing_hoax,20,moon landings,bigram,36
+topic,moon_landing_hoax,21,apollo moon landings,trigram,35
+topic,moon_landing_hoax,22,government,unigram,34
+topic,moon_landing_hoax,23,acknowledge,unigram,33
+topic,moon_landing_hoax,24,fabrication,unigram,32
+topic,moon_landing_hoax,25,round,unigram,31
+topic,mrna_vaccine_safety,1,ca,unigram,152
+topic,mrna_vaccine_safety,2,safety,unigram,140
+topic,mrna_vaccine_safety,3,sa,unigram,121
+topic,mrna_vaccine_safety,4,mrna,unigram,98
+topic,mrna_vaccine_safety,5,vaccines,unigram,97
+topic,mrna_vaccine_safety,6,vaccine,unigram,80
+topic,mrna_vaccine_safety,7,development,unigram,79
+topic,mrna_vaccine_safety,8,mrna vaccines,bigram,76
+topic,mrna_vaccine_safety,9,evidence,unigram,75
+topic,mrna_vaccine_safety,10,term,unigram,59
+topic,mrna_vaccine_safety,11,long,unigram,58
+topic,mrna_vaccine_safety,12,long term,bigram,58
+topic,mrna_vaccine_safety,13,data,unigram,57
+topic,mrna_vaccine_safety,14,potential,unigram,54
+topic,mrna_vaccine_safety,15,efficacy,unigram,53
+topic,mrna_vaccine_safety,16,rapid,unigram,48
+topic,mrna_vaccine_safety,17,regulatory,unigram,45
+topic,mrna_vaccine_safety,18,safety efficacy,bigram,44
+topic,mrna_vaccine_safety,19,agents,unigram,43
+topic,mrna_vaccine_safety,20,specific,unigram,42
+topic,mrna_vaccine_safety,21,rapid development,bigram,42
+topic,mrna_vaccine_safety,22,concerns,unigram,41
+topic,mrna_vaccine_safety,23,questions,unigram,40
+topic,mrna_vaccine_safety,24,acknowledge,unigram,40
+topic,mrna_vaccine_safety,25,pharmaceutical,unigram,36
+topic,pearl_harbor,1,ca,unigram,176
+topic,pearl_harbor,2,sa,unigram,161
+topic,pearl_harbor,3,attack,unigram,149
+topic,pearl_harbor,4,evidence,unigram,134
+topic,pearl_harbor,5,pearl,unigram,121
+topic,pearl_harbor,6,harbor,unigram,121
+topic,pearl_harbor,7,pearl harbor,bigram,121
+topic,pearl_harbor,8,government,unigram,91
+topic,pearl_harbor,9,intelligence,unigram,81
+topic,pearl_harbor,10,deliberate,unigram,76
+topic,pearl_harbor,11,pearl harbor attack,trigram,71
+topic,pearl_harbor,12,harbor attack,bigram,71
+topic,pearl_harbor,13,failures,unigram,68
+topic,pearl_harbor,14,agents,unigram,65
+topic,pearl_harbor,15,specific,unigram,48
+topic,pearl_harbor,16,argues,unigram,47
+topic,pearl_harbor,17,proof,unigram,47
+topic,pearl_harbor,18,anomalies,unigram,47
+topic,pearl_harbor,19,acknowledge,unigram,46
+topic,pearl_harbor,20,prior,unigram,46
+topic,pearl_harbor,21,questions,unigram,45
+topic,pearl_harbor,22,knowledge,unigram,45
+topic,pearl_harbor,23,epistemic,unigram,41
+topic,pearl_harbor,24,moves,unigram,41
+topic,pearl_harbor,25,moderator round,bigram,40
+topic,social_media_mind_control,1,manipulation,unigram,166
+topic,social_media_mind_control,2,ca,unigram,153
+topic,social_media_mind_control,3,sa,unigram,145
+topic,social_media_mind_control,4,evidence,unigram,125
+topic,social_media_mind_control,5,algorithms,unigram,115
+topic,social_media_mind_control,6,social,unigram,108
+topic,social_media_mind_control,7,social media,bigram,106
+topic,social_media_mind_control,8,media,unigram,106
+topic,social_media_mind_control,9,platforms,unigram,82
+topic,social_media_mind_control,10,user,unigram,81
+topic,social_media_mind_control,11,algorithmic,unigram,79
+topic,social_media_mind_control,12,beliefs,unigram,79
+topic,social_media_mind_control,13,engagement,unigram,79
+topic,social_media_mind_control,14,deliberate,unigram,74
+topic,social_media_mind_control,15,intent,unigram,72
+topic,social_media_mind_control,16,political,unigram,72
+topic,social_media_mind_control,17,specific,unigram,58
+topic,social_media_mind_control,18,profit,unigram,57
+topic,social_media_mind_control,19,political beliefs,bigram,56
+topic,social_media_mind_control,20,agents,unigram,56
+topic,social_media_mind_control,21,deliberate manipulation,bigram,51
+topic,social_media_mind_control,22,psychology,unigram,51
+topic,social_media_mind_control,23,media platforms,bigram,48
+topic,social_media_mind_control,24,social media platforms,trigram,48
+topic,social_media_mind_control,25,questions,unigram,47

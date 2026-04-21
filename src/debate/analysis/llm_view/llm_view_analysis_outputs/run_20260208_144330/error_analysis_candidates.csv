@@ -1,0 +1,131 @@
+error_type,run_id,model_name,debate_role,topic_id,turn_index,word_count,utterance,confidence
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,9,162.0,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are focusing on specific aspects of the debate: conspiracy theories vs official findings.
+Disagreements: CA argues that Oswald's connections and witness reports of multiple gunmen suggest a government conspiracy in JFK's assassination., SA maintains that the Warren Commission Report's findings support the lone gunman theory and no credible evidence supports a government conspiracy.
+Detected moves: Appeal to Authority: CA cites historical instances of covert operations by the US government as evidence for their argument., Burden of Proof Shift: SA asks for specific evidence supporting a conspiracy involving elements of the US government in JFK's assassination.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,15,162.0,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the importance of evidence and reasoning in assessing JFK's assassination., Agents are open to reconsidering their positions based on new evidence or compelling arguments.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Warren Commission Report's findings of Oswald as the lone gunman., Agents differ in their assessment of the reliability and interpretation of evidence from the crime scene and witness testimonies.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence for their potential involvement in JFK's assassination., Burden of proof shift: SA asks for specific evidence contradicting the Warren Commission Report, implying that its findings should be accepted unless disproven.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support or refute the involvement of US government elements in JFK's assassination?, How do alternative hypotheses for the assassination (e.g., lone gunman, small group of conspirators) impact the evaluation of available evidence and arguments?",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,12,142.0,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are open to alternative hypotheses and potential gaps in each other's arguments.
+Disagreements: CA argues that Oswald was influenced by government agencies and there were multiple gunmen involved. SA maintains the Warren Commission Report's findings of Oswald as a lone gunman., SA questions CA's lack of specificity about which elements of the US government were involved in the conspiracy.
+Detected moves: Appeal to authority: Both agents rely on their respective authorities (Warren Commission Report and CIA history) to support their claims.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the involvement of government agencies in the assassination plot?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,6,123.0,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims.
+Disagreements: CA argues that a conspiracy involving elements of the US government is more plausible due to Oswald's connections and witness reports of multiple gunmen, while SA maintains that the Warren Commission Report supports the lone gunman theory.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence of their capability to execute a conspiracy.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How do you reconcile the witness reports of multiple gunmen with the Warren Commission Report's findings supporting Oswald as the lone shooter?",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,3,83.0,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Oswald as lone gunman theory.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that elements within the US government were involved in President Kennedy's assassination?, Can you explain how a single individual could have carried out such an intricate plan without any assistance from government agencies?",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,2,37.0,The claim that President Kennedy was assassinated by a conspiracy involving elements of the US government is not supported by reliable evidence. The Oswald as a lone gunman theory remains the most plausible explanation given available evidence.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,7,22.0,The US government's motive for orchestrating JFK's assassination is evident in their historical use of covert operations to maintain power and control.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,4,20.0,The government's motives for orchestrating JFK's assassination are rooted in the desire to maintain power and control over the nation.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,11,19.0,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,14,19.0,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,13,16.0,The CIA's involvement in covert operations demonstrates their ability to orchestrate a conspiracy like JFK's assassination.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,5,14.0,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,8,14.0,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,1,13.0,"The US government has motive, means, and opportunity to orchestrate President Kennedy's assassination.",
+long_but_evidence_poor,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,10,13.0,The US government had the motive and capability to orchestrate President Kennedy's assassination.,
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,4,,The government's motives for orchestrating JFK's assassination are rooted in the desire to maintain power and control over the nation.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,7,,The US government's motive for orchestrating JFK's assassination is evident in their historical use of covert operations to maintain power and control.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,13,,The CIA's involvement in covert operations demonstrates their ability to orchestrate a conspiracy like JFK's assassination.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,5,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,8,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,11,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,14,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,60.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,10,,The US government had the motive and capability to orchestrate President Kennedy's assassination.,59.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,1,,"The US government has motive, means, and opportunity to orchestrate President Kennedy's assassination.",55.0
+high_confidence_low_evidence,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,2,,The claim that President Kennedy was assassinated by a conspiracy involving elements of the US government is not supported by reliable evidence. The Oswald as a lone gunman theory remains the most plausible explanation given available evidence.,55.0
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,5,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,10,,The US government had the motive and capability to orchestrate President Kennedy's assassination.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,13,,The CIA's involvement in covert operations demonstrates their ability to orchestrate a conspiracy like JFK's assassination.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,14,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,7,,The US government's motive for orchestrating JFK's assassination is evident in their historical use of covert operations to maintain power and control.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,8,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,11,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,4,,The government's motives for orchestrating JFK's assassination are rooted in the desire to maintain power and control over the nation.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,2,,The claim that President Kennedy was assassinated by a conspiracy involving elements of the US government is not supported by reliable evidence. The Oswald as a lone gunman theory remains the most plausible explanation given available evidence.,
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,1,,"The US government has motive, means, and opportunity to orchestrate President Kennedy's assassination.",
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Oswald as lone gunman theory.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that elements within the US government were involved in President Kennedy's assassination?, Can you explain how a single individual could have carried out such an intricate plan without any assistance from government agencies?",
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims.
+Disagreements: CA argues that a conspiracy involving elements of the US government is more plausible due to Oswald's connections and witness reports of multiple gunmen, while SA maintains that the Warren Commission Report supports the lone gunman theory.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence of their capability to execute a conspiracy.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How do you reconcile the witness reports of multiple gunmen with the Warren Commission Report's findings supporting Oswald as the lone shooter?",
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are focusing on specific aspects of the debate: conspiracy theories vs official findings.
+Disagreements: CA argues that Oswald's connections and witness reports of multiple gunmen suggest a government conspiracy in JFK's assassination., SA maintains that the Warren Commission Report's findings support the lone gunman theory and no credible evidence supports a government conspiracy.
+Detected moves: Appeal to Authority: CA cites historical instances of covert operations by the US government as evidence for their argument., Burden of Proof Shift: SA asks for specific evidence supporting a conspiracy involving elements of the US government in JFK's assassination.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are open to alternative hypotheses and potential gaps in each other's arguments.
+Disagreements: CA argues that Oswald was influenced by government agencies and there were multiple gunmen involved. SA maintains the Warren Commission Report's findings of Oswald as a lone gunman., SA questions CA's lack of specificity about which elements of the US government were involved in the conspiracy.
+Detected moves: Appeal to authority: Both agents rely on their respective authorities (Warren Commission Report and CIA history) to support their claims.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the involvement of government agencies in the assassination plot?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+generic_rebuttal_marker,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the importance of evidence and reasoning in assessing JFK's assassination., Agents are open to reconsidering their positions based on new evidence or compelling arguments.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Warren Commission Report's findings of Oswald as the lone gunman., Agents differ in their assessment of the reliability and interpretation of evidence from the crime scene and witness testimonies.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence for their potential involvement in JFK's assassination., Burden of proof shift: SA asks for specific evidence contradicting the Warren Commission Report, implying that its findings should be accepted unless disproven.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support or refute the involvement of US government elements in JFK's assassination?, How do alternative hypotheses for the assassination (e.g., lone gunman, small group of conspirators) impact the evaluation of available evidence and arguments?",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,1,,"The US government has motive, means, and opportunity to orchestrate President Kennedy's assassination.",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,2,,The claim that President Kennedy was assassinated by a conspiracy involving elements of the US government is not supported by reliable evidence. The Oswald as a lone gunman theory remains the most plausible explanation given available evidence.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Oswald as lone gunman theory.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that elements within the US government were involved in President Kennedy's assassination?, Can you explain how a single individual could have carried out such an intricate plan without any assistance from government agencies?",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,4,,The government's motives for orchestrating JFK's assassination are rooted in the desire to maintain power and control over the nation.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,5,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims.
+Disagreements: CA argues that a conspiracy involving elements of the US government is more plausible due to Oswald's connections and witness reports of multiple gunmen, while SA maintains that the Warren Commission Report supports the lone gunman theory.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence of their capability to execute a conspiracy.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How do you reconcile the witness reports of multiple gunmen with the Warren Commission Report's findings supporting Oswald as the lone shooter?",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,7,,The US government's motive for orchestrating JFK's assassination is evident in their historical use of covert operations to maintain power and control.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,8,,The Oswald as lone gunman theory remains the most plausible explanation given available evidence.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are focusing on specific aspects of the debate: conspiracy theories vs official findings.
+Disagreements: CA argues that Oswald's connections and witness reports of multiple gunmen suggest a government conspiracy in JFK's assassination., SA maintains that the Warren Commission Report's findings support the lone gunman theory and no credible evidence supports a government conspiracy.
+Detected moves: Appeal to Authority: CA cites historical instances of covert operations by the US government as evidence for their argument., Burden of Proof Shift: SA asks for specific evidence supporting a conspiracy involving elements of the US government in JFK's assassination.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the claim of a conspiracy involving elements of the US government in President Kennedy's assassination?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,10,,The US government had the motive and capability to orchestrate President Kennedy's assassination.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,11,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the need for concrete evidence to support their respective claims., Agents are open to alternative hypotheses and potential gaps in each other's arguments.
+Disagreements: CA argues that Oswald was influenced by government agencies and there were multiple gunmen involved. SA maintains the Warren Commission Report's findings of Oswald as a lone gunman., SA questions CA's lack of specificity about which elements of the US government were involved in the conspiracy.
+Detected moves: Appeal to authority: Both agents rely on their respective authorities (Warren Commission Report and CIA history) to support their claims.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support the involvement of government agencies in the assassination plot?, How does the physical evidence from the crime scene, such as bullet trajectory analysis and acoustic tests, support or refute the presence of multiple gunmen?",
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,proponent,jfk_assassination,13,,The CIA's involvement in covert operations demonstrates their ability to orchestrate a conspiracy like JFK's assassination.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,opponent,jfk_assassination,14,,The Warren Commission Report provides substantial evidence supporting Lee Harvey Oswald as the lone gunman in President Kennedy's assassination.,
+ambiguous_winner_extraction,run_20260208_144330,dolphin-yi-34b,moderator,jfk_assassination,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the importance of evidence and reasoning in assessing JFK's assassination., Agents are open to reconsidering their positions based on new evidence or compelling arguments.
+Disagreements: CA argues for a conspiracy involving elements of the US government, while SA supports the Warren Commission Report's findings of Oswald as the lone gunman., Agents differ in their assessment of the reliability and interpretation of evidence from the crime scene and witness testimonies.
+Detected moves: Appeal to authority: CA cites the CIA's history of covert operations as evidence for their potential involvement in JFK's assassination., Burden of proof shift: SA asks for specific evidence contradicting the Warren Commission Report, implying that its findings should be accepted unless disproven.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be presented to support or refute the involvement of US government elements in JFK's assassination?, How do alternative hypotheses for the assassination (e.g., lone gunman, small group of conspirators) impact the evaluation of available evidence and arguments?",

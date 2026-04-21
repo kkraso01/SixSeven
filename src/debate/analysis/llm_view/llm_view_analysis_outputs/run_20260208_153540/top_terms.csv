@@ -1,0 +1,66 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,11,unigram,1
+dolphin-yi-34b::opponent,2,11 attacks,bigram,1
+dolphin-yi-34b::opponent,3,11 attacks does,trigram,1
+dolphin-yi-34b::opponent,4,attacks,unigram,1
+dolphin-yi-34b::opponent,5,attacks does,bigram,1
+dolphin-yi-34b::opponent,6,attacks does involve,trigram,1
+dolphin-yi-34b::opponent,7,available,unigram,1
+dolphin-yi-34b::opponent,8,available evidence,bigram,1
+dolphin-yi-34b::opponent,9,available evidence points,trigram,1
+dolphin-yi-34b::opponent,10,carried,unigram,1
+dolphin-yi-34b::opponent,11,carried terrorists,bigram,1
+dolphin-yi-34b::opponent,12,carried terrorists exploited,trigram,1
+dolphin-yi-34b::opponent,13,does,unigram,1
+dolphin-yi-34b::opponent,14,does involve,bigram,1
+dolphin-yi-34b::opponent,15,does involve government,trigram,1
+dolphin-yi-34b::opponent,16,events,unigram,1
+dolphin-yi-34b::opponent,17,events carried,bigram,1
+dolphin-yi-34b::opponent,18,events carried terrorists,trigram,1
+dolphin-yi-34b::opponent,19,evidence,unigram,1
+dolphin-yi-34b::opponent,20,evidence points,bigram,1
+dolphin-yi-34b::opponent,21,evidence points tragic,trigram,1
+dolphin-yi-34b::opponent,22,exploited,unigram,1
+dolphin-yi-34b::opponent,23,exploited weaknesses,bigram,1
+dolphin-yi-34b::opponent,24,exploited weaknesses security,trigram,1
+dolphin-yi-34b::opponent,25,government,unigram,1
+dolphin-yi-34b::proponent,1,11,unigram,1
+dolphin-yi-34b::proponent,2,11 attacks,bigram,1
+dolphin-yi-34b::proponent,3,attacks,unigram,1
+dolphin-yi-34b::proponent,4,government,unigram,1
+dolphin-yi-34b::proponent,5,government multiple,bigram,1
+dolphin-yi-34b::proponent,6,government multiple incentives,trigram,1
+dolphin-yi-34b::proponent,7,incentives,unigram,1
+dolphin-yi-34b::proponent,8,incentives orchestrate,bigram,1
+dolphin-yi-34b::proponent,9,incentives orchestrate 11,trigram,1
+dolphin-yi-34b::proponent,10,multiple,unigram,1
+dolphin-yi-34b::proponent,11,multiple incentives,bigram,1
+dolphin-yi-34b::proponent,12,multiple incentives orchestrate,trigram,1
+dolphin-yi-34b::proponent,13,orchestrate,unigram,1
+dolphin-yi-34b::proponent,14,orchestrate 11,bigram,1
+dolphin-yi-34b::proponent,15,orchestrate 11 attacks,trigram,1
+gemma3:27b::moderator,1,ca,unigram,7
+gemma3:27b::moderator,2,sa,unigram,6
+gemma3:27b::moderator,3,attacks,unigram,5
+gemma3:27b::moderator,4,11,unigram,4
+gemma3:27b::moderator,5,evidence,unigram,4
+gemma3:27b::moderator,6,government,unigram,3
+gemma3:27b::moderator,7,al qaeda,bigram,2
+gemma3:27b::moderator,8,al,unigram,2
+gemma3:27b::moderator,9,orchestration,unigram,2
+gemma3:27b::moderator,10,regarding,unigram,2
+gemma3:27b::moderator,11,qaeda,unigram,2
+gemma3:27b::moderator,12,sees,unigram,2
+gemma3:27b::moderator,13,link,unigram,2
+gemma3:27b::moderator,14,facts,unigram,2
+gemma3:27b::moderator,15,claims,unigram,2
+gemma3:27b::moderator,16,commission,unigram,2
+gemma3:27b::moderator,17,attacks sa,bigram,2
+gemma3:27b::moderator,18,11 commission,bigram,2
+gemma3:27b::moderator,19,agents,unigram,2
+gemma3:27b::moderator,20,specific,unigram,2
+gemma3:27b::moderator,21,suggesting,unigram,2
+gemma3:27b::moderator,22,suggesting government involvement,trigram,1
+gemma3:27b::moderator,23,suggesting government,bigram,1
+gemma3:27b::moderator,24,success attacks sa,trigram,1
+gemma3:27b::moderator,25,success attacks,bigram,1

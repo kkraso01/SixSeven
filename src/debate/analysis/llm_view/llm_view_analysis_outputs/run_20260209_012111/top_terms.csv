@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,deep state,bigram,5
+dolphin-yi-34b::proponent,2,deep,unigram,5
+dolphin-yi-34b::proponent,3,policy,unigram,5
+dolphin-yi-34b::proponent,4,interests,unigram,5
+dolphin-yi-34b::proponent,5,state,unigram,5
+dolphin-yi-34b::proponent,6,apparent policy decisions,trigram,4
+dolphin-yi-34b::proponent,7,align,unigram,4
+dolphin-yi-34b::proponent,8,align bureaucratic,bigram,4
+dolphin-yi-34b::proponent,9,campaign promises,bigram,4
+dolphin-yi-34b::proponent,10,bureaucratic interests elected,trigram,4
+dolphin-yi-34b::proponent,11,campaign,unigram,4
+dolphin-yi-34b::proponent,12,bureaucratic interests,bigram,4
+dolphin-yi-34b::proponent,13,bureaucratic,unigram,4
+dolphin-yi-34b::proponent,14,apparent policy,bigram,4
+dolphin-yi-34b::proponent,15,align bureaucratic interests,trigram,4
+dolphin-yi-34b::proponent,16,apparent,unigram,4
+dolphin-yi-34b::proponent,17,elected officials campaign,trigram,4
+dolphin-yi-34b::proponent,18,influence apparent,bigram,4
+dolphin-yi-34b::proponent,19,officials,unigram,4
+dolphin-yi-34b::proponent,20,interests elected officials,trigram,4
+dolphin-yi-34b::proponent,21,officials campaign,bigram,4
+dolphin-yi-34b::proponent,22,officials campaign promises,trigram,4
+dolphin-yi-34b::proponent,23,policy decisions,bigram,4
+dolphin-yi-34b::proponent,24,interests elected,bigram,4
+dolphin-yi-34b::proponent,25,elected,unigram,4
+gemma3:27b::moderator,1,sa,unigram,35
+gemma3:27b::moderator,2,ca,unigram,35
+gemma3:27b::moderator,3,bureaucratic,unigram,18
+gemma3:27b::moderator,4,policy,unigram,17
+gemma3:27b::moderator,5,control,unigram,16
+gemma3:27b::moderator,6,evidence,unigram,14
+gemma3:27b::moderator,7,state,unigram,13
+gemma3:27b::moderator,8,deep state,bigram,13
+gemma3:27b::moderator,9,deep,unigram,13
+gemma3:27b::moderator,10,influence,unigram,11
+gemma3:27b::moderator,11,officials,unigram,11
+gemma3:27b::moderator,12,alignment,unigram,11
+gemma3:27b::moderator,13,elected officials,bigram,10
+gemma3:27b::moderator,14,elected,unigram,10
+gemma3:27b::moderator,15,interests,unigram,9
+gemma3:27b::moderator,16,proof,unigram,8
+gemma3:27b::moderator,17,argues,unigram,7
+gemma3:27b::moderator,18,specific,unigram,7
+gemma3:27b::moderator,19,agents,unigram,7
+gemma3:27b::moderator,20,agree,unigram,6
+gemma3:27b::moderator,21,moderator round,bigram,5
+gemma3:27b::moderator,22,questions,unigram,5
+gemma3:27b::moderator,23,moderator,unigram,5
+gemma3:27b::moderator,24,moderator round recap,trigram,5
+gemma3:27b::moderator,25,recap,unigram,5
+gemma3:27b::opponent,1,bureaucratic,unigram,7
+gemma3:27b::opponent,2,policy,unigram,6
+gemma3:27b::opponent,3,alignment,unigram,6
+gemma3:27b::opponent,4,deep state,bigram,5
+gemma3:27b::opponent,5,state,unigram,5
+gemma3:27b::opponent,6,deep,unigram,5
+gemma3:27b::opponent,7,interests,unigram,4
+gemma3:27b::opponent,8,deep state requires,trigram,4
+gemma3:27b::opponent,9,evidence,unigram,4
+gemma3:27b::opponent,10,controlling,unigram,4
+gemma3:27b::opponent,11,requires,unigram,4
+gemma3:27b::opponent,12,attributing,unigram,4
+gemma3:27b::opponent,13,state requires,bigram,4
+gemma3:27b::opponent,14,causal,unigram,3
+gemma3:27b::opponent,15,influence policy,bigram,3
+gemma3:27b::opponent,16,influence,unigram,3
+gemma3:27b::opponent,17,attributing controlling deep,trigram,3
+gemma3:27b::opponent,18,control,unigram,3
+gemma3:27b::opponent,19,controlling deep,bigram,3
+gemma3:27b::opponent,20,controlling deep state,trigram,3
+gemma3:27b::opponent,21,attributing controlling,bigram,3
+gemma3:27b::opponent,22,government,unigram,2
+gemma3:27b::opponent,23,requires demonstrating causal,trigram,2
+gemma3:27b::opponent,24,bureaucratic influence,bigram,2
+gemma3:27b::opponent,25,goals,unigram,2

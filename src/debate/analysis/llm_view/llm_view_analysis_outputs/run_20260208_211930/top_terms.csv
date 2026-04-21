@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,safety,unigram,3
+dolphin-yi-34b::opponent,2,vaccine,unigram,3
+dolphin-yi-34b::opponent,3,vaccines,unigram,3
+dolphin-yi-34b::opponent,4,mrna,unigram,2
+dolphin-yi-34b::opponent,5,need,unigram,2
+dolphin-yi-34b::opponent,6,long,unigram,2
+dolphin-yi-34b::opponent,7,long term,bigram,2
+dolphin-yi-34b::opponent,8,term,unigram,2
+dolphin-yi-34b::opponent,9,involves,unigram,2
+dolphin-yi-34b::opponent,10,health,unigram,2
+dolphin-yi-34b::opponent,11,concerns,unigram,2
+dolphin-yi-34b::opponent,12,events,unigram,2
+dolphin-yi-34b::opponent,13,crucial,unigram,2
+dolphin-yi-34b::opponent,14,adverse,unigram,2
+dolphin-yi-34b::opponent,15,adverse events,bigram,2
+dolphin-yi-34b::opponent,16,mrna vaccines,bigram,2
+dolphin-yi-34b::opponent,17,vaccine safety,bigram,2
+dolphin-yi-34b::opponent,18,vaccines does raise,trigram,1
+dolphin-yi-34b::opponent,19,vaccines does,bigram,1
+dolphin-yi-34b::opponent,20,vaccines achieving long,trigram,1
+dolphin-yi-34b::opponent,21,vaccines achieving,bigram,1
+dolphin-yi-34b::opponent,22,vaccine safety involves,trigram,1
+dolphin-yi-34b::opponent,23,vaccine efficacy time,trigram,1
+dolphin-yi-34b::opponent,24,vaccine efficacy,bigram,1
+dolphin-yi-34b::opponent,25,vaccination health issues,trigram,1
+gemma3:27b::moderator,1,ca,unigram,29
+gemma3:27b::moderator,2,sa,unigram,22
+gemma3:27b::moderator,3,safety,unigram,13
+gemma3:27b::moderator,4,data,unigram,12
+gemma3:27b::moderator,5,vaccine,unigram,9
+gemma3:27b::moderator,6,potential,unigram,8
+gemma3:27b::moderator,7,agents,unigram,7
+gemma3:27b::moderator,8,evidence,unigram,7
+gemma3:27b::moderator,9,development,unigram,6
+gemma3:27b::moderator,10,adverse,unigram,6
+gemma3:27b::moderator,11,questions,unigram,6
+gemma3:27b::moderator,12,acknowledge,unigram,6
+gemma3:27b::moderator,13,vaers,unigram,5
+gemma3:27b::moderator,14,long term,bigram,5
+gemma3:27b::moderator,15,term,unigram,5
+gemma3:27b::moderator,16,adverse events,bigram,5
+gemma3:27b::moderator,17,long,unigram,5
+gemma3:27b::moderator,18,specific,unigram,5
+gemma3:27b::moderator,19,events,unigram,5
+gemma3:27b::moderator,20,round recap agreements,trigram,4
+gemma3:27b::moderator,21,round recap,bigram,4
+gemma3:27b::moderator,22,regulatory bodies,bigram,4
+gemma3:27b::moderator,23,recap agreements,bigram,4
+gemma3:27b::moderator,24,recap,unigram,4
+gemma3:27b::moderator,25,appeal,unigram,4
+gemma3:27b::proponent,1,isn,unigram,3
+gemma3:27b::proponent,2,term,unigram,3
+gemma3:27b::proponent,3,long term,bigram,3
+gemma3:27b::proponent,4,long,unigram,3
+gemma3:27b::proponent,5,long term safety,trigram,2
+gemma3:27b::proponent,6,insistence,unigram,2
+gemma3:27b::proponent,7,initial,unigram,2
+gemma3:27b::proponent,8,vaccination,unigram,2
+gemma3:27b::proponent,9,safety,unigram,2
+gemma3:27b::proponent,10,term safety,bigram,2
+gemma3:27b::proponent,11,vaccinated,unigram,2
+gemma3:27b::proponent,12,vaccine,unigram,2
+gemma3:27b::proponent,13,achieved claimed,bigram,1
+gemma3:27b::proponent,14,accelerated mrna,bigram,1
+gemma3:27b::proponent,15,accelerated mrna vaccine,trigram,1
+gemma3:27b::proponent,16,accelerated,unigram,1
+gemma3:27b::proponent,17,assessments making fundamentally,trigram,1
+gemma3:27b::proponent,18,attributing,unigram,1
+gemma3:27b::proponent,19,attributing post,bigram,1
+gemma3:27b::proponent,20,attributing post vaccination,trigram,1
+gemma3:27b::proponent,21,booster,unigram,1
+gemma3:27b::proponent,22,booster shots,bigram,1
+gemma3:27b::proponent,23,booster shots soon,trigram,1
+gemma3:27b::proponent,24,achieved,unigram,1
+gemma3:27b::proponent,25,adverse,unigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,12
+dolphin-yi-34b::moderator,2,evidence,unigram,12
+dolphin-yi-34b::moderator,3,sa,unigram,9
+dolphin-yi-34b::moderator,4,contrails,unigram,9
+dolphin-yi-34b::moderator,5,atmospheric,unigram,9
+dolphin-yi-34b::moderator,6,agents,unigram,7
+dolphin-yi-34b::moderator,7,lack,unigram,7
+dolphin-yi-34b::moderator,8,modification,unigram,7
+dolphin-yi-34b::moderator,9,atmospheric modification,bigram,7
+dolphin-yi-34b::moderator,10,transparency,unigram,6
+dolphin-yi-34b::moderator,11,patterns,unigram,6
+dolphin-yi-34b::moderator,12,potential,unigram,5
+dolphin-yi-34b::moderator,13,lack transparency,bigram,5
+dolphin-yi-34b::moderator,14,secret,unigram,5
+dolphin-yi-34b::moderator,15,argues,unigram,4
+dolphin-yi-34b::moderator,16,secret atmospheric,bigram,4
+dolphin-yi-34b::moderator,17,questions,unigram,4
+dolphin-yi-34b::moderator,18,chemical,unigram,4
+dolphin-yi-34b::moderator,19,claims,unigram,4
+dolphin-yi-34b::moderator,20,secret atmospheric modification,trigram,4
+dolphin-yi-34b::moderator,21,releases,unigram,3
+dolphin-yi-34b::moderator,22,agreements,unigram,3
+dolphin-yi-34b::moderator,23,moves,unigram,3
+dolphin-yi-34b::moderator,24,programs,unigram,3
+dolphin-yi-34b::moderator,25,questions specific evidence,trigram,3
+dolphin-yi-34b::proponent,1,condensation,unigram,2
+dolphin-yi-34b::proponent,2,harmless condensation,bigram,2
+dolphin-yi-34b::proponent,3,harmless,unigram,2
+dolphin-yi-34b::proponent,4,contrails,unigram,2
+dolphin-yi-34b::proponent,5,institutions,unigram,2
+dolphin-yi-34b::proponent,6,aircraft contrails,bigram,1
+dolphin-yi-34b::proponent,7,acknowledge existence chemtrails,trigram,1
+dolphin-yi-34b::proponent,8,acknowledge,unigram,1
+dolphin-yi-34b::proponent,9,atmospheric modification,bigram,1
+dolphin-yi-34b::proponent,10,atmospheric modification program,trigram,1
+dolphin-yi-34b::proponent,11,chemtrails highly,bigram,1
+dolphin-yi-34b::proponent,12,chemtrails,unigram,1
+dolphin-yi-34b::proponent,13,chemtrails highly suspicious,trigram,1
+dolphin-yi-34b::proponent,14,aircraft contrails just,trigram,1
+dolphin-yi-34b::proponent,15,atmospheric,unigram,1
+dolphin-yi-34b::proponent,16,acknowledge existence,bigram,1
+dolphin-yi-34b::proponent,17,commercial aircraft contrails,trigram,1
+dolphin-yi-34b::proponent,18,commercial aircraft,bigram,1
+dolphin-yi-34b::proponent,19,commercial,unigram,1
+dolphin-yi-34b::proponent,20,condensation secret,bigram,1
+dolphin-yi-34b::proponent,21,consistent lack,bigram,1
+dolphin-yi-34b::proponent,22,consistent lack transparency,trigram,1
+dolphin-yi-34b::proponent,23,consistent,unigram,1
+dolphin-yi-34b::proponent,24,condensation secret atmospheric,trigram,1
+dolphin-yi-34b::proponent,25,contrails just harmless,trigram,1
+gemma3:27b::opponent,1,atmospheric,unigram,6
+gemma3:27b::opponent,2,atmospheric modification,bigram,3
+gemma3:27b::opponent,3,modification,unigram,3
+gemma3:27b::opponent,4,evidence,unigram,3
+gemma3:27b::opponent,5,aircraft deliberately,bigram,2
+gemma3:27b::opponent,6,biological,unigram,2
+gemma3:27b::opponent,7,agents,unigram,2
+gemma3:27b::opponent,8,aircraft deliberately release,trigram,2
+gemma3:27b::opponent,9,atmospheric phenomena,bigram,2
+gemma3:27b::opponent,10,biological agents,bigram,2
+gemma3:27b::opponent,11,chemical,unigram,2
+gemma3:27b::opponent,12,commercial aircraft deliberately,trigram,2
+gemma3:27b::opponent,13,commercial,unigram,2
+gemma3:27b::opponent,14,commercial aircraft,bigram,2
+gemma3:27b::opponent,15,assertion,unigram,2
+gemma3:27b::opponent,16,aircraft,unigram,2
+gemma3:27b::opponent,17,contrails,unigram,2
+gemma3:27b::opponent,18,deliberately,unigram,2
+gemma3:27b::opponent,19,deliberately release chemical,trigram,2
+gemma3:27b::opponent,20,phenomena,unigram,2
+gemma3:27b::opponent,21,deliberately release,bigram,2
+gemma3:27b::opponent,22,chemical biological,bigram,2
+gemma3:27b::opponent,23,chemical biological agents,trigram,2
+gemma3:27b::opponent,24,release chemical biological,trigram,2
+gemma3:27b::opponent,25,relies,unigram,2

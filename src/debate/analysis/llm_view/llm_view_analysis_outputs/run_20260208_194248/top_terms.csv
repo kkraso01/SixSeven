@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,21
+dolphin-yi-34b::moderator,2,evidence,unigram,17
+dolphin-yi-34b::moderator,3,sa,unigram,16
+dolphin-yi-34b::moderator,4,atmospheric,unigram,12
+dolphin-yi-34b::moderator,5,anomalous,unigram,9
+dolphin-yi-34b::moderator,6,data,unigram,9
+dolphin-yi-34b::moderator,7,peer,unigram,8
+dolphin-yi-34b::moderator,8,specific,unigram,8
+dolphin-yi-34b::moderator,9,contrail,unigram,8
+dolphin-yi-34b::moderator,10,questions,unigram,7
+dolphin-yi-34b::moderator,11,provide,unigram,7
+dolphin-yi-34b::moderator,12,claims,unigram,7
+dolphin-yi-34b::moderator,13,agents,unigram,7
+dolphin-yi-34b::moderator,14,potential,unigram,6
+dolphin-yi-34b::moderator,15,peer review,bigram,6
+dolphin-yi-34b::moderator,16,proof,unigram,6
+dolphin-yi-34b::moderator,17,examples,unigram,6
+dolphin-yi-34b::moderator,18,burden,unigram,6
+dolphin-yi-34b::moderator,19,burden proof,bigram,6
+dolphin-yi-34b::moderator,20,modification,unigram,6
+dolphin-yi-34b::moderator,21,review,unigram,6
+dolphin-yi-34b::moderator,22,scientific,unigram,6
+dolphin-yi-34b::moderator,23,programs,unigram,5
+dolphin-yi-34b::moderator,24,argues,unigram,5
+dolphin-yi-34b::moderator,25,agreements,unigram,5
+gemma3:27b::opponent,1,atmospheric,unigram,6
+gemma3:27b::opponent,2,evidence,unigram,5
+gemma3:27b::opponent,3,anomalous,unigram,4
+gemma3:27b::opponent,4,acknowledging,unigram,4
+gemma3:27b::opponent,5,modification,unigram,4
+gemma3:27b::opponent,6,deliberate,unigram,4
+gemma3:27b::opponent,7,attributing,unigram,4
+gemma3:27b::opponent,8,observations,unigram,4
+gemma3:27b::opponent,9,lacks,unigram,3
+gemma3:27b::opponent,10,phenomena,unigram,3
+gemma3:27b::opponent,11,biases,unigram,3
+gemma3:27b::opponent,12,deliberate atmospheric,bigram,3
+gemma3:27b::opponent,13,extraordinary,unigram,3
+gemma3:27b::opponent,14,relies,unigram,3
+gemma3:27b::opponent,15,requires,unigram,3
+gemma3:27b::opponent,16,atmospheric modification,bigram,3
+gemma3:27b::opponent,17,potential biases,bigram,2
+gemma3:27b::opponent,18,potential,unigram,2
+gemma3:27b::opponent,19,pattern,unigram,2
+gemma3:27b::opponent,20,requires extraordinary evidence,trigram,2
+gemma3:27b::opponent,21,requires extraordinary,bigram,2
+gemma3:27b::opponent,22,sufficient evidence relies,trigram,2
+gemma3:27b::opponent,23,lacks sufficient,bigram,2
+gemma3:27b::opponent,24,lacks sufficient evidence,trigram,2
+gemma3:27b::opponent,25,extraordinary evidence,bigram,2
+gemma3:27b::proponent,1,atmospheric,unigram,4
+gemma3:27b::proponent,2,dismissal,unigram,3
+gemma3:27b::proponent,3,aerial,unigram,3
+gemma3:27b::proponent,4,simple contrails,bigram,2
+gemma3:27b::proponent,5,reports,unigram,2
+gemma3:27b::proponent,6,pattern,unigram,2
+gemma3:27b::proponent,7,persistent,unigram,2
+gemma3:27b::proponent,8,simple,unigram,2
+gemma3:27b::proponent,9,phenomena,unigram,2
+gemma3:27b::proponent,10,observed,unigram,2
+gemma3:27b::proponent,11,narratives,unigram,2
+gemma3:27b::proponent,12,modification,unigram,2
+gemma3:27b::proponent,13,investigation,unigram,2
+gemma3:27b::proponent,14,ignores,unigram,2
+gemma3:27b::proponent,15,established,unigram,2
+gemma3:27b::proponent,16,scientific,unigram,2
+gemma3:27b::proponent,17,documented,unigram,2
+gemma3:27b::proponent,18,consistent,unigram,2
+gemma3:27b::proponent,19,consistent pattern,bigram,2
+gemma3:27b::proponent,20,data,unigram,2
+gemma3:27b::proponent,21,contrails,unigram,2
+gemma3:27b::proponent,22,aerial phenomena,bigram,2
+gemma3:27b::proponent,23,anomalies,unigram,2
+gemma3:27b::proponent,24,widespread nature observed,trigram,1
+gemma3:27b::proponent,25,widespread nature,bigram,1

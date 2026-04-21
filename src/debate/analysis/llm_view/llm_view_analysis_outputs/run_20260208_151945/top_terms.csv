@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,claim,unigram,3
+dolphin-yi-34b::opponent,2,evidence,unigram,3
+dolphin-yi-34b::opponent,3,fluoridation,unigram,3
+dolphin-yi-34b::opponent,4,lacks,unigram,3
+dolphin-yi-34b::opponent,5,lacks substantial,bigram,3
+dolphin-yi-34b::opponent,6,lacks substantial evidence,trigram,3
+dolphin-yi-34b::opponent,7,population,unigram,3
+dolphin-yi-34b::opponent,8,substantial evidence,bigram,3
+dolphin-yi-34b::opponent,9,water,unigram,3
+dolphin-yi-34b::opponent,10,water fluoridation,bigram,3
+dolphin-yi-34b::opponent,11,substantial,unigram,3
+dolphin-yi-34b::opponent,12,function,unigram,2
+dolphin-yi-34b::opponent,13,evidence relies speculation,trigram,2
+dolphin-yi-34b::opponent,14,evidence relies,bigram,2
+dolphin-yi-34b::opponent,15,claim water,bigram,2
+dolphin-yi-34b::opponent,16,claim water fluoridation,trigram,2
+dolphin-yi-34b::opponent,17,relies,unigram,2
+dolphin-yi-34b::opponent,18,relies speculation,bigram,2
+dolphin-yi-34b::opponent,19,substantial evidence relies,trigram,2
+dolphin-yi-34b::opponent,20,speculation,unigram,2
+dolphin-yi-34b::opponent,21,cognitive function,bigram,2
+dolphin-yi-34b::opponent,22,control,unigram,2
+dolphin-yi-34b::opponent,23,cognitive,unigram,2
+dolphin-yi-34b::opponent,24,control lacks substantial,trigram,1
+dolphin-yi-34b::opponent,25,compliance claim lacks,trigram,1
+dolphin-yi-34b::proponent,1,fluoridation,unigram,3
+dolphin-yi-34b::proponent,2,population,unigram,3
+dolphin-yi-34b::proponent,3,water,unigram,3
+dolphin-yi-34b::proponent,4,water fluoridation,bigram,3
+dolphin-yi-34b::proponent,5,function,unigram,2
+dolphin-yi-34b::proponent,6,public health,bigram,2
+dolphin-yi-34b::proponent,7,control,unigram,2
+dolphin-yi-34b::proponent,8,cognitive,unigram,2
+dolphin-yi-34b::proponent,9,program,unigram,2
+dolphin-yi-34b::proponent,10,public,unigram,2
+dolphin-yi-34b::proponent,11,health,unigram,2
+dolphin-yi-34b::proponent,12,cognitive function,bigram,2
+dolphin-yi-34b::proponent,13,cleverly disguised,bigram,1
+dolphin-yi-34b::proponent,14,aims control population,trigram,1
+dolphin-yi-34b::proponent,15,compliance,unigram,1
+dolphin-yi-34b::proponent,16,cognitive function encourages,trigram,1
+dolphin-yi-34b::proponent,17,disguised,unigram,1
+dolphin-yi-34b::proponent,18,control population weakening,trigram,1
+dolphin-yi-34b::proponent,19,encourages,unigram,1
+dolphin-yi-34b::proponent,20,disguised veil,bigram,1
+dolphin-yi-34b::proponent,21,encourages population,bigram,1
+dolphin-yi-34b::proponent,22,encourages population compliance,trigram,1
+dolphin-yi-34b::proponent,23,fluoridation guise,bigram,1
+dolphin-yi-34b::proponent,24,disguised veil public,trigram,1
+dolphin-yi-34b::proponent,25,fluoridation guise public,trigram,1
+gemma3:27b::moderator,1,ca,unigram,24
+gemma3:27b::moderator,2,sa,unigram,16
+gemma3:27b::moderator,3,fluoridation,unigram,13
+gemma3:27b::moderator,4,evidence,unigram,13
+gemma3:27b::moderator,5,population,unigram,8
+gemma3:27b::moderator,6,historical,unigram,7
+gemma3:27b::moderator,7,water,unigram,7
+gemma3:27b::moderator,8,water fluoridation,bigram,7
+gemma3:27b::moderator,9,effects,unigram,7
+gemma3:27b::moderator,10,agents,unigram,7
+gemma3:27b::moderator,11,cognitive,unigram,7
+gemma3:27b::moderator,12,control,unigram,7
+gemma3:27b::moderator,13,fluoride,unigram,6
+gemma3:27b::moderator,14,population control,bigram,6
+gemma3:27b::moderator,15,questions,unigram,4
+gemma3:27b::moderator,16,proof,unigram,4
+gemma3:27b::moderator,17,burden proof,bigram,4
+gemma3:27b::moderator,18,burden,unigram,4
+gemma3:27b::moderator,19,american,unigram,4
+gemma3:27b::moderator,20,health,unigram,4
+gemma3:27b::moderator,21,fluoridation population,bigram,4
+gemma3:27b::moderator,22,distrust,unigram,4
+gemma3:27b::moderator,23,fluoride society,bigram,4
+gemma3:27b::moderator,24,harm,unigram,4
+gemma3:27b::moderator,25,society,unigram,4

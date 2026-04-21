@@ -1,0 +1,3 @@
+model_name,debate_role,observed_turns,turning_point_count,max_abs_delta,avg_abs_delta,avg_signed_delta,turning_point_rate
+dolphin-yi-34b,opponent,4,0,2.0,1.25,1.25,0.0
+gemma3:27b,proponent,4,1,16.0,5.5,2.5,0.25

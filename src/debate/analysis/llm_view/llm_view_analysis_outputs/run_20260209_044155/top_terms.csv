@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,manipulation,unigram,17
+dolphin-yi-34b::moderator,2,ca,unigram,16
+dolphin-yi-34b::moderator,3,sa,unigram,15
+dolphin-yi-34b::moderator,4,intent,unigram,13
+dolphin-yi-34b::moderator,5,algorithms,unigram,11
+dolphin-yi-34b::moderator,6,evidence,unigram,11
+dolphin-yi-34b::moderator,7,algorithmic,unigram,10
+dolphin-yi-34b::moderator,8,social media,bigram,9
+dolphin-yi-34b::moderator,9,user,unigram,9
+dolphin-yi-34b::moderator,10,agents,unigram,9
+dolphin-yi-34b::moderator,11,specific,unigram,9
+dolphin-yi-34b::moderator,12,social,unigram,9
+dolphin-yi-34b::moderator,13,media,unigram,9
+dolphin-yi-34b::moderator,14,engagement,unigram,8
+dolphin-yi-34b::moderator,15,questions,unigram,8
+dolphin-yi-34b::moderator,16,algorithm,unigram,7
+dolphin-yi-34b::moderator,17,design,unigram,7
+dolphin-yi-34b::moderator,18,algorithm design,bigram,7
+dolphin-yi-34b::moderator,19,argues,unigram,6
+dolphin-yi-34b::moderator,20,cognitive vulnerabilities,bigram,6
+dolphin-yi-34b::moderator,21,user psychology,bigram,6
+dolphin-yi-34b::moderator,22,ca argues,bigram,6
+dolphin-yi-34b::moderator,23,cognitive,unigram,6
+dolphin-yi-34b::moderator,24,psychology,unigram,6
+dolphin-yi-34b::moderator,25,vulnerabilities,unigram,6
+dolphin-yi-34b::opponent,1,manipulation,unigram,9
+dolphin-yi-34b::opponent,2,based,unigram,6
+dolphin-yi-34b::opponent,3,engagement,unigram,6
+dolphin-yi-34b::opponent,4,evidence,unigram,5
+dolphin-yi-34b::opponent,5,evidence intent,bigram,5
+dolphin-yi-34b::opponent,6,inherently,unigram,5
+dolphin-yi-34b::opponent,7,intent,unigram,5
+dolphin-yi-34b::opponent,8,conflates,unigram,5
+dolphin-yi-34b::opponent,9,optimization,unigram,4
+dolphin-yi-34b::opponent,10,profit,unigram,4
+dolphin-yi-34b::opponent,11,algorithms,unigram,4
+dolphin-yi-34b::opponent,12,design,unigram,3
+dolphin-yi-34b::opponent,13,based exploiting,bigram,3
+dolphin-yi-34b::opponent,14,design conflates,bigram,3
+dolphin-yi-34b::opponent,15,direct evidence intent,trigram,3
+dolphin-yi-34b::opponent,16,algorithmic,unigram,3
+dolphin-yi-34b::opponent,17,engagement inherently,bigram,3
+dolphin-yi-34b::opponent,18,engagement inherently leads,trigram,3
+dolphin-yi-34b::opponent,19,direct evidence,bigram,3
+dolphin-yi-34b::opponent,20,exploiting,unigram,3
+dolphin-yi-34b::opponent,21,influence,unigram,3
+dolphin-yi-34b::opponent,22,inherently leads,bigram,3
+dolphin-yi-34b::opponent,23,inherently leads manipulation,trigram,3
+dolphin-yi-34b::opponent,24,direct,unigram,3
+dolphin-yi-34b::opponent,25,leads manipulation,bigram,3
+gemma3:27b::proponent,1,intent,unigram,4
+gemma3:27b::proponent,2,scientific agent,bigram,3
+gemma3:27b::proponent,3,proving,unigram,3
+gemma3:27b::proponent,4,scientific,unigram,3
+gemma3:27b::proponent,5,manipulation,unigram,3
+gemma3:27b::proponent,6,algorithmic,unigram,3
+gemma3:27b::proponent,7,agent,unigram,3
+gemma3:27b::proponent,8,anomalies,unigram,2
+gemma3:27b::proponent,9,proving intent,bigram,2
+gemma3:27b::proponent,10,intent ignores,bigram,2
+gemma3:27b::proponent,11,manipulative,unigram,2
+gemma3:27b::proponent,12,ignores,unigram,2
+gemma3:27b::proponent,13,insistence,unigram,2
+gemma3:27b::proponent,14,insistence proving,bigram,2
+gemma3:27b::proponent,15,regardless,unigram,2
+gemma3:27b::proponent,16,behavior,unigram,2
+gemma3:27b::proponent,17,engagement,unigram,2
+gemma3:27b::proponent,18,functions,unigram,2
+gemma3:27b::proponent,19,consequences,unigram,2
+gemma3:27b::proponent,20,consistent,unigram,2
+gemma3:27b::proponent,21,creating,unigram,2
+gemma3:27b::proponent,22,demonstrably,unigram,2
+gemma3:27b::proponent,23,algorithmic behavior,bigram,2
+gemma3:27b::proponent,24,societal,unigram,2
+gemma3:27b::proponent,25,systemic,unigram,1

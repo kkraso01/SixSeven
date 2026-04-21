@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,behavior,unigram,1
+dolphin-yi-34b::opponent,2,behavior celestial,bigram,1
+dolphin-yi-34b::opponent,3,behavior celestial bodies,trigram,1
+dolphin-yi-34b::opponent,4,bodies,unigram,1
+dolphin-yi-34b::opponent,5,celestial,unigram,1
+dolphin-yi-34b::opponent,6,celestial bodies,bigram,1
+dolphin-yi-34b::opponent,7,confirmed,unigram,1
+dolphin-yi-34b::opponent,8,confirmed multiple,bigram,1
+dolphin-yi-34b::opponent,9,confirmed multiple independent,trigram,1
+dolphin-yi-34b::opponent,10,earth,unigram,1
+dolphin-yi-34b::opponent,11,earth shape,bigram,1
+dolphin-yi-34b::opponent,12,earth shape confirmed,trigram,1
+dolphin-yi-34b::opponent,13,evidence,unigram,1
+dolphin-yi-34b::opponent,14,evidence including,bigram,1
+dolphin-yi-34b::opponent,15,evidence including satellite,trigram,1
+dolphin-yi-34b::opponent,16,imagery,unigram,1
+dolphin-yi-34b::opponent,17,imagery observed,bigram,1
+dolphin-yi-34b::opponent,18,imagery observed behavior,trigram,1
+dolphin-yi-34b::opponent,19,including,unigram,1
+dolphin-yi-34b::opponent,20,including satellite,bigram,1
+dolphin-yi-34b::opponent,21,including satellite imagery,trigram,1
+dolphin-yi-34b::opponent,22,independent,unigram,1
+dolphin-yi-34b::opponent,23,independent lines,bigram,1
+dolphin-yi-34b::opponent,24,independent lines evidence,trigram,1
+dolphin-yi-34b::opponent,25,lines,unigram,1
+gemma3:27b::moderator,1,ca,unigram,8
+gemma3:27b::moderator,2,sa,unigram,5
+gemma3:27b::moderator,3,evidence,unigram,4
+gemma3:27b::moderator,4,independent,unigram,4
+gemma3:27b::moderator,5,data,unigram,3
+gemma3:27b::moderator,6,earth,unigram,3
+gemma3:27b::moderator,7,spherical,unigram,2
+gemma3:27b::moderator,8,questions,unigram,2
+gemma3:27b::moderator,9,flat,unigram,2
+gemma3:27b::moderator,10,independent verification,bigram,2
+gemma3:27b::moderator,11,space agencies,bigram,2
+gemma3:27b::moderator,12,flat earth sa,trigram,2
+gemma3:27b::moderator,13,flat earth,bigram,2
+gemma3:27b::moderator,14,earth sa,bigram,2
+gemma3:27b::moderator,15,conspiracy,unigram,2
+gemma3:27b::moderator,16,space,unigram,2
+gemma3:27b::moderator,17,constitutes,unigram,2
+gemma3:27b::moderator,18,claims,unigram,2
+gemma3:27b::moderator,19,agencies,unigram,2
+gemma3:27b::moderator,20,agents,unigram,2
+gemma3:27b::moderator,21,verification,unigram,2
+gemma3:27b::moderator,22,verified,unigram,1
+gemma3:27b::moderator,23,verification sa offering,trigram,1
+gemma3:27b::moderator,24,verification sa,bigram,1
+gemma3:27b::moderator,25,verification disagree constitutes,trigram,1
+gemma3:27b::proponent,1,earth,unigram,2
+gemma3:27b::proponent,2,agencies,unigram,1
+gemma3:27b::proponent,3,agencies conceal far,trigram,1
+gemma3:27b::proponent,4,agencies conceal,bigram,1
+gemma3:27b::proponent,5,carefully constructed,bigram,1
+gemma3:27b::proponent,6,carefully constructed illusion,trigram,1
+gemma3:27b::proponent,7,claim,unigram,1
+gemma3:27b::proponent,8,carefully,unigram,1
+gemma3:27b::proponent,9,claim spherical,bigram,1
+gemma3:27b::proponent,10,claim spherical earth,trigram,1
+gemma3:27b::proponent,11,conceal far,bigram,1
+gemma3:27b::proponent,12,conceal,unigram,1
+gemma3:27b::proponent,13,conceal far simpler,trigram,1
+gemma3:27b::proponent,14,constructed,unigram,1
+gemma3:27b::proponent,15,constructed illusion,bigram,1
+gemma3:27b::proponent,16,constructed illusion maintained,trigram,1
+gemma3:27b::proponent,17,earth carefully,bigram,1
+gemma3:27b::proponent,18,earth carefully constructed,trigram,1
+gemma3:27b::proponent,19,earth flat,bigram,1
+gemma3:27b::proponent,20,far,unigram,1
+gemma3:27b::proponent,21,far simpler,bigram,1
+gemma3:27b::proponent,22,far simpler strategically,trigram,1
+gemma3:27b::proponent,23,flat,unigram,1
+gemma3:27b::proponent,24,guarded,unigram,1
+gemma3:27b::proponent,25,guarded truth,bigram,1

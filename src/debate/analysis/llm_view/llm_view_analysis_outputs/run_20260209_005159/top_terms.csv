@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,fluoridation,unigram,5
+dolphin-yi-34b::proponent,2,water,unigram,5
+dolphin-yi-34b::proponent,3,water fluoridation,bigram,5
+dolphin-yi-34b::proponent,4,capable,unigram,4
+dolphin-yi-34b::proponent,5,control,unigram,4
+dolphin-yi-34b::proponent,6,control population,bigram,4
+dolphin-yi-34b::proponent,7,compliant intellectually,bigram,4
+dolphin-yi-34b::proponent,8,compliant,unigram,4
+dolphin-yi-34b::proponent,9,government tactic control,trigram,4
+dolphin-yi-34b::proponent,10,fluoridation government,bigram,4
+dolphin-yi-34b::proponent,11,fluoridation government tactic,trigram,4
+dolphin-yi-34b::proponent,12,government,unigram,4
+dolphin-yi-34b::proponent,13,government tactic,bigram,4
+dolphin-yi-34b::proponent,14,intellectually capable,bigram,4
+dolphin-yi-34b::proponent,15,control population making,trigram,4
+dolphin-yi-34b::proponent,16,compliant intellectually capable,trigram,4
+dolphin-yi-34b::proponent,17,intellectually,unigram,4
+dolphin-yi-34b::proponent,18,making compliant intellectually,trigram,4
+dolphin-yi-34b::proponent,19,tactic,unigram,4
+dolphin-yi-34b::proponent,20,tactic control,bigram,4
+dolphin-yi-34b::proponent,21,population making,bigram,4
+dolphin-yi-34b::proponent,22,population,unigram,4
+dolphin-yi-34b::proponent,23,making,unigram,4
+dolphin-yi-34b::proponent,24,tactic control population,trigram,4
+dolphin-yi-34b::proponent,25,water fluoridation government,trigram,4
+gemma3:27b::moderator,1,ca,unigram,39
+gemma3:27b::moderator,2,sa,unigram,27
+gemma3:27b::moderator,3,evidence,unigram,20
+gemma3:27b::moderator,4,fluoridation,unigram,19
+gemma3:27b::moderator,5,agents,unigram,15
+gemma3:27b::moderator,6,control,unigram,14
+gemma3:27b::moderator,7,correlation,unigram,11
+gemma3:27b::moderator,8,cognitive,unigram,9
+gemma3:27b::moderator,9,fluoride,unigram,7
+gemma3:27b::moderator,10,water fluoridation,bigram,7
+gemma3:27b::moderator,11,specific,unigram,7
+gemma3:27b::moderator,12,proof,unigram,7
+gemma3:27b::moderator,13,benefits,unigram,7
+gemma3:27b::moderator,14,water,unigram,7
+gemma3:27b::moderator,15,burden proof,bigram,6
+gemma3:27b::moderator,16,acknowledge,unigram,6
+gemma3:27b::moderator,17,burden,unigram,6
+gemma3:27b::moderator,18,health,unigram,6
+gemma3:27b::moderator,19,round recap,bigram,5
+gemma3:27b::moderator,20,agreements agents acknowledge,trigram,5
+gemma3:27b::moderator,21,agreements agents,bigram,5
+gemma3:27b::moderator,22,agents acknowledge,bigram,5
+gemma3:27b::moderator,23,shift,unigram,5
+gemma3:27b::moderator,24,agents agree,bigram,5
+gemma3:27b::moderator,25,recap,unigram,5
+gemma3:27b::opponent,1,health,unigram,5
+gemma3:27b::opponent,2,fluoridation,unigram,5
+gemma3:27b::opponent,3,evidence,unigram,5
+gemma3:27b::opponent,4,established,unigram,5
+gemma3:27b::opponent,5,water,unigram,5
+gemma3:27b::opponent,6,water fluoridation,bigram,5
+gemma3:27b::opponent,7,control,unigram,4
+gemma3:27b::opponent,8,tactic,unigram,4
+gemma3:27b::opponent,9,claim,unigram,3
+gemma3:27b::opponent,10,dental,unigram,3
+gemma3:27b::opponent,11,explanation,unigram,3
+gemma3:27b::opponent,12,government,unigram,3
+gemma3:27b::opponent,13,dental health,bigram,3
+gemma3:27b::opponent,14,benefits,unigram,3
+gemma3:27b::opponent,15,claim water,bigram,3
+gemma3:27b::opponent,16,claim water fluoridation,trigram,3
+gemma3:27b::opponent,17,lacks,unigram,3
+gemma3:27b::opponent,18,population,unigram,3
+gemma3:27b::opponent,19,government tactic,bigram,2
+gemma3:27b::opponent,20,evidence misinterprets,bigram,2
+gemma3:27b::opponent,21,fluoridation deliberate,bigram,2
+gemma3:27b::opponent,22,established benefits dental,trigram,2
+gemma3:27b::opponent,23,evidence relies,bigram,2
+gemma3:27b::opponent,24,public,unigram,2
+gemma3:27b::opponent,25,parsimonious explanation,bigram,2

@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,deep_state,government,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents agree that the debate focuses on whether intelligence agencies and bureaucracies control government policy based on systemic incentives., Both agents are seeking concrete examples of instances where intelligence agencies or bureaucracies have directly controlled government policy.
+Disagreements: CA argues that the deep state's control over government policy is evident when examining the systemic incentives of intelligence agencies and bureaucracies to maintain power and control., SA claims that the notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+Detected moves: Appeal to authority: CA cites historical examples such as the Pentagon Papers to support their argument., Generalization: SA points out that the claim generalizes about all intelligence agencies and bureaucracies rather than examining specific cases or institutions.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What are some specific examples of intelligence agencies or bureaucracies influencing government policy?, How can we differentiate between instances where elected officials made independent choices versus being influenced by unelected bodies?"
+dolphin-yi-34b,moderator,most_evidence_dense,deep_state,government,middle,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the potential influence of systemic incentives on intelligence agencies and bureaucracies., Agents agree that concrete evidence is necessary to support claims about direct control over government policy.
+Disagreements: CA argues that systemic incentives indicate deep state control over government policy, while SA questions the lack of robust evidence for this claim., SA proposes alternative hypotheses and calls for specific case analysis, which CA has not yet addressed.
+Detected moves: Institutional critique (CA): Asserts that examining systemic incentives reveals deep state control without providing concrete evidence., Evidence-based reasoning (SA): Challenges the claim's lack of robust evidence and calls for specific examples to support it.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide concrete examples of instances where intelligence agencies or bureaucracies have directly controlled government policy? (SA's question)"
+dolphin-yi-34b,moderator,most_rebuttal_dense,deep_state,government,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the influence of intelligence agencies and bureaucrats on government policy.
+Disagreements: CA argues that unelected figures control government policy, while SA believes this is unsupported by evidence., SA questions the assumption that elected officials are consistently overruled, whereas CA claims this indicates a 'deep state'.
+Detected moves: appeal-to-anecdote, goalpost-shift
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claim about a 'deep state' controlling government policy?, How do we distinguish between legitimate influence and undue control by unelected bodies in political decision-making processes?"
+dolphin-yi-34b,moderator,most_hedged,deep_state,government,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents agree on the importance of examining systemic incentives in intelligence agencies and bureaucracies., Both agents acknowledge the potential for these institutions to influence policy decisions.
+Disagreements: CA argues that deep state control over government policy is evident due to systemic incentives, while SA claims this lacks robust evidence., SA suggests varying roles of intelligence agencies and bureaucracies in policymaking based on specific issues and institutional context, while CA generalizes their control over policy.
+Detected moves: Appeal to Authority: CA cites historical examples such as the Pentagon Papers to support their claim., Burden of Proof Shift: Both agents ask for concrete examples from the opponent to prove or disprove their respective claims.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific instances of intelligence agencies or bureaucracies controlling government policy can you provide?, How do systemic incentives in these institutions relate to direct control over policy decisions?"
+dolphin-yi-34b,moderator,most_assertive,deep_state,government,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents agree that the debate focuses on whether intelligence agencies and bureaucracies control government policy based on systemic incentives., Both agents are seeking concrete examples of instances where intelligence agencies or bureaucracies have directly controlled government policy.
+Disagreements: CA argues that the deep state's control over government policy is evident when examining the systemic incentives of intelligence agencies and bureaucracies to maintain power and control., SA claims that the notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+Detected moves: Appeal to authority: CA cites historical examples such as the Pentagon Papers to support their argument., Generalization: SA points out that the claim generalizes about all intelligence agencies and bureaucracies rather than examining specific cases or institutions.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What are some specific examples of intelligence agencies or bureaucracies influencing government policy?, How can we differentiate between instances where elected officials made independent choices versus being influenced by unelected bodies?"
+dolphin-yi-34b,moderator,most_moral_framed,deep_state,government,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the influence of intelligence agencies and bureaucrats on government policy.
+Disagreements: CA argues that unelected figures control government policy, while SA believes this is unsupported by evidence., SA questions the assumption that elected officials are consistently overruled, whereas CA claims this indicates a 'deep state'.
+Detected moves: appeal-to-anecdote, goalpost-shift
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claim about a 'deep state' controlling government policy?, How do we distinguish between legitimate influence and undue control by unelected bodies in political decision-making processes?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,deep_state,government,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents agree on the importance of examining systemic incentives in intelligence agencies and bureaucracies., Both agents acknowledge the potential for these institutions to influence policy decisions.
+Disagreements: CA argues that deep state control over government policy is evident due to systemic incentives, while SA claims this lacks robust evidence., SA suggests varying roles of intelligence agencies and bureaucracies in policymaking based on specific issues and institutional context, while CA generalizes their control over policy.
+Detected moves: Appeal to Authority: CA cites historical examples such as the Pentagon Papers to support their claim., Burden of Proof Shift: Both agents ask for concrete examples from the opponent to prove or disprove their respective claims.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific instances of intelligence agencies or bureaucracies controlling government policy can you provide?, How do systemic incentives in these institutions relate to direct control over policy decisions?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,deep_state,government,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the influence of intelligence agencies and bureaucrats on government policy.
+Disagreements: CA argues that unelected figures control government policy, while SA believes this is unsupported by evidence., SA questions the assumption that elected officials are consistently overruled, whereas CA claims this indicates a 'deep state'.
+Detected moves: appeal-to-anecdote, goalpost-shift
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claim about a 'deep state' controlling government policy?, How do we distinguish between legitimate influence and undue control by unelected bodies in political decision-making processes?"
+dolphin-yi-34b,opponent,highest_confidence,deep_state,government,closing,4,11,58.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,most_evidence_dense,deep_state,government,opening,1,2,55.0,The notion that an unelected 'deep state' controls government policy is not supported by reliable evidence.
+dolphin-yi-34b,opponent,most_rebuttal_dense,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,most_hedged,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,most_assertive,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,most_moral_framed,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,strongest_stance_proxy,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,opponent,weakest_stance_proxy,deep_state,government,opening,2,5,56.0,The notion of a 'deep state' controlling government policy lacks robust evidence and relies on anecdotal examples.
+dolphin-yi-34b,proponent,highest_confidence,deep_state,government,opening,1,1,55.0,The deep state's control over government policy is evident when we look at the increasing power of intelligence agencies and unelected bureaucrats.
+dolphin-yi-34b,proponent,most_evidence_dense,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,most_rebuttal_dense,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,most_hedged,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,most_assertive,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,most_moral_framed,deep_state,government,opening,2,4,54.0,The deep state's influence is evident in the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,strongest_stance_proxy,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.
+dolphin-yi-34b,proponent,weakest_stance_proxy,deep_state,government,middle,3,7,52.0,The deep state's control over government policy is evident when we examine the systemic incentives of intelligence agencies and bureaucracies to maintain power and control.

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,federal,unigram,5
+dolphin-yi-34b::proponent,2,federal reserve,bigram,5
+dolphin-yi-34b::proponent,3,reserve,unigram,5
+dolphin-yi-34b::proponent,4,banks,unigram,4
+dolphin-yi-34b::proponent,5,broader,unigram,3
+dolphin-yi-34b::proponent,6,banks creates,bigram,2
+dolphin-yi-34b::proponent,7,ability serve broader,trigram,2
+dolphin-yi-34b::proponent,8,banks creates inherent,trigram,2
+dolphin-yi-34b::proponent,9,commercial banks creates,trigram,2
+dolphin-yi-34b::proponent,10,conflicts,unigram,2
+dolphin-yi-34b::proponent,11,conflicts undermine,bigram,2
+dolphin-yi-34b::proponent,12,conflicts undermine ability,trigram,2
+dolphin-yi-34b::proponent,13,broader public,bigram,2
+dolphin-yi-34b::proponent,14,commercial,unigram,2
+dolphin-yi-34b::proponent,15,allows,unigram,2
+dolphin-yi-34b::proponent,16,ability,unigram,2
+dolphin-yi-34b::proponent,17,creates inherent conflicts,trigram,2
+dolphin-yi-34b::proponent,18,creates inherent,bigram,2
+dolphin-yi-34b::proponent,19,inherent,unigram,2
+dolphin-yi-34b::proponent,20,federal reserve commercial,trigram,2
+dolphin-yi-34b::proponent,21,economic,unigram,2
+dolphin-yi-34b::proponent,22,interests member banks,trigram,2
+dolphin-yi-34b::proponent,23,interests member,bigram,2
+dolphin-yi-34b::proponent,24,interests,unigram,2
+dolphin-yi-34b::proponent,25,inherent conflicts,bigram,2
+gemma3:27b::moderator,1,ca,unigram,30
+gemma3:27b::moderator,2,sa,unigram,26
+gemma3:27b::moderator,3,fed,unigram,24
+gemma3:27b::moderator,4,agents,unigram,13
+gemma3:27b::moderator,5,evidence,unigram,13
+gemma3:27b::moderator,6,structure,unigram,12
+gemma3:27b::moderator,7,banks,unigram,12
+gemma3:27b::moderator,8,reserve,unigram,8
+gemma3:27b::moderator,9,federal,unigram,8
+gemma3:27b::moderator,10,agree,unigram,8
+gemma3:27b::moderator,11,citizens,unigram,8
+gemma3:27b::moderator,12,federal reserve,bigram,8
+gemma3:27b::moderator,13,benefits,unigram,6
+gemma3:27b::moderator,14,round recap agreements,trigram,5
+gemma3:27b::moderator,15,scores civility epistemic,trigram,5
+gemma3:27b::moderator,16,scores,unigram,5
+gemma3:27b::moderator,17,proof shift,bigram,5
+gemma3:27b::moderator,18,proof,unigram,5
+gemma3:27b::moderator,19,recap,unigram,5
+gemma3:27b::moderator,20,recap agreements,bigram,5
+gemma3:27b::moderator,21,agreements agents,bigram,5
+gemma3:27b::moderator,22,questions,unigram,5
+gemma3:27b::moderator,23,public,unigram,5
+gemma3:27b::moderator,24,appeal,unigram,5
+gemma3:27b::moderator,25,recap agreements agents,trigram,5
+gemma3:27b::opponent,1,reserve,unigram,5
+gemma3:27b::opponent,2,federal reserve,bigram,5
+gemma3:27b::opponent,3,federal,unigram,5
+gemma3:27b::opponent,4,economic,unigram,5
+gemma3:27b::opponent,5,evidence,unigram,4
+gemma3:27b::opponent,6,mandate,unigram,4
+gemma3:27b::opponent,7,lacks,unigram,3
+gemma3:27b::opponent,8,broader,unigram,3
+gemma3:27b::opponent,9,ignores,unigram,3
+gemma3:27b::opponent,10,broader economic,bigram,3
+gemma3:27b::opponent,11,structure,unigram,3
+gemma3:27b::opponent,12,reserve structure,bigram,2
+gemma3:27b::opponent,13,broader economic stability,trigram,2
+gemma3:27b::opponent,14,warrants,unigram,2
+gemma3:27b::opponent,15,scrutiny,unigram,2
+gemma3:27b::opponent,16,reserve structure warrants,trigram,2
+gemma3:27b::opponent,17,mechanisms,unigram,2
+gemma3:27b::opponent,18,outcomes,unigram,2
+gemma3:27b::opponent,19,observed economic outcomes,trigram,2
+gemma3:27b::opponent,20,observed economic,bigram,2
+gemma3:27b::opponent,21,observed,unigram,2
+gemma3:27b::opponent,22,member,unigram,2
+gemma3:27b::opponent,23,claim,unigram,2
+gemma3:27b::opponent,24,lacks sufficient evidence,trigram,2
+gemma3:27b::opponent,25,interests broader economic,trigram,2

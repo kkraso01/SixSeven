@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,water,unigram,6
+dolphin-yi-34b::opponent,2,fluoridation,unigram,5
+dolphin-yi-34b::opponent,3,water fluoridation,bigram,5
+dolphin-yi-34b::opponent,4,potential,unigram,4
+dolphin-yi-34b::opponent,5,health,unigram,3
+dolphin-yi-34b::opponent,6,cognitive,unigram,3
+dolphin-yi-34b::opponent,7,fluoridation potential,bigram,3
+dolphin-yi-34b::opponent,8,current,unigram,3
+dolphin-yi-34b::opponent,9,water fluoridation potential,trigram,3
+dolphin-yi-34b::opponent,10,dental,unigram,2
+dolphin-yi-34b::opponent,11,function increase population,trigram,2
+dolphin-yi-34b::opponent,12,fluoridation potential risks,trigram,2
+dolphin-yi-34b::opponent,13,context perceived,bigram,2
+dolphin-yi-34b::opponent,14,context,unigram,2
+dolphin-yi-34b::opponent,15,cognitive function increase,trigram,2
+dolphin-yi-34b::opponent,16,cognitive function,bigram,2
+dolphin-yi-34b::opponent,17,evidence,unigram,2
+dolphin-yi-34b::opponent,18,function,unigram,2
+dolphin-yi-34b::opponent,19,historical context,bigram,2
+dolphin-yi-34b::opponent,20,function increase,bigram,2
+dolphin-yi-34b::opponent,21,historical context perceived,trigram,2
+dolphin-yi-34b::opponent,22,increase,unigram,2
+dolphin-yi-34b::opponent,23,historical,unigram,2
+dolphin-yi-34b::opponent,24,perceived industry influence,trigram,2
+dolphin-yi-34b::opponent,25,increase population compliance,trigram,2
+gemma3:27b::moderator,1,ca,unigram,32
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,18
+gemma3:27b::moderator,4,research,unigram,16
+gemma3:27b::moderator,5,fluoridation,unigram,16
+gemma3:27b::moderator,6,potential,unigram,11
+gemma3:27b::moderator,7,agents,unigram,10
+gemma3:27b::moderator,8,systemic,unigram,9
+gemma3:27b::moderator,9,health,unigram,9
+gemma3:27b::moderator,10,funding,unigram,9
+gemma3:27b::moderator,11,effects,unigram,8
+gemma3:27b::moderator,12,acknowledge,unigram,8
+gemma3:27b::moderator,13,bias,unigram,7
+gemma3:27b::moderator,14,studies,unigram,7
+gemma3:27b::moderator,15,public,unigram,7
+gemma3:27b::moderator,16,public health,bigram,7
+gemma3:27b::moderator,17,historical,unigram,7
+gemma3:27b::moderator,18,fluoride,unigram,7
+gemma3:27b::moderator,19,questions,unigram,6
+gemma3:27b::moderator,20,shift,unigram,6
+gemma3:27b::moderator,21,harm,unigram,6
+gemma3:27b::moderator,22,frames,unigram,6
+gemma3:27b::moderator,23,proof,unigram,6
+gemma3:27b::moderator,24,emphasizes,unigram,6
+gemma3:27b::moderator,25,recap agreements,bigram,5
+gemma3:27b::proponent,1,public health,bigram,5
+gemma3:27b::proponent,2,public,unigram,5
+gemma3:27b::proponent,3,health,unigram,5
+gemma3:27b::proponent,4,isn,unigram,3
+gemma3:27b::proponent,5,fluoride,unigram,3
+gemma3:27b::proponent,6,neurological,unigram,3
+gemma3:27b::proponent,7,concerns,unigram,2
+gemma3:27b::proponent,8,cognitive,unigram,2
+gemma3:27b::proponent,9,potential,unigram,2
+gemma3:27b::proponent,10,prioritizing,unigram,2
+gemma3:27b::proponent,11,persistent,unigram,2
+gemma3:27b::proponent,12,pattern,unigram,2
+gemma3:27b::proponent,13,long,unigram,2
+gemma3:27b::proponent,14,long term,bigram,2
+gemma3:27b::proponent,15,water fluoridation,bigram,2
+gemma3:27b::proponent,16,water,unigram,2
+gemma3:27b::proponent,17,interests,unigram,2
+gemma3:27b::proponent,18,maintaining,unigram,2
+gemma3:27b::proponent,19,independent,unigram,2
+gemma3:27b::proponent,20,incentives,unigram,2
+gemma3:27b::proponent,21,fluoridation,unigram,2
+gemma3:27b::proponent,22,established,unigram,2
+gemma3:27b::proponent,23,effects,unigram,2
+gemma3:27b::proponent,24,systemic,unigram,2
+gemma3:27b::proponent,25,term,unigram,2

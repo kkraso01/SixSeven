@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_105659",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_105659",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "9_11_inside_job",
+  "topic_category": "government",
+  "topic_title": "The September 11, 2001 terrorist attacks",
+  "topic_motion": "The 9/11 attacks were orchestrated by elements within the US government to justify wars in the Middle East.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "gemma3:27b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": "SA",
+    "winner_role": "opponent",
+    "winner_source": "outcome_summary",
+    "winner_confidence": "high",
+    "winner_evidence": "SA successfully defended their position by consistently demanding evidence and offering alternative explanations, leading to a decrease in CA's confidence. While CA didn't concede, their arguments lost ground."
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

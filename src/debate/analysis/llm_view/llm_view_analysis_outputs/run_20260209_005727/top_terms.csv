@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,cheap,unigram,3
+dolphin-yi-34b::proponent,2,cheap effective,bigram,3
+dolphin-yi-34b::proponent,3,cheap effective cures,trigram,3
+dolphin-yi-34b::proponent,4,companies,unigram,3
+dolphin-yi-34b::proponent,5,companies prioritize,bigram,3
+dolphin-yi-34b::proponent,6,companies prioritize profit,trigram,3
+dolphin-yi-34b::proponent,7,cures,unigram,3
+dolphin-yi-34b::proponent,8,effective,unigram,3
+dolphin-yi-34b::proponent,9,effective cures,bigram,3
+dolphin-yi-34b::proponent,10,leading,unigram,3
+dolphin-yi-34b::proponent,11,leading suppression,bigram,3
+dolphin-yi-34b::proponent,12,leading suppression cheap,trigram,3
+dolphin-yi-34b::proponent,13,patient,unigram,3
+dolphin-yi-34b::proponent,14,patient welfare,bigram,3
+dolphin-yi-34b::proponent,15,patient welfare leading,trigram,3
+dolphin-yi-34b::proponent,16,pharmaceutical,unigram,3
+dolphin-yi-34b::proponent,17,pharmaceutical companies,bigram,3
+dolphin-yi-34b::proponent,18,pharmaceutical companies prioritize,trigram,3
+dolphin-yi-34b::proponent,19,prioritize,unigram,3
+dolphin-yi-34b::proponent,20,prioritize profit,bigram,3
+dolphin-yi-34b::proponent,21,prioritize profit patient,trigram,3
+dolphin-yi-34b::proponent,22,profit,unigram,3
+dolphin-yi-34b::proponent,23,profit patient,bigram,3
+dolphin-yi-34b::proponent,24,profit patient welfare,trigram,3
+dolphin-yi-34b::proponent,25,suppression,unigram,3
+gemma3:27b::moderator,1,ca,unigram,19
+gemma3:27b::moderator,2,sa,unigram,15
+gemma3:27b::moderator,3,suppression,unigram,14
+gemma3:27b::moderator,4,evidence,unigram,13
+gemma3:27b::moderator,5,cures,unigram,7
+gemma3:27b::moderator,6,obstruction,unigram,6
+gemma3:27b::moderator,7,intentional,unigram,6
+gemma3:27b::moderator,8,profit,unigram,6
+gemma3:27b::moderator,9,agents,unigram,5
+gemma3:27b::moderator,10,cures sa,bigram,5
+gemma3:27b::moderator,11,examples,unigram,5
+gemma3:27b::moderator,12,proof,unigram,4
+gemma3:27b::moderator,13,specific,unigram,4
+gemma3:27b::moderator,14,need,unigram,4
+gemma3:27b::moderator,15,pharmaceutical,unigram,4
+gemma3:27b::moderator,16,agree,unigram,4
+gemma3:27b::moderator,17,gilead,unigram,4
+gemma3:27b::moderator,18,prioritization,unigram,4
+gemma3:27b::moderator,19,regulatory,unigram,4
+gemma3:27b::moderator,20,intentional obstruction,bigram,4
+gemma3:27b::moderator,21,treatments,unigram,4
+gemma3:27b::moderator,22,acknowledge,unigram,4
+gemma3:27b::moderator,23,scores civility,bigram,3
+gemma3:27b::moderator,24,sa emphasizes need,trigram,3
+gemma3:27b::moderator,25,appeal,unigram,3
+gemma3:27b::opponent,1,effective,unigram,3
+gemma3:27b::opponent,2,cures,unigram,3
+gemma3:27b::opponent,3,pharmaceutical,unigram,3
+gemma3:27b::opponent,4,cheap,unigram,2
+gemma3:27b::opponent,5,companies,unigram,2
+gemma3:27b::opponent,6,cures requires,bigram,2
+gemma3:27b::opponent,7,evidence,unigram,2
+gemma3:27b::opponent,8,claim,unigram,2
+gemma3:27b::opponent,9,obstruction,unigram,2
+gemma3:27b::opponent,10,intentional,unigram,2
+gemma3:27b::opponent,11,profit,unigram,2
+gemma3:27b::opponent,12,intentional obstruction,bigram,2
+gemma3:27b::opponent,13,pharmaceutical companies,bigram,2
+gemma3:27b::opponent,14,suppression,unigram,2
+gemma3:27b::opponent,15,requires,unigram,2
+gemma3:27b::opponent,16,relies,unigram,2
+gemma3:27b::opponent,17,suppress,unigram,2
+gemma3:27b::opponent,18,undoubtedly,unigram,2
+gemma3:27b::opponent,19,cheap effective,bigram,1
+gemma3:27b::opponent,20,attributing systematic,bigram,1
+gemma3:27b::opponent,21,attributing systematic suppression,trigram,1
+gemma3:27b::opponent,22,claim actively,bigram,1
+gemma3:27b::opponent,23,claim actively suppress,trigram,1
+gemma3:27b::opponent,24,cheap cures requires,trigram,1
+gemma3:27b::opponent,25,claim pharmaceutical,bigram,1

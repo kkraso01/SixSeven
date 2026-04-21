@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,cover,unigram,4
+dolphin-yi-34b::proponent,2,11,unigram,3
+dolphin-yi-34b::proponent,3,attacks,unigram,3
+dolphin-yi-34b::proponent,4,government,unigram,3
+dolphin-yi-34b::proponent,5,act numerous warnings,trigram,2
+dolphin-yi-34b::proponent,6,act numerous,bigram,2
+dolphin-yi-34b::proponent,7,11 point deliberate,trigram,2
+dolphin-yi-34b::proponent,8,11 point,bigram,2
+dolphin-yi-34b::proponent,9,attacks points,bigram,2
+dolphin-yi-34b::proponent,10,analysis,unigram,2
+dolphin-yi-34b::proponent,11,analysis leading 11,trigram,2
+dolphin-yi-34b::proponent,12,analysis leading,bigram,2
+dolphin-yi-34b::proponent,13,deliberate,unigram,2
+dolphin-yi-34b::proponent,14,attacks points cover,trigram,2
+dolphin-yi-34b::proponent,15,deliberate cover,bigram,2
+dolphin-yi-34b::proponent,16,act,unigram,2
+dolphin-yi-34b::proponent,17,government failure act,trigram,2
+dolphin-yi-34b::proponent,18,failure,unigram,2
+dolphin-yi-34b::proponent,19,failure act numerous,trigram,2
+dolphin-yi-34b::proponent,20,failure act,bigram,2
+dolphin-yi-34b::proponent,21,failures,unigram,2
+dolphin-yi-34b::proponent,22,failures intelligence,bigram,2
+dolphin-yi-34b::proponent,23,failures intelligence analysis,trigram,2
+dolphin-yi-34b::proponent,24,government failure,bigram,2
+dolphin-yi-34b::proponent,25,intelligence,unigram,2
+gemma3:27b::moderator,1,ca,unigram,34
+gemma3:27b::moderator,2,sa,unigram,29
+gemma3:27b::moderator,3,failures,unigram,23
+gemma3:27b::moderator,4,cover,unigram,18
+gemma3:27b::moderator,5,evidence,unigram,16
+gemma3:27b::moderator,6,11,unigram,12
+gemma3:27b::moderator,7,agents,unigram,12
+gemma3:27b::moderator,8,intelligence,unigram,11
+gemma3:27b::moderator,9,systemic,unigram,10
+gemma3:27b::moderator,10,specific,unigram,9
+gemma3:27b::moderator,11,inconsistencies,unigram,9
+gemma3:27b::moderator,12,cover sa,bigram,8
+gemma3:27b::moderator,13,official,unigram,7
+gemma3:27b::moderator,14,narrative,unigram,7
+gemma3:27b::moderator,15,involvement,unigram,7
+gemma3:27b::moderator,16,agree,unigram,7
+gemma3:27b::moderator,17,questions,unigram,6
+gemma3:27b::moderator,18,proof,unigram,6
+gemma3:27b::moderator,19,attacks,unigram,6
+gemma3:27b::moderator,20,intentional,unigram,6
+gemma3:27b::moderator,21,round recap,bigram,5
+gemma3:27b::moderator,22,round recap agreements,trigram,5
+gemma3:27b::moderator,23,agents agree,bigram,5
+gemma3:27b::moderator,24,moderator,unigram,5
+gemma3:27b::moderator,25,agreements agents,bigram,5
+gemma3:27b::opponent,1,failures,unigram,5
+gemma3:27b::opponent,2,attributing,unigram,4
+gemma3:27b::opponent,3,systemic,unigram,4
+gemma3:27b::opponent,4,cover,unigram,3
+gemma3:27b::opponent,5,intelligence,unigram,3
+gemma3:27b::opponent,6,explanation,unigram,3
+gemma3:27b::opponent,7,evidence,unigram,3
+gemma3:27b::opponent,8,11,unigram,3
+gemma3:27b::opponent,9,lacks,unigram,3
+gemma3:27b::opponent,10,parsimonious,unigram,3
+gemma3:27b::opponent,11,cover requires demonstrating,trigram,2
+gemma3:27b::opponent,12,deliberate,unigram,2
+gemma3:27b::opponent,13,demonstrating,unigram,2
+gemma3:27b::opponent,14,deliberate cover requires,trigram,2
+gemma3:27b::opponent,15,deliberate cover,bigram,2
+gemma3:27b::opponent,16,attacks,unigram,2
+gemma3:27b::opponent,17,government,unigram,2
+gemma3:27b::opponent,18,government orchestration,bigram,2
+gemma3:27b::opponent,19,intentional,unigram,2
+gemma3:27b::opponent,20,intent,unigram,2
+gemma3:27b::opponent,21,parsimonious explanation,bigram,2
+gemma3:27b::opponent,22,demonstrating intent,bigram,2
+gemma3:27b::opponent,23,cover requires,bigram,2
+gemma3:27b::opponent,24,systemic failures,bigram,2
+gemma3:27b::opponent,25,orchestration,unigram,2

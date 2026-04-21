@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,mrna vaccines,bigram,5
+dolphin-yi-34b::proponent,2,mrna,unigram,5
+dolphin-yi-34b::proponent,3,vaccines,unigram,5
+dolphin-yi-34b::proponent,4,concerns,unigram,3
+dolphin-yi-34b::proponent,5,development,unigram,3
+dolphin-yi-34b::proponent,6,development mrna vaccines,trigram,3
+dolphin-yi-34b::proponent,7,development mrna,bigram,3
+dolphin-yi-34b::proponent,8,concerns safety,bigram,3
+dolphin-yi-34b::proponent,9,efficacy,unigram,3
+dolphin-yi-34b::proponent,10,rapid,unigram,3
+dolphin-yi-34b::proponent,11,rapid development,bigram,3
+dolphin-yi-34b::proponent,12,safety,unigram,3
+dolphin-yi-34b::proponent,13,rapid development mrna,trigram,3
+dolphin-yi-34b::proponent,14,safety efficacy,bigram,3
+dolphin-yi-34b::proponent,15,concerns safety efficacy,trigram,3
+dolphin-yi-34b::proponent,16,companies prioritize,bigram,2
+dolphin-yi-34b::proponent,17,issue regulatory,bigram,2
+dolphin-yi-34b::proponent,18,industry,unigram,2
+dolphin-yi-34b::proponent,19,issue,unigram,2
+dolphin-yi-34b::proponent,20,interests,unigram,2
+dolphin-yi-34b::proponent,21,health,unigram,2
+dolphin-yi-34b::proponent,22,health raising,bigram,2
+dolphin-yi-34b::proponent,23,health raising concerns,trigram,2
+dolphin-yi-34b::proponent,24,industry interests,bigram,2
+dolphin-yi-34b::proponent,25,issue regulatory capture,trigram,2
+gemma3:27b::moderator,1,ca,unigram,38
+gemma3:27b::moderator,2,sa,unigram,26
+gemma3:27b::moderator,3,development,unigram,16
+gemma3:27b::moderator,4,vaccine,unigram,14
+gemma3:27b::moderator,5,safety,unigram,13
+gemma3:27b::moderator,6,potential,unigram,11
+gemma3:27b::moderator,7,evidence,unigram,10
+gemma3:27b::moderator,8,pharmaceutical,unigram,10
+gemma3:27b::moderator,9,misconduct,unigram,9
+gemma3:27b::moderator,10,regulatory,unigram,9
+gemma3:27b::moderator,11,mrna,unigram,9
+gemma3:27b::moderator,12,argues,unigram,8
+gemma3:27b::moderator,13,term,unigram,8
+gemma3:27b::moderator,14,acknowledge,unigram,8
+gemma3:27b::moderator,15,long term,bigram,8
+gemma3:27b::moderator,16,long,unigram,8
+gemma3:27b::moderator,17,industry,unigram,7
+gemma3:27b::moderator,18,profit,unigram,7
+gemma3:27b::moderator,19,oversight,unigram,7
+gemma3:27b::moderator,20,vaccine development,bigram,7
+gemma3:27b::moderator,21,proof,unigram,7
+gemma3:27b::moderator,22,profit motives,bigram,6
+gemma3:27b::moderator,23,compromised,unigram,6
+gemma3:27b::moderator,24,agree,unigram,6
+gemma3:27b::moderator,25,companies,unigram,6
+gemma3:27b::opponent,1,mrna,unigram,5
+gemma3:27b::opponent,2,evidence,unigram,4
+gemma3:27b::opponent,3,acknowledging,unigram,4
+gemma3:27b::opponent,4,development,unigram,4
+gemma3:27b::opponent,5,vaccine,unigram,4
+gemma3:27b::opponent,6,regulatory,unigram,3
+gemma3:27b::opponent,7,claim,unigram,3
+gemma3:27b::opponent,8,mrna vaccine,bigram,3
+gemma3:27b::opponent,9,vaccine development,bigram,3
+gemma3:27b::opponent,10,capture,unigram,2
+gemma3:27b::opponent,11,unsupported evidence,bigram,2
+gemma3:27b::opponent,12,unsupported,unigram,2
+gemma3:27b::opponent,13,robust,unigram,2
+gemma3:27b::opponent,14,solely,unigram,2
+gemma3:27b::opponent,15,profit,unigram,2
+gemma3:27b::opponent,16,unsupported evidence ignores,trigram,2
+gemma3:27b::opponent,17,overlooks multiple,bigram,2
+gemma3:27b::opponent,18,overlooks,unigram,2
+gemma3:27b::opponent,19,multiple,unigram,2
+gemma3:27b::opponent,20,potential,unigram,2
+gemma3:27b::opponent,21,place,unigram,2
+gemma3:27b::opponent,22,pharmaceutical,unigram,2
+gemma3:27b::opponent,23,regulatory capture,bigram,2
+gemma3:27b::opponent,24,profit motives,bigram,2
+gemma3:27b::opponent,25,independent,unigram,2

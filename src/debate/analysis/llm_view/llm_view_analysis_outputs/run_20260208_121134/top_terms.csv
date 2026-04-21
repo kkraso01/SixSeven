@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,34
+gemma3:27b::moderator,2,sa,unigram,27
+gemma3:27b::moderator,3,evidence,unigram,22
+gemma3:27b::moderator,4,anomalies,unigram,17
+gemma3:27b::moderator,5,agents,unigram,11
+gemma3:27b::moderator,6,proof,unigram,9
+gemma3:27b::moderator,7,conspiracy,unigram,8
+gemma3:27b::moderator,8,intent,unigram,7
+gemma3:27b::moderator,9,burden,unigram,7
+gemma3:27b::moderator,10,argues,unigram,7
+gemma3:27b::moderator,11,explanations,unigram,7
+gemma3:27b::moderator,12,acknowledge,unigram,7
+gemma3:27b::moderator,13,shift,unigram,7
+gemma3:27b::moderator,14,agree,unigram,6
+gemma3:27b::moderator,15,proof shift,bigram,6
+gemma3:27b::moderator,16,questions,unigram,6
+gemma3:27b::moderator,17,burden proof,bigram,6
+gemma3:27b::moderator,18,burden proof shift,trigram,6
+gemma3:27b::moderator,19,government,unigram,6
+gemma3:27b::moderator,20,agreements agents,bigram,5
+gemma3:27b::moderator,21,recap agreements,bigram,5
+gemma3:27b::moderator,22,agreements,unigram,5
+gemma3:27b::moderator,23,moderator,unigram,5
+gemma3:27b::moderator,24,moves,unigram,5
+gemma3:27b::moderator,25,moderator round,bigram,5
+gemma3:27b::opponent,1,attributing,unigram,4
+gemma3:27b::opponent,2,requires,unigram,4
+gemma3:27b::opponent,3,evidence,unigram,3
+gemma3:27b::opponent,4,standard,unigram,2
+gemma3:27b::opponent,5,solely,unigram,2
+gemma3:27b::opponent,6,records,unigram,2
+gemma3:27b::opponent,7,intent,unigram,2
+gemma3:27b::opponent,8,acknowledging,unigram,2
+gemma3:27b::opponent,9,government,unigram,2
+gemma3:27b::opponent,10,higher,unigram,2
+gemma3:27b::opponent,11,explanations,unigram,2
+gemma3:27b::opponent,12,evidentiary,unigram,2
+gemma3:27b::opponent,13,currently,unigram,2
+gemma3:27b::opponent,14,cover,unigram,2
+gemma3:27b::opponent,15,concerning,unigram,2
+gemma3:27b::opponent,16,concerning attributing,bigram,2
+gemma3:27b::opponent,17,conspiracy,unigram,2
+gemma3:27b::opponent,18,complicity,unigram,2
+gemma3:27b::opponent,19,alternative,unigram,2
+gemma3:27b::opponent,20,alternative explanations,bigram,2
+gemma3:27b::opponent,21,anomalies,unigram,2
+gemma3:27b::opponent,22,unreliability genuine,bigram,1
+gemma3:27b::opponent,23,unreliability,unigram,1
+gemma3:27b::opponent,24,transparency fails demonstrate,trigram,1
+gemma3:27b::opponent,25,transparency fails,bigram,1
+gemma3:27b::proponent,1,intelligence,unigram,3
+gemma3:27b::proponent,2,operations,unigram,3
+gemma3:27b::proponent,3,evidence,unigram,3
+gemma3:27b::proponent,4,anomalies,unigram,2
+gemma3:27b::proponent,5,strongly,unigram,2
+gemma3:27b::proponent,6,assassination,unigram,2
+gemma3:27b::proponent,7,surrounding,unigram,2
+gemma3:27b::proponent,8,anomalies surrounding,bigram,2
+gemma3:27b::proponent,9,isn,unigram,2
+gemma3:27b::proponent,10,intelligence agencies,bigram,2
+gemma3:27b::proponent,11,individuals,unigram,2
+gemma3:27b::proponent,12,government,unigram,2
+gemma3:27b::proponent,13,deliberate,unigram,2
+gemma3:27b::proponent,14,agencies,unigram,2
+gemma3:27b::proponent,15,ties military intelligence,trigram,1
+gemma3:27b::proponent,16,ties military,bigram,1
+gemma3:27b::proponent,17,ties,unigram,1
+gemma3:27b::proponent,18,testimonies isn random,trigram,1
+gemma3:27b::proponent,19,testimonies isn,bigram,1
+gemma3:27b::proponent,20,testimonies,unigram,1
+gemma3:27b::proponent,21,tactic employed intelligence,trigram,1
+gemma3:27b::proponent,22,tactic employed,bigram,1
+gemma3:27b::proponent,23,tactic,unigram,1
+gemma3:27b::proponent,24,suspicion deliberate cover,trigram,1
+gemma3:27b::proponent,25,suspicion deliberate,bigram,1

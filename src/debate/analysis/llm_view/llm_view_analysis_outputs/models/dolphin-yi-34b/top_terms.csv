@@ -1,0 +1,26 @@
+rank,term,term_type,count
+1,evidence,unigram,1010
+2,ca,unigram,971
+3,sa,unigram,963
+4,specific,unigram,503
+5,agents,unigram,501
+6,questions,unigram,496
+7,control,unigram,371
+8,argues,unigram,367
+9,moves,unigram,355
+10,agreements,unigram,354
+11,round,unigram,353
+12,detected,unigram,351
+13,civility epistemic bridge,trigram,350
+14,disagreements,unigram,350
+15,recap,unigram,350
+16,detected moves,bigram,350
+17,bridge questions,bigram,350
+18,civility epistemic,bigram,350
+19,round recap agreements,trigram,350
+20,round recap,bigram,350
+21,bridge,unigram,350
+22,moderator round recap,trigram,350
+23,moderator round,bigram,350
+24,moderator,unigram,350
+25,civility,unigram,350

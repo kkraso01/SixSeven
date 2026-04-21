@@ -1,0 +1,4 @@
+run_id,model_name,debate_role,initial_stance_proxy,final_stance_proxy,stance_proxy_delta,initial_stance_sign,final_stance_sign,stance_flip,turns_in_group
+run_20260209_023906,dolphin-yi-34b,proponent,0.0,0.0,0.0,0,0,0,5
+run_20260209_023906,gemma3:27b,moderator,2.0,2.0,0.0,1,1,0,5
+run_20260209_023906,gemma3:27b,opponent,-0.0,-0.0,0.0,0,0,0,5

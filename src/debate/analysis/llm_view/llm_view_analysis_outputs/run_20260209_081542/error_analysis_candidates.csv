@@ -1,0 +1,79 @@
+error_type,run_id,model_name,debate_role,topic_id,turn_index,word_count,utterance,confidence
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,9,116.0,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge that the Paris Agreement has economic consequences for countries.
+Disagreements: CA argues that the Paris Agreement disproportionately burdens developing countries and limits their growth opportunities. SA counters that climate change is a genuine issue supported by scientific evidence and policy interventions are necessary., SA questions the claim that climate change is a manufactured crisis without sufficient evidence, while CA believes it to be an unfair economic burden.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support the claim that climate change is a manufactured crisis?, How do you propose addressing the potential economic burdens on developing countries while still mitigating climate change?",
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,6,115.0,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the political aspects of the Paris Agreement but disagree on its implications for global control and national sovereignty.
+Disagreements: CA argues that the Paris Agreement is a tool for centralizing power and control, while SA believes it primarily aims to mitigate climate change risks through international cooperation., CA claims negative economic consequences are due to the Paris Agreement, whereas SA suggests other factors like trade policies and internal governance challenges play a more significant role.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: How can we reconcile the need for international cooperation on climate change with concerns about potential power imbalances and impacts on national sovereignty?",
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,3,99.0,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge potential political motivations behind climate change discourse.
+Disagreements: CA argues that climate change is a manufactured crisis for power and control; SA counters with evidence of environmental changes driven by physical mechanisms., SA emphasizes the scientific consensus on climate change, while CA questions motives behind it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence leads you to believe that the observed climate changes are not primarily driven by anthropogenic greenhouse gas emissions? (CA->SA), How do you reconcile potential political motivations with the overwhelming scientific consensus on climate change? (SA->CA)",
+long_but_evidence_poor,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,5,34.0,"While the Paris Agreement undoubtedly involves complex political negotiations and potential power dynamics, framing it solely as a tool for control overlooks its primary objective: mitigating a demonstrably changing climate and the associated risks.",
+long_but_evidence_poor,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,2,32.0,"While acknowledging the potential for agendas to influence policy, attributing climate change solely to a manufactured crisis ignores a robust body of evidence demonstrating significant environmental changes driven by demonstrable physical mechanisms.",
+long_but_evidence_poor,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,8,26.0,The claim that climate change is a manufactured crisis to increase taxation and control lacks sufficient evidence and overlooks established scientific consensus regarding anthropogenic climate change.,
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,4,20.0,The Paris Agreement is suspiciously aligned with the agendas of global power players who benefit from increased control over populations.,
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,7,19.0,"The Paris Agreement's economic consequences are primarily due to its one-size-fits-all approach, not genuine climate concerns.",
+long_but_evidence_poor,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,1,14.0,The climate change narrative is suspiciously convenient for those seeking global power and control.,
+high_confidence_low_evidence,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,8,,The claim that climate change is a manufactured crisis to increase taxation and control lacks sufficient evidence and overlooks established scientific consensus regarding anthropogenic climate change.,85.0
+high_confidence_low_evidence,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,5,,"While the Paris Agreement undoubtedly involves complex political negotiations and potential power dynamics, framing it solely as a tool for control overlooks its primary objective: mitigating a demonstrably changing climate and the associated risks.",60.0
+high_confidence_low_evidence,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,1,,The climate change narrative is suspiciously convenient for those seeking global power and control.,55.0
+high_confidence_low_evidence,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,2,,"While acknowledging the potential for agendas to influence policy, attributing climate change solely to a manufactured crisis ignores a robust body of evidence demonstrating significant environmental changes driven by demonstrable physical mechanisms.",50.0
+high_confidence_low_evidence,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,4,,The Paris Agreement is suspiciously aligned with the agendas of global power players who benefit from increased control over populations.,45.0
+high_confidence_low_evidence,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,7,,"The Paris Agreement's economic consequences are primarily due to its one-size-fits-all approach, not genuine climate concerns.",35.0
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,4,,The Paris Agreement is suspiciously aligned with the agendas of global power players who benefit from increased control over populations.,
+generic_rebuttal_marker,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,8,,The claim that climate change is a manufactured crisis to increase taxation and control lacks sufficient evidence and overlooks established scientific consensus regarding anthropogenic climate change.,
+generic_rebuttal_marker,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,2,,"While acknowledging the potential for agendas to influence policy, attributing climate change solely to a manufactured crisis ignores a robust body of evidence demonstrating significant environmental changes driven by demonstrable physical mechanisms.",
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,7,,"The Paris Agreement's economic consequences are primarily due to its one-size-fits-all approach, not genuine climate concerns.",
+generic_rebuttal_marker,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,5,,"While the Paris Agreement undoubtedly involves complex political negotiations and potential power dynamics, framing it solely as a tool for control overlooks its primary objective: mitigating a demonstrably changing climate and the associated risks.",
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,1,,The climate change narrative is suspiciously convenient for those seeking global power and control.,
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge potential political motivations behind climate change discourse.
+Disagreements: CA argues that climate change is a manufactured crisis for power and control; SA counters with evidence of environmental changes driven by physical mechanisms., SA emphasizes the scientific consensus on climate change, while CA questions motives behind it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence leads you to believe that the observed climate changes are not primarily driven by anthropogenic greenhouse gas emissions? (CA->SA), How do you reconcile potential political motivations with the overwhelming scientific consensus on climate change? (SA->CA)",
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the political aspects of the Paris Agreement but disagree on its implications for global control and national sovereignty.
+Disagreements: CA argues that the Paris Agreement is a tool for centralizing power and control, while SA believes it primarily aims to mitigate climate change risks through international cooperation., CA claims negative economic consequences are due to the Paris Agreement, whereas SA suggests other factors like trade policies and internal governance challenges play a more significant role.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: How can we reconcile the need for international cooperation on climate change with concerns about potential power imbalances and impacts on national sovereignty?",
+generic_rebuttal_marker,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge that the Paris Agreement has economic consequences for countries.
+Disagreements: CA argues that the Paris Agreement disproportionately burdens developing countries and limits their growth opportunities. SA counters that climate change is a genuine issue supported by scientific evidence and policy interventions are necessary., SA questions the claim that climate change is a manufactured crisis without sufficient evidence, while CA believes it to be an unfair economic burden.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support the claim that climate change is a manufactured crisis?, How do you propose addressing the potential economic burdens on developing countries while still mitigating climate change?",
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,1,,The climate change narrative is suspiciously convenient for those seeking global power and control.,
+ambiguous_winner_extraction,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,2,,"While acknowledging the potential for agendas to influence policy, attributing climate change solely to a manufactured crisis ignores a robust body of evidence demonstrating significant environmental changes driven by demonstrable physical mechanisms.",
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge potential political motivations behind climate change discourse.
+Disagreements: CA argues that climate change is a manufactured crisis for power and control; SA counters with evidence of environmental changes driven by physical mechanisms., SA emphasizes the scientific consensus on climate change, while CA questions motives behind it.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence leads you to believe that the observed climate changes are not primarily driven by anthropogenic greenhouse gas emissions? (CA->SA), How do you reconcile potential political motivations with the overwhelming scientific consensus on climate change? (SA->CA)",
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,4,,The Paris Agreement is suspiciously aligned with the agendas of global power players who benefit from increased control over populations.,
+ambiguous_winner_extraction,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,5,,"While the Paris Agreement undoubtedly involves complex political negotiations and potential power dynamics, framing it solely as a tool for control overlooks its primary objective: mitigating a demonstrably changing climate and the associated risks.",
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the political aspects of the Paris Agreement but disagree on its implications for global control and national sovereignty.
+Disagreements: CA argues that the Paris Agreement is a tool for centralizing power and control, while SA believes it primarily aims to mitigate climate change risks through international cooperation., CA claims negative economic consequences are due to the Paris Agreement, whereas SA suggests other factors like trade policies and internal governance challenges play a more significant role.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: How can we reconcile the need for international cooperation on climate change with concerns about potential power imbalances and impacts on national sovereignty?",
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,proponent,climate_change_hoax,7,,"The Paris Agreement's economic consequences are primarily due to its one-size-fits-all approach, not genuine climate concerns.",
+ambiguous_winner_extraction,run_20260209_081542,gemma3:27b,opponent,climate_change_hoax,8,,The claim that climate change is a manufactured crisis to increase taxation and control lacks sufficient evidence and overlooks established scientific consensus regarding anthropogenic climate change.,
+ambiguous_winner_extraction,run_20260209_081542,dolphin-yi-34b,moderator,climate_change_hoax,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge that the Paris Agreement has economic consequences for countries.
+Disagreements: CA argues that the Paris Agreement disproportionately burdens developing countries and limits their growth opportunities. SA counters that climate change is a genuine issue supported by scientific evidence and policy interventions are necessary., SA questions the claim that climate change is a manufactured crisis without sufficient evidence, while CA believes it to be an unfair economic burden.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence can you provide to support the claim that climate change is a manufactured crisis?, How do you propose addressing the potential economic burdens on developing countries while still mitigating climate change?",

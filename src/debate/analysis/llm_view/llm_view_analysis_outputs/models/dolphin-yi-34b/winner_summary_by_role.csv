@@ -1,0 +1,4 @@
+debate_role,winner_role,debate_count,total_debates,winner_rate
+moderator,opponent,1,1,1.0
+opponent,opponent,1,1,1.0
+proponent,opponent,2,2,1.0

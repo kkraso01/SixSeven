@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_134934",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_134934",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "social_media_mind_control",
+  "topic_category": "technology",
+  "topic_title": "Social media algorithms and psychological manipulation",
+  "topic_motion": "Social media platforms use sophisticated algorithms to deliberately manipulate user psychology and political beliefs for profit and control.",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

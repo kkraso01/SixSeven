@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,missions,unigram,4
+dolphin-yi-34b::opponent,2,moon,unigram,4
+dolphin-yi-34b::opponent,3,apollo,unigram,2
+dolphin-yi-34b::opponent,4,apollo moon,bigram,2
+dolphin-yi-34b::opponent,5,brought moon,bigram,2
+dolphin-yi-34b::opponent,6,brought moon successful,trigram,2
+dolphin-yi-34b::opponent,7,apollo moon landing,trigram,2
+dolphin-yi-34b::opponent,8,brought,unigram,2
+dolphin-yi-34b::opponent,9,evidence supporting includes,trigram,2
+dolphin-yi-34b::opponent,10,government,unigram,2
+dolphin-yi-34b::opponent,11,government evidence,bigram,2
+dolphin-yi-34b::opponent,12,government evidence supporting,trigram,2
+dolphin-yi-34b::opponent,13,includes,unigram,2
+dolphin-yi-34b::opponent,14,includes photographs,bigram,2
+dolphin-yi-34b::opponent,15,evidence,unigram,2
+dolphin-yi-34b::opponent,16,evidence supporting,bigram,2
+dolphin-yi-34b::opponent,17,landing,unigram,2
+dolphin-yi-34b::opponent,18,includes photographs taken,trigram,2
+dolphin-yi-34b::opponent,19,landing missions,bigram,2
+dolphin-yi-34b::opponent,20,landing missions staged,trigram,2
+dolphin-yi-34b::opponent,21,live television signals,trigram,2
+dolphin-yi-34b::opponent,22,lunar,unigram,2
+dolphin-yi-34b::opponent,23,live,unigram,2
+dolphin-yi-34b::opponent,24,live television,bigram,2
+dolphin-yi-34b::opponent,25,lunar surface rock,trigram,2
+dolphin-yi-34b::proponent,1,apollo,unigram,2
+dolphin-yi-34b::proponent,2,apollo moon,bigram,2
+dolphin-yi-34b::proponent,3,apollo moon landings,trigram,2
+dolphin-yi-34b::proponent,4,government,unigram,2
+dolphin-yi-34b::proponent,5,government win,bigram,2
+dolphin-yi-34b::proponent,6,government win space,trigram,2
+dolphin-yi-34b::proponent,7,grand,unigram,2
+dolphin-yi-34b::proponent,8,grand staged,bigram,2
+dolphin-yi-34b::proponent,9,grand staged performance,trigram,2
+dolphin-yi-34b::proponent,10,landings,unigram,2
+dolphin-yi-34b::proponent,11,landings grand,bigram,2
+dolphin-yi-34b::proponent,12,landings grand staged,trigram,2
+dolphin-yi-34b::proponent,13,moon,unigram,2
+dolphin-yi-34b::proponent,14,moon landings,bigram,2
+dolphin-yi-34b::proponent,15,moon landings grand,trigram,2
+dolphin-yi-34b::proponent,16,performance,unigram,2
+dolphin-yi-34b::proponent,17,performance government,bigram,2
+dolphin-yi-34b::proponent,18,performance government win,trigram,2
+dolphin-yi-34b::proponent,19,race,unigram,2
+dolphin-yi-34b::proponent,20,race soviet,bigram,2
+dolphin-yi-34b::proponent,21,race soviet union,trigram,2
+dolphin-yi-34b::proponent,22,soviet,unigram,2
+dolphin-yi-34b::proponent,23,soviet union,bigram,2
+dolphin-yi-34b::proponent,24,space,unigram,2
+dolphin-yi-34b::proponent,25,space race,bigram,2
+gemma3:27b::moderator,1,ca,unigram,14
+gemma3:27b::moderator,2,evidence,unigram,11
+gemma3:27b::moderator,3,sa,unigram,9
+gemma3:27b::moderator,4,proof,unigram,6
+gemma3:27b::moderator,5,moon,unigram,5
+gemma3:27b::moderator,6,questions,unigram,4
+gemma3:27b::moderator,7,space race,bigram,4
+gemma3:27b::moderator,8,agents,unigram,4
+gemma3:27b::moderator,9,missions,unigram,4
+gemma3:27b::moderator,10,nasa,unigram,4
+gemma3:27b::moderator,11,race,unigram,4
+gemma3:27b::moderator,12,space,unigram,4
+gemma3:27b::moderator,13,specific,unigram,4
+gemma3:27b::moderator,14,landings,unigram,4
+gemma3:27b::moderator,15,supporting,unigram,3
+gemma3:27b::moderator,16,technology,unigram,3
+gemma3:27b::moderator,17,moon rocks,bigram,3
+gemma3:27b::moderator,18,rocks,unigram,3
+gemma3:27b::moderator,19,transmission,unigram,3
+gemma3:27b::moderator,20,apollo missions,bigram,3
+gemma3:27b::moderator,21,evidence ca,bigram,3
+gemma3:27b::moderator,22,context,unigram,3
+gemma3:27b::moderator,23,burden,unigram,3
+gemma3:27b::moderator,24,apollo,unigram,3
+gemma3:27b::moderator,25,burden proof,bigram,3

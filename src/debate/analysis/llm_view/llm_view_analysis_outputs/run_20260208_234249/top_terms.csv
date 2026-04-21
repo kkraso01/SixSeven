@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,cbdcs,unigram,4
+dolphin-yi-34b::opponent,2,central,unigram,3
+dolphin-yi-34b::opponent,3,surveillance,unigram,3
+dolphin-yi-34b::opponent,4,central bank,bigram,2
+dolphin-yi-34b::opponent,5,financial,unigram,2
+dolphin-yi-34b::opponent,6,digital,unigram,2
+dolphin-yi-34b::opponent,7,bank,unigram,2
+dolphin-yi-34b::opponent,8,aml regulations,bigram,1
+dolphin-yi-34b::opponent,9,anti money laundering,trigram,1
+dolphin-yi-34b::opponent,10,argument,unigram,1
+dolphin-yi-34b::opponent,11,argument linking,bigram,1
+dolphin-yi-34b::opponent,12,argument linking cbdcs,trigram,1
+dolphin-yi-34b::opponent,13,assertion,unigram,1
+dolphin-yi-34b::opponent,14,assertion know,bigram,1
+dolphin-yi-34b::opponent,15,alternative,unigram,1
+dolphin-yi-34b::opponent,16,aml regulations pretexts,trigram,1
+dolphin-yi-34b::opponent,17,assumption,unigram,1
+dolphin-yi-34b::opponent,18,assertion know customer,trigram,1
+dolphin-yi-34b::opponent,19,assumption central banks,trigram,1
+dolphin-yi-34b::opponent,20,assumption central,bigram,1
+dolphin-yi-34b::opponent,21,bank digital currencies,trigram,1
+dolphin-yi-34b::opponent,22,bank policies,bigram,1
+dolphin-yi-34b::opponent,23,bank policies regulatory,trigram,1
+dolphin-yi-34b::opponent,24,bank digital,bigram,1
+dolphin-yi-34b::opponent,25,banks,unigram,1
+gemma3:27b::moderator,1,ca,unigram,21
+gemma3:27b::moderator,2,sa,unigram,19
+gemma3:27b::moderator,3,cbdcs,unigram,10
+gemma3:27b::moderator,4,surveillance,unigram,10
+gemma3:27b::moderator,5,control,unigram,7
+gemma3:27b::moderator,6,financial,unigram,7
+gemma3:27b::moderator,7,cbdc,unigram,6
+gemma3:27b::moderator,8,agents,unigram,5
+gemma3:27b::moderator,9,proof,unigram,5
+gemma3:27b::moderator,10,intent,unigram,4
+gemma3:27b::moderator,11,evidence,unigram,4
+gemma3:27b::moderator,12,data,unigram,4
+gemma3:27b::moderator,13,regulations,unigram,4
+gemma3:27b::moderator,14,shift,unigram,4
+gemma3:27b::moderator,15,security,unigram,4
+gemma3:27b::moderator,16,privacy,unigram,4
+gemma3:27b::moderator,17,acknowledge,unigram,4
+gemma3:27b::moderator,18,recap agreements,bigram,3
+gemma3:27b::moderator,19,questions,unigram,3
+gemma3:27b::moderator,20,recap agreements agents,trigram,3
+gemma3:27b::moderator,21,round recap,bigram,3
+gemma3:27b::moderator,22,appeal,unigram,3
+gemma3:27b::moderator,23,argues,unigram,3
+gemma3:27b::moderator,24,inclusion,unigram,3
+gemma3:27b::moderator,25,proof shift,bigram,3
+gemma3:27b::proponent,1,financial,unigram,4
+gemma3:27b::proponent,2,cbdcs,unigram,3
+gemma3:27b::proponent,3,digital,unigram,2
+gemma3:27b::proponent,4,insistence,unigram,2
+gemma3:27b::proponent,5,individual,unigram,2
+gemma3:27b::proponent,6,identity,unigram,2
+gemma3:27b::proponent,7,power,unigram,2
+gemma3:27b::proponent,8,know,unigram,2
+gemma3:27b::proponent,9,surveillance,unigram,2
+gemma3:27b::proponent,10,aml regulations framework,trigram,1
+gemma3:27b::proponent,11,anti money,bigram,1
+gemma3:27b::proponent,12,activities deemed,bigram,1
+gemma3:27b::proponent,13,activity directly,bigram,1
+gemma3:27b::proponent,14,anti,unigram,1
+gemma3:27b::proponent,15,activities deemed undesirable,trigram,1
+gemma3:27b::proponent,16,activities,unigram,1
+gemma3:27b::proponent,17,bank,unigram,1
+gemma3:27b::proponent,18,bank digital,bigram,1
+gemma3:27b::proponent,19,calculated,unigram,1
+gemma3:27b::proponent,20,bank digital currencies,trigram,1
+gemma3:27b::proponent,21,calculated power,bigram,1
+gemma3:27b::proponent,22,calculated power grab,trigram,1
+gemma3:27b::proponent,23,cbdcs aren,bigram,1
+gemma3:27b::proponent,24,cbdcs aren modernization,trigram,1
+gemma3:27b::proponent,25,cbdcs digital,bigram,1

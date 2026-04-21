@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,38
+gemma3:27b::moderator,2,sa,unigram,34
+gemma3:27b::moderator,3,surveillance,unigram,22
+gemma3:27b::moderator,4,evidence,unigram,12
+gemma3:27b::moderator,5,expansion,unigram,8
+gemma3:27b::moderator,6,acknowledge,unigram,8
+gemma3:27b::moderator,7,systemic,unigram,8
+gemma3:27b::moderator,8,coordination,unigram,7
+gemma3:27b::moderator,9,incentives,unigram,6
+gemma3:27b::moderator,10,argues,unigram,6
+gemma3:27b::moderator,11,agree,unigram,6
+gemma3:27b::moderator,12,questions,unigram,6
+gemma3:27b::moderator,13,scores,unigram,5
+gemma3:27b::moderator,14,scores civility,bigram,5
+gemma3:27b::moderator,15,scores civility epistemic,trigram,5
+gemma3:27b::moderator,16,round recap agreements,trigram,5
+gemma3:27b::moderator,17,recap agreements agents,trigram,5
+gemma3:27b::moderator,18,round recap,bigram,5
+gemma3:27b::moderator,19,round,unigram,5
+gemma3:27b::moderator,20,agreements,unigram,5
+gemma3:27b::moderator,21,questions ca,bigram,5
+gemma3:27b::moderator,22,recap agreements,bigram,5
+gemma3:27b::moderator,23,recap,unigram,5
+gemma3:27b::moderator,24,moves,unigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::opponent,1,surveillance,unigram,4
+gemma3:27b::opponent,2,attributing,unigram,3
+gemma3:27b::opponent,3,potential,unigram,3
+gemma3:27b::opponent,4,evidence,unigram,3
+gemma3:27b::opponent,5,dismissing,unigram,3
+gemma3:27b::opponent,6,acknowledging,unigram,3
+gemma3:27b::opponent,7,requires,unigram,2
+gemma3:27b::opponent,8,solely,unigram,2
+gemma3:27b::opponent,9,incentives,unigram,2
+gemma3:27b::opponent,10,mitigation,unigram,2
+gemma3:27b::opponent,11,possibility,unigram,2
+gemma3:27b::opponent,12,expansion,unigram,2
+gemma3:27b::opponent,13,control,unigram,2
+gemma3:27b::opponent,14,control requires,bigram,2
+gemma3:27b::opponent,15,coordinated,unigram,2
+gemma3:27b::opponent,16,concerns,unigram,2
+gemma3:27b::opponent,17,ai,unigram,2
+gemma3:27b::opponent,18,systemic,unigram,2
+gemma3:27b::opponent,19,total population,bigram,1
+gemma3:27b::opponent,20,total,unigram,1
+gemma3:27b::opponent,21,tactic non existent,trigram,1
+gemma3:27b::opponent,22,tactic non,bigram,1
+gemma3:27b::opponent,23,tactic,unigram,1
+gemma3:27b::opponent,24,systems concerns demanding,trigram,1
+gemma3:27b::opponent,25,systems concerns,bigram,1
+gemma3:27b::proponent,1,surveillance,unigram,5
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,scientific,unigram,4
+gemma3:27b::proponent,4,agent,unigram,4
+gemma3:27b::proponent,5,apparatus,unigram,2
+gemma3:27b::proponent,6,surveillance apparatus,bigram,2
+gemma3:27b::proponent,7,deployment,unigram,2
+gemma3:27b::proponent,8,systemic,unigram,2
+gemma3:27b::proponent,9,control,unigram,2
+gemma3:27b::proponent,10,total population monitoring,trigram,1
+gemma3:27b::proponent,11,total population,bigram,1
+gemma3:27b::proponent,12,total,unigram,1
+gemma3:27b::proponent,13,threats continuation historical,trigram,1
+gemma3:27b::proponent,14,threats continuation,bigram,1
+gemma3:27b::proponent,15,threats,unigram,1
+gemma3:27b::proponent,16,technological infrastructure designed,trigram,1
+gemma3:27b::proponent,17,technological infrastructure,bigram,1
+gemma3:27b::proponent,18,technological,unigram,1
+gemma3:27b::proponent,19,tasked investigating surveillance,trigram,1
+gemma3:27b::proponent,20,tasked investigating,bigram,1
+gemma3:27b::proponent,21,tasked,unigram,1
+gemma3:27b::proponent,22,targeting marginalized communities,trigram,1
+gemma3:27b::proponent,23,targeting marginalized,bigram,1
+gemma3:27b::proponent,24,targeting,unigram,1
+gemma3:27b::proponent,25,tactics used intelligence,trigram,1

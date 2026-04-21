@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,big_pharma,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that pharmaceutical companies have profit motives in drug development.
+Disagreements: CA argues that the pharmaceutical industry suppresses cheap effective cures for cancer and other diseases to maintain profit from expensive treatments. SA disputes this claim, stating it is not supported by reliable inference and ignores the complexity of drug development., SA questions CA's assumption of a uniform motive among all pharmaceutical companies and points out that drug development is lengthy, expensive, and risky. CA responds with reasons such as profit incentives and cases of potential breakthroughs being ignored or suppressed.
+Detected moves: institutional-critique (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have that pharmaceutical companies are intentionally suppressing cures? (SA's question to CA), How do you explain the consistent pattern of pharmaceutical companies prioritizing expensive treatments over affordable cures? (CA's question to SA)"
+dolphin-yi-34b,moderator,most_evidence_dense,big_pharma,health,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the complexity of drug development and the potential influence of financial incentives in pharmaceutical research.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim is not supported by reliable inference and ignores complexities of drug development.
+Detected moves: Appeal to motive (CA claims companies focus on expensive treatments for profit reasons)., Strawman (SA oversimplifies CA's argument as assuming a uniform motive among all pharmaceutical companies).
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that pharmaceutical companies are suppressing potential cures?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,big_pharma,health,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the complexity of drug development and the significant investment required.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA disputes this claim as unsupported by reliable inference., SA questions the assumption of a uniform motive among all pharmaceutical companies, while CA cites documented cases of potential breakthroughs being ignored or suppressed.
+Detected moves: Appeal to Authority: CA refers to 'documented cases' without specifying sources or context.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that pharmaceutical companies intentionally suppress potential cures?, How do the research priorities and funding allocation of major pharmaceutical companies relate to their alleged motive of prioritizing profit over patient welfare?"
+dolphin-yi-34b,moderator,most_hedged,big_pharma,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that pharmaceutical companies have profit motives in drug development.
+Disagreements: CA argues that the pharmaceutical industry suppresses cheap effective cures for cancer and other diseases to maintain profit from expensive treatments. SA disputes this claim, stating it is not supported by reliable inference and ignores the complexity of drug development., SA questions CA's assumption of a uniform motive among all pharmaceutical companies and points out that drug development is lengthy, expensive, and risky. CA responds with reasons such as profit incentives and cases of potential breakthroughs being ignored or suppressed.
+Detected moves: institutional-critique (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have that pharmaceutical companies are intentionally suppressing cures? (SA's question to CA), How do you explain the consistent pattern of pharmaceutical companies prioritizing expensive treatments over affordable cures? (CA's question to SA)"
+dolphin-yi-34b,moderator,most_assertive,big_pharma,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that pharmaceutical companies have profit motives in drug development.
+Disagreements: CA argues that the pharmaceutical industry suppresses cheap effective cures for cancer and other diseases to maintain profit from expensive treatments. SA disputes this claim, stating it is not supported by reliable inference and ignores the complexity of drug development., SA questions CA's assumption of a uniform motive among all pharmaceutical companies and points out that drug development is lengthy, expensive, and risky. CA responds with reasons such as profit incentives and cases of potential breakthroughs being ignored or suppressed.
+Detected moves: institutional-critique (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence do you have that pharmaceutical companies are intentionally suppressing cures? (SA's question to CA), How do you explain the consistent pattern of pharmaceutical companies prioritizing expensive treatments over affordable cures? (CA's question to SA)"
+dolphin-yi-34b,moderator,most_moral_framed,big_pharma,health,closing,5,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the complexity of drug development and the potential influence of financial incentives in pharmaceutical research.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA believes this claim is not supported by reliable inference and ignores complexities of drug development.
+Detected moves: Appeal to motive (CA claims companies focus on expensive treatments for profit reasons)., Strawman (SA oversimplifies CA's argument as assuming a uniform motive among all pharmaceutical companies).
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that pharmaceutical companies are suppressing potential cures?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,big_pharma,health,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the complexity of drug development and the potential influence of financial incentives on pharmaceutical companies' research priorities.
+Disagreements: CA argues that pharmaceutical companies suppress cheap effective cures for profit based on the 'follow the money' principle and instances of potential breakthroughs being ignored or suppressed. SA disputes this claim, stating it assumes a uniform motive among all companies and ignores the complexity of drug development.
+Detected moves: Appeal to authority: CA cites the 'follow the money' principle as evidence for their argument., Burden of proof shift: SA challenges the opponent to provide specific evidence of intentional suppression.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can be provided to support the claim of pharmaceutical companies suppressing potential cures?, How does the drug development process and associated costs influence the timeline for bringing new cures to market?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,big_pharma,health,closing,4,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the complexity of drug development and the significant investment required.
+Disagreements: CA argues that pharmaceutical companies prioritize profit over patient welfare, while SA disputes this claim as unsupported by reliable inference., SA questions the assumption of a uniform motive among all pharmaceutical companies, while CA cites documented cases of potential breakthroughs being ignored or suppressed.
+Detected moves: Appeal to Authority: CA refers to 'documented cases' without specifying sources or context.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim that pharmaceutical companies intentionally suppress potential cures?, How do the research priorities and funding allocation of major pharmaceutical companies relate to their alleged motive of prioritizing profit over patient welfare?"
+dolphin-yi-34b,opponent,highest_confidence,big_pharma,health,closing,5,14,56.0,The claim that pharmaceutical companies prioritize profit over patient welfare is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complexity of drug development.
+dolphin-yi-34b,opponent,most_evidence_dense,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,opponent,most_rebuttal_dense,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,opponent,most_hedged,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,opponent,most_assertive,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,opponent,most_moral_framed,big_pharma,health,closing,4,11,55.0,The claim that pharmaceutical companies prioritize profit over patient welfare is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complexity of drug development.
+dolphin-yi-34b,opponent,strongest_stance_proxy,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,opponent,weakest_stance_proxy,big_pharma,health,opening,1,2,55.0,The motion that pharmaceutical companies suppress cheap effective cures for profit is not supported by reliable inference. It assumes a uniform motive among all companies and ignores the complex mechanisms of drug development.
+dolphin-yi-34b,proponent,highest_confidence,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.
+dolphin-yi-34b,proponent,most_evidence_dense,big_pharma,health,closing,5,13,51.0,"Pharmaceutical companies prioritize profit over patient welfare, evidenced by their focus on expensive treatments rather than affordable cures."
+dolphin-yi-34b,proponent,most_rebuttal_dense,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.
+dolphin-yi-34b,proponent,most_hedged,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.
+dolphin-yi-34b,proponent,most_assertive,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.
+dolphin-yi-34b,proponent,most_moral_framed,big_pharma,health,opening,1,4,55.0,Pharmaceutical companies suppress cheap effective cures for cancer and other diseases to maintain profit from expensive treatments.
+dolphin-yi-34b,proponent,strongest_stance_proxy,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.
+dolphin-yi-34b,proponent,weakest_stance_proxy,big_pharma,health,opening,1,1,55.0,The pharmaceutical industry's focus on profit over health has led to the suppression of cheap effective cures for cancer and other diseases.

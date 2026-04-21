@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,vaccines,unigram,7
+dolphin-yi-34b::opponent,2,control,unigram,6
+dolphin-yi-34b::opponent,3,covid,unigram,5
+dolphin-yi-34b::opponent,4,19,unigram,5
+dolphin-yi-34b::opponent,5,tracking,unigram,5
+dolphin-yi-34b::opponent,6,covid 19,bigram,5
+dolphin-yi-34b::opponent,7,contain,unigram,4
+dolphin-yi-34b::opponent,8,contain microchips,bigram,4
+dolphin-yi-34b::opponent,9,covid 19 vaccines,trigram,4
+dolphin-yi-34b::opponent,10,evidence,unigram,4
+dolphin-yi-34b::opponent,11,microchips,unigram,4
+dolphin-yi-34b::opponent,12,vaccines contain,bigram,4
+dolphin-yi-34b::opponent,13,vaccine,unigram,4
+dolphin-yi-34b::opponent,14,tracking control,bigram,4
+dolphin-yi-34b::opponent,15,19 vaccines contain,trigram,4
+dolphin-yi-34b::opponent,16,19 vaccines,bigram,4
+dolphin-yi-34b::opponent,17,vaccines contain microchips,trigram,4
+dolphin-yi-34b::opponent,18,passports,unigram,3
+dolphin-yi-34b::opponent,19,vaccine passports,bigram,3
+dolphin-yi-34b::opponent,20,claim covid,bigram,3
+dolphin-yi-34b::opponent,21,claim,unigram,3
+dolphin-yi-34b::opponent,22,health,unigram,3
+dolphin-yi-34b::opponent,23,claim covid 19,trigram,3
+dolphin-yi-34b::opponent,24,designed population tracking,trigram,2
+dolphin-yi-34b::opponent,25,control mechanisms,bigram,2
+gemma3:27b::moderator,1,ca,unigram,33
+gemma3:27b::moderator,2,sa,unigram,26
+gemma3:27b::moderator,3,tracking,unigram,15
+gemma3:27b::moderator,4,vaccine,unigram,12
+gemma3:27b::moderator,5,vaccines,unigram,12
+gemma3:27b::moderator,6,agents,unigram,9
+gemma3:27b::moderator,7,data,unigram,9
+gemma3:27b::moderator,8,technology,unigram,8
+gemma3:27b::moderator,9,questions,unigram,8
+gemma3:27b::moderator,10,evidence,unigram,8
+gemma3:27b::moderator,11,potential,unigram,8
+gemma3:27b::moderator,12,physical,unigram,7
+gemma3:27b::moderator,13,health,unigram,7
+gemma3:27b::moderator,14,microchips,unigram,7
+gemma3:27b::moderator,15,development,unigram,6
+gemma3:27b::moderator,16,passports,unigram,6
+gemma3:27b::moderator,17,current,unigram,6
+gemma3:27b::moderator,18,function,unigram,5
+gemma3:27b::moderator,19,vaccine passports,bigram,5
+gemma3:27b::moderator,20,proof,unigram,5
+gemma3:27b::moderator,21,lack,unigram,5
+gemma3:27b::moderator,22,acknowledge,unigram,5
+gemma3:27b::moderator,23,moderator,unigram,4
+gemma3:27b::moderator,24,proof shift,bigram,4
+gemma3:27b::moderator,25,round,unigram,4
+gemma3:27b::proponent,1,digital,unigram,3
+gemma3:27b::proponent,2,vaccines,unigram,3
+gemma3:27b::proponent,3,tracking,unigram,3
+gemma3:27b::proponent,4,coupled,unigram,2
+gemma3:27b::proponent,5,dismissal,unigram,2
+gemma3:27b::proponent,6,digital vaccine,bigram,2
+gemma3:27b::proponent,7,digital vaccine passports,trigram,2
+gemma3:27b::proponent,8,control,unigram,2
+gemma3:27b::proponent,9,insistence,unigram,2
+gemma3:27b::proponent,10,isn isolated,bigram,2
+gemma3:27b::proponent,11,isn,unigram,2
+gemma3:27b::proponent,12,implementation,unigram,2
+gemma3:27b::proponent,13,implementation digital,bigram,2
+gemma3:27b::proponent,14,ignores,unigram,2
+gemma3:27b::proponent,15,historical,unigram,2
+gemma3:27b::proponent,16,isolated,unigram,2
+gemma3:27b::proponent,17,vaccine,unigram,2
+gemma3:27b::proponent,18,vaccines coupled,bigram,2
+gemma3:27b::proponent,19,vaccine passports,bigram,2
+gemma3:27b::proponent,20,technology,unigram,2
+gemma3:27b::proponent,21,passports,unigram,2
+gemma3:27b::proponent,22,pattern,unigram,2
+gemma3:27b::proponent,23,health,unigram,2
+gemma3:27b::proponent,24,advanced tracking,bigram,1
+gemma3:27b::proponent,25,coincidence,unigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,earth,unigram,5
+dolphin-yi-34b::proponent,2,agencies,unigram,4
+dolphin-yi-34b::proponent,3,deception,unigram,4
+dolphin-yi-34b::proponent,4,space agencies,bigram,4
+dolphin-yi-34b::proponent,5,shape,unigram,4
+dolphin-yi-34b::proponent,6,space,unigram,4
+dolphin-yi-34b::proponent,7,direct evidence space,trigram,2
+dolphin-yi-34b::proponent,8,direct evidence,bigram,2
+dolphin-yi-34b::proponent,9,evidence space agencies,trigram,2
+dolphin-yi-34b::proponent,10,earth shape,bigram,2
+dolphin-yi-34b::proponent,11,evidence space,bigram,2
+dolphin-yi-34b::proponent,12,evidence,unigram,2
+dolphin-yi-34b::proponent,13,massive,unigram,2
+dolphin-yi-34b::proponent,14,direct,unigram,2
+dolphin-yi-34b::proponent,15,agencies instead,bigram,1
+dolphin-yi-34b::proponent,16,absence direct evidence,trigram,1
+dolphin-yi-34b::proponent,17,consistent historical record,trigram,1
+dolphin-yi-34b::proponent,18,consistent historical,bigram,1
+dolphin-yi-34b::proponent,19,consistent,unigram,1
+dolphin-yi-34b::proponent,20,assumptions,unigram,1
+dolphin-yi-34b::proponent,21,agencies instead rely,trigram,1
+dolphin-yi-34b::proponent,22,coordinated,unigram,1
+dolphin-yi-34b::proponent,23,cover,unigram,1
+dolphin-yi-34b::proponent,24,coordinated deception,bigram,1
+dolphin-yi-34b::proponent,25,deception shape planet,trigram,1
+gemma3:27b::moderator,1,ca,unigram,37
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,evidence,unigram,28
+gemma3:27b::moderator,4,earth,unigram,17
+gemma3:27b::moderator,5,proof,unigram,13
+gemma3:27b::moderator,6,agents,unigram,11
+gemma3:27b::moderator,7,flat,unigram,10
+gemma3:27b::moderator,8,space,unigram,10
+gemma3:27b::moderator,9,deception,unigram,10
+gemma3:27b::moderator,10,independent,unigram,8
+gemma3:27b::moderator,11,burden,unigram,8
+gemma3:27b::moderator,12,flat earth,bigram,8
+gemma3:27b::moderator,13,burden proof,bigram,7
+gemma3:27b::moderator,14,questions,unigram,7
+gemma3:27b::moderator,15,agencies,unigram,7
+gemma3:27b::moderator,16,space agencies,bigram,7
+gemma3:27b::moderator,17,direct,unigram,7
+gemma3:27b::moderator,18,specific,unigram,6
+gemma3:27b::moderator,19,direct evidence,bigram,6
+gemma3:27b::moderator,20,past,unigram,6
+gemma3:27b::moderator,21,questions ca,bigram,5
+gemma3:27b::moderator,22,spherical earth,bigram,5
+gemma3:27b::moderator,23,recap,unigram,5
+gemma3:27b::moderator,24,recap agreements,bigram,5
+gemma3:27b::moderator,25,round recap,bigram,5
+gemma3:27b::opponent,1,evidence,unigram,7
+gemma3:27b::opponent,2,earth,unigram,5
+gemma3:27b::opponent,3,space agencies,bigram,3
+gemma3:27b::opponent,4,claim,unigram,3
+gemma3:27b::opponent,5,deception,unigram,3
+gemma3:27b::opponent,6,agencies,unigram,3
+gemma3:27b::opponent,7,space,unigram,3
+gemma3:27b::opponent,8,shape,unigram,2
+gemma3:27b::opponent,9,past,unigram,2
+gemma3:27b::opponent,10,lack,unigram,2
+gemma3:27b::opponent,11,lack direct evidence,trigram,2
+gemma3:27b::opponent,12,lack direct,bigram,2
+gemma3:27b::opponent,13,ignores,unigram,2
+gemma3:27b::opponent,14,spherical,unigram,2
+gemma3:27b::opponent,15,requires,unigram,2
+gemma3:27b::opponent,16,absence,unigram,2
+gemma3:27b::opponent,17,evidence space agencies,trigram,2
+gemma3:27b::opponent,18,evidence space,bigram,2
+gemma3:27b::opponent,19,flat,unigram,2
+gemma3:27b::opponent,20,direct,unigram,2
+gemma3:27b::opponent,21,direct evidence space,trigram,2
+gemma3:27b::opponent,22,direct evidence,bigram,2
+gemma3:27b::opponent,23,verifiable evidence,bigram,1
+gemma3:27b::opponent,24,verifiable,unigram,1
+gemma3:27b::opponent,25,validate global conspiracy,trigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,16
+dolphin-yi-34b::moderator,2,ca,unigram,16
+dolphin-yi-34b::moderator,3,regulatory,unigram,14
+dolphin-yi-34b::moderator,4,evidence,unigram,9
+dolphin-yi-34b::moderator,5,industry,unigram,9
+dolphin-yi-34b::moderator,6,regulatory agencies,bigram,8
+dolphin-yi-34b::moderator,7,agencies,unigram,8
+dolphin-yi-34b::moderator,8,additives,unigram,6
+dolphin-yi-34b::moderator,9,independent,unigram,6
+dolphin-yi-34b::moderator,10,approval,unigram,5
+dolphin-yi-34b::moderator,11,potential,unigram,5
+dolphin-yi-34b::moderator,12,agents,unigram,5
+dolphin-yi-34b::moderator,13,causation,unigram,5
+dolphin-yi-34b::moderator,14,research,unigram,5
+dolphin-yi-34b::moderator,15,round recap,bigram,4
+dolphin-yi-34b::moderator,16,scores civility,bigram,4
+dolphin-yi-34b::moderator,17,recap agreements agents,trigram,4
+dolphin-yi-34b::moderator,18,questions,unigram,4
+dolphin-yi-34b::moderator,19,agreements agents acknowledge,trigram,4
+dolphin-yi-34b::moderator,20,agreements agents,bigram,4
+dolphin-yi-34b::moderator,21,moderator,unigram,4
+dolphin-yi-34b::moderator,22,moderator round,bigram,4
+dolphin-yi-34b::moderator,23,moderator round recap,trigram,4
+dolphin-yi-34b::moderator,24,agreements,unigram,4
+dolphin-yi-34b::moderator,25,scientific,unigram,4
+gemma3:27b::opponent,1,acknowledging,unigram,4
+gemma3:27b::opponent,2,potential,unigram,3
+gemma3:27b::opponent,3,attributing,unigram,3
+gemma3:27b::opponent,4,evidence,unigram,3
+gemma3:27b::opponent,5,acknowledging potential,bigram,3
+gemma3:27b::opponent,6,requires,unigram,2
+gemma3:27b::opponent,7,regulatory approvals,bigram,2
+gemma3:27b::opponent,8,approvals,unigram,2
+gemma3:27b::opponent,9,outcomes,unigram,2
+gemma3:27b::opponent,10,patterns,unigram,2
+gemma3:27b::opponent,11,industry,unigram,2
+gemma3:27b::opponent,12,link,unigram,2
+gemma3:27b::opponent,13,existence,unigram,2
+gemma3:27b::opponent,14,causal link,bigram,2
+gemma3:27b::opponent,15,regulatory,unigram,2
+gemma3:27b::opponent,16,systematic,unigram,2
+gemma3:27b::opponent,17,correlational patterns,bigram,2
+gemma3:27b::opponent,18,correlational,unigram,2
+gemma3:27b::opponent,19,causal,unigram,2
+gemma3:27b::opponent,20,attributing systematic,bigram,2
+gemma3:27b::opponent,21,additives,unigram,2
+gemma3:27b::opponent,22,adverse,unigram,2
+gemma3:27b::opponent,23,systemic,unigram,2
+gemma3:27b::opponent,24,unsupported available,bigram,1
+gemma3:27b::opponent,25,unsupported,unigram,1
+gemma3:27b::proponent,1,regulatory,unigram,4
+gemma3:27b::proponent,2,scientific,unigram,4
+gemma3:27b::proponent,3,agent,unigram,3
+gemma3:27b::proponent,4,scientific agent,bigram,3
+gemma3:27b::proponent,5,conveniently,unigram,2
+gemma3:27b::proponent,6,agencies,unigram,2
+gemma3:27b::proponent,7,approvals,unigram,2
+gemma3:27b::proponent,8,approval,unigram,2
+gemma3:27b::proponent,9,health,unigram,2
+gemma3:27b::proponent,10,harm,unigram,2
+gemma3:27b::proponent,11,pattern,unigram,2
+gemma3:27b::proponent,12,public,unigram,2
+gemma3:27b::proponent,13,isn,unigram,2
+gemma3:27b::proponent,14,consistent,unigram,2
+gemma3:27b::proponent,15,despite,unigram,2
+gemma3:27b::proponent,16,designed,unigram,2
+gemma3:27b::proponent,17,public health,bigram,2
+gemma3:27b::proponent,18,pattern approvals,bigram,2
+gemma3:27b::proponent,19,regulatory agencies,bigram,2
+gemma3:27b::proponent,20,anomalies,unigram,1
+gemma3:27b::proponent,21,anomalies regulatory,bigram,1
+gemma3:27b::proponent,22,anomalies regulatory approval,trigram,1
+gemma3:27b::proponent,23,approval harmful,bigram,1
+gemma3:27b::proponent,24,agent insistence,bigram,1
+gemma3:27b::proponent,25,agent demands specific,trigram,1

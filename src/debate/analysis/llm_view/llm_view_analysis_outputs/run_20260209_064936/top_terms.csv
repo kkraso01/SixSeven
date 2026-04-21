@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,fluoridation,unigram,18
+dolphin-yi-34b::moderator,2,ca,unigram,17
+dolphin-yi-34b::moderator,3,health,unigram,16
+dolphin-yi-34b::moderator,4,evidence,unigram,16
+dolphin-yi-34b::moderator,5,water fluoridation,bigram,15
+dolphin-yi-34b::moderator,6,sa,unigram,15
+dolphin-yi-34b::moderator,7,water,unigram,15
+dolphin-yi-34b::moderator,8,dental,unigram,13
+dolphin-yi-34b::moderator,9,effects,unigram,11
+dolphin-yi-34b::moderator,10,control,unigram,11
+dolphin-yi-34b::moderator,11,potential,unigram,11
+dolphin-yi-34b::moderator,12,dental health,bigram,10
+dolphin-yi-34b::moderator,13,questions,unigram,8
+dolphin-yi-34b::moderator,14,potential negative,bigram,8
+dolphin-yi-34b::moderator,15,population,unigram,8
+dolphin-yi-34b::moderator,16,negative,unigram,8
+dolphin-yi-34b::moderator,17,negative effects,bigram,8
+dolphin-yi-34b::moderator,18,potential negative effects,trigram,8
+dolphin-yi-34b::moderator,19,specific,unigram,6
+dolphin-yi-34b::moderator,20,agents,unigram,6
+dolphin-yi-34b::moderator,21,public health,bigram,6
+dolphin-yi-34b::moderator,22,public,unigram,6
+dolphin-yi-34b::moderator,23,argues,unigram,5
+dolphin-yi-34b::moderator,24,bridge,unigram,5
+dolphin-yi-34b::moderator,25,reasoning,unigram,5
+dolphin-yi-34b::proponent,1,fluoridation,unigram,5
+dolphin-yi-34b::proponent,2,population,unigram,5
+dolphin-yi-34b::proponent,3,water fluoridation,bigram,5
+dolphin-yi-34b::proponent,4,water,unigram,5
+dolphin-yi-34b::proponent,5,dental,unigram,4
+dolphin-yi-34b::proponent,6,control,unigram,4
+dolphin-yi-34b::proponent,7,dental health,bigram,4
+dolphin-yi-34b::proponent,8,control population,bigram,4
+dolphin-yi-34b::proponent,9,health,unigram,4
+dolphin-yi-34b::proponent,10,fear dental health,trigram,3
+dolphin-yi-34b::proponent,11,fear,unigram,3
+dolphin-yi-34b::proponent,12,population fear dental,trigram,3
+dolphin-yi-34b::proponent,13,health consequences,bigram,3
+dolphin-yi-34b::proponent,14,population fear,bigram,3
+dolphin-yi-34b::proponent,15,fear dental,bigram,3
+dolphin-yi-34b::proponent,16,control population fear,trigram,3
+dolphin-yi-34b::proponent,17,consequences,unigram,3
+dolphin-yi-34b::proponent,18,dental health consequences,trigram,3
+dolphin-yi-34b::proponent,19,sinister plot,bigram,2
+dolphin-yi-34b::proponent,20,sinister,unigram,2
+dolphin-yi-34b::proponent,21,fluoridation sinister plot,trigram,2
+dolphin-yi-34b::proponent,22,plot control population,trigram,2
+dolphin-yi-34b::proponent,23,plot,unigram,2
+dolphin-yi-34b::proponent,24,fluoridation sinister,bigram,2
+dolphin-yi-34b::proponent,25,sinister plot control,trigram,2
+gemma3:27b::opponent,1,fluoridation,unigram,5
+gemma3:27b::opponent,2,water fluoridation,bigram,5
+gemma3:27b::opponent,3,water,unigram,5
+gemma3:27b::opponent,4,claim,unigram,4
+gemma3:27b::opponent,5,evidence,unigram,4
+gemma3:27b::opponent,6,claim water,bigram,4
+gemma3:27b::opponent,7,claim water fluoridation,trigram,4
+gemma3:27b::opponent,8,control,unigram,4
+gemma3:27b::opponent,9,health,unigram,4
+gemma3:27b::opponent,10,population,unigram,3
+gemma3:27b::opponent,11,lacks,unigram,3
+gemma3:27b::opponent,12,dental,unigram,3
+gemma3:27b::opponent,13,fluoridation sinister,bigram,2
+gemma3:27b::opponent,14,dental health,bigram,2
+gemma3:27b::opponent,15,plausible mechanism,bigram,2
+gemma3:27b::opponent,16,mechanism,unigram,2
+gemma3:27b::opponent,17,fluoridation sinister plot,trigram,2
+gemma3:27b::opponent,18,population control,bigram,2
+gemma3:27b::opponent,19,relies,unigram,2
+gemma3:27b::opponent,20,water fluoridation sinister,trigram,2
+gemma3:27b::opponent,21,remains,unigram,2
+gemma3:27b::opponent,22,sinister,unigram,2
+gemma3:27b::opponent,23,sinister plot,bigram,2
+gemma3:27b::opponent,24,supporting,unigram,2
+gemma3:27b::opponent,25,public health,bigram,2

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,evidence,unigram,6
+dolphin-yi-34b::opponent,2,11,unigram,3
+dolphin-yi-34b::opponent,3,official,unigram,3
+dolphin-yi-34b::opponent,4,argument,unigram,3
+dolphin-yi-34b::opponent,5,narrative,unigram,3
+dolphin-yi-34b::opponent,6,concrete evidence,bigram,3
+dolphin-yi-34b::opponent,7,claims,unigram,3
+dolphin-yi-34b::opponent,8,opponent,unigram,3
+dolphin-yi-34b::opponent,9,concrete,unigram,3
+dolphin-yi-34b::opponent,10,remains challenging,bigram,2
+dolphin-yi-34b::opponent,11,opponent argument,bigram,2
+dolphin-yi-34b::opponent,12,remains challenging official,trigram,2
+dolphin-yi-34b::opponent,13,remains,unigram,2
+dolphin-yi-34b::opponent,14,provide concrete,bigram,2
+dolphin-yi-34b::opponent,15,provide,unigram,2
+dolphin-yi-34b::opponent,16,11 attacks,bigram,2
+dolphin-yi-34b::opponent,17,narratives empirical evidence,trigram,2
+dolphin-yi-34b::opponent,18,narratives empirical,bigram,2
+dolphin-yi-34b::opponent,19,official narrative provide,trigram,2
+dolphin-yi-34b::opponent,20,official narrative,bigram,2
+dolphin-yi-34b::opponent,21,automatically validate,bigram,2
+dolphin-yi-34b::opponent,22,automatically validate alternative,trigram,2
+dolphin-yi-34b::opponent,23,burden,unigram,2
+dolphin-yi-34b::opponent,24,automatically,unigram,2
+dolphin-yi-34b::opponent,25,burden remains,bigram,2
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,evidence,unigram,25
+gemma3:27b::moderator,4,anomalies,unigram,12
+gemma3:27b::moderator,5,investigation,unigram,11
+gemma3:27b::moderator,6,11,unigram,11
+gemma3:27b::moderator,7,agents,unigram,10
+gemma3:27b::moderator,8,events,unigram,10
+gemma3:27b::moderator,9,narrative,unigram,9
+gemma3:27b::moderator,10,burden,unigram,8
+gemma3:27b::moderator,11,agree,unigram,8
+gemma3:27b::moderator,12,proof,unigram,8
+gemma3:27b::moderator,13,pre,unigram,7
+gemma3:27b::moderator,14,acknowledge,unigram,6
+gemma3:27b::moderator,15,questions,unigram,6
+gemma3:27b::moderator,16,official,unigram,6
+gemma3:27b::moderator,17,wtc,unigram,6
+gemma3:27b::moderator,18,burden proof,bigram,6
+gemma3:27b::moderator,19,agents agree,bigram,5
+gemma3:27b::moderator,20,round recap agreements,trigram,5
+gemma3:27b::moderator,21,moderator round,bigram,5
+gemma3:27b::moderator,22,nist,unigram,5
+gemma3:27b::moderator,23,moderator,unigram,5
+gemma3:27b::moderator,24,moves,unigram,5
+gemma3:27b::moderator,25,moderator round recap,trigram,5
+gemma3:27b::proponent,1,narrative,unigram,4
+gemma3:27b::proponent,2,pre,unigram,4
+gemma3:27b::proponent,3,11,unigram,3
+gemma3:27b::proponent,4,agent,unigram,3
+gemma3:27b::proponent,5,pre planned narrative,trigram,3
+gemma3:27b::proponent,6,pre planned,bigram,3
+gemma3:27b::proponent,7,scientific agent,bigram,3
+gemma3:27b::proponent,8,planned,unigram,3
+gemma3:27b::proponent,9,planned narrative,bigram,3
+gemma3:27b::proponent,10,anomalies,unigram,3
+gemma3:27b::proponent,11,scientific,unigram,3
+gemma3:27b::proponent,12,surrounding 11,bigram,2
+gemma3:27b::proponent,13,simple,unigram,2
+gemma3:27b::proponent,14,scientific agent consistently,trigram,2
+gemma3:27b::proponent,15,surrounding,unigram,2
+gemma3:27b::proponent,16,agent consistently,bigram,2
+gemma3:27b::proponent,17,protect,unigram,2
+gemma3:27b::proponent,18,proof,unigram,2
+gemma3:27b::proponent,19,regarding,unigram,2
+gemma3:27b::proponent,20,agent consistently demands,trigram,2
+gemma3:27b::proponent,21,anomalies surrounding,bigram,2
+gemma3:27b::proponent,22,anomalies surrounding 11,trigram,2
+gemma3:27b::proponent,23,attack,unigram,2
+gemma3:27b::proponent,24,official,unigram,2
+gemma3:27b::proponent,25,isn,unigram,2

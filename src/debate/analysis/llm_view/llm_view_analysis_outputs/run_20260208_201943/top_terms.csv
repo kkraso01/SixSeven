@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,control,unigram,20
+dolphin-yi-34b::moderator,2,cbdc,unigram,20
+dolphin-yi-34b::moderator,3,ca,unigram,20
+dolphin-yi-34b::moderator,4,sa,unigram,18
+dolphin-yi-34b::moderator,5,design,unigram,17
+dolphin-yi-34b::moderator,6,evidence,unigram,13
+dolphin-yi-34b::moderator,7,cbdcs,unigram,12
+dolphin-yi-34b::moderator,8,surveillance,unigram,9
+dolphin-yi-34b::moderator,9,cbdc design,bigram,8
+dolphin-yi-34b::moderator,10,questions,unigram,8
+dolphin-yi-34b::moderator,11,privacy,unigram,7
+dolphin-yi-34b::moderator,12,capabilities,unigram,7
+dolphin-yi-34b::moderator,13,financial,unigram,7
+dolphin-yi-34b::moderator,14,specific,unigram,7
+dolphin-yi-34b::moderator,15,argues,unigram,6
+dolphin-yi-34b::moderator,16,round,unigram,6
+dolphin-yi-34b::moderator,17,control agenda,bigram,6
+dolphin-yi-34b::moderator,18,potential,unigram,6
+dolphin-yi-34b::moderator,19,agenda,unigram,6
+dolphin-yi-34b::moderator,20,specific design,bigram,6
+dolphin-yi-34b::moderator,21,government,unigram,6
+dolphin-yi-34b::moderator,22,bridge questions,bigram,5
+dolphin-yi-34b::moderator,23,bridge,unigram,5
+dolphin-yi-34b::moderator,24,epistemic bridge,bigram,5
+dolphin-yi-34b::moderator,25,recap,unigram,5
+gemma3:27b::opponent,1,control,unigram,9
+gemma3:27b::opponent,2,acknowledging,unigram,4
+gemma3:27b::opponent,3,demonstrating,unigram,4
+gemma3:27b::opponent,4,design,unigram,4
+gemma3:27b::opponent,5,historical,unigram,4
+gemma3:27b::opponent,6,potential,unigram,3
+gemma3:27b::opponent,7,attributing,unigram,3
+gemma3:27b::opponent,8,acknowledging historical,bigram,3
+gemma3:27b::opponent,9,cbdcs,unigram,3
+gemma3:27b::opponent,10,requires,unigram,3
+gemma3:27b::opponent,11,choices,unigram,3
+gemma3:27b::opponent,12,specific,unigram,3
+gemma3:27b::opponent,13,control agenda,bigram,3
+gemma3:27b::opponent,14,agenda,unigram,3
+gemma3:27b::opponent,15,specific design choices,trigram,2
+gemma3:27b::opponent,16,requires demonstrating,bigram,2
+gemma3:27b::opponent,17,pattern,unigram,2
+gemma3:27b::opponent,18,prioritizing control,bigram,2
+gemma3:27b::opponent,19,prioritizing,unigram,2
+gemma3:27b::opponent,20,predetermined,unigram,2
+gemma3:27b::opponent,21,relies,unigram,2
+gemma3:27b::opponent,22,cbdc,unigram,2
+gemma3:27b::opponent,23,cbdc design,bigram,2
+gemma3:27b::opponent,24,mechanisms,unigram,2
+gemma3:27b::opponent,25,financial,unigram,2
+gemma3:27b::proponent,1,control,unigram,6
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,agent,unigram,4
+gemma3:27b::proponent,4,scientific,unigram,4
+gemma3:27b::proponent,5,individual,unigram,3
+gemma3:27b::proponent,6,financial,unigram,3
+gemma3:27b::proponent,7,surveillance,unigram,2
+gemma3:27b::proponent,8,regarding,unigram,2
+gemma3:27b::proponent,9,pattern,unigram,2
+gemma3:27b::proponent,10,infrastructure,unigram,2
+gemma3:27b::proponent,11,historical,unigram,2
+gemma3:27b::proponent,12,incentives,unigram,2
+gemma3:27b::proponent,13,governments,unigram,2
+gemma3:27b::proponent,14,evidence,unigram,2
+gemma3:27b::proponent,15,prioritizing,unigram,2
+gemma3:27b::proponent,16,surveillance infrastructure,bigram,2
+gemma3:27b::proponent,17,control individual,bigram,2
+gemma3:27b::proponent,18,designed,unigram,2
+gemma3:27b::proponent,19,consistently,unigram,2
+gemma3:27b::proponent,20,central,unigram,2
+gemma3:27b::proponent,21,use reactively,bigram,1
+gemma3:27b::proponent,22,use,unigram,1
+gemma3:27b::proponent,23,unprecedented control individual,trigram,1
+gemma3:27b::proponent,24,unprecedented control,bigram,1
+gemma3:27b::proponent,25,unprecedented,unigram,1

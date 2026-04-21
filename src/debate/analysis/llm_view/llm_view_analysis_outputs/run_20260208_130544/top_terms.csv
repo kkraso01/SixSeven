@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,companies,unigram,19
+dolphin-yi-34b::moderator,2,pharmaceutical,unigram,19
+dolphin-yi-34b::moderator,3,pharmaceutical companies,bigram,17
+dolphin-yi-34b::moderator,4,ca,unigram,17
+dolphin-yi-34b::moderator,5,sa,unigram,14
+dolphin-yi-34b::moderator,6,drug,unigram,10
+dolphin-yi-34b::moderator,7,drug development,bigram,10
+dolphin-yi-34b::moderator,8,development,unigram,10
+dolphin-yi-34b::moderator,9,profit,unigram,9
+dolphin-yi-34b::moderator,10,cures,unigram,9
+dolphin-yi-34b::moderator,11,evidence,unigram,9
+dolphin-yi-34b::moderator,12,potential,unigram,9
+dolphin-yi-34b::moderator,13,claim,unigram,8
+dolphin-yi-34b::moderator,14,questions,unigram,8
+dolphin-yi-34b::moderator,15,motive,unigram,7
+dolphin-yi-34b::moderator,16,specific,unigram,7
+dolphin-yi-34b::moderator,17,specific evidence,bigram,6
+dolphin-yi-34b::moderator,18,complexity,unigram,6
+dolphin-yi-34b::moderator,19,complexity drug,bigram,6
+dolphin-yi-34b::moderator,20,complexity drug development,trigram,6
+dolphin-yi-34b::moderator,21,agents,unigram,6
+dolphin-yi-34b::moderator,22,recap,unigram,5
+dolphin-yi-34b::moderator,23,ca argues,bigram,5
+dolphin-yi-34b::moderator,24,civility epistemic bridge,trigram,5
+dolphin-yi-34b::moderator,25,ca argues pharmaceutical,trigram,5
+dolphin-yi-34b::opponent,1,companies,unigram,10
+dolphin-yi-34b::opponent,2,assumes,unigram,5
+dolphin-yi-34b::opponent,3,assumes uniform motive,trigram,5
+dolphin-yi-34b::opponent,4,assumes uniform,bigram,5
+dolphin-yi-34b::opponent,5,companies ignores,bigram,5
+dolphin-yi-34b::opponent,6,drug,unigram,5
+dolphin-yi-34b::opponent,7,drug development,bigram,5
+dolphin-yi-34b::opponent,8,development,unigram,5
+dolphin-yi-34b::opponent,9,motive companies ignores,trigram,5
+dolphin-yi-34b::opponent,10,pharmaceutical,unigram,5
+dolphin-yi-34b::opponent,11,motive,unigram,5
+dolphin-yi-34b::opponent,12,motive companies,bigram,5
+dolphin-yi-34b::opponent,13,inference,unigram,5
+dolphin-yi-34b::opponent,14,inference assumes,bigram,5
+dolphin-yi-34b::opponent,15,inference assumes uniform,trigram,5
+dolphin-yi-34b::opponent,16,ignores,unigram,5
+dolphin-yi-34b::opponent,17,pharmaceutical companies,bigram,5
+dolphin-yi-34b::opponent,18,profit,unigram,5
+dolphin-yi-34b::opponent,19,supported reliable inference,trigram,5
+dolphin-yi-34b::opponent,20,supported reliable,bigram,5
+dolphin-yi-34b::opponent,21,supported,unigram,5
+dolphin-yi-34b::opponent,22,reliable inference assumes,trigram,5
+dolphin-yi-34b::opponent,23,reliable inference,bigram,5
+dolphin-yi-34b::opponent,24,uniform motive companies,trigram,5
+dolphin-yi-34b::opponent,25,uniform,unigram,5
+dolphin-yi-34b::proponent,1,cures,unigram,5
+dolphin-yi-34b::proponent,2,profit,unigram,5
+dolphin-yi-34b::proponent,3,pharmaceutical,unigram,5
+dolphin-yi-34b::proponent,4,expensive treatments,bigram,4
+dolphin-yi-34b::proponent,5,expensive,unigram,4
+dolphin-yi-34b::proponent,6,treatments,unigram,4
+dolphin-yi-34b::proponent,7,cheap effective cures,trigram,3
+dolphin-yi-34b::proponent,8,cures cancer,bigram,3
+dolphin-yi-34b::proponent,9,cures cancer diseases,trigram,3
+dolphin-yi-34b::proponent,10,effective cures,bigram,3
+dolphin-yi-34b::proponent,11,focus,unigram,3
+dolphin-yi-34b::proponent,12,effective cures cancer,trigram,3
+dolphin-yi-34b::proponent,13,effective,unigram,3
+dolphin-yi-34b::proponent,14,diseases,unigram,3
+dolphin-yi-34b::proponent,15,cheap effective,bigram,3
+dolphin-yi-34b::proponent,16,cancer diseases,bigram,3
+dolphin-yi-34b::proponent,17,companies,unigram,3
+dolphin-yi-34b::proponent,18,pharmaceutical companies,bigram,3
+dolphin-yi-34b::proponent,19,cheap,unigram,3
+dolphin-yi-34b::proponent,20,cancer,unigram,3
+dolphin-yi-34b::proponent,21,affordable,unigram,2
+dolphin-yi-34b::proponent,22,evidenced,unigram,2
+dolphin-yi-34b::proponent,23,companies suppress cheap,trigram,2
+dolphin-yi-34b::proponent,24,evidenced focus,bigram,2
+dolphin-yi-34b::proponent,25,expensive treatments affordable,trigram,2

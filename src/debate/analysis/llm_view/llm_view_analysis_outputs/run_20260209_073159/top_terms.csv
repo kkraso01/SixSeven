@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,state,unigram,21
+dolphin-yi-34b::moderator,2,deep state,bigram,21
+dolphin-yi-34b::moderator,3,deep,unigram,21
+dolphin-yi-34b::moderator,4,policy,unigram,16
+dolphin-yi-34b::moderator,5,control,unigram,14
+dolphin-yi-34b::moderator,6,evidence,unigram,14
+dolphin-yi-34b::moderator,7,specific,unigram,14
+dolphin-yi-34b::moderator,8,sa,unigram,13
+dolphin-yi-34b::moderator,9,ca,unigram,13
+dolphin-yi-34b::moderator,10,officials,unigram,11
+dolphin-yi-34b::moderator,11,agents,unigram,10
+dolphin-yi-34b::moderator,12,elected,unigram,10
+dolphin-yi-34b::moderator,13,deep state control,trigram,8
+dolphin-yi-34b::moderator,14,elected officials,bigram,8
+dolphin-yi-34b::moderator,15,state control,bigram,8
+dolphin-yi-34b::moderator,16,influence,unigram,7
+dolphin-yi-34b::moderator,17,questions,unigram,7
+dolphin-yi-34b::moderator,18,democratic,unigram,6
+dolphin-yi-34b::moderator,19,moves,unigram,6
+dolphin-yi-34b::moderator,20,recap,unigram,5
+dolphin-yi-34b::moderator,21,agreements,unigram,5
+dolphin-yi-34b::moderator,22,factors,unigram,5
+dolphin-yi-34b::moderator,23,bridge,unigram,5
+dolphin-yi-34b::moderator,24,bridge questions,bigram,5
+dolphin-yi-34b::moderator,25,round,unigram,5
+dolphin-yi-34b::proponent,1,consistent,unigram,5
+dolphin-yi-34b::proponent,2,deep state,bigram,5
+dolphin-yi-34b::proponent,3,deep,unigram,5
+dolphin-yi-34b::proponent,4,state,unigram,5
+dolphin-yi-34b::proponent,5,consistent erosion democratic,trigram,4
+dolphin-yi-34b::proponent,6,deep state influence,trigram,4
+dolphin-yi-34b::proponent,7,democratic processes,bigram,4
+dolphin-yi-34b::proponent,8,consistent erosion,bigram,4
+dolphin-yi-34b::proponent,9,erosion democratic,bigram,4
+dolphin-yi-34b::proponent,10,erosion,unigram,4
+dolphin-yi-34b::proponent,11,erosion democratic processes,trigram,4
+dolphin-yi-34b::proponent,12,evident,unigram,4
+dolphin-yi-34b::proponent,13,influence,unigram,4
+dolphin-yi-34b::proponent,14,processes,unigram,4
+dolphin-yi-34b::proponent,15,influence evident,bigram,4
+dolphin-yi-34b::proponent,16,democratic,unigram,4
+dolphin-yi-34b::proponent,17,state influence evident,trigram,4
+dolphin-yi-34b::proponent,18,state influence,bigram,4
+dolphin-yi-34b::proponent,19,guise,unigram,3
+dolphin-yi-34b::proponent,20,guise national security,trigram,3
+dolphin-yi-34b::proponent,21,security,unigram,3
+dolphin-yi-34b::proponent,22,processes guise,bigram,3
+dolphin-yi-34b::proponent,23,processes guise national,trigram,3
+dolphin-yi-34b::proponent,24,national security,bigram,3
+dolphin-yi-34b::proponent,25,influence evident consistent,trigram,3
+gemma3:27b::opponent,1,attributing,unigram,5
+gemma3:27b::opponent,2,deep,unigram,5
+gemma3:27b::opponent,3,deep state,bigram,5
+gemma3:27b::opponent,4,state,unigram,5
+gemma3:27b::opponent,5,policy,unigram,4
+gemma3:27b::opponent,6,evidence,unigram,3
+gemma3:27b::opponent,7,despite,unigram,3
+gemma3:27b::opponent,8,control,unigram,3
+gemma3:27b::opponent,9,lacks,unigram,3
+gemma3:27b::opponent,10,solely,unigram,3
+gemma3:27b::opponent,11,elected officials,bigram,3
+gemma3:27b::opponent,12,elected,unigram,3
+gemma3:27b::opponent,13,officials,unigram,3
+gemma3:27b::opponent,14,demonstrable evidence,bigram,2
+gemma3:27b::opponent,15,deep state requires,trigram,2
+gemma3:27b::opponent,16,demonstrable,unigram,2
+gemma3:27b::opponent,17,demonstrating mechanism,bigram,2
+gemma3:27b::opponent,18,demonstrating,unigram,2
+gemma3:27b::opponent,19,lacks demonstrable,bigram,2
+gemma3:27b::opponent,20,lacks demonstrable evidence,trigram,2
+gemma3:27b::opponent,21,consistent policy,bigram,2
+gemma3:27b::opponent,22,consistent,unigram,2
+gemma3:27b::opponent,23,consistent policy trends,trigram,2
+gemma3:27b::opponent,24,concerns,unigram,2
+gemma3:27b::opponent,25,explanations,unigram,2

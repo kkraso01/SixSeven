@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,12
+dolphin-yi-34b::moderator,2,ca,unigram,10
+dolphin-yi-34b::moderator,3,deployment,unigram,9
+dolphin-yi-34b::moderator,4,surveillance,unigram,6
+dolphin-yi-34b::moderator,5,control,unigram,6
+dolphin-yi-34b::moderator,6,questions,unigram,5
+dolphin-yi-34b::moderator,7,ai surveillance,bigram,5
+dolphin-yi-34b::moderator,8,ai,unigram,5
+dolphin-yi-34b::moderator,9,evidence,unigram,5
+dolphin-yi-34b::moderator,10,proactive,unigram,5
+dolphin-yi-34b::moderator,11,security,unigram,4
+dolphin-yi-34b::moderator,12,proactive control,bigram,4
+dolphin-yi-34b::moderator,13,primary,unigram,4
+dolphin-yi-34b::moderator,14,suggests,unigram,3
+dolphin-yi-34b::moderator,15,scores civility,bigram,3
+dolphin-yi-34b::moderator,16,scores,unigram,3
+dolphin-yi-34b::moderator,17,round recap,bigram,3
+dolphin-yi-34b::moderator,18,predictive,unigram,3
+dolphin-yi-34b::moderator,19,predictive policing,bigram,3
+dolphin-yi-34b::moderator,20,power,unigram,3
+dolphin-yi-34b::moderator,21,assessment,unigram,3
+dolphin-yi-34b::moderator,22,recap,unigram,3
+dolphin-yi-34b::moderator,23,recap agreements,bigram,3
+dolphin-yi-34b::moderator,24,recap agreements agents,trigram,3
+dolphin-yi-34b::moderator,25,argues,unigram,3
+gemma3:27b::opponent,1,deployment,unigram,3
+gemma3:27b::opponent,2,ai,unigram,2
+gemma3:27b::opponent,3,ai surveillance primarily,trigram,2
+gemma3:27b::opponent,4,ai surveillance,bigram,2
+gemma3:27b::opponent,5,coordinated power,bigram,2
+gemma3:27b::opponent,6,coordinated power grab,trigram,2
+gemma3:27b::opponent,7,deployment ai,bigram,2
+gemma3:27b::opponent,8,coordinated,unigram,2
+gemma3:27b::opponent,9,explanations,unigram,2
+gemma3:27b::opponent,10,deployment ai surveillance,trigram,2
+gemma3:27b::opponent,11,grab,unigram,2
+gemma3:27b::opponent,12,policing,unigram,2
+gemma3:27b::opponent,13,primarily,unigram,2
+gemma3:27b::opponent,14,primarily coordinated,bigram,2
+gemma3:27b::opponent,15,primarily coordinated power,trigram,2
+gemma3:27b::opponent,16,power grab,bigram,2
+gemma3:27b::opponent,17,power,unigram,2
+gemma3:27b::opponent,18,patterns,unigram,2
+gemma3:27b::opponent,19,surveillance primarily coordinated,trigram,2
+gemma3:27b::opponent,20,security,unigram,2
+gemma3:27b::opponent,21,surveillance,unigram,2
+gemma3:27b::opponent,22,surveillance primarily,bigram,2
+gemma3:27b::opponent,23,behavior relevant,bigram,1
+gemma3:27b::opponent,24,behavior relevant attributing,trigram,1
+gemma3:27b::opponent,25,concerns potential misuse,trigram,1
+gemma3:27b::proponent,1,control,unigram,3
+gemma3:27b::proponent,2,agent,unigram,2
+gemma3:27b::proponent,3,crises,unigram,2
+gemma3:27b::proponent,4,institutions,unigram,2
+gemma3:27b::proponent,5,history,unigram,2
+gemma3:27b::proponent,6,manufactured,unigram,2
+gemma3:27b::proponent,7,scientific,unigram,2
+gemma3:27b::proponent,8,scientific agent,bigram,2
+gemma3:27b::proponent,9,algorithms,unigram,1
+gemma3:27b::proponent,10,algorithms deployed,bigram,1
+gemma3:27b::proponent,11,algorithms deployed statistically,trigram,1
+gemma3:27b::proponent,12,allocation,unigram,1
+gemma3:27b::proponent,13,allocation patterns,bigram,1
+gemma3:27b::proponent,14,ai,unigram,1
+gemma3:27b::proponent,15,agent focus resource,trigram,1
+gemma3:27b::proponent,16,agent consistently demands,trigram,1
+gemma3:27b::proponent,17,anomaly predictive,bigram,1
+gemma3:27b::proponent,18,anomaly predictive policing,trigram,1
+gemma3:27b::proponent,19,calculated power,bigram,1
+gemma3:27b::proponent,20,calculated,unigram,1
+gemma3:27b::proponent,21,clear,unigram,1
+gemma3:27b::proponent,22,clear indication,bigram,1
+gemma3:27b::proponent,23,clear indication proactive,trigram,1
+gemma3:27b::proponent,24,calculated power grab,trigram,1
+gemma3:27b::proponent,25,consistently,unigram,1

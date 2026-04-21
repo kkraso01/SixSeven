@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,electronic,unigram,3
+dolphin-yi-34b::proponent,2,election,unigram,3
+dolphin-yi-34b::proponent,3,electronic voting machines,trigram,3
+dolphin-yi-34b::proponent,4,electronic voting,bigram,3
+dolphin-yi-34b::proponent,5,machines,unigram,3
+dolphin-yi-34b::proponent,6,voting,unigram,3
+dolphin-yi-34b::proponent,7,voting machines,bigram,3
+dolphin-yi-34b::proponent,8,anomaly,unigram,2
+dolphin-yi-34b::proponent,9,lack,unigram,2
+dolphin-yi-34b::proponent,10,manipulation,unigram,2
+dolphin-yi-34b::proponent,11,lack transparency,bigram,2
+dolphin-yi-34b::proponent,12,election manipulation,bigram,2
+dolphin-yi-34b::proponent,13,transparency,unigram,2
+dolphin-yi-34b::proponent,14,anomaly undermines election,trigram,1
+dolphin-yi-34b::proponent,15,anomaly potentially enables,trigram,1
+dolphin-yi-34b::proponent,16,design,unigram,1
+dolphin-yi-34b::proponent,17,election manipulation powerful,trigram,1
+dolphin-yi-34b::proponent,18,election integrity,bigram,1
+dolphin-yi-34b::proponent,19,elites,unigram,1
+dolphin-yi-34b::proponent,20,elites inherent,bigram,1
+dolphin-yi-34b::proponent,21,elites inherent design,trigram,1
+dolphin-yi-34b::proponent,22,enables,unigram,1
+dolphin-yi-34b::proponent,23,enables election,bigram,1
+dolphin-yi-34b::proponent,24,enables election manipulation,trigram,1
+dolphin-yi-34b::proponent,25,facilitate,unigram,1
+gemma3:27b::moderator,1,ca,unigram,19
+gemma3:27b::moderator,2,sa,unigram,17
+gemma3:27b::moderator,3,manipulation,unigram,13
+gemma3:27b::moderator,4,vulnerabilities,unigram,11
+gemma3:27b::moderator,5,evidence,unigram,8
+gemma3:27b::moderator,6,potential,unigram,6
+gemma3:27b::moderator,7,voting,unigram,6
+gemma3:27b::moderator,8,systems,unigram,5
+gemma3:27b::moderator,9,agents,unigram,5
+gemma3:27b::moderator,10,election,unigram,5
+gemma3:27b::moderator,11,manipulation sa,bigram,5
+gemma3:27b::moderator,12,lack,unigram,4
+gemma3:27b::moderator,13,exploited,unigram,4
+gemma3:27b::moderator,14,transparency,unigram,4
+gemma3:27b::moderator,15,proof,unigram,4
+gemma3:27b::moderator,16,electronic,unigram,4
+gemma3:27b::moderator,17,electronic voting,bigram,4
+gemma3:27b::moderator,18,acknowledge,unigram,4
+gemma3:27b::moderator,19,design,unigram,4
+gemma3:27b::moderator,20,questions,unigram,3
+gemma3:27b::moderator,21,proprietary,unigram,3
+gemma3:27b::moderator,22,proprietary software,bigram,3
+gemma3:27b::moderator,23,appeal,unigram,3
+gemma3:27b::moderator,24,recap agreements agents,trigram,3
+gemma3:27b::moderator,25,specific,unigram,3
+gemma3:27b::opponent,1,manipulation,unigram,4
+gemma3:27b::opponent,2,acknowledging,unigram,2
+gemma3:27b::opponent,3,elites,unigram,2
+gemma3:27b::opponent,4,electronic,unigram,2
+gemma3:27b::opponent,5,election,unigram,2
+gemma3:27b::opponent,6,manipulation elites,bigram,2
+gemma3:27b::opponent,7,evidence,unigram,2
+gemma3:27b::opponent,8,electronic voting,bigram,2
+gemma3:27b::opponent,9,systems,unigram,2
+gemma3:27b::opponent,10,transparency,unigram,2
+gemma3:27b::opponent,11,vulnerabilities,unigram,2
+gemma3:27b::opponent,12,voting,unigram,2
+gemma3:27b::opponent,13,potential,unigram,2
+gemma3:27b::opponent,14,requires,unigram,2
+gemma3:27b::opponent,15,potential vulnerabilities,bigram,2
+gemma3:27b::opponent,16,anomaly,unigram,1
+gemma3:27b::opponent,17,causal link closed,trigram,1
+gemma3:27b::opponent,18,claim,unigram,1
+gemma3:27b::opponent,19,claim electronic,bigram,1
+gemma3:27b::opponent,20,claim electronic voting,trigram,1
+gemma3:27b::opponent,21,closed,unigram,1
+gemma3:27b::opponent,22,closed source,bigram,1
+gemma3:27b::opponent,23,closed source code,trigram,1
+gemma3:27b::opponent,24,code,unigram,1
+gemma3:27b::opponent,25,code actual,bigram,1

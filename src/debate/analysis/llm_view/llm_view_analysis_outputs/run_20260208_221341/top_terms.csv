@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,deep,unigram,4
+dolphin-yi-34b::opponent,2,deep state,bigram,4
+dolphin-yi-34b::opponent,3,state,unigram,4
+dolphin-yi-34b::opponent,4,policy,unigram,4
+dolphin-yi-34b::opponent,5,argument,unigram,3
+dolphin-yi-34b::opponent,6,opponent,unigram,3
+dolphin-yi-34b::opponent,7,argues,unigram,2
+dolphin-yi-34b::opponent,8,administrations,unigram,2
+dolphin-yi-34b::opponent,9,continuity,unigram,2
+dolphin-yi-34b::opponent,10,concrete evidence,bigram,2
+dolphin-yi-34b::opponent,11,decisions,unigram,2
+dolphin-yi-34b::opponent,12,concrete evidence relies,trigram,2
+dolphin-yi-34b::opponent,13,evidence,unigram,2
+dolphin-yi-34b::opponent,14,concrete,unigram,2
+dolphin-yi-34b::opponent,15,anomalies,unigram,2
+dolphin-yi-34b::opponent,16,agencies,unigram,2
+dolphin-yi-34b::opponent,17,intentions,unigram,2
+dolphin-yi-34b::opponent,18,lacks,unigram,2
+dolphin-yi-34b::opponent,19,lacks concrete evidence,trigram,2
+dolphin-yi-34b::opponent,20,lacks concrete,bigram,2
+dolphin-yi-34b::opponent,21,necessarily imply existence,trigram,2
+dolphin-yi-34b::opponent,22,imply existence deep,trigram,2
+dolphin-yi-34b::opponent,23,imply existence,bigram,2
+dolphin-yi-34b::opponent,24,imply,unigram,2
+dolphin-yi-34b::opponent,25,existence,unigram,2
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,evidence,unigram,18
+gemma3:27b::moderator,4,policy,unigram,12
+gemma3:27b::moderator,5,control,unigram,12
+gemma3:27b::moderator,6,proof,unigram,11
+gemma3:27b::moderator,7,agents,unigram,10
+gemma3:27b::moderator,8,anomalies,unigram,8
+gemma3:27b::moderator,9,systemic,unigram,8
+gemma3:27b::moderator,10,state,unigram,6
+gemma3:27b::moderator,11,influence,unigram,6
+gemma3:27b::moderator,12,continuity,unigram,6
+gemma3:27b::moderator,13,deep state,bigram,6
+gemma3:27b::moderator,14,deep,unigram,6
+gemma3:27b::moderator,15,existence,unigram,6
+gemma3:27b::moderator,16,specific,unigram,6
+gemma3:27b::moderator,17,questions,unigram,5
+gemma3:27b::moderator,18,questions ca,bigram,5
+gemma3:27b::moderator,19,agreements,unigram,5
+gemma3:27b::moderator,20,agreements agents,bigram,5
+gemma3:27b::moderator,21,epistemic,unigram,5
+gemma3:27b::moderator,22,asks,unigram,5
+gemma3:27b::moderator,23,frames,unigram,5
+gemma3:27b::moderator,24,epistemic bridge,bigram,5
+gemma3:27b::moderator,25,moderator round,bigram,5
+gemma3:27b::proponent,1,scientific,unigram,4
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,policy,unigram,4
+gemma3:27b::proponent,4,agent,unigram,4
+gemma3:27b::proponent,5,control,unigram,3
+gemma3:27b::proponent,6,strategic,unigram,2
+gemma3:27b::proponent,7,term,unigram,2
+gemma3:27b::proponent,8,suggesting,unigram,2
+gemma3:27b::proponent,9,self,unigram,2
+gemma3:27b::proponent,10,structure,unigram,2
+gemma3:27b::proponent,11,scientific agent continued,trigram,2
+gemma3:27b::proponent,12,regardless,unigram,2
+gemma3:27b::proponent,13,pattern,unigram,2
+gemma3:27b::proponent,14,long,unigram,2
+gemma3:27b::proponent,15,systemic,unigram,2
+gemma3:27b::proponent,16,suggesting underlying,bigram,2
+gemma3:27b::proponent,17,misses,unigram,2
+gemma3:27b::proponent,18,long term,bigram,2
+gemma3:27b::proponent,19,consistency,unigram,2
+gemma3:27b::proponent,20,continued,unigram,2
+gemma3:27b::proponent,21,leadership,unigram,2
+gemma3:27b::proponent,22,insistence,unigram,2
+gemma3:27b::proponent,23,interests,unigram,2
+gemma3:27b::proponent,24,isn,unigram,2
+gemma3:27b::proponent,25,focus,unigram,2

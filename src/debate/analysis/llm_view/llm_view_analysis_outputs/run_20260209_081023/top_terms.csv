@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,plan,unigram,21
+dolphin-yi-34b::moderator,2,coordinated plan,bigram,16
+dolphin-yi-34b::moderator,3,coordinated,unigram,16
+dolphin-yi-34b::moderator,4,control,unigram,16
+dolphin-yi-34b::moderator,5,evidence,unigram,14
+dolphin-yi-34b::moderator,6,surveillance,unigram,14
+dolphin-yi-34b::moderator,7,sa,unigram,14
+dolphin-yi-34b::moderator,8,total,unigram,12
+dolphin-yi-34b::moderator,9,ca,unigram,11
+dolphin-yi-34b::moderator,10,plan total,bigram,10
+dolphin-yi-34b::moderator,11,population,unigram,10
+dolphin-yi-34b::moderator,12,claim,unigram,9
+dolphin-yi-34b::moderator,13,questions,unigram,9
+dolphin-yi-34b::moderator,14,coordinated plan total,trigram,8
+dolphin-yi-34b::moderator,15,corporations,unigram,8
+dolphin-yi-34b::moderator,16,plan total population,trigram,8
+dolphin-yi-34b::moderator,17,total population,bigram,8
+dolphin-yi-34b::moderator,18,entities,unigram,7
+dolphin-yi-34b::moderator,19,population monitoring,bigram,6
+dolphin-yi-34b::moderator,20,population monitoring control,trigram,6
+dolphin-yi-34b::moderator,21,ai,unigram,6
+dolphin-yi-34b::moderator,22,monitoring,unigram,6
+dolphin-yi-34b::moderator,23,specific,unigram,6
+dolphin-yi-34b::moderator,24,agents,unigram,6
+dolphin-yi-34b::moderator,25,monitoring control,bigram,6
+dolphin-yi-34b::proponent,1,ai,unigram,5
+dolphin-yi-34b::proponent,2,surveillance,unigram,5
+dolphin-yi-34b::proponent,3,control,unigram,4
+dolphin-yi-34b::proponent,4,ai surveillance,bigram,4
+dolphin-yi-34b::proponent,5,corporations,unigram,4
+dolphin-yi-34b::proponent,6,governments,unigram,4
+dolphin-yi-34b::proponent,7,powerful,unigram,4
+dolphin-yi-34b::proponent,8,corporations governments,bigram,4
+dolphin-yi-34b::proponent,9,powerful corporations,bigram,4
+dolphin-yi-34b::proponent,10,powerful corporations governments,trigram,4
+dolphin-yi-34b::proponent,11,increased control,bigram,3
+dolphin-yi-34b::proponent,12,increased control populations,trigram,3
+dolphin-yi-34b::proponent,13,control populations,bigram,3
+dolphin-yi-34b::proponent,14,corporations governments stand,trigram,3
+dolphin-yi-34b::proponent,15,benefit,unigram,3
+dolphin-yi-34b::proponent,16,benefit increased control,trigram,3
+dolphin-yi-34b::proponent,17,governments stand benefit,trigram,3
+dolphin-yi-34b::proponent,18,increased,unigram,3
+dolphin-yi-34b::proponent,19,stand,unigram,3
+dolphin-yi-34b::proponent,20,stand benefit,bigram,3
+dolphin-yi-34b::proponent,21,populations,unigram,3
+dolphin-yi-34b::proponent,22,governments stand,bigram,3
+dolphin-yi-34b::proponent,23,global,unigram,3
+dolphin-yi-34b::proponent,24,benefit increased,bigram,3
+dolphin-yi-34b::proponent,25,stand benefit increased,trigram,3
+gemma3:27b::opponent,1,control,unigram,5
+gemma3:27b::opponent,2,coordinated plan total,trigram,5
+gemma3:27b::opponent,3,coordinated plan,bigram,5
+gemma3:27b::opponent,4,coordinated,unigram,5
+gemma3:27b::opponent,5,plan total,bigram,5
+gemma3:27b::opponent,6,plan,unigram,5
+gemma3:27b::opponent,7,total,unigram,5
+gemma3:27b::opponent,8,evidence,unigram,4
+gemma3:27b::opponent,9,surveillance,unigram,4
+gemma3:27b::opponent,10,ai,unigram,4
+gemma3:27b::opponent,11,influence,unigram,3
+gemma3:27b::opponent,12,evidence relies,bigram,3
+gemma3:27b::opponent,13,attributing,unigram,3
+gemma3:27b::opponent,14,ai surveillance,bigram,3
+gemma3:27b::opponent,15,plan total population,trigram,3
+gemma3:27b::opponent,16,intent,unigram,3
+gemma3:27b::opponent,17,relies,unigram,3
+gemma3:27b::opponent,18,population,unigram,3
+gemma3:27b::opponent,19,total population,bigram,3
+gemma3:27b::opponent,20,corporations governments,bigram,2
+gemma3:27b::opponent,21,control requires,bigram,2
+gemma3:27b::opponent,22,deployment,unigram,2
+gemma3:27b::opponent,23,inferring intent,bigram,2
+gemma3:27b::opponent,24,influence corporations governments,trigram,2
+gemma3:27b::opponent,25,evidence relies inferring,trigram,2
