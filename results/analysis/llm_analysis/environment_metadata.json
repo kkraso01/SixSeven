@@ -1,0 +1,44 @@
+{
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "nt",
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "analysis_schema_version": 3,
+  "config": {
+    "root_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven",
+    "input_runs_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts",
+    "topics_path": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\config\\topics.json",
+    "output_analysis_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\src\\debate\\analysis\\llm_analysis\\llm_analysis_analysis_outputs",
+    "max_runs": null,
+    "overwrite_existing": false,
+    "analysis_schema_version": 3,
+    "random_seed": 42,
+    "bootstrap_samples": 1000,
+    "top_n_terms": 25,
+    "top_n_distinctive_terms": 30,
+    "min_df_distinctive_terms": 2,
+    "error_examples_per_type": 20,
+    "turning_point_delta_threshold": 5.0,
+    "nrc_emotion_lexicon_path": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\src\\debate\\analysis\\llm_analysis\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+    "use_transformer_emotion_secondary": false
+  },
+  "libraries": {
+    "spacy": "3.8.14",
+    "nltk": "3.9.4",
+    "sentence_transformers": "5.4.1",
+    "transformers": "5.5.4",
+    "wordcloud": "1.9.6",
+    "pandas": "2.2.3",
+    "numpy": "2.4.4",
+    "matplotlib": "3.10.8"
+  },
+  "spacy_pipeline": [
+    "tok2vec",
+    "tagger",
+    "parser",
+    "attribute_ruler",
+    "lemmatizer",
+    "ner"
+  ],
+  "emotion_model_error": null
+}

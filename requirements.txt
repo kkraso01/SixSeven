@@ -17,3 +17,4 @@ spacy>=3.8.0
 sentence-transformers>=3.3.1
 wordcloud>=1.9.4
 https://github.com/medianeuroscience/emfdscore/archive/master.zip
+seaborn

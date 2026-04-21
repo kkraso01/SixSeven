@@ -9,6 +9,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -17,11 +18,15 @@ from textblob import TextBlob
 
 from debate.core.schemas import MemoryState
 
+from .constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
 from .lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
     UNCERTAINTY_WORDS,
+    load_nrc_emotion_lexicon as _lex_load_nrc_emotion_lexicon,
+    load_nrc_word_lexicon as _lex_load_nrc_word_lexicon,
 )
+from .winner_inference import infer_winner_from_final_report
 
 
 @dataclass
@@ -65,6 +70,7 @@ PROFANITY_PATTERN: re.Pattern[str] = re.compile(
 
 #: Maximum characters kept when excerpting a claim for reports.
 EXCERPT_MAX_CHARS: int = 300
+TOKEN_PATTERN: re.Pattern[str] = re.compile(r"[a-zA-Z']+")
 
 
 def load_memory(run_dir: Path) -> MemoryState:
@@ -228,37 +234,124 @@ def analyze_utterance_features(
     }
 
 
+def tokenize_text(text: str) -> list[str]:
+    """Tokenize plain text with the project's standard regex tokenizer."""
+    return TOKEN_PATTERN.findall(str(text).lower())
+
+
+def load_nrc_word_lexicon(path: Path) -> dict[str, set[str]]:
+    """Compatibility wrapper around canonical lexicons loader."""
+    return _lex_load_nrc_word_lexicon(path)
+
+
+def extract_nrc_emotion_counts(
+    text: str,
+    nrc_word_lexicon: dict[str, set[str]],
+    emotions: set[str] | list[str] | None = None,
+    unique_tokens: bool = False,
+) -> dict[str, int]:
+    """Extract raw NRC emotion counts from text.
+
+    Supports either:
+    - word -> set(emotions)
+    - emotion -> set(words)
+    """
+    known_emotions = {
+        "anger", "anticipation", "disgust", "fear", "joy",
+        "sadness", "surprise", "trust", "positive", "negative",
+    }
+
+    lexicon = nrc_word_lexicon
+    if lexicon and set(lexicon.keys()).issubset(known_emotions):
+        # Backward-compatible path for emotion -> words mappings.
+        inverted: dict[str, set[str]] = defaultdict(set)
+        for emotion, words in lexicon.items():
+            for word in words:
+                inverted[str(word).lower()].add(str(emotion).lower())
+        lexicon = dict(inverted)
+
+    tokens = tokenize_text(text)
+    if unique_tokens:
+        tokens = list(set(tokens))
+
+    emotion_counts: Counter[str] = Counter()
+    for token in tokens:
+        for emotion in lexicon.get(token, set()):
+            emotion_counts[emotion] += 1
+
+    if emotions is None:
+        ordered = sorted(emotion_counts.keys())
+    else:
+        ordered = sorted(set(emotions))
+
+    return {emotion: int(emotion_counts.get(emotion, 0)) for emotion in ordered}
+
+
+def _normalize_lex_token(token: Any) -> str:
+    value = str(token).strip().lower()
+    value = re.sub(r"\s+", " ", value)
+    return value
+
+
+def _lemma_variants(nlp: Any, term: str) -> set[str]:
+    variants: set[str] = set()
+    if not term:
+        return variants
+    variants.add(term)
+    try:
+        doc = nlp(term)
+    except Exception:
+        doc = None
+    if doc is not None:
+        lemmas = [tok.lemma_.lower() for tok in doc if tok.is_alpha and tok.lemma_]
+        if lemmas:
+            variants.add(" ".join(lemmas))
+            if len(lemmas) == 1:
+                variants.add(lemmas[0])
+    return {variant for variant in variants if variant}
+
+
+def load_nrc_emotion_lexicon(
+    path: Path,
+    emotions: set[str] | list[str] | None = None,
+    nlp: Any | None = None,
+    include_lemma_variants: bool = True,
+) -> dict[str, set[str]]:
+    """Compatibility wrapper around canonical lexicons loader."""
+    return _lex_load_nrc_emotion_lexicon(
+        path=path,
+        emotions=emotions,
+        nlp=nlp,
+        include_lemma_variants=include_lemma_variants,
+    )
+
+
+def emotion_lexicon_scores(tokens: list[str], nrc_emotion_lexicon: dict[str, set[str]]) -> dict[str, float]:
+    """Compute normalized emotion overlap from token list and emotion -> words lexicon."""
+    if not tokens:
+        return {}
+
+    token_set = set(tokens)
+    denom = max(1, len(token_set))
+    scores: dict[str, float] = {}
+    for emotion, lexicon in nrc_emotion_lexicon.items():
+        overlap = len(token_set & lexicon)
+        scores[f"emotion_{emotion}"] = float(overlap) / float(denom)
+    return scores
+
+
 def infer_winner_from_text(outcome_summary: str) -> dict[str, Any]:
-    """Heuristic logic to infer which agent 'won' based on moderator summary."""
-    text = outcome_summary.lower()
-    winner = None
-    confidence = "low"
-
-    # Strong patterns
-    if re.search(r"\bsa successfully defended\b", text):
-        winner = "SA"
-        confidence = "high"
-    elif re.search(r"\bca successfully defended\b", text):
-        winner = "CA"
-        confidence = "high"
-    elif re.search(r"\bsa won\b|\bscientific advocate won\b", text):
-        winner = "SA"
-        confidence = "high"
-    elif re.search(r"\bca won\b|\bconspiracy advocate won\b", text):
-        winner = "CA"
-        confidence = "high"
-    elif re.search(r"\bstrengthening sa'?s position\b", text):
-        winner = "SA"
-        confidence = "medium"
-    elif re.search(r"\bstrengthening ca'?s position\b", text):
-        winner = "CA"
-        confidence = "medium"
-
+    """Compatibility wrapper preserving legacy key names for old callers."""
+    winner = infer_winner_from_final_report(
+        {"outcome_summary": outcome_summary},
+        use_explicit_winner_fields=False,
+        use_stance_trajectory_fallback=False,
+    )
     return {
-        "winner_inferred": winner,
-        "role": "opponent" if winner == "SA" else "proponent" if winner == "CA" else None,
-        "confidence": confidence,
-        "evidence": outcome_summary if winner else None
+        "winner_inferred": winner.get("winner_inferred"),
+        "role": winner.get("winner_role"),
+        "confidence": winner.get("winner_confidence", "low"),
+        "evidence": winner.get("winner_evidence"),
     }
 
 
@@ -267,7 +360,7 @@ class EmotionAnalyzer:
 
     _instance = None
     _pipeline = None
-    _model_name = "bhadresh-savani/bert-base-uncased-emotion"
+    _model_name = DEFAULT_TRANSFORMER_EMOTION_MODEL
 
     @classmethod
     def get_instance(cls, model_name: str | None = None) -> EmotionAnalyzer:

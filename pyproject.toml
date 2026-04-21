@@ -29,7 +29,7 @@ sixseven-analyze = "cli.analyze_results:main"
 sixseven-topics = "cli.view_topics:main"
 sixseven-batch-ollama = "cli.batch_ollama:main"
 sixseven-batch-gemini = "cli.batch_gemini:main"
-sixseven-role-analysis = "debate.analysis.role_analysis_man.role_analyzer:main"
+sixseven-role-analysis = "debate.analysis.role_analysis.role_analyzer:main"
 
 [tool.poetry]
 packages = [{ include = "debate", from = "src" }]

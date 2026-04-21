@@ -1,13 +1,29 @@
+import argparse
 import re
 import json
 from pathlib import Path
-from collections import defaultdict, Counter
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from textblob import TextBlob
-from transformers import pipeline
+
+from debate.analysis.features import (
+    EmotionAnalyzer,
+    analyze_utterance_features,
+    extract_nrc_emotion_counts,
+)
+from debate.analysis.constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
+from debate.analysis.lexicons import (
+    DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS,
+    DEBATE_ANALYSIS_STRONG_MODALITY_WORDS,
+    DEBATE_ANALYSIS_WEAK_MODALITY_WORDS,
+    NRC_EMOTION_LEXICON_PATH,
+    load_nrc_word_lexicon,
+)
+from debate.analysis.winner_inference import (
+    infer_winner_from_final_report as shared_infer_winner_from_final_report,
+    infer_winner_from_stance_trajectory as shared_infer_winner_from_stance_trajectory,
+)
 
 
 # Constants used in pipeline
@@ -16,40 +32,17 @@ REPO_ROOT = BASE_DIR.parent.parent.parent.parent
 
 
 INPUT_RUNS_DIR = REPO_ROOT / "old_artifacts"
-OUTPUT_ANALYSIS_DIR = BASE_DIR / "debate_analysis_outputs"
+OUTPUT_ANALYSIS_DIR = REPO_ROOT / "results" / "analysis" / "debate_analysis"
 
-NRC_PATH = REPO_ROOT / "lexicons" / "NRC-Emotion-Lexicon" / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
+NRC_PATH = NRC_EMOTION_LEXICON_PATH
 
 OVERWRITE_EXISTING = True
-EMOTION_MODEL_NAME = "bhadresh-savani/bert-base-uncased-emotion"
+EMOTION_MODEL_NAME = DEFAULT_TRANSFORMER_EMOTION_MODEL
+USE_BERT_EMOTION = True
 
-NRC_TRUE_EMOTIONS = {
-    "anger", "anticipation", "disgust", "fear",
-    "joy", "sadness", "surprise", "trust"
-}
-
-
-
-# These are given in the project PDF
-STRONG_MODALITY_WORDS = {
-    "always", "must", "best", "clearly",
-    "definitely", "definitively", "highest", "lowest",
-    "never", "strongly", "unambiguously", "uncompromising",
-    "undisputed", "undoubtedly", "unequivocal", "unequivocally",
-    "unparalleled", "unsurpassed", "will"
-}
-
-
-# from pdf
-WEAK_MODALITY_WORDS = {
-    "apparently", "appeared", "appearing", "appears",
-    "conceivable", "could", "depend", "depended",
-    "depending", "depends", "may", "maybe",
-    "might", "nearly", "occasionally", "perhaps",
-    "possible", "possibly", "seldom", "seldomly",
-    "sometimes", "somewhat", "suggest", "suggests",
-    "uncertain", "uncertainly"
-}
+NRC_TRUE_EMOTIONS = DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS
+STRONG_MODALITY_WORDS = DEBATE_ANALYSIS_STRONG_MODALITY_WORDS
+WEAK_MODALITY_WORDS = DEBATE_ANALYSIS_WEAK_MODALITY_WORDS
 
 # Features extracted
 FEATURE_COLS_BASE = [
@@ -195,165 +188,90 @@ def plot_grouped_bar(df, category_col, value_col, hue_col, title, outpath):
 
 
 #Load NRC for emotions
-def load_nrc(path: Path):
-    lex = defaultdict(set)
-
-    if not path.exists():
-        raise FileNotFoundError(f"NRC lexicon not found at: {path}")
-
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-
-            parts = re.split(r"\s+", line)
-            if len(parts) != 3:
-                continue
-
-            word, emotion, assoc = parts
-            if assoc == "1":
-                lex[word.lower()].add(emotion.lower())
-
-    return lex
-
-
 print("Loading NRC emotion lexicon...")
-NRC_LEXICON = load_nrc(NRC_PATH)
+NRC_LEXICON = load_nrc_word_lexicon(NRC_PATH)
 print(f"NRC loaded with {len(NRC_LEXICON)} word entries.\n")
 
 
-# Load BERT for emotions
-print("Loading BERT emotion model...")
-emotion_classifier = pipeline(
-    "text-classification",
-    model=EMOTION_MODEL_NAME,
-    top_k=None
-)
-print("BERT emotion model loaded.\n")
+emotion_analyzer = None
+
+
+def get_emotion_analyzer():
+    global emotion_analyzer
+    if emotion_analyzer is None and USE_BERT_EMOTION:
+        print("Loading BERT emotion model...")
+        emotion_analyzer = EmotionAnalyzer.get_instance(EMOTION_MODEL_NAME)
+        print("BERT emotion model loaded.\n")
+    return emotion_analyzer
 
 
 # Find winner of each debate if possible using final report
 def infer_winner_from_final_report(final_report):
-    if not final_report:
-        return {
-            "winner_inferred": None,
-            "winner_role": None,
-            "winner_source": None,
-            "winner_confidence": "low",
-            "winner_evidence": None
-        }
+    winner_info = shared_infer_winner_from_final_report(
+        final_report,
+        use_explicit_winner_fields=False,
+        use_stance_trajectory_fallback=False,
+    )
 
-    outcome_summary = str(final_report.get("outcome_summary", "")).strip()
-    text = outcome_summary.lower()
+    outcome_summary = ""
+    if final_report:
+        outcome_summary = str(final_report.get("outcome_summary", "")).strip()
 
-    winner = None
-    confidence = "low"
-    evidence = outcome_summary
+    # Keep legacy heuristic used by this custom analyzer.
+    if winner_info.get("winner_inferred") is None and outcome_summary:
+        text = outcome_summary.lower()
+        if "shift in the debate towards their stance" in text:
+            if "sa" in text:
+                winner_info = {
+                    "winner_inferred": "SA",
+                    "winner_role": "opponent",
+                    "winner_source": "outcome_summary",
+                    "winner_confidence": "medium",
+                    "winner_evidence": outcome_summary,
+                }
+            elif "ca" in text:
+                winner_info = {
+                    "winner_inferred": "CA",
+                    "winner_role": "proponent",
+                    "winner_source": "outcome_summary",
+                    "winner_confidence": "medium",
+                    "winner_evidence": outcome_summary,
+                }
 
-    # Find phrases that show winner
-    if re.search(r"\bsa successfully defended\b", text):
-        winner = "SA"
-        confidence = "high"
-    elif re.search(r"\bca successfully defended\b", text):
-        winner = "CA"
-        confidence = "high"
-    elif re.search(r"\bsa won\b|\bscientific advocate won\b", text):
-        winner = "SA"
-        confidence = "high"
-    elif re.search(r"\bca won\b|\bconspiracy advocate won\b", text):
-        winner = "CA"
-        confidence = "high"
-    elif re.search(r"\bstrengthening sa'?s position\b", text):
-        winner = "SA"
-        confidence = "medium"
-    elif re.search(r"\bstrengthening ca'?s position\b", text):
-        winner = "CA"
-        confidence = "medium"
-    elif "shift in the debate towards their stance" in text:
-        if "sa" in text:
-            winner = "SA"
-            confidence = "medium"
-        elif "ca" in text:
-            winner = "CA"
-            confidence = "medium"
+    # Preserve previous field behavior when summary exists but no winner is inferred.
+    if winner_info.get("winner_inferred") is None and outcome_summary:
+        winner_info["winner_source"] = "outcome_summary"
 
-    role_map = {
-        "CA": "proponent",
-        "SA": "opponent"
-    }
-
-    return {
-        "winner_inferred": winner,
-        "winner_role": role_map.get(winner),
-        "winner_source": "outcome_summary" if outcome_summary else None,
-        "winner_confidence": confidence,
-        "winner_evidence": evidence if winner else None
-    }
+    return winner_info
 
 # Find winner based the confidence shift
 def infer_winner_from_stance_trajectory(final_report):
-    traj = final_report.get("stance_trajectory", {})
-    ca = traj.get("CA", [])
-    sa = traj.get("SA", [])
-
-    if len(ca) >= 2 and len(sa) >= 2:
-        ca_change = ca[-1] - ca[0]
-        sa_change = sa[-1] - sa[0]
-
-        if sa_change > ca_change and sa[-1] > ca[-1]:
-            return {
-                "winner_inferred": "SA",
-                "winner_role": "opponent",
-                "winner_source": "stance_trajectory",
-                "winner_confidence": "medium",
-                "winner_evidence": {
-                    "CA_start": ca[0], "CA_end": ca[-1],
-                    "SA_start": sa[0], "SA_end": sa[-1]
-                }
-            }
-
-        if ca_change > sa_change and ca[-1] > sa[-1]:
-            return {
-                "winner_inferred": "CA",
-                "winner_role": "proponent",
-                "winner_source": "stance_trajectory",
-                "winner_confidence": "medium",
-                "winner_evidence": {
-                    "CA_start": ca[0], "CA_end": ca[-1],
-                    "SA_start": sa[0], "SA_end": sa[-1]
-                }
-            }
-
-    return {
-        "winner_inferred": None,
-        "winner_role": None,
-        "winner_source": None,
-        "winner_confidence": "low",
-        "winner_evidence": None
-    }
+    return shared_infer_winner_from_stance_trajectory(final_report)
 
 
 # Analyze utterance
 def analyze_utterance(text: str):
-    # Make utterance (what is said) into blobs
     text = str(text)
     tokens = tokenize(text)
     word_count = len(tokens)
-    blob = TextBlob(text)
+    base_scores = analyze_utterance_features(
+        text,
+        strong_modality_lexicon=list(STRONG_MODALITY_WORDS),
+        weak_modality_lexicon=list(WEAK_MODALITY_WORDS),
+    )
 
     scores = {
-        "polarity": blob.sentiment.polarity,
-        "subjectivity": blob.sentiment.subjectivity,
-        "question_count": text.count("?"),
-        "exclamation_count": text.count("!"),
-        "word_count": word_count,
-        "char_count": len(text),
+        "polarity": base_scores["polarity"],
+        "subjectivity": base_scores["subjectivity"],
+        "question_count": base_scores["question_count"],
+        "exclamation_count": base_scores["exclamation_count"],
+        "word_count": base_scores["word_count"],
+        "char_count": base_scores["char_count"],
     }
 
     # Calculate modality
-    strong_count = sum(1 for t in tokens if t in STRONG_MODALITY_WORDS)
-    weak_count = sum(1 for t in tokens if t in WEAK_MODALITY_WORDS)
+    strong_count = int(base_scores["strong_modality_score"])
+    weak_count = int(base_scores["weak_modality_score"])
 
     scores["strong_modality_count"] = strong_count
     scores["weak_modality_count"] = weak_count
@@ -362,11 +280,12 @@ def analyze_utterance(text: str):
     scores["modality_balance"] = strong_count - weak_count
 
     # Calculate emotions
-    emotion_counts = Counter()
-    for t in tokens:
-        if t in NRC_LEXICON:
-            for emotion in NRC_LEXICON[t]:
-                emotion_counts[emotion] += 1
+    emotion_counts = extract_nrc_emotion_counts(
+        text,
+        nrc_word_lexicon=NRC_LEXICON,
+        emotions=NRC_TRUE_EMOTIONS,
+        unique_tokens=False,
+    )
 
     for emotion in NRC_TRUE_EMOTIONS:
         count = emotion_counts.get(emotion, 0)
@@ -374,10 +293,7 @@ def analyze_utterance(text: str):
         scores[f"nrc_{emotion}_density"] = normalize_count(count, word_count)
 
     try:
-        emotion_results = emotion_classifier(text)[0]
-        for item in emotion_results:
-            label = item["label"].lower().replace(" ", "_")
-            scores[f"emotion_{label}"] = item["score"]
+        scores.update(emotion_analyzer.analyze(text))
     except Exception as e:
         scores["emotion_model_error"] = str(e)
 
@@ -933,7 +849,19 @@ def aggregate_all_results(results):
 
 
 
-def main():
+def main(argv: list[str] | None = None):
+    global INPUT_RUNS_DIR, OUTPUT_ANALYSIS_DIR, OVERWRITE_EXISTING
+
+    parser = argparse.ArgumentParser(description="Debate analysis pipeline")
+    parser.add_argument("--input-runs", type=str, default=str(INPUT_RUNS_DIR), help="Directory containing run_* folders")
+    parser.add_argument("--output-analysis", type=str, default=str(OUTPUT_ANALYSIS_DIR), help="Directory where analysis outputs are written")
+    parser.add_argument("--overwrite-existing", action="store_true", help="Overwrite existing outputs")
+    args = parser.parse_args(argv)
+
+    INPUT_RUNS_DIR = Path(args.input_runs)
+    OUTPUT_ANALYSIS_DIR = Path(args.output_analysis)
+    OVERWRITE_EXISTING = bool(args.overwrite_existing)
+
     if not INPUT_RUNS_DIR.exists():
         raise FileNotFoundError(f"Could not find input folder: {INPUT_RUNS_DIR}")
 

@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import traceback
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, cast
+from typing import Any, Callable, cast
 
 from .features import load_run_inputs
 from .language_analysis import language_use_summary_from_logs
@@ -36,6 +37,89 @@ class AnalysisSettings:
     uncertainty_lexicon: list[str] | None = None
     strong_modality_lexicon: list[str] | None = None
     weak_modality_lexicon: list[str] | None = None
+
+
+@dataclass
+class CustomAnalyzerRunResult:
+    name: str
+    success: bool
+    error: str | None = None
+
+
+def run_custom_analyzers(
+    results_root: str = "results",
+    input_runs_dir: str = "old_artifacts",
+    artifacts_dir: str = "old_artifacts",
+    skip_role_emotion: bool = False,
+    overwrite_existing: bool = False,
+    max_runs: int | None = None,
+    continue_on_error: bool = True,
+) -> list[CustomAnalyzerRunResult]:
+    """Run the three custom analyzers sequentially in-process.
+
+    The analyzers keep their own behavior and are executed one after another.
+    """
+    output_root = Path(results_root)
+    debate_output_dir = output_root / "analysis" / "debate_analysis"
+    llm_output_dir = output_root / "analysis" / "llm_analysis"
+    role_output_dir = output_root / "analysis" / "role_analysis"
+
+    from .debate_analysis.debate_analysis_pipeline import main as debate_analysis_main
+    from .llm_analysis.analysis.run_analysis import main as llm_analysis_main
+    from .role_analysis.role_analyzer import main as role_analysis_main
+
+    debate_argv = [
+        "--input-runs",
+        str(Path(input_runs_dir)),
+        "--output-analysis",
+        str(debate_output_dir),
+    ]
+    if overwrite_existing:
+        debate_argv.append("--overwrite-existing")
+
+    llm_argv = [
+        "--input-runs",
+        str(Path(input_runs_dir)),
+        "--output-analysis",
+        str(llm_output_dir),
+    ]
+    if max_runs is not None:
+        llm_argv.extend(["--max-runs", str(max_runs)])
+    if overwrite_existing:
+        llm_argv.append("--overwrite-existing")
+
+    role_argv = [
+        "--artifacts",
+        str(Path(artifacts_dir)),
+        "--output-root",
+        str(role_output_dir),
+    ]
+    if skip_role_emotion:
+        role_argv.append("--skip-emotion")
+
+    runners: list[tuple[str, Callable[[list[str] | None], None], list[str]]] = [
+        ("debate_analysis", debate_analysis_main, debate_argv),
+        ("llm_analysis", llm_analysis_main, llm_argv),
+        ("role_analysis", role_analysis_main, role_argv),
+    ]
+
+    results: list[CustomAnalyzerRunResult] = []
+    for name, func, argv in runners:
+        try:
+            func(argv)
+            results.append(CustomAnalyzerRunResult(name=name, success=True))
+        except Exception:
+            results.append(
+                CustomAnalyzerRunResult(
+                    name=name,
+                    success=False,
+                    error=traceback.format_exc(),
+                )
+            )
+            if not continue_on_error:
+                break
+
+    return results
 
 
 def analyze_run(run_dir: str) -> AnalysisReport:

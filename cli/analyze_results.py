@@ -22,6 +22,7 @@ from debate.analysis.features import (
     infer_winner_from_text,
     load_run_inputs,
 )
+from debate.analysis.analysis_runner import run_custom_analyzers
 from debate.analysis.plots import (
     plot_emotion_distribution,
     plot_rhetorical_markers,
@@ -149,13 +150,45 @@ def analyze_single_run(
     return report
 
 
-def main():
+def main(argv: list[str] | None = None):
     parser = argparse.ArgumentParser(description="SixSeven Advanced Result Analyzer")
     parser.add_argument("--run", type=str, help="Specific run directory to analyze")
-    parser.add_argument("--dir", type=str, default="results/raw", help="Directory containing multiple runs")
+    parser.add_argument("--dir", type=str, help="Input directory. Defaults to old_artifacts for the custom suite and results/raw for advanced analysis")
     parser.add_argument("--out", type=str, default="results", help="Root directory for analysis output")
+    parser.add_argument("--artifacts", type=str, default="old_artifacts", help="Artifacts directory for role analyzer")
     parser.add_argument("--no-emotion", action="store_true", help="Skip heavy BERT emotion analysis")
-    args = parser.parse_args()
+    parser.add_argument("--custom-suite", dest="custom_suite", action="store_true", help="Run custom analyzers sequentially (debate_analysis -> llm_analysis -> role_analysis)")
+    parser.add_argument("--advanced-analysis", dest="custom_suite", action="store_false", help="Run the older advanced analysis flow instead of the default custom suite")
+    parser.add_argument("--max-runs", type=int, help="Maximum number of runs for custom suite analyzers that support it")
+    parser.add_argument("--overwrite-existing", action="store_true", help="Recompute existing outputs for custom suite analyzers")
+    parser.add_argument("--stop-on-error", action="store_true", help="Stop custom suite on first analyzer failure")
+    parser.set_defaults(custom_suite=True)
+    args = parser.parse_args(argv)
+
+    if args.custom_suite:
+        input_runs_dir = args.dir or "old_artifacts"
+        results = run_custom_analyzers(
+            results_root=args.out,
+            input_runs_dir=input_runs_dir,
+            artifacts_dir=args.artifacts,
+            skip_role_emotion=args.no_emotion,
+            overwrite_existing=args.overwrite_existing,
+            max_runs=args.max_runs,
+            continue_on_error=not args.stop_on_error,
+        )
+
+        table = Table(title="Custom Analyzer Suite (Sequential)")
+        table.add_column("Analyzer", style="cyan")
+        table.add_column("Status", style="green")
+        table.add_column("Details", style="magenta")
+
+        for result in results:
+            status = "Success" if result.success else "Failed"
+            details = "-" if result.success else (result.error.splitlines()[-1] if result.error else "Unknown error")
+            table.add_row(result.name, status, details)
+
+        console.print(table)
+        return
 
     config = DebateConfig.from_ini()
     output_root = Path(args.out or config.output_dir)
@@ -166,7 +199,7 @@ def main():
         if report:
             console.print(Panel(f"Analysis Complete: [green]{run_path.name}[/]\nWinner Inferred: [bold]{report['winner_inference']['winner_inferred']}[/]", title="Success"))
     else:
-        raw_root = Path(args.dir)
+        raw_root = Path(args.dir or "results/raw")
         run_dirs = sorted([p for p in raw_root.iterdir() if p.is_dir() and p.name.startswith("run_")])
 
         if not run_dirs:
