@@ -27,7 +27,7 @@ What it creates
 
 Usage
 -----
-python topic_analysis_plots.py --input_dir topic_analysis_results --output_dir topic_analysis_plots
+python topic_analysis_plots.py --input_dir /path/to/topic_analysis_results --output_dir topic_analysis_plots
 """
 
 from __future__ import annotations
