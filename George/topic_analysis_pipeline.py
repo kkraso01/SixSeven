@@ -15,7 +15,7 @@ What it does
    - moral framing (eMFD-style dictionary scores)
    - optional NRC lexical emotion profile
 
-Example
+Usage
 -------
   python topic_analysis_pipeline.py \
   --artifacts /path/to/old_artifacts \
