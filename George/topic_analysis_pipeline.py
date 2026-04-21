@@ -17,8 +17,8 @@ What it does
 
 Example
 -------
-python topic_analysis_pipeline.py \
-  --artifacts /path/to/old_artifacts.zip \
+  python topic_analysis_pipeline.py \
+  --artifacts /path/to/old_artifacts \
   --output_dir topic_analysis_results \
   --uncertainty_lexicon /path/to/uncertainty.txt \
   --strong_modality_lexicon /path/to/strong_modals.txt \
