@@ -103,13 +103,9 @@ def get_batch_model_configs(batch_name: str) -> list[dict[str, str]]:
     """Generate batch model permutations from the flat model list.
 
     Rules:
-<<<<<<< HEAD
-    - ollama batch: only non-Gemini models, no repeated model in one combo
-=======
         - ollama batch: only non-Gemini models
             - with exactly 2 models: allow repeats to generate all role assignments
             - with 3+ models: no repeated model in one combo
->>>>>>> dev
     - gemini batch: all models, repeated models allowed, but combo must include at least one Gemini
     """
     pool = load_model_pool()
@@ -117,11 +113,6 @@ def get_batch_model_configs(batch_name: str) -> list[dict[str, str]]:
 
     if batch_name == "ollama":
         candidates = [name for name, mode in registry.items() if mode != "gemini"]
-<<<<<<< HEAD
-        if len(candidates) < 3:
-            raise ModelPoolError("Ollama batch requires at least 3 non-Gemini models")
-        combos = list(permutations(candidates, 3))
-=======
         if len(candidates) < 2:
             raise ModelPoolError("Ollama batch requires at least 2 non-Gemini models")
 
@@ -129,7 +120,6 @@ def get_batch_model_configs(batch_name: str) -> list[dict[str, str]]:
             combos = list(product(candidates, repeat=3))
         else:
             combos = list(permutations(candidates, 3))
->>>>>>> dev
     elif batch_name == "gemini":
         candidates = list(registry.keys())
         if len(candidates) < 1:

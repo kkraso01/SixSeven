@@ -41,8 +41,6 @@ class AnalysisSettings:
     weak_modality_lexicon: list[str] | None = None
 
 
-<<<<<<< HEAD
-=======
 @dataclass
 class CustomAnalyzerRunResult:
     name: str
@@ -261,7 +259,6 @@ def run_custom_analyzers(
     return results
 
 
->>>>>>> dev
 def analyze_run(run_dir: str) -> AnalysisReport:
     """Analyze a single debate run and write reports/plots.
 
