@@ -172,3 +172,9 @@ Requires an API key. Subject to provider rate limits and daily quotas. This runn
 1. [Architecture and Dependency Injection](docs/ARCHITECTURE.md)
 2. [Batch Experiment Guide](docs/BATCH_GUIDE.md)
 3. [MAI623-Group Project Instructions](docs/SixSeven-AgenticDebate&PersuasionBetweenConspiracy&ScientificModels.pdf)
+
+## Contributors
+- [Demetra](https://github.com/DemetraP20): debate analysis
+- [George](https://github.com/GeorgeSofro09): topic analysis
+- [Manos](https://github.com/suprch4rg3d): role analysis
+- [Konstantin](https://github.com/kkraso01): llm analysis
