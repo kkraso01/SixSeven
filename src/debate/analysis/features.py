@@ -340,21 +340,6 @@ def emotion_lexicon_scores(tokens: list[str], nrc_emotion_lexicon: dict[str, set
     return scores
 
 
-def infer_winner_from_text(outcome_summary: str) -> dict[str, Any]:
-    """Compatibility wrapper preserving legacy key names for old callers."""
-    winner = infer_winner_from_final_report(
-        {"outcome_summary": outcome_summary},
-        use_explicit_winner_fields=False,
-        use_stance_trajectory_fallback=False,
-    )
-    return {
-        "winner_inferred": winner.get("winner_inferred"),
-        "role": winner.get("winner_role"),
-        "confidence": winner.get("winner_confidence", "low"),
-        "evidence": winner.get("winner_evidence"),
-    }
-
-
 class EmotionAnalyzer:
     """Lazy-loaded BERT-based emotion classifier."""
 

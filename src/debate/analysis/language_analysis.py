@@ -108,16 +108,3 @@ def _rate_per_1000(count: int, total_tokens: int) -> float:
         return 0.0
     return (count / total_tokens) * 1000.0
 
-
-def top_terms_by_agent(logs: list[DebateLogItem], top_k: int = 10) -> dict[str, list[tuple[str, int]]]:
-    """Return top non-trivial terms per debating agent for optional diagnostics."""
-    terms: dict[str, Counter[str]] = {"CA": Counter(), "SA": Counter()}
-    for item in logs:
-        agent = ROLE_TO_AGENT.get(item.speaker_role)
-        if agent not in terms:
-            continue
-        for token in _tokenize(item.utterance):
-            if len(token) > 2:
-                terms[agent][token] += 1
-    return {agent: counter.most_common(top_k) for agent, counter in terms.items()}
-
