@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from debate.analysis.metrics import (
+from debate.analysis.utils.metrics import (
     ROLE_TO_AGENT,
     quality_summary_from_scores,
     safety_flags,

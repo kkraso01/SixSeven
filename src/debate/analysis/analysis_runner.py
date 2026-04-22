@@ -13,9 +13,9 @@ from time import perf_counter
 from typing import Any, Callable, cast
 >>>>>>> dev
 
-from .features import load_run_inputs
-from .language_analysis import language_use_summary_from_logs
-from .metrics import (
+from .utils.features import load_run_inputs
+from .utils.language_analysis import language_use_summary_from_logs
+from .utils.metrics import (
     persuasion_moments,
     quality_summary_from_scores,
     redundancy_summary,
@@ -23,19 +23,19 @@ from .metrics import (
     stance_summary_from_logs,
     tactic_summary_from_logs,
 )
-from .plots import (
+from .utils.plots import (
     plot_aggregate_histogram,
     plot_aggregate_scatter,
     plot_quality_scores,
     plot_stance_trajectory,
     plot_tactic_histogram,
 )
-from .report_models import (
+from .utils.report_models import (
     AggregateReport,
     AnalysisReport,
     RunCaseSummary,
 )
-from .report_writer import write_aggregate_report, write_analysis_report
+from .utils.report_writer import write_aggregate_report, write_analysis_report
 
 
 @dataclass
@@ -109,13 +109,13 @@ def run_custom_analyzers(
     topic_analysis_plots_dir = topic_analysis_output_dir / "plots"
     topic_analysis_visuals_dir = topic_analysis_output_dir / "top_words_visuals"
 
-    from .debate_analysis.debate_analysis_pipeline import main as debate_analysis_main
-    from .llm_analysis.analysis.plot_combined_emotion_trajectory import main as llm_combined_emotion_plots_main
-    from .llm_analysis.analysis.run_analysis import main as llm_analysis_main
-    from .role_analysis.role_analyzer import main as role_analysis_main
-    from .topic_analysis.topic_analysis_pipeline import main as topic_analysis_main
-    from .topic_analysis.topic_analysis_plots import main as topic_analysis_plots_main
-    from .topic_analysis.visualize_top_words import main as topic_analysis_visuals_main
+    from .debate.debate_analysis_pipeline import main as debate_analysis_main
+    from .llm.plot_combined_emotion_trajectory import main as llm_combined_emotion_plots_main
+    from .llm.run_analysis import main as llm_analysis_main
+    from .role.role_analyzer import main as role_analysis_main
+    from .topic.topic_analysis_pipeline import main as topic_analysis_main
+    from .topic.topic_analysis_plots import main as topic_analysis_plots_main
+    from .topic.visualize_top_words import main as topic_analysis_visuals_main
 
     debate_argv = [
         "--input-runs",

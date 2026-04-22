@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from debate.analysis.language_analysis import language_use_summary_from_logs
+from debate.analysis.utils.language_analysis import language_use_summary_from_logs
 from debate.core.schemas import DebateLogItem
 
 

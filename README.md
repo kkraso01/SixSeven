@@ -93,7 +93,7 @@ No arguments are required. The default custom suite uses:
 - **Input Runs**: `old_artifacts`
 - **Artifacts**: `old_artifacts`
 - **Output Root**: `results`
-- **Executed Analyzers**: `debate_analysis -> topic_analysis -> role_analysis -> llm_analysis`
+- **Executed Analyzers**: `debate -> topic -> role -> llm`
 
 - **Standard**: `python cli/analyze_results.py`
 - **Module**: `python -m cli.analyze_results`
@@ -121,9 +121,9 @@ When `cli/analyze_results.py` runs with defaults, the flow is:
 1. Parse CLI arguments.
 2. Default to the custom suite path.
 3. Call the central runner in `src/debate/analysis/analysis_runner.py`.
-4. Execute `debate_analysis`, `topic_analysis`, `role_analysis`, and `llm_analysis` sequentially via imported `main(argv)` functions.
+4. Execute `debate`, `topic`, `role`, and `llm` sequentially via imported `main(argv)` functions.
 5. Adapt shared CLI inputs into analyzer-specific flags.
-6. Write outputs under `results/analysis/debate_analysis`, `results/analysis/llm_analysis`, `results/analysis/role_analysis`, and `results/analysis/topic_analysis`.
+6. Write outputs under `results/analysis/debate`, `results/analysis/llm`, `results/analysis/role`, and `results/analysis/topic`.
 
 #### Legacy Analysis
 The older analysis path is still available for direct per-run or batch analysis over `results/raw/run_*`.
