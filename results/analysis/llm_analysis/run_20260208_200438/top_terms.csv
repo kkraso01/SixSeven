@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,reserve,unigram,12
+dolphin-yi-34b::moderator,2,federal reserve,bigram,12
+dolphin-yi-34b::moderator,3,federal,unigram,12
+dolphin-yi-34b::moderator,4,policy,unigram,11
+dolphin-yi-34b::moderator,5,wealth,unigram,10
+dolphin-yi-34b::moderator,6,fed,unigram,10
+dolphin-yi-34b::moderator,7,policies,unigram,9
+dolphin-yi-34b::moderator,8,sa,unigram,9
+dolphin-yi-34b::moderator,9,ca,unigram,8
+dolphin-yi-34b::moderator,10,agents,unigram,7
+dolphin-yi-34b::moderator,11,questions,unigram,7
+dolphin-yi-34b::moderator,12,inequality,unigram,6
+dolphin-yi-34b::moderator,13,evidence,unigram,6
+dolphin-yi-34b::moderator,14,economic,unigram,6
+dolphin-yi-34b::moderator,15,broader,unigram,6
+dolphin-yi-34b::moderator,16,scores civility,bigram,5
+dolphin-yi-34b::moderator,17,moves,unigram,5
+dolphin-yi-34b::moderator,18,recap agreements,bigram,5
+dolphin-yi-34b::moderator,19,round,unigram,5
+dolphin-yi-34b::moderator,20,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,21,epistemic bridge questions,trigram,5
+dolphin-yi-34b::moderator,22,disagreements,unigram,5
+dolphin-yi-34b::moderator,23,epistemic bridge,bigram,5
+dolphin-yi-34b::moderator,24,epistemic,unigram,5
+dolphin-yi-34b::moderator,25,moderator round,bigram,5
+gemma3:27b::opponent,1,reserve,unigram,5
+gemma3:27b::opponent,2,federal reserve,bigram,5
+gemma3:27b::opponent,3,federal,unigram,5
+gemma3:27b::opponent,4,attributing,unigram,4
+gemma3:27b::opponent,5,solely,unigram,4
+gemma3:27b::opponent,6,evidence,unigram,3
+gemma3:27b::opponent,7,policy,unigram,3
+gemma3:27b::opponent,8,attributing solely,bigram,3
+gemma3:27b::opponent,9,wealth,unigram,3
+gemma3:27b::opponent,10,street,unigram,2
+gemma3:27b::opponent,11,capture,unigram,2
+gemma3:27b::opponent,12,sufficient evidence,bigram,2
+gemma3:27b::opponent,13,sufficient,unigram,2
+gemma3:27b::opponent,14,benefit,unigram,2
+gemma3:27b::opponent,15,wealth concentration,bigram,2
+gemma3:27b::opponent,16,attributing solely federal,trigram,2
+gemma3:27b::opponent,17,outcomes,unigram,2
+gemma3:27b::opponent,18,policies,unigram,2
+gemma3:27b::opponent,19,solely federal,bigram,2
+gemma3:27b::opponent,20,solely federal reserve,trigram,2
+gemma3:27b::opponent,21,oversimplifies,unigram,2
+gemma3:27b::opponent,22,claim,unigram,2
+gemma3:27b::opponent,23,complex,unigram,2
+gemma3:27b::opponent,24,macroeconomic,unigram,2
+gemma3:27b::opponent,25,ignores,unigram,2
+gemma3:27b::proponent,1,reserve,unigram,4
+gemma3:27b::proponent,2,federal reserve,bigram,4
+gemma3:27b::proponent,3,federal,unigram,4
+gemma3:27b::proponent,4,insistence,unigram,3
+gemma3:27b::proponent,5,prioritizing,unigram,2
+gemma3:27b::proponent,6,wealth,unigram,2
+gemma3:27b::proponent,7,capture,unigram,2
+gemma3:27b::proponent,8,street,unigram,2
+gemma3:27b::proponent,9,lack,unigram,2
+gemma3:27b::proponent,10,pattern,unigram,2
+gemma3:27b::proponent,11,policies,unigram,2
+gemma3:27b::proponent,12,insistence complex,bigram,2
+gemma3:27b::proponent,13,financial,unigram,2
+gemma3:27b::proponent,14,factors,unigram,2
+gemma3:27b::proponent,15,despite,unigram,2
+gemma3:27b::proponent,16,economic,unigram,2
+gemma3:27b::proponent,17,consistent,unigram,2
+gemma3:27b::proponent,18,consistently,unigram,2
+gemma3:27b::proponent,19,complex,unigram,2
+gemma3:27b::proponent,20,upwards despite stated,trigram,1
+gemma3:27b::proponent,21,upwards despite,bigram,1
+gemma3:27b::proponent,22,upwards,unigram,1
+gemma3:27b::proponent,23,true transparency,bigram,1
+gemma3:27b::proponent,24,true,unigram,1
+gemma3:27b::proponent,25,transparency,unigram,1

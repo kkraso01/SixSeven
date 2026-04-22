@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,privacy,unigram,23
+dolphin-yi-34b::moderator,2,cbdcs,unigram,19
+dolphin-yi-34b::moderator,3,financial,unigram,16
+dolphin-yi-34b::moderator,4,control,unigram,12
+dolphin-yi-34b::moderator,5,design,unigram,12
+dolphin-yi-34b::moderator,6,evidence,unigram,11
+dolphin-yi-34b::moderator,7,central,unigram,10
+dolphin-yi-34b::moderator,8,sa,unigram,9
+dolphin-yi-34b::moderator,9,financial privacy,bigram,8
+dolphin-yi-34b::moderator,10,ca,unigram,8
+dolphin-yi-34b::moderator,11,claim,unigram,8
+dolphin-yi-34b::moderator,12,central banks,bigram,8
+dolphin-yi-34b::moderator,13,cbdc,unigram,8
+dolphin-yi-34b::moderator,14,surveillance,unigram,8
+dolphin-yi-34b::moderator,15,banks,unigram,8
+dolphin-yi-34b::moderator,16,questions,unigram,7
+dolphin-yi-34b::moderator,17,goals,unigram,6
+dolphin-yi-34b::moderator,18,elimination,unigram,6
+dolphin-yi-34b::moderator,19,government,unigram,6
+dolphin-yi-34b::moderator,20,bridge,unigram,5
+dolphin-yi-34b::moderator,21,personal,unigram,5
+dolphin-yi-34b::moderator,22,bridge questions,bigram,5
+dolphin-yi-34b::moderator,23,government control,bigram,5
+dolphin-yi-34b::moderator,24,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,25,potential,unigram,5
+dolphin-yi-34b::proponent,1,central,unigram,5
+dolphin-yi-34b::proponent,2,control personal finances,trigram,5
+dolphin-yi-34b::proponent,3,control personal,bigram,5
+dolphin-yi-34b::proponent,4,control,unigram,5
+dolphin-yi-34b::proponent,5,finances,unigram,5
+dolphin-yi-34b::proponent,6,personal finances,bigram,5
+dolphin-yi-34b::proponent,7,privacy,unigram,5
+dolphin-yi-34b::proponent,8,personal,unigram,5
+dolphin-yi-34b::proponent,9,finances eliminate financial,trigram,4
+dolphin-yi-34b::proponent,10,financial,unigram,4
+dolphin-yi-34b::proponent,11,financial privacy,bigram,4
+dolphin-yi-34b::proponent,12,finances eliminate,bigram,4
+dolphin-yi-34b::proponent,13,eliminate financial privacy,trigram,4
+dolphin-yi-34b::proponent,14,central banks,bigram,4
+dolphin-yi-34b::proponent,15,cbdcs,unigram,4
+dolphin-yi-34b::proponent,16,banks,unigram,4
+dolphin-yi-34b::proponent,17,personal finances eliminate,trigram,4
+dolphin-yi-34b::proponent,18,eliminate,unigram,4
+dolphin-yi-34b::proponent,19,eliminate financial,bigram,4
+dolphin-yi-34b::proponent,20,governments,unigram,4
+dolphin-yi-34b::proponent,21,extensive control,bigram,3
+dolphin-yi-34b::proponent,22,extensive control personal,trigram,3
+dolphin-yi-34b::proponent,23,extensive,unigram,3
+dolphin-yi-34b::proponent,24,grant,unigram,3
+dolphin-yi-34b::proponent,25,central banks intentionally,trigram,3
+gemma3:27b::opponent,1,design,unigram,7
+gemma3:27b::opponent,2,cbdcs,unigram,5
+gemma3:27b::opponent,3,privacy,unigram,5
+gemma3:27b::opponent,4,control,unigram,4
+gemma3:27b::opponent,5,design choices,bigram,3
+gemma3:27b::opponent,6,claim,unigram,3
+gemma3:27b::opponent,7,surveillance,unigram,3
+gemma3:27b::opponent,8,choices,unigram,3
+gemma3:27b::opponent,9,evidence,unigram,2
+gemma3:27b::opponent,10,government control,bigram,2
+gemma3:27b::opponent,11,government,unigram,2
+gemma3:27b::opponent,12,increased,unigram,2
+gemma3:27b::opponent,13,exists,unigram,2
+gemma3:27b::opponent,14,designed,unigram,2
+gemma3:27b::opponent,15,primary,unigram,2
+gemma3:27b::opponent,16,intentionally,unigram,2
+gemma3:27b::opponent,17,central,unigram,2
+gemma3:27b::opponent,18,claim cbdcs,bigram,2
+gemma3:27b::opponent,19,unsubstantiated,unigram,1
+gemma3:27b::opponent,20,trend questionable inference,trigram,1
+gemma3:27b::opponent,21,trend questionable,bigram,1
+gemma3:27b::opponent,22,trend,unigram,1
+gemma3:27b::opponent,23,total government control,trigram,1
+gemma3:27b::opponent,24,total government,bigram,1
+gemma3:27b::opponent,25,total,unigram,1

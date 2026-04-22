@@ -1,0 +1,9 @@
+run_id,turn_index,confidence_delta_within_role,model_name,debate_role,abs_delta,is_turning_point
+run_20260209_035703,4,-2.0,gemma3:27b,proponent,2.0,0
+run_20260209_035703,5,0.0,dolphin-yi-34b,opponent,0.0,0
+run_20260209_035703,7,-2.0,gemma3:27b,proponent,2.0,0
+run_20260209_035703,8,1.0,dolphin-yi-34b,opponent,1.0,0
+run_20260209_035703,10,-3.0,gemma3:27b,proponent,3.0,0
+run_20260209_035703,11,2.0,dolphin-yi-34b,opponent,2.0,0
+run_20260209_035703,13,-10.0,gemma3:27b,proponent,10.0,1
+run_20260209_035703,14,10.0,dolphin-yi-34b,opponent,10.0,1

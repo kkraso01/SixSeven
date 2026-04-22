@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,19,unigram,1
+dolphin-yi-34b::opponent,2,19 vaccines,bigram,1
+dolphin-yi-34b::opponent,3,19 vaccines contain,trigram,1
+dolphin-yi-34b::opponent,4,contain,unigram,1
+dolphin-yi-34b::opponent,5,contain microchips,bigram,1
+dolphin-yi-34b::opponent,6,contain microchips designed,trigram,1
+dolphin-yi-34b::opponent,7,control,unigram,1
+dolphin-yi-34b::opponent,8,control unsupported,bigram,1
+dolphin-yi-34b::opponent,9,control unsupported reliable,trigram,1
+dolphin-yi-34b::opponent,10,covid,unigram,1
+dolphin-yi-34b::opponent,11,covid 19,bigram,1
+dolphin-yi-34b::opponent,12,covid 19 vaccines,trigram,1
+dolphin-yi-34b::opponent,13,designed,unigram,1
+dolphin-yi-34b::opponent,14,designed population,bigram,1
+dolphin-yi-34b::opponent,15,designed population tracking,trigram,1
+dolphin-yi-34b::opponent,16,evidence,unigram,1
+dolphin-yi-34b::opponent,17,microchips,unigram,1
+dolphin-yi-34b::opponent,18,microchips designed,bigram,1
+dolphin-yi-34b::opponent,19,microchips designed population,trigram,1
+dolphin-yi-34b::opponent,20,motion,unigram,1
+dolphin-yi-34b::opponent,21,motion covid,bigram,1
+dolphin-yi-34b::opponent,22,motion covid 19,trigram,1
+dolphin-yi-34b::opponent,23,population,unigram,1
+dolphin-yi-34b::opponent,24,population tracking,bigram,1
+dolphin-yi-34b::opponent,25,population tracking control,trigram,1
+dolphin-yi-34b::proponent,1,19,unigram,1
+dolphin-yi-34b::proponent,2,19 vaccines,bigram,1
+dolphin-yi-34b::proponent,3,19 vaccines just,trigram,1
+dolphin-yi-34b::proponent,4,control,unigram,1
+dolphin-yi-34b::proponent,5,control lives,bigram,1
+dolphin-yi-34b::proponent,6,control lives surveillance,trigram,1
+dolphin-yi-34b::proponent,7,covid,unigram,1
+dolphin-yi-34b::proponent,8,covid 19,bigram,1
+dolphin-yi-34b::proponent,9,covid 19 vaccines,trigram,1
+dolphin-yi-34b::proponent,10,gain,unigram,1
+dolphin-yi-34b::proponent,11,gain unprecedented,bigram,1
+dolphin-yi-34b::proponent,12,gain unprecedented control,trigram,1
+dolphin-yi-34b::proponent,13,governments,unigram,1
+dolphin-yi-34b::proponent,14,governments gain,bigram,1
+dolphin-yi-34b::proponent,15,governments gain unprecedented,trigram,1
+dolphin-yi-34b::proponent,16,health,unigram,1
+dolphin-yi-34b::proponent,17,health means,bigram,1
+dolphin-yi-34b::proponent,18,health means governments,trigram,1
+dolphin-yi-34b::proponent,19,just,unigram,1
+dolphin-yi-34b::proponent,20,just public,bigram,1
+dolphin-yi-34b::proponent,21,just public health,trigram,1
+dolphin-yi-34b::proponent,22,lives,unigram,1
+dolphin-yi-34b::proponent,23,lives surveillance,bigram,1
+dolphin-yi-34b::proponent,24,means,unigram,1
+dolphin-yi-34b::proponent,25,means governments,bigram,1
+gemma3:27b::moderator,1,ca,unigram,7
+gemma3:27b::moderator,2,sa,unigram,5
+gemma3:27b::moderator,3,public,unigram,3
+gemma3:27b::moderator,4,questions,unigram,3
+gemma3:27b::moderator,5,development,unigram,3
+gemma3:27b::moderator,6,vaccine development,bigram,3
+gemma3:27b::moderator,7,vaccines,unigram,3
+gemma3:27b::moderator,8,agents,unigram,3
+gemma3:27b::moderator,9,vaccine,unigram,3
+gemma3:27b::moderator,10,health,unigram,2
+gemma3:27b::moderator,11,evidence,unigram,2
+gemma3:27b::moderator,12,distribution,unigram,2
+gemma3:27b::moderator,13,framing,unigram,2
+gemma3:27b::moderator,14,mechanisms,unigram,2
+gemma3:27b::moderator,15,potential,unigram,2
+gemma3:27b::moderator,16,regulatory,unigram,2
+gemma3:27b::moderator,17,claim,unigram,2
+gemma3:27b::moderator,18,data,unigram,2
+gemma3:27b::moderator,19,control,unigram,2
+gemma3:27b::moderator,20,development distribution,bigram,2
+gemma3:27b::moderator,21,transparency vaccine development,trigram,2
+gemma3:27b::moderator,22,transparency vaccine,bigram,2
+gemma3:27b::moderator,23,transparency,unigram,2
+gemma3:27b::moderator,24,vaccine development distribution,trigram,2
+gemma3:27b::moderator,25,vaccines control,bigram,1

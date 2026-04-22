@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,safety,unigram,17
+dolphin-yi-34b::moderator,2,safety efficacy,bigram,17
+dolphin-yi-34b::moderator,3,efficacy,unigram,17
+dolphin-yi-34b::moderator,4,sa,unigram,13
+dolphin-yi-34b::moderator,5,incentives,unigram,13
+dolphin-yi-34b::moderator,6,institutional incentives,bigram,13
+dolphin-yi-34b::moderator,7,institutional,unigram,13
+dolphin-yi-34b::moderator,8,evidence,unigram,12
+dolphin-yi-34b::moderator,9,rapid,unigram,11
+dolphin-yi-34b::moderator,10,ca,unigram,11
+dolphin-yi-34b::moderator,11,rapid development,bigram,11
+dolphin-yi-34b::moderator,12,mrna,unigram,11
+dolphin-yi-34b::moderator,13,vaccines,unigram,11
+dolphin-yi-34b::moderator,14,development,unigram,11
+dolphin-yi-34b::moderator,15,institutional incentives rushed,trigram,10
+dolphin-yi-34b::moderator,16,timelines,unigram,10
+dolphin-yi-34b::moderator,17,mrna vaccines,bigram,10
+dolphin-yi-34b::moderator,18,rushed timelines,bigram,10
+dolphin-yi-34b::moderator,19,incentives rushed,bigram,10
+dolphin-yi-34b::moderator,20,incentives rushed timelines,trigram,10
+dolphin-yi-34b::moderator,21,rushed,unigram,10
+dolphin-yi-34b::moderator,22,compromised,unigram,8
+dolphin-yi-34b::moderator,23,compromised safety efficacy,trigram,7
+dolphin-yi-34b::moderator,24,concerns,unigram,7
+dolphin-yi-34b::moderator,25,compromised safety,bigram,7
+dolphin-yi-34b::opponent,1,vaccines,unigram,11
+dolphin-yi-34b::opponent,2,safety,unigram,9
+dolphin-yi-34b::opponent,3,efficacy,unigram,8
+dolphin-yi-34b::opponent,4,safety efficacy,bigram,7
+dolphin-yi-34b::opponent,5,development mrna vaccines,trigram,5
+dolphin-yi-34b::opponent,6,development,unigram,5
+dolphin-yi-34b::opponent,7,development mrna,bigram,5
+dolphin-yi-34b::opponent,8,data,unigram,5
+dolphin-yi-34b::opponent,9,rapid,unigram,5
+dolphin-yi-34b::opponent,10,mrna vaccines,bigram,5
+dolphin-yi-34b::opponent,11,mrna,unigram,5
+dolphin-yi-34b::opponent,12,allocated covid,bigram,4
+dolphin-yi-34b::opponent,13,covid 19,bigram,4
+dolphin-yi-34b::opponent,14,covid 19 vaccine,trigram,4
+dolphin-yi-34b::opponent,15,covid,unigram,4
+dolphin-yi-34b::opponent,16,19,unigram,4
+dolphin-yi-34b::opponent,17,like,unigram,4
+dolphin-yi-34b::opponent,18,fda,unigram,4
+dolphin-yi-34b::opponent,19,prioritization,unigram,4
+dolphin-yi-34b::opponent,20,like fda,bigram,4
+dolphin-yi-34b::opponent,21,regulatory,unigram,4
+dolphin-yi-34b::opponent,22,speed,unigram,4
+dolphin-yi-34b::opponent,23,resources,unigram,4
+dolphin-yi-34b::opponent,24,resources allocated covid,trigram,4
+dolphin-yi-34b::opponent,25,rapid development mrna,trigram,4
+dolphin-yi-34b::proponent,1,efficacy,unigram,5
+dolphin-yi-34b::proponent,2,mrna vaccines,bigram,5
+dolphin-yi-34b::proponent,3,mrna,unigram,5
+dolphin-yi-34b::proponent,4,safety efficacy,bigram,5
+dolphin-yi-34b::proponent,5,safety,unigram,5
+dolphin-yi-34b::proponent,6,vaccines,unigram,5
+dolphin-yi-34b::proponent,7,efficacy mrna,bigram,4
+dolphin-yi-34b::proponent,8,incentives,unigram,4
+dolphin-yi-34b::proponent,9,institutional incentives,bigram,4
+dolphin-yi-34b::proponent,10,institutional incentives rushed,trigram,4
+dolphin-yi-34b::proponent,11,rushed,unigram,4
+dolphin-yi-34b::proponent,12,rushed timelines,bigram,4
+dolphin-yi-34b::proponent,13,incentives rushed timelines,trigram,4
+dolphin-yi-34b::proponent,14,efficacy mrna vaccines,trigram,4
+dolphin-yi-34b::proponent,15,incentives rushed,bigram,4
+dolphin-yi-34b::proponent,16,institutional,unigram,4
+dolphin-yi-34b::proponent,17,timelines,unigram,4
+dolphin-yi-34b::proponent,18,safety efficacy mrna,trigram,4
+dolphin-yi-34b::proponent,19,rushed timelines undermine,trigram,3
+dolphin-yi-34b::proponent,20,timelines undermine,bigram,3
+dolphin-yi-34b::proponent,21,undermine,unigram,3
+dolphin-yi-34b::proponent,22,timelines undermine safety,trigram,3
+dolphin-yi-34b::proponent,23,undermine safety efficacy,trigram,3
+dolphin-yi-34b::proponent,24,undermine safety,bigram,3
+dolphin-yi-34b::proponent,25,doubts safety efficacy,trigram,1

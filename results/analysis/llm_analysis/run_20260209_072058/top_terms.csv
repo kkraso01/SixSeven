@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,17
+dolphin-yi-34b::moderator,2,ca,unigram,15
+dolphin-yi-34b::moderator,3,questions,unigram,12
+dolphin-yi-34b::moderator,4,anomalies,unigram,12
+dolphin-yi-34b::moderator,5,inconsistencies,unigram,11
+dolphin-yi-34b::moderator,6,government,unigram,11
+dolphin-yi-34b::moderator,7,11,unigram,10
+dolphin-yi-34b::moderator,8,evidence,unigram,9
+dolphin-yi-34b::moderator,9,narrative,unigram,8
+dolphin-yi-34b::moderator,10,official,unigram,8
+dolphin-yi-34b::moderator,11,attacks,unigram,7
+dolphin-yi-34b::moderator,12,official narrative,bigram,7
+dolphin-yi-34b::moderator,13,specific,unigram,7
+dolphin-yi-34b::moderator,14,orchestration,unigram,7
+dolphin-yi-34b::moderator,15,11 attacks,bigram,7
+dolphin-yi-34b::moderator,16,inconsistencies official,bigram,7
+dolphin-yi-34b::moderator,17,argues,unigram,6
+dolphin-yi-34b::moderator,18,inconsistencies official narrative,trigram,6
+dolphin-yi-34b::moderator,19,round recap,bigram,5
+dolphin-yi-34b::moderator,20,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,21,recap,unigram,5
+dolphin-yi-34b::moderator,22,recap agreements,bigram,5
+dolphin-yi-34b::moderator,23,agreements agents,bigram,5
+dolphin-yi-34b::moderator,24,agreements agents acknowledge,trigram,5
+dolphin-yi-34b::moderator,25,moderator,unigram,5
+dolphin-yi-34b::proponent,1,11,unigram,5
+dolphin-yi-34b::proponent,2,11 attacks,bigram,4
+dolphin-yi-34b::proponent,3,attacks,unigram,4
+dolphin-yi-34b::proponent,4,inconsistencies unanswered questions,trigram,4
+dolphin-yi-34b::proponent,5,inconsistencies,unigram,4
+dolphin-yi-34b::proponent,6,inconsistencies unanswered,bigram,4
+dolphin-yi-34b::proponent,7,narrative,unigram,4
+dolphin-yi-34b::proponent,8,narrative 11,bigram,4
+dolphin-yi-34b::proponent,9,official narrative,bigram,4
+dolphin-yi-34b::proponent,10,official,unigram,4
+dolphin-yi-34b::proponent,11,official narrative 11,trigram,4
+dolphin-yi-34b::proponent,12,questions,unigram,4
+dolphin-yi-34b::proponent,13,unanswered questions,bigram,4
+dolphin-yi-34b::proponent,14,unanswered,unigram,4
+dolphin-yi-34b::proponent,15,dismissed,unigram,3
+dolphin-yi-34b::proponent,16,dismissed mere coincidences,trigram,3
+dolphin-yi-34b::proponent,17,mere,unigram,3
+dolphin-yi-34b::proponent,18,mere coincidences,bigram,3
+dolphin-yi-34b::proponent,19,narrative 11 attacks,trigram,3
+dolphin-yi-34b::proponent,20,unanswered questions dismissed,trigram,3
+dolphin-yi-34b::proponent,21,questions dismissed,bigram,3
+dolphin-yi-34b::proponent,22,questions dismissed mere,trigram,3
+dolphin-yi-34b::proponent,23,dismissed mere,bigram,3
+dolphin-yi-34b::proponent,24,coincidences,unigram,3
+dolphin-yi-34b::proponent,25,11 attacks marred,trigram,2
+gemma3:27b::opponent,1,11,unigram,5
+gemma3:27b::opponent,2,evidence,unigram,5
+gemma3:27b::opponent,3,attributing,unigram,4
+gemma3:27b::opponent,4,acknowledging,unigram,4
+gemma3:27b::opponent,5,requires,unigram,4
+gemma3:27b::opponent,6,demonstrating,unigram,3
+gemma3:27b::opponent,7,attacks,unigram,3
+gemma3:27b::opponent,8,government,unigram,3
+gemma3:27b::opponent,9,questions,unigram,3
+gemma3:27b::opponent,10,orchestration,unigram,3
+gemma3:27b::opponent,11,orchestration requires,bigram,3
+gemma3:27b::opponent,12,requires demonstrating,bigram,3
+gemma3:27b::opponent,13,mechanism,unigram,3
+gemma3:27b::opponent,14,attributing deliberate,bigram,2
+gemma3:27b::opponent,15,attributing deliberate orchestration,trigram,2
+gemma3:27b::opponent,16,anomalies,unigram,2
+gemma3:27b::opponent,17,deliberate orchestration requires,trigram,2
+gemma3:27b::opponent,18,deliberate orchestration,bigram,2
+gemma3:27b::opponent,19,demonstrating plausible mechanism,trigram,2
+gemma3:27b::opponent,20,evidence remains,bigram,2
+gemma3:27b::opponent,21,failure,unigram,2
+gemma3:27b::opponent,22,government orchestrated,bigram,2
+gemma3:27b::opponent,23,evidence remains absent,trigram,2
+gemma3:27b::opponent,24,orchestration requires demonstrating,trigram,2
+gemma3:27b::opponent,25,mechanism supporting evidence,trigram,2

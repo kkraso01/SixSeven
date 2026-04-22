@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,climate_change_hoax,environment,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge potential political influence on IPCC reports but differ in their assessment of its impact on the overall scientific validity.
+Disagreements: CA argues that IPCC reports downplay natural climate drivers and exaggerate human activity's role in shaping global temperatures, while SA maintains that these reports provide an objective assessment based on a thorough review of the scientific literature.
+Detected moves: appeal to authority (CA citing instances where national governments influenced IPCC reports), strawman or misrepresentation (SA's alternative hypotheses and tests are based on CA's claim, not necessarily grounded in SA's own position)
+Scores: civility=3/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that political influence has significantly altered IPCC reports' accuracy regarding climate change?, How do we reconcile potential political manipulation with the overall scientific validity of IPCC reports?"
+dolphin-yi-34b,moderator,most_evidence_dense,climate_change_hoax,environment,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the existence of climate change as a topic of debate.
+Disagreements: CA argues that global elites use climate change to justify increased control, while SA claims this is unsupported and relies on scientific consensus.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide evidence that the IPCC is politically motivated rather than scientifically driven?, What specific examples do you have of global elites using climate change as a pretext for increased control?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,climate_change_hoax,environment,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the existence of climate change as a topic of debate.
+Disagreements: CA argues that global elites use climate change to justify increased control, while SA claims this is unsupported and relies on scientific consensus.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide evidence that the IPCC is politically motivated rather than scientifically driven?, What specific examples do you have of global elites using climate change as a pretext for increased control?"
+dolphin-yi-34b,moderator,most_hedged,climate_change_hoax,environment,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge potential political influence on IPCC reports but differ in their assessment of its impact on the overall scientific validity.
+Disagreements: CA argues that IPCC reports downplay natural climate drivers and exaggerate human activity's role in shaping global temperatures, while SA maintains that these reports provide an objective assessment based on a thorough review of the scientific literature.
+Detected moves: appeal to authority (CA citing instances where national governments influenced IPCC reports), strawman or misrepresentation (SA's alternative hypotheses and tests are based on CA's claim, not necessarily grounded in SA's own position)
+Scores: civility=3/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that political influence has significantly altered IPCC reports' accuracy regarding climate change?, How do we reconcile potential political manipulation with the overall scientific validity of IPCC reports?"
+dolphin-yi-34b,moderator,most_assertive,climate_change_hoax,environment,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge potential political influence on IPCC reports but differ in their assessment of its impact on the overall scientific validity.
+Disagreements: CA argues that IPCC reports downplay natural climate drivers and exaggerate human activity's role in shaping global temperatures, while SA maintains that these reports provide an objective assessment based on a thorough review of the scientific literature.
+Detected moves: appeal to authority (CA citing instances where national governments influenced IPCC reports), strawman or misrepresentation (SA's alternative hypotheses and tests are based on CA's claim, not necessarily grounded in SA's own position)
+Scores: civility=3/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that political influence has significantly altered IPCC reports' accuracy regarding climate change?, How do we reconcile potential political manipulation with the overall scientific validity of IPCC reports?"
+dolphin-yi-34b,moderator,most_moral_framed,climate_change_hoax,environment,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the existence of climate change as a topic of debate.
+Disagreements: CA argues that global elites use climate change to justify increased control, while SA claims this is unsupported and relies on scientific consensus.
+Detected moves: institutional-critique, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide evidence that the IPCC is politically motivated rather than scientifically driven?, What specific examples do you have of global elites using climate change as a pretext for increased control?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,climate_change_hoax,environment,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for political influence on IPCC reports., SA emphasizes the importance of considering alternative explanations for climate change beyond human activity.
+Disagreements: CA argues that the IPCC may be promoting a narrative overemphasizing human impact due to ulterior motives., SA maintains confidence in the overall body of evidence supporting human-induced climate change and questions the validity of specific instances of political influence on IPCC reports.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can CA provide to support the claim that political influence significantly alters our understanding of climate change through IPCC reports?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,climate_change_hoax,environment,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge potential political influence on IPCC reports but differ in their assessment of its impact on the overall scientific validity.
+Disagreements: CA argues that IPCC reports downplay natural climate drivers and exaggerate human activity's role in shaping global temperatures, while SA maintains that these reports provide an objective assessment based on a thorough review of the scientific literature.
+Detected moves: appeal to authority (CA citing instances where national governments influenced IPCC reports), strawman or misrepresentation (SA's alternative hypotheses and tests are based on CA's claim, not necessarily grounded in SA's own position)
+Scores: civility=3/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can be provided to support the claim that political influence has significantly altered IPCC reports' accuracy regarding climate change?, How do we reconcile potential political manipulation with the overall scientific validity of IPCC reports?"
+dolphin-yi-34b,opponent,highest_confidence,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,most_evidence_dense,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,most_rebuttal_dense,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,most_hedged,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,most_assertive,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,most_moral_framed,climate_change_hoax,environment,opening,1,2,80.0,"The motion that climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations is not supported by reliable inference. Climate change is a complex issue with overwhelming scientific consensus, and its urgency cannot be reduced to mere political agendas."
+dolphin-yi-34b,opponent,strongest_stance_proxy,climate_change_hoax,environment,middle,2,5,82.0,"The IPCC's reports are based on a thorough review of the scientific literature and aim to provide an objective assessment of climate change. While there may be instances where political influence has affected specific findings or conclusions, this does not invalidate the overall body of evidence supporting human-induced climate change."
+dolphin-yi-34b,opponent,weakest_stance_proxy,climate_change_hoax,environment,opening,1,2,80.0,"The motion that climate change is a manufactured crisis promoted by global elites to justify increased taxation and control over populations is not supported by reliable inference. Climate change is a complex issue with overwhelming scientific consensus, and its urgency cannot be reduced to mere political agendas."
+dolphin-yi-34b,proponent,highest_confidence,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,most_evidence_dense,climate_change_hoax,environment,closing,3,7,35.0,The IPCC's reports often downplay natural climate drivers and exaggerate the role of human activity in shaping global temperatures.
+dolphin-yi-34b,proponent,most_rebuttal_dense,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,most_hedged,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,most_assertive,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,most_moral_framed,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,strongest_stance_proxy,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.
+dolphin-yi-34b,proponent,weakest_stance_proxy,climate_change_hoax,environment,opening,1,1,55.0,The concept of climate change as a crisis is perpetuated by global elites to justify increased control over populations.

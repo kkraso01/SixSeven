@@ -1,0 +1,3 @@
+debate_role,observed_turns,turning_point_count,max_abs_delta,avg_abs_delta,avg_signed_delta,turning_point_rate
+opponent,254,49,25.0,2.6338582677165356,2.279527559055118,0.19291338582677164
+proponent,249,65,20.0,3.8714859437751006,-3.1004016064257027,0.26104417670682734

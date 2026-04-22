@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,31
+gemma3:27b::moderator,3,manipulation,unigram,17
+gemma3:27b::moderator,4,evidence,unigram,15
+gemma3:27b::moderator,5,agents,unigram,10
+gemma3:27b::moderator,6,election,unigram,7
+gemma3:27b::moderator,7,proof,unigram,7
+gemma3:27b::moderator,8,agree,unigram,7
+gemma3:27b::moderator,9,anomalies,unigram,6
+gemma3:27b::moderator,10,technical,unigram,6
+gemma3:27b::moderator,11,statistical,unigram,6
+gemma3:27b::moderator,12,systemic,unigram,6
+gemma3:27b::moderator,13,scores civility epistemic,trigram,5
+gemma3:27b::moderator,14,agreements,unigram,5
+gemma3:27b::moderator,15,round recap agreements,trigram,5
+gemma3:27b::moderator,16,round,unigram,5
+gemma3:27b::moderator,17,recap agreements agents,trigram,5
+gemma3:27b::moderator,18,need,unigram,5
+gemma3:27b::moderator,19,moderator,unigram,5
+gemma3:27b::moderator,20,appeal,unigram,5
+gemma3:27b::moderator,21,moderator round recap,trigram,5
+gemma3:27b::moderator,22,moves,unigram,5
+gemma3:27b::moderator,23,moderator round,bigram,5
+gemma3:27b::moderator,24,argues,unigram,5
+gemma3:27b::moderator,25,questions,unigram,5
+gemma3:27b::opponent,1,acknowledging,unigram,5
+gemma3:27b::opponent,2,potential,unigram,4
+gemma3:27b::opponent,3,manipulation,unigram,4
+gemma3:27b::opponent,4,attributing,unigram,3
+gemma3:27b::opponent,5,requires,unigram,3
+gemma3:27b::opponent,6,systems,unigram,3
+gemma3:27b::opponent,7,acknowledging potential,bigram,3
+gemma3:27b::opponent,8,evidence,unigram,3
+gemma3:27b::opponent,9,plausible,unigram,2
+gemma3:27b::opponent,10,requires demonstrating,bigram,2
+gemma3:27b::opponent,11,manipulation requires,bigram,2
+gemma3:27b::opponent,12,intent,unigram,2
+gemma3:27b::opponent,13,incentives,unigram,2
+gemma3:27b::opponent,14,explanations,unigram,2
+gemma3:27b::opponent,15,systemic,unigram,2
+gemma3:27b::opponent,16,vulnerabilities,unigram,2
+gemma3:27b::opponent,17,electronic,unigram,2
+gemma3:27b::opponent,18,flaws,unigram,2
+gemma3:27b::opponent,19,demonstrating,unigram,2
+gemma3:27b::opponent,20,alternative,unigram,2
+gemma3:27b::opponent,21,alternative explanations,bigram,2
+gemma3:27b::opponent,22,unsubstantiated claims particularly,trigram,1
+gemma3:27b::opponent,23,unsubstantiated claims,bigram,1
+gemma3:27b::opponent,24,unsubstantiated,unigram,1
+gemma3:27b::opponent,25,trend limited transparency,trigram,1
+gemma3:27b::proponent,1,simply,unigram,3
+gemma3:27b::proponent,2,election,unigram,3
+gemma3:27b::proponent,3,insistence,unigram,3
+gemma3:27b::proponent,4,manipulation,unigram,3
+gemma3:27b::proponent,5,electronic,unigram,3
+gemma3:27b::proponent,6,electronic voting,bigram,3
+gemma3:27b::proponent,7,voting,unigram,3
+gemma3:27b::proponent,8,statistical,unigram,2
+gemma3:27b::proponent,9,systemic,unigram,2
+gemma3:27b::proponent,10,technical,unigram,2
+gemma3:27b::proponent,11,code,unigram,2
+gemma3:27b::proponent,12,designed,unigram,2
+gemma3:27b::proponent,13,concerns,unigram,2
+gemma3:27b::proponent,14,vulnerable,unigram,2
+gemma3:27b::proponent,15,vulnerable technical,bigram,1
+gemma3:27b::proponent,16,vulnerable manipulation insulated,trigram,1
+gemma3:27b::proponent,17,vulnerable manipulation,bigram,1
+gemma3:27b::proponent,18,voting simply technical,trigram,1
+gemma3:27b::proponent,19,voting simply,bigram,1
+gemma3:27b::proponent,20,voting machines aren,trigram,1
+gemma3:27b::proponent,21,voting machines,bigram,1
+gemma3:27b::proponent,22,voting machine source,trigram,1
+gemma3:27b::proponent,23,voting machine,bigram,1
+gemma3:27b::proponent,24,vested controlling election,trigram,1
+gemma3:27b::proponent,25,vested controlling,bigram,1

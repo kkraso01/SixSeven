@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,apollo,unigram,17
+dolphin-yi-34b::moderator,2,evidence,unigram,13
+dolphin-yi-34b::moderator,3,data,unigram,10
+dolphin-yi-34b::moderator,4,moon,unigram,10
+dolphin-yi-34b::moderator,5,missions,unigram,9
+dolphin-yi-34b::moderator,6,staged,unigram,9
+dolphin-yi-34b::moderator,7,anomalies,unigram,8
+dolphin-yi-34b::moderator,8,apollo moon,bigram,8
+dolphin-yi-34b::moderator,9,ca,unigram,7
+dolphin-yi-34b::moderator,10,agents,unigram,7
+dolphin-yi-34b::moderator,11,sa,unigram,7
+dolphin-yi-34b::moderator,12,inconsistencies,unigram,6
+dolphin-yi-34b::moderator,13,apollo missions,bigram,6
+dolphin-yi-34b::moderator,14,destruction,unigram,6
+dolphin-yi-34b::moderator,15,landing,unigram,6
+dolphin-yi-34b::moderator,16,scores civility epistemic,trigram,5
+dolphin-yi-34b::moderator,17,scores,unigram,5
+dolphin-yi-34b::moderator,18,scores civility,bigram,5
+dolphin-yi-34b::moderator,19,round recap,bigram,5
+dolphin-yi-34b::moderator,20,recap,unigram,5
+dolphin-yi-34b::moderator,21,questions,unigram,5
+dolphin-yi-34b::moderator,22,apollo moon landings,trigram,5
+dolphin-yi-34b::moderator,23,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,24,moon landing,bigram,5
+dolphin-yi-34b::moderator,25,official,unigram,5
+dolphin-yi-34b::proponent,1,apollo,unigram,5
+dolphin-yi-34b::proponent,2,apollo moon,bigram,4
+dolphin-yi-34b::proponent,3,apollo moon landings,trigram,4
+dolphin-yi-34b::proponent,4,government,unigram,4
+dolphin-yi-34b::proponent,5,landings,unigram,4
+dolphin-yi-34b::proponent,6,space race soviet,trigram,4
+dolphin-yi-34b::proponent,7,space,unigram,4
+dolphin-yi-34b::proponent,8,space race,bigram,4
+dolphin-yi-34b::proponent,9,soviet,unigram,4
+dolphin-yi-34b::proponent,10,soviet union,bigram,4
+dolphin-yi-34b::proponent,11,race soviet,bigram,4
+dolphin-yi-34b::proponent,12,race,unigram,4
+dolphin-yi-34b::proponent,13,race soviet union,trigram,4
+dolphin-yi-34b::proponent,14,nasa,unigram,4
+dolphin-yi-34b::proponent,15,moon landings,bigram,4
+dolphin-yi-34b::proponent,16,moon,unigram,4
+dolphin-yi-34b::proponent,17,union,unigram,4
+dolphin-yi-34b::proponent,18,meticulously,unigram,3
+dolphin-yi-34b::proponent,19,moon landings meticulously,trigram,3
+dolphin-yi-34b::proponent,20,nasa government,bigram,3
+dolphin-yi-34b::proponent,21,staged,unigram,3
+dolphin-yi-34b::proponent,22,government win,bigram,3
+dolphin-yi-34b::proponent,23,government win space,trigram,3
+dolphin-yi-34b::proponent,24,official,unigram,3
+dolphin-yi-34b::proponent,25,win,unigram,3
+gemma3:27b::opponent,1,evidence,unigram,8
+gemma3:27b::opponent,2,staged,unigram,5
+gemma3:27b::opponent,3,apollo,unigram,4
+gemma3:27b::opponent,4,claim,unigram,3
+gemma3:27b::opponent,5,lacks,unigram,3
+gemma3:27b::opponent,6,staged apollo,bigram,3
+gemma3:27b::opponent,7,landing,unigram,3
+gemma3:27b::opponent,8,apollo landing,bigram,3
+gemma3:27b::opponent,9,relies,unigram,3
+gemma3:27b::opponent,10,staged apollo landing,trigram,3
+gemma3:27b::opponent,11,claim staged apollo,trigram,2
+gemma3:27b::opponent,12,independent,unigram,2
+gemma3:27b::opponent,13,corroborating,unigram,2
+gemma3:27b::opponent,14,claim staged,bigram,2
+gemma3:27b::opponent,15,authenticity,unigram,2
+gemma3:27b::opponent,16,anomalies,unigram,2
+gemma3:27b::opponent,17,landing relies,bigram,2
+gemma3:27b::opponent,18,missions,unigram,2
+gemma3:27b::opponent,19,supporting,unigram,2
+gemma3:27b::opponent,20,apollo landing relies,trigram,2
+gemma3:27b::opponent,21,data,unigram,2
+gemma3:27b::opponent,22,apollo landings,bigram,1
+gemma3:27b::opponent,23,apollo landings staged,trigram,1
+gemma3:27b::opponent,24,anomalies ignoring substantial,trigram,1
+gemma3:27b::opponent,25,anomalies ignoring,bigram,1

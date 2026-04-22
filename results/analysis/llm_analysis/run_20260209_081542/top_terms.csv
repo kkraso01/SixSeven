@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,climate,unigram,11
+dolphin-yi-34b::moderator,2,sa,unigram,10
+dolphin-yi-34b::moderator,3,change,unigram,10
+dolphin-yi-34b::moderator,4,ca,unigram,10
+dolphin-yi-34b::moderator,5,climate change,bigram,10
+dolphin-yi-34b::moderator,6,evidence,unigram,8
+dolphin-yi-34b::moderator,7,questions,unigram,5
+dolphin-yi-34b::moderator,8,paris agreement,bigram,5
+dolphin-yi-34b::moderator,9,paris,unigram,5
+dolphin-yi-34b::moderator,10,agreement,unigram,5
+dolphin-yi-34b::moderator,11,economic,unigram,4
+dolphin-yi-34b::moderator,12,potential,unigram,4
+dolphin-yi-34b::moderator,13,scientific,unigram,3
+dolphin-yi-34b::moderator,14,reasoning,unigram,3
+dolphin-yi-34b::moderator,15,agreements agents,bigram,3
+dolphin-yi-34b::moderator,16,acknowledge,unigram,3
+dolphin-yi-34b::moderator,17,based reasoning,bigram,3
+dolphin-yi-34b::moderator,18,recap agreements agents,trigram,3
+dolphin-yi-34b::moderator,19,bridge questions,bigram,3
+dolphin-yi-34b::moderator,20,power,unigram,3
+dolphin-yi-34b::moderator,21,moves,unigram,3
+dolphin-yi-34b::moderator,22,political,unigram,3
+dolphin-yi-34b::moderator,23,ca argues,bigram,3
+dolphin-yi-34b::moderator,24,moves distrust,bigram,3
+dolphin-yi-34b::moderator,25,recap agreements,bigram,3
+dolphin-yi-34b::proponent,1,agreement,unigram,2
+dolphin-yi-34b::proponent,2,climate,unigram,2
+dolphin-yi-34b::proponent,3,control,unigram,2
+dolphin-yi-34b::proponent,4,power,unigram,2
+dolphin-yi-34b::proponent,5,paris agreement,bigram,2
+dolphin-yi-34b::proponent,6,paris,unigram,2
+dolphin-yi-34b::proponent,7,global power,bigram,2
+dolphin-yi-34b::proponent,8,global,unigram,2
+dolphin-yi-34b::proponent,9,suspiciously,unigram,2
+dolphin-yi-34b::proponent,10,aligned,unigram,1
+dolphin-yi-34b::proponent,11,aligned agendas global,trigram,1
+dolphin-yi-34b::proponent,12,aligned agendas,bigram,1
+dolphin-yi-34b::proponent,13,agreement economic,bigram,1
+dolphin-yi-34b::proponent,14,agreement economic consequences,trigram,1
+dolphin-yi-34b::proponent,15,agendas global,bigram,1
+dolphin-yi-34b::proponent,16,agendas,unigram,1
+dolphin-yi-34b::proponent,17,benefit increased,bigram,1
+dolphin-yi-34b::proponent,18,benefit,unigram,1
+dolphin-yi-34b::proponent,19,change narrative,bigram,1
+dolphin-yi-34b::proponent,20,benefit increased control,trigram,1
+dolphin-yi-34b::proponent,21,change narrative suspiciously,trigram,1
+dolphin-yi-34b::proponent,22,climate change,bigram,1
+dolphin-yi-34b::proponent,23,climate change narrative,trigram,1
+dolphin-yi-34b::proponent,24,change,unigram,1
+dolphin-yi-34b::proponent,25,climate concerns,bigram,1
+gemma3:27b::opponent,1,climate,unigram,4
+gemma3:27b::opponent,2,change,unigram,3
+gemma3:27b::opponent,3,climate change,bigram,3
+gemma3:27b::opponent,4,control,unigram,2
+gemma3:27b::opponent,5,crisis,unigram,2
+gemma3:27b::opponent,6,manufactured,unigram,2
+gemma3:27b::opponent,7,overlooks,unigram,2
+gemma3:27b::opponent,8,evidence,unigram,2
+gemma3:27b::opponent,9,manufactured crisis,bigram,2
+gemma3:27b::opponent,10,potential,unigram,2
+gemma3:27b::opponent,11,solely,unigram,2
+gemma3:27b::opponent,12,anthropogenic,unigram,1
+gemma3:27b::opponent,13,agreement undoubtedly involves,trigram,1
+gemma3:27b::opponent,14,acknowledging,unigram,1
+gemma3:27b::opponent,15,anthropogenic climate,bigram,1
+gemma3:27b::opponent,16,anthropogenic climate change,trigram,1
+gemma3:27b::opponent,17,attributing climate,bigram,1
+gemma3:27b::opponent,18,attributing climate change,trigram,1
+gemma3:27b::opponent,19,body evidence,bigram,1
+gemma3:27b::opponent,20,body,unigram,1
+gemma3:27b::opponent,21,body evidence demonstrating,trigram,1
+gemma3:27b::opponent,22,change manufactured,bigram,1
+gemma3:27b::opponent,23,change manufactured crisis,trigram,1
+gemma3:27b::opponent,24,change solely,bigram,1
+gemma3:27b::opponent,25,change solely manufactured,trigram,1

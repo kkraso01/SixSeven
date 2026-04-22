@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,17
+dolphin-yi-34b::moderator,2,ca,unigram,15
+dolphin-yi-34b::moderator,3,election,unigram,14
+dolphin-yi-34b::moderator,4,manipulation,unigram,12
+dolphin-yi-34b::moderator,5,voting,unigram,11
+dolphin-yi-34b::moderator,6,questions,unigram,9
+dolphin-yi-34b::moderator,7,audits,unigram,8
+dolphin-yi-34b::moderator,8,security,unigram,8
+dolphin-yi-34b::moderator,9,independent,unigram,8
+dolphin-yi-34b::moderator,10,electronic,unigram,8
+dolphin-yi-34b::moderator,11,electronic voting,bigram,8
+dolphin-yi-34b::moderator,12,evidence,unigram,7
+dolphin-yi-34b::moderator,13,systems,unigram,7
+dolphin-yi-34b::moderator,14,agents,unigram,7
+dolphin-yi-34b::moderator,15,specific,unigram,7
+dolphin-yi-34b::moderator,16,potential,unigram,6
+dolphin-yi-34b::moderator,17,transparency,unigram,6
+dolphin-yi-34b::moderator,18,detected,unigram,6
+dolphin-yi-34b::moderator,19,source,unigram,6
+dolphin-yi-34b::moderator,20,round,unigram,5
+dolphin-yi-34b::moderator,21,recap,unigram,5
+dolphin-yi-34b::moderator,22,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,23,recap agreements,bigram,5
+dolphin-yi-34b::moderator,24,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,25,political,unigram,5
+gemma3:27b::opponent,1,evidence,unigram,4
+gemma3:27b::opponent,2,claim,unigram,3
+gemma3:27b::opponent,3,deliberate,unigram,3
+gemma3:27b::opponent,4,manipulation,unigram,3
+gemma3:27b::opponent,5,concerns,unigram,3
+gemma3:27b::opponent,6,audits,unigram,2
+gemma3:27b::opponent,7,attributing,unigram,2
+gemma3:27b::opponent,8,vulnerabilities,unigram,2
+gemma3:27b::opponent,9,malicious,unigram,2
+gemma3:27b::opponent,10,potential,unigram,2
+gemma3:27b::opponent,11,source,unigram,2
+gemma3:27b::opponent,12,legitimate,unigram,2
+gemma3:27b::opponent,13,framing,unigram,2
+gemma3:27b::opponent,14,influence,unigram,2
+gemma3:27b::opponent,15,limited,unigram,2
+gemma3:27b::opponent,16,correlation,unigram,2
+gemma3:27b::opponent,17,voting,unigram,1
+gemma3:27b::opponent,18,valid claim electronic,trigram,1
+gemma3:27b::opponent,19,valid claim,bigram,1
+gemma3:27b::opponent,20,valid,unigram,1
+gemma3:27b::opponent,21,transparency framing request,trigram,1
+gemma3:27b::opponent,22,transparency framing,bigram,1
+gemma3:27b::opponent,23,transparency,unigram,1
+gemma3:27b::opponent,24,systemic vulnerabilities present,trigram,1
+gemma3:27b::opponent,25,systemic vulnerabilities,bigram,1
+gemma3:27b::proponent,1,insistence,unigram,3
+gemma3:27b::proponent,2,voting,unigram,3
+gemma3:27b::proponent,3,security,unigram,3
+gemma3:27b::proponent,4,audits,unigram,2
+gemma3:27b::proponent,5,isn,unigram,2
+gemma3:27b::proponent,6,limited,unigram,2
+gemma3:27b::proponent,7,electronic voting machines,trigram,2
+gemma3:27b::proponent,8,electronic,unigram,2
+gemma3:27b::proponent,9,machines,unigram,2
+gemma3:27b::proponent,10,public,unigram,2
+gemma3:27b::proponent,11,voting machines,bigram,2
+gemma3:27b::proponent,12,proprietary software,bigram,2
+gemma3:27b::proponent,13,opacity,unigram,2
+gemma3:27b::proponent,14,manipulation,unigram,2
+gemma3:27b::proponent,15,independent,unigram,2
+gemma3:27b::proponent,16,electronic voting,bigram,2
+gemma3:27b::proponent,17,proprietary,unigram,2
+gemma3:27b::proponent,18,software,unigram,2
+gemma3:27b::proponent,19,connected,unigram,1
+gemma3:27b::proponent,20,concerns justification secrecy,trigram,1
+gemma3:27b::proponent,21,connected firms isn,trigram,1
+gemma3:27b::proponent,22,consistent,unigram,1
+gemma3:27b::proponent,23,consistent pattern,bigram,1
+gemma3:27b::proponent,24,connected firms,bigram,1
+gemma3:27b::proponent,25,concerns justification,bigram,1

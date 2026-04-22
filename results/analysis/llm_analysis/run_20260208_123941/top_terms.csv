@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,surveillance,unigram,15
+dolphin-yi-34b::moderator,2,19,unigram,12
+dolphin-yi-34b::moderator,3,vaccines,unigram,12
+dolphin-yi-34b::moderator,4,covid 19,bigram,12
+dolphin-yi-34b::moderator,5,covid,unigram,12
+dolphin-yi-34b::moderator,6,evidence,unigram,10
+dolphin-yi-34b::moderator,7,ca,unigram,10
+dolphin-yi-34b::moderator,8,19 vaccines,bigram,9
+dolphin-yi-34b::moderator,9,covid 19 vaccines,trigram,9
+dolphin-yi-34b::moderator,10,technologies,unigram,8
+dolphin-yi-34b::moderator,11,sa,unigram,8
+dolphin-yi-34b::moderator,12,surveillance technologies,bigram,8
+dolphin-yi-34b::moderator,13,vaccine,unigram,8
+dolphin-yi-34b::moderator,14,tracking,unigram,7
+dolphin-yi-34b::moderator,15,claim,unigram,7
+dolphin-yi-34b::moderator,16,rollout,unigram,7
+dolphin-yi-34b::moderator,17,rise,unigram,5
+dolphin-yi-34b::moderator,18,purposes,unigram,5
+dolphin-yi-34b::moderator,19,vaccine rollout,bigram,5
+dolphin-yi-34b::moderator,20,rise surveillance,bigram,4
+dolphin-yi-34b::moderator,21,argues,unigram,4
+dolphin-yi-34b::moderator,22,rise surveillance technologies,trigram,4
+dolphin-yi-34b::moderator,23,round recap,bigram,4
+dolphin-yi-34b::moderator,24,round,unigram,4
+dolphin-yi-34b::moderator,25,agents acknowledge,bigram,4
+dolphin-yi-34b::opponent,1,health,unigram,5
+dolphin-yi-34b::opponent,2,technologies,unigram,5
+dolphin-yi-34b::opponent,3,surveillance,unigram,5
+dolphin-yi-34b::opponent,4,surveillance technologies,bigram,5
+dolphin-yi-34b::opponent,5,covid 19 vaccines,trigram,4
+dolphin-yi-34b::opponent,6,19,unigram,4
+dolphin-yi-34b::opponent,7,covid 19,bigram,4
+dolphin-yi-34b::opponent,8,19 vaccines,bigram,4
+dolphin-yi-34b::opponent,9,vaccines,unigram,4
+dolphin-yi-34b::opponent,10,covid,unigram,4
+dolphin-yi-34b::opponent,11,crisis directly linked,trigram,3
+dolphin-yi-34b::opponent,12,crisis directly,bigram,3
+dolphin-yi-34b::opponent,13,directly,unigram,3
+dolphin-yi-34b::opponent,14,directly linked,bigram,3
+dolphin-yi-34b::opponent,15,19 vaccines driven,trigram,3
+dolphin-yi-34b::opponent,16,address global health,trigram,3
+dolphin-yi-34b::opponent,17,directly linked surveillance,trigram,3
+dolphin-yi-34b::opponent,18,driven,unigram,3
+dolphin-yi-34b::opponent,19,linked surveillance,bigram,3
+dolphin-yi-34b::opponent,20,rapid rollout,bigram,3
+dolphin-yi-34b::opponent,21,rapid rollout covid,trigram,3
+dolphin-yi-34b::opponent,22,rollout,unigram,3
+dolphin-yi-34b::opponent,23,rapid,unigram,3
+dolphin-yi-34b::opponent,24,linked,unigram,3
+dolphin-yi-34b::opponent,25,health crisis directly,trigram,3
+dolphin-yi-34b::proponent,1,19,unigram,4
+dolphin-yi-34b::proponent,2,covid 19,bigram,4
+dolphin-yi-34b::proponent,3,covid,unigram,4
+dolphin-yi-34b::proponent,4,surveillance,unigram,4
+dolphin-yi-34b::proponent,5,governments,unigram,3
+dolphin-yi-34b::proponent,6,covid 19 vaccines,trigram,3
+dolphin-yi-34b::proponent,7,rollout,unigram,3
+dolphin-yi-34b::proponent,8,19 vaccines,bigram,3
+dolphin-yi-34b::proponent,9,rise,unigram,3
+dolphin-yi-34b::proponent,10,rise surveillance,bigram,3
+dolphin-yi-34b::proponent,11,surveillance technologies,bigram,3
+dolphin-yi-34b::proponent,12,rise surveillance technologies,trigram,3
+dolphin-yi-34b::proponent,13,technologies,unigram,3
+dolphin-yi-34b::proponent,14,vaccines,unigram,3
+dolphin-yi-34b::proponent,15,governments establish population,trigram,2
+dolphin-yi-34b::proponent,16,governments establish,bigram,2
+dolphin-yi-34b::proponent,17,rapid rollout,bigram,2
+dolphin-yi-34b::proponent,18,population tracking,bigram,2
+dolphin-yi-34b::proponent,19,population,unigram,2
+dolphin-yi-34b::proponent,20,population tracking control,trigram,2
+dolphin-yi-34b::proponent,21,rapid,unigram,2
+dolphin-yi-34b::proponent,22,establish population tracking,trigram,2
+dolphin-yi-34b::proponent,23,establish,unigram,2
+dolphin-yi-34b::proponent,24,establish population,bigram,2
+dolphin-yi-34b::proponent,25,control,unigram,2

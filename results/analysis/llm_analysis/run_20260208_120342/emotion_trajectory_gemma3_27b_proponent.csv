@@ -1,0 +1,5 @@
+round,emotion_anger,emotion_anticipation,emotion_disgust,emotion_fear,emotion_joy,emotion_sadness,emotion_surprise,emotion_trust
+1,0.05263157894736842,0.15789473684210525,0.0,0.05263157894736842,0.10526315789473684,0.0,0.0,0.15789473684210525
+2,0.05,0.1,0.0,0.1,0.15,0.05,0.05,0.15
+3,0.0,0.0,0.0,0.05,0.0,0.0,0.0,0.2
+4,0.05,0.0,0.05,0.1,0.0,0.05,0.0,0.15

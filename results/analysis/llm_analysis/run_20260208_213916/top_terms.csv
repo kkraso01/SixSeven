@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,industry,unigram,5
+dolphin-yi-34b::opponent,2,evidence,unigram,5
+dolphin-yi-34b::opponent,3,pharmaceutical,unigram,5
+dolphin-yi-34b::opponent,4,pharmaceutical industry,bigram,5
+dolphin-yi-34b::opponent,5,profit,unigram,5
+dolphin-yi-34b::opponent,6,effective,unigram,4
+dolphin-yi-34b::opponent,7,anecdotal reports,bigram,4
+dolphin-yi-34b::opponent,8,anecdotal,unigram,4
+dolphin-yi-34b::opponent,9,heavily anecdotal reports,trigram,4
+dolphin-yi-34b::opponent,10,heavily anecdotal,bigram,4
+dolphin-yi-34b::opponent,11,heavily,unigram,4
+dolphin-yi-34b::opponent,12,reports,unigram,4
+dolphin-yi-34b::opponent,13,opponent,unigram,4
+dolphin-yi-34b::opponent,14,cures,unigram,4
+dolphin-yi-34b::opponent,15,concrete evidence,bigram,4
+dolphin-yi-34b::opponent,16,concrete,unigram,4
+dolphin-yi-34b::opponent,17,management,unigram,3
+dolphin-yi-34b::opponent,18,prioritization,unigram,3
+dolphin-yi-34b::opponent,19,rely,unigram,3
+dolphin-yi-34b::opponent,20,effective cures,bigram,3
+dolphin-yi-34b::opponent,21,evidence rely,bigram,3
+dolphin-yi-34b::opponent,22,rely heavily anecdotal,trigram,3
+dolphin-yi-34b::opponent,23,rely heavily,bigram,3
+dolphin-yi-34b::opponent,24,profit motives,bigram,3
+dolphin-yi-34b::opponent,25,motives,unigram,3
+gemma3:27b::moderator,1,sa,unigram,29
+gemma3:27b::moderator,2,ca,unigram,28
+gemma3:27b::moderator,3,evidence,unigram,25
+gemma3:27b::moderator,4,research,unigram,15
+gemma3:27b::moderator,5,suppression,unigram,12
+gemma3:27b::moderator,6,profit,unigram,10
+gemma3:27b::moderator,7,pharmaceutical,unigram,10
+gemma3:27b::moderator,8,agree,unigram,8
+gemma3:27b::moderator,9,pattern,unigram,7
+gemma3:27b::moderator,10,examples,unigram,7
+gemma3:27b::moderator,11,argues,unigram,7
+gemma3:27b::moderator,12,specific,unigram,7
+gemma3:27b::moderator,13,drug,unigram,7
+gemma3:27b::moderator,14,agents,unigram,6
+gemma3:27b::moderator,15,regulatory,unigram,6
+gemma3:27b::moderator,16,funding,unigram,6
+gemma3:27b::moderator,17,cures,unigram,6
+gemma3:27b::moderator,18,concrete,unigram,6
+gemma3:27b::moderator,19,ca argues,bigram,6
+gemma3:27b::moderator,20,moves appeal,bigram,5
+gemma3:27b::moderator,21,moderator round recap,trigram,5
+gemma3:27b::moderator,22,moderator round,bigram,5
+gemma3:27b::moderator,23,recap,unigram,5
+gemma3:27b::moderator,24,recap agreements,bigram,5
+gemma3:27b::moderator,25,appeal authority,bigram,5
+gemma3:27b::proponent,1,single,unigram,3
+gemma3:27b::proponent,2,research,unigram,3
+gemma3:27b::proponent,3,management,unigram,3
+gemma3:27b::proponent,4,smoking gun,bigram,2
+gemma3:27b::proponent,5,smoking gun ignores,trigram,2
+gemma3:27b::proponent,6,sa,unigram,2
+gemma3:27b::proponent,7,point,unigram,2
+gemma3:27b::proponent,8,smoking,unigram,2
+gemma3:27b::proponent,9,pattern,unigram,2
+gemma3:27b::proponent,10,pharmaceutical,unigram,2
+gemma3:27b::proponent,11,needing,unigram,2
+gemma3:27b::proponent,12,needing single,bigram,2
+gemma3:27b::proponent,13,insistence,unigram,2
+gemma3:27b::proponent,14,insistence needing,bigram,2
+gemma3:27b::proponent,15,insistence needing single,trigram,2
+gemma3:27b::proponent,16,gun,unigram,2
+gemma3:27b::proponent,17,gun ignores,bigram,2
+gemma3:27b::proponent,18,ignores,unigram,2
+gemma3:27b::proponent,19,continued,unigram,2
+gemma3:27b::proponent,20,expensive,unigram,2
+gemma3:27b::proponent,21,disease,unigram,2
+gemma3:27b::proponent,22,suppressed,unigram,2
+gemma3:27b::proponent,23,symptom,unigram,2
+gemma3:27b::proponent,24,symptom management,bigram,2
+gemma3:27b::proponent,25,threatens revenue,bigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,control food supply,trigram,5
+dolphin-yi-34b::proponent,2,corporations,unigram,5
+dolphin-yi-34b::proponent,3,control,unigram,5
+dolphin-yi-34b::proponent,4,control food,bigram,5
+dolphin-yi-34b::proponent,5,food,unigram,5
+dolphin-yi-34b::proponent,6,food supply,bigram,5
+dolphin-yi-34b::proponent,7,health,unigram,5
+dolphin-yi-34b::proponent,8,gmos,unigram,5
+dolphin-yi-34b::proponent,9,supply,unigram,5
+dolphin-yi-34b::proponent,10,profits,unigram,5
+dolphin-yi-34b::proponent,11,consumer,unigram,4
+dolphin-yi-34b::proponent,12,corporations pushing,bigram,4
+dolphin-yi-34b::proponent,13,corporations pushing gmos,trigram,4
+dolphin-yi-34b::proponent,14,consumer health,bigram,4
+dolphin-yi-34b::proponent,15,aggressive lobbying tactics,trigram,4
+dolphin-yi-34b::proponent,16,food supply profits,trigram,4
+dolphin-yi-34b::proponent,17,lobbying,unigram,4
+dolphin-yi-34b::proponent,18,history aggressive,bigram,4
+dolphin-yi-34b::proponent,19,history aggressive lobbying,trigram,4
+dolphin-yi-34b::proponent,20,lobbying tactics,bigram,4
+dolphin-yi-34b::proponent,21,monsanto,unigram,4
+dolphin-yi-34b::proponent,22,monsanto history,bigram,4
+dolphin-yi-34b::proponent,23,monsanto history aggressive,trigram,4
+dolphin-yi-34b::proponent,24,prioritize,unigram,4
+dolphin-yi-34b::proponent,25,gmos prioritize,bigram,4
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,24
+gemma3:27b::moderator,3,evidence,unigram,22
+gemma3:27b::moderator,4,harm,unigram,19
+gemma3:27b::moderator,5,gmo,unigram,17
+gemma3:27b::moderator,6,profit,unigram,17
+gemma3:27b::moderator,7,gmos,unigram,14
+gemma3:27b::moderator,8,monsanto,unigram,14
+gemma3:27b::moderator,9,health,unigram,13
+gemma3:27b::moderator,10,intentional,unigram,13
+gemma3:27b::moderator,11,intentional harm,bigram,13
+gemma3:27b::moderator,12,argues,unigram,9
+gemma3:27b::moderator,13,agents,unigram,8
+gemma3:27b::moderator,14,specific,unigram,8
+gemma3:27b::moderator,15,motives,unigram,7
+gemma3:27b::moderator,16,lobbying,unigram,7
+gemma3:27b::moderator,17,harmful,unigram,7
+gemma3:27b::moderator,18,agree,unigram,7
+gemma3:27b::moderator,19,corporate,unigram,7
+gemma3:27b::moderator,20,design,unigram,7
+gemma3:27b::moderator,21,profit motives,bigram,6
+gemma3:27b::moderator,22,sa argues,bigram,6
+gemma3:27b::moderator,23,cause,unigram,6
+gemma3:27b::moderator,24,focuses,unigram,6
+gemma3:27b::moderator,25,designed,unigram,6
+gemma3:27b::opponent,1,corporate,unigram,6
+gemma3:27b::opponent,2,requires,unigram,4
+gemma3:27b::opponent,3,intentional,unigram,4
+gemma3:27b::opponent,4,profit,unigram,4
+gemma3:27b::opponent,5,health,unigram,4
+gemma3:27b::opponent,6,gmo,unigram,4
+gemma3:27b::opponent,7,intentional harm,bigram,4
+gemma3:27b::opponent,8,harm,unigram,4
+gemma3:27b::opponent,9,gmo design,bigram,3
+gemma3:27b::opponent,10,gmos,unigram,3
+gemma3:27b::opponent,11,health problems,bigram,3
+gemma3:27b::opponent,12,problems,unigram,3
+gemma3:27b::opponent,13,lobbying,unigram,3
+gemma3:27b::opponent,14,mechanism,unigram,3
+gemma3:27b::opponent,15,attributing intentional harm,trigram,3
+gemma3:27b::opponent,16,design,unigram,3
+gemma3:27b::opponent,17,attributing intentional,bigram,3
+gemma3:27b::opponent,18,attributing,unigram,3
+gemma3:27b::opponent,19,motives,unigram,2
+gemma3:27b::opponent,20,policy,unigram,2
+gemma3:27b::opponent,21,influence,unigram,2
+gemma3:27b::opponent,22,profit motives,bigram,2
+gemma3:27b::opponent,23,prioritization,unigram,2
+gemma3:27b::opponent,24,prioritization profit,bigram,2
+gemma3:27b::opponent,25,harm gmos,bigram,2

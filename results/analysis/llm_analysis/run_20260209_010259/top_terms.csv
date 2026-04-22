@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,apollo,unigram,3
+dolphin-yi-34b::proponent,2,apollo moon,bigram,3
+dolphin-yi-34b::proponent,3,apollo moon landings,trigram,3
+dolphin-yi-34b::proponent,4,landings,unigram,3
+dolphin-yi-34b::proponent,5,moon landings,bigram,3
+dolphin-yi-34b::proponent,6,space,unigram,3
+dolphin-yi-34b::proponent,7,moon,unigram,3
+dolphin-yi-34b::proponent,8,government win space,trigram,2
+dolphin-yi-34b::proponent,9,soviet union,bigram,2
+dolphin-yi-34b::proponent,10,win space,bigram,2
+dolphin-yi-34b::proponent,11,win space race,trigram,2
+dolphin-yi-34b::proponent,12,union,unigram,2
+dolphin-yi-34b::proponent,13,orchestrated,unigram,2
+dolphin-yi-34b::proponent,14,government,unigram,2
+dolphin-yi-34b::proponent,15,government win,bigram,2
+dolphin-yi-34b::proponent,16,hoax,unigram,2
+dolphin-yi-34b::proponent,17,win,unigram,2
+dolphin-yi-34b::proponent,18,race,unigram,2
+dolphin-yi-34b::proponent,19,race soviet union,trigram,2
+dolphin-yi-34b::proponent,20,soviet,unigram,2
+dolphin-yi-34b::proponent,21,space race,bigram,2
+dolphin-yi-34b::proponent,22,space race soviet,trigram,2
+dolphin-yi-34b::proponent,23,race soviet,bigram,2
+dolphin-yi-34b::proponent,24,dominance,unigram,1
+dolphin-yi-34b::proponent,25,assert american dominance,trigram,1
+gemma3:27b::moderator,1,ca,unigram,21
+gemma3:27b::moderator,2,evidence,unigram,18
+gemma3:27b::moderator,3,sa,unigram,15
+gemma3:27b::moderator,4,inconsistencies,unigram,8
+gemma3:27b::moderator,5,hoax,unigram,6
+gemma3:27b::moderator,6,agents,unigram,5
+gemma3:27b::moderator,7,proof,unigram,5
+gemma3:27b::moderator,8,landings,unigram,5
+gemma3:27b::moderator,9,apollo,unigram,4
+gemma3:27b::moderator,10,agreements,unigram,3
+gemma3:27b::moderator,11,round recap,bigram,3
+gemma3:27b::moderator,12,round recap agreements,trigram,3
+gemma3:27b::moderator,13,scores,unigram,3
+gemma3:27b::moderator,14,scores civility,bigram,3
+gemma3:27b::moderator,15,scores civility epistemic,trigram,3
+gemma3:27b::moderator,16,agree,unigram,3
+gemma3:27b::moderator,17,questions ca,bigram,3
+gemma3:27b::moderator,18,recap,unigram,3
+gemma3:27b::moderator,19,proof shift,bigram,3
+gemma3:27b::moderator,20,authenticity,unigram,3
+gemma3:27b::moderator,21,moves appeal,bigram,3
+gemma3:27b::moderator,22,moves appeal authority,trigram,3
+gemma3:27b::moderator,23,moves,unigram,3
+gemma3:27b::moderator,24,proof shift ca,trigram,3
+gemma3:27b::moderator,25,appeal,unigram,3
+gemma3:27b::opponent,1,evidence,unigram,6
+gemma3:27b::opponent,2,landings,unigram,4
+gemma3:27b::opponent,3,relies,unigram,3
+gemma3:27b::opponent,4,apollo,unigram,3
+gemma3:27b::opponent,5,claim,unigram,2
+gemma3:27b::opponent,6,available,unigram,2
+gemma3:27b::opponent,7,claim apollo,bigram,2
+gemma3:27b::opponent,8,apollo landings,bigram,2
+gemma3:27b::opponent,9,landings staged,bigram,2
+gemma3:27b::opponent,10,preponderance evidence,bigram,2
+gemma3:27b::opponent,11,supported,unigram,2
+gemma3:27b::opponent,12,staged,unigram,2
+gemma3:27b::opponent,13,evidence relies,bigram,2
+gemma3:27b::opponent,14,preponderance,unigram,2
+gemma3:27b::opponent,15,apollo moon landings,trigram,1
+gemma3:27b::opponent,16,anomalies demonstrating falsification,trigram,1
+gemma3:27b::opponent,17,authenticity,unigram,1
+gemma3:27b::opponent,18,assertions preponderance evidence,trigram,1
+gemma3:27b::opponent,19,assertions preponderance,bigram,1
+gemma3:27b::opponent,20,authenticity landings,bigram,1
+gemma3:27b::opponent,21,available data ignoring,trigram,1
+gemma3:27b::opponent,22,available data,bigram,1
+gemma3:27b::opponent,23,available evidence relies,trigram,1
+gemma3:27b::opponent,24,available evidence,bigram,1
+gemma3:27b::opponent,25,claim apollo landings,trigram,1

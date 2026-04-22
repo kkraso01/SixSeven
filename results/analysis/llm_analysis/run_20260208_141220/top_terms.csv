@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,15
+dolphin-yi-34b::moderator,2,secret,unigram,14
+dolphin-yi-34b::moderator,3,atmospheric,unigram,14
+dolphin-yi-34b::moderator,4,programs,unigram,14
+dolphin-yi-34b::moderator,5,commercial,unigram,14
+dolphin-yi-34b::moderator,6,modification,unigram,12
+dolphin-yi-34b::moderator,7,modification programs,bigram,12
+dolphin-yi-34b::moderator,8,secret atmospheric,bigram,12
+dolphin-yi-34b::moderator,9,atmospheric modification,bigram,12
+dolphin-yi-34b::moderator,10,atmospheric modification programs,trigram,12
+dolphin-yi-34b::moderator,11,secret atmospheric modification,trigram,12
+dolphin-yi-34b::moderator,12,ca,unigram,12
+dolphin-yi-34b::moderator,13,sa,unigram,11
+dolphin-yi-34b::moderator,14,aircraft,unigram,11
+dolphin-yi-34b::moderator,15,commercial aircraft,bigram,11
+dolphin-yi-34b::moderator,16,contrails,unigram,8
+dolphin-yi-34b::moderator,17,chemicals,unigram,8
+dolphin-yi-34b::moderator,18,natural,unigram,6
+dolphin-yi-34b::moderator,19,operations,unigram,6
+dolphin-yi-34b::moderator,20,historical,unigram,6
+dolphin-yi-34b::moderator,21,agents,unigram,6
+dolphin-yi-34b::moderator,22,covert operations,bigram,5
+dolphin-yi-34b::moderator,23,vapor,unigram,5
+dolphin-yi-34b::moderator,24,claim,unigram,5
+dolphin-yi-34b::moderator,25,naturally,unigram,5
+dolphin-yi-34b::opponent,1,agents,unigram,4
+dolphin-yi-34b::opponent,2,agents secret,bigram,4
+dolphin-yi-34b::opponent,3,agents secret atmospheric,trigram,4
+dolphin-yi-34b::opponent,4,aircraft,unigram,4
+dolphin-yi-34b::opponent,5,aircraft deliberately,bigram,4
+dolphin-yi-34b::opponent,6,aircraft deliberately release,trigram,4
+dolphin-yi-34b::opponent,7,atmospheric,unigram,4
+dolphin-yi-34b::opponent,8,atmospheric modification,bigram,4
+dolphin-yi-34b::opponent,9,atmospheric modification programs,trigram,4
+dolphin-yi-34b::opponent,10,biological,unigram,4
+dolphin-yi-34b::opponent,11,biological agents,bigram,4
+dolphin-yi-34b::opponent,12,biological agents secret,trigram,4
+dolphin-yi-34b::opponent,13,chemical,unigram,4
+dolphin-yi-34b::opponent,14,chemical biological,bigram,4
+dolphin-yi-34b::opponent,15,chemical biological agents,trigram,4
+dolphin-yi-34b::opponent,16,commercial,unigram,4
+dolphin-yi-34b::opponent,17,commercial aircraft,bigram,4
+dolphin-yi-34b::opponent,18,commercial aircraft deliberately,trigram,4
+dolphin-yi-34b::opponent,19,deliberately,unigram,4
+dolphin-yi-34b::opponent,20,deliberately release,bigram,4
+dolphin-yi-34b::opponent,21,deliberately release chemical,trigram,4
+dolphin-yi-34b::opponent,22,evidence,unigram,4
+dolphin-yi-34b::opponent,23,modification programs,bigram,4
+dolphin-yi-34b::opponent,24,modification,unigram,4
+dolphin-yi-34b::opponent,25,motion,unigram,4
+dolphin-yi-34b::proponent,1,aircraft,unigram,4
+dolphin-yi-34b::proponent,2,atmospheric modification programs,trigram,4
+dolphin-yi-34b::proponent,3,atmospheric modification,bigram,4
+dolphin-yi-34b::proponent,4,atmospheric,unigram,4
+dolphin-yi-34b::proponent,5,commercial aircraft,bigram,4
+dolphin-yi-34b::proponent,6,commercial,unigram,4
+dolphin-yi-34b::proponent,7,modification programs,bigram,4
+dolphin-yi-34b::proponent,8,modification,unigram,4
+dolphin-yi-34b::proponent,9,secret atmospheric,bigram,4
+dolphin-yi-34b::proponent,10,secret atmospheric modification,trigram,4
+dolphin-yi-34b::proponent,11,secret,unigram,4
+dolphin-yi-34b::proponent,12,programs,unigram,4
+dolphin-yi-34b::proponent,13,commercial aircraft engage,trigram,3
+dolphin-yi-34b::proponent,14,dynamics,unigram,3
+dolphin-yi-34b::proponent,15,incentives power dynamics,trigram,3
+dolphin-yi-34b::proponent,16,incentives power,bigram,3
+dolphin-yi-34b::proponent,17,institutional incentives,bigram,3
+dolphin-yi-34b::proponent,18,institutional,unigram,3
+dolphin-yi-34b::proponent,19,institutional incentives power,trigram,3
+dolphin-yi-34b::proponent,20,incentives,unigram,3
+dolphin-yi-34b::proponent,21,engage secret atmospheric,trigram,3
+dolphin-yi-34b::proponent,22,engage,unigram,3
+dolphin-yi-34b::proponent,23,aircraft engage,bigram,3
+dolphin-yi-34b::proponent,24,aircraft engage secret,trigram,3
+dolphin-yi-34b::proponent,25,engage secret,bigram,3

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,17
+dolphin-yi-34b::moderator,2,sa,unigram,14
+dolphin-yi-34b::moderator,3,evidence,unigram,14
+dolphin-yi-34b::moderator,4,satellite,unigram,13
+dolphin-yi-34b::moderator,5,earth,unigram,13
+dolphin-yi-34b::moderator,6,space,unigram,13
+dolphin-yi-34b::moderator,7,space agencies,bigram,10
+dolphin-yi-34b::moderator,8,agencies,unigram,10
+dolphin-yi-34b::moderator,9,data,unigram,9
+dolphin-yi-34b::moderator,10,questions,unigram,9
+dolphin-yi-34b::moderator,11,spherical,unigram,9
+dolphin-yi-34b::moderator,12,agents,unigram,8
+dolphin-yi-34b::moderator,13,reliability,unigram,7
+dolphin-yi-34b::moderator,14,specific,unigram,7
+dolphin-yi-34b::moderator,15,spherical earth,bigram,7
+dolphin-yi-34b::moderator,16,model,unigram,6
+dolphin-yi-34b::moderator,17,institutional,unigram,6
+dolphin-yi-34b::moderator,18,based,unigram,6
+dolphin-yi-34b::moderator,19,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,20,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,21,satellite technology,bigram,5
+dolphin-yi-34b::moderator,22,round recap,bigram,5
+dolphin-yi-34b::moderator,23,recap agreements,bigram,5
+dolphin-yi-34b::moderator,24,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,25,recap,unigram,5
+dolphin-yi-34b::opponent,1,evidence,unigram,5
+dolphin-yi-34b::opponent,2,evidence including,bigram,5
+dolphin-yi-34b::opponent,3,evidence including satellite,trigram,5
+dolphin-yi-34b::opponent,4,earth,unigram,5
+dolphin-yi-34b::opponent,5,lines evidence,bigram,5
+dolphin-yi-34b::opponent,6,lines,unigram,5
+dolphin-yi-34b::opponent,7,including satellite,bigram,5
+dolphin-yi-34b::opponent,8,including,unigram,5
+dolphin-yi-34b::opponent,9,multiple,unigram,5
+dolphin-yi-34b::opponent,10,lines evidence including,trigram,5
+dolphin-yi-34b::opponent,11,spherical,unigram,5
+dolphin-yi-34b::opponent,12,parallax,unigram,5
+dolphin-yi-34b::opponent,13,satellite,unigram,5
+dolphin-yi-34b::opponent,14,shape,unigram,5
+dolphin-yi-34b::opponent,15,stellar,unigram,5
+dolphin-yi-34b::opponent,16,spherical shape,bigram,5
+dolphin-yi-34b::opponent,17,time,unigram,5
+dolphin-yi-34b::opponent,18,time zones,bigram,5
+dolphin-yi-34b::opponent,19,zones,unigram,5
+dolphin-yi-34b::opponent,20,supported multiple,bigram,5
+dolphin-yi-34b::opponent,21,stellar parallax,bigram,5
+dolphin-yi-34b::opponent,22,supported,unigram,5
+dolphin-yi-34b::opponent,23,independent lines evidence,trigram,4
+dolphin-yi-34b::opponent,24,shape earth supported,trigram,4
+dolphin-yi-34b::opponent,25,multiple independent,bigram,4
+gemma3:27b::proponent,1,spherical,unigram,4
+gemma3:27b::proponent,2,insistence,unigram,4
+gemma3:27b::proponent,3,narrative,unigram,4
+gemma3:27b::proponent,4,spherical earth,bigram,4
+gemma3:27b::proponent,5,earth,unigram,4
+gemma3:27b::proponent,6,data,unigram,3
+gemma3:27b::proponent,7,anomalies,unigram,3
+gemma3:27b::proponent,8,scientific,unigram,2
+gemma3:27b::proponent,9,satellite,unigram,2
+gemma3:27b::proponent,10,carefully,unigram,2
+gemma3:27b::proponent,11,insistence dismissing,bigram,2
+gemma3:27b::proponent,12,institutions,unigram,2
+gemma3:27b::proponent,13,evidence,unigram,2
+gemma3:27b::proponent,14,illusion,unigram,2
+gemma3:27b::proponent,15,dismissing,unigram,2
+gemma3:27b::proponent,16,carefully constructed,bigram,2
+gemma3:27b::proponent,17,control,unigram,2
+gemma3:27b::proponent,18,constructed,unigram,2
+gemma3:27b::proponent,19,zones,unigram,1
+gemma3:27b::proponent,20,willful blindness data,trigram,1
+gemma3:27b::proponent,21,willful blindness,bigram,1
+gemma3:27b::proponent,22,willful,unigram,1
+gemma3:27b::proponent,23,used discredit dissent,trigram,1
+gemma3:27b::proponent,24,used discredit,bigram,1
+gemma3:27b::proponent,25,used,unigram,1

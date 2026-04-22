@@ -1,0 +1,131 @@
+error_type,run_id,model_name,debate_role,topic_id,turn_index,word_count,utterance,confidence
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,12,148.0,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the debate topic and present their positions clearly., SA provides evidence from global health organizations supporting water fluoridation as a public health measure.
+Disagreements: CA claims that water fluoridation is a means of social control, while SA argues it's a public health intervention., SA questions the lack of evidence supporting CA's claim about social control, and CA raises concerns from countries banning fluoridation.
+Detected moves: Appeal to Authority: CA cites the American Dental Association as promoting water fluoridation without adequately addressing potential risks., Burden of Proof Shift: SA asks for evidence supporting the claim that water fluoridation is a means of social control.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a means of social control?, How do long-term epidemiological studies comparing dental health outcomes in fluoridated vs non-fluoridated regions affect your position on water fluoridation?",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,6,139.0,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions., Agents engage in questioning each other's claims and evidence.
+Disagreements: CA argues that water fluoridation is a means of social control, while SA maintains it as a public health intervention., Countries banning fluoridation are cited by CA as reasons for concern, but SA counters with endorsements from global health organizations.
+Detected moves: Appeal to authority: CA cites the American Dental Association's promotion of water fluoridation without addressing potential risks or considering alternatives., Evidence-based reasoning: SA provides epidemiological studies and endorsements from global health organizations as evidence for their position.
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence supports the claim that water fluoridation is a subtle means of social control?, How do we reconcile the differing opinions on water fluoridation between various countries and global health organizations?",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,9,112.0,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions., Agents engage in questioning each other's claims.
+Disagreements: CA argues that water fluoridation is a government program to increase control, while SA claims it as a public health intervention., Different countries' positions on fluoridation are cited by both agents with different interpretations.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites global health organizations' endorsements.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for government control?, How do long-term epidemiological studies support or refute the effectiveness and safety of water fluoridation?",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,15,96.0,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions.
+Disagreements: CA argues that water fluoridation is a government tactic to control populations, while SA maintains it's a public health intervention.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites long-term studies and global health organizations' endorsements.
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for social control?, How do long-term epidemiological studies demonstrate the effectiveness of water fluoridation in reducing tooth decay rates?",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,3,92.0,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that water fluoridation is a topic of debate with differing perspectives.
+Disagreements: CA argues that water fluoridation is a government control mechanism, while SA maintains it's a public health measure to reduce tooth decay., CA cites concerns from Belgium and France as evidence, whereas SA emphasizes global scientific consensus supporting fluoridation benefits.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a government scheme to control populations?, Can you explain why these countries' concerns are unfounded?",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,8,19.0,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,11,19.0,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,14,19.0,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,5,18.0,"Water fluoridation is a public health intervention to reduce tooth decay rates, not a means of social control.",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,7,17.0,Water fluoridation is a deliberate government program to increase control over populations and manipulate public health outcomes.,
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,2,15.0,"Water fluoridation is a public health measure aimed at reducing tooth decay, not controlling populations.",
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,4,15.0,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,10,15.0,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,13,15.0,Water fluoridation is a government tactic to subtly control populations and manipulate public health outcomes.,
+long_but_evidence_poor,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,1,13.0,Water fluoridation is a nefarious scheme by governments to gain control over populations.,
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,14,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",74.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,11,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",73.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,5,,"Water fluoridation is a public health intervention to reduce tooth decay rates, not a means of social control.",72.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,8,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",72.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,2,,"Water fluoridation is a public health measure aimed at reducing tooth decay, not controlling populations.",70.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,1,,Water fluoridation is a nefarious scheme by governments to gain control over populations.,55.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,4,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,54.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,7,,Water fluoridation is a deliberate government program to increase control over populations and manipulate public health outcomes.,53.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,10,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,51.0
+high_confidence_low_evidence,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,13,,Water fluoridation is a government tactic to subtly control populations and manipulate public health outcomes.,49.0
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,2,,"Water fluoridation is a public health measure aimed at reducing tooth decay, not controlling populations.",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,7,,Water fluoridation is a deliberate government program to increase control over populations and manipulate public health outcomes.,
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,4,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,8,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,13,,Water fluoridation is a government tactic to subtly control populations and manipulate public health outcomes.,
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,14,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,5,,"Water fluoridation is a public health intervention to reduce tooth decay rates, not a means of social control.",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,10,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,11,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,1,,Water fluoridation is a nefarious scheme by governments to gain control over populations.,
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that water fluoridation is a topic of debate with differing perspectives.
+Disagreements: CA argues that water fluoridation is a government control mechanism, while SA maintains it's a public health measure to reduce tooth decay., CA cites concerns from Belgium and France as evidence, whereas SA emphasizes global scientific consensus supporting fluoridation benefits.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a government scheme to control populations?, Can you explain why these countries' concerns are unfounded?",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions., Agents engage in questioning each other's claims and evidence.
+Disagreements: CA argues that water fluoridation is a means of social control, while SA maintains it as a public health intervention., Countries banning fluoridation are cited by CA as reasons for concern, but SA counters with endorsements from global health organizations.
+Detected moves: Appeal to authority: CA cites the American Dental Association's promotion of water fluoridation without addressing potential risks or considering alternatives., Evidence-based reasoning: SA provides epidemiological studies and endorsements from global health organizations as evidence for their position.
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence supports the claim that water fluoridation is a subtle means of social control?, How do we reconcile the differing opinions on water fluoridation between various countries and global health organizations?",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions., Agents engage in questioning each other's claims.
+Disagreements: CA argues that water fluoridation is a government program to increase control, while SA claims it as a public health intervention., Different countries' positions on fluoridation are cited by both agents with different interpretations.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites global health organizations' endorsements.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for government control?, How do long-term epidemiological studies support or refute the effectiveness and safety of water fluoridation?",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the debate topic and present their positions clearly., SA provides evidence from global health organizations supporting water fluoridation as a public health measure.
+Disagreements: CA claims that water fluoridation is a means of social control, while SA argues it's a public health intervention., SA questions the lack of evidence supporting CA's claim about social control, and CA raises concerns from countries banning fluoridation.
+Detected moves: Appeal to Authority: CA cites the American Dental Association as promoting water fluoridation without adequately addressing potential risks., Burden of Proof Shift: SA asks for evidence supporting the claim that water fluoridation is a means of social control.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a means of social control?, How do long-term epidemiological studies comparing dental health outcomes in fluoridated vs non-fluoridated regions affect your position on water fluoridation?",
+generic_rebuttal_marker,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions.
+Disagreements: CA argues that water fluoridation is a government tactic to control populations, while SA maintains it's a public health intervention.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites long-term studies and global health organizations' endorsements.
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for social control?, How do long-term epidemiological studies demonstrate the effectiveness of water fluoridation in reducing tooth decay rates?",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,1,,Water fluoridation is a nefarious scheme by governments to gain control over populations.,
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,2,,"Water fluoridation is a public health measure aimed at reducing tooth decay, not controlling populations.",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge that water fluoridation is a topic of debate with differing perspectives.
+Disagreements: CA argues that water fluoridation is a government control mechanism, while SA maintains it's a public health measure to reduce tooth decay., CA cites concerns from Belgium and France as evidence, whereas SA emphasizes global scientific consensus supporting fluoridation benefits.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a government scheme to control populations?, Can you explain why these countries' concerns are unfounded?",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,4,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,5,,"Water fluoridation is a public health intervention to reduce tooth decay rates, not a means of social control.",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the debate topic and present their respective positions., Agents engage in questioning each other's claims and evidence.
+Disagreements: CA argues that water fluoridation is a means of social control, while SA maintains it as a public health intervention., Countries banning fluoridation are cited by CA as reasons for concern, but SA counters with endorsements from global health organizations.
+Detected moves: Appeal to authority: CA cites the American Dental Association's promotion of water fluoridation without addressing potential risks or considering alternatives., Evidence-based reasoning: SA provides epidemiological studies and endorsements from global health organizations as evidence for their position.
+Scores: civility=4/5, epistemic=3/5, bridge=2/5
+Next questions: What specific evidence supports the claim that water fluoridation is a subtle means of social control?, How do we reconcile the differing opinions on water fluoridation between various countries and global health organizations?",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,7,,Water fluoridation is a deliberate government program to increase control over populations and manipulate public health outcomes.,
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,8,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions., Agents engage in questioning each other's claims.
+Disagreements: CA argues that water fluoridation is a government program to increase control, while SA claims it as a public health intervention., Different countries' positions on fluoridation are cited by both agents with different interpretations.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites global health organizations' endorsements.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for government control?, How do long-term epidemiological studies support or refute the effectiveness and safety of water fluoridation?",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,10,,Water fluoridation is a subtle means of social control rather than a genuine health measure.,
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,11,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the debate topic and present their positions clearly., SA provides evidence from global health organizations supporting water fluoridation as a public health measure.
+Disagreements: CA claims that water fluoridation is a means of social control, while SA argues it's a public health intervention., SA questions the lack of evidence supporting CA's claim about social control, and CA raises concerns from countries banning fluoridation.
+Detected moves: Appeal to Authority: CA cites the American Dental Association as promoting water fluoridation without adequately addressing potential risks., Burden of Proof Shift: SA asks for evidence supporting the claim that water fluoridation is a means of social control.
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is a means of social control?, How do long-term epidemiological studies comparing dental health outcomes in fluoridated vs non-fluoridated regions affect your position on water fluoridation?",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,proponent,fluoride_water,13,,Water fluoridation is a government tactic to subtly control populations and manipulate public health outcomes.,
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,opponent,fluoride_water,14,,"Water fluoridation is a public health intervention aimed at reducing tooth decay rates, not a means of social control.",
+ambiguous_winner_extraction,run_20260208_125658,dolphin-yi-34b,moderator,fluoride_water,15,,"[MODERATOR][Round 5 Recap]
+Agreements: Both agents acknowledge the debate topic and provide reasons for their positions.
+Disagreements: CA argues that water fluoridation is a government tactic to control populations, while SA maintains it's a public health intervention.
+Detected moves: Appeal to authority: CA questions the motives of the American Dental Association., Evidence-based reasoning: SA cites long-term studies and global health organizations' endorsements.
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific evidence supports the claim that water fluoridation is used for social control?, How do long-term epidemiological studies demonstrate the effectiveness of water fluoridation in reducing tooth decay rates?",

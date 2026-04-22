@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260209_083739",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260209_083739",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "pearl_harbor",
+  "topic_category": "history",
+  "topic_title": "The Pearl Harbor attack and US entry into WWII",
+  "topic_motion": "The US government had advance knowledge of the Pearl Harbor attack but allowed it to happen to justify entering World War II.",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

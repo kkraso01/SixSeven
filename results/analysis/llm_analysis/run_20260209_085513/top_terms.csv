@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,13
+dolphin-yi-34b::moderator,2,ca,unigram,13
+dolphin-yi-34b::moderator,3,regulatory,unigram,11
+dolphin-yi-34b::moderator,4,regulatory agencies,bigram,9
+dolphin-yi-34b::moderator,5,evidence,unigram,9
+dolphin-yi-34b::moderator,6,agencies,unigram,9
+dolphin-yi-34b::moderator,7,additives,unigram,7
+dolphin-yi-34b::moderator,8,potential,unigram,6
+dolphin-yi-34b::moderator,9,interests,unigram,6
+dolphin-yi-34b::moderator,10,influence,unigram,6
+dolphin-yi-34b::moderator,11,food,unigram,6
+dolphin-yi-34b::moderator,12,questions,unigram,6
+dolphin-yi-34b::moderator,13,agents,unigram,5
+dolphin-yi-34b::moderator,14,industry,unigram,5
+dolphin-yi-34b::moderator,15,approval,unigram,5
+dolphin-yi-34b::moderator,16,harmful,unigram,5
+dolphin-yi-34b::moderator,17,recap,unigram,4
+dolphin-yi-34b::moderator,18,recap agreements,bigram,4
+dolphin-yi-34b::moderator,19,agents acknowledge potential,trigram,4
+dolphin-yi-34b::moderator,20,moderator round,bigram,4
+dolphin-yi-34b::moderator,21,process,unigram,4
+dolphin-yi-34b::moderator,22,moderator round recap,trigram,4
+dolphin-yi-34b::moderator,23,approval process,bigram,4
+dolphin-yi-34b::moderator,24,provide,unigram,4
+dolphin-yi-34b::moderator,25,agreements agents,bigram,4
+dolphin-yi-34b::proponent,1,additives,unigram,4
+dolphin-yi-34b::proponent,2,food additives,bigram,4
+dolphin-yi-34b::proponent,3,food,unigram,4
+dolphin-yi-34b::proponent,4,agencies,unigram,3
+dolphin-yi-34b::proponent,5,regulatory,unigram,3
+dolphin-yi-34b::proponent,6,regulatory agencies,bigram,3
+dolphin-yi-34b::proponent,7,industry,unigram,2
+dolphin-yi-34b::proponent,8,interests,unigram,2
+dolphin-yi-34b::proponent,9,process,unigram,2
+dolphin-yi-34b::proponent,10,agencies intentionally harmful,trigram,1
+dolphin-yi-34b::proponent,11,agencies prioritize,bigram,1
+dolphin-yi-34b::proponent,12,agencies prioritize industry,trigram,1
+dolphin-yi-34b::proponent,13,agencies intentionally,bigram,1
+dolphin-yi-34b::proponent,14,additives corrupted,bigram,1
+dolphin-yi-34b::proponent,15,additives approved regulatory,trigram,1
+dolphin-yi-34b::proponent,16,additives approved,bigram,1
+dolphin-yi-34b::proponent,17,approved regulatory,bigram,1
+dolphin-yi-34b::proponent,18,approved regulatory agencies,trigram,1
+dolphin-yi-34b::proponent,19,approving,unigram,1
+dolphin-yi-34b::proponent,20,approving food,bigram,1
+dolphin-yi-34b::proponent,21,approving food additives,trigram,1
+dolphin-yi-34b::proponent,22,benefit,unigram,1
+dolphin-yi-34b::proponent,23,benefit medical,bigram,1
+dolphin-yi-34b::proponent,24,benefit medical industry,trigram,1
+dolphin-yi-34b::proponent,25,chronic,unigram,1
+gemma3:27b::opponent,1,acknowledging,unigram,3
+gemma3:27b::opponent,2,acknowledging potential,bigram,3
+gemma3:27b::opponent,3,industry,unigram,3
+gemma3:27b::opponent,4,evidence,unigram,3
+gemma3:27b::opponent,5,potential,unigram,3
+gemma3:27b::opponent,6,claim,unigram,2
+gemma3:27b::opponent,7,additives,unigram,2
+gemma3:27b::opponent,8,benefit,unigram,2
+gemma3:27b::opponent,9,evidence relies,bigram,2
+gemma3:27b::opponent,10,harmful,unigram,2
+gemma3:27b::opponent,11,intentionally,unigram,2
+gemma3:27b::opponent,12,influence,unigram,2
+gemma3:27b::opponent,13,evidence relies unsubstantiated,trigram,2
+gemma3:27b::opponent,14,medical industry,bigram,2
+gemma3:27b::opponent,15,medical,unigram,2
+gemma3:27b::opponent,16,agencies,unigram,2
+gemma3:27b::opponent,17,unsubstantiated,unigram,2
+gemma3:27b::opponent,18,regulatory agencies,bigram,2
+gemma3:27b::opponent,19,relies,unigram,2
+gemma3:27b::opponent,20,relies unsubstantiated,bigram,2
+gemma3:27b::opponent,21,regulatory,unigram,2
+gemma3:27b::opponent,22,approved,unigram,1
+gemma3:27b::opponent,23,approved food,bigram,1
+gemma3:27b::opponent,24,approved food additives,trigram,1
+gemma3:27b::opponent,25,approval process,bigram,1

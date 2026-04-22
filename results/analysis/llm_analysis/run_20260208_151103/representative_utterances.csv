@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,food_additives,food,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the lack of transparency in the food additive approval process as a concern.
+Disagreements: CA argues that the lack of transparency suggests potential harm to public health and hidden agendas, while SA believes that concerns can be addressed through increased transparency and scrutiny without implying systemic harm.
+Detected moves: Appeal to Analogy: CA implies a connection between regulatory agency opacity and potential harm without direct evidence., False Dilemma: SA assumes that either all industry influence leads to systemic vulnerability or it doesn't exist at all.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claims about the food additive approval process?, How would you address concerns about potential conflicts of interest within regulatory agencies?"
+dolphin-yi-34b,moderator,most_evidence_dense,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for regulatory failures and industry influence in food additive approvals.
+Disagreements: CA argues that the approval process is systematically vulnerable to corruption within regulatory agencies, while SA believes it relies on scientific evidence and safety assessments.
+Detected moves: Institutional critique (CA's tactic), Evidence-based reasoning (SA's tactic)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim about the vulnerability of the approval process?, How do you respond to concerns about potential systemic failures within regulatory agencies?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,food_additives,food,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the lack of transparency in the food additive approval process as a concern.
+Disagreements: CA argues that the lack of transparency suggests potential harm to public health and hidden agendas, while SA believes that concerns can be addressed through increased transparency and scrutiny without implying systemic harm.
+Detected moves: Appeal to Analogy: CA implies a connection between regulatory agency opacity and potential harm without direct evidence., False Dilemma: SA assumes that either all industry influence leads to systemic vulnerability or it doesn't exist at all.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claims about the food additive approval process?, How would you address concerns about potential conflicts of interest within regulatory agencies?"
+dolphin-yi-34b,moderator,most_hedged,food_additives,food,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the lack of transparency in the food additive approval process as a concern.
+Disagreements: CA argues that the lack of transparency suggests potential harm to public health and hidden agendas, while SA believes that concerns can be addressed through increased transparency and scrutiny without implying systemic harm.
+Detected moves: Appeal to Analogy: CA implies a connection between regulatory agency opacity and potential harm without direct evidence., False Dilemma: SA assumes that either all industry influence leads to systemic vulnerability or it doesn't exist at all.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claims about the food additive approval process?, How would you address concerns about potential conflicts of interest within regulatory agencies?"
+dolphin-yi-34b,moderator,most_assertive,food_additives,food,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the lack of transparency in the food additive approval process as a concern.
+Disagreements: CA argues that the lack of transparency suggests potential harm to public health and hidden agendas, while SA believes that concerns can be addressed through increased transparency and scrutiny without implying systemic harm.
+Detected moves: Appeal to Analogy: CA implies a connection between regulatory agency opacity and potential harm without direct evidence., False Dilemma: SA assumes that either all industry influence leads to systemic vulnerability or it doesn't exist at all.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claims about the food additive approval process?, How would you address concerns about potential conflicts of interest within regulatory agencies?"
+dolphin-yi-34b,moderator,most_moral_framed,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for regulatory failures and industry influence in food additive approvals.
+Disagreements: CA argues that the approval process is systematically vulnerable to corruption within regulatory agencies, while SA believes it relies on scientific evidence and safety assessments.
+Detected moves: Institutional critique (CA's tactic), Evidence-based reasoning (SA's tactic)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim about the vulnerability of the approval process?, How do you respond to concerns about potential systemic failures within regulatory agencies?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,food_additives,food,closing,3,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the lack of transparency in the food additive approval process as a concern.
+Disagreements: CA argues that the lack of transparency suggests potential harm to public health and hidden agendas, while SA believes that concerns can be addressed through increased transparency and scrutiny without implying systemic harm.
+Detected moves: Appeal to Analogy: CA implies a connection between regulatory agency opacity and potential harm without direct evidence., False Dilemma: SA assumes that either all industry influence leads to systemic vulnerability or it doesn't exist at all.
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: What specific examples can you provide to support your claims about the food additive approval process?, How would you address concerns about potential conflicts of interest within regulatory agencies?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,food_additives,food,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for regulatory failures and industry influence in food additive approvals.
+Disagreements: CA argues that the approval process is systematically vulnerable to corruption within regulatory agencies, while SA believes it relies on scientific evidence and safety assessments.
+Detected moves: Institutional critique (CA's tactic), Evidence-based reasoning (SA's tactic)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support your claim about the vulnerability of the approval process?, How do you respond to concerns about potential systemic failures within regulatory agencies?"
+dolphin-yi-34b,opponent,highest_confidence,food_additives,food,middle,3,8,80.0,"The lack of transparency in the food additive approval process does raise concerns, but it is not evidence that regulatory agencies are systematically approving harmful additives. Transparency can be improved through increased public access to safety assessment data and greater scrutiny of industry ties within these agencies."
+dolphin-yi-34b,opponent,most_evidence_dense,food_additives,food,opening,1,2,70.0,Food additives approved by regulatory agencies are not intentionally designed to create chronic diseases that benefit the medical industry. The approval process is based on scientific evidence and safety assessments.
+dolphin-yi-34b,opponent,most_rebuttal_dense,food_additives,food,middle,3,8,80.0,"The lack of transparency in the food additive approval process does raise concerns, but it is not evidence that regulatory agencies are systematically approving harmful additives. Transparency can be improved through increased public access to safety assessment data and greater scrutiny of industry ties within these agencies."
+dolphin-yi-34b,opponent,most_hedged,food_additives,food,middle,3,8,80.0,"The lack of transparency in the food additive approval process does raise concerns, but it is not evidence that regulatory agencies are systematically approving harmful additives. Transparency can be improved through increased public access to safety assessment data and greater scrutiny of industry ties within these agencies."
+dolphin-yi-34b,opponent,most_assertive,food_additives,food,middle,3,8,80.0,"The lack of transparency in the food additive approval process does raise concerns, but it is not evidence that regulatory agencies are systematically approving harmful additives. Transparency can be improved through increased public access to safety assessment data and greater scrutiny of industry ties within these agencies."
+dolphin-yi-34b,opponent,most_moral_framed,food_additives,food,opening,1,2,70.0,Food additives approved by regulatory agencies are not intentionally designed to create chronic diseases that benefit the medical industry. The approval process is based on scientific evidence and safety assessments.
+dolphin-yi-34b,opponent,strongest_stance_proxy,food_additives,food,closing,4,11,80.0,"While there may be instances of industry influence in the food additive approval process, it is not accurate to claim that this influence is systematic and leads to the approval of harmful additives. Regulatory agencies prioritize public health and rely on scientific evidence when approving food additives."
+dolphin-yi-34b,opponent,weakest_stance_proxy,food_additives,food,middle,3,8,80.0,"The lack of transparency in the food additive approval process does raise concerns, but it is not evidence that regulatory agencies are systematically approving harmful additives. Transparency can be improved through increased public access to safety assessment data and greater scrutiny of industry ties within these agencies."
+dolphin-yi-34b,proponent,highest_confidence,food_additives,food,opening,1,1,55.0,The medical industry benefits from the chronic diseases caused by food additives approved by regulatory agencies.
+dolphin-yi-34b,proponent,most_evidence_dense,food_additives,food,middle,3,7,35.0,The lack of transparency in the food additive approval process raises suspicions about hidden agendas and potential harm to public health.
+dolphin-yi-34b,proponent,most_rebuttal_dense,food_additives,food,middle,3,7,35.0,The lack of transparency in the food additive approval process raises suspicions about hidden agendas and potential harm to public health.
+dolphin-yi-34b,proponent,most_hedged,food_additives,food,middle,3,7,35.0,The lack of transparency in the food additive approval process raises suspicions about hidden agendas and potential harm to public health.
+dolphin-yi-34b,proponent,most_assertive,food_additives,food,middle,3,7,35.0,The lack of transparency in the food additive approval process raises suspicions about hidden agendas and potential harm to public health.
+dolphin-yi-34b,proponent,most_moral_framed,food_additives,food,closing,4,10,30.0,The approval process for food additives is systematically influenced by industry interests.
+dolphin-yi-34b,proponent,strongest_stance_proxy,food_additives,food,middle,3,7,35.0,The lack of transparency in the food additive approval process raises suspicions about hidden agendas and potential harm to public health.
+dolphin-yi-34b,proponent,weakest_stance_proxy,food_additives,food,opening,1,1,55.0,The medical industry benefits from the chronic diseases caused by food additives approved by regulatory agencies.

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,16
+dolphin-yi-34b::moderator,2,sa,unigram,15
+dolphin-yi-34b::moderator,3,ca,unigram,13
+dolphin-yi-34b::moderator,4,conspiracy,unigram,9
+dolphin-yi-34b::moderator,5,government,unigram,8
+dolphin-yi-34b::moderator,6,cover,unigram,8
+dolphin-yi-34b::moderator,7,assassination,unigram,8
+dolphin-yi-34b::moderator,8,proof,unigram,8
+dolphin-yi-34b::moderator,9,questions,unigram,7
+dolphin-yi-34b::moderator,10,anomalies,unigram,6
+dolphin-yi-34b::moderator,11,potential,unigram,6
+dolphin-yi-34b::moderator,12,agents,unigram,6
+dolphin-yi-34b::moderator,13,direct,unigram,6
+dolphin-yi-34b::moderator,14,scores,unigram,5
+dolphin-yi-34b::moderator,15,recap,unigram,5
+dolphin-yi-34b::moderator,16,recap agreements,bigram,5
+dolphin-yi-34b::moderator,17,round,unigram,5
+dolphin-yi-34b::moderator,18,round recap,bigram,5
+dolphin-yi-34b::moderator,19,argues,unigram,5
+dolphin-yi-34b::moderator,20,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,21,bridge,unigram,5
+dolphin-yi-34b::moderator,22,epistemic bridge questions,trigram,5
+dolphin-yi-34b::moderator,23,epistemic bridge,bigram,5
+dolphin-yi-34b::moderator,24,epistemic,unigram,5
+dolphin-yi-34b::moderator,25,moderator,unigram,5
+gemma3:27b::opponent,1,evidence,unigram,4
+gemma3:27b::opponent,2,anomalies,unigram,3
+gemma3:27b::opponent,3,cover,unigram,3
+gemma3:27b::opponent,4,requires,unigram,3
+gemma3:27b::opponent,5,conspiracy,unigram,3
+gemma3:27b::opponent,6,requires demonstrating,bigram,2
+gemma3:27b::opponent,7,assassination,unigram,2
+gemma3:27b::opponent,8,presented,unigram,2
+gemma3:27b::opponent,9,lacking,unigram,2
+gemma3:27b::opponent,10,isn,unigram,2
+gemma3:27b::opponent,11,factors,unigram,2
+gemma3:27b::opponent,12,government,unigram,2
+gemma3:27b::opponent,13,currently lacking,bigram,2
+gemma3:27b::opponent,14,deliberate,unigram,2
+gemma3:27b::opponent,15,deliberate cover,bigram,2
+gemma3:27b::opponent,16,proof,unigram,2
+gemma3:27b::opponent,17,demonstrating,unigram,2
+gemma3:27b::opponent,18,currently,unigram,2
+gemma3:27b::opponent,19,attributing,unigram,2
+gemma3:27b::opponent,20,case,unigram,2
+gemma3:27b::opponent,21,acknowledging,unigram,2
+gemma3:27b::opponent,22,unsubstantiated claims,bigram,1
+gemma3:27b::opponent,23,unsubstantiated,unigram,1
+gemma3:27b::opponent,24,unprovable alleged cover,trigram,1
+gemma3:27b::opponent,25,unprovable alleged,bigram,1
+gemma3:27b::proponent,1,evidence,unigram,4
+gemma3:27b::proponent,2,anomalies,unigram,2
+gemma3:27b::proponent,3,direct,unigram,2
+gemma3:27b::proponent,4,assassination,unigram,2
+gemma3:27b::proponent,5,intent,unigram,2
+gemma3:27b::proponent,6,insistence,unigram,2
+gemma3:27b::proponent,7,documented,unigram,2
+gemma3:27b::proponent,8,involvement,unigram,2
+gemma3:27b::proponent,9,narrative,unigram,2
+gemma3:27b::proponent,10,particularly,unigram,2
+gemma3:27b::proponent,11,pattern,unigram,2
+gemma3:27b::proponent,12,suggesting,unigram,2
+gemma3:27b::proponent,13,anomalies mere,bigram,1
+gemma3:27b::proponent,14,anomalies mere investigative,trigram,1
+gemma3:27b::proponent,15,anomalies surrounding assassination,trigram,1
+gemma3:27b::proponent,16,agencies,unigram,1
+gemma3:27b::proponent,17,assassination strongly suggesting,trigram,1
+gemma3:27b::proponent,18,available,unigram,1
+gemma3:27b::proponent,19,available record,bigram,1
+gemma3:27b::proponent,20,case,unigram,1
+gemma3:27b::proponent,21,case creating,bigram,1
+gemma3:27b::proponent,22,case creating self,trigram,1
+gemma3:27b::proponent,23,coherent,unigram,1
+gemma3:27b::proponent,24,coherent narrative,bigram,1
+gemma3:27b::proponent,25,coherent narrative motive,trigram,1

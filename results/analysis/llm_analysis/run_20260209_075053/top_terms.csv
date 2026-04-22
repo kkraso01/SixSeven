@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,5g,unigram,25
+dolphin-yi-34b::moderator,2,safety,unigram,13
+dolphin-yi-34b::moderator,3,sa,unigram,13
+dolphin-yi-34b::moderator,4,health,unigram,13
+dolphin-yi-34b::moderator,5,technology,unigram,12
+dolphin-yi-34b::moderator,6,risks,unigram,12
+dolphin-yi-34b::moderator,7,5g technology,bigram,12
+dolphin-yi-34b::moderator,8,ca,unigram,10
+dolphin-yi-34b::moderator,9,evidence,unigram,10
+dolphin-yi-34b::moderator,10,specific,unigram,9
+dolphin-yi-34b::moderator,11,rollout,unigram,8
+dolphin-yi-34b::moderator,12,concerns,unigram,8
+dolphin-yi-34b::moderator,13,health risks,bigram,8
+dolphin-yi-34b::moderator,14,potential,unigram,7
+dolphin-yi-34b::moderator,15,questions,unigram,7
+dolphin-yi-34b::moderator,16,corporate,unigram,7
+dolphin-yi-34b::moderator,17,profit,unigram,6
+dolphin-yi-34b::moderator,18,current,unigram,6
+dolphin-yi-34b::moderator,19,established,unigram,6
+dolphin-yi-34b::moderator,20,questions specific,bigram,6
+dolphin-yi-34b::moderator,21,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,22,bridge questions specific,trigram,5
+dolphin-yi-34b::moderator,23,recap,unigram,5
+dolphin-yi-34b::moderator,24,bridge,unigram,5
+dolphin-yi-34b::moderator,25,argues,unigram,5
+dolphin-yi-34b::proponent,1,5g,unigram,4
+dolphin-yi-34b::proponent,2,health,unigram,4
+dolphin-yi-34b::proponent,3,wireless,unigram,4
+dolphin-yi-34b::proponent,4,5g wireless networks,trigram,3
+dolphin-yi-34b::proponent,5,corporate,unigram,3
+dolphin-yi-34b::proponent,6,corporate interests,bigram,3
+dolphin-yi-34b::proponent,7,networks,unigram,3
+dolphin-yi-34b::proponent,8,5g wireless,bigram,3
+dolphin-yi-34b::proponent,9,wireless networks,bigram,3
+dolphin-yi-34b::proponent,10,rollout 5g,bigram,3
+dolphin-yi-34b::proponent,11,rollout,unigram,3
+dolphin-yi-34b::proponent,12,interests,unigram,3
+dolphin-yi-34b::proponent,13,corporate interests genuine,trigram,2
+dolphin-yi-34b::proponent,14,genuine concern,bigram,2
+dolphin-yi-34b::proponent,15,genuine concern public,trigram,2
+dolphin-yi-34b::proponent,16,health risks,bigram,2
+dolphin-yi-34b::proponent,17,driven,unigram,2
+dolphin-yi-34b::proponent,18,interests genuine concern,trigram,2
+dolphin-yi-34b::proponent,19,networks driven,bigram,2
+dolphin-yi-34b::proponent,20,networks driven corporate,trigram,2
+dolphin-yi-34b::proponent,21,interests genuine,bigram,2
+dolphin-yi-34b::proponent,22,concern public health,trigram,2
+dolphin-yi-34b::proponent,23,genuine,unigram,2
+dolphin-yi-34b::proponent,24,safety,unigram,2
+dolphin-yi-34b::proponent,25,public,unigram,2
+gemma3:27b::opponent,1,attributing,unigram,4
+gemma3:27b::opponent,2,profit,unigram,4
+gemma3:27b::opponent,3,acknowledging,unigram,3
+gemma3:27b::opponent,4,5g,unigram,3
+gemma3:27b::opponent,5,demonstrating,unigram,3
+gemma3:27b::opponent,6,established,unigram,3
+gemma3:27b::opponent,7,health,unigram,3
+gemma3:27b::opponent,8,corporate,unigram,3
+gemma3:27b::opponent,9,safety,unigram,3
+gemma3:27b::opponent,10,solely,unigram,3
+gemma3:27b::opponent,11,risks,unigram,3
+gemma3:27b::opponent,12,requires demonstrating,bigram,3
+gemma3:27b::opponent,13,requires,unigram,3
+gemma3:27b::opponent,14,profit motives,bigram,3
+gemma3:27b::opponent,15,motives,unigram,3
+gemma3:27b::opponent,16,acknowledging role,bigram,2
+gemma3:27b::opponent,17,lacks,unigram,2
+gemma3:27b::opponent,18,requires demonstrating systematic,trigram,2
+gemma3:27b::opponent,19,rollout,unigram,2
+gemma3:27b::opponent,20,role,unigram,2
+gemma3:27b::opponent,21,solely corporate,bigram,2
+gemma3:27b::opponent,22,sufficient,unigram,2
+gemma3:27b::opponent,23,systematic,unigram,2
+gemma3:27b::opponent,24,risks associated,bigram,2
+gemma3:27b::opponent,25,concerns,unigram,2

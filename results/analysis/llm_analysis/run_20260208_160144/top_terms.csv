@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,evidence,unigram,5
+dolphin-yi-34b::opponent,2,crucial,unigram,4
+dolphin-yi-34b::opponent,3,safety,unigram,4
+dolphin-yi-34b::opponent,4,industry,unigram,4
+dolphin-yi-34b::opponent,5,technology,unigram,4
+dolphin-yi-34b::opponent,6,generalizations industry,bigram,3
+dolphin-yi-34b::opponent,7,crucial scrutinize,bigram,3
+dolphin-yi-34b::opponent,8,health,unigram,3
+dolphin-yi-34b::opponent,9,generalizations industry behavior,trigram,3
+dolphin-yi-34b::opponent,10,evidence rigorous,bigram,3
+dolphin-yi-34b::opponent,11,generalizations,unigram,3
+dolphin-yi-34b::opponent,12,evidence rigorous testing,trigram,3
+dolphin-yi-34b::opponent,13,industry behavior,bigram,3
+dolphin-yi-34b::opponent,14,rely,unigram,3
+dolphin-yi-34b::opponent,15,crucial scrutinize safety,trigram,3
+dolphin-yi-34b::opponent,16,5g,unigram,3
+dolphin-yi-34b::opponent,17,rely evidence rigorous,trigram,3
+dolphin-yi-34b::opponent,18,rigorous,unigram,3
+dolphin-yi-34b::opponent,19,rigorous testing generalizations,trigram,3
+dolphin-yi-34b::opponent,20,new technology rely,trigram,3
+dolphin-yi-34b::opponent,21,safety new,bigram,3
+dolphin-yi-34b::opponent,22,new,unigram,3
+dolphin-yi-34b::opponent,23,rely evidence,bigram,3
+dolphin-yi-34b::opponent,24,rigorous testing,bigram,3
+dolphin-yi-34b::opponent,25,new technology,bigram,3
+dolphin-yi-34b::proponent,1,health,unigram,5
+dolphin-yi-34b::proponent,2,5g,unigram,4
+dolphin-yi-34b::proponent,3,downplaying,unigram,4
+dolphin-yi-34b::proponent,4,5g technology,bigram,4
+dolphin-yi-34b::proponent,5,health risks,bigram,4
+dolphin-yi-34b::proponent,6,industry,unigram,4
+dolphin-yi-34b::proponent,7,technology,unigram,4
+dolphin-yi-34b::proponent,8,risks,unigram,4
+dolphin-yi-34b::proponent,9,industry history downplaying,trigram,3
+dolphin-yi-34b::proponent,10,history,unigram,3
+dolphin-yi-34b::proponent,11,history downplaying,bigram,3
+dolphin-yi-34b::proponent,12,industry history,bigram,3
+dolphin-yi-34b::proponent,13,associated products,bigram,2
+dolphin-yi-34b::proponent,14,downplaying health risks,trigram,2
+dolphin-yi-34b::proponent,15,downplaying health,bigram,2
+dolphin-yi-34b::proponent,16,5g technology safety,trigram,2
+dolphin-yi-34b::proponent,17,history downplaying potential,trigram,2
+dolphin-yi-34b::proponent,18,downplaying potential health,trigram,2
+dolphin-yi-34b::proponent,19,potential health risks,trigram,2
+dolphin-yi-34b::proponent,20,products,unigram,2
+dolphin-yi-34b::proponent,21,potential,unigram,2
+dolphin-yi-34b::proponent,22,potential health,bigram,2
+dolphin-yi-34b::proponent,23,health risks associated,trigram,2
+dolphin-yi-34b::proponent,24,telecommunications industry history,trigram,2
+dolphin-yi-34b::proponent,25,telecommunications industry,bigram,2
+gemma3:27b::moderator,1,ca,unigram,32
+gemma3:27b::moderator,2,evidence,unigram,24
+gemma3:27b::moderator,3,sa,unigram,23
+gemma3:27b::moderator,4,5g,unigram,21
+gemma3:27b::moderator,5,industry,unigram,15
+gemma3:27b::moderator,6,safety,unigram,15
+gemma3:27b::moderator,7,health,unigram,12
+gemma3:27b::moderator,8,risks,unigram,11
+gemma3:27b::moderator,9,specific,unigram,10
+gemma3:27b::moderator,10,testing,unigram,9
+gemma3:27b::moderator,11,agents,unigram,9
+gemma3:27b::moderator,12,health risks,bigram,8
+gemma3:27b::moderator,13,asks,unigram,7
+gemma3:27b::moderator,14,questions,unigram,7
+gemma3:27b::moderator,15,past,unigram,7
+gemma3:27b::moderator,16,prove,unigram,6
+gemma3:27b::moderator,17,potential,unigram,6
+gemma3:27b::moderator,18,past industry,bigram,6
+gemma3:27b::moderator,19,epistemic bridge questions,trigram,5
+gemma3:27b::moderator,20,appeal authority,bigram,5
+gemma3:27b::moderator,21,recap,unigram,5
+gemma3:27b::moderator,22,round recap agreements,trigram,5
+gemma3:27b::moderator,23,appeal,unigram,5
+gemma3:27b::moderator,24,emphasizes,unigram,5
+gemma3:27b::moderator,25,civility epistemic bridge,trigram,5

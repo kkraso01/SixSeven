@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::proponent,1,harbor,unigram,5
+dolphin-yi-34b::proponent,2,government,unigram,5
+dolphin-yi-34b::proponent,3,pearl harbor,bigram,5
+dolphin-yi-34b::proponent,4,pearl,unigram,5
+dolphin-yi-34b::proponent,5,deliberate inaction,bigram,4
+dolphin-yi-34b::proponent,6,inaction,unigram,4
+dolphin-yi-34b::proponent,7,attack,unigram,4
+dolphin-yi-34b::proponent,8,deliberate,unigram,4
+dolphin-yi-34b::proponent,9,hidden agenda,bigram,3
+dolphin-yi-34b::proponent,10,attack pearl,bigram,3
+dolphin-yi-34b::proponent,11,impending,unigram,3
+dolphin-yi-34b::proponent,12,hidden,unigram,3
+dolphin-yi-34b::proponent,13,attack pearl harbor,trigram,3
+dolphin-yi-34b::proponent,14,agenda,unigram,3
+dolphin-yi-34b::proponent,15,despite clear signs,trigram,2
+dolphin-yi-34b::proponent,16,foreknowledge,unigram,2
+dolphin-yi-34b::proponent,17,inaction despite clear,trigram,2
+dolphin-yi-34b::proponent,18,inaction despite,bigram,2
+dolphin-yi-34b::proponent,19,impending attack pearl,trigram,2
+dolphin-yi-34b::proponent,20,impending attack,bigram,2
+dolphin-yi-34b::proponent,21,harbor points hidden,trigram,2
+dolphin-yi-34b::proponent,22,harbor points,bigram,2
+dolphin-yi-34b::proponent,23,harbor deliberate,bigram,2
+dolphin-yi-34b::proponent,24,harbor deliberate inaction,trigram,2
+dolphin-yi-34b::proponent,25,government deliberate,bigram,2
+gemma3:27b::moderator,1,ca,unigram,33
+gemma3:27b::moderator,2,sa,unigram,26
+gemma3:27b::moderator,3,evidence,unigram,20
+gemma3:27b::moderator,4,attack,unigram,14
+gemma3:27b::moderator,5,inaction,unigram,13
+gemma3:27b::moderator,6,failures,unigram,12
+gemma3:27b::moderator,7,deliberate,unigram,10
+gemma3:27b::moderator,8,intelligence,unigram,9
+gemma3:27b::moderator,9,deliberate inaction,bigram,8
+gemma3:27b::moderator,10,intent,unigram,7
+gemma3:27b::moderator,11,proof,unigram,7
+gemma3:27b::moderator,12,note,unigram,7
+gemma3:27b::moderator,13,hull note,bigram,7
+gemma3:27b::moderator,14,hull,unigram,7
+gemma3:27b::moderator,15,warnings,unigram,7
+gemma3:27b::moderator,16,agents,unigram,7
+gemma3:27b::moderator,17,argues,unigram,6
+gemma3:27b::moderator,18,agree,unigram,6
+gemma3:27b::moderator,19,intelligence failures,bigram,6
+gemma3:27b::moderator,20,government,unigram,6
+gemma3:27b::moderator,21,acknowledge,unigram,6
+gemma3:27b::moderator,22,detected moves,bigram,5
+gemma3:27b::moderator,23,recap agreements agents,trigram,5
+gemma3:27b::moderator,24,detected,unigram,5
+gemma3:27b::moderator,25,epistemic bridge questions,trigram,5
+gemma3:27b::opponent,1,link,unigram,7
+gemma3:27b::opponent,2,attributing,unigram,5
+gemma3:27b::opponent,3,inaction,unigram,5
+gemma3:27b::opponent,4,causal,unigram,4
+gemma3:27b::opponent,5,demonstrating,unigram,4
+gemma3:27b::opponent,6,deliberate,unigram,4
+gemma3:27b::opponent,7,causal link,bigram,4
+gemma3:27b::opponent,8,requires demonstrating,bigram,4
+gemma3:27b::opponent,9,requires,unigram,4
+gemma3:27b::opponent,10,deliberate inaction,bigram,3
+gemma3:27b::opponent,11,clear causal link,trigram,3
+gemma3:27b::opponent,12,attributing deliberate,bigram,3
+gemma3:27b::opponent,13,attributing deliberate inaction,trigram,3
+gemma3:27b::opponent,14,clear,unigram,3
+gemma3:27b::opponent,15,clear causal,bigram,3
+gemma3:27b::opponent,16,causal link inaction,trigram,2
+gemma3:27b::opponent,17,currently,unigram,2
+gemma3:27b::opponent,18,demonstrating clear,bigram,2
+gemma3:27b::opponent,19,demonstrating clear causal,trigram,2
+gemma3:27b::opponent,20,despite repeated assertions,trigram,2
+gemma3:27b::opponent,21,despite,unigram,2
+gemma3:27b::opponent,22,despite repeated,bigram,2
+gemma3:27b::opponent,23,decision act link,trigram,2
+gemma3:27b::opponent,24,deliberate inaction requires,trigram,2
+gemma3:27b::opponent,25,conscious decision,bigram,2

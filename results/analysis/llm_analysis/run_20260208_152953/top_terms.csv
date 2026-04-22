@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,cures,unigram,6
+dolphin-yi-34b::opponent,2,companies,unigram,5
+dolphin-yi-34b::opponent,3,pharmaceutical,unigram,5
+dolphin-yi-34b::opponent,4,industry,unigram,5
+dolphin-yi-34b::opponent,5,treatments,unigram,5
+dolphin-yi-34b::opponent,6,companies treatments,bigram,4
+dolphin-yi-34b::opponent,7,case dr ignaz,trigram,4
+dolphin-yi-34b::opponent,8,case dr,bigram,4
+dolphin-yi-34b::opponent,9,dr,unigram,4
+dolphin-yi-34b::opponent,10,dr ignaz,bigram,4
+dolphin-yi-34b::opponent,11,ignaz dzodzi,bigram,4
+dolphin-yi-34b::opponent,12,ignaz,unigram,4
+dolphin-yi-34b::opponent,13,incident,unigram,4
+dolphin-yi-34b::opponent,14,isolated,unigram,4
+dolphin-yi-34b::opponent,15,dr ignaz dzodzi,trigram,4
+dolphin-yi-34b::opponent,16,case,unigram,4
+dolphin-yi-34b::opponent,17,pervasive trend,bigram,4
+dolphin-yi-34b::opponent,18,multiple,unigram,4
+dolphin-yi-34b::opponent,19,multiple companies treatments,trigram,4
+dolphin-yi-34b::opponent,20,multiple companies,bigram,4
+dolphin-yi-34b::opponent,21,pervasive trend multiple,trigram,4
+dolphin-yi-34b::opponent,22,pervasive,unigram,4
+dolphin-yi-34b::opponent,23,pharmaceutical industry,bigram,4
+dolphin-yi-34b::opponent,24,dzodzi,unigram,4
+dolphin-yi-34b::opponent,25,trend multiple companies,trigram,4
+dolphin-yi-34b::proponent,1,cures,unigram,6
+dolphin-yi-34b::proponent,2,pharmaceutical,unigram,6
+dolphin-yi-34b::proponent,3,potential,unigram,5
+dolphin-yi-34b::proponent,4,potential cures,bigram,5
+dolphin-yi-34b::proponent,5,cures financial,bigram,4
+dolphin-yi-34b::proponent,6,dr,unigram,4
+dolphin-yi-34b::proponent,7,dr ignaz dzodzi,trigram,4
+dolphin-yi-34b::proponent,8,dzodzi,unigram,4
+dolphin-yi-34b::proponent,9,ignaz dzodzi,bigram,4
+dolphin-yi-34b::proponent,10,industry,unigram,4
+dolphin-yi-34b::proponent,11,gain,unigram,4
+dolphin-yi-34b::proponent,12,ignaz,unigram,4
+dolphin-yi-34b::proponent,13,financial,unigram,4
+dolphin-yi-34b::proponent,14,dr ignaz,bigram,4
+dolphin-yi-34b::proponent,15,history suppressing potential,trigram,4
+dolphin-yi-34b::proponent,16,pharmaceutical industry,bigram,4
+dolphin-yi-34b::proponent,17,potential cures financial,trigram,4
+dolphin-yi-34b::proponent,18,history suppressing,bigram,4
+dolphin-yi-34b::proponent,19,history,unigram,4
+dolphin-yi-34b::proponent,20,suppressing potential,bigram,4
+dolphin-yi-34b::proponent,21,suppressing potential cures,trigram,4
+dolphin-yi-34b::proponent,22,suppressing,unigram,4
+dolphin-yi-34b::proponent,23,ignaz dzodzi cancer,trigram,3
+dolphin-yi-34b::proponent,24,financial gain,bigram,3
+dolphin-yi-34b::proponent,25,dzodzi cancer,bigram,3
+gemma3:27b::moderator,1,ca,unigram,27
+gemma3:27b::moderator,2,sa,unigram,22
+gemma3:27b::moderator,3,suppression,unigram,17
+gemma3:27b::moderator,4,evidence,unigram,15
+gemma3:27b::moderator,5,dzodzi,unigram,14
+gemma3:27b::moderator,6,agents,unigram,14
+gemma3:27b::moderator,7,case,unigram,11
+gemma3:27b::moderator,8,systematic,unigram,9
+gemma3:27b::moderator,9,pattern,unigram,9
+gemma3:27b::moderator,10,profit,unigram,8
+gemma3:27b::moderator,11,dr,unigram,8
+gemma3:27b::moderator,12,pattern suppression,bigram,7
+gemma3:27b::moderator,13,questions,unigram,7
+gemma3:27b::moderator,14,specific,unigram,6
+gemma3:27b::moderator,15,acknowledge,unigram,6
+gemma3:27b::moderator,16,argues,unigram,6
+gemma3:27b::moderator,17,dr dzodzi,bigram,6
+gemma3:27b::moderator,18,round,unigram,5
+gemma3:27b::moderator,19,scores civility epistemic,trigram,5
+gemma3:27b::moderator,20,bridge questions,bigram,5
+gemma3:27b::moderator,21,moderator round recap,trigram,5
+gemma3:27b::moderator,22,moderator,unigram,5
+gemma3:27b::moderator,23,moderator round,bigram,5
+gemma3:27b::moderator,24,round recap,bigram,5
+gemma3:27b::moderator,25,round recap agreements,trigram,5

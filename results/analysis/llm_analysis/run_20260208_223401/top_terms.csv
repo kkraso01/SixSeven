@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,studies,unigram,3
+dolphin-yi-34b::opponent,2,research,unigram,3
+dolphin-yi-34b::opponent,3,potential,unigram,3
+dolphin-yi-34b::opponent,4,health,unigram,3
+dolphin-yi-34b::opponent,5,evidence,unigram,3
+dolphin-yi-34b::opponent,6,effects,unigram,3
+dolphin-yi-34b::opponent,7,technology,unigram,2
+dolphin-yi-34b::opponent,8,5g,unigram,2
+dolphin-yi-34b::opponent,9,longitudinal studies,bigram,2
+dolphin-yi-34b::opponent,10,longitudinal,unigram,2
+dolphin-yi-34b::opponent,11,wireless,unigram,2
+dolphin-yi-34b::opponent,12,industry,unigram,2
+dolphin-yi-34b::opponent,13,harm,unigram,2
+dolphin-yi-34b::opponent,14,investigation,unigram,2
+dolphin-yi-34b::opponent,15,funding,unigram,2
+dolphin-yi-34b::opponent,16,health effects,bigram,2
+dolphin-yi-34b::opponent,17,crucial,unigram,2
+dolphin-yi-34b::opponent,18,valid,unigram,2
+dolphin-yi-34b::opponent,19,use literature lack,trigram,1
+dolphin-yi-34b::opponent,20,use literature,bigram,1
+dolphin-yi-34b::opponent,21,use,unigram,1
+dolphin-yi-34b::opponent,22,unreliable independent research,trigram,1
+dolphin-yi-34b::opponent,23,unreliable independent,bigram,1
+dolphin-yi-34b::opponent,24,unreliable,unigram,1
+dolphin-yi-34b::opponent,25,unrelated sign minimizing,trigram,1
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,21
+gemma3:27b::moderator,4,research,unigram,17
+gemma3:27b::moderator,5,studies,unigram,12
+gemma3:27b::moderator,6,funding,unigram,10
+gemma3:27b::moderator,7,5g,unigram,10
+gemma3:27b::moderator,8,industry,unigram,9
+gemma3:27b::moderator,9,focuses,unigram,8
+gemma3:27b::moderator,10,agents,unigram,8
+gemma3:27b::moderator,11,potential,unigram,8
+gemma3:27b::moderator,12,health,unigram,8
+gemma3:27b::moderator,13,questions,unigram,7
+gemma3:27b::moderator,14,proof,unigram,7
+gemma3:27b::moderator,15,investigation,unigram,7
+gemma3:27b::moderator,16,need,unigram,7
+gemma3:27b::moderator,17,agree,unigram,7
+gemma3:27b::moderator,18,effects,unigram,7
+gemma3:27b::moderator,19,bias,unigram,6
+gemma3:27b::moderator,20,independent,unigram,6
+gemma3:27b::moderator,21,recap agreements,bigram,5
+gemma3:27b::moderator,22,recap,unigram,5
+gemma3:27b::moderator,23,moderator round recap,trigram,5
+gemma3:27b::moderator,24,moderator round,bigram,5
+gemma3:27b::moderator,25,agreements,unigram,5
+gemma3:27b::proponent,1,research,unigram,3
+gemma3:27b::proponent,2,ignores,unigram,3
+gemma3:27b::proponent,3,industry,unigram,3
+gemma3:27b::proponent,4,5g,unigram,2
+gemma3:27b::proponent,5,radiation,unigram,2
+gemma3:27b::proponent,6,public,unigram,2
+gemma3:27b::proponent,7,studies,unigram,2
+gemma3:27b::proponent,8,scientific,unigram,2
+gemma3:27b::proponent,9,pervasive,unigram,2
+gemma3:27b::proponent,10,pattern,unigram,2
+gemma3:27b::proponent,11,longitudinal,unigram,2
+gemma3:27b::proponent,12,longitudinal studies,bigram,2
+gemma3:27b::proponent,13,independent,unigram,2
+gemma3:27b::proponent,14,insistence,unigram,2
+gemma3:27b::proponent,15,dismissal,unigram,2
+gemma3:27b::proponent,16,downplaying,unigram,2
+gemma3:27b::proponent,17,consistently,unigram,2
+gemma3:27b::proponent,18,term data,bigram,1
+gemma3:27b::proponent,19,term,unigram,1
+gemma3:27b::proponent,20,technological advantage powerful,trigram,1
+gemma3:27b::proponent,21,technological advantage,bigram,1
+gemma3:27b::proponent,22,technological,unigram,1
+gemma3:27b::proponent,23,systemic bias makes,trigram,1
+gemma3:27b::proponent,24,systemic bias,bigram,1
+gemma3:27b::proponent,25,systemic,unigram,1

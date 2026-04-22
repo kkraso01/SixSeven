@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260209_025602",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260209_025602",
+  "analysis_schema_version": 3,
+  "row_count": 15,
+  "topic_id": "gmo_dangers",
+  "topic_category": "food",
+  "topic_title": "Genetically modified organisms in food supply",
+  "topic_motion": "GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "gemma3:27b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_164615",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_164615",
+  "analysis_schema_version": 3,
+  "row_count": 9,
+  "topic_id": "cryptocurrency_control",
+  "topic_category": "finance",
+  "topic_title": "Cryptocurrency adoption and financial surveillance",
+  "topic_motion": "Central bank digital currencies are designed to enable total government control over personal finances and eliminate financial privacy.",
+  "models": {
+    "moderator": "gemma3:27b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

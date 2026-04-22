@@ -1,0 +1,48 @@
+=== ANALYSIS METADATA ===
+{
+  "input_run_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\old_artifacts\\run_20260208_151440",
+  "output_analysis_folder": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\src\\debate\\analysis\\debate_analysis\\debate_analysis_outputs\\analysis_20260208_151440",
+  "debate_id": "debate_72da926c7dce",
+  "claim": "Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.",
+  "original_row_count": 3,
+  "analyzed_row_count": 2,
+  "speaker_roles_found": [
+    "opponent",
+    "proponent"
+  ],
+  "nrc_path": "C:\\Users\\athin\\Documents\\Demetra\\university\\spring25-26\\MAI623\\Group Assignment\\SixSeven\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+  "nrc_word_entries": 6453,
+  "bert_model_name": "bhadresh-savani/bert-base-uncased-emotion",
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "final_report_present": true
+}
+
+=== WINNER INFO ===
+{
+  "winner_inferred": null,
+  "winner_role": null,
+  "winner_source": null,
+  "winner_confidence": "low",
+  "winner_evidence": null
+}
+
+=== SPEAKER SUMMARY ===
+              confidence  reply_to_turn  polarity  subjectivity  question_count  exclamation_count  word_count  char_count  strong_modality_count  weak_modality_count  strong_modality_density  weak_modality_density  modality_balance  nrc_sadness_count  nrc_sadness_density  nrc_joy_count  nrc_joy_density  nrc_disgust_count  nrc_disgust_density  nrc_trust_count  nrc_trust_density  nrc_anticipation_count  nrc_anticipation_density  nrc_fear_count  nrc_fear_density  nrc_surprise_count  nrc_surprise_density  nrc_anger_count  nrc_anger_density  emotion_joy  emotion_fear  emotion_sadness  emotion_anger  emotion_surprise  emotion_love  turn_position
+speaker_role                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+opponent            75.0            1.0  0.216667      0.866667             0.0                0.0        41.0       292.0                    0.0                  1.0                      0.0                0.02439              -1.0                1.0              0.02439            0.0              0.0                0.0                  0.0              2.0            0.04878                     0.0                  0.000000             1.0           0.02439                 2.0              0.048780              0.0                0.0     0.970042      0.017471         0.005344       0.002970          0.001988      0.002185            1.0
+proponent           55.0            0.0  0.000000      0.000000             0.0                0.0        15.0        97.0                    0.0                  0.0                      0.0                0.00000               0.0                0.0              0.00000            0.0              0.0                0.0                  0.0              0.0            0.00000                     1.0                  0.066667             0.0           0.00000                 1.0              0.066667              0.0                0.0     0.584481      0.265863         0.068830       0.061091          0.010696      0.009040            0.0
+
+=== PHASE SUMMARY ===
+          debate_id                                                                                                                                          claim speaker_role phase  confidence  reply_to_turn  polarity  subjectivity  question_count  exclamation_count  word_count  char_count  strong_modality_count  weak_modality_count  strong_modality_density  weak_modality_density  modality_balance  nrc_sadness_count  nrc_sadness_density  nrc_joy_count  nrc_joy_density  nrc_disgust_count  nrc_disgust_density  nrc_trust_count  nrc_trust_density  nrc_anticipation_count  nrc_anticipation_density  nrc_fear_count  nrc_fear_density  nrc_surprise_count  nrc_surprise_density  nrc_anger_count  nrc_anger_density  emotion_joy  emotion_fear  emotion_sadness  emotion_anger  emotion_surprise  emotion_love  turn_position
+debate_72da926c7dce Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.     opponent  late        75.0            1.0  0.216667      0.866667             0.0                0.0        41.0       292.0                    0.0                  1.0                      0.0                0.02439              -1.0                1.0              0.02439            0.0              0.0                0.0                  0.0              2.0            0.04878                     0.0                  0.000000             1.0           0.02439                 2.0              0.048780              0.0                0.0     0.970042      0.017471         0.005344       0.002970          0.001988      0.002185            1.0
+debate_72da926c7dce Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.    proponent early        55.0            0.0  0.000000      0.000000             0.0                0.0        15.0        97.0                    0.0                  0.0                      0.0                0.00000               0.0                0.0              0.00000            0.0              0.0                0.0                  0.0              0.0            0.00000                     1.0                  0.066667             0.0           0.00000                 1.0              0.066667              0.0                0.0     0.584481      0.265863         0.068830       0.061091          0.010696      0.009040            0.0
+
+=== DEBATE LEVEL FEATURES ===
+          debate_id                                                                                                                                          claim winner_role winner_source winner_confidence_label  n_total_turns  proponent_turns  proponent_confidence_mean  proponent_strong_modality_density_mean  proponent_weak_modality_density_mean  proponent_modality_balance_mean  proponent_polarity_mean  proponent_subjectivity_mean  proponent_word_count_mean  proponent_late_confidence_mean  proponent_late_strong_modality_density_mean  proponent_late_weak_modality_density_mean  proponent_late_modality_balance_mean  opponent_turns  opponent_confidence_mean  opponent_strong_modality_density_mean  opponent_weak_modality_density_mean  opponent_modality_balance_mean  opponent_polarity_mean  opponent_subjectivity_mean  opponent_word_count_mean  opponent_late_confidence_mean  opponent_late_strong_modality_density_mean  opponent_late_weak_modality_density_mean  opponent_late_modality_balance_mean loser_role
+debate_72da926c7dce Rapid development timelines and limited long-term data make mRNA vaccines fundamentally untrustworthy compared to traditional vaccine methods.        None          None                     low              2                1                       55.0                                     0.0                                   0.0                              0.0                      0.0                          0.0                       15.0                             NaN                                          NaN                                        NaN                                   NaN               1                      75.0                                    0.0                              0.02439                            -1.0                0.216667                    0.866667                      41.0                           75.0                                         0.0                                   0.02439                                 -1.0       None

@@ -1,0 +1,65 @@
+model_name,debate_role,sample_type,topic_id,topic_category,stage,round,turn_index,confidence,utterance
+dolphin-yi-34b,moderator,highest_confidence,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,moderator,most_evidence_dense,mrna_vaccine_safety,health,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge potential conflicts of interest within the pharmaceutical industry., There is a shared understanding that existing regulatory frameworks and independent research play crucial roles in ensuring vaccine safety.
+Disagreements: CA argues that profit motives make mRNA vaccines fundamentally untrustworthy compared to traditional methods., SA contends that such a claim is based on a logical fallacy and lacks sufficient evidentiary support.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific mechanisms would allow a pharmaceutical company to bypass safety protocols and release an unsafe mRNA vaccine?"
+dolphin-yi-34b,moderator,most_rebuttal_dense,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,moderator,most_hedged,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,moderator,most_assertive,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,moderator,most_moral_framed,mrna_vaccine_safety,health,middle,2,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge potential conflicts of interest within the pharmaceutical industry., There is a shared understanding that existing regulatory frameworks and independent research play crucial roles in ensuring vaccine safety.
+Disagreements: CA argues that profit motives make mRNA vaccines fundamentally untrustworthy compared to traditional methods., SA contends that such a claim is based on a logical fallacy and lacks sufficient evidentiary support.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific mechanisms would allow a pharmaceutical company to bypass safety protocols and release an unsafe mRNA vaccine?"
+dolphin-yi-34b,moderator,strongest_stance_proxy,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,moderator,weakest_stance_proxy,mrna_vaccine_safety,health,opening,1,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the rapid development timeline of mRNA vaccines., Both agents express concerns about long-term safety and efficacy.
+Disagreements: CA argues that limited long-term data and profit motives make mRNA vaccines untrustworthy compared to traditional methods., SA counters that the rapid development was due to pre-existing research, not compromised safety protocols, and that post-market surveillance is in place for both types of vaccines.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: What specific examples can you provide of pharmaceutical companies prioritizing profit over public health?, How do post-market surveillance systems contribute to the long-term safety assessment of mRNA vaccines?"
+dolphin-yi-34b,proponent,highest_confidence,mrna_vaccine_safety,health,opening,1,1,55.0,The rapid development of mRNA vaccines raises concerns about their long-term safety and efficacy.
+dolphin-yi-34b,proponent,most_evidence_dense,mrna_vaccine_safety,health,closing,3,7,35.0,The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.
+dolphin-yi-34b,proponent,most_rebuttal_dense,mrna_vaccine_safety,health,closing,3,7,35.0,The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.
+dolphin-yi-34b,proponent,most_hedged,mrna_vaccine_safety,health,middle,2,4,45.0,"Pharmaceutical companies prioritize profit over public health, potentially compromising the safety of mRNA vaccines."
+dolphin-yi-34b,proponent,most_assertive,mrna_vaccine_safety,health,closing,3,7,35.0,The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.
+dolphin-yi-34b,proponent,most_moral_framed,mrna_vaccine_safety,health,middle,2,4,45.0,"Pharmaceutical companies prioritize profit over public health, potentially compromising the safety of mRNA vaccines."
+dolphin-yi-34b,proponent,strongest_stance_proxy,mrna_vaccine_safety,health,closing,3,7,35.0,The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.
+dolphin-yi-34b,proponent,weakest_stance_proxy,mrna_vaccine_safety,health,closing,3,7,35.0,The rapid development of mRNA vaccines and limited long-term data make them fundamentally untrustworthy compared to traditional methods.
+gemma3:27b,opponent,highest_confidence,mrna_vaccine_safety,health,closing,3,8,65.0,"While acknowledging the accelerated development and inherent limitations of short-term data, framing mRNA vaccines as ‘fundamentally untrustworthy’ is an overstatement not supported by comparative safety data and ignores the established mechanisms for ongoing surveillance."
+gemma3:27b,opponent,most_evidence_dense,mrna_vaccine_safety,health,opening,1,2,50.0,"While acknowledging the accelerated development timeline, the claim that mRNA vaccines are fundamentally untrustworthy compared to traditional methods is not supported by the available evidence, and relies on unsubstantiated assumptions about pharmaceutical motivations."
+gemma3:27b,opponent,most_rebuttal_dense,mrna_vaccine_safety,health,middle,2,5,60.0,"While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety."
+gemma3:27b,opponent,most_hedged,mrna_vaccine_safety,health,middle,2,5,60.0,"While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety."
+gemma3:27b,opponent,most_assertive,mrna_vaccine_safety,health,middle,2,5,60.0,"While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety."
+gemma3:27b,opponent,most_moral_framed,mrna_vaccine_safety,health,closing,3,8,65.0,"While acknowledging the accelerated development and inherent limitations of short-term data, framing mRNA vaccines as ‘fundamentally untrustworthy’ is an overstatement not supported by comparative safety data and ignores the established mechanisms for ongoing surveillance."
+gemma3:27b,opponent,strongest_stance_proxy,mrna_vaccine_safety,health,middle,2,5,60.0,"While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety."
+gemma3:27b,opponent,weakest_stance_proxy,mrna_vaccine_safety,health,middle,2,5,60.0,"While acknowledging the potential for conflicts of interest within the pharmaceutical industry, attributing a fundamental untrustworthiness to mRNA vaccines based solely on profit motives is a logical fallacy and lacks sufficient evidentiary support; regulatory frameworks and independent research play a crucial role in ensuring safety."

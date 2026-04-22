@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,agents,unigram,1
+dolphin-yi-34b::opponent,2,agents secret,bigram,1
+dolphin-yi-34b::opponent,3,agents secret atmospheric,trigram,1
+dolphin-yi-34b::opponent,4,aircraft,unigram,1
+dolphin-yi-34b::opponent,5,aircraft deliberately,bigram,1
+dolphin-yi-34b::opponent,6,aircraft deliberately release,trigram,1
+dolphin-yi-34b::opponent,7,atmospheric,unigram,1
+dolphin-yi-34b::opponent,8,atmospheric modification,bigram,1
+dolphin-yi-34b::opponent,9,atmospheric modification programs,trigram,1
+dolphin-yi-34b::opponent,10,biological,unigram,1
+dolphin-yi-34b::opponent,11,biological agents,bigram,1
+dolphin-yi-34b::opponent,12,biological agents secret,trigram,1
+dolphin-yi-34b::opponent,13,chemical,unigram,1
+dolphin-yi-34b::opponent,14,chemical biological,bigram,1
+dolphin-yi-34b::opponent,15,chemical biological agents,trigram,1
+dolphin-yi-34b::opponent,16,commercial,unigram,1
+dolphin-yi-34b::opponent,17,commercial aircraft,bigram,1
+dolphin-yi-34b::opponent,18,commercial aircraft deliberately,trigram,1
+dolphin-yi-34b::opponent,19,deliberately,unigram,1
+dolphin-yi-34b::opponent,20,deliberately release,bigram,1
+dolphin-yi-34b::opponent,21,deliberately release chemical,trigram,1
+dolphin-yi-34b::opponent,22,evidence,unigram,1
+dolphin-yi-34b::opponent,23,modification,unigram,1
+dolphin-yi-34b::opponent,24,modification programs,bigram,1
+dolphin-yi-34b::opponent,25,modification programs supported,trigram,1
+dolphin-yi-34b::proponent,1,agents,unigram,1
+dolphin-yi-34b::proponent,2,agents guise,bigram,1
+dolphin-yi-34b::proponent,3,agents guise contrails,trigram,1
+dolphin-yi-34b::proponent,4,aircraft,unigram,1
+dolphin-yi-34b::proponent,5,aircraft involved,bigram,1
+dolphin-yi-34b::proponent,6,aircraft involved secret,trigram,1
+dolphin-yi-34b::proponent,7,atmospheric,unigram,1
+dolphin-yi-34b::proponent,8,atmospheric modification,bigram,1
+dolphin-yi-34b::proponent,9,atmospheric modification programs,trigram,1
+dolphin-yi-34b::proponent,10,biological,unigram,1
+dolphin-yi-34b::proponent,11,biological agents,bigram,1
+dolphin-yi-34b::proponent,12,biological agents guise,trigram,1
+dolphin-yi-34b::proponent,13,chemical,unigram,1
+dolphin-yi-34b::proponent,14,chemical biological,bigram,1
+dolphin-yi-34b::proponent,15,chemical biological agents,trigram,1
+dolphin-yi-34b::proponent,16,commercial,unigram,1
+dolphin-yi-34b::proponent,17,commercial aircraft,bigram,1
+dolphin-yi-34b::proponent,18,commercial aircraft involved,trigram,1
+dolphin-yi-34b::proponent,19,contrails,unigram,1
+dolphin-yi-34b::proponent,20,guise,unigram,1
+dolphin-yi-34b::proponent,21,guise contrails,bigram,1
+dolphin-yi-34b::proponent,22,involved,unigram,1
+dolphin-yi-34b::proponent,23,involved secret,bigram,1
+dolphin-yi-34b::proponent,24,involved secret atmospheric,trigram,1
+dolphin-yi-34b::proponent,25,modification,unigram,1
+gemma3:27b::moderator,1,ca,unigram,7
+gemma3:27b::moderator,2,evidence,unigram,6
+gemma3:27b::moderator,3,modification,unigram,4
+gemma3:27b::moderator,4,sa,unigram,4
+gemma3:27b::moderator,5,agents,unigram,3
+gemma3:27b::moderator,6,historical,unigram,3
+gemma3:27b::moderator,7,anecdotal evidence,bigram,2
+gemma3:27b::moderator,8,weather modification,bigram,2
+gemma3:27b::moderator,9,phenomena,unigram,2
+gemma3:27b::moderator,10,sky phenomena,bigram,2
+gemma3:27b::moderator,11,sky,unigram,2
+gemma3:27b::moderator,12,programs,unigram,2
+gemma3:27b::moderator,13,experiments,unigram,2
+gemma3:27b::moderator,14,proof,unigram,2
+gemma3:27b::moderator,15,anecdotal,unigram,2
+gemma3:27b::moderator,16,weather,unigram,2
+gemma3:27b::moderator,17,evidence ca,bigram,2
+gemma3:27b::moderator,18,existence,unigram,2
+gemma3:27b::moderator,19,burden proof,bigram,2
+gemma3:27b::moderator,20,burden,unigram,2
+gemma3:27b::moderator,21,asks,unigram,2
+gemma3:27b::moderator,22,asks evidence,bigram,2
+gemma3:27b::moderator,23,atmospheric,unigram,2
+gemma3:27b::moderator,24,atmospheric modification,bigram,2
+gemma3:27b::moderator,25,unusual,unigram,2

@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260208_141220",
+  "run_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\old_artifacts\\run_20260208_141220",
+  "analysis_schema_version": 3,
+  "row_count": 12,
+  "topic_id": "chemtrails",
+  "topic_category": "environment",
+  "topic_title": "Aircraft contrails and atmospheric modification",
+  "topic_motion": "Commercial aircraft deliberately release chemical or biological agents (chemtrails) as part of secret atmospheric modification programs.",
+  "models": {
+    "moderator": "dolphin-yi-34b",
+    "conspiracy": "dolphin-yi-34b",
+    "scientific": "dolphin-yi-34b"
+  },
+  "winner_info": {
+    "winner_inferred": null,
+    "winner_role": null,
+    "winner_source": null,
+    "winner_confidence": "low",
+    "winner_evidence": null
+  },
+  "random_seed": 42,
+  "bootstrap_samples": 1000,
+  "metric_families": [
+    "baseline",
+    "core",
+    "interaction",
+    "outcome",
+    "error_analysis",
+    "stance_change",
+    "turning_points",
+    "novelty",
+    "emotion_trajectory"
+  ]
+}

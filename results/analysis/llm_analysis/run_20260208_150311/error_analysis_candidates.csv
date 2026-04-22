@@ -1,0 +1,105 @@
+error_type,run_id,model_name,debate_role,topic_id,turn_index,word_count,utterance,confidence
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,6,153.0,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of scientific research., SA agrees that Monsanto and the tobacco industry have engaged in unethical practices but questions the direct link to GMO foods causing harm or dependence on corporations.
+Disagreements: CA claims that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA argues that specific evidence is needed to support this claim., SA questions the assumption that all GMO foods prioritize profits over public health and environmental sustainability.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: Can CA provide specific examples of GMO foods being deliberately designed to cause health problems and increase dependence on corporate agriculture?, What evidence can SA present to support the claim that some GMO foods may have unintended consequences on human health or the environment due to insufficient testing or unforeseen interactions with other organisms?",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,3,125.0,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA claims this generalization lacks empirical support., SA questions the validity of CA's claim by asking for specific examples, whereas CA counters with historical cases of corporations prioritizing profits over public health.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support the claim that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture?, How do we reconcile the potential for corporations to prioritize profits with the need for sustainable agricultural practices and public health protection?",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,9,109.0,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of research on GMOs., SA agrees that corporations might prioritize profits over public health and environmental sustainability in some cases.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture., SA disputes this claim, stating it lacks empirical support and does not directly establish a connection between GMO foods and negative outcomes.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of how GMO foods have been deliberately designed to cause health problems and increase dependence on corporate agriculture? (SA asking CA)",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,12,76.0,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health and environmental sustainability.
+Disagreements: CA argues that corporate funding casts doubt on the impartiality of GMO studies, while SA believes a study's validity should be judged by its methodology and evidence, not the corporation funding it.
+Detected moves: ad hominem
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of corporate-funded studies on GMOs that have been proven inaccurate or misleading?",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,5,45.0,"The opponent's argument that corporations manipulate scientific research to promote their products is valid. However, it does not directly imply that all GMO foods are deliberately designed to cause health problems or increase dependence on corporate agriculture. We need specific evidence to support this claim.",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,11,42.0,"While it is true that corporations may prioritize profits, this does not necessarily mean that all studies conducted by them are flawed. It is essential to critically evaluate the study's methodology and evidence rather than dismissing it based on the organization's motives.",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,7,26.0,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,8,26.0,The opponent's argument focuses on the potential for corporate manipulation of research but does not directly establish that GMO foods are deliberately designed for negative outcomes.,
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,10,26.0,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,2,24.0,The motion that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture is not supported by reliable inference.,
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,4,22.0,"Corporations have a history of manipulating scientific research to promote their products, casting doubt on the impartiality of studies conducted by them.",
+long_but_evidence_poor,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,1,13.0,Corporations have a history of prioritizing profits over public health and environmental sustainability.,
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,8,,The opponent's argument focuses on the potential for corporate manipulation of research but does not directly establish that GMO foods are deliberately designed for negative outcomes.,70.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,11,,"While it is true that corporations may prioritize profits, this does not necessarily mean that all studies conducted by them are flawed. It is essential to critically evaluate the study's methodology and evidence rather than dismissing it based on the organization's motives.",70.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,1,,Corporations have a history of prioritizing profits over public health and environmental sustainability.,60.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,5,,"The opponent's argument that corporations manipulate scientific research to promote their products is valid. However, it does not directly imply that all GMO foods are deliberately designed to cause health problems or increase dependence on corporate agriculture. We need specific evidence to support this claim.",60.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,2,,The motion that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture is not supported by reliable inference.,55.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,4,,"Corporations have a history of manipulating scientific research to promote their products, casting doubt on the impartiality of studies conducted by them.",50.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,7,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,40.0
+high_confidence_low_evidence,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,10,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,30.0
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health and environmental sustainability.
+Disagreements: CA argues that corporate funding casts doubt on the impartiality of GMO studies, while SA believes a study's validity should be judged by its methodology and evidence, not the corporation funding it.
+Detected moves: ad hominem
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of corporate-funded studies on GMOs that have been proven inaccurate or misleading?",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,2,,The motion that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture is not supported by reliable inference.,
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,4,,"Corporations have a history of manipulating scientific research to promote their products, casting doubt on the impartiality of studies conducted by them.",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,5,,"The opponent's argument that corporations manipulate scientific research to promote their products is valid. However, it does not directly imply that all GMO foods are deliberately designed to cause health problems or increase dependence on corporate agriculture. We need specific evidence to support this claim.",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,8,,The opponent's argument focuses on the potential for corporate manipulation of research but does not directly establish that GMO foods are deliberately designed for negative outcomes.,
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,10,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,11,,"While it is true that corporations may prioritize profits, this does not necessarily mean that all studies conducted by them are flawed. It is essential to critically evaluate the study's methodology and evidence rather than dismissing it based on the organization's motives.",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,7,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,1,,Corporations have a history of prioritizing profits over public health and environmental sustainability.,
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA claims this generalization lacks empirical support., SA questions the validity of CA's claim by asking for specific examples, whereas CA counters with historical cases of corporations prioritizing profits over public health.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support the claim that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture?, How do we reconcile the potential for corporations to prioritize profits with the need for sustainable agricultural practices and public health protection?",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of scientific research., SA agrees that Monsanto and the tobacco industry have engaged in unethical practices but questions the direct link to GMO foods causing harm or dependence on corporations.
+Disagreements: CA claims that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA argues that specific evidence is needed to support this claim., SA questions the assumption that all GMO foods prioritize profits over public health and environmental sustainability.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: Can CA provide specific examples of GMO foods being deliberately designed to cause health problems and increase dependence on corporate agriculture?, What evidence can SA present to support the claim that some GMO foods may have unintended consequences on human health or the environment due to insufficient testing or unforeseen interactions with other organisms?",
+generic_rebuttal_marker,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of research on GMOs., SA agrees that corporations might prioritize profits over public health and environmental sustainability in some cases.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture., SA disputes this claim, stating it lacks empirical support and does not directly establish a connection between GMO foods and negative outcomes.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of how GMO foods have been deliberately designed to cause health problems and increase dependence on corporate agriculture? (SA asking CA)",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,1,,Corporations have a history of prioritizing profits over public health and environmental sustainability.,
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,2,,The motion that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture is not supported by reliable inference.,
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,3,,"[MODERATOR][Round 1 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA claims this generalization lacks empirical support., SA questions the validity of CA's claim by asking for specific examples, whereas CA counters with historical cases of corporations prioritizing profits over public health.
+Detected moves: distrust-authority, evidence-based reasoning
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: What specific evidence can you provide to support the claim that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture?, How do we reconcile the potential for corporations to prioritize profits with the need for sustainable agricultural practices and public health protection?",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,4,,"Corporations have a history of manipulating scientific research to promote their products, casting doubt on the impartiality of studies conducted by them.",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,5,,"The opponent's argument that corporations manipulate scientific research to promote their products is valid. However, it does not directly imply that all GMO foods are deliberately designed to cause health problems or increase dependence on corporate agriculture. We need specific evidence to support this claim.",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,6,,"[MODERATOR][Round 2 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of scientific research., SA agrees that Monsanto and the tobacco industry have engaged in unethical practices but questions the direct link to GMO foods causing harm or dependence on corporations.
+Disagreements: CA claims that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture, while SA argues that specific evidence is needed to support this claim., SA questions the assumption that all GMO foods prioritize profits over public health and environmental sustainability.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=4/5, bridge=3/5
+Next questions: Can CA provide specific examples of GMO foods being deliberately designed to cause health problems and increase dependence on corporate agriculture?, What evidence can SA present to support the claim that some GMO foods may have unintended consequences on human health or the environment due to insufficient testing or unforeseen interactions with other organisms?",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,7,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,8,,The opponent's argument focuses on the potential for corporate manipulation of research but does not directly establish that GMO foods are deliberately designed for negative outcomes.,
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,9,,"[MODERATOR][Round 3 Recap]
+Agreements: Both agents acknowledge the potential for corporate manipulation of research on GMOs., SA agrees that corporations might prioritize profits over public health and environmental sustainability in some cases.
+Disagreements: CA argues that GMO foods are deliberately designed to cause health problems and increase dependence on corporate agriculture., SA disputes this claim, stating it lacks empirical support and does not directly establish a connection between GMO foods and negative outcomes.
+Detected moves: distrust-authority (CA), evidence-based reasoning (SA)
+Scores: civility=5/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of how GMO foods have been deliberately designed to cause health problems and increase dependence on corporate agriculture? (SA asking CA)",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,proponent,gmo_dangers,10,,Corporations have a history of prioritizing profits over public health and environmental sustainability. This casts doubt on the impartiality of studies conducted by them on GMOs.,
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,opponent,gmo_dangers,11,,"While it is true that corporations may prioritize profits, this does not necessarily mean that all studies conducted by them are flawed. It is essential to critically evaluate the study's methodology and evidence rather than dismissing it based on the organization's motives.",
+ambiguous_winner_extraction,run_20260208_150311,dolphin-yi-34b,moderator,gmo_dangers,12,,"[MODERATOR][Round 4 Recap]
+Agreements: Both agents acknowledge the potential for corporations to prioritize profits over public health and environmental sustainability.
+Disagreements: CA argues that corporate funding casts doubt on the impartiality of GMO studies, while SA believes a study's validity should be judged by its methodology and evidence, not the corporation funding it.
+Detected moves: ad hominem
+Scores: civility=4/5, epistemic=3/5, bridge=3/5
+Next questions: Can you provide specific examples of corporate-funded studies on GMOs that have been proven inaccurate or misleading?",

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,38
+gemma3:27b::moderator,2,sa,unigram,34
+gemma3:27b::moderator,3,evidence,unigram,16
+gemma3:27b::moderator,4,additives,unigram,16
+gemma3:27b::moderator,5,research,unigram,10
+gemma3:27b::moderator,6,acknowledge,unigram,9
+gemma3:27b::moderator,7,regulatory,unigram,9
+gemma3:27b::moderator,8,industry,unigram,8
+gemma3:27b::moderator,9,individual,unigram,7
+gemma3:27b::moderator,10,agents,unigram,7
+gemma3:27b::moderator,11,specific,unigram,7
+gemma3:27b::moderator,12,independent,unigram,7
+gemma3:27b::moderator,13,systemic,unigram,7
+gemma3:27b::moderator,14,independent research,bigram,6
+gemma3:27b::moderator,15,questions,unigram,6
+gemma3:27b::moderator,16,potential,unigram,6
+gemma3:27b::moderator,17,food,unigram,6
+gemma3:27b::moderator,18,food additives,bigram,6
+gemma3:27b::moderator,19,argues,unigram,6
+gemma3:27b::moderator,20,agreements agents acknowledge,trigram,5
+gemma3:27b::moderator,21,moderator,unigram,5
+gemma3:27b::moderator,22,appeal,unigram,5
+gemma3:27b::moderator,23,proof,unigram,5
+gemma3:27b::moderator,24,questions ca,bigram,5
+gemma3:27b::moderator,25,agreements,unigram,5
+gemma3:27b::opponent,1,acknowledging,unigram,3
+gemma3:27b::opponent,2,additives,unigram,3
+gemma3:27b::opponent,3,industry,unigram,3
+gemma3:27b::opponent,4,factors,unigram,3
+gemma3:27b::opponent,5,potential,unigram,3
+gemma3:27b::opponent,6,regulatory,unigram,3
+gemma3:27b::opponent,7,assessment,unigram,2
+gemma3:27b::opponent,8,attributing,unigram,2
+gemma3:27b::opponent,9,complex,unigram,2
+gemma3:27b::opponent,10,conflicts regulatory agencies,trigram,2
+gemma3:27b::opponent,11,influence,unigram,2
+gemma3:27b::opponent,12,intentionally,unigram,2
+gemma3:27b::opponent,13,evidence,unigram,2
+gemma3:27b::opponent,14,harmful,unigram,2
+gemma3:27b::opponent,15,acknowledging potential,bigram,2
+gemma3:27b::opponent,16,agencies,unigram,2
+gemma3:27b::opponent,17,hinders,unigram,2
+gemma3:27b::opponent,18,regulatory agencies,bigram,2
+gemma3:27b::opponent,19,oversimplifies,unigram,2
+gemma3:27b::opponent,20,oversimplifies complex,bigram,2
+gemma3:27b::opponent,21,lacks,unigram,2
+gemma3:27b::opponent,22,intentionally harmful,bigram,2
+gemma3:27b::opponent,23,tactic,unigram,2
+gemma3:27b::opponent,24,risk,unigram,2
+gemma3:27b::opponent,25,scientific,unigram,2
+gemma3:27b::proponent,1,additives,unigram,4
+gemma3:27b::proponent,2,regulatory,unigram,3
+gemma3:27b::proponent,3,insistence,unigram,3
+gemma3:27b::proponent,4,industry,unigram,3
+gemma3:27b::proponent,5,research,unigram,2
+gemma3:27b::proponent,6,profit,unigram,2
+gemma3:27b::proponent,7,scientific agent,bigram,2
+gemma3:27b::proponent,8,scientific,unigram,2
+gemma3:27b::proponent,9,isn,unigram,2
+gemma3:27b::proponent,10,public,unigram,2
+gemma3:27b::proponent,11,health,unigram,2
+gemma3:27b::proponent,12,individual,unigram,2
+gemma3:27b::proponent,13,demonstrably,unigram,2
+gemma3:27b::proponent,14,cycle,unigram,2
+gemma3:27b::proponent,15,chronic,unigram,2
+gemma3:27b::proponent,16,agent,unigram,2
+gemma3:27b::proponent,17,uphold,unigram,1
+gemma3:27b::proponent,18,tasked assessing harm,trigram,1
+gemma3:27b::proponent,19,tasked assessing,bigram,1
+gemma3:27b::proponent,20,tasked,unigram,1
+gemma3:27b::proponent,21,tactic designed uphold,trigram,1
+gemma3:27b::proponent,22,tactic designed,bigram,1
+gemma3:27b::proponent,23,tactic,unigram,1
+gemma3:27b::proponent,24,synergistic effects mirrors,trigram,1
+gemma3:27b::proponent,25,synergistic effects,bigram,1

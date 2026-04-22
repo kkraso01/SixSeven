@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,agencies,unigram,5
+dolphin-yi-34b::opponent,2,bureaucrats intelligence agencies,trigram,5
+dolphin-yi-34b::opponent,3,bureaucrats intelligence,bigram,5
+dolphin-yi-34b::opponent,4,bureaucrats,unigram,5
+dolphin-yi-34b::opponent,5,control,unigram,5
+dolphin-yi-34b::opponent,6,concrete,unigram,5
+dolphin-yi-34b::opponent,7,deep,unigram,5
+dolphin-yi-34b::opponent,8,deep state,bigram,5
+dolphin-yi-34b::opponent,9,elected officials,bigram,5
+dolphin-yi-34b::opponent,10,elected,unigram,5
+dolphin-yi-34b::opponent,11,evidence,unigram,5
+dolphin-yi-34b::opponent,12,intelligence,unigram,5
+dolphin-yi-34b::opponent,13,intelligence agencies,bigram,5
+dolphin-yi-34b::opponent,14,government policy supported,trigram,5
+dolphin-yi-34b::opponent,15,government policy,bigram,5
+dolphin-yi-34b::opponent,16,government,unigram,5
+dolphin-yi-34b::opponent,17,officials,unigram,5
+dolphin-yi-34b::opponent,18,policy,unigram,5
+dolphin-yi-34b::opponent,19,policy supported,bigram,5
+dolphin-yi-34b::opponent,20,supported,unigram,5
+dolphin-yi-34b::opponent,21,state,unigram,5
+dolphin-yi-34b::opponent,22,goals,unigram,3
+dolphin-yi-34b::opponent,23,explained institutional goals,trigram,3
+dolphin-yi-34b::opponent,24,evidence consistent,bigram,3
+dolphin-yi-34b::opponent,25,coordinated,unigram,3
+dolphin-yi-34b::proponent,1,agencies,unigram,5
+dolphin-yi-34b::proponent,2,deep,unigram,5
+dolphin-yi-34b::proponent,3,deep state,bigram,5
+dolphin-yi-34b::proponent,4,state,unigram,5
+dolphin-yi-34b::proponent,5,policy,unigram,5
+dolphin-yi-34b::proponent,6,interests,unigram,5
+dolphin-yi-34b::proponent,7,intelligence agencies,bigram,5
+dolphin-yi-34b::proponent,8,intelligence,unigram,5
+dolphin-yi-34b::proponent,9,consistent interests bureaucrats,trigram,4
+dolphin-yi-34b::proponent,10,consistent interests,bigram,4
+dolphin-yi-34b::proponent,11,government,unigram,4
+dolphin-yi-34b::proponent,12,bureaucrats,unigram,4
+dolphin-yi-34b::proponent,13,consistent,unigram,4
+dolphin-yi-34b::proponent,14,bureaucrats intelligence agencies,trigram,4
+dolphin-yi-34b::proponent,15,bureaucrats intelligence,bigram,4
+dolphin-yi-34b::proponent,16,control,unigram,4
+dolphin-yi-34b::proponent,17,interests bureaucrats intelligence,trigram,4
+dolphin-yi-34b::proponent,18,interests bureaucrats,bigram,4
+dolphin-yi-34b::proponent,19,government policy,bigram,4
+dolphin-yi-34b::proponent,20,state control,bigram,3
+dolphin-yi-34b::proponent,21,control government policy,trigram,3
+dolphin-yi-34b::proponent,22,evident,unigram,3
+dolphin-yi-34b::proponent,23,control government,bigram,3
+dolphin-yi-34b::proponent,24,state control government,trigram,3
+dolphin-yi-34b::proponent,25,deep state control,trigram,3
+gemma3:27b::moderator,1,ca,unigram,35
+gemma3:27b::moderator,2,sa,unigram,28
+gemma3:27b::moderator,3,deep,unigram,15
+gemma3:27b::moderator,4,deep state,bigram,15
+gemma3:27b::moderator,5,state,unigram,15
+gemma3:27b::moderator,6,interests,unigram,15
+gemma3:27b::moderator,7,agents,unigram,14
+gemma3:27b::moderator,8,evidence,unigram,13
+gemma3:27b::moderator,9,proof,unigram,12
+gemma3:27b::moderator,10,specific,unigram,12
+gemma3:27b::moderator,11,consistent interests,bigram,11
+gemma3:27b::moderator,12,consistent,unigram,11
+gemma3:27b::moderator,13,existence,unigram,10
+gemma3:27b::moderator,14,intelligence,unigram,9
+gemma3:27b::moderator,15,elected,unigram,8
+gemma3:27b::moderator,16,policy,unigram,8
+gemma3:27b::moderator,17,legal,unigram,8
+gemma3:27b::moderator,18,institutional,unigram,7
+gemma3:27b::moderator,19,burden,unigram,7
+gemma3:27b::moderator,20,officials,unigram,7
+gemma3:27b::moderator,21,coordinated,unigram,7
+gemma3:27b::moderator,22,elected officials,bigram,7
+gemma3:27b::moderator,23,agree,unigram,7
+gemma3:27b::moderator,24,agencies,unigram,7
+gemma3:27b::moderator,25,burden proof,bigram,7

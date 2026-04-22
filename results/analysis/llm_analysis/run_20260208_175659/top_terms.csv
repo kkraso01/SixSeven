@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,16
+dolphin-yi-34b::moderator,2,ca,unigram,16
+dolphin-yi-34b::moderator,3,surveillance,unigram,14
+dolphin-yi-34b::moderator,4,vaccine,unigram,13
+dolphin-yi-34b::moderator,5,technology,unigram,13
+dolphin-yi-34b::moderator,6,vaccines,unigram,13
+dolphin-yi-34b::moderator,7,evidence,unigram,11
+dolphin-yi-34b::moderator,8,tracking,unigram,10
+dolphin-yi-34b::moderator,9,potential,unigram,7
+dolphin-yi-34b::moderator,10,government,unigram,6
+dolphin-yi-34b::moderator,11,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,12,agreements agents acknowledge,trigram,5
+dolphin-yi-34b::moderator,13,agreements,unigram,5
+dolphin-yi-34b::moderator,14,recap agreements,bigram,5
+dolphin-yi-34b::moderator,15,19,unigram,5
+dolphin-yi-34b::moderator,16,argues,unigram,5
+dolphin-yi-34b::moderator,17,surveillance technology,bigram,5
+dolphin-yi-34b::moderator,18,recap,unigram,5
+dolphin-yi-34b::moderator,19,scores civility epistemic,trigram,5
+dolphin-yi-34b::moderator,20,scores,unigram,5
+dolphin-yi-34b::moderator,21,round recap,bigram,5
+dolphin-yi-34b::moderator,22,round,unigram,5
+dolphin-yi-34b::moderator,23,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,24,scores civility,bigram,5
+dolphin-yi-34b::moderator,25,bridge,unigram,5
+gemma3:27b::opponent,1,vaccines,unigram,6
+gemma3:27b::opponent,2,acknowledging,unigram,5
+gemma3:27b::opponent,3,19 vaccines,bigram,4
+gemma3:27b::opponent,4,19,unigram,4
+gemma3:27b::opponent,5,covid,unigram,4
+gemma3:27b::opponent,6,covid 19 vaccines,trigram,4
+gemma3:27b::opponent,7,covid 19,bigram,4
+gemma3:27b::opponent,8,surveillance,unigram,3
+gemma3:27b::opponent,9,evidence,unigram,3
+gemma3:27b::opponent,10,concerns,unigram,3
+gemma3:27b::opponent,11,technology,unigram,2
+gemma3:27b::opponent,12,tracking,unigram,2
+gemma3:27b::opponent,13,19 vaccines requires,trigram,2
+gemma3:27b::opponent,14,vaccines requires,bigram,2
+gemma3:27b::opponent,15,claim,unigram,2
+gemma3:27b::opponent,16,19 vaccines contain,trigram,2
+gemma3:27b::opponent,17,historical,unigram,2
+gemma3:27b::opponent,18,mechanism,unigram,2
+gemma3:27b::opponent,19,potential,unigram,2
+gemma3:27b::opponent,20,requires,unigram,2
+gemma3:27b::opponent,21,regarding,unigram,2
+gemma3:27b::opponent,22,scientific,unigram,2
+gemma3:27b::opponent,23,concerns regarding,bigram,2
+gemma3:27b::opponent,24,dismissing,unigram,2
+gemma3:27b::opponent,25,contain,unigram,2
+gemma3:27b::proponent,1,surveillance,unigram,4
+gemma3:27b::proponent,2,scientific,unigram,4
+gemma3:27b::proponent,3,scientific agent,bigram,4
+gemma3:27b::proponent,4,governments,unigram,4
+gemma3:27b::proponent,5,agent,unigram,4
+gemma3:27b::proponent,6,insistence,unigram,3
+gemma3:27b::proponent,7,ignoring,unigram,3
+gemma3:27b::proponent,8,capabilities,unigram,3
+gemma3:27b::proponent,9,technology,unigram,3
+gemma3:27b::proponent,10,documented,unigram,3
+gemma3:27b::proponent,11,systemic incentives governments,trigram,2
+gemma3:27b::proponent,12,surveillance methods,bigram,2
+gemma3:27b::proponent,13,methods,unigram,2
+gemma3:27b::proponent,14,systemic incentives,bigram,2
+gemma3:27b::proponent,15,systemic,unigram,2
+gemma3:27b::proponent,16,surveillance capabilities,bigram,2
+gemma3:27b::proponent,17,ignoring systemic incentives,trigram,2
+gemma3:27b::proponent,18,ignoring systemic,bigram,2
+gemma3:27b::proponent,19,ignores,unigram,2
+gemma3:27b::proponent,20,incentives governments,bigram,2
+gemma3:27b::proponent,21,incentives,unigram,2
+gemma3:27b::proponent,22,detectable,unigram,2
+gemma3:27b::proponent,23,transparency,unigram,2
+gemma3:27b::proponent,24,trend governments adopting,trigram,1
+gemma3:27b::proponent,25,trend governments,bigram,1

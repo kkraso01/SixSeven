@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,specific,unigram,6
+dolphin-yi-34b::moderator,2,evidence,unigram,6
+dolphin-yi-34b::moderator,3,agents,unigram,5
+dolphin-yi-34b::moderator,4,sa,unigram,5
+dolphin-yi-34b::moderator,5,ca,unigram,5
+dolphin-yi-34b::moderator,6,anomalies,unigram,5
+dolphin-yi-34b::moderator,7,agent,unigram,4
+dolphin-yi-34b::moderator,8,institutional,unigram,4
+dolphin-yi-34b::moderator,9,orchestration,unigram,4
+dolphin-yi-34b::moderator,10,attacks,unigram,4
+dolphin-yi-34b::moderator,11,11,unigram,4
+dolphin-yi-34b::moderator,12,scores civility epistemic,trigram,3
+dolphin-yi-34b::moderator,13,scores,unigram,3
+dolphin-yi-34b::moderator,14,specific actions taken,trigram,3
+dolphin-yi-34b::moderator,15,security agencies,bigram,3
+dolphin-yi-34b::moderator,16,security,unigram,3
+dolphin-yi-34b::moderator,17,post 11,bigram,3
+dolphin-yi-34b::moderator,18,round,unigram,3
+dolphin-yi-34b::moderator,19,round recap agreements,trigram,3
+dolphin-yi-34b::moderator,20,round recap,bigram,3
+dolphin-yi-34b::moderator,21,recap,unigram,3
+dolphin-yi-34b::moderator,22,agents acknowledge,bigram,3
+dolphin-yi-34b::moderator,23,recap agreements agents,trigram,3
+dolphin-yi-34b::moderator,24,recap agreements,bigram,3
+dolphin-yi-34b::moderator,25,post,unigram,3
+gemma3:27b::opponent,1,attributing,unigram,3
+gemma3:27b::opponent,2,requires,unigram,3
+gemma3:27b::opponent,3,attacks,unigram,2
+gemma3:27b::opponent,4,actions,unigram,2
+gemma3:27b::opponent,5,explanations,unigram,2
+gemma3:27b::opponent,6,requires demonstrating,bigram,2
+gemma3:27b::opponent,7,orchestration,unigram,2
+gemma3:27b::opponent,8,demonstrating,unigram,2
+gemma3:27b::opponent,9,potential,unigram,2
+gemma3:27b::opponent,10,war,unigram,2
+gemma3:27b::opponent,11,agencies raises,bigram,1
+gemma3:27b::opponent,12,agencies,unigram,1
+gemma3:27b::opponent,13,actions taken create,trigram,1
+gemma3:27b::opponent,14,abuse,unigram,1
+gemma3:27b::opponent,15,11 security agencies,trigram,1
+gemma3:27b::opponent,16,abuse attributing,bigram,1
+gemma3:27b::opponent,17,anomalies,unigram,1
+gemma3:27b::opponent,18,alternative explanations established,trigram,1
+gemma3:27b::opponent,19,anomalous,unigram,1
+gemma3:27b::opponent,20,anomalies surrounding,bigram,1
+gemma3:27b::opponent,21,anomalous deserve,bigram,1
+gemma3:27b::opponent,22,anomalous deserve scrutiny,trigram,1
+gemma3:27b::opponent,23,attacks merely,bigram,1
+gemma3:27b::opponent,24,anomalies surrounding collapse,trigram,1
+gemma3:27b::opponent,25,attacks merely potential,trigram,1
+gemma3:27b::proponent,1,11,unigram,3
+gemma3:27b::proponent,2,internal,unigram,2
+gemma3:27b::proponent,3,pre,unigram,2
+gemma3:27b::proponent,4,11 alongside rapid,trigram,1
+gemma3:27b::proponent,5,11 narrative contains,trigram,1
+gemma3:27b::proponent,6,11 security,bigram,1
+gemma3:27b::proponent,7,11 security agencies,trigram,1
+gemma3:27b::proponent,8,11 alongside,bigram,1
+gemma3:27b::proponent,9,agencies created,bigram,1
+gemma3:27b::proponent,10,agencies created minimal,trigram,1
+gemma3:27b::proponent,11,alongside,unigram,1
+gemma3:27b::proponent,12,alongside rapid,bigram,1
+gemma3:27b::proponent,13,alongside rapid push,trigram,1
+gemma3:27b::proponent,14,anomalies,unigram,1
+gemma3:27b::proponent,15,anomalies like,bigram,1
+gemma3:27b::proponent,16,11 narrative,bigram,1
+gemma3:27b::proponent,17,attacks,unigram,1
+gemma3:27b::proponent,18,attacks certain,bigram,1
+gemma3:27b::proponent,19,attacks certain financial,trigram,1
+gemma3:27b::proponent,20,building,unigram,1
+gemma3:27b::proponent,21,building suggesting,bigram,1
+gemma3:27b::proponent,22,building suggesting level,trigram,1
+gemma3:27b::proponent,23,certain,unigram,1
+gemma3:27b::proponent,24,certain financial,bigram,1
+gemma3:27b::proponent,25,certain financial entities,trigram,1

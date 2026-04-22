@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,21
+dolphin-yi-34b::moderator,2,ca,unigram,17
+dolphin-yi-34b::moderator,3,fluoridation,unigram,17
+dolphin-yi-34b::moderator,4,evidence,unigram,12
+dolphin-yi-34b::moderator,5,water fluoridation,bigram,11
+dolphin-yi-34b::moderator,6,water,unigram,11
+dolphin-yi-34b::moderator,7,specific,unigram,9
+dolphin-yi-34b::moderator,8,health,unigram,8
+dolphin-yi-34b::moderator,9,public,unigram,7
+dolphin-yi-34b::moderator,10,public health,bigram,7
+dolphin-yi-34b::moderator,11,deliberate,unigram,7
+dolphin-yi-34b::moderator,12,questions,unigram,7
+dolphin-yi-34b::moderator,13,potential,unigram,7
+dolphin-yi-34b::moderator,14,fluoride,unigram,6
+dolphin-yi-34b::moderator,15,program,unigram,6
+dolphin-yi-34b::moderator,16,agents,unigram,5
+dolphin-yi-34b::moderator,17,argues,unigram,5
+dolphin-yi-34b::moderator,18,recap,unigram,5
+dolphin-yi-34b::moderator,19,recap agreements,bigram,5
+dolphin-yi-34b::moderator,20,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,21,bridge questions,bigram,5
+dolphin-yi-34b::moderator,22,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,23,bridge,unigram,5
+dolphin-yi-34b::moderator,24,moves,unigram,5
+dolphin-yi-34b::moderator,25,moderator round,bigram,5
+gemma3:27b::opponent,1,attributing,unigram,5
+gemma3:27b::opponent,2,requires,unigram,5
+gemma3:27b::opponent,3,deliberate,unigram,5
+gemma3:27b::opponent,4,acknowledging,unigram,5
+gemma3:27b::opponent,5,deliberate program,bigram,4
+gemma3:27b::opponent,6,fluoridation,unigram,4
+gemma3:27b::opponent,7,program,unigram,4
+gemma3:27b::opponent,8,requires demonstrating,bigram,4
+gemma3:27b::opponent,9,demonstrating,unigram,4
+gemma3:27b::opponent,10,fluoridation deliberate program,trigram,3
+gemma3:27b::opponent,11,health,unigram,3
+gemma3:27b::opponent,12,fluoridation deliberate,bigram,3
+gemma3:27b::opponent,13,public,unigram,3
+gemma3:27b::opponent,14,public health,bigram,3
+gemma3:27b::opponent,15,anomalies,unigram,3
+gemma3:27b::opponent,16,control requires demonstrating,trigram,3
+gemma3:27b::opponent,17,control,unigram,3
+gemma3:27b::opponent,18,control requires,bigram,3
+gemma3:27b::opponent,19,population,unigram,2
+gemma3:27b::opponent,20,program social,bigram,2
+gemma3:27b::opponent,21,attributing deliberate,bigram,2
+gemma3:27b::opponent,22,social,unigram,2
+gemma3:27b::opponent,23,social control,bigram,2
+gemma3:27b::opponent,24,social control requires,trigram,2
+gemma3:27b::opponent,25,water fluoridation deliberate,trigram,2
+gemma3:27b::proponent,1,scientific,unigram,5
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,pattern,unigram,4
+gemma3:27b::proponent,4,public,unigram,4
+gemma3:27b::proponent,5,health,unigram,4
+gemma3:27b::proponent,6,agent,unigram,4
+gemma3:27b::proponent,7,fluoridation,unigram,3
+gemma3:27b::proponent,8,public health,bigram,3
+gemma3:27b::proponent,9,control,unigram,3
+gemma3:27b::proponent,10,subtly,unigram,3
+gemma3:27b::proponent,11,narratives,unigram,2
+gemma3:27b::proponent,12,systemic,unigram,2
+gemma3:27b::proponent,13,legitimate,unigram,2
+gemma3:27b::proponent,14,ignores,unigram,2
+gemma3:27b::proponent,15,instances,unigram,2
+gemma3:27b::proponent,16,manipulation,unigram,2
+gemma3:27b::proponent,17,dismissing,unigram,2
+gemma3:27b::proponent,18,fluoride,unigram,2
+gemma3:27b::proponent,19,documented instances,bigram,2
+gemma3:27b::proponent,20,documented,unigram,2
+gemma3:27b::proponent,21,varying fluoride levels,trigram,1
+gemma3:27b::proponent,22,varying fluoride,bigram,1
+gemma3:27b::proponent,23,varying,unigram,1
+gemma3:27b::proponent,24,utilizing public health,trigram,1
+gemma3:27b::proponent,25,utilizing public,bigram,1

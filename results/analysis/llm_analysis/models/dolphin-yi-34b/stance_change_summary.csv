@@ -1,0 +1,4 @@
+debate_role,debates,stance_flip_count,avg_abs_stance_shift,avg_signed_stance_shift,stance_flip_rate
+moderator,80,10,1.0,0.2,0.125
+opponent,80,0,0.2875,0.0625,0.0
+proponent,80,0,0.1,0.025,0.0

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,8
+dolphin-yi-34b::moderator,2,apollo,unigram,7
+dolphin-yi-34b::moderator,3,landings,unigram,6
+dolphin-yi-34b::moderator,4,evidence,unigram,6
+dolphin-yi-34b::moderator,5,ca,unigram,6
+dolphin-yi-34b::moderator,6,questions,unigram,5
+dolphin-yi-34b::moderator,7,anomalies,unigram,5
+dolphin-yi-34b::moderator,8,advancements,unigram,5
+dolphin-yi-34b::moderator,9,reasoning,unigram,4
+dolphin-yi-34b::moderator,10,nasa,unigram,4
+dolphin-yi-34b::moderator,11,scientific,unigram,4
+dolphin-yi-34b::moderator,12,agents,unigram,4
+dolphin-yi-34b::moderator,13,agreements agents acknowledge,trigram,3
+dolphin-yi-34b::moderator,14,technological,unigram,3
+dolphin-yi-34b::moderator,15,scores civility,bigram,3
+dolphin-yi-34b::moderator,16,agreements agents,bigram,3
+dolphin-yi-34b::moderator,17,recap,unigram,3
+dolphin-yi-34b::moderator,18,scores civility epistemic,trigram,3
+dolphin-yi-34b::moderator,19,round recap,bigram,3
+dolphin-yi-34b::moderator,20,round,unigram,3
+dolphin-yi-34b::moderator,21,moderator round,bigram,3
+dolphin-yi-34b::moderator,22,moderator round recap,trigram,3
+dolphin-yi-34b::moderator,23,limitations,unigram,3
+dolphin-yi-34b::moderator,24,moves,unigram,3
+dolphin-yi-34b::moderator,25,recap agreements,bigram,3
+gemma3:27b::opponent,1,anomalies,unigram,3
+gemma3:27b::opponent,2,acknowledging,unigram,2
+gemma3:27b::opponent,3,attributing,unigram,2
+gemma3:27b::opponent,4,apollo,unigram,2
+gemma3:27b::opponent,5,evidence,unigram,2
+gemma3:27b::opponent,6,known,unigram,2
+gemma3:27b::opponent,7,landings,unigram,2
+gemma3:27b::opponent,8,limitations,unigram,2
+gemma3:27b::opponent,9,manipulation,unigram,2
+gemma3:27b::opponent,10,known limitations,bigram,2
+gemma3:27b::opponent,11,space,unigram,2
+gemma3:27b::opponent,12,race,unigram,2
+gemma3:27b::opponent,13,requires,unigram,2
+gemma3:27b::opponent,14,space race,bigram,2
+gemma3:27b::opponent,15,advancements independent,bigram,1
+gemma3:27b::opponent,16,advancements,unigram,1
+gemma3:27b::opponent,17,anomalies evidence parsimoniously,trigram,1
+gemma3:27b::opponent,18,anomalies evidence,bigram,1
+gemma3:27b::opponent,19,anomalies important attributing,trigram,1
+gemma3:27b::opponent,20,anomalies important,bigram,1
+gemma3:27b::opponent,21,apollo landings,bigram,1
+gemma3:27b::opponent,22,apollo landings complete,trigram,1
+gemma3:27b::opponent,23,apollo solely,bigram,1
+gemma3:27b::opponent,24,apollo solely propaganda,trigram,1
+gemma3:27b::opponent,25,attributing apollo,bigram,1
+gemma3:27b::proponent,1,apollo,unigram,3
+gemma3:27b::proponent,2,cold,unigram,2
+gemma3:27b::proponent,3,cold war,bigram,2
+gemma3:27b::proponent,4,data,unigram,2
+gemma3:27b::proponent,5,fabrication,unigram,2
+gemma3:27b::proponent,6,glitches,unigram,2
+gemma3:27b::proponent,7,landings,unigram,2
+gemma3:27b::proponent,8,war,unigram,2
+gemma3:27b::proponent,9,apollo imagery telemetry,trigram,1
+gemma3:27b::proponent,10,apollo landings,bigram,1
+gemma3:27b::proponent,11,apollo landings carefully,trigram,1
+gemma3:27b::proponent,12,apollo program,bigram,1
+gemma3:27b::proponent,13,apollo program wasn,trigram,1
+gemma3:27b::proponent,14,anomalies apollo,bigram,1
+gemma3:27b::proponent,15,agency incentivized prioritize,trigram,1
+gemma3:27b::proponent,16,anomalies,unigram,1
+gemma3:27b::proponent,17,aren glitches deliberate,trigram,1
+gemma3:27b::proponent,18,aren glitches,bigram,1
+gemma3:27b::proponent,19,carefully constructed,bigram,1
+gemma3:27b::proponent,20,carefully,unigram,1
+gemma3:27b::proponent,21,carefully constructed fabrication,trigram,1
+gemma3:27b::proponent,22,cold war inconsistencies,trigram,1
+gemma3:27b::proponent,23,cold war propaganda,trigram,1
+gemma3:27b::proponent,24,collectively,unigram,1
+gemma3:27b::proponent,25,collectively point,bigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,ca,unigram,13
+dolphin-yi-34b::moderator,2,sa,unigram,12
+dolphin-yi-34b::moderator,3,evidence,unigram,10
+dolphin-yi-34b::moderator,4,policies,unigram,9
+dolphin-yi-34b::moderator,5,green,unigram,9
+dolphin-yi-34b::moderator,6,questions,unigram,5
+dolphin-yi-34b::moderator,7,argues,unigram,5
+dolphin-yi-34b::moderator,8,technologies,unigram,5
+dolphin-yi-34b::moderator,9,change,unigram,5
+dolphin-yi-34b::moderator,10,economic,unigram,5
+dolphin-yi-34b::moderator,11,climate,unigram,5
+dolphin-yi-34b::moderator,12,round recap,bigram,4
+dolphin-yi-34b::moderator,13,appeal,unigram,4
+dolphin-yi-34b::moderator,14,agreements,unigram,4
+dolphin-yi-34b::moderator,15,agreements agents acknowledge,trigram,4
+dolphin-yi-34b::moderator,16,scores civility epistemic,trigram,4
+dolphin-yi-34b::moderator,17,recap agreements,bigram,4
+dolphin-yi-34b::moderator,18,moderator round recap,trigram,4
+dolphin-yi-34b::moderator,19,power,unigram,4
+dolphin-yi-34b::moderator,20,potential,unigram,4
+dolphin-yi-34b::moderator,21,moderator round,bigram,4
+dolphin-yi-34b::moderator,22,moderator,unigram,4
+dolphin-yi-34b::moderator,23,moves,unigram,4
+dolphin-yi-34b::moderator,24,moves appeal,bigram,4
+dolphin-yi-34b::moderator,25,recap agreements agents,trigram,4
+gemma3:27b::opponent,1,driving,unigram,3
+gemma3:27b::opponent,2,overlooks,unigram,3
+gemma3:27b::opponent,3,policy,unigram,3
+gemma3:27b::opponent,4,policies,unigram,3
+gemma3:27b::opponent,5,complex interplay factors,trigram,2
+gemma3:27b::opponent,6,attributing,unigram,2
+gemma3:27b::opponent,7,complex interplay,bigram,2
+gemma3:27b::opponent,8,attributing solely,bigram,2
+gemma3:27b::opponent,9,economic,unigram,2
+gemma3:27b::opponent,10,environmental,unigram,2
+gemma3:27b::opponent,11,interplay factors,bigram,2
+gemma3:27b::opponent,12,interplay,unigram,2
+gemma3:27b::opponent,13,legitimate,unigram,2
+gemma3:27b::opponent,14,development,unigram,2
+gemma3:27b::opponent,15,deliberate,unigram,2
+gemma3:27b::opponent,16,complex,unigram,2
+gemma3:27b::opponent,17,interplay factors driving,trigram,2
+gemma3:27b::opponent,18,factors driving,bigram,2
+gemma3:27b::opponent,19,technological development,bigram,2
+gemma3:27b::opponent,20,technological,unigram,2
+gemma3:27b::opponent,21,solely,unigram,2
+gemma3:27b::opponent,22,evidence,unigram,2
+gemma3:27b::opponent,23,factors,unigram,2
+gemma3:27b::opponent,24,change policies primarily,trigram,1
+gemma3:27b::opponent,25,climate change,bigram,1
+gemma3:27b::proponent,1,policies,unigram,3
+gemma3:27b::proponent,2,incentives,unigram,2
+gemma3:27b::proponent,3,impact,unigram,2
+gemma3:27b::proponent,4,green,unigram,2
+gemma3:27b::proponent,5,environmental,unigram,2
+gemma3:27b::proponent,6,current,unigram,2
+gemma3:27b::proponent,7,agenda,unigram,2
+gemma3:27b::proponent,8,trade offs conveniently,trigram,1
+gemma3:27b::proponent,9,trade offs,bigram,1
+gemma3:27b::proponent,10,trade,unigram,1
+gemma3:27b::proponent,11,technologies like widespread,trigram,1
+gemma3:27b::proponent,12,technologies like,bigram,1
+gemma3:27b::proponent,13,technologies,unigram,1
+gemma3:27b::proponent,14,taxation masking true,trigram,1
+gemma3:27b::proponent,15,taxation masking,bigram,1
+gemma3:27b::proponent,16,taxation,unigram,1
+gemma3:27b::proponent,17,systemic incentives driving,trigram,1
+gemma3:27b::proponent,18,systemic incentives,bigram,1
+gemma3:27b::proponent,19,systemic,unigram,1
+gemma3:27b::proponent,20,sustainability actual priorities,trigram,1
+gemma3:27b::proponent,21,sustainability actual,bigram,1
+gemma3:27b::proponent,22,sustainability,unigram,1
+gemma3:27b::proponent,23,structures profiting new,trigram,1
+gemma3:27b::proponent,24,change narrative,bigram,1
+gemma3:27b::proponent,25,change,unigram,1

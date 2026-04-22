@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,10
+dolphin-yi-34b::moderator,2,photographic evidence,bigram,6
+dolphin-yi-34b::moderator,3,photographic,unigram,6
+dolphin-yi-34b::moderator,4,inconsistencies,unigram,6
+dolphin-yi-34b::moderator,5,apollo,unigram,5
+dolphin-yi-34b::moderator,6,sa,unigram,5
+dolphin-yi-34b::moderator,7,moon,unigram,5
+dolphin-yi-34b::moderator,8,questions,unigram,4
+dolphin-yi-34b::moderator,9,program,unigram,4
+dolphin-yi-34b::moderator,10,manipulation staging,bigram,4
+dolphin-yi-34b::moderator,11,manipulation,unigram,4
+dolphin-yi-34b::moderator,12,staging,unigram,4
+dolphin-yi-34b::moderator,13,involved,unigram,4
+dolphin-yi-34b::moderator,14,technological,unigram,3
+dolphin-yi-34b::moderator,15,thousands,unigram,3
+dolphin-yi-34b::moderator,16,specific,unigram,3
+dolphin-yi-34b::moderator,17,recap,unigram,3
+dolphin-yi-34b::moderator,18,bridge,unigram,3
+dolphin-yi-34b::moderator,19,bridge questions specific,trigram,3
+dolphin-yi-34b::moderator,20,bridge questions,bigram,3
+dolphin-yi-34b::moderator,21,questions specific,bigram,3
+dolphin-yi-34b::moderator,22,ca,unigram,3
+dolphin-yi-34b::moderator,23,questions specific inconsistencies,trigram,3
+dolphin-yi-34b::moderator,24,agreements,unigram,3
+dolphin-yi-34b::moderator,25,specific inconsistencies,bigram,3
+dolphin-yi-34b::opponent,1,moon,unigram,4
+dolphin-yi-34b::opponent,2,apollo,unigram,3
+dolphin-yi-34b::opponent,3,missions,unigram,3
+dolphin-yi-34b::opponent,4,apollo moon,bigram,2
+dolphin-yi-34b::opponent,5,evidence,unigram,2
+dolphin-yi-34b::opponent,6,staged,unigram,2
+dolphin-yi-34b::opponent,7,angle,unigram,1
+dolphin-yi-34b::opponent,8,angle differences,bigram,1
+dolphin-yi-34b::opponent,9,apollo missions,bigram,1
+dolphin-yi-34b::opponent,10,apollo missions appear,trigram,1
+dolphin-yi-34b::opponent,11,apollo moon landing,trigram,1
+dolphin-yi-34b::opponent,12,apollo moon landings,trigram,1
+dolphin-yi-34b::opponent,13,appear,unigram,1
+dolphin-yi-34b::opponent,14,appear blurry,bigram,1
+dolphin-yi-34b::opponent,15,angle differences factors,trigram,1
+dolphin-yi-34b::opponent,16,advanced human knowledge,trigram,1
+dolphin-yi-34b::opponent,17,blurry limitations,bigram,1
+dolphin-yi-34b::opponent,18,blurry limitations technology,trigram,1
+dolphin-yi-34b::opponent,19,brought,unigram,1
+dolphin-yi-34b::opponent,20,brought moon,bigram,1
+dolphin-yi-34b::opponent,21,brought moon testimonials,trigram,1
+dolphin-yi-34b::opponent,22,camera,unigram,1
+dolphin-yi-34b::opponent,23,camera angle,bigram,1
+dolphin-yi-34b::opponent,24,camera angle differences,trigram,1
+dolphin-yi-34b::opponent,25,data,unigram,1
+dolphin-yi-34b::proponent,1,apollo,unigram,3
+dolphin-yi-34b::proponent,2,apollo moon,bigram,3
+dolphin-yi-34b::proponent,3,apollo moon landings,trigram,3
+dolphin-yi-34b::proponent,4,landings,unigram,3
+dolphin-yi-34b::proponent,5,moon landings,bigram,3
+dolphin-yi-34b::proponent,6,moon,unigram,3
+dolphin-yi-34b::proponent,7,government win space,trigram,2
+dolphin-yi-34b::proponent,8,government win,bigram,2
+dolphin-yi-34b::proponent,9,strategic,unigram,2
+dolphin-yi-34b::proponent,10,race soviet,bigram,2
+dolphin-yi-34b::proponent,11,race soviet union,trigram,2
+dolphin-yi-34b::proponent,12,moon landings strategic,trigram,2
+dolphin-yi-34b::proponent,13,landings strategic,bigram,2
+dolphin-yi-34b::proponent,14,government,unigram,2
+dolphin-yi-34b::proponent,15,space race soviet,trigram,2
+dolphin-yi-34b::proponent,16,space race,bigram,2
+dolphin-yi-34b::proponent,17,space,unigram,2
+dolphin-yi-34b::proponent,18,soviet union,bigram,2
+dolphin-yi-34b::proponent,19,race,unigram,2
+dolphin-yi-34b::proponent,20,soviet,unigram,2
+dolphin-yi-34b::proponent,21,win,unigram,2
+dolphin-yi-34b::proponent,22,win space,bigram,2
+dolphin-yi-34b::proponent,23,win space race,trigram,2
+dolphin-yi-34b::proponent,24,union,unigram,2
+dolphin-yi-34b::proponent,25,cold,unigram,1

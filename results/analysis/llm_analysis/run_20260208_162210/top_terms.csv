@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,ai,unigram,5
+dolphin-yi-34b::opponent,2,control,unigram,5
+dolphin-yi-34b::opponent,3,global,unigram,5
+dolphin-yi-34b::opponent,4,total population,bigram,5
+dolphin-yi-34b::opponent,5,total,unigram,5
+dolphin-yi-34b::opponent,6,surveillance systems,bigram,5
+dolphin-yi-34b::opponent,7,systems,unigram,5
+dolphin-yi-34b::opponent,8,population,unigram,5
+dolphin-yi-34b::opponent,9,surveillance,unigram,5
+dolphin-yi-34b::opponent,10,factors hidden agenda,trigram,4
+dolphin-yi-34b::opponent,11,deployment ai,bigram,4
+dolphin-yi-34b::opponent,12,agenda total,bigram,4
+dolphin-yi-34b::opponent,13,ai surveillance systems,trigram,4
+dolphin-yi-34b::opponent,14,ai surveillance,bigram,4
+dolphin-yi-34b::opponent,15,deployment,unigram,4
+dolphin-yi-34b::opponent,16,agenda,unigram,4
+dolphin-yi-34b::opponent,17,hidden agenda,bigram,4
+dolphin-yi-34b::opponent,18,hidden,unigram,4
+dolphin-yi-34b::opponent,19,global deployment ai,trigram,4
+dolphin-yi-34b::opponent,20,factors hidden,bigram,4
+dolphin-yi-34b::opponent,21,total population control,trigram,4
+dolphin-yi-34b::opponent,22,systems driven,bigram,4
+dolphin-yi-34b::opponent,23,systems driven various,trigram,4
+dolphin-yi-34b::opponent,24,surveillance systems driven,trigram,4
+dolphin-yi-34b::opponent,25,hidden agenda total,trigram,4
+dolphin-yi-34b::proponent,1,ai,unigram,5
+dolphin-yi-34b::proponent,2,control,unigram,5
+dolphin-yi-34b::proponent,3,systems,unigram,5
+dolphin-yi-34b::proponent,4,surveillance systems,bigram,5
+dolphin-yi-34b::proponent,5,surveillance,unigram,5
+dolphin-yi-34b::proponent,6,plan,unigram,4
+dolphin-yi-34b::proponent,7,ai surveillance,bigram,4
+dolphin-yi-34b::proponent,8,ai surveillance systems,trigram,4
+dolphin-yi-34b::proponent,9,continuous integration ai,trigram,3
+dolphin-yi-34b::proponent,10,concealed,unigram,3
+dolphin-yi-34b::proponent,11,plan pervasive,bigram,3
+dolphin-yi-34b::proponent,12,pervasive,unigram,3
+dolphin-yi-34b::proponent,13,integration,unigram,3
+dolphin-yi-34b::proponent,14,continuous integration,bigram,3
+dolphin-yi-34b::proponent,15,concealed plan,bigram,3
+dolphin-yi-34b::proponent,16,concealed plan pervasive,trigram,3
+dolphin-yi-34b::proponent,17,pervasive control,bigram,3
+dolphin-yi-34b::proponent,18,integration ai surveillance,trigram,3
+dolphin-yi-34b::proponent,19,systems worldwide,bigram,3
+dolphin-yi-34b::proponent,20,surveillance systems worldwide,trigram,3
+dolphin-yi-34b::proponent,21,plan pervasive control,trigram,3
+dolphin-yi-34b::proponent,22,indicates,unigram,3
+dolphin-yi-34b::proponent,23,integration ai,bigram,3
+dolphin-yi-34b::proponent,24,continuous,unigram,3
+dolphin-yi-34b::proponent,25,worldwide,unigram,3
+gemma3:27b::moderator,1,ca,unigram,26
+gemma3:27b::moderator,2,sa,unigram,22
+gemma3:27b::moderator,3,evidence,unigram,16
+gemma3:27b::moderator,4,control,unigram,11
+gemma3:27b::moderator,5,coordinated,unigram,11
+gemma3:27b::moderator,6,systems,unigram,10
+gemma3:27b::moderator,7,plan,unigram,9
+gemma3:27b::moderator,8,agents,unigram,9
+gemma3:27b::moderator,9,ai,unigram,8
+gemma3:27b::moderator,10,surveillance,unigram,8
+gemma3:27b::moderator,11,proof,unigram,7
+gemma3:27b::moderator,12,surveillance systems,bigram,7
+gemma3:27b::moderator,13,deployments,unigram,7
+gemma3:27b::moderator,14,agenda,unigram,7
+gemma3:27b::moderator,15,ai surveillance,bigram,7
+gemma3:27b::moderator,16,potential,unigram,6
+gemma3:27b::moderator,17,coordinated plan,bigram,6
+gemma3:27b::moderator,18,acknowledge,unigram,6
+gemma3:27b::moderator,19,explanations,unigram,6
+gemma3:27b::moderator,20,market,unigram,6
+gemma3:27b::moderator,21,ai surveillance systems,trigram,6
+gemma3:27b::moderator,22,security,unigram,6
+gemma3:27b::moderator,23,alternative,unigram,6
+gemma3:27b::moderator,24,control sa,bigram,6
+gemma3:27b::moderator,25,scores civility,bigram,5

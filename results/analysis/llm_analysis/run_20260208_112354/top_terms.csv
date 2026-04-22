@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+gemma3:27b::moderator,1,ca,unigram,33
+gemma3:27b::moderator,2,sa,unigram,31
+gemma3:27b::moderator,3,evidence,unigram,13
+gemma3:27b::moderator,4,manipulation,unigram,12
+gemma3:27b::moderator,5,algorithms,unigram,11
+gemma3:27b::moderator,6,intent,unigram,11
+gemma3:27b::moderator,7,proof,unigram,10
+gemma3:27b::moderator,8,acknowledge,unigram,9
+gemma3:27b::moderator,9,questions,unigram,7
+gemma3:27b::moderator,10,agree,unigram,6
+gemma3:27b::moderator,11,agents,unigram,6
+gemma3:27b::moderator,12,systemic,unigram,6
+gemma3:27b::moderator,13,causal,unigram,6
+gemma3:27b::moderator,14,data,unigram,6
+gemma3:27b::moderator,15,emphasizes,unigram,6
+gemma3:27b::moderator,16,algorithmic,unigram,6
+gemma3:27b::moderator,17,deliberate,unigram,6
+gemma3:27b::moderator,18,round recap,bigram,5
+gemma3:27b::moderator,19,agreements agents,bigram,5
+gemma3:27b::moderator,20,round,unigram,5
+gemma3:27b::moderator,21,power,unigram,5
+gemma3:27b::moderator,22,recap,unigram,5
+gemma3:27b::moderator,23,recap agreements,bigram,5
+gemma3:27b::moderator,24,recap agreements agents,trigram,5
+gemma3:27b::moderator,25,moderator round,bigram,5
+gemma3:27b::opponent,1,link,unigram,6
+gemma3:27b::opponent,2,algorithmic,unigram,5
+gemma3:27b::opponent,3,evidence,unigram,4
+gemma3:27b::opponent,4,causal link,bigram,4
+gemma3:27b::opponent,5,causal,unigram,4
+gemma3:27b::opponent,6,link algorithmic,bigram,4
+gemma3:27b::opponent,7,causal link algorithmic,trigram,4
+gemma3:27b::opponent,8,design,unigram,4
+gemma3:27b::opponent,9,algorithmic design,bigram,4
+gemma3:27b::opponent,10,link algorithmic design,trigram,3
+gemma3:27b::opponent,11,presented,unigram,3
+gemma3:27b::opponent,12,requires,unigram,3
+gemma3:27b::opponent,13,predictable,unigram,3
+gemma3:27b::opponent,14,user,unigram,3
+gemma3:27b::opponent,15,requires demonstrating,bigram,2
+gemma3:27b::opponent,16,risks,unigram,2
+gemma3:27b::opponent,17,observed,unigram,2
+gemma3:27b::opponent,18,psychology,unigram,2
+gemma3:27b::opponent,19,presented evidence,bigram,2
+gemma3:27b::opponent,20,predictable shifts user,trigram,2
+gemma3:27b::opponent,21,predictable shifts,bigram,2
+gemma3:27b::opponent,22,shifts,unigram,2
+gemma3:27b::opponent,23,shifts user,bigram,2
+gemma3:27b::opponent,24,manipulation,unigram,2
+gemma3:27b::opponent,25,harms,unigram,2
+gemma3:27b::proponent,1,scientific,unigram,3
+gemma3:27b::proponent,2,scientific agent,bigram,3
+gemma3:27b::proponent,3,manipulative,unigram,3
+gemma3:27b::proponent,4,proof,unigram,3
+gemma3:27b::proponent,5,intent,unigram,3
+gemma3:27b::proponent,6,algorithms,unigram,3
+gemma3:27b::proponent,7,agent,unigram,3
+gemma3:27b::proponent,8,proving,unigram,2
+gemma3:27b::proponent,9,manipulative intent,bigram,2
+gemma3:27b::proponent,10,maintain,unigram,2
+gemma3:27b::proponent,11,maintain control,bigram,2
+gemma3:27b::proponent,12,insistence,unigram,2
+gemma3:27b::proponent,13,insistence proving,bigram,2
+gemma3:27b::proponent,14,institutions,unigram,2
+gemma3:27b::proponent,15,patterns,unigram,2
+gemma3:27b::proponent,16,scientific agent continued,trigram,2
+gemma3:27b::proponent,17,control,unigram,2
+gemma3:27b::proponent,18,employed,unigram,2
+gemma3:27b::proponent,19,continued,unigram,2
+gemma3:27b::proponent,20,accountability,unigram,2
+gemma3:27b::proponent,21,accountability maintain control,trigram,2
+gemma3:27b::proponent,22,accountability maintain,bigram,2
+gemma3:27b::proponent,23,agent continued,bigram,2
+gemma3:27b::proponent,24,wrongdoing,unigram,2
+gemma3:27b::proponent,25,wielding power,bigram,1

@@ -5,6 +5,10 @@ from configparser import ConfigParser
 from dataclasses import dataclass, field
 from pathlib import Path
 
+<<<<<<< HEAD
+=======
+from debate.analysis.constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
+>>>>>>> dev
 from debate.analysis.lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
@@ -38,7 +42,11 @@ class DebateConfig:
     analysis_similarity_method: str = "tfidf"
 
     # Advanced Analysis (Research Mode)
+<<<<<<< HEAD
     adv_analysis_emotion_model: str = "bhadresh-savani/bert-base-uncased-emotion"
+=======
+    adv_analysis_emotion_model: str = DEFAULT_TRANSFORMER_EMOTION_MODEL
+>>>>>>> dev
     adv_analysis_overwrite: bool = True
     adv_analysis_max_runs: int = 10
     uncertainty_lexicon: list[str] = field(default_factory=lambda: sorted(list(UNCERTAINTY_WORDS)))

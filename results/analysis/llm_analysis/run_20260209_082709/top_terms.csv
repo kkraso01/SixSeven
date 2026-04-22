@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,evidence,unigram,17
+dolphin-yi-34b::moderator,2,conspiracy,unigram,11
+dolphin-yi-34b::moderator,3,ca,unigram,10
+dolphin-yi-34b::moderator,4,sa,unigram,10
+dolphin-yi-34b::moderator,5,agents,unigram,8
+dolphin-yi-34b::moderator,6,specific,unigram,8
+dolphin-yi-34b::moderator,7,questions,unigram,6
+dolphin-yi-34b::moderator,8,alternative,unigram,6
+dolphin-yi-34b::moderator,9,investigation,unigram,6
+dolphin-yi-34b::moderator,10,proof,unigram,6
+dolphin-yi-34b::moderator,11,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,12,recap agreements,bigram,5
+dolphin-yi-34b::moderator,13,scores civility,bigram,5
+dolphin-yi-34b::moderator,14,round recap,bigram,5
+dolphin-yi-34b::moderator,15,scores,unigram,5
+dolphin-yi-34b::moderator,16,round,unigram,5
+dolphin-yi-34b::moderator,17,moderator round recap,trigram,5
+dolphin-yi-34b::moderator,18,alternative explanations,bigram,5
+dolphin-yi-34b::moderator,19,moves appeal,bigram,5
+dolphin-yi-34b::moderator,20,moves,unigram,5
+dolphin-yi-34b::moderator,21,agreements,unigram,5
+dolphin-yi-34b::moderator,22,recap,unigram,5
+dolphin-yi-34b::moderator,23,bullet,unigram,5
+dolphin-yi-34b::moderator,24,bridge questions,bigram,5
+dolphin-yi-34b::moderator,25,moderator,unigram,5
+dolphin-yi-34b::proponent,1,assassination,unigram,3
+dolphin-yi-34b::proponent,2,commission,unigram,3
+dolphin-yi-34b::proponent,3,elements,unigram,3
+dolphin-yi-34b::proponent,4,government,unigram,3
+dolphin-yi-34b::proponent,5,warren commission,bigram,3
+dolphin-yi-34b::proponent,6,warren,unigram,3
+dolphin-yi-34b::proponent,7,commission investigation jfk,trigram,2
+dolphin-yi-34b::proponent,8,conclusion,unigram,2
+dolphin-yi-34b::proponent,9,conclusion exclusion contradictory,trigram,2
+dolphin-yi-34b::proponent,10,elements government,bigram,2
+dolphin-yi-34b::proponent,11,exclusion,unigram,2
+dolphin-yi-34b::proponent,12,evidence,unigram,2
+dolphin-yi-34b::proponent,13,contradictory evidence,bigram,2
+dolphin-yi-34b::proponent,14,exclusion contradictory evidence,trigram,2
+dolphin-yi-34b::proponent,15,commission investigation,bigram,2
+dolphin-yi-34b::proponent,16,assassination marked predetermined,trigram,2
+dolphin-yi-34b::proponent,17,exclusion contradictory,bigram,2
+dolphin-yi-34b::proponent,18,involving,unigram,2
+dolphin-yi-34b::proponent,19,investigation jfk assassination,trigram,2
+dolphin-yi-34b::proponent,20,investigation jfk,bigram,2
+dolphin-yi-34b::proponent,21,jfk assassination,bigram,2
+dolphin-yi-34b::proponent,22,investigation,unigram,2
+dolphin-yi-34b::proponent,23,involving elements government,trigram,2
+dolphin-yi-34b::proponent,24,involving elements,bigram,2
+dolphin-yi-34b::proponent,25,jfk assassination marked,trigram,2
+gemma3:27b::opponent,1,acknowledging,unigram,5
+gemma3:27b::opponent,2,intentional,unigram,3
+gemma3:27b::opponent,3,alternative explanations,bigram,3
+gemma3:27b::opponent,4,government,unigram,3
+gemma3:27b::opponent,5,explanations,unigram,3
+gemma3:27b::opponent,6,evidence,unigram,3
+gemma3:27b::opponent,7,attributing,unigram,3
+gemma3:27b::opponent,8,alternative,unigram,3
+gemma3:27b::opponent,9,demonstrating,unigram,3
+gemma3:27b::opponent,10,relies,unigram,2
+gemma3:27b::opponent,11,anomalies,unigram,2
+gemma3:27b::opponent,12,shortcomings,unigram,2
+gemma3:27b::opponent,13,requires,unigram,2
+gemma3:27b::opponent,14,requires demonstrating,bigram,2
+gemma3:27b::opponent,15,solely,unigram,2
+gemma3:27b::opponent,16,remains,unigram,2
+gemma3:27b::opponent,17,government conspiracy,bigram,2
+gemma3:27b::opponent,18,intentional manipulation,bigram,2
+gemma3:27b::opponent,19,manipulation,unigram,2
+gemma3:27b::opponent,20,lacks,unigram,2
+gemma3:27b::opponent,21,predetermined conclusion,bigram,2
+gemma3:27b::opponent,22,predetermined,unigram,2
+gemma3:27b::opponent,23,proof,unigram,2
+gemma3:27b::opponent,24,demonstrating intentional,bigram,2
+gemma3:27b::opponent,25,claim,unigram,2

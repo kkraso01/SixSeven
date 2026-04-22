@@ -1,0 +1,7 @@
+run_id,turn_index,confidence_delta_within_role,model_name,debate_role,abs_delta,is_turning_point
+run_20260208_102927,4,-6.0,gemma3:27b,proponent,6.0,1
+run_20260208_102927,5,2.0,gemma3:27b,opponent,2.0,0
+run_20260208_102927,7,-3.0,gemma3:27b,proponent,3.0,0
+run_20260208_102927,8,2.0,gemma3:27b,opponent,2.0,0
+run_20260208_102927,10,-3.0,gemma3:27b,proponent,3.0,0
+run_20260208_102927,11,2.0,gemma3:27b,opponent,2.0,0

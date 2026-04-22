@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,atmospheric,unigram,6
+dolphin-yi-34b::opponent,2,atmospheric modification,bigram,4
+dolphin-yi-34b::opponent,3,modification,unigram,4
+dolphin-yi-34b::opponent,4,secret,unigram,4
+dolphin-yi-34b::opponent,5,programs,unigram,3
+dolphin-yi-34b::opponent,6,motion,unigram,3
+dolphin-yi-34b::opponent,7,inference,unigram,3
+dolphin-yi-34b::opponent,8,reliable,unigram,3
+dolphin-yi-34b::opponent,9,secret atmospheric,bigram,3
+dolphin-yi-34b::opponent,10,secret atmospheric modification,trigram,3
+dolphin-yi-34b::opponent,11,reliable inference,bigram,3
+dolphin-yi-34b::opponent,12,atmospheric modification programs,trigram,2
+dolphin-yi-34b::opponent,13,aircraft deliberately,bigram,2
+dolphin-yi-34b::opponent,14,commercial aircraft,bigram,2
+dolphin-yi-34b::opponent,15,agents,unigram,2
+dolphin-yi-34b::opponent,16,agents secret,bigram,2
+dolphin-yi-34b::opponent,17,commercial aircraft deliberately,trigram,2
+dolphin-yi-34b::opponent,18,commercial,unigram,2
+dolphin-yi-34b::opponent,19,deliberately release,bigram,2
+dolphin-yi-34b::opponent,20,deliberately,unigram,2
+dolphin-yi-34b::opponent,21,evidence,unigram,2
+dolphin-yi-34b::opponent,22,deliberately release chemical,trigram,2
+dolphin-yi-34b::opponent,23,release,unigram,2
+dolphin-yi-34b::opponent,24,release chemical,bigram,2
+dolphin-yi-34b::opponent,25,modification programs supported,trigram,2
+gemma3:27b::moderator,1,ca,unigram,37
+gemma3:27b::moderator,2,sa,unigram,30
+gemma3:27b::moderator,3,evidence,unigram,18
+gemma3:27b::moderator,4,agents,unigram,11
+gemma3:27b::moderator,5,research,unigram,11
+gemma3:27b::moderator,6,proof,unigram,10
+gemma3:27b::moderator,7,natural,unigram,10
+gemma3:27b::moderator,8,atmospheric,unigram,9
+gemma3:27b::moderator,9,acknowledge,unigram,8
+gemma3:27b::moderator,10,explanations,unigram,8
+gemma3:27b::moderator,11,phenomena,unigram,7
+gemma3:27b::moderator,12,cover,unigram,6
+gemma3:27b::moderator,13,anomalies,unigram,6
+gemma3:27b::moderator,14,burden proof,bigram,6
+gemma3:27b::moderator,15,burden,unigram,6
+gemma3:27b::moderator,16,questions,unigram,6
+gemma3:27b::moderator,17,recap agreements,bigram,5
+gemma3:27b::moderator,18,proof shift,bigram,5
+gemma3:27b::moderator,19,agreements agents acknowledge,trigram,5
+gemma3:27b::moderator,20,agreements,unigram,5
+gemma3:27b::moderator,21,recap agreements agents,trigram,5
+gemma3:27b::moderator,22,recap,unigram,5
+gemma3:27b::moderator,23,independent,unigram,5
+gemma3:27b::moderator,24,moderator,unigram,5
+gemma3:27b::moderator,25,program,unigram,5
+gemma3:27b::proponent,1,atmospheric,unigram,5
+gemma3:27b::proponent,2,deliberate,unigram,4
+gemma3:27b::proponent,3,phenomena,unigram,3
+gemma3:27b::proponent,4,strongly,unigram,3
+gemma3:27b::proponent,5,consistent,unigram,3
+gemma3:27b::proponent,6,documented,unigram,3
+gemma3:27b::proponent,7,official,unigram,3
+gemma3:27b::proponent,8,aerial,unigram,3
+gemma3:27b::proponent,9,suggest deliberate,bigram,2
+gemma3:27b::proponent,10,research,unigram,2
+gemma3:27b::proponent,11,program,unigram,2
+gemma3:27b::proponent,12,unusual,unigram,2
+gemma3:27b::proponent,13,strongly suggest,bigram,2
+gemma3:27b::proponent,14,strongly suggest deliberate,trigram,2
+gemma3:27b::proponent,15,suggest,unigram,2
+gemma3:27b::proponent,16,atmospheric modification,bigram,2
+gemma3:27b::proponent,17,modification,unigram,2
+gemma3:27b::proponent,18,operating,unigram,2
+gemma3:27b::proponent,19,persistent,unigram,2
+gemma3:27b::proponent,20,pattern,unigram,2
+gemma3:27b::proponent,21,programs,unigram,2
+gemma3:27b::proponent,22,coupled,unigram,2
+gemma3:27b::proponent,23,documented instances,bigram,2
+gemma3:27b::proponent,24,instances,unigram,2
+gemma3:27b::proponent,25,coupled documented instances,trigram,2

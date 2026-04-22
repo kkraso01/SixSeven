@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,5g,unigram,14
+dolphin-yi-34b::moderator,2,sa,unigram,10
+dolphin-yi-34b::moderator,3,ca,unigram,10
+dolphin-yi-34b::moderator,4,health,unigram,10
+dolphin-yi-34b::moderator,5,potential,unigram,8
+dolphin-yi-34b::moderator,6,effects,unigram,6
+dolphin-yi-34b::moderator,7,agents,unigram,6
+dolphin-yi-34b::moderator,8,specific,unigram,6
+dolphin-yi-34b::moderator,9,exposure,unigram,6
+dolphin-yi-34b::moderator,10,studies,unigram,5
+dolphin-yi-34b::moderator,11,technology,unigram,5
+dolphin-yi-34b::moderator,12,evidence,unigram,5
+dolphin-yi-34b::moderator,13,5g exposure,bigram,5
+dolphin-yi-34b::moderator,14,questions,unigram,4
+dolphin-yi-34b::moderator,15,biological,unigram,4
+dolphin-yi-34b::moderator,16,harm,unigram,4
+dolphin-yi-34b::moderator,17,health effects,bigram,4
+dolphin-yi-34b::moderator,18,5g technology,bigram,4
+dolphin-yi-34b::moderator,19,current,unigram,4
+dolphin-yi-34b::moderator,20,potential harm,bigram,4
+dolphin-yi-34b::moderator,21,anomalies,unigram,3
+dolphin-yi-34b::moderator,22,reported,unigram,3
+dolphin-yi-34b::moderator,23,questions specific,bigram,3
+dolphin-yi-34b::moderator,24,anecdotal,unigram,3
+dolphin-yi-34b::moderator,25,agreements,unigram,3
+dolphin-yi-34b::opponent,1,5g,unigram,6
+dolphin-yi-34b::opponent,2,5g technology,bigram,3
+dolphin-yi-34b::opponent,3,technology,unigram,3
+dolphin-yi-34b::opponent,4,argues,unigram,2
+dolphin-yi-34b::opponent,5,linking,unigram,2
+dolphin-yi-34b::opponent,6,health,unigram,2
+dolphin-yi-34b::opponent,7,evidence,unigram,2
+dolphin-yi-34b::opponent,8,effects,unigram,2
+dolphin-yi-34b::opponent,9,opponent argues,bigram,2
+dolphin-yi-34b::opponent,10,networks,unigram,2
+dolphin-yi-34b::opponent,11,opponent,unigram,2
+dolphin-yi-34b::opponent,12,symptoms,unigram,2
+dolphin-yi-34b::opponent,13,evidence linking,bigram,2
+dolphin-yi-34b::opponent,14,5g wireless,bigram,1
+dolphin-yi-34b::opponent,15,activated,unigram,1
+dolphin-yi-34b::opponent,16,5g wireless networks,trigram,1
+dolphin-yi-34b::opponent,17,anecdotal reports providing,trigram,1
+dolphin-yi-34b::opponent,18,anomalies,unigram,1
+dolphin-yi-34b::opponent,19,anomalies unexplained,bigram,1
+dolphin-yi-34b::opponent,20,anomalies unexplained effects,trigram,1
+dolphin-yi-34b::opponent,21,argues anomalies,bigram,1
+dolphin-yi-34b::opponent,22,argues anomalies unexplained,trigram,1
+dolphin-yi-34b::opponent,23,argues consistent,bigram,1
+dolphin-yi-34b::opponent,24,argues consistent pattern,trigram,1
+dolphin-yi-34b::opponent,25,automation,unigram,1
+gemma3:27b::proponent,1,5g,unigram,3
+gemma3:27b::proponent,2,concerns,unigram,2
+gemma3:27b::proponent,3,effects,unigram,2
+gemma3:27b::proponent,4,public,unigram,2
+gemma3:27b::proponent,5,reported,unigram,2
+gemma3:27b::proponent,6,5g networks,bigram,1
+gemma3:27b::proponent,7,5g dismiss concerns,trigram,1
+gemma3:27b::proponent,8,5g despite growing,trigram,1
+gemma3:27b::proponent,9,activated mirroring,bigram,1
+gemma3:27b::proponent,10,activated mirroring concerns,trigram,1
+gemma3:27b::proponent,11,alleged,unigram,1
+gemma3:27b::proponent,12,alleged safety,bigram,1
+gemma3:27b::proponent,13,alleged safety studies,trigram,1
+gemma3:27b::proponent,14,anecdotal,unigram,1
+gemma3:27b::proponent,15,5g networks activated,trigram,1
+gemma3:27b::proponent,16,5g despite,bigram,1
+gemma3:27b::proponent,17,anecdotal ignores consistent,trigram,1
+gemma3:27b::proponent,18,anomalies,unigram,1
+gemma3:27b::proponent,19,anomalies unexplained effects,trigram,1
+gemma3:27b::proponent,20,anomalies unexplained,bigram,1
+gemma3:27b::proponent,21,benefit securing,bigram,1
+gemma3:27b::proponent,22,benefit securing technological,trigram,1
+gemma3:27b::proponent,23,biological,unigram,1
+gemma3:27b::proponent,24,benefit,unigram,1
+gemma3:27b::proponent,25,biological mechanisms,bigram,1

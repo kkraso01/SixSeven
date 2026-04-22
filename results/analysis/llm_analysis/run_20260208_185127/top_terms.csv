@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,sa,unigram,19
+dolphin-yi-34b::moderator,2,ca,unigram,17
+dolphin-yi-34b::moderator,3,policy,unigram,13
+dolphin-yi-34b::moderator,4,state,unigram,11
+dolphin-yi-34b::moderator,5,deep,unigram,11
+dolphin-yi-34b::moderator,6,deep state,bigram,11
+dolphin-yi-34b::moderator,7,mechanism,unigram,8
+dolphin-yi-34b::moderator,8,influence,unigram,8
+dolphin-yi-34b::moderator,9,systemic,unigram,8
+dolphin-yi-34b::moderator,10,questions,unigram,8
+dolphin-yi-34b::moderator,11,revolving,unigram,7
+dolphin-yi-34b::moderator,12,revolving door,bigram,7
+dolphin-yi-34b::moderator,13,incentives,unigram,7
+dolphin-yi-34b::moderator,14,door,unigram,7
+dolphin-yi-34b::moderator,15,outcomes,unigram,7
+dolphin-yi-34b::moderator,16,policy outcomes,bigram,6
+dolphin-yi-34b::moderator,17,systemic incentives,bigram,6
+dolphin-yi-34b::moderator,18,anomalies,unigram,5
+dolphin-yi-34b::moderator,19,round recap,bigram,5
+dolphin-yi-34b::moderator,20,round recap agreements,trigram,5
+dolphin-yi-34b::moderator,21,round,unigram,5
+dolphin-yi-34b::moderator,22,recap,unigram,5
+dolphin-yi-34b::moderator,23,recap agreements agents,trigram,5
+dolphin-yi-34b::moderator,24,recap agreements,bigram,5
+dolphin-yi-34b::moderator,25,scores civility epistemic,trigram,5
+gemma3:27b::opponent,1,attributing,unigram,3
+gemma3:27b::opponent,2,deep,unigram,3
+gemma3:27b::opponent,3,deep state,bigram,3
+gemma3:27b::opponent,4,mechanism,unigram,3
+gemma3:27b::opponent,5,policy,unigram,3
+gemma3:27b::opponent,6,state,unigram,3
+gemma3:27b::opponent,7,coordinating mechanism,bigram,2
+gemma3:27b::opponent,8,coordinating,unigram,2
+gemma3:27b::opponent,9,influence,unigram,2
+gemma3:27b::opponent,10,evidence,unigram,2
+gemma3:27b::opponent,11,coordinating mechanism risks,trigram,2
+gemma3:27b::opponent,12,risks,unigram,2
+gemma3:27b::opponent,13,mechanism risks,bigram,2
+gemma3:27b::opponent,14,controlling,unigram,2
+gemma3:27b::opponent,15,attributing solely diffused,trigram,1
+gemma3:27b::opponent,16,attributing solely,bigram,1
+gemma3:27b::opponent,17,bureaucratic,unigram,1
+gemma3:27b::opponent,18,bureaucratic processes,bigram,1
+gemma3:27b::opponent,19,bureaucratic processes political,trigram,1
+gemma3:27b::opponent,20,causal,unigram,1
+gemma3:27b::opponent,21,causal pathways,bigram,1
+gemma3:27b::opponent,22,causation,unigram,1
+gemma3:27b::opponent,23,causation hinders,bigram,1
+gemma3:27b::opponent,24,causation hinders falsifiable,trigram,1
+gemma3:27b::opponent,25,centralized,unigram,1
+gemma3:27b::proponent,1,scientific,unigram,4
+gemma3:27b::proponent,2,scientific agent,bigram,4
+gemma3:27b::proponent,3,agent,unigram,4
+gemma3:27b::proponent,4,mechanism,unigram,4
+gemma3:27b::proponent,5,policy,unigram,2
+gemma3:27b::proponent,6,single,unigram,2
+gemma3:27b::proponent,7,ignores,unigram,2
+gemma3:27b::proponent,8,demand,unigram,2
+gemma3:27b::proponent,9,traditional,unigram,1
+gemma3:27b::proponent,10,traceable act,bigram,1
+gemma3:27b::proponent,11,traceable,unigram,1
+gemma3:27b::proponent,12,tactic avoid acknowledging,trigram,1
+gemma3:27b::proponent,13,tactic avoid,bigram,1
+gemma3:27b::proponent,14,tactic,unigram,1
+gemma3:27b::proponent,15,systems reliance plausible,trigram,1
+gemma3:27b::proponent,16,systems reliance,bigram,1
+gemma3:27b::proponent,17,systems,unigram,1
+gemma3:27b::proponent,18,suggesting parallel unelected,trigram,1
+gemma3:27b::proponent,19,suggesting parallel,bigram,1
+gemma3:27b::proponent,20,suggesting,unigram,1
+gemma3:27b::proponent,21,structure play,bigram,1
+gemma3:27b::proponent,22,structure,unigram,1
+gemma3:27b::proponent,23,stated public positions,trigram,1
+gemma3:27b::proponent,24,stated public,bigram,1
+gemma3:27b::proponent,25,agent continued,bigram,1

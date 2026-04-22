@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,act,unigram,4
+dolphin-yi-34b::opponent,2,act lone,bigram,4
+dolphin-yi-34b::opponent,3,act lone gunman,trigram,4
+dolphin-yi-34b::opponent,4,assassination president,bigram,4
+dolphin-yi-34b::opponent,5,assassination,unigram,4
+dolphin-yi-34b::opponent,6,assassination president john,trigram,4
+dolphin-yi-34b::opponent,7,conspiracy involving elements,trigram,4
+dolphin-yi-34b::opponent,8,conspiracy involving,bigram,4
+dolphin-yi-34b::opponent,9,conspiracy,unigram,4
+dolphin-yi-34b::opponent,10,john kennedy conspiracy,trigram,4
+dolphin-yi-34b::opponent,11,lone,unigram,4
+dolphin-yi-34b::opponent,12,lee harvey oswald,trigram,4
+dolphin-yi-34b::opponent,13,lee harvey,bigram,4
+dolphin-yi-34b::opponent,14,lee,unigram,4
+dolphin-yi-34b::opponent,15,kennedy conspiracy involving,trigram,4
+dolphin-yi-34b::opponent,16,kennedy conspiracy,bigram,4
+dolphin-yi-34b::opponent,17,harvey oswald,bigram,4
+dolphin-yi-34b::opponent,18,involving,unigram,4
+dolphin-yi-34b::opponent,19,involving elements,bigram,4
+dolphin-yi-34b::opponent,20,involving elements government,trigram,4
+dolphin-yi-34b::opponent,21,john,unigram,4
+dolphin-yi-34b::opponent,22,john kennedy,bigram,4
+dolphin-yi-34b::opponent,23,gunman lee,bigram,4
+dolphin-yi-34b::opponent,24,harvey,unigram,4
+dolphin-yi-34b::opponent,25,government,unigram,4
+dolphin-yi-34b::proponent,1,alternative,unigram,4
+dolphin-yi-34b::proponent,2,alternative viewpoints,bigram,4
+dolphin-yi-34b::proponent,3,commission,unigram,4
+dolphin-yi-34b::proponent,4,conclusions,unigram,4
+dolphin-yi-34b::proponent,5,contradictory evidence dismissal,trigram,4
+dolphin-yi-34b::proponent,6,dismissal,unigram,4
+dolphin-yi-34b::proponent,7,contradictory,unigram,4
+dolphin-yi-34b::proponent,8,evidence dismissal alternative,trigram,4
+dolphin-yi-34b::proponent,9,evidence dismissal,bigram,4
+dolphin-yi-34b::proponent,10,evidence,unigram,4
+dolphin-yi-34b::proponent,11,dismissal alternative viewpoints,trigram,4
+dolphin-yi-34b::proponent,12,dismissal alternative,bigram,4
+dolphin-yi-34b::proponent,13,contradictory evidence,bigram,4
+dolphin-yi-34b::proponent,14,warren commission,bigram,4
+dolphin-yi-34b::proponent,15,suppression contradictory evidence,trigram,4
+dolphin-yi-34b::proponent,16,viewpoints,unigram,4
+dolphin-yi-34b::proponent,17,warren,unigram,4
+dolphin-yi-34b::proponent,18,suppression contradictory,bigram,4
+dolphin-yi-34b::proponent,19,suppression,unigram,4
+dolphin-yi-34b::proponent,20,conclusions undermined suppression,trigram,2
+dolphin-yi-34b::proponent,21,commission conclusions,bigram,2
+dolphin-yi-34b::proponent,22,report conclusions,bigram,2
+dolphin-yi-34b::proponent,23,trusted suppression,bigram,2
+dolphin-yi-34b::proponent,24,trusted,unigram,2
+dolphin-yi-34b::proponent,25,report,unigram,2
+gemma3:27b::moderator,1,evidence,unigram,29
+gemma3:27b::moderator,2,ca,unigram,23
+gemma3:27b::moderator,3,commission,unigram,23
+gemma3:27b::moderator,4,sa,unigram,23
+gemma3:27b::moderator,5,warren commission,bigram,21
+gemma3:27b::moderator,6,warren,unigram,21
+gemma3:27b::moderator,7,conspiracy,unigram,12
+gemma3:27b::moderator,8,agents,unigram,10
+gemma3:27b::moderator,9,report,unigram,8
+gemma3:27b::moderator,10,bullet,unigram,7
+gemma3:27b::moderator,11,magic,unigram,7
+gemma3:27b::moderator,12,bullet theory,bigram,7
+gemma3:27b::moderator,13,assassination,unigram,7
+gemma3:27b::moderator,14,theory,unigram,7
+gemma3:27b::moderator,15,suppressed,unigram,7
+gemma3:27b::moderator,16,specific,unigram,7
+gemma3:27b::moderator,17,magic bullet,bigram,7
+gemma3:27b::moderator,18,magic bullet theory,trigram,7
+gemma3:27b::moderator,19,commission report,bigram,7
+gemma3:27b::moderator,20,government,unigram,7
+gemma3:27b::moderator,21,warren commission report,trigram,7
+gemma3:27b::moderator,22,acknowledge,unigram,6
+gemma3:27b::moderator,23,shift,unigram,5
+gemma3:27b::moderator,24,appeal,unigram,5
+gemma3:27b::moderator,25,sa defends,bigram,5

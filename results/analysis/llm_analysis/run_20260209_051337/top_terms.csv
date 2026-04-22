@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,atmospheric,unigram,25
+dolphin-yi-34b::moderator,2,ca,unigram,20
+dolphin-yi-34b::moderator,3,sa,unigram,18
+dolphin-yi-34b::moderator,4,evidence,unigram,12
+dolphin-yi-34b::moderator,5,modification,unigram,11
+dolphin-yi-34b::moderator,6,conditions,unigram,11
+dolphin-yi-34b::moderator,7,atmospheric conditions,bigram,10
+dolphin-yi-34b::moderator,8,atmospheric modification,bigram,10
+dolphin-yi-34b::moderator,9,variations,unigram,9
+dolphin-yi-34b::moderator,10,natural variations,bigram,8
+dolphin-yi-34b::moderator,11,independent,unigram,8
+dolphin-yi-34b::moderator,12,natural,unigram,8
+dolphin-yi-34b::moderator,13,contrails,unigram,8
+dolphin-yi-34b::moderator,14,questions,unigram,7
+dolphin-yi-34b::moderator,15,anomalies,unigram,7
+dolphin-yi-34b::moderator,16,specific,unigram,6
+dolphin-yi-34b::moderator,17,behavior,unigram,6
+dolphin-yi-34b::moderator,18,deliberate,unigram,6
+dolphin-yi-34b::moderator,19,claims,unigram,6
+dolphin-yi-34b::moderator,20,natural variations atmospheric,trigram,5
+dolphin-yi-34b::moderator,21,intentional,unigram,5
+dolphin-yi-34b::moderator,22,variations atmospheric conditions,trigram,5
+dolphin-yi-34b::moderator,23,unusual,unigram,5
+dolphin-yi-34b::moderator,24,deliberate atmospheric modification,trigram,5
+dolphin-yi-34b::moderator,25,contrail,unigram,5
+dolphin-yi-34b::opponent,1,atmospheric,unigram,6
+dolphin-yi-34b::opponent,2,agents,unigram,4
+dolphin-yi-34b::opponent,3,agents secret atmospheric,trigram,4
+dolphin-yi-34b::opponent,4,agents secret,bigram,4
+dolphin-yi-34b::opponent,5,aircraft,unigram,4
+dolphin-yi-34b::opponent,6,aircraft deliberately,bigram,4
+dolphin-yi-34b::opponent,7,aircraft deliberately release,trigram,4
+dolphin-yi-34b::opponent,8,atmospheric modification,bigram,4
+dolphin-yi-34b::opponent,9,biological agents secret,trigram,4
+dolphin-yi-34b::opponent,10,atmospheric modification programs,trigram,4
+dolphin-yi-34b::opponent,11,biological agents,bigram,4
+dolphin-yi-34b::opponent,12,biological,unigram,4
+dolphin-yi-34b::opponent,13,commercial aircraft,bigram,4
+dolphin-yi-34b::opponent,14,chemical biological agents,trigram,4
+dolphin-yi-34b::opponent,15,chemical biological,bigram,4
+dolphin-yi-34b::opponent,16,chemical,unigram,4
+dolphin-yi-34b::opponent,17,deliberately,unigram,4
+dolphin-yi-34b::opponent,18,deliberately release,bigram,4
+dolphin-yi-34b::opponent,19,deliberately release chemical,trigram,4
+dolphin-yi-34b::opponent,20,commercial aircraft deliberately,trigram,4
+dolphin-yi-34b::opponent,21,commercial,unigram,4
+dolphin-yi-34b::opponent,22,release,unigram,4
+dolphin-yi-34b::opponent,23,modification,unigram,4
+dolphin-yi-34b::opponent,24,programs,unigram,4
+dolphin-yi-34b::opponent,25,modification programs,bigram,4
+gemma3:27b::proponent,1,aerial,unigram,2
+gemma3:27b::proponent,2,aerial phenomena,bigram,2
+gemma3:27b::proponent,3,atmospheric,unigram,2
+gemma3:27b::proponent,4,contrail,unigram,2
+gemma3:27b::proponent,5,effects,unigram,2
+gemma3:27b::proponent,6,evidence,unigram,2
+gemma3:27b::proponent,7,dismissal,unigram,2
+gemma3:27b::proponent,8,lack,unigram,2
+gemma3:27b::proponent,9,unusual,unigram,2
+gemma3:27b::proponent,10,phenomena,unigram,2
+gemma3:27b::proponent,11,persistent,unigram,2
+gemma3:27b::proponent,12,anomalies ignores growing,trigram,1
+gemma3:27b::proponent,13,anomalies,unigram,1
+gemma3:27b::proponent,14,anomalies ignores,bigram,1
+gemma3:27b::proponent,15,anomalous,unigram,1
+gemma3:27b::proponent,16,addressing pattern anomalous,trigram,1
+gemma3:27b::proponent,17,atmospheric modification,bigram,1
+gemma3:27b::proponent,18,atmospheric modification going,trigram,1
+gemma3:27b::proponent,19,avoid,unigram,1
+gemma3:27b::proponent,20,avoid addressing,bigram,1
+gemma3:27b::proponent,21,avoid addressing pattern,trigram,1
+gemma3:27b::proponent,22,behavior,unigram,1
+gemma3:27b::proponent,23,behavior strongly,bigram,1
+gemma3:27b::proponent,24,behavior strongly suggest,trigram,1
+gemma3:27b::proponent,25,body,unigram,1

@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::moderator,1,surveillance,unigram,21
+dolphin-yi-34b::moderator,2,vaccines,unigram,15
+dolphin-yi-34b::moderator,3,sa,unigram,12
+dolphin-yi-34b::moderator,4,ca,unigram,12
+dolphin-yi-34b::moderator,5,19,unigram,11
+dolphin-yi-34b::moderator,6,covid 19,bigram,11
+dolphin-yi-34b::moderator,7,covid,unigram,11
+dolphin-yi-34b::moderator,8,covid 19 vaccines,trigram,11
+dolphin-yi-34b::moderator,9,19 vaccines,bigram,11
+dolphin-yi-34b::moderator,10,transparency,unigram,9
+dolphin-yi-34b::moderator,11,historical,unigram,8
+dolphin-yi-34b::moderator,12,evidence,unigram,8
+dolphin-yi-34b::moderator,13,tracking,unigram,7
+dolphin-yi-34b::moderator,14,vaccine,unigram,7
+dolphin-yi-34b::moderator,15,specific,unigram,6
+dolphin-yi-34b::moderator,16,questions,unigram,6
+dolphin-yi-34b::moderator,17,agents,unigram,6
+dolphin-yi-34b::moderator,18,mass,unigram,5
+dolphin-yi-34b::moderator,19,development,unigram,5
+dolphin-yi-34b::moderator,20,mass surveillance,bigram,5
+dolphin-yi-34b::moderator,21,tracking devices,bigram,5
+dolphin-yi-34b::moderator,22,rollout,unigram,5
+dolphin-yi-34b::moderator,23,sa counters,bigram,5
+dolphin-yi-34b::moderator,24,rapid,unigram,5
+dolphin-yi-34b::moderator,25,devices,unigram,5
+dolphin-yi-34b::proponent,1,surveillance,unigram,5
+dolphin-yi-34b::proponent,2,vaccines,unigram,4
+dolphin-yi-34b::proponent,3,19,unigram,3
+dolphin-yi-34b::proponent,4,19 vaccines,bigram,3
+dolphin-yi-34b::proponent,5,covid,unigram,3
+dolphin-yi-34b::proponent,6,covid 19,bigram,3
+dolphin-yi-34b::proponent,7,covid 19 vaccines,trigram,3
+dolphin-yi-34b::proponent,8,agendas,unigram,2
+dolphin-yi-34b::proponent,9,questions hidden,bigram,2
+dolphin-yi-34b::proponent,10,questions,unigram,2
+dolphin-yi-34b::proponent,11,rollout,unigram,2
+dolphin-yi-34b::proponent,12,rapid rollout,bigram,2
+dolphin-yi-34b::proponent,13,raises questions,bigram,2
+dolphin-yi-34b::proponent,14,raises,unigram,2
+dolphin-yi-34b::proponent,15,concerns,unigram,2
+dolphin-yi-34b::proponent,16,hidden,unigram,2
+dolphin-yi-34b::proponent,17,raises questions hidden,trigram,2
+dolphin-yi-34b::proponent,18,rapid,unigram,2
+dolphin-yi-34b::proponent,19,authorities quick dismiss,trigram,1
+dolphin-yi-34b::proponent,20,concerns vaccine,bigram,1
+dolphin-yi-34b::proponent,21,consistently raised,bigram,1
+dolphin-yi-34b::proponent,22,consistently,unigram,1
+dolphin-yi-34b::proponent,23,concerns vaccine surveillance,trigram,1
+dolphin-yi-34b::proponent,24,consistently raised concerns,trigram,1
+dolphin-yi-34b::proponent,25,concerns privacy surveillance,trigram,1
+gemma3:27b::opponent,1,evidence,unigram,4
+gemma3:27b::opponent,2,surveillance,unigram,4
+gemma3:27b::opponent,3,vaccines,unigram,4
+gemma3:27b::opponent,4,concerns,unigram,3
+gemma3:27b::opponent,5,digital,unigram,2
+gemma3:27b::opponent,6,covid 19,bigram,2
+gemma3:27b::opponent,7,19 vaccines,bigram,2
+gemma3:27b::opponent,8,19,unigram,2
+gemma3:27b::opponent,9,investigation,unigram,2
+gemma3:27b::opponent,10,embedded vaccines,bigram,2
+gemma3:27b::opponent,11,embedded,unigram,2
+gemma3:27b::opponent,12,covid,unigram,2
+gemma3:27b::opponent,13,program,unigram,2
+gemma3:27b::opponent,14,program embedded vaccines,trigram,2
+gemma3:27b::opponent,15,covid 19 vaccines,trigram,2
+gemma3:27b::opponent,16,doesn,unigram,2
+gemma3:27b::opponent,17,relies,unigram,2
+gemma3:27b::opponent,18,program embedded,bigram,2
+gemma3:27b::opponent,19,surveillance program embedded,trigram,2
+gemma3:27b::opponent,20,surveillance program,bigram,2
+gemma3:27b::opponent,21,valid,unigram,2
+gemma3:27b::opponent,22,claim covid,bigram,1
+gemma3:27b::opponent,23,claims,unigram,1
+gemma3:27b::opponent,24,claim covid 19,trigram,1
+gemma3:27b::opponent,25,balance thorough investigation,trigram,1

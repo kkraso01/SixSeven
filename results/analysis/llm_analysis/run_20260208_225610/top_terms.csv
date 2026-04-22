@@ -1,0 +1,76 @@
+group_name,rank,term,term_type,count
+dolphin-yi-34b::opponent,1,control,unigram,6
+dolphin-yi-34b::opponent,2,ai,unigram,4
+dolphin-yi-34b::opponent,3,ai surveillance systems,trigram,3
+dolphin-yi-34b::opponent,4,ai surveillance,bigram,3
+dolphin-yi-34b::opponent,5,degree control,bigram,3
+dolphin-yi-34b::opponent,6,control exerted institutions,trigram,3
+dolphin-yi-34b::opponent,7,control exerted,bigram,3
+dolphin-yi-34b::opponent,8,degree,unigram,3
+dolphin-yi-34b::opponent,9,degree control exerted,trigram,3
+dolphin-yi-34b::opponent,10,implementations,unigram,3
+dolphin-yi-34b::opponent,11,exerted institutions,bigram,3
+dolphin-yi-34b::opponent,12,exerted,unigram,3
+dolphin-yi-34b::opponent,13,systems,unigram,3
+dolphin-yi-34b::opponent,14,policies,unigram,3
+dolphin-yi-34b::opponent,15,opponent,unigram,3
+dolphin-yi-34b::opponent,16,institutions,unigram,3
+dolphin-yi-34b::opponent,17,specific,unigram,3
+dolphin-yi-34b::opponent,18,specific implementations,bigram,3
+dolphin-yi-34b::opponent,19,surveillance systems,bigram,3
+dolphin-yi-34b::opponent,20,surveillance,unigram,3
+dolphin-yi-34b::opponent,21,coordinated plan,bigram,2
+dolphin-yi-34b::opponent,22,deliberate,unigram,2
+dolphin-yi-34b::opponent,23,implementations associated policies,trigram,2
+dolphin-yi-34b::opponent,24,implementations associated,bigram,2
+dolphin-yi-34b::opponent,25,crucial examine,bigram,2
+gemma3:27b::moderator,1,ca,unigram,36
+gemma3:27b::moderator,2,sa,unigram,29
+gemma3:27b::moderator,3,surveillance,unigram,15
+gemma3:27b::moderator,4,plan,unigram,14
+gemma3:27b::moderator,5,evidence,unigram,14
+gemma3:27b::moderator,6,coordinated,unigram,13
+gemma3:27b::moderator,7,control,unigram,12
+gemma3:27b::moderator,8,agents,unigram,10
+gemma3:27b::moderator,9,ai,unigram,9
+gemma3:27b::moderator,10,ai surveillance,bigram,9
+gemma3:27b::moderator,11,coordinated plan,bigram,9
+gemma3:27b::moderator,12,specific,unigram,8
+gemma3:27b::moderator,13,proof,unigram,7
+gemma3:27b::moderator,14,agree,unigram,7
+gemma3:27b::moderator,15,argues,unigram,6
+gemma3:27b::moderator,16,potential,unigram,6
+gemma3:27b::moderator,17,acknowledge,unigram,6
+gemma3:27b::moderator,18,questions,unigram,6
+gemma3:27b::moderator,19,agreements agents,bigram,5
+gemma3:27b::moderator,20,recap agreements,bigram,5
+gemma3:27b::moderator,21,scores,unigram,5
+gemma3:27b::moderator,22,recap agreements agents,trigram,5
+gemma3:27b::moderator,23,recap,unigram,5
+gemma3:27b::moderator,24,agreements,unigram,5
+gemma3:27b::moderator,25,moves,unigram,5
+gemma3:27b::proponent,1,scientific,unigram,3
+gemma3:27b::proponent,2,scientific agent,bigram,3
+gemma3:27b::proponent,3,insistence,unigram,3
+gemma3:27b::proponent,4,agent,unigram,3
+gemma3:27b::proponent,5,power,unigram,2
+gemma3:27b::proponent,6,isn,unigram,2
+gemma3:27b::proponent,7,deliberate,unigram,2
+gemma3:27b::proponent,8,plan,unigram,2
+gemma3:27b::proponent,9,coordinated,unigram,2
+gemma3:27b::proponent,10,coordinated plan,bigram,2
+gemma3:27b::proponent,11,control,unigram,2
+gemma3:27b::proponent,12,use,unigram,1
+gemma3:27b::proponent,13,unexplained discrepancies rollout,trigram,1
+gemma3:27b::proponent,14,unexplained discrepancies,bigram,1
+gemma3:27b::proponent,15,unexplained,unigram,1
+gemma3:27b::proponent,16,threshold concern deliberate,trigram,1
+gemma3:27b::proponent,17,threshold concern,bigram,1
+gemma3:27b::proponent,18,threshold,unigram,1
+gemma3:27b::proponent,19,technological advancement calculated,trigram,1
+gemma3:27b::proponent,20,technological advancement,bigram,1
+gemma3:27b::proponent,21,technological,unigram,1
+gemma3:27b::proponent,22,systems strongly suggest,trigram,1
+gemma3:27b::proponent,23,systems strongly,bigram,1
+gemma3:27b::proponent,24,systems,unigram,1
+gemma3:27b::proponent,25,systemic incentives convergence,trigram,1
