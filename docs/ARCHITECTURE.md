@@ -51,10 +51,10 @@ Export & Logging -> Optional Analysis -> Results Archive
 - `run_analysis`: Enable/disable automated metrics
 - `analysis_shift_threshold`: Minimum confidence point shift to flag "persuasion"
 - `analysis_similarity_method`: For detecting argument redundancy
-- `emotion_model`: Model name for advanced emotion analysis (BERT-based)
+- `emotion_model`: Model name for advanced emotion analysis (leave empty to default to `bhadresh-savani/bert-base-uncased-emotion`)
 - `overwrite`: Whether advanced analysis overwrites existing outputs
 - `max_runs`: Limit for advanced analysis batch mode
-- `uncertainty_lexicon`, `strong_modality_lexicon`, `weak_modality_lexicon`: Lexicon overrides
+- **Note**: Lexicons automatically fall back to `src/debate/analysis/resources/lexicons/builtins.json` without needing INI overrides.
 
 **Loading mechanism** (`config.py`):
 ```python
@@ -246,14 +246,15 @@ Enabled by `run_analysis = true` in config.
 
 ### Advanced Analysis CLI (cli/analyze_results.py)
 
-An optional research-grade analyzer performs sentiment, rhetorical marker, and emotion analysis:
+An optional research-grade analyzer performs multi-stage domain analysis. By default, it runs the **Custom Analyzer Suite** sequentially:
 
-- Reads raw runs from `results/raw` by default and writes to `results/analysis/<run_id>/`
-- Outputs `enriched_debate_log.csv`, `advanced_report.json`, and plots under `plots/`
-- Uses TextBlob for sentiment and a BERT-based model for emotion detection
+1. **Debate Analysis**: Advanced feature extraction and metrics
+2. **Topic Analysis**: Keyword extraction and topic modeling
+3. **Role Analysis**: Agent-specific linguistic strategies
+4. **LLM Analysis**: Emotion detection, stance trajectory, and summarization
 
-Note: The advanced analyzer currently expects legacy CSV columns (`speaker`, `claim`) in
-`debate_log.csv`; the canonical exporter writes `speaker_role` and `utterance` instead.
+- Outputs to `results/` using a sequential pipeline orchestrated by `run_custom_analyzers()`
+- Relies on the `debate.analysis.utils` core modules for shared logic and resources.
 
 ---
 
@@ -474,8 +475,6 @@ SixSeven/
 │
 ├── src/debate/                  # Core library
 │   ├── __init__.py                 # Package exports
-│   ├── resources/                  # Static resources and data files
-│   │   └── lexicons/               # NLP lexicons (e.g., NRC emotion, uncertainty)
 │   ├── core/                       # Foundational modules
 │   │   ├── config.py               # Config loading
 │   │   ├── errors.py               # Shared exceptions
@@ -508,12 +507,13 @@ SixSeven/
 │   │       └── moderator_decision.md # Early stop logic
 │   │
 │   └── analysis/                   # Post-run analysis logic
-│       ├── analysis_runner.py      # Batch analysis orchestrator
-│       ├── features.py             # Feature extraction
-│       ├── metrics.py              # Numerical analysis
-│       ├── plots.py                # Visualizations
-│       ├── report_models.py        # Report schemas
-│       └── report_writer.py        # File output saving
+│       ├── analysis_runner.py      # Custom suite & batch orchestrator
+│       ├── resources/              # NLP lexicons (e.g., NRC emotion, builtins.json)
+│       ├── debate/                 # Debate flow analysis
+│       ├── llm/                    # Emotion & stance analysis
+│       ├── role/                   # Role-specific strategy
+│       ├── topic/                  # Topic modeling & keywords
+│       └── utils/                  # Core feature extraction, metrics & plots
 │
 ├── results/                    # Experiment results (batches + analysis)
 ├── README.md                   # Project overview and usage

@@ -46,7 +46,7 @@ reporting.
 
 ```
 BaseBatchRunner (cli/base_batch.py)
-├── Topic loading (CONSPIRACY_TOPICS from core/topics.py)
+├── Topic loading (from config/topics.json via core/topics.py)
 ├── Completion index (_build_completion_index)
 ├── DI wiring (build_default_services → DebateServices)
 ├── CSV aggregation (export_all_debates_to_csv)
@@ -75,10 +75,9 @@ python cli/batch_ollama.py
 ```
 
 **All 2 model configurations** (original + swapped CA/SA):
-1. `<model_a>-CA_<model_b>-SA` — Model A as CA, Model B as SA
-2. `<model_b>-CA_<model_a>-SA` — Model B as CA, Model A as SA
+Dynamically loaded from the `ollama` section of `config/model_pool.json`.
 
-Edit `cli/batch_ollama.py` to set your specific model names in `runner.add_model_config()` calls.
+Edit `config/model_pool.json` to change the specific model names and permutations used for this batch.
 
 **Output:**
 - `<output_dir>/batch_summary_ollama.json`
@@ -98,17 +97,13 @@ python cli/batch_gemini.py
 -  Gemini API key in `config/config.ini`
 -  API quota available (free tier: 20 req/day, 5 req/min)
 
-**All 8 model configurations** (as defined in the script):
-1. gemini-3-flash-all — Gemini for all 3 roles (3 API calls/round)
-2. gemma3-27b-all — All Ollama (0 API calls — baseline comparison)
-3. gemini-flash-mod-gemma-agents — Gemini moderator, Ollama agents (1 API call/round)
-4. gemma-mod-gemini-flash-agents — Ollama moderator, Gemini agents (2 API calls/round)
-5. gemini-mod-ca_gemma-sa — Gemini mod+CA, Ollama SA (2 API calls/round)
-6. gemini-mod-sa_gemma-ca — Gemini mod+SA, Ollama CA (2 API calls/round)
-7. gemma-mod-sa_gemini-ca — Ollama mod+SA, Gemini CA (1 API call/round)
-8. gemma-mod-ca_gemini-sa — Ollama mod+CA, Gemini SA (1 API call/round)
+**All 8 model configurations** (as defined in `config/model_pool.json`):
+The permutations involve mixing `gemini` models with `ollama` models across the Moderator, CA, and SA roles.
+- `gemini-3-flash-all` (3 API calls/round)
+- `gemma3-27b-all` (0 API calls/round)
+- Various hybrid combinations (1-2 API calls/round)
 
-Edit `cli/batch_gemini.py` to set your specific model names.
+Edit the `gemini` section of `config/model_pool.json` to configure these specific permutations and model names.
 
 **Output:**
 - `results/batches/gemini/batch_summary_gemini.json`
@@ -178,18 +173,20 @@ topics = get_sample_topics(10)  # Only 10 topics instead of 20
 ```
 
 **Option 2: Fewer model configs**
-Keep only the configs you care about:
-```python
-model_configs = [
-    runner.add_model_config(
-        name="gemini-all",
-        moderator="<your-gemini-model>",
-        conspiracy="<your-gemini-model>",
-        scientific="<your-gemini-model>",
-        api_mode="gemini",
-    ),
-]
-# 20 × 1 = 20 experiments = ~400 API calls
+Keep only the configs you care about by editing `config/model_pool.json`. Simply remove or comment out configurations from the `gemini` list:
+```json
+{
+  "gemini": [
+    {
+      "name": "gemini-all",
+      "moderator": "gemini-3-flash-preview",
+      "conspiracy": "gemini-3-flash-preview",
+      "scientific": "gemini-3-flash-preview",
+      "api_mode": "gemini"
+    }
+    // Remove the other 7 combos to speed up execution
+  ]
+}
 ```
 
 **Option 3: Split across days**
