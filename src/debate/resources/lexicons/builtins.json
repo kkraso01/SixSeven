@@ -1,9 +1,4 @@
-refactor(analysis): centralize lexicons and remove unused text resources
-
-- Extracted all hardcoded lexicons, modalities, and emotion sets from `lexicons.py` into a single declarative `builtins.json` file.
-- Updated `lexicons.py` logic to parse configuration dynamically from JSON on runtime. 
-- Renamed directory `emfd` to `eMFD` to properly reflect external nomenclature inside `resources/lexicons/`.
-- Deleted the redundant, bloated `lexicons/` directory from the repository root, as the internal NRC implementations rely entirely on the main `resources/lexicons/NRC-Emotion-Lexicon/...Wordlevel-v0.92.txt` asset. Test suites successfully pass without these files.{
+{
   "UNCERTAINTY_WORDS": [
     "possibly",
     "concerns",
