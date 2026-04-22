@@ -102,8 +102,8 @@ def run_custom_analyzers(
     topic_analysis_visuals_dir = topic_analysis_output_dir / "top_words_visuals"
 
     from .debate_analysis.debate_analysis_pipeline import main as debate_analysis_main
-    from .llm_analysis.analysis.plot_combined_emotion_trajectory import main as llm_combined_emotion_plots_main
-    from .llm_analysis.analysis.run_analysis import main as llm_analysis_main
+    from .llm_analysis.plot_combined_emotion_trajectory import main as llm_combined_emotion_plots_main
+    from .llm_analysis.run_analysis import main as llm_analysis_main
     from .role_analysis.role_analyzer import main as role_analysis_main
     from .topic_analysis.topic_analysis_pipeline import main as topic_analysis_main
     from .topic_analysis.topic_analysis_plots import main as topic_analysis_plots_main

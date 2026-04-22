@@ -18,7 +18,7 @@ from textblob import TextBlob
 
 from debate.core.schemas import MemoryState
 
-from .constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
+
 from .lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
