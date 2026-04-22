@@ -1,17 +1,11 @@
 from __future__ import annotations
 
-<<<<<<< HEAD
-from dataclasses import dataclass
-from pathlib import Path
-from typing import Any, cast
-=======
 import traceback
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from time import perf_counter
 from typing import Any, Callable, cast
->>>>>>> dev
 
 from .utils.features import load_run_inputs
 from .utils.language_analysis import language_use_summary_from_logs
