@@ -16,206 +16,56 @@ ANALYSIS_DIR = Path(__file__).resolve().parent
 DEBATE_SRC_DIR = ANALYSIS_DIR.parent
 NRC_EMOTION_LEXICON_DIR = DEBATE_SRC_DIR / "resources" / "lexicons" / "NRC-Emotion-Lexicon"
 NRC_EMOTION_LEXICON_PATH = NRC_EMOTION_LEXICON_DIR / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
-EMFD_LEXICON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "emfd" / "emfd_scoring.csv"
+EMFD_LEXICON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "eMFD" / "emfd_scoring.csv"
+
+BUILTINS_JSON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "builtins.json"
+
+import json
+with open(BUILTINS_JSON_PATH, "r", encoding="utf-8") as _f:
+    _builtins = json.load(_f)
 
 # ---------------------------------------------------------------------------
-# Base language-analysis lexicons (used by features.py / language_analysis.py)
+# Base language-analysis lexicons
 # ---------------------------------------------------------------------------
 
-UNCERTAINTY_WORDS: set[str] = {
-    "maybe", "may", "suggest", "suggests", "perhaps", "possibly", "likely",
-    "unlikely", "appears", "seems", "could", "might", "unclear", "allegedly",
-    "reportedly", "potential", "concern", "concerns", "reasonable", "arguably", "uncertain"
-}
-
-MODALITY_STRONG_WORDS: set[str] = {
-    "must", "will", "cannot", "definitely", "certainly", "always", "prove",
-    "proves", "proven", "undeniable", "clearly", "demonstrates", "never",
-    "obviously", "plainly", "shows", "confirms"
-}
-
-MODALITY_WEAK_WORDS: set[str] = {
-    "may", "might", "could", "can", "sometimes", "possibly", "arguably",
-    "potentially", "perhaps", "suggest", "suggests", "appears", "seems"
-}
-
-MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {
-    "care_harm": {"care", "harm", "hurt", "protect", "suffering", "safety", "risk"},
-    "fairness_cheating": {"fair", "justice", "rights", "equal", "bias", "cheat", "fraud"},
-    "loyalty_betrayal": {
-        "loyal",
-        "betray",
-        "community",
-        "nation",
-        "patriot",
-        "traitor",
-    },
-    "authority_subversion": {
-        "authority",
-        "expert",
-        "institution",
-        "law",
-        "obedience",
-        "corrupt",
-    },
-    "sanctity_degradation": {"pure", "sacred", "dirty", "contaminate", "unnatural", "toxic"},
-}
+UNCERTAINTY_WORDS: set[str] = set(_builtins['UNCERTAINTY_WORDS'])
+MODALITY_STRONG_WORDS: set[str] = set(_builtins['MODALITY_STRONG_WORDS'])
+MODALITY_WEAK_WORDS: set[str] = set(_builtins['MODALITY_WEAK_WORDS'])
+MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {k: set(v) for k, v in _builtins['MORAL_FOUNDATION_LEXICON'].items()}
 
 
 # ---------------------------------------------------------------------------
-# Topic-analysis pipeline lexicons (topic_analysis/topic_analysis_pipeline.py)
+# Topic-analysis pipeline lexicons
 # ---------------------------------------------------------------------------
 
-TOPIC_ANALYSIS_UNCERTAINTY_WORDS: set[str] = {
-    "abeyance", "abeyances", "almost", "alteration", "alterations", "ambiguities",
-    "ambiguity", "ambiguous", "anomalies", "anomalous", "anomalously", "anomaly",
-    "anticipate", "anticipated", "anticipates", "anticipating", "anticipation",
-    "anticipations", "apparent", "apparently", "appear", "appeared", "appearing",
-    "appears", "approximate", "approximated", "approximately", "approximates",
-    "approximating", "approximation", "approximations", "arbitrarily", "arbitrariness",
-    "arbitrary", "assume", "assumed", "assumes", "assuming", "assumption", "assumptions",
-    "believe", "believed", "believes", "believing", "cautious", "cautiously",
-    "cautiousness", "clarification", "clarifications", "conceivable", "conceivably",
-    "conditional", "conditionally", "confuses", "confusing", "confusingly", "confusion",
-    "contingencies", "contingency", "contingent", "contingently", "contingents", "could",
-    "crossroad", "crossroads", "depend", "depended", "dependence", "dependencies",
-    "dependency", "dependent", "depending", "depends", "destabilizing", "deviate",
-    "deviated", "deviates", "deviating", "deviation", "deviations", "differ", "differed",
-    "differing", "differs", "doubt", "doubted", "doubtful", "doubts", "exposure",
-    "exposures", "fluctuate", "fluctuated", "fluctuates", "fluctuating", "fluctuation",
-    "fluctuations", "hidden", "hinges", "imprecise", "imprecision", "imprecisions",
-    "improbability", "improbable", "incompleteness", "indefinite", "indefinitely",
-    "indefiniteness", "indeterminable", "indeterminate", "inexact", "inexactness",
-    "instabilities", "instability", "intangible", "intangibles", "likelihood", "may",
-    "maybe", "might", "nearly", "nonassessable", "occasionally", "ordinarily", "pending",
-    "perhaps", "possibilities", "possibility", "possible", "possibly", "precaution",
-    "precautionary", "precautions", "predict", "predictability", "predicted", "predicting",
-    "prediction", "predictions", "predictive", "predictor", "predictors", "predicts",
-    "preliminarily", "preliminary", "presumably", "presume", "presumed", "presumes",
-    "presuming", "presumption", "presumptions", "probabilistic", "probabilities",
-    "probability", "probable", "probably", "random", "randomize", "randomized",
-    "randomizes", "randomizing", "randomly", "randomness", "reassess", "reassessed",
-    "reassesses", "reassessing", "reassessment", "reassessments", "recalculate",
-    "recalculated", "recalculates", "recalculating", "recalculation", "recalculations",
-    "reconsider", "reconsidered", "reconsidering", "reconsiders", "reexamination",
-    "reexamine", "reexamining", "reinterpret", "reinterpretation", "reinterpretations",
-    "reinterpreted", "reinterpreting", "reinterprets", "revise", "revised", "risk",
-    "risked", "riskier", "riskiest", "riskiness", "risking", "risks", "risky", "roughly",
-    "rumors", "seems", "seldom", "seldomly", "sometime", "sometimes", "somewhat",
-    "somewhere", "speculate", "speculated", "speculates", "speculating", "speculation",
-    "speculations", "speculative", "speculatively", "sporadic", "sporadically", "sudden",
-    "suddenly", "suggest", "suggested", "suggesting", "suggests", "susceptibility",
-    "tending", "tentative", "tentatively", "turbulence", "uncertain", "uncertainly",
-    "uncertainties", "uncertainty", "unclear", "unconfirmed", "undecided", "undefined",
-    "undesignated", "undetectable", "undeterminable", "undetermined", "undocumented",
-    "unexpected", "unexpectedly", "unfamiliar", "unfamiliarity", "unforecasted",
-    "unforseen", "unguaranteed", "unhedged", "unidentifiable", "unidentified", "unknown",
-    "unknowns", "unobservable", "unplanned", "unpredictability", "unpredictable",
-    "unpredictably", "unpredicted", "unproved", "unproven", "unquantifiable",
-    "unquantified", "unreconciled", "unseasonable", "unseasonably", "unsettled",
-    "unspecific", "unspecified", "untested", "unusual", "unusually", "unwritten",
-    "vagaries", "vague", "vaguely", "vagueness", "vaguenesses", "vaguer", "vaguest",
-    "variability", "variable", "variables", "variably", "variance", "variances", "variant",
-    "variants", "variation", "variations", "varied", "varies", "vary", "varying",
-    "volatile", "volatilities", "volatility",
-}
-
-TOPIC_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = {
-    "always", "best", "clearly", "definitely", "definitively", "highest", "lowest",
-    "must", "never", "strongly", "unambiguously", "uncompromising", "undisputed",
-    "undoubtedly", "unequivocal", "unequivocally", "unparalleled", "unsurpassed", "will",
-}
-
-TOPIC_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = {
-    "apparently", "appeared", "appearing", "appears", "conceivable", "could", "depend",
-    "depended", "depending", "depends", "may", "maybe", "might", "nearly", "occasionally",
-    "perhaps", "possible", "possibly", "seldom", "seldomly", "sometimes", "somewhat",
-    "suggest", "suggests", "uncertain", "uncertainly",
-}
+TOPIC_ANALYSIS_UNCERTAINTY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_UNCERTAINTY_WORDS'])
+TOPIC_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_STRONG_MODALITY_WORDS'])
+TOPIC_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_WEAK_MODALITY_WORDS'])
 
 
 # ---------------------------------------------------------------------------
-# Debate-analysis pipeline lexicons (debate_analysis/debate_analysis_pipeline.py)
+# Debate-analysis pipeline lexicons
 # ---------------------------------------------------------------------------
 
-DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS: set[str] = {
-    "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"
-}
-
-DEBATE_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = {
-    "always", "must", "best", "clearly",
-    "definitely", "definitively", "highest", "lowest",
-    "never", "strongly", "unambiguously", "uncompromising",
-    "undisputed", "undoubtedly", "unequivocal", "unequivocally",
-    "unparalleled", "unsurpassed", "will"
-}
-
-DEBATE_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = {
-    "apparently", "appeared", "appearing", "appears",
-    "conceivable", "could", "depend", "depended",
-    "depending", "depends", "may", "maybe",
-    "might", "nearly", "occasionally", "perhaps",
-    "possible", "possibly", "seldom", "seldomly",
-    "sometimes", "somewhat", "suggest", "suggests",
-    "uncertain", "uncertainly"
-}
+DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS: set[str] = set(_builtins['DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS'])
+DEBATE_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(_builtins['DEBATE_ANALYSIS_STRONG_MODALITY_WORDS'])
+DEBATE_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(_builtins['DEBATE_ANALYSIS_WEAK_MODALITY_WORDS'])
 
 
 # ---------------------------------------------------------------------------
-# LLM-view lexicons (llm_analysis/analysis/config.py)
+# LLM-view lexicons
 # ---------------------------------------------------------------------------
 
-LLM_VIEW_EVIDENCE_WORDS: set[str] = {
-    "evidence", "study", "studies", "data", "analysis", "report", "research", "source",
-    "sources", "trial", "review", "finding", "findings", "statistic", "statistics",
-    "dataset", "paper", "papers", "meta", "meta-analysis", "journal", "experiment",
-}
-
-LLM_VIEW_REBUTTAL_WORDS: set[str] = {
-    "however", "but", "incorrect", "wrong", "misleading", "fails", "contradicts", "instead",
-    "ignores", "actually", "despite", "although", "nevertheless", "inaccurate", "unsupported",
-}
-
-LLM_VIEW_HEDGE_WORDS: set[str] = {
-    "may", "might", "could", "possibly", "perhaps", "suggest", "appears", "seems", "likely",
-    "arguably", "potentially", "unclear", "approximately", "roughly", "plausible",
-}
-
-LLM_VIEW_ASSERTIVE_WORDS: set[str] = {
-    "clearly", "definitely", "proves", "demonstrates", "certainly", "undeniably", "shows",
-    "confirms", "obviously", "establishes", "conclusive", "without doubt",
-}
-
-LLM_VIEW_STRONG_MODAL_WORDS: set[str] = {
-    "must", "will", "cannot", "always", "certainly", "definitely", "undeniably", "clearly",
-}
-
-LLM_VIEW_WEAK_MODAL_WORDS: set[str] = {
-    "may", "might", "could", "can", "possibly", "perhaps", "suggests", "appears",
-}
-
-LLM_VIEW_STANCE_PRO_WORDS: set[str] = {
-    "true", "real", "cover-up", "hidden", "suppressed", "censorship", "proof", "agenda",
-}
-
-LLM_VIEW_STANCE_CON_WORDS: set[str] = {
-    "unsupported", "false", "misleading", "debunked", "evidence-based", "scientific", "inconsistent",
-}
-
-LLM_VIEW_DEFAULT_NRC_EMOTIONS: list[str] = [
-    "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust", "positive", "negative",
-]
-
-_BASIC_EMOTION_LEXICON: dict[str, set[str]] = {
-    "anger": {"angry", "rage", "furious", "outrage", "hostile"},
-    "fear": {"fear", "afraid", "panic", "threat", "danger", "scared"},
-    "trust": {"trust", "reliable", "credible", "evidence", "verified"},
-    "disgust": {"disgust", "gross", "repulsive", "filthy"},
-    "sadness": {"sad", "grief", "tragic", "loss"},
-    "joy": {"hope", "joy", "relief", "encourage", "optimistic"},
-    "anticipation": {"expect", "anticipate", "prepare", "forecast"},
-    "surprise": {"surprised", "unexpected", "shocking", "astonishing"},
-}
+LLM_VIEW_EVIDENCE_WORDS: set[str] = set(_builtins['LLM_VIEW_EVIDENCE_WORDS'])
+LLM_VIEW_REBUTTAL_WORDS: set[str] = set(_builtins['LLM_VIEW_REBUTTAL_WORDS'])
+LLM_VIEW_HEDGE_WORDS: set[str] = set(_builtins['LLM_VIEW_HEDGE_WORDS'])
+LLM_VIEW_ASSERTIVE_WORDS: set[str] = set(_builtins['LLM_VIEW_ASSERTIVE_WORDS'])
+LLM_VIEW_STRONG_MODAL_WORDS: set[str] = set(_builtins['LLM_VIEW_STRONG_MODAL_WORDS'])
+LLM_VIEW_WEAK_MODAL_WORDS: set[str] = set(_builtins['LLM_VIEW_WEAK_MODAL_WORDS'])
+LLM_VIEW_STANCE_PRO_WORDS: set[str] = set(_builtins['LLM_VIEW_STANCE_PRO_WORDS'])
+LLM_VIEW_STANCE_CON_WORDS: set[str] = set(_builtins['LLM_VIEW_STANCE_CON_WORDS'])
+LLM_VIEW_DEFAULT_NRC_EMOTIONS: list[str] = _builtins['LLM_VIEW_DEFAULT_NRC_EMOTIONS']
+_BASIC_EMOTION_LEXICON: dict[str, set[str]] = {k: set(v) for k, v in _builtins['_BASIC_EMOTION_LEXICON'].items()}
 
 
 def _parse_nrc_word_emotion_map(path: Path) -> dict[str, set[str]]:
