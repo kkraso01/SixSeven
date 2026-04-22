@@ -16,14 +16,14 @@ from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.table import Table
 
-from debate.analysis.features import (
+from debate.analysis.utils.features import (
     EmotionAnalyzer,
     analyze_utterance_features,
     infer_winner_from_text,
     load_run_inputs,
 )
 from debate.analysis.analysis_runner import run_custom_analyzers
-from debate.analysis.plots import (
+from debate.analysis.utils.plots import (
     plot_emotion_distribution,
     plot_rhetorical_markers,
     plot_sentiment_comparison,

@@ -5,7 +5,7 @@ from configparser import ConfigParser
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from debate.analysis.lexicons import (
+from debate.analysis.utils.lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
     UNCERTAINTY_WORDS,

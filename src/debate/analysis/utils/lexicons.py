@@ -12,7 +12,8 @@ from collections import defaultdict
 import re
 
 
-ANALYSIS_DIR = Path(__file__).resolve().parent
+UTILS_DIR = Path(__file__).resolve().parent
+ANALYSIS_DIR = UTILS_DIR.parent
 DEBATE_SRC_DIR = ANALYSIS_DIR.parent
 NRC_EMOTION_LEXICON_DIR = DEBATE_SRC_DIR / "resources" / "lexicons" / "NRC-Emotion-Lexicon"
 NRC_EMOTION_LEXICON_PATH = NRC_EMOTION_LEXICON_DIR / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
