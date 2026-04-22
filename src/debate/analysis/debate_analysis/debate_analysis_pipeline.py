@@ -12,7 +12,6 @@ from debate.analysis.features import (
     analyze_utterance_features,
     extract_nrc_emotion_counts,
 )
-from debate.analysis.constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
 from debate.analysis.lexicons import (
     DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS,
     DEBATE_ANALYSIS_STRONG_MODALITY_WORDS,
@@ -37,7 +36,7 @@ OUTPUT_ANALYSIS_DIR = REPO_ROOT / "results" / "analysis" / "debate_analysis"
 NRC_PATH = NRC_EMOTION_LEXICON_PATH
 
 OVERWRITE_EXISTING = True
-EMOTION_MODEL_NAME = DEFAULT_TRANSFORMER_EMOTION_MODEL
+EMOTION_MODEL_NAME = None
 USE_BERT_EMOTION = True
 
 NRC_TRUE_EMOTIONS = DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS

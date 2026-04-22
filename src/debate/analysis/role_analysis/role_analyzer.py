@@ -15,7 +15,6 @@ from debate.analysis.features import (
     analyze_utterance_features,
     extract_nrc_emotion_counts,
 )
-from debate.analysis.constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
 from debate.analysis.lexicons import EMOTION_LEXICON
 
 console = Console()
@@ -34,7 +33,7 @@ def load_and_enrich_data(
     input_csv: Path,
     output_csv: Path,
     skip_emotion: bool = False,
-    emotion_model: str = DEFAULT_TRANSFORMER_EMOTION_MODEL,
+    emotion_model: str | None = None,
 ) -> pd.DataFrame:
     """Loads the base debate log, enriches it with modality and emotion features, and saves it."""
     if output_csv.exists():
@@ -522,7 +521,7 @@ def main(argv: list[str] | None = None):
     parser.add_argument("--artifacts", type=str, default="old_artifacts", help="Directory containing the old artifacts")
     parser.add_argument("--output-root", type=str, default="results/analysis/role_analysis", help="Root directory for role analyzer outputs")
     parser.add_argument("--skip-emotion", action="store_true", help="Skip BERT emotion extraction (saves time)")
-    parser.add_argument("--emotion-model", type=str, default=DEFAULT_TRANSFORMER_EMOTION_MODEL, help="BERT emotion model name")
+    parser.add_argument("--emotion-model", type=str, default=None, help="BERT emotion model name (defaults to config.ini)")
     args = parser.parse_args(argv)
 
     # Read from old_artifacts and write under results/analysis.

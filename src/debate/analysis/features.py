@@ -345,19 +345,22 @@ class EmotionAnalyzer:
 
     _instance = None
     _pipeline = None
-    _model_name = DEFAULT_TRANSFORMER_EMOTION_MODEL
+    _model_name = None
 
     @classmethod
     def get_instance(cls, model_name: str | None = None) -> EmotionAnalyzer:
         if cls._instance is None:
             cls._instance = cls()
+            from debate.core.config import DebateConfig
+            config = DebateConfig.from_ini()
+            cls._instance.set_model(config.adv_analysis_emotion_model)
         if model_name:
             cls._instance.set_model(model_name)
         return cls._instance
 
     def set_model(self, model_name: str) -> None:
         """Update model name. Note: only takes effect before pipeline is loaded."""
-        if self._pipeline is None:
+        if self._pipeline is None and model_name:
             self._model_name = model_name
 
     def _ensure_pipeline(self) -> None:

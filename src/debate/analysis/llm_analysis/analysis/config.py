@@ -3,7 +3,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from debate.analysis.constants import DEFAULT_TRANSFORMER_EMOTION_MODEL
 from debate.analysis.lexicons import (
     LLM_VIEW_ASSERTIVE_WORDS,
     LLM_VIEW_DEFAULT_NRC_EMOTIONS,
@@ -36,7 +35,7 @@ class Config:
     turning_point_delta_threshold: float = 5.0
     nrc_emotion_lexicon_path: Path = Path()
     use_transformer_emotion_secondary: bool = False
-    transformer_emotion_model: str = DEFAULT_TRANSFORMER_EMOTION_MODEL
+    transformer_emotion_model: str | None = None
 
 
 def default_config() -> Config:
