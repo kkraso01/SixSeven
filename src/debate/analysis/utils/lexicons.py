@@ -6,11 +6,10 @@ under ``src/debate/analysis`` while preserving legacy constant names.
 
 from __future__ import annotations
 
-from typing import Any
-from pathlib import Path
-from collections import defaultdict
 import re
-
+from collections import defaultdict
+from pathlib import Path
+from typing import Any
 
 UTILS_DIR = Path(__file__).resolve().parent
 ANALYSIS_DIR = UTILS_DIR.parent
@@ -22,56 +21,67 @@ EMFD_LEXICON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "eMFD" / "emfd_s
 BUILTINS_JSON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "builtins.json"
 
 import json
-with open(BUILTINS_JSON_PATH, "r", encoding="utf-8") as _f:
+
+with open(BUILTINS_JSON_PATH, encoding="utf-8") as _f:
     _builtins = json.load(_f)
 
 # ---------------------------------------------------------------------------
 # Base language-analysis lexicons
 # ---------------------------------------------------------------------------
 
-UNCERTAINTY_WORDS: set[str] = set(_builtins['UNCERTAINTY_WORDS'])
-MODALITY_STRONG_WORDS: set[str] = set(_builtins['MODALITY_STRONG_WORDS'])
-MODALITY_WEAK_WORDS: set[str] = set(_builtins['MODALITY_WEAK_WORDS'])
-MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {k: set(v) for k, v in _builtins['MORAL_FOUNDATION_LEXICON'].items()}
+UNCERTAINTY_WORDS: set[str] = set(_builtins["UNCERTAINTY_WORDS"])
+MODALITY_STRONG_WORDS: set[str] = set(_builtins["MODALITY_STRONG_WORDS"])
+MODALITY_WEAK_WORDS: set[str] = set(_builtins["MODALITY_WEAK_WORDS"])
+MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {
+    k: set(v) for k, v in _builtins["MORAL_FOUNDATION_LEXICON"].items()
+}
 
 
 # ---------------------------------------------------------------------------
 # Topic-analysis pipeline lexicons
 # ---------------------------------------------------------------------------
 
-TOPIC_ANALYSIS_UNCERTAINTY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_UNCERTAINTY_WORDS'])
-TOPIC_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_STRONG_MODALITY_WORDS'])
-TOPIC_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(_builtins['TOPIC_ANALYSIS_WEAK_MODALITY_WORDS'])
+TOPIC_ANALYSIS_UNCERTAINTY_WORDS: set[str] = set(_builtins["TOPIC_ANALYSIS_UNCERTAINTY_WORDS"])
+TOPIC_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(
+    _builtins["TOPIC_ANALYSIS_STRONG_MODALITY_WORDS"]
+)
+TOPIC_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(_builtins["TOPIC_ANALYSIS_WEAK_MODALITY_WORDS"])
 
 
 # ---------------------------------------------------------------------------
 # Debate-analysis pipeline lexicons
 # ---------------------------------------------------------------------------
 
-DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS: set[str] = set(_builtins['DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS'])
-DEBATE_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(_builtins['DEBATE_ANALYSIS_STRONG_MODALITY_WORDS'])
-DEBATE_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(_builtins['DEBATE_ANALYSIS_WEAK_MODALITY_WORDS'])
+DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS: set[str] = set(_builtins["DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS"])
+DEBATE_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = set(
+    _builtins["DEBATE_ANALYSIS_STRONG_MODALITY_WORDS"]
+)
+DEBATE_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = set(
+    _builtins["DEBATE_ANALYSIS_WEAK_MODALITY_WORDS"]
+)
 
 
 # ---------------------------------------------------------------------------
 # LLM-view lexicons
 # ---------------------------------------------------------------------------
 
-LLM_VIEW_EVIDENCE_WORDS: set[str] = set(_builtins['LLM_VIEW_EVIDENCE_WORDS'])
-LLM_VIEW_REBUTTAL_WORDS: set[str] = set(_builtins['LLM_VIEW_REBUTTAL_WORDS'])
-LLM_VIEW_HEDGE_WORDS: set[str] = set(_builtins['LLM_VIEW_HEDGE_WORDS'])
-LLM_VIEW_ASSERTIVE_WORDS: set[str] = set(_builtins['LLM_VIEW_ASSERTIVE_WORDS'])
-LLM_VIEW_STRONG_MODAL_WORDS: set[str] = set(_builtins['LLM_VIEW_STRONG_MODAL_WORDS'])
-LLM_VIEW_WEAK_MODAL_WORDS: set[str] = set(_builtins['LLM_VIEW_WEAK_MODAL_WORDS'])
-LLM_VIEW_STANCE_PRO_WORDS: set[str] = set(_builtins['LLM_VIEW_STANCE_PRO_WORDS'])
-LLM_VIEW_STANCE_CON_WORDS: set[str] = set(_builtins['LLM_VIEW_STANCE_CON_WORDS'])
-LLM_VIEW_DEFAULT_NRC_EMOTIONS: list[str] = _builtins['LLM_VIEW_DEFAULT_NRC_EMOTIONS']
-_BASIC_EMOTION_LEXICON: dict[str, set[str]] = {k: set(v) for k, v in _builtins['_BASIC_EMOTION_LEXICON'].items()}
+LLM_VIEW_EVIDENCE_WORDS: set[str] = set(_builtins["LLM_VIEW_EVIDENCE_WORDS"])
+LLM_VIEW_REBUTTAL_WORDS: set[str] = set(_builtins["LLM_VIEW_REBUTTAL_WORDS"])
+LLM_VIEW_HEDGE_WORDS: set[str] = set(_builtins["LLM_VIEW_HEDGE_WORDS"])
+LLM_VIEW_ASSERTIVE_WORDS: set[str] = set(_builtins["LLM_VIEW_ASSERTIVE_WORDS"])
+LLM_VIEW_STRONG_MODAL_WORDS: set[str] = set(_builtins["LLM_VIEW_STRONG_MODAL_WORDS"])
+LLM_VIEW_WEAK_MODAL_WORDS: set[str] = set(_builtins["LLM_VIEW_WEAK_MODAL_WORDS"])
+LLM_VIEW_STANCE_PRO_WORDS: set[str] = set(_builtins["LLM_VIEW_STANCE_PRO_WORDS"])
+LLM_VIEW_STANCE_CON_WORDS: set[str] = set(_builtins["LLM_VIEW_STANCE_CON_WORDS"])
+LLM_VIEW_DEFAULT_NRC_EMOTIONS: list[str] = _builtins["LLM_VIEW_DEFAULT_NRC_EMOTIONS"]
+_BASIC_EMOTION_LEXICON: dict[str, set[str]] = {
+    k: set(v) for k, v in _builtins["_BASIC_EMOTION_LEXICON"].items()
+}
 
 
 def _parse_nrc_word_emotion_map(path: Path) -> dict[str, set[str]]:
     lex = defaultdict(set)
-    with open(path, "r", encoding="utf-8") as handle:
+    with open(path, encoding="utf-8") as handle:
         for line in handle:
             row = line.strip()
             if not row:
@@ -172,6 +182,7 @@ def load_emfd_lexicon(path: Path | str | None = None) -> Any | None:
     df[token_col] = df[token_col].astype(str).str.lower().str.strip()
     return df
 
+
 def _load_emotion_lexicon() -> dict[str, set[str]]:
     """
     Attempt to load the full NRC Emotion Lexicon from the shared resources folder.
@@ -179,13 +190,25 @@ def _load_emotion_lexicon() -> dict[str, set[str]]:
     """
     try:
         if NRC_EMOTION_LEXICON_PATH.exists():
-            core_emotions = {"anger", "fear", "trust", "disgust", "sadness", "joy", "anticipation", "surprise"}
-            return load_nrc_emotion_lexicon(path=NRC_EMOTION_LEXICON_PATH, emotions=core_emotions, include_lemma_variants=False)
-            
-    except Exception as e:
+            core_emotions = {
+                "anger",
+                "fear",
+                "trust",
+                "disgust",
+                "sadness",
+                "joy",
+                "anticipation",
+                "surprise",
+            }
+            return load_nrc_emotion_lexicon(
+                path=NRC_EMOTION_LEXICON_PATH, emotions=core_emotions, include_lemma_variants=False
+            )
+
+    except Exception:
         pass
-        
+
     return _BASIC_EMOTION_LEXICON
+
 
 EMOTION_LEXICON: dict[str, set[str]] = _load_emotion_lexicon()
 
@@ -197,4 +220,3 @@ EMOTION_LEXICON: dict[str, set[str]] = _load_emotion_lexicon()
 NRC_TRUE_EMOTIONS: set[str] = DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS
 STRONG_MODALITY_WORDS: set[str] = DEBATE_ANALYSIS_STRONG_MODALITY_WORDS
 WEAK_MODALITY_WORDS: set[str] = DEBATE_ANALYSIS_WEAK_MODALITY_WORDS
-

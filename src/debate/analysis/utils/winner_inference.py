@@ -29,8 +29,10 @@ def infer_winner_from_stance_trajectory(final_report: dict[str, Any] | None) -> 
                 "winner_source": "stance_trajectory",
                 "winner_confidence": "medium",
                 "winner_evidence": {
-                    "CA_start": ca[0], "CA_end": ca[-1],
-                    "SA_start": sa[0], "SA_end": sa[-1],
+                    "CA_start": ca[0],
+                    "CA_end": ca[-1],
+                    "SA_start": sa[0],
+                    "SA_end": sa[-1],
                 },
             }
 
@@ -41,8 +43,10 @@ def infer_winner_from_stance_trajectory(final_report: dict[str, Any] | None) -> 
                 "winner_source": "stance_trajectory",
                 "winner_confidence": "medium",
                 "winner_evidence": {
-                    "CA_start": ca[0], "CA_end": ca[-1],
-                    "SA_start": sa[0], "SA_end": sa[-1],
+                    "CA_start": ca[0],
+                    "CA_end": ca[-1],
+                    "SA_start": sa[0],
+                    "SA_end": sa[-1],
                 },
             }
 
@@ -86,9 +90,19 @@ def infer_winner_from_final_report(
         if explicit_winner:
             val = str(explicit_winner).strip().lower()
             if val in {"sa", "scientific", "scientific advocate", "opponent"}:
-                winner, confidence, source, evidence = "SA", "high", "explicit_winner_field", str(explicit_winner)
+                winner, confidence, source, evidence = (
+                    "SA",
+                    "high",
+                    "explicit_winner_field",
+                    str(explicit_winner),
+                )
             elif val in {"ca", "conspiracy", "conspiracy advocate", "proponent"}:
-                winner, confidence, source, evidence = "CA", "high", "explicit_winner_field", str(explicit_winner)
+                winner, confidence, source, evidence = (
+                    "CA",
+                    "high",
+                    "explicit_winner_field",
+                    str(explicit_winner),
+                )
 
     if winner is None:
         patterns = [
@@ -101,7 +115,12 @@ def infer_winner_from_final_report(
         ]
         for pattern, label, conf in patterns:
             if re.search(pattern, text):
-                winner, confidence, source, evidence = label, conf, "outcome_summary", outcome_summary
+                winner, confidence, source, evidence = (
+                    label,
+                    conf,
+                    "outcome_summary",
+                    outcome_summary,
+                )
                 break
 
     if winner is None and use_stance_trajectory_fallback:

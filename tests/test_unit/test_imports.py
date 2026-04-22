@@ -9,7 +9,6 @@ def test_core_imports():
     """Test core module imports."""
     print("Testing core imports...")
     try:
-
         print(" Core imports successful")
         return True
     except Exception as e:
@@ -36,7 +35,6 @@ def test_io_imports():
     """Test IO functionality imports (formerly export)."""
     print("\nTesting IO imports...")
     try:
-
         print(" IO imports successful")
         return True
     except Exception as e:
@@ -48,7 +46,6 @@ def test_providers_imports():
     """Test LLM and search provider imports (formerly llm)."""
     print("\nTesting provider imports...")
     try:
-
         print(" Provider imports successful")
         return True
     except Exception as e:
@@ -60,7 +57,6 @@ def test_engine_imports():
     """Test engine imports (formerly debate and memory)."""
     print("\nTesting engine imports...")
     try:
-
         print(" Engine imports successful")
         return True
     except Exception as e:

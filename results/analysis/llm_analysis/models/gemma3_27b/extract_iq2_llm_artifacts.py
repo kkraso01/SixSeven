@@ -55,7 +55,9 @@ def _build_speaker_lookup(debate: dict[str, Any]) -> dict[str, tuple[str, str]]:
     return lookup
 
 
-def _map_turn_role(turn: dict[str, Any], speaker_lookup: dict[str, tuple[str, str]]) -> tuple[str, str]:
+def _map_turn_role(
+    turn: dict[str, Any], speaker_lookup: dict[str, tuple[str, str]]
+) -> tuple[str, str]:
     role, stance = _map_role_and_stance(turn.get("speakertype", ""))
     if (turn.get("speakertype") or "").strip().lower() != "unknown":
         return role, stance
@@ -175,7 +177,9 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
                     "utterance": utterance,
                     "stance": stance,
                     "confidence": default_confidence,
-                    "tactic_used": "human_transcript" if role in {"proponent", "opponent"} else None,
+                    "tactic_used": "human_transcript"
+                    if role in {"proponent", "opponent"}
+                    else None,
                     "tool_used": "none",
                     "tool_query": None,
                     "reply_to_turn": None,
@@ -225,7 +229,9 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
                 "SA": "Continue rebuttal based on transcript evidence.",
             },
         }
-        (run_dir / "memory.json").write_text(json.dumps(memory, ensure_ascii=False, indent=2), encoding="utf-8")
+        (run_dir / "memory.json").write_text(
+            json.dumps(memory, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
         # final_report.json compatible with FinalReport schema
         max_round = max((item["round"] for item in logs), default=0)
@@ -239,7 +245,9 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
                 "SA": [55 for _ in rounds_sorted] or [55],
             },
             "tactic_counts": {
-                "human_transcript": sum(1 for item in logs if item["tactic_used"] == "human_transcript")
+                "human_transcript": sum(
+                    1 for item in logs if item["tactic_used"] == "human_transcript"
+                )
             },
             "key_persuasion_moments": [],
             "outcome_summary": "Imported historical IQ2 debate transcript; no simulated persuasion trajectory computed.",
@@ -266,7 +274,9 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
             "word_limit": None,
             "rounds": max_round,
         }
-        (run_dir / "run_config.json").write_text(json.dumps(run_config, ensure_ascii=False, indent=2), encoding="utf-8")
+        (run_dir / "run_config.json").write_text(
+            json.dumps(run_config, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
         metadata = {
             "topic_id": debate_id,
@@ -309,7 +319,9 @@ def build_artifacts(dataset_path: Path, output_root: Path) -> None:
         (run_dir / "transcript.md").write_text(transcript_text, encoding="utf-8")
 
     topics_path = output_root / "topics_iq2_llm.json"
-    topics_path.write_text(json.dumps(topics_output, ensure_ascii=False, indent=2), encoding="utf-8")
+    topics_path.write_text(
+        json.dumps(topics_output, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     _write_csv(all_logs, output_root / "all_debates_iq2.csv")
 

@@ -18,15 +18,17 @@ from textblob import TextBlob
 
 from debate.core.schemas import MemoryState
 
-
 from .lexicons import (
     MODALITY_STRONG_WORDS,
     MODALITY_WEAK_WORDS,
     UNCERTAINTY_WORDS,
+)
+from .lexicons import (
     load_nrc_emotion_lexicon as _lex_load_nrc_emotion_lexicon,
+)
+from .lexicons import (
     load_nrc_word_lexicon as _lex_load_nrc_word_lexicon,
 )
-from .winner_inference import infer_winner_from_final_report
 
 
 @dataclass
@@ -257,8 +259,16 @@ def extract_nrc_emotion_counts(
     - emotion -> set(words)
     """
     known_emotions = {
-        "anger", "anticipation", "disgust", "fear", "joy",
-        "sadness", "surprise", "trust", "positive", "negative",
+        "anger",
+        "anticipation",
+        "disgust",
+        "fear",
+        "joy",
+        "sadness",
+        "surprise",
+        "trust",
+        "positive",
+        "negative",
     }
 
     lexicon = nrc_word_lexicon
@@ -326,7 +336,9 @@ def load_nrc_emotion_lexicon(
     )
 
 
-def emotion_lexicon_scores(tokens: list[str], nrc_emotion_lexicon: dict[str, set[str]]) -> dict[str, float]:
+def emotion_lexicon_scores(
+    tokens: list[str], nrc_emotion_lexicon: dict[str, set[str]]
+) -> dict[str, float]:
     """Compute normalized emotion overlap from token list and emotion -> words lexicon."""
     if not tokens:
         return {}
@@ -352,6 +364,7 @@ class EmotionAnalyzer:
         if cls._instance is None:
             cls._instance = cls()
             from debate.core.config import DebateConfig
+
             config = DebateConfig.from_ini()
             cls._instance.set_model(config.adv_analysis_emotion_model)
         if model_name:

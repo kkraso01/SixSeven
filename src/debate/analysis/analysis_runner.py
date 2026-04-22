@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import traceback
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from time import perf_counter
-from typing import Any, Callable, cast
+from typing import Any, cast
 
 from .utils.features import load_run_inputs
 from .utils.language_analysis import language_use_summary_from_logs
@@ -158,9 +159,13 @@ def run_custom_analyzers(
     if topic_analysis_uncertainty_lexicon:
         topic_analysis_argv.extend(["--uncertainty_lexicon", topic_analysis_uncertainty_lexicon])
     if topic_analysis_strong_modality_lexicon:
-        topic_analysis_argv.extend(["--strong_modality_lexicon", topic_analysis_strong_modality_lexicon])
+        topic_analysis_argv.extend(
+            ["--strong_modality_lexicon", topic_analysis_strong_modality_lexicon]
+        )
     if topic_analysis_weak_modality_lexicon:
-        topic_analysis_argv.extend(["--weak_modality_lexicon", topic_analysis_weak_modality_lexicon])
+        topic_analysis_argv.extend(
+            ["--weak_modality_lexicon", topic_analysis_weak_modality_lexicon]
+        )
     if topic_analysis_nrc_lexicon:
         topic_analysis_argv.extend(["--nrc_lexicon", topic_analysis_nrc_lexicon])
     if topic_analysis_emfd_lexicon:
@@ -184,7 +189,13 @@ def run_custom_analyzers(
 
     runners: list[tuple[str, Callable[[list[str] | None], None], list[str], Path, bool]] = [
         ("debate_analysis", debate_analysis_main, debate_argv, debate_output_dir, True),
-        ("topic_analysis", topic_analysis_main, topic_analysis_argv, topic_analysis_output_dir, True),
+        (
+            "topic_analysis",
+            topic_analysis_main,
+            topic_analysis_argv,
+            topic_analysis_output_dir,
+            True,
+        ),
         ("role_analysis", role_analysis_main, role_argv, role_output_dir, True),
         ("llm_analysis", llm_analysis_main, llm_argv, llm_output_dir, True),
         (
@@ -194,7 +205,13 @@ def run_custom_analyzers(
             llm_output_dir,
             False,
         ),
-        ("topic_analysis_plots", topic_analysis_plots_main, topic_analysis_plots_argv, topic_analysis_plots_dir, False),
+        (
+            "topic_analysis_plots",
+            topic_analysis_plots_main,
+            topic_analysis_plots_argv,
+            topic_analysis_plots_dir,
+            False,
+        ),
         (
             "topic_analysis_top_words_visuals",
             topic_analysis_visuals_main,
@@ -223,7 +240,9 @@ def run_custom_analyzers(
                 output_dir=output_dir,
                 duration_seconds=elapsed,
             )
-            results.append(CustomAnalyzerRunResult(name=name, success=True, show_in_summary=show_in_summary))
+            results.append(
+                CustomAnalyzerRunResult(name=name, success=True, show_in_summary=show_in_summary)
+            )
         except Exception:
             elapsed = perf_counter() - started_at
             error_trace = traceback.format_exc()
@@ -391,7 +410,9 @@ def analyze_all(results_root: str) -> AggregateReport:
     ]
     bridge_means = [report.quality_summary.aggregates["bridge_building"].mean for report in reports]
     tactic_diversity = [float(report.tactic_summary.diversity.get("CA", 0)) for report in reports]
-    uncertainty_rates = [report.language_use.uncertainty.overall_rate_per_1000 for report in reports]
+    uncertainty_rates = [
+        report.language_use.uncertainty.overall_rate_per_1000 for report in reports
+    ]
 
     summaries = [
         RunCaseSummary(

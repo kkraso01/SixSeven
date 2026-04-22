@@ -68,7 +68,9 @@ def _normalize_rows(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
     return values.div(row_sums, axis=0).fillna(0.0)
 
 
-def _build_group_series(df: pd.DataFrame, x_col: str, emotion_cols: list[str]) -> dict[str, pd.DataFrame]:
+def _build_group_series(
+    df: pd.DataFrame, x_col: str, emotion_cols: list[str]
+) -> dict[str, pd.DataFrame]:
     grouped: dict[str, pd.DataFrame] = {}
     for (model_name, debate_role), sub in df.groupby(["model_name", "debate_role"], dropna=False):
         actor_key = f"{str(model_name)}::{str(debate_role)}"
@@ -77,14 +79,20 @@ def _build_group_series(df: pd.DataFrame, x_col: str, emotion_cols: list[str]) -
         work = work.dropna(subset=[x_col])
         if work.empty:
             continue
-        work = work.groupby(x_col, as_index=False)[emotion_cols].mean(numeric_only=True).sort_values(x_col)
+        work = (
+            work.groupby(x_col, as_index=False)[emotion_cols]
+            .mean(numeric_only=True)
+            .sort_values(x_col)
+        )
         if work.empty:
             continue
         grouped[actor_key] = work
     return grouped
 
 
-def _build_group_metric_series(df: pd.DataFrame, x_col: str, metric_col: str) -> dict[str, pd.DataFrame]:
+def _build_group_metric_series(
+    df: pd.DataFrame, x_col: str, metric_col: str
+) -> dict[str, pd.DataFrame]:
     grouped: dict[str, pd.DataFrame] = {}
     for (model_name, debate_role), sub in df.groupby(["model_name", "debate_role"], dropna=False):
         actor_key = f"{str(model_name)}::{str(debate_role)}"
@@ -94,7 +102,11 @@ def _build_group_metric_series(df: pd.DataFrame, x_col: str, metric_col: str) ->
         work = work.dropna(subset=[x_col, metric_col])
         if work.empty:
             continue
-        work = work.groupby(x_col, as_index=False)[metric_col].mean(numeric_only=True).sort_values(x_col)
+        work = (
+            work.groupby(x_col, as_index=False)[metric_col]
+            .mean(numeric_only=True)
+            .sort_values(x_col)
+        )
         if work.empty:
             continue
         grouped[actor_key] = work
@@ -185,7 +197,12 @@ def plot_combined_for_run(run_dir: Path) -> bool:
     ax.add_artist(emotion_legend)
 
     actor_handles = [
-        Patch(facecolor="white", edgecolor="black", hatch=GROUP_HATCHES[i % len(GROUP_HATCHES)], label=actor)
+        Patch(
+            facecolor="white",
+            edgecolor="black",
+            hatch=GROUP_HATCHES[i % len(GROUP_HATCHES)],
+            label=actor,
+        )
         for i, actor in enumerate(actor_keys)
     ]
     ax.legend(
@@ -239,11 +256,21 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
     for (model_name, debate_role), sub in work.groupby(["model_name", "debate_role"], dropna=False):
         actor_key = f"{str(model_name)}::{str(debate_role)}"
         # Stance
-        stance_agg = sub[[x_col, "artifact_stance_numeric"]].groupby(x_col, as_index=False).mean(numeric_only=True).sort_values(x_col)
+        stance_agg = (
+            sub[[x_col, "artifact_stance_numeric"]]
+            .groupby(x_col, as_index=False)
+            .mean(numeric_only=True)
+            .sort_values(x_col)
+        )
         if not stance_agg.empty:
             actor_stance_groups[actor_key] = stance_agg
         # VADER
-        vader_agg = sub[[x_col, "vader_compound"]].groupby(x_col, as_index=False).mean(numeric_only=True).sort_values(x_col)
+        vader_agg = (
+            sub[[x_col, "vader_compound"]]
+            .groupby(x_col, as_index=False)
+            .mean(numeric_only=True)
+            .sort_values(x_col)
+        )
         if not vader_agg.empty:
             actor_vader_groups[actor_key] = vader_agg
 
@@ -269,7 +296,7 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
     # Plot all actors with solid lines for stance, dashed lines for VADER
     for idx, actor_key in enumerate(actor_keys):
         color = ACTOR_LINE_COLORS[idx % len(ACTOR_LINE_COLORS)]
-        
+
         # Stance: solid line
         if actor_key in actor_stance_groups:
             actor_df = actor_stance_groups[actor_key].set_index(x_col)
@@ -285,7 +312,7 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
                 label=f"{actor_key} (stance)",
                 color=color,
             )
-        
+
         # VADER: dashed line with same color
         if actor_key in actor_vader_groups:
             actor_df = actor_vader_groups[actor_key].set_index(x_col)
@@ -307,12 +334,18 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
     ax.set_ylabel("Position / Tone", fontsize=11, fontweight="bold")
     ax.set_ylim(-1.1, 1.1)
     ax.set_yticks([-1.0, -0.5, 0.0, 0.5, 1.0])
-    ax.set_yticklabels(["Oppose\n(Negative)", "-0.5", "Neutral\n(Neutral)", "0.5", "Support\n(Positive)"])
-    ax.set_title(f"{run_dir.name} - Stance vs VADER Tone (All Actors Combined)", fontsize=12, fontweight="bold")
+    ax.set_yticklabels(
+        ["Oppose\n(Negative)", "-0.5", "Neutral\n(Neutral)", "0.5", "Support\n(Positive)"]
+    )
+    ax.set_title(
+        f"{run_dir.name} - Stance vs VADER Tone (All Actors Combined)",
+        fontsize=12,
+        fontweight="bold",
+    )
     ax.set_xlabel("Round" if x_col == "round" else "Turn Index", fontsize=11, fontweight="bold")
     ax.set_xticks(x)
     ax.set_xticklabels([str(v) for v in all_steps])
-    
+
     ax.legend(
         title="Metric (Line Style)",
         title_fontsize=10,
@@ -335,11 +368,10 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
     return True
 
 
-
-
-
 def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Create combined per-run NRC emotion trajectory plots.")
+    parser = argparse.ArgumentParser(
+        description="Create combined per-run NRC emotion trajectory plots."
+    )
     parser.add_argument(
         "--output-root",
         type=Path,

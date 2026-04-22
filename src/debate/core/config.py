@@ -42,8 +42,12 @@ class DebateConfig:
     adv_analysis_overwrite: bool = True
     adv_analysis_max_runs: int = 10
     uncertainty_lexicon: list[str] = field(default_factory=lambda: sorted(list(UNCERTAINTY_WORDS)))
-    strong_modality_lexicon: list[str] = field(default_factory=lambda: sorted(list(MODALITY_STRONG_WORDS)))
-    weak_modality_lexicon: list[str] = field(default_factory=lambda: sorted(list(MODALITY_WEAK_WORDS)))
+    strong_modality_lexicon: list[str] = field(
+        default_factory=lambda: sorted(list(MODALITY_STRONG_WORDS))
+    )
+    weak_modality_lexicon: list[str] = field(
+        default_factory=lambda: sorted(list(MODALITY_WEAK_WORDS))
+    )
 
     @classmethod
     def from_ini(cls, config_path: str | Path = "config/config.ini") -> DebateConfig:

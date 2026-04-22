@@ -37,20 +37,29 @@ import os
 import re
 import zipfile
 from collections import Counter
+from collections.abc import Iterable, Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
-import numpy as np
 import pandas as pd
 
 from debate.analysis.utils.lexicons import (
     EMFD_LEXICON_PATH,
     NRC_EMOTION_LEXICON_PATH,
+)
+from debate.analysis.utils.lexicons import (
     TOPIC_ANALYSIS_STRONG_MODALITY_WORDS as SHARED_TOPIC_ANALYSIS_STRONG_MODALITY_WORDS,
+)
+from debate.analysis.utils.lexicons import (
     TOPIC_ANALYSIS_UNCERTAINTY_WORDS as SHARED_TOPIC_ANALYSIS_UNCERTAINTY_WORDS,
+)
+from debate.analysis.utils.lexicons import (
     TOPIC_ANALYSIS_WEAK_MODALITY_WORDS as SHARED_TOPIC_ANALYSIS_WEAK_MODALITY_WORDS,
+)
+from debate.analysis.utils.lexicons import (
     load_emfd_lexicon as shared_load_emfd_lexicon,
+)
+from debate.analysis.utils.lexicons import (
     load_nrc_emotion_lexicon as shared_load_nrc_emotion_lexicon,
 )
 
@@ -62,16 +71,127 @@ from debate.analysis.utils.lexicons import (
 # -----------------------------
 
 STOPWORDS = {
-    "a", "an", "the", "and", "or", "but", "if", "while", "of", "at", "by", "for", "with",
-    "about", "against", "between", "into", "through", "during", "before", "after", "above", "below",
-    "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further",
-    "then", "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each",
-    "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same",
-    "so", "than", "too", "very", "can", "will", "just", "don", "should", "now", "is", "are",
-    "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did", "this",
-    "that", "these", "those", "it", "its", "as", "i", "you", "he", "she", "they", "them", "we",
-    "our", "ours", "your", "yours", "his", "her", "hers", "their", "theirs", "me", "my", "mine",
-    "us", "what", "which", "who", "whom", "am", "because", "until", "ll", "re", "ve", "m", "s",
+    "a",
+    "an",
+    "the",
+    "and",
+    "or",
+    "but",
+    "if",
+    "while",
+    "of",
+    "at",
+    "by",
+    "for",
+    "with",
+    "about",
+    "against",
+    "between",
+    "into",
+    "through",
+    "during",
+    "before",
+    "after",
+    "above",
+    "below",
+    "to",
+    "from",
+    "up",
+    "down",
+    "in",
+    "out",
+    "on",
+    "off",
+    "over",
+    "under",
+    "again",
+    "further",
+    "then",
+    "once",
+    "here",
+    "there",
+    "when",
+    "where",
+    "why",
+    "how",
+    "all",
+    "any",
+    "both",
+    "each",
+    "few",
+    "more",
+    "most",
+    "other",
+    "some",
+    "such",
+    "no",
+    "nor",
+    "not",
+    "only",
+    "own",
+    "same",
+    "so",
+    "than",
+    "too",
+    "very",
+    "can",
+    "will",
+    "just",
+    "don",
+    "should",
+    "now",
+    "is",
+    "are",
+    "was",
+    "were",
+    "be",
+    "been",
+    "being",
+    "have",
+    "has",
+    "had",
+    "do",
+    "does",
+    "did",
+    "this",
+    "that",
+    "these",
+    "those",
+    "it",
+    "its",
+    "as",
+    "i",
+    "you",
+    "he",
+    "she",
+    "they",
+    "them",
+    "we",
+    "our",
+    "ours",
+    "your",
+    "yours",
+    "his",
+    "her",
+    "hers",
+    "their",
+    "theirs",
+    "me",
+    "my",
+    "mine",
+    "us",
+    "what",
+    "which",
+    "who",
+    "whom",
+    "am",
+    "because",
+    "until",
+    "ll",
+    "re",
+    "ve",
+    "m",
+    "s",
 }
 
 ROLE_MAP = {
@@ -106,20 +226,20 @@ def clean_text(text: str) -> str:
     return text
 
 
-def tokenize(text: str) -> List[str]:
+def tokenize(text: str) -> list[str]:
     text = clean_text(text)
     toks = [t for t in text.split() if len(t) > 2 and t not in STOPWORDS]
     return toks
 
 
-def make_bigrams(tokens: Sequence[str]) -> List[str]:
-    return [f"{tokens[i]}_{tokens[i+1]}" for i in range(len(tokens) - 1)]
+def make_bigrams(tokens: Sequence[str]) -> list[str]:
+    return [f"{tokens[i]}_{tokens[i + 1]}" for i in range(len(tokens) - 1)]
 
 
 def safe_json_load(path_or_bytes) -> dict:
     if hasattr(path_or_bytes, "read"):
         return json.load(path_or_bytes)
-    with open(path_or_bytes, "r", encoding="utf-8") as f:
+    with open(path_or_bytes, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -127,13 +247,14 @@ def safe_json_load(path_or_bytes) -> dict:
 # Data loading
 # -----------------------------
 
+
 @dataclass
 class RunRecord:
     run_name: str
     topic_id: str
-    topic_category: Optional[str]
-    topic_description: Optional[str]
-    model_config: Optional[str]
+    topic_category: str | None
+    topic_description: str | None
+    model_config: str | None
     debate_log: pd.DataFrame
     final_report: dict
     metadata: dict
@@ -157,7 +278,7 @@ class ArtifactReader:
             if nested.exists() and nested.is_dir():
                 self.base_dir = nested
 
-    def list_run_names(self) -> List[str]:
+    def list_run_names(self) -> list[str]:
         if self.is_zip:
             runs = set()
             for name in self._zip.namelist():
@@ -171,7 +292,7 @@ class ArtifactReader:
     def _open_text(self, path: str):
         if self.is_zip:
             return io.TextIOWrapper(self._zip.open(path), encoding="utf-8")
-        return open(path, "r", encoding="utf-8")
+        return open(path, encoding="utf-8")
 
     def _read_csv(self, path: str) -> pd.DataFrame:
         if self.is_zip:
@@ -210,7 +331,8 @@ class ArtifactReader:
 # Winner inference
 # -----------------------------
 
-def infer_winner_from_final_report(final_report: dict) -> Tuple[str, str]:
+
+def infer_winner_from_final_report(final_report: dict) -> tuple[str, str]:
     """
     Returns (winner, method).
 
@@ -261,12 +383,13 @@ def infer_winner_from_final_report(final_report: dict) -> Tuple[str, str]:
 # Lexicon loading and scoring
 # -----------------------------
 
-def load_simple_lexicon(path: Optional[str]) -> set:
+
+def load_simple_lexicon(path: str | None) -> set:
     """Load one item per line. Ignores empty lines and comment lines."""
     if not path or not Path(path).exists():
         return set()
     items = set()
-    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+    with open(path, encoding="utf-8", errors="ignore") as f:
         for line in f:
             line = line.strip().lower()
             if not line or line.startswith("#"):
@@ -275,14 +398,14 @@ def load_simple_lexicon(path: Optional[str]) -> set:
     return items
 
 
-def score_lexicon_terms(tokens: Sequence[str], lexicon: set) -> Tuple[int, float]:
+def score_lexicon_terms(tokens: Sequence[str], lexicon: set) -> tuple[int, float]:
     if not tokens:
         return 0, 0.0
     count = sum(1 for t in tokens if t in lexicon)
     return count, count / len(tokens)
 
 
-def load_nrc_emotion_lexicon(path: Optional[str]) -> Dict[str, set]:
+def load_nrc_emotion_lexicon(path: str | None) -> dict[str, set]:
     """Compatibility wrapper around the shared NRC loader.
 
     The legacy topic-analysis pipeline tolerated missing paths by returning an
@@ -294,16 +417,17 @@ def load_nrc_emotion_lexicon(path: Optional[str]) -> Dict[str, set]:
 
     nrc_path = Path(path)
     if not nrc_path.exists():
-        print(f"[WARN] NRC lexicon not found at {nrc_path}; continuing without NRC lexical emotion scores.")
+        print(
+            f"[WARN] NRC lexicon not found at {nrc_path}; continuing without NRC lexical emotion scores."
+        )
         return {}
 
     return {
-        emotion: set(words)
-        for emotion, words in shared_load_nrc_emotion_lexicon(nrc_path).items()
+        emotion: set(words) for emotion, words in shared_load_nrc_emotion_lexicon(nrc_path).items()
     }
 
 
-def score_nrc_emotions(tokens: Sequence[str], emotion_lex: Dict[str, set]) -> Dict[str, float]:
+def score_nrc_emotions(tokens: Sequence[str], emotion_lex: dict[str, set]) -> dict[str, float]:
     if not tokens:
         return {emo: 0.0 for emo in emotion_lex.keys()}
     result = {}
@@ -313,7 +437,7 @@ def score_nrc_emotions(tokens: Sequence[str], emotion_lex: Dict[str, set]) -> Di
     return result
 
 
-def score_emfd_tokens(tokens: Sequence[str], emfd_df: Optional[pd.DataFrame]) -> Dict[str, float]:
+def score_emfd_tokens(tokens: Sequence[str], emfd_df: pd.DataFrame | None) -> dict[str, float]:
     """
     Returns average moral scores over the tokens that matched the dictionary.
     If no eMFD file is provided, returns {}.
@@ -326,7 +450,9 @@ def score_emfd_tokens(tokens: Sequence[str], emfd_df: Optional[pd.DataFrame]) ->
     if token_col is None:
         return {}
 
-    numeric_cols = [c for c in emfd_df.columns if c != token_col and pd.api.types.is_numeric_dtype(emfd_df[c])]
+    numeric_cols = [
+        c for c in emfd_df.columns if c != token_col and pd.api.types.is_numeric_dtype(emfd_df[c])
+    ]
     if not numeric_cols:
         return {}
 
@@ -345,19 +471,20 @@ def score_emfd_tokens(tokens: Sequence[str], emfd_df: Optional[pd.DataFrame]) ->
 # BERT emotion analysis
 # -----------------------------
 
+
 def run_bert_emotion_classifier(
     texts: Sequence[str],
     model_name: str = "j-hartmann/emotion-english-distilroberta-base",
     batch_size: int = 16,
     max_length: int = 256,
-    device: Optional[int] = None,
+    device: int | None = None,
 ) -> pd.DataFrame:
     """
     Returns a DataFrame with one row per text:
       predicted_emotion, plus probability columns for each label.
     """
-    from transformers import AutoModelForSequenceClassification, AutoTokenizer
     import torch
+    from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
     if device is None:
         device = 0 if torch.cuda.is_available() else -1
@@ -401,11 +528,12 @@ def run_bert_emotion_classifier(
 # Topic-level aggregation
 # -----------------------------
 
-def top_k_counter(items: Iterable[str], k: int = 20) -> List[Tuple[str, int]]:
+
+def top_k_counter(items: Iterable[str], k: int = 20) -> list[tuple[str, int]]:
     return Counter(items).most_common(k)
 
 
-def flatten_counter_list(counter_list: List[Tuple[str, int]]) -> str:
+def flatten_counter_list(counter_list: list[tuple[str, int]]) -> str:
     return ", ".join([f"{token}:{count}" for token, count in counter_list])
 
 
@@ -477,8 +605,8 @@ def aggregate_topic_role_language(
     uncertainty_lex: set,
     strong_modality_lex: set,
     weak_modality_lex: set,
-    nrc_emotion_lex: Dict[str, set],
-    emfd_df: Optional[pd.DataFrame],
+    nrc_emotion_lex: dict[str, set],
+    emfd_df: pd.DataFrame | None,
     top_k_words: int = 25,
     top_k_bigrams: int = 20,
 ) -> pd.DataFrame:
@@ -527,7 +655,7 @@ def aggregate_topic_emotions_with_bert(
     model_name: str,
     batch_size: int,
     max_length: int,
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     if utter_df.empty:
         return pd.DataFrame(), pd.DataFrame()
 
@@ -545,7 +673,11 @@ def aggregate_topic_emotions_with_bert(
     for topic_id, g in full.groupby("topic_id"):
         pred_counts = g["predicted_emotion"].value_counts(normalize=True).to_dict()
         avg_probs = g[label_cols].mean(axis=0).to_dict()
-        top_label = g["predicted_emotion"].mode().iloc[0] if not g["predicted_emotion"].mode().empty else None
+        top_label = (
+            g["predicted_emotion"].mode().iloc[0]
+            if not g["predicted_emotion"].mode().empty
+            else None
+        )
         row = {
             "topic_id": topic_id,
             "num_utterances": len(g),
@@ -562,10 +694,21 @@ def aggregate_topic_emotions_with_bert(
 # Main pipeline
 # -----------------------------
 
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Topic-level analysis pipeline for debate runs")
-    parser.add_argument("--artifacts", type=str, default="old_artifacts", help="Path to old_artifacts directory or old_artifacts.zip")
-    parser.add_argument("--output_dir", type=str, default="results/analysis/topic_analysis", help="Directory where outputs will be written")
+    parser.add_argument(
+        "--artifacts",
+        type=str,
+        default="old_artifacts",
+        help="Path to old_artifacts directory or old_artifacts.zip",
+    )
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default="results/analysis/topic_analysis",
+        help="Directory where outputs will be written",
+    )
 
     parser.add_argument("--uncertainty_lexicon", type=str, default=None)
     parser.add_argument("--strong_modality_lexicon", type=str, default=None)
@@ -574,7 +717,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--emfd_lexicon", type=str, default=None)
 
     parser.add_argument("--skip-emotion", action="store_true", help="Skip BERT emotion analysis")
-    parser.add_argument("--emotion_model", type=str, default="j-hartmann/emotion-english-distilroberta-base")
+    parser.add_argument(
+        "--emotion_model", type=str, default="j-hartmann/emotion-english-distilroberta-base"
+    )
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--max_length", type=int, default=256)
     return parser.parse_args(argv)
@@ -624,9 +769,21 @@ def main(argv: list[str] | None = None) -> None:
     per_topic_winners.to_csv(out_dir / "winner_per_topic.csv", index=False)
 
     # Lexicons
-    uncertainty_lex = load_simple_lexicon(args.uncertainty_lexicon) if args.uncertainty_lexicon else set(SHARED_TOPIC_ANALYSIS_UNCERTAINTY_WORDS)
-    strong_modality_lex = load_simple_lexicon(args.strong_modality_lexicon) if args.strong_modality_lexicon else set(SHARED_TOPIC_ANALYSIS_STRONG_MODALITY_WORDS)
-    weak_modality_lex = load_simple_lexicon(args.weak_modality_lexicon) if args.weak_modality_lexicon else set(SHARED_TOPIC_ANALYSIS_WEAK_MODALITY_WORDS)
+    uncertainty_lex = (
+        load_simple_lexicon(args.uncertainty_lexicon)
+        if args.uncertainty_lexicon
+        else set(SHARED_TOPIC_ANALYSIS_UNCERTAINTY_WORDS)
+    )
+    strong_modality_lex = (
+        load_simple_lexicon(args.strong_modality_lexicon)
+        if args.strong_modality_lexicon
+        else set(SHARED_TOPIC_ANALYSIS_STRONG_MODALITY_WORDS)
+    )
+    weak_modality_lex = (
+        load_simple_lexicon(args.weak_modality_lexicon)
+        if args.weak_modality_lexicon
+        else set(SHARED_TOPIC_ANALYSIS_WEAK_MODALITY_WORDS)
+    )
     nrc_lex_path = args.nrc_lexicon or str(NRC_EMOTION_LEXICON_PATH)
     nrc_emotion_lex = load_nrc_emotion_lexicon(nrc_lex_path)
     emfd_lex_path = args.emfd_lexicon or str(EMFD_LEXICON_PATH)
@@ -646,7 +803,9 @@ def main(argv: list[str] | None = None) -> None:
     # BERT emotions
     if args.skip_emotion:
         utter_emotions = utter_df.copy()
-        topic_emotions = pd.DataFrame({"topic_id": sorted(utter_df["topic_id"].dropna().astype(str).unique().tolist())})
+        topic_emotions = pd.DataFrame(
+            {"topic_id": sorted(utter_df["topic_id"].dropna().astype(str).unique().tolist())}
+        )
         topic_emotions["dominant_bert_emotion"] = None
     else:
         utter_emotions, topic_emotions = aggregate_topic_emotions_with_bert(

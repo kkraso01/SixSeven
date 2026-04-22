@@ -34,14 +34,23 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def parse_args(argv: list[str] | None = None):
     p = argparse.ArgumentParser()
-    p.add_argument("--input_dir", default="results/analysis/topic_analysis", help="Directory produced by topic_analysis_pipeline.py")
-    p.add_argument("--output_dir", default="results/analysis/topic_analysis/plots", help="Directory where plots will be written")
+    p.add_argument(
+        "--input_dir",
+        default="results/analysis/topic_analysis",
+        help="Directory produced by topic_analysis_pipeline.py",
+    )
+    p.add_argument(
+        "--output_dir",
+        default="results/analysis/topic_analysis/plots",
+        help="Directory where plots will be written",
+    )
     return p.parse_args(argv)
 
 
@@ -52,7 +61,9 @@ def save_bar_from_winner_topic(df: pd.DataFrame, out_path: Path):
     plt.figure(figsize=(12, 6))
     width = 0.2
     plt.bar([i - 1.5 * width for i in x], df["scientist_wins"], width=width, label="scientist_wins")
-    plt.bar([i - 0.5 * width for i in x], df["conspiracy_wins"], width=width, label="conspiracy_wins")
+    plt.bar(
+        [i - 0.5 * width for i in x], df["conspiracy_wins"], width=width, label="conspiracy_wins"
+    )
     plt.bar([i + 0.5 * width for i in x], df["ties"], width=width, label="ties")
     plt.bar([i + 1.5 * width for i in x], df["unknown"], width=width, label="unknown")
 
@@ -105,7 +116,7 @@ def save_bert_emotion_shares(df: pd.DataFrame, out_path: Path):
 
     plt.figure(figsize=(13, 6))
     for idx, col in enumerate(emotion_cols):
-        pos = [i - 0.4 + width/2 + idx * width for i in x]
+        pos = [i - 0.4 + width / 2 + idx * width for i in x]
         plt.bar(pos, df[col].fillna(0.0), width=width, label=col.replace("bert_share_", ""))
 
     plt.xticks(x, topics, rotation=45, ha="right")
@@ -124,8 +135,18 @@ def save_uncertainty_by_role(df: pd.DataFrame, out_path: Path):
     width = 0.35
 
     plt.figure(figsize=(12, 6))
-    plt.bar([i - width/2 for i in x], pivot.get("conspiracy", pd.Series([0]*len(pivot), index=pivot.index)), width=width, label="conspiracy")
-    plt.bar([i + width/2 for i in x], pivot.get("scientist", pd.Series([0]*len(pivot), index=pivot.index)), width=width, label="scientist")
+    plt.bar(
+        [i - width / 2 for i in x],
+        pivot.get("conspiracy", pd.Series([0] * len(pivot), index=pivot.index)),
+        width=width,
+        label="conspiracy",
+    )
+    plt.bar(
+        [i + width / 2 for i in x],
+        pivot.get("scientist", pd.Series([0] * len(pivot), index=pivot.index)),
+        width=width,
+        label="scientist",
+    )
     plt.xticks(x, topics, rotation=45, ha="right")
     plt.ylabel("Uncertainty rate")
     plt.title("Uncertainty language by topic and role")
@@ -143,8 +164,18 @@ def save_modality_by_role(df: pd.DataFrame, out_path: Path):
     width = 0.35
 
     plt.figure(figsize=(14, 6))
-    plt.bar([i - width/2 for i in x], plot_df["strong_modality_rate"].fillna(0.0), width=width, label="strong_modality_rate")
-    plt.bar([i + width/2 for i in x], plot_df["weak_modality_rate"].fillna(0.0), width=width, label="weak_modality_rate")
+    plt.bar(
+        [i - width / 2 for i in x],
+        plot_df["strong_modality_rate"].fillna(0.0),
+        width=width,
+        label="strong_modality_rate",
+    )
+    plt.bar(
+        [i + width / 2 for i in x],
+        plot_df["weak_modality_rate"].fillna(0.0),
+        width=width,
+        label="weak_modality_rate",
+    )
     plt.xticks(x, plot_df["topic_role"], rotation=60, ha="right")
     plt.ylabel("Rate")
     plt.title("Strong vs weak modality by topic and role")

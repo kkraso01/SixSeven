@@ -121,11 +121,13 @@ def save_role_split_topic_barplot(topic: str, topic_data: dict, out_path: Path, 
         conspiracy.append(topic_data.get("conspiracy", {}).get("top_words", {}).get(word, 0))
         scientist.append(topic_data.get("scientist", {}).get("top_words", {}).get(word, 0))
 
-    plot_df = pd.DataFrame({
-        "word": top_words,
-        "conspiracy": conspiracy,
-        "scientist": scientist,
-    }).sort_values(["conspiracy", "scientist"], ascending=True)
+    plot_df = pd.DataFrame(
+        {
+            "word": top_words,
+            "conspiracy": conspiracy,
+            "scientist": scientist,
+        }
+    ).sort_values(["conspiracy", "scientist"], ascending=True)
 
     plt.figure(figsize=(10, 6))
     plt.barh(plot_df["word"], plot_df["conspiracy"], label="conspiracy")
@@ -152,7 +154,9 @@ def save_heatmap(all_data: dict, out_path: Path, heatmap_terms: int = 30):
     if not topic_combined:
         return
 
-    top_terms = pd.Series(global_counts).sort_values(ascending=False).head(heatmap_terms).index.tolist()
+    top_terms = (
+        pd.Series(global_counts).sort_values(ascending=False).head(heatmap_terms).index.tolist()
+    )
 
     rows = []
     for topic, counts in topic_combined.items():
@@ -181,14 +185,22 @@ def save_summary_readme(all_data: dict, out_path: Path):
     lines = []
     lines.append("How to use these visuals")
     lines.append("")
-    lines.append("1. combined_topic_barplots: use these when your priority is the topic as a whole.")
-    lines.append("2. role_split_topic_barplots: use these when you want to add a secondary note about role differences.")
-    lines.append("3. topic_term_heatmap.png: use this as the overall lexical overview across all topics.")
+    lines.append(
+        "1. combined_topic_barplots: use these when your priority is the topic as a whole."
+    )
+    lines.append(
+        "2. role_split_topic_barplots: use these when you want to add a secondary note about role differences."
+    )
+    lines.append(
+        "3. topic_term_heatmap.png: use this as the overall lexical overview across all topics."
+    )
     lines.append("")
     lines.append("Suggested report usage:")
     lines.append("- Put the heatmap first as the overview figure.")
     lines.append("- Then show 2 to 4 topic barplots for the most interesting topics.")
-    lines.append("- If needed, follow each barplot with the role-split version for one short comparison.")
+    lines.append(
+        "- If needed, follow each barplot with the role-split version for one short comparison."
+    )
     lines.append("")
     lines.append("Topics found:")
     for topic in sorted(all_data.keys()):
@@ -199,10 +211,20 @@ def save_summary_readme(all_data: dict, out_path: Path):
 
 def main(argv: list[str] | None = None):
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_txt", default="results/analysis/topic_analysis/plots/top_words_by_topic_and_role.txt", help="Path to top_words_by_topic_and_role.txt")
-    parser.add_argument("--output_dir", default="results/analysis/topic_analysis/top_words_visuals", help="Directory for generated visuals")
+    parser.add_argument(
+        "--input_txt",
+        default="results/analysis/topic_analysis/plots/top_words_by_topic_and_role.txt",
+        help="Path to top_words_by_topic_and_role.txt",
+    )
+    parser.add_argument(
+        "--output_dir",
+        default="results/analysis/topic_analysis/top_words_visuals",
+        help="Directory for generated visuals",
+    )
     parser.add_argument("--top_n", type=int, default=10, help="Top words to show per topic")
-    parser.add_argument("--heatmap_terms", type=int, default=30, help="Number of terms to show in heatmap")
+    parser.add_argument(
+        "--heatmap_terms", type=int, default=30, help="Number of terms to show in heatmap"
+    )
     args = parser.parse_args(argv)
 
     input_path = Path(args.input_txt)

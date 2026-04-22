@@ -32,9 +32,8 @@ from .config import (
     STRONG_MODAL_WORDS,
     WEAK_MODAL_WORDS,
 )
-from .debate_metrics import lexical_count, stance_proxy_score, compute_role_alignment
+from .debate_metrics import compute_role_alignment, lexical_count, stance_proxy_score
 from .stance_inference import load_stance_model
-
 
 CITATION_PATTERN = re.compile(r"\[(\d+|[A-Za-z]+\d*)\]|\(([^)]*\d{4}[^)]*)\)")
 URL_PATTERN = re.compile(r"https?://\S+|www\.\S+")
@@ -104,7 +103,7 @@ def load_nlp_resources(
         nlp=nlp,
         include_lemma_variants=True,
     )
-    
+
     stance_model = None
     stance_model_error = None
     try:
@@ -114,7 +113,7 @@ def load_nlp_resources(
     except Exception as exc:
         stance_model_error = str(exc)
         print(f"[NLP] Stance model unavailable: {exc}")
-    
+
     return NLPResources(
         nlp=nlp,
         stop_words=stop_words,
@@ -155,12 +154,23 @@ def get_tokens_lemmas_pos(nlp: Any, text: str) -> tuple[list[str], list[str], li
         return tokens, lemmas, pos_tags, sent_count
 
     rough_tokens = re.findall(r"[A-Za-z']+", text.lower())
-    return rough_tokens, rough_tokens, ["X"] * len(rough_tokens), max(1, text.count(".") + text.count("!") + text.count("?"))
+    return (
+        rough_tokens,
+        rough_tokens,
+        ["X"] * len(rough_tokens),
+        max(1, text.count(".") + text.count("!") + text.count("?")),
+    )
 
 
 def pos_distribution(pos_tags: list[str]) -> dict[str, float]:
     if not pos_tags:
-        return {"noun_rate": 0.0, "verb_rate": 0.0, "adj_rate": 0.0, "adv_rate": 0.0, "pron_rate": 0.0}
+        return {
+            "noun_rate": 0.0,
+            "verb_rate": 0.0,
+            "adj_rate": 0.0,
+            "adv_rate": 0.0,
+            "pron_rate": 0.0,
+        }
     counts = pd.Series(pos_tags).value_counts()
     total = max(1, len(pos_tags))
     return {
@@ -172,9 +182,16 @@ def pos_distribution(pos_tags: list[str]) -> dict[str, float]:
     }
 
 
-def vader_sentiment(vader: SentimentIntensityAnalyzer, text: str) -> tuple[float, float, float, float]:
+def vader_sentiment(
+    vader: SentimentIntensityAnalyzer, text: str
+) -> tuple[float, float, float, float]:
     scores = vader.polarity_scores(str(text))
-    return float(scores["compound"]), float(scores["pos"]), float(scores["neu"]), float(scores["neg"])
+    return (
+        float(scores["compound"]),
+        float(scores["pos"]),
+        float(scores["neu"]),
+        float(scores["neg"]),
+    )
 
 
 def embedding_vector(embedding_model: SentenceTransformer, text: str) -> np.ndarray | None:
@@ -220,7 +237,9 @@ def dominant_moral_frame(row: dict[str, Any]) -> str:
     return best_key if best_val > 0 else "none"
 
 
-def _compute_text_stats(text: str, tokens: list[str], clean_lemmas: list[str], sentence_count: int) -> dict[str, float | int]:
+def _compute_text_stats(
+    text: str, tokens: list[str], clean_lemmas: list[str], sentence_count: int
+) -> dict[str, float | int]:
     word_count = len(tokens)
     unique_word_count = len(set(tokens))
     lemma_count = len(clean_lemmas)
@@ -246,7 +265,9 @@ def _compute_text_stats(text: str, tokens: list[str], clean_lemmas: list[str], s
     }
 
 
-def _compute_proxy_counts(text: str, clean_lemmas: list[str], word_count: int) -> dict[str, float | int]:
+def _compute_proxy_counts(
+    text: str, clean_lemmas: list[str], word_count: int
+) -> dict[str, float | int]:
     evidence_count = lexical_count(clean_lemmas, EVIDENCE_WORDS)
     rebuttal_count = lexical_count(clean_lemmas, REBUTTAL_WORDS)
     hedge_count = lexical_count(clean_lemmas, HEDGE_WORDS)
@@ -300,7 +321,9 @@ def _compute_sentiment_features(resources: NLPResources, text: str) -> dict[str,
     }
 
 
-def _compute_emotion_features(resources: NLPResources, text: str, clean_lemmas: list[str]) -> dict[str, Any]:
+def _compute_emotion_features(
+    resources: NLPResources, text: str, clean_lemmas: list[str]
+) -> dict[str, Any]:
     emotion_scores = emotion_lexicon_scores(clean_lemmas, resources.nrc_emotion_lexicon)
     transformer_emotion_scores: dict[str, float] = {}
     dominant_emotion = "unknown"
@@ -315,7 +338,9 @@ def _compute_emotion_features(resources: NLPResources, text: str, clean_lemmas: 
                 label = str(item.get("label", "unknown")).lower().replace(" ", "_")
                 transformer_emotion_scores[f"emotion_tr_{label}"] = float(item.get("score", 0.0))
             if dominant_emotion == "unknown" and transformer_emotion_scores:
-                dominant_emotion = max(transformer_emotion_scores, key=transformer_emotion_scores.get).replace("emotion_tr_", "")
+                dominant_emotion = max(
+                    transformer_emotion_scores, key=transformer_emotion_scores.get
+                ).replace("emotion_tr_", "")
         except Exception:
             pass
 
@@ -334,7 +359,7 @@ def _compute_stance_features(
 ) -> dict[str, Any]:
     """
     Compute zero-shot NLI stance inference and role alignment variables.
-    
+
     Returns dict with stance prediction and role alignment scores.
     If stance model not available or no claim provided, returns neutral defaults.
     """
@@ -347,23 +372,23 @@ def _compute_stance_features(
         "role_alignment_label": "neutral",
         "role_alignment_score": 0.0,
     }
-    
+
     if resources.stance_model is None:
         return defaults
-    
+
     if not claim or not claim.strip():
         return defaults
-    
+
     try:
         stance_result = resources.stance_model.predict_stance(str(text), str(claim))
-        
+
         alignment_label, alignment_score = compute_role_alignment(
             predicted_stance_label=stance_result.predicted_stance_label,
             support_score=stance_result.predicted_support_score,
             oppose_score=stance_result.predicted_oppose_score,
             speaker_role=role,
         )
-        
+
         result = {
             "predicted_stance_label": stance_result.predicted_stance_label,
             "predicted_support_score": stance_result.predicted_support_score,
@@ -386,7 +411,9 @@ def analyze_utterance(
     claim: str | None = None,
 ) -> pd.Series:
     tokens, lemmas, pos_tags, sentence_count = get_tokens_lemmas_pos(resources.nlp, str(text))
-    clean_lemmas = [lemma for lemma in lemmas if lemma.isalpha() and lemma not in resources.stop_words]
+    clean_lemmas = [
+        lemma for lemma in lemmas if lemma.isalpha() and lemma not in resources.stop_words
+    ]
 
     text_stats = _compute_text_stats(str(text), tokens, clean_lemmas, sentence_count)
     sentiment = _compute_sentiment_features(resources, str(text))
@@ -395,8 +422,12 @@ def analyze_utterance(
     emotion = _compute_emotion_features(resources, str(text), clean_lemmas)
     pos_stats = pos_distribution(pos_tags)
 
-    keyword_stance_score = stance_proxy_score(clean_lemmas, role, STANCE_PRO_WORDS, STANCE_CON_WORDS)
-    moral_density = 1000.0 * float(moral_counts["moral_total_count"]) / max(1, int(text_stats["word_count"]))
+    keyword_stance_score = stance_proxy_score(
+        clean_lemmas, role, STANCE_PRO_WORDS, STANCE_CON_WORDS
+    )
+    moral_density = (
+        1000.0 * float(moral_counts["moral_total_count"]) / max(1, int(text_stats["word_count"]))
+    )
 
     # Zero-shot stance inference if model available and claim provided
     stance_vars = _compute_stance_features(resources, str(text), role, claim)

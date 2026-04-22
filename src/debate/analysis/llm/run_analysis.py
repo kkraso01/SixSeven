@@ -65,13 +65,25 @@ from .summaries import (
 )
 from .text_features import analyze_utterance, embedding_vector, load_nlp_resources
 
-
 CONFIG = default_config()
-NRC_TRAJECTORY_EMOTIONS = ["anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"]
+NRC_TRAJECTORY_EMOTIONS = [
+    "anger",
+    "anticipation",
+    "disgust",
+    "fear",
+    "joy",
+    "sadness",
+    "surprise",
+    "trust",
+]
 
 
 def _emotion_trajectory_columns(df: pd.DataFrame) -> list[str]:
-    return [f"emotion_{emotion}" for emotion in NRC_TRAJECTORY_EMOTIONS if f"emotion_{emotion}" in df.columns]
+    return [
+        f"emotion_{emotion}"
+        for emotion in NRC_TRAJECTORY_EMOTIONS
+        if f"emotion_{emotion}" in df.columns
+    ]
 
 
 def _save_run_emotion_trajectory(
@@ -85,7 +97,11 @@ def _save_run_emotion_trajectory(
         return
 
     working_df = group_df.copy()
-    x_col = "round" if working_df.get("round") is not None and working_df["round"].notna().any() else "turn_index"
+    x_col = (
+        "round"
+        if working_df.get("round") is not None and working_df["round"].notna().any()
+        else "turn_index"
+    )
     if x_col not in working_df.columns:
         x_col = "turn_index"
 
@@ -95,7 +111,11 @@ def _save_run_emotion_trajectory(
         return
 
     plot_df = working_df[[x_col] + emotion_cols].copy()
-    plot_df = plot_df.groupby(x_col, as_index=False)[emotion_cols].mean(numeric_only=True).sort_values(x_col)
+    plot_df = (
+        plot_df.groupby(x_col, as_index=False)[emotion_cols]
+        .mean(numeric_only=True)
+        .sort_values(x_col)
+    )
     if plot_df.empty:
         return
 
@@ -145,7 +165,9 @@ def compute_model_name(models: dict, speaker_role: str) -> str:
     return str(models.get(model_key, model_key))
 
 
-def load_cached_run_outputs(run_dir: Path, output_root: Path) -> tuple[pd.DataFrame | None, dict | None]:
+def load_cached_run_outputs(
+    run_dir: Path, output_root: Path
+) -> tuple[pd.DataFrame | None, dict | None]:
     run_output_dir = output_root / run_dir.name
     features_path = run_output_dir / "utterance_features.csv"
     metadata_path = run_output_dir / "analysis_metadata.json"
@@ -157,7 +179,10 @@ def load_cached_run_outputs(run_dir: Path, output_root: Path) -> tuple[pd.DataFr
         return None, None
 
     df_cached = rehydrate_cached_object_columns(df_cached)
-    metadata = read_json_if_exists(metadata_path) or {"run_id": run_dir.name, "run_dir": str(run_dir)}
+    metadata = read_json_if_exists(metadata_path) or {
+        "run_id": run_dir.name,
+        "run_dir": str(run_dir),
+    }
     if metadata.get("analysis_schema_version") != CONFIG.analysis_schema_version:
         return None, None
 
@@ -178,7 +203,9 @@ def enrich_run_frame(run_dir: Path, run_meta: dict, resources) -> tuple[pd.DataF
     df["speaker_role"] = df.get("speaker_role", "unknown")
     df["speaker_role"] = df["speaker_role"].fillna("unknown").astype(str).apply(canonical_role)
     df["debate_role"] = df["speaker_role"].astype(str)
-    df["model_name"] = df["speaker_role"].apply(lambda role: compute_model_name(run_meta["models"], role))
+    df["model_name"] = df["speaker_role"].apply(
+        lambda role: compute_model_name(run_meta["models"], role)
+    )
 
     if "round" not in df.columns:
         df["round"] = pd.NA
@@ -196,7 +223,9 @@ def enrich_run_frame(run_dir: Path, run_meta: dict, resources) -> tuple[pd.DataF
         for text, role in zip(df["utterance"].astype(str), df["speaker_role"].astype(str))
     ]
     df = pd.concat([df, pd.DataFrame(features)], axis=1)
-    df["embedding_vector_obj"] = df["utterance"].astype(str).apply(lambda x: embedding_vector(resources.embedding_model, x))
+    df["embedding_vector_obj"] = (
+        df["utterance"].astype(str).apply(lambda x: embedding_vector(resources.embedding_model, x))
+    )
 
     winner_info = infer_winner_from_final_report(final_report)
 
@@ -204,7 +233,11 @@ def enrich_run_frame(run_dir: Path, run_meta: dict, resources) -> tuple[pd.DataF
     df["run_id"] = run_dir.name
     df["topic_id"] = run_meta.get("topic_id")
     df["topic_category"] = topic_info.get("category") or experiment_metadata.get("topic_category")
-    df["topic_title"] = topic_info.get("topic") or experiment_metadata.get("topic_description") or experiment_metadata.get("topic_title")
+    df["topic_title"] = (
+        topic_info.get("topic")
+        or experiment_metadata.get("topic_description")
+        or experiment_metadata.get("topic_title")
+    )
     df["topic_motion"] = topic_motion
     df["winner_inferred"] = winner_info.get("winner_inferred")
     df["winner_role"] = winner_info.get("winner_role")
@@ -215,33 +248,46 @@ def enrich_run_frame(run_dir: Path, run_meta: dict, resources) -> tuple[pd.DataF
     ordered = df.sort_values(["speaker_role", "turn_index"]).copy()
     ordered["confidence_delta_within_role"] = ordered.groupby("speaker_role")["confidence"].diff()
     ordered["previous_utterance_count_within_role"] = ordered.groupby("speaker_role").cumcount()
-    ordered["stance_proxy_delta_within_role"] = ordered.groupby("speaker_role")["stance_proxy_score"].diff()
-    
+    ordered["stance_proxy_delta_within_role"] = ordered.groupby("speaker_role")[
+        "stance_proxy_score"
+    ].diff()
+
     if "role_alignment_score" in ordered.columns:
-        ordered["role_alignment_score_delta_within_role"] = ordered.groupby("speaker_role")["role_alignment_score"].diff()
+        ordered["role_alignment_score_delta_within_role"] = ordered.groupby("speaker_role")[
+            "role_alignment_score"
+        ].diff()
     else:
         ordered["role_alignment_score_delta_within_role"] = pd.NA
 
     if "role_alignment_label" in ordered.columns:
-        ordered["role_misalignment_event"] = (ordered["role_alignment_label"] == "misaligned").astype(int)
+        ordered["role_misalignment_event"] = (
+            ordered["role_alignment_label"] == "misaligned"
+        ).astype(int)
     else:
         ordered["role_misalignment_event"] = 0
 
     if "predicted_stance_label" in ordered.columns:
         prev_stance = ordered.groupby("speaker_role")["predicted_stance_label"].shift()
         ordered["stance_flip_event"] = (
-            ((prev_stance == "support") & (ordered["predicted_stance_label"] == "oppose")) |
-            ((prev_stance == "oppose") & (ordered["predicted_stance_label"] == "support"))
+            ((prev_stance == "support") & (ordered["predicted_stance_label"] == "oppose"))
+            | ((prev_stance == "oppose") & (ordered["predicted_stance_label"] == "support"))
         ).astype(int)
     else:
         ordered["stance_flip_event"] = 0
-    
+
     df = df.merge(
-        ordered[[
-            "turn_index", "speaker_role", "confidence_delta_within_role",
-            "previous_utterance_count_within_role", "stance_proxy_delta_within_role",
-            "role_alignment_score_delta_within_role", "role_misalignment_event", "stance_flip_event",
-        ]],
+        ordered[
+            [
+                "turn_index",
+                "speaker_role",
+                "confidence_delta_within_role",
+                "previous_utterance_count_within_role",
+                "stance_proxy_delta_within_role",
+                "role_alignment_score_delta_within_role",
+                "role_misalignment_event",
+                "stance_flip_event",
+            ]
+        ],
         on=["turn_index", "speaker_role"],
         how="left",
     )
@@ -250,13 +296,14 @@ def enrich_run_frame(run_dir: Path, run_meta: dict, resources) -> tuple[pd.DataF
 
     stance_span = (
         df.groupby(["run_id", "speaker_role"], as_index=False)["stance_proxy_score"]
-        .agg(["min", "max", "mean", "std"]).reset_index()
+        .agg(["min", "max", "mean", "std"])
+        .reset_index()
     )
     stance_span["stance_proxy_span_within_role"] = stance_span["max"] - stance_span["min"]
     df = df.merge(
         stance_span[["run_id", "speaker_role", "stance_proxy_span_within_role"]],
         on=["run_id", "speaker_role"],
-        how="left"
+        how="left",
     )
 
     return df, {
@@ -290,13 +337,25 @@ def write_run_outputs(df: pd.DataFrame, run_dir: Path, run_meta: dict, output_ro
         "row_count": int(len(df)),
         "topic_id": run_meta.get("topic_id"),
         "topic_category": topic_info.get("category") or experiment_metadata.get("topic_category"),
-        "topic_title": topic_info.get("topic") or experiment_metadata.get("topic_description") or experiment_metadata.get("topic_title"),
+        "topic_title": topic_info.get("topic")
+        or experiment_metadata.get("topic_description")
+        or experiment_metadata.get("topic_title"),
         "topic_motion": topic_info.get("motion") or experiment_metadata.get("motion"),
         "models": run_config.get("models", {}) or {},
         "winner_info": winner_info,
         "random_seed": CONFIG.random_seed,
         "bootstrap_samples": CONFIG.bootstrap_samples,
-        "metric_families": ["baseline", "core", "interaction", "outcome", "error_analysis", "stance_change", "turning_points", "novelty", "emotion_trajectory"],
+        "metric_families": [
+            "baseline",
+            "core",
+            "interaction",
+            "outcome",
+            "error_analysis",
+            "stance_change",
+            "turning_points",
+            "novelty",
+            "emotion_trajectory",
+        ],
     }
 
     persist_object_columns(df).to_csv(run_output_dir / "utterance_features.csv", index=False)
@@ -306,9 +365,24 @@ def write_run_outputs(df: pd.DataFrame, run_dir: Path, run_meta: dict, output_ro
     model_role_summary = group_summary(df, ["model_name", "debate_role"])
     stage_summary = group_summary(df, ["model_name", "debate_role", "stage"])
     topic_summary = group_summary(df, ["topic_id", "topic_category", "model_name", "debate_role"])
-    bootstrap_summary = group_summary_bootstrap(df, ["model_name", "debate_role"], [m for m in CORE_METRICS if m in df.columns], n_boot=CONFIG.bootstrap_samples)
-    role_contrast = role_contrast_summary(df, [m for m in CORE_METRICS if m in df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
-    paired_role = paired_run_role_gap(df, [m for m in CORE_METRICS if m in df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
+    bootstrap_summary = group_summary_bootstrap(
+        df,
+        ["model_name", "debate_role"],
+        [m for m in CORE_METRICS if m in df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+    )
+    role_contrast = role_contrast_summary(
+        df,
+        [m for m in CORE_METRICS if m in df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+        group_cols=["model_name"],
+    )
+    paired_role = paired_run_role_gap(
+        df,
+        [m for m in CORE_METRICS if m in df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+        group_cols=["model_name"],
+    )
     trajectory_round = trajectory_summary(df, ["model_name", "debate_role"], step_col="round")
     trajectory_stage = trajectory_summary(df, ["model_name", "debate_role"], step_col="stage")
     winner_summary_df = winner_summary(df, ["model_name", "debate_role"])
@@ -317,7 +391,9 @@ def write_run_outputs(df: pd.DataFrame, run_dir: Path, run_meta: dict, output_ro
     representative = representative_utterances(df)
     stance_events = build_stance_change_events(df, ["model_name", "debate_role"])
     stance_summary = summarise_stance_change(stance_events, ["model_name", "debate_role"])
-    turning_events = build_turning_point_events(df, ["model_name", "debate_role"], threshold=CONFIG.turning_point_delta_threshold)
+    turning_events = build_turning_point_events(
+        df, ["model_name", "debate_role"], threshold=CONFIG.turning_point_delta_threshold
+    )
     turning_summary = summarise_turning_points(turning_events, ["model_name", "debate_role"])
 
     save_frames(
@@ -383,11 +459,17 @@ def write_run_outputs(df: pd.DataFrame, run_dir: Path, run_meta: dict, output_ro
         _save_run_emotion_trajectory(group, run_output_dir, model_name, debate_role)
 
     if term_rows:
-        pd.concat(term_rows, ignore_index=True).to_csv(run_output_dir / "top_terms.csv", index=False)
+        pd.concat(term_rows, ignore_index=True).to_csv(
+            run_output_dir / "top_terms.csv", index=False
+        )
     if norm_rows:
-        pd.concat(norm_rows, ignore_index=True).to_csv(run_output_dir / "normalized_top_terms.csv", index=False)
+        pd.concat(norm_rows, ignore_index=True).to_csv(
+            run_output_dir / "normalized_top_terms.csv", index=False
+        )
     if distinct_rows:
-        pd.concat(distinct_rows, ignore_index=True).to_csv(run_output_dir / "distinctive_terms.csv", index=False)
+        pd.concat(distinct_rows, ignore_index=True).to_csv(
+            run_output_dir / "distinctive_terms.csv", index=False
+        )
     if wordcloud_meta:
         write_json(run_output_dir / "wordcloud_metadata.json", wordcloud_meta)
 
@@ -413,14 +495,31 @@ def write_model_folders(all_df: pd.DataFrame, output_root: Path) -> None:
         trajectory_round = trajectory_summary(model_df, ["debate_role"], step_col="round")
         trajectory_stage = trajectory_summary(model_df, ["debate_role"], step_col="stage")
         winner_summary_df = winner_summary(model_df, ["debate_role"])
-        role_contrast = role_contrast_summary(model_df, [m for m in CORE_METRICS if m in model_df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
-        paired_role = paired_run_role_gap(model_df, [m for m in CORE_METRICS if m in model_df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
-        bootstrap = group_summary_bootstrap(model_df, ["debate_role", "stage"], [m for m in CORE_METRICS if m in model_df.columns], n_boot=CONFIG.bootstrap_samples)
+        role_contrast = role_contrast_summary(
+            model_df,
+            [m for m in CORE_METRICS if m in model_df.columns],
+            n_boot=CONFIG.bootstrap_samples,
+            group_cols=["model_name"],
+        )
+        paired_role = paired_run_role_gap(
+            model_df,
+            [m for m in CORE_METRICS if m in model_df.columns],
+            n_boot=CONFIG.bootstrap_samples,
+            group_cols=["model_name"],
+        )
+        bootstrap = group_summary_bootstrap(
+            model_df,
+            ["debate_role", "stage"],
+            [m for m in CORE_METRICS if m in model_df.columns],
+            n_boot=CONFIG.bootstrap_samples,
+        )
         baseline = baseline_comparison(model_df)
         errors = collect_error_cases(model_df, examples_per_type=CONFIG.error_examples_per_type)
         stance_events = build_stance_change_events(model_df, ["debate_role"])
         stance_summary = summarise_stance_change(stance_events, ["debate_role"])
-        turning_events = build_turning_point_events(model_df, ["debate_role"], threshold=CONFIG.turning_point_delta_threshold)
+        turning_events = build_turning_point_events(
+            model_df, ["debate_role"], threshold=CONFIG.turning_point_delta_threshold
+        )
         turning_summary = summarise_turning_points(turning_events, ["debate_role"])
 
         save_frames(
@@ -466,19 +565,42 @@ def write_model_folders(all_df: pd.DataFrame, output_root: Path) -> None:
 
         for metric in METRICS_FOR_COMPARISON_PLOTS:
             if metric in model_df.columns:
-                role_metric = model_df.groupby("debate_role")[metric].mean(numeric_only=True).sort_values(ascending=False)
+                role_metric = (
+                    model_df.groupby("debate_role")[metric]
+                    .mean(numeric_only=True)
+                    .sort_values(ascending=False)
+                )
                 if not role_metric.empty:
-                    save_boxplot(model_df, "debate_role", metric, f"{model_name} - Distribution by role ({metric})", plots_dir / f"role_{metric}_boxplot.png", "Role", metric)
+                    save_boxplot(
+                        model_df,
+                        "debate_role",
+                        metric,
+                        f"{model_name} - Distribution by role ({metric})",
+                        plots_dir / f"role_{metric}_boxplot.png",
+                        "Role",
+                        metric,
+                    )
 
         for metric in METRICS_FOR_TRAJECTORY_PLOTS:
             if metric in trajectory_round.columns and not trajectory_round.empty:
-                pivot = trajectory_round.pivot(index="round", columns="debate_role", values=metric).reset_index()
+                pivot = trajectory_round.pivot(
+                    index="round", columns="debate_role", values=metric
+                ).reset_index()
                 if not pivot.empty:
-                    save_lineplot(pivot, "round", [c for c in pivot.columns if c != "round"], f"{model_name} - {metric} through rounds", plots_dir / f"trajectory_round_{metric}.png", "Round", metric)
+                    save_lineplot(
+                        pivot,
+                        "round",
+                        [c for c in pivot.columns if c != "round"],
+                        f"{model_name} - {metric} through rounds",
+                        plots_dir / f"trajectory_round_{metric}.png",
+                        "Round",
+                        metric,
+                    )
 
 
-
-def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], output_root: Path) -> None:
+def write_aggregate_outputs(
+    all_df: pd.DataFrame, run_summaries: list[dict], output_root: Path
+) -> None:
     ensure_dir(output_root)
     persist_object_columns(all_df).to_csv(output_root / "all_utterance_features.csv", index=False)
     if run_summaries:
@@ -491,18 +613,39 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
     model_role_summary = group_summary(all_df, ["model_name", "debate_role"])
     model_role_stage_summary = group_summary(all_df, ["model_name", "debate_role", "stage"])
     topic_summary = group_summary(all_df, ["topic_id", "topic_category"])
-    topic_model_summary = group_summary(all_df, ["topic_id", "topic_category", "model_name", "debate_role"])
-    model_bootstrap = group_summary_bootstrap(all_df, ["model_name", "debate_role"], [m for m in CORE_METRICS if m in all_df.columns], n_boot=CONFIG.bootstrap_samples)
+    topic_model_summary = group_summary(
+        all_df, ["topic_id", "topic_category", "model_name", "debate_role"]
+    )
+    model_bootstrap = group_summary_bootstrap(
+        all_df,
+        ["model_name", "debate_role"],
+        [m for m in CORE_METRICS if m in all_df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+    )
     model_winner_summary = winner_summary(all_df, ["model_name"])
     model_role_winner_summary = winner_summary(all_df, ["model_name", "debate_role"])
-    model_role_contrast = role_contrast_summary(all_df, [m for m in CORE_METRICS if m in all_df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
-    model_role_paired = paired_run_role_gap(all_df, [m for m in CORE_METRICS if m in all_df.columns], n_boot=CONFIG.bootstrap_samples, group_cols=["model_name"])
-    topic_balanced = topic_role_balanced_comparison(all_df, [m for m in CORE_METRICS if m in all_df.columns], n_boot=CONFIG.bootstrap_samples)
+    model_role_contrast = role_contrast_summary(
+        all_df,
+        [m for m in CORE_METRICS if m in all_df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+        group_cols=["model_name"],
+    )
+    model_role_paired = paired_run_role_gap(
+        all_df,
+        [m for m in CORE_METRICS if m in all_df.columns],
+        n_boot=CONFIG.bootstrap_samples,
+        group_cols=["model_name"],
+    )
+    topic_balanced = topic_role_balanced_comparison(
+        all_df, [m for m in CORE_METRICS if m in all_df.columns], n_boot=CONFIG.bootstrap_samples
+    )
     baseline = baseline_comparison(all_df)
     errors = collect_error_cases(all_df, examples_per_type=CONFIG.error_examples_per_type)
     stance_events = build_stance_change_events(all_df, ["model_name", "debate_role"])
     stance_summary = summarise_stance_change(stance_events, ["model_name", "debate_role"])
-    turning_events = build_turning_point_events(all_df, ["model_name", "debate_role"], threshold=CONFIG.turning_point_delta_threshold)
+    turning_events = build_turning_point_events(
+        all_df, ["model_name", "debate_role"], threshold=CONFIG.turning_point_delta_threshold
+    )
     turning_summary = summarise_turning_points(turning_events, ["model_name", "debate_role"])
 
     save_frames(
@@ -532,9 +675,13 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
     trajectory_round = trajectory_summary(all_df, ["model_name", "debate_role"], step_col="round")
     trajectory_stage = trajectory_summary(all_df, ["model_name", "debate_role"], step_col="stage")
     if not trajectory_round.empty:
-        trajectory_round.to_csv(output_root / "aggregate_trajectory_by_model_role_round.csv", index=False)
+        trajectory_round.to_csv(
+            output_root / "aggregate_trajectory_by_model_role_round.csv", index=False
+        )
     if not trajectory_stage.empty:
-        trajectory_stage.to_csv(output_root / "aggregate_trajectory_by_model_role_stage.csv", index=False)
+        trajectory_stage.to_csv(
+            output_root / "aggregate_trajectory_by_model_role_stage.csv", index=False
+        )
 
     agg_term_rows = []
     agg_norm_rows = []
@@ -548,7 +695,9 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
         for values, group in all_df.groupby(group_cols):
             if isinstance(values, tuple):
                 group_name = "::".join(str(v) for v in values)
-                mask = np.logical_and.reduce([all_df[col] == val for col, val in zip(group_cols, values)])
+                mask = np.logical_and.reduce(
+                    [all_df[col] == val for col, val in zip(group_cols, values)]
+                )
             else:
                 group_name = str(values)
                 mask = all_df[group_cols[0]] == values
@@ -582,11 +731,17 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
                 agg_distinct_rows.append(tmp)
 
     if agg_term_rows:
-        pd.concat(agg_term_rows, ignore_index=True).to_csv(output_root / "aggregate_top_terms.csv", index=False)
+        pd.concat(agg_term_rows, ignore_index=True).to_csv(
+            output_root / "aggregate_top_terms.csv", index=False
+        )
     if agg_norm_rows:
-        pd.concat(agg_norm_rows, ignore_index=True).to_csv(output_root / "aggregate_normalized_top_terms.csv", index=False)
+        pd.concat(agg_norm_rows, ignore_index=True).to_csv(
+            output_root / "aggregate_normalized_top_terms.csv", index=False
+        )
     if agg_distinct_rows:
-        pd.concat(agg_distinct_rows, ignore_index=True).to_csv(output_root / "aggregate_distinctive_terms.csv", index=False)
+        pd.concat(agg_distinct_rows, ignore_index=True).to_csv(
+            output_root / "aggregate_distinctive_terms.csv", index=False
+        )
 
     representative = representative_utterances(all_df)
     if not representative.empty:
@@ -602,16 +757,38 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
     for metric in METRICS_FOR_COMPARISON_PLOTS:
         if metric not in all_df.columns:
             continue
-        model_metric = all_df.groupby("model_name")[metric].mean(numeric_only=True).sort_values(ascending=False)
+        model_metric = (
+            all_df.groupby("model_name")[metric]
+            .mean(numeric_only=True)
+            .sort_values(ascending=False)
+        )
         if not model_metric.empty:
-            save_boxplot(all_df, "model_name", metric, f"Distribution by model - {metric}", plots_dir / f"aggregate_model_{metric}_boxplot.png", "Model", metric)
+            save_boxplot(
+                all_df,
+                "model_name",
+                metric,
+                f"Distribution by model - {metric}",
+                plots_dir / f"aggregate_model_{metric}_boxplot.png",
+                "Model",
+                metric,
+            )
 
     for metric in METRICS_FOR_COMPARISON_PLOTS:
         if metric not in all_df.columns:
             continue
-        role_metric = all_df.groupby("debate_role")[metric].mean(numeric_only=True).sort_values(ascending=False)
+        role_metric = (
+            all_df.groupby("debate_role")[metric]
+            .mean(numeric_only=True)
+            .sort_values(ascending=False)
+        )
         if not role_metric.empty:
-            save_barplot(role_metric, f"Aggregate role comparison - {metric}", plots_dir / f"aggregate_role_{metric}.png", metric, "Role")
+            save_barplot(
+                role_metric,
+                f"Aggregate role comparison - {metric}",
+                plots_dir / f"aggregate_role_{metric}.png",
+                metric,
+                "Role",
+            )
 
     if not model_role_contrast.empty:
         for metric in METRICS_FOR_TRAJECTORY_PLOTS:
@@ -619,27 +796,56 @@ def write_aggregate_outputs(all_df: pd.DataFrame, run_summaries: list[dict], out
             if sub.empty:
                 continue
             gap_series = sub.set_index("model_name")["role_gap"].sort_values(ascending=False)
-            save_barplot(gap_series, f"Role gap by model ({metric}) [proponent - opponent]", plots_dir / f"aggregate_role_gap_model_{metric}.png", "Gap", "Model")
+            save_barplot(
+                gap_series,
+                f"Role gap by model ({metric}) [proponent - opponent]",
+                plots_dir / f"aggregate_role_gap_model_{metric}.png",
+                "Gap",
+                "Model",
+            )
 
     for metric in METRICS_FOR_TRAJECTORY_PLOTS:
         if metric not in all_df.columns:
             continue
-        pivot = all_df.pivot_table(index="model_name", columns="debate_role", values=metric, aggfunc="mean")
+        pivot = all_df.pivot_table(
+            index="model_name", columns="debate_role", values=metric, aggfunc="mean"
+        )
         if not pivot.empty:
-            save_heatmap(pivot, f"Model vs role heatmap - {metric}", plots_dir / f"aggregate_heatmap_model_role_{metric}.png", "Role", "Model")
+            save_heatmap(
+                pivot,
+                f"Model vs role heatmap - {metric}",
+                plots_dir / f"aggregate_heatmap_model_role_{metric}.png",
+                "Role",
+                "Model",
+            )
 
     if "round" in all_df.columns:
         for metric in METRICS_FOR_TRAJECTORY_PLOTS:
             if metric not in all_df.columns:
                 continue
-            traj_df = all_df.groupby(["round", "model_name"], as_index=False)[metric].mean(numeric_only=True).sort_values(["model_name", "round"])
+            traj_df = (
+                all_df.groupby(["round", "model_name"], as_index=False)[metric]
+                .mean(numeric_only=True)
+                .sort_values(["model_name", "round"])
+            )
             if not traj_df.empty:
-                pivot = traj_df.pivot(index="round", columns="model_name", values=metric).reset_index()
-                save_lineplot(pivot, "round", [c for c in pivot.columns if c != "round"], f"Round trajectory by model - {metric}", plots_dir / f"aggregate_round_trajectory_model_{metric}.png", "Round", metric)
+                pivot = traj_df.pivot(
+                    index="round", columns="model_name", values=metric
+                ).reset_index()
+                save_lineplot(
+                    pivot,
+                    "round",
+                    [c for c in pivot.columns if c != "round"],
+                    f"Round trajectory by model - {metric}",
+                    plots_dir / f"aggregate_round_trajectory_model_{metric}.png",
+                    "Round",
+                    metric,
+                )
 
 
-
-def process_single_run(run_dir: Path, topic_catalog: dict[str, dict], resources) -> tuple[pd.DataFrame, dict]:
+def process_single_run(
+    run_dir: Path, topic_catalog: dict[str, dict], resources
+) -> tuple[pd.DataFrame, dict]:
     if not CONFIG.overwrite_existing:
         cached_df, cached_summary = load_cached_run_outputs(run_dir, CONFIG.output_analysis_dir)
         if cached_df is not None:
@@ -660,13 +866,41 @@ def main(argv: list[str] | None = None) -> None:
     global CONFIG
 
     parser = argparse.ArgumentParser(description="LLM view analysis pipeline")
-    parser.add_argument("--input-runs", type=str, default=str(CONFIG.input_runs_dir), help="Directory containing run_* folders")
-    parser.add_argument("--output-analysis", type=str, default=str(CONFIG.output_analysis_dir), help="Directory where analysis outputs are written")
-    parser.add_argument("--topics-path", type=str, default=str(CONFIG.topics_path), help="Path to topic catalog JSON")
-    parser.add_argument("--max-runs", type=int, default=CONFIG.max_runs, help="Maximum number of runs to process")
-    parser.add_argument("--overwrite-existing", action="store_true", help="Recompute existing per-run outputs")
-    parser.add_argument("--use-transformer-emotion-secondary", action="store_true", help="Enable secondary transformer emotion model")
-    parser.add_argument("--transformer-emotion-model", type=str, default=CONFIG.transformer_emotion_model, help="Transformer emotion model for secondary emotion features")
+    parser.add_argument(
+        "--input-runs",
+        type=str,
+        default=str(CONFIG.input_runs_dir),
+        help="Directory containing run_* folders",
+    )
+    parser.add_argument(
+        "--output-analysis",
+        type=str,
+        default=str(CONFIG.output_analysis_dir),
+        help="Directory where analysis outputs are written",
+    )
+    parser.add_argument(
+        "--topics-path",
+        type=str,
+        default=str(CONFIG.topics_path),
+        help="Path to topic catalog JSON",
+    )
+    parser.add_argument(
+        "--max-runs", type=int, default=CONFIG.max_runs, help="Maximum number of runs to process"
+    )
+    parser.add_argument(
+        "--overwrite-existing", action="store_true", help="Recompute existing per-run outputs"
+    )
+    parser.add_argument(
+        "--use-transformer-emotion-secondary",
+        action="store_true",
+        help="Enable secondary transformer emotion model",
+    )
+    parser.add_argument(
+        "--transformer-emotion-model",
+        type=str,
+        default=CONFIG.transformer_emotion_model,
+        help="Transformer emotion model for secondary emotion features",
+    )
     args = parser.parse_args(argv)
 
     CONFIG = replace(
@@ -696,7 +930,9 @@ def main(argv: list[str] | None = None) -> None:
         CONFIG.transformer_emotion_model,
     )
 
-    run_dirs = sorted([p for p in CONFIG.input_runs_dir.iterdir() if p.is_dir() and p.name.startswith("run_")])
+    run_dirs = sorted(
+        [p for p in CONFIG.input_runs_dir.iterdir() if p.is_dir() and p.name.startswith("run_")]
+    )
     if not run_dirs:
         print("No run_* folders found.")
         return
@@ -739,14 +975,18 @@ def main(argv: list[str] | None = None) -> None:
         "libraries": {
             "spacy": __import__("spacy").__version__,
             "nltk": __import__("nltk").__version__,
-            "sentence_transformers": getattr(sys.modules.get("sentence_transformers"), "__version__", None),
+            "sentence_transformers": getattr(
+                sys.modules.get("sentence_transformers"), "__version__", None
+            ),
             "transformers": getattr(sys.modules.get("transformers"), "__version__", None),
             "wordcloud": getattr(sys.modules.get("wordcloud"), "__version__", None),
             "pandas": getattr(pd, "__version__", None),
             "numpy": getattr(np, "__version__", None),
             "matplotlib": getattr(__import__("matplotlib"), "__version__", None),
         },
-        "spacy_pipeline": getattr(resources.nlp, "pipe_names", None) if resources.nlp is not None else None,
+        "spacy_pipeline": getattr(resources.nlp, "pipe_names", None)
+        if resources.nlp is not None
+        else None,
         "emotion_model_error": resources.emotion_load_error,
     }
     write_json(CONFIG.output_analysis_dir / "environment_metadata.json", env_meta)

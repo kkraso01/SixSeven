@@ -92,9 +92,13 @@ def persist_object_columns(df: pd.DataFrame) -> pd.DataFrame:
     for col in ["tokens_list", "lemmas_list", "pos_tags_list", "embedding_vector_obj"]:
         if col in out.columns:
             out[col] = out[col].apply(
-                lambda x: json.dumps(x.tolist()) if isinstance(x, np.ndarray)
-                else json.dumps(x) if isinstance(x, list)
-                else None
+                lambda x: (
+                    json.dumps(x.tolist())
+                    if isinstance(x, np.ndarray)
+                    else json.dumps(x)
+                    if isinstance(x, list)
+                    else None
+                )
             )
     return out
 

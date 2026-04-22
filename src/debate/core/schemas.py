@@ -306,9 +306,7 @@ class DebateLogItem(BaseModel):
         default="none", description="External tool used for this turn"
     )
     tool_query: str | None = Field(default=None, description="Query sent to external tool")
-    reply_to_turn: int | None = Field(
-        default=None, description="Turn number this is replying to"
-    )
+    reply_to_turn: int | None = Field(default=None, description="Turn number this is replying to")
 
 
 class AgentState(BaseModel):

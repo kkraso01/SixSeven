@@ -10,12 +10,11 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
-from debate.simulator.io.csv_export import export_all_debates_to_csv
-
 from debate import DebateConfig, run_debate
 from debate.core.container import build_default_services
 from debate.core.logging import setup_logging
 from debate.core.topics import DebateTopic
+from debate.simulator.io.csv_export import export_all_debates_to_csv
 
 # Force UTF-8 on Windows to prevent charmap codec errors
 os.environ.setdefault("PYTHONUTF8", "1")

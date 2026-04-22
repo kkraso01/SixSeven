@@ -1,11 +1,11 @@
 import argparse
-import re
 import json
+import re
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 from debate.analysis.utils.features import (
     EmotionAnalyzer,
@@ -21,9 +21,10 @@ from debate.analysis.utils.lexicons import (
 )
 from debate.analysis.utils.winner_inference import (
     infer_winner_from_final_report as shared_infer_winner_from_final_report,
+)
+from debate.analysis.utils.winner_inference import (
     infer_winner_from_stance_trajectory as shared_infer_winner_from_stance_trajectory,
 )
-
 
 # Constants used in pipeline
 BASE_DIR = Path(__file__).resolve().parent
@@ -56,13 +57,14 @@ FEATURE_COLS_BASE = [
     "strong_modality_density",
     "weak_modality_density",
     "modality_balance",
-    "confidence"
+    "confidence",
 ]
 
 
 # Helper functions
 def ensure_dir(path: Path):
     path.mkdir(parents=True, exist_ok=True)
+
 
 # Basic tokenization
 def tokenize(text: str):
@@ -186,7 +188,7 @@ def plot_grouped_bar(df, category_col, value_col, hue_col, title, outpath):
     plt.close()
 
 
-#Load NRC for emotions
+# Load NRC for emotions
 print("Loading NRC emotion lexicon...")
 NRC_LEXICON = load_nrc_word_lexicon(NRC_PATH)
 print(f"NRC loaded with {len(NRC_LEXICON)} word entries.\n")
@@ -242,6 +244,7 @@ def infer_winner_from_final_report(final_report):
         winner_info["winner_source"] = "outcome_summary"
 
     return winner_info
+
 
 # Find winner based the confidence shift
 def infer_winner_from_stance_trajectory(final_report):
@@ -299,7 +302,6 @@ def analyze_utterance(text: str):
     return pd.Series(scores)
 
 
-
 def get_top_emotion_label(df, cols, prefix_to_strip):
     if not cols:
         return None
@@ -309,8 +311,11 @@ def get_top_emotion_label(df, cols, prefix_to_strip):
     top_col = means.sort_values(ascending=False).index[0]
     return top_col.replace(prefix_to_strip, "")
 
+
 # Output building
-def build_speaker_features(df_speaker, debate_id, claim, speaker_role, winner_role, emotion_cols, nrc_density_cols):
+def build_speaker_features(
+    df_speaker, debate_id, claim, speaker_role, winner_role, emotion_cols, nrc_density_cols
+):
     row = {
         "debate_id": debate_id,
         "claim": claim,
@@ -329,11 +334,25 @@ def build_speaker_features(df_speaker, debate_id, claim, speaker_role, winner_ro
 
     for phase in ["early", "middle", "late"]:
         phase_df = df_speaker[df_speaker["phase"] == phase]
-        for col in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance", "polarity", "subjectivity"]:
+        for col in [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+            "polarity",
+            "subjectivity",
+        ]:
             if col in df_speaker.columns:
                 row[f"{phase}_{col}_mean"] = safe_mean(phase_df[col])
 
-    for col in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance", "polarity", "subjectivity"]:
+    for col in [
+        "confidence",
+        "strong_modality_density",
+        "weak_modality_density",
+        "modality_balance",
+        "polarity",
+        "subjectivity",
+    ]:
         early_val = row.get(f"early_{col}_mean")
         late_val = row.get(f"late_{col}_mean")
         if pd.notna(early_val) and pd.notna(late_val):
@@ -347,7 +366,8 @@ def build_speaker_features(df_speaker, debate_id, claim, speaker_role, winner_ro
         row["top_bert_emotion"] = get_top_emotion_label(df_speaker, emotion_cols, "emotion_")
         row["dominant_bert_mode"] = (
             df_speaker["dominant_bert_emotion"].mode().iloc[0]
-            if "dominant_bert_emotion" in df_speaker.columns and not df_speaker["dominant_bert_emotion"].mode().empty
+            if "dominant_bert_emotion" in df_speaker.columns
+            and not df_speaker["dominant_bert_emotion"].mode().empty
             else None
         )
 
@@ -359,7 +379,8 @@ def build_speaker_features(df_speaker, debate_id, claim, speaker_role, winner_ro
             row["top_nrc_emotion"] = row["top_nrc_emotion"].replace("_density", "")
         row["dominant_nrc_mode"] = (
             df_speaker["dominant_nrc_emotion"].mode().iloc[0]
-            if "dominant_nrc_emotion" in df_speaker.columns and not df_speaker["dominant_nrc_emotion"].mode().empty
+            if "dominant_nrc_emotion" in df_speaker.columns
+            and not df_speaker["dominant_nrc_emotion"].mode().empty
             else None
         )
 
@@ -376,12 +397,20 @@ def build_debate_level_features(df_enriched, debate_id, claim, winner_info):
         "winner_role": winner_role,
         "winner_source": winner_info.get("winner_source"),
         "winner_confidence_label": winner_info.get("winner_confidence"),
-        "n_total_turns": len(df_enriched)
+        "n_total_turns": len(df_enriched),
     }
 
     speaker_dfs = {role: df_enriched[df_enriched["speaker_role"] == role].copy() for role in roles}
 
-    metrics = ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance", "polarity", "subjectivity", "word_count"]
+    metrics = [
+        "confidence",
+        "strong_modality_density",
+        "weak_modality_density",
+        "modality_balance",
+        "polarity",
+        "subjectivity",
+        "word_count",
+    ]
 
     for role in roles:
         sdf = speaker_dfs[role]
@@ -391,8 +420,15 @@ def build_debate_level_features(df_enriched, debate_id, claim, winner_info):
                 row[f"{role}_{metric}_mean"] = safe_mean(sdf[metric])
 
         late = sdf[sdf["phase"] == "late"]
-        for metric in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance"]:
-            row[f"{role}_late_{metric}_mean"] = safe_mean(late[metric]) if metric in sdf.columns else np.nan
+        for metric in [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+        ]:
+            row[f"{role}_late_{metric}_mean"] = (
+                safe_mean(late[metric]) if metric in sdf.columns else np.nan
+            )
 
     if winner_role in roles:
         loser_role = "opponent" if winner_role == "proponent" else "proponent"
@@ -401,19 +437,28 @@ def build_debate_level_features(df_enriched, debate_id, claim, winner_info):
         for metric in metrics:
             w = row.get(f"{winner_role}_{metric}_mean")
             l = row.get(f"{loser_role}_{metric}_mean")
-            row[f"winner_minus_loser_{metric}_mean"] = (w - l) if pd.notna(w) and pd.notna(l) else np.nan
+            row[f"winner_minus_loser_{metric}_mean"] = (
+                (w - l) if pd.notna(w) and pd.notna(l) else np.nan
+            )
 
-        for metric in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance"]:
+        for metric in [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+        ]:
             w = row.get(f"{winner_role}_late_{metric}_mean")
             l = row.get(f"{loser_role}_late_{metric}_mean")
-            row[f"winner_minus_loser_late_{metric}_mean"] = (w - l) if pd.notna(w) and pd.notna(l) else np.nan
+            row[f"winner_minus_loser_late_{metric}_mean"] = (
+                (w - l) if pd.notna(w) and pd.notna(l) else np.nan
+            )
     else:
         row["loser_role"] = None
 
     return row
 
 
-#Run for a single debate
+# Run for a single debate
 def process_single_run(run_dir: Path):
     suffix = run_dir.name.replace("run_", "")
     analysis_dir = OUTPUT_ANALYSIS_DIR / f"analysis_{suffix}"
@@ -460,7 +505,11 @@ def process_single_run(run_dir: Path):
     else:
         df["confidence"] = pd.to_numeric(df["confidence"], errors="coerce")
 
-    debate_id = df["debate_id"].iloc[0] if "debate_id" in df.columns and not df["debate_id"].isna().all() else run_dir.name
+    debate_id = (
+        df["debate_id"].iloc[0]
+        if "debate_id" in df.columns and not df["debate_id"].isna().all()
+        else run_dir.name
+    )
     claim = df["claim"].iloc[0] if "claim" in df.columns and not df["claim"].isna().all() else None
 
     analysis = df["utterance"].apply(analyze_utterance)
@@ -478,7 +527,8 @@ def process_single_run(run_dir: Path):
     df_enriched["phase"] = df_enriched["turn_position"].apply(assign_phase)
 
     nrc_density_cols = [
-        c for c in df_enriched.columns
+        c
+        for c in df_enriched.columns
         if c.startswith("nrc_")
         and c.endswith("_density")
         and c.replace("nrc_", "").replace("_density", "") in NRC_TRUE_EMOTIONS
@@ -494,14 +544,14 @@ def process_single_run(run_dir: Path):
     else:
         df_enriched["dominant_nrc_emotion"] = "unknown"
 
-    emotion_cols = [c for c in df_enriched.columns if c.startswith("emotion_") and c != "emotion_model_error"]
+    emotion_cols = [
+        c for c in df_enriched.columns if c.startswith("emotion_") and c != "emotion_model_error"
+    ]
 
     if emotion_cols:
         df_enriched[emotion_cols] = df_enriched[emotion_cols].fillna(0.0)
         df_enriched["dominant_bert_emotion"] = (
-            df_enriched[emotion_cols]
-            .idxmax(axis=1)
-            .str.replace("emotion_", "", regex=False)
+            df_enriched[emotion_cols].idxmax(axis=1).str.replace("emotion_", "", regex=False)
         )
     else:
         df_enriched["dominant_bert_emotion"] = "unknown"
@@ -535,7 +585,7 @@ def process_single_run(run_dir: Path):
 
     final_report = None
     if final_report_path.exists():
-        with open(final_report_path, "r", encoding="utf-8") as f:
+        with open(final_report_path, encoding="utf-8") as f:
             final_report = json.load(f)
 
     winner_info = infer_winner_from_final_report(final_report)
@@ -551,12 +601,14 @@ def process_single_run(run_dir: Path):
         "claim": claim,
         "original_row_count": int(original_rows),
         "analyzed_row_count": int(len(df_enriched)),
-        "speaker_roles_found": sorted(df_enriched["speaker_role"].dropna().astype(str).unique().tolist()),
+        "speaker_roles_found": sorted(
+            df_enriched["speaker_role"].dropna().astype(str).unique().tolist()
+        ),
         "nrc_path": str(NRC_PATH),
         "nrc_word_entries": len(NRC_LEXICON),
         "bert_model_name": EMOTION_MODEL_NAME,
         "winner_info": winner_info,
-        "final_report_present": final_report is not None
+        "final_report_present": final_report is not None,
     }
 
     speaker_feature_rows = []
@@ -575,10 +627,18 @@ def process_single_run(run_dir: Path):
     df_enriched.to_csv(analysis_dir / "debate_log_with_modality_emotion.csv", index=False)
     speaker_summary.to_csv(analysis_dir / "speaker_summary.csv")
     phase_summary.to_csv(analysis_dir / "phase_summary.csv", index=False)
-    dominant_bert_emotion_by_speaker.to_csv(analysis_dir / "dominant_bert_emotion_by_speaker.csv", index=False)
-    dominant_nrc_emotion_by_speaker.to_csv(analysis_dir / "dominant_nrc_emotion_by_speaker.csv", index=False)
-    pd.DataFrame(speaker_feature_rows).to_csv(analysis_dir / "speaker_debate_features.csv", index=False)
-    pd.DataFrame([debate_feature_row]).to_csv(analysis_dir / "debate_level_features.csv", index=False)
+    dominant_bert_emotion_by_speaker.to_csv(
+        analysis_dir / "dominant_bert_emotion_by_speaker.csv", index=False
+    )
+    dominant_nrc_emotion_by_speaker.to_csv(
+        analysis_dir / "dominant_nrc_emotion_by_speaker.csv", index=False
+    )
+    pd.DataFrame(speaker_feature_rows).to_csv(
+        analysis_dir / "speaker_debate_features.csv", index=False
+    )
+    pd.DataFrame([debate_feature_row]).to_csv(
+        analysis_dir / "debate_level_features.csv", index=False
+    )
 
     save_json(analysis_dir / "winner_summary.json", winner_info)
     save_json(analysis_dir / "analysis_metadata.json", analysis_metadata)
@@ -600,12 +660,16 @@ def process_single_run(run_dir: Path):
         sub = df_enriched[df_enriched["speaker_role"] == speaker].copy()
         safe_speaker = str(speaker).replace(" ", "_").lower()
 
-        modality_cols = [c for c in [
-            "strong_modality_density",
-            "weak_modality_density",
-            "modality_balance",
-            "confidence"
-        ] if c in sub.columns]
+        modality_cols = [
+            c
+            for c in [
+                "strong_modality_density",
+                "weak_modality_density",
+                "modality_balance",
+                "confidence",
+            ]
+            if c in sub.columns
+        ]
 
         if modality_cols:
             plot_line(
@@ -613,7 +677,7 @@ def process_single_run(run_dir: Path):
                 x_col="turn_index",
                 y_cols=modality_cols,
                 title=f"{speaker} - Modality / Confidence Over Time",
-                outpath=plots_dir / f"{safe_speaker}_modality_confidence_over_time.png"
+                outpath=plots_dir / f"{safe_speaker}_modality_confidence_over_time.png",
             )
 
         top_bert_emotions = []
@@ -627,7 +691,7 @@ def process_single_run(run_dir: Path):
                 x_col="turn_index",
                 y_cols=top_bert_emotions,
                 title=f"{speaker} - Top BERT Emotions Over Time",
-                outpath=plots_dir / f"{safe_speaker}_top_bert_emotions_over_time.png"
+                outpath=plots_dir / f"{safe_speaker}_top_bert_emotions_over_time.png",
             )
 
         phase_counts = sub["phase"].value_counts().sort_index()
@@ -637,10 +701,17 @@ def process_single_run(run_dir: Path):
                 title=f"{speaker} - Turn Distribution by Phase",
                 outpath=plots_dir / f"{safe_speaker}_phase_counts.png",
                 xlabel="Phase",
-                ylabel="Turns"
+                ylabel="Turns",
             )
 
-    for metric in ["strong_modality_density", "weak_modality_density", "modality_balance", "confidence", "polarity", "subjectivity"]:
+    for metric in [
+        "strong_modality_density",
+        "weak_modality_density",
+        "modality_balance",
+        "confidence",
+        "polarity",
+        "subjectivity",
+    ]:
         if metric in df_enriched.columns:
             plt.figure(figsize=(10, 5))
             for speaker in df_enriched["speaker_role"].dropna().unique():
@@ -660,7 +731,7 @@ def process_single_run(run_dir: Path):
         "speaker_features": speaker_feature_rows,
         "debate_features": debate_feature_row,
         "phase_summary": phase_summary.copy(),
-        "turn_data": df_enriched.copy()
+        "turn_data": df_enriched.copy(),
     }
 
 
@@ -706,13 +777,16 @@ def aggregate_all_results(results):
     for col in numeric_cols:
         winners = speaker_df.loc[speaker_df["is_winner"] == 1, col]
         losers = speaker_df.loc[speaker_df["is_winner"] == 0, col]
-        winner_vs_loser_rows.append({
-            "feature": col,
-            "winner_mean": safe_mean(winners),
-            "loser_mean": safe_mean(losers),
-            "winner_minus_loser": safe_mean(winners) - safe_mean(losers)
-            if pd.notna(safe_mean(winners)) and pd.notna(safe_mean(losers)) else np.nan
-        })
+        winner_vs_loser_rows.append(
+            {
+                "feature": col,
+                "winner_mean": safe_mean(winners),
+                "loser_mean": safe_mean(losers),
+                "winner_minus_loser": safe_mean(winners) - safe_mean(losers)
+                if pd.notna(safe_mean(winners)) and pd.notna(safe_mean(losers))
+                else np.nan,
+            }
+        )
 
     winner_vs_loser_df = pd.DataFrame(winner_vs_loser_rows).sort_values(
         "winner_minus_loser", ascending=False
@@ -721,38 +795,64 @@ def aggregate_all_results(results):
 
     # Phase comparison
     if not phase_df.empty:
-        phase_metrics = ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance", "polarity", "subjectivity"]
+        phase_metrics = [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+            "polarity",
+            "subjectivity",
+        ]
         merged_phase = phase_df.merge(
             speaker_df[["debate_id", "speaker_role", "is_winner"]],
             on=["debate_id", "speaker_role"],
-            how="left"
+            how="left",
         )
 
         phase_compare_rows = []
         for phase in ["early", "middle", "late"]:
             for metric in phase_metrics:
                 if metric in merged_phase.columns:
-                    winners = merged_phase[(merged_phase["phase"] == phase) & (merged_phase["is_winner"] == 1)][metric]
-                    losers = merged_phase[(merged_phase["phase"] == phase) & (merged_phase["is_winner"] == 0)][metric]
-                    phase_compare_rows.append({
-                        "phase": phase,
-                        "metric": metric,
-                        "winner_mean": safe_mean(winners),
-                        "loser_mean": safe_mean(losers),
-                        "winner_minus_loser": safe_mean(winners) - safe_mean(losers)
-                        if pd.notna(safe_mean(winners)) and pd.notna(safe_mean(losers)) else np.nan
-                    })
+                    winners = merged_phase[
+                        (merged_phase["phase"] == phase) & (merged_phase["is_winner"] == 1)
+                    ][metric]
+                    losers = merged_phase[
+                        (merged_phase["phase"] == phase) & (merged_phase["is_winner"] == 0)
+                    ][metric]
+                    phase_compare_rows.append(
+                        {
+                            "phase": phase,
+                            "metric": metric,
+                            "winner_mean": safe_mean(winners),
+                            "loser_mean": safe_mean(losers),
+                            "winner_minus_loser": safe_mean(winners) - safe_mean(losers)
+                            if pd.notna(safe_mean(winners)) and pd.notna(safe_mean(losers))
+                            else np.nan,
+                        }
+                    )
 
         phase_compare_df = pd.DataFrame(phase_compare_rows)
         phase_compare_df.to_csv(aggregate_dir / "phase_winner_vs_loser_summary.csv", index=False)
 
-        for metric in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance"]:
+        for metric in [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+        ]:
             metric_df = phase_compare_df[phase_compare_df["metric"] == metric]
             if not metric_df.empty:
-                long_df = pd.concat([
-                    metric_df[["phase", "winner_mean"]].rename(columns={"winner_mean": "value"}).assign(group="winner"),
-                    metric_df[["phase", "loser_mean"]].rename(columns={"loser_mean": "value"}).assign(group="loser")
-                ], ignore_index=True)
+                long_df = pd.concat(
+                    [
+                        metric_df[["phase", "winner_mean"]]
+                        .rename(columns={"winner_mean": "value"})
+                        .assign(group="winner"),
+                        metric_df[["phase", "loser_mean"]]
+                        .rename(columns={"loser_mean": "value"})
+                        .assign(group="loser"),
+                    ],
+                    ignore_index=True,
+                )
 
                 plot_grouped_bar(
                     long_df,
@@ -760,7 +860,7 @@ def aggregate_all_results(results):
                     value_col="value",
                     hue_col="group",
                     title=f"Winners vs Losers by Phase - {metric}",
-                    outpath=plots_dir / f"phase_winner_vs_loser_{metric}.png"
+                    outpath=plots_dir / f"phase_winner_vs_loser_{metric}.png",
                 )
 
     # Boxplots
@@ -771,7 +871,7 @@ def aggregate_all_results(results):
         "modality_balance_mean",
         "late_minus_early_confidence",
         "late_minus_early_strong_modality_density",
-        "late_minus_early_weak_modality_density"
+        "late_minus_early_weak_modality_density",
     ]:
         if metric in speaker_df.columns:
             plot_boxplot(
@@ -779,7 +879,7 @@ def aggregate_all_results(results):
                 group_col="is_winner",
                 value_col=metric,
                 title=f"Winners vs Losers - {metric}",
-                outpath=plots_dir / f"boxplot_{metric}.png"
+                outpath=plots_dir / f"boxplot_{metric}.png",
             )
 
     # Trajectory summary using turn_position bins
@@ -788,24 +888,25 @@ def aggregate_all_results(results):
             turn_df["turn_position"],
             bins=np.linspace(0, 1, 6),
             include_lowest=True,
-            labels=["0-20%", "20-40%", "40-60%", "60-80%", "80-100%"]
+            labels=["0-20%", "20-40%", "40-60%", "60-80%", "80-100%"],
         )
 
         turn_df = turn_df.merge(
             speaker_df[["debate_id", "speaker_role", "is_winner"]],
             on=["debate_id", "speaker_role"],
-            how="left"
+            how="left",
         )
 
-        for metric in ["confidence", "strong_modality_density", "weak_modality_density", "modality_balance"]:
+        for metric in [
+            "confidence",
+            "strong_modality_density",
+            "weak_modality_density",
+            "modality_balance",
+        ]:
             if metric not in turn_df.columns:
                 continue
 
-            traj = (
-                turn_df.groupby(["turn_bin", "is_winner"])[metric]
-                .mean()
-                .reset_index()
-            )
+            traj = turn_df.groupby(["turn_bin", "is_winner"])[metric].mean().reset_index()
 
             if traj.empty:
                 continue
@@ -847,14 +948,25 @@ def aggregate_all_results(results):
     print(f"\nAggregate reports saved to: {aggregate_dir}")
 
 
-
 def main(argv: list[str] | None = None):
     global INPUT_RUNS_DIR, OUTPUT_ANALYSIS_DIR, OVERWRITE_EXISTING
 
     parser = argparse.ArgumentParser(description="Debate analysis pipeline")
-    parser.add_argument("--input-runs", type=str, default=str(INPUT_RUNS_DIR), help="Directory containing run_* folders")
-    parser.add_argument("--output-analysis", type=str, default=str(OUTPUT_ANALYSIS_DIR), help="Directory where analysis outputs are written")
-    parser.add_argument("--overwrite-existing", action="store_true", help="Overwrite existing outputs")
+    parser.add_argument(
+        "--input-runs",
+        type=str,
+        default=str(INPUT_RUNS_DIR),
+        help="Directory containing run_* folders",
+    )
+    parser.add_argument(
+        "--output-analysis",
+        type=str,
+        default=str(OUTPUT_ANALYSIS_DIR),
+        help="Directory where analysis outputs are written",
+    )
+    parser.add_argument(
+        "--overwrite-existing", action="store_true", help="Overwrite existing outputs"
+    )
     args = parser.parse_args(argv)
 
     INPUT_RUNS_DIR = Path(args.input_runs)

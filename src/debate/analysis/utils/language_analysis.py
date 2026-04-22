@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import re
-from collections import Counter
 
 from debate.core.schemas import DebateLogItem
 
@@ -107,4 +106,3 @@ def _rate_per_1000(count: int, total_tokens: int) -> float:
     if total_tokens <= 0:
         return 0.0
     return (count / total_tokens) * 1000.0
-

@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-from itertools import permutations, product
 import json
 import os
+from itertools import permutations, product
 from pathlib import Path
 from typing import Any
 

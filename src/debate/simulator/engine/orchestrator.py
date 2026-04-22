@@ -137,8 +137,7 @@ def _run_agent_turn_with_search(
                     "Before composing your argument, decide whether you need to "
                     "search the web for evidence this turn. Return ONLY a JSON "
                     "with should_search (bool), search_query (string or null), "
-                    "and search_rationale (string or null)."
-                    + prior_context
+                    "and search_rationale (string or null)." + prior_context
                 ),
             }
         ]
@@ -154,10 +153,14 @@ def _run_agent_turn_with_search(
         )
 
         if not plan.should_search or not plan.search_query:
-            print(f"    [{agent_type}] No more research needed (round {search_round}/{max_search_rounds})")
+            print(
+                f"    [{agent_type}] No more research needed (round {search_round}/{max_search_rounds})"
+            )
             break
 
-        print(f"    [{agent_type}] Research {search_round}/{max_search_rounds}: {plan.search_query}")
+        print(
+            f"    [{agent_type}] Research {search_round}/{max_search_rounds}: {plan.search_query}"
+        )
         last_query = plan.search_query
         last_rationale = plan.search_rationale
 
@@ -321,7 +324,9 @@ def _moderator_decision_messages(
     elif sa_persuaded:
         persuasion_note = f"\n** SA confidence DROPPED {abs(sa_total_shift)} points — SA is being PERSUADED by CA. **"
     else:
-        persuasion_note = "\nNo persuasion detected yet — neither agent's confidence has dropped 20+ points."
+        persuasion_note = (
+            "\nNo persuasion detected yet — neither agent's confidence has dropped 20+ points."
+        )
 
     decision_context = (
         f"PERSUASION TRACKING STATUS:\n"
@@ -928,7 +933,9 @@ def run_debate(
                 last_round_speaker = current_speaker
 
         if not round_turn_payloads:
-            logger.warning("No debater turns generated for round %d; ending debate early", round_number)
+            logger.warning(
+                "No debater turns generated for round %d; ending debate early", round_number
+            )
             debate_ended_early = True
             end_reason = f"No debater turns generated in round {round_number}."
             break
@@ -952,7 +959,7 @@ def run_debate(
                     f"Round {round_number} debate turns:\n\n"
                     + "\n\n".join(round_turn_payloads)
                     + "\n\n"
-                    f"Provide your analysis and recap."
+                    "Provide your analysis and recap."
                 ),
             }
         )

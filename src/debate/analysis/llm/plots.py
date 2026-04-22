@@ -43,14 +43,30 @@ def save_barplot(values: pd.Series, title: str, path: Path, ylabel: str, xlabel:
     plt.close()
 
 
-def save_lineplot(df: pd.DataFrame, x_col: str, y_cols: list[str], title: str, path: Path, xlabel: str = "Turn Index", ylabel: str = "Score") -> None:
+def save_lineplot(
+    df: pd.DataFrame,
+    x_col: str,
+    y_cols: list[str],
+    title: str,
+    path: Path,
+    xlabel: str = "Turn Index",
+    ylabel: str = "Score",
+) -> None:
     if df.empty or not y_cols:
         return
     fig, ax = plt.subplots(figsize=(11.5, 5.8))
     palette = plt.cm.Set2([i / max(1, len(y_cols)) for i in range(len(y_cols))])
     for i, col in enumerate(y_cols):
         if col in df.columns:
-            ax.plot(df[x_col], df[col], marker="o", linewidth=2.0, markersize=4.5, label=col, color=palette[i])
+            ax.plot(
+                df[x_col],
+                df[col],
+                marker="o",
+                linewidth=2.0,
+                markersize=4.5,
+                label=col,
+                color=palette[i],
+            )
     ax.set_title(title)
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
@@ -121,14 +137,24 @@ def save_normalized_stacked_barplot(
     plt.close()
 
 
-def save_boxplot(df: pd.DataFrame, group_col: str, value_col: str, title: str, path: Path, xlabel: str, ylabel: str) -> None:
+def save_boxplot(
+    df: pd.DataFrame,
+    group_col: str,
+    value_col: str,
+    title: str,
+    path: Path,
+    xlabel: str,
+    ylabel: str,
+) -> None:
     if df.empty or group_col not in df.columns or value_col not in df.columns:
         return
     plot_df = df[[group_col, value_col]].dropna().copy()
     if plot_df.empty:
         return
     groups = sorted(plot_df[group_col].astype(str).unique().tolist())
-    series_data = [plot_df.loc[plot_df[group_col].astype(str) == group, value_col].values for group in groups]
+    series_data = [
+        plot_df.loc[plot_df[group_col].astype(str) == group, value_col].values for group in groups
+    ]
     fig, ax = plt.subplots(figsize=(11.5, 6.0))
     bp = ax.boxplot(series_data, tick_labels=groups, patch_artist=True, showmeans=True)
     for patch in bp["boxes"]:
@@ -143,7 +169,9 @@ def save_boxplot(df: pd.DataFrame, group_col: str, value_col: str, title: str, p
     plt.close()
 
 
-def save_heatmap(matrix: pd.DataFrame, title: str, path: Path, xlabel: str, ylabel: str, fmt: str = ".2f") -> None:
+def save_heatmap(
+    matrix: pd.DataFrame, title: str, path: Path, xlabel: str, ylabel: str, fmt: str = ".2f"
+) -> None:
     if matrix.empty:
         return
     fig, ax = plt.subplots(figsize=(max(8, matrix.shape[1] * 1.1), max(5, matrix.shape[0] * 0.9)))
@@ -164,7 +192,9 @@ def save_heatmap(matrix: pd.DataFrame, title: str, path: Path, xlabel: str, ylab
     plt.close()
 
 
-def make_wordcloud_or_bar(texts: list[str], title: str, outpath: Path, fallback_terms: pd.DataFrame) -> dict:
+def make_wordcloud_or_bar(
+    texts: list[str], title: str, outpath: Path, fallback_terms: pd.DataFrame
+) -> dict:
     if texts:
         try:
             vectorizer = CountVectorizer(stop_words="english", ngram_range=(1, 1), min_df=1)
@@ -173,7 +203,9 @@ def make_wordcloud_or_bar(texts: list[str], title: str, outpath: Path, fallback_
             terms = vectorizer.get_feature_names_out()
             freqs = {term: int(count) for term, count in zip(terms, counts) if count > 0}
             if freqs:
-                cloud = WordCloud(width=1600, height=900, background_color="white", collocations=False)
+                cloud = WordCloud(
+                    width=1600, height=900, background_color="white", collocations=False
+                )
                 cloud.generate_from_frequencies(freqs)
                 plt.figure(figsize=(12, 7))
                 plt.imshow(cloud, interpolation="bilinear")
@@ -182,7 +214,10 @@ def make_wordcloud_or_bar(texts: list[str], title: str, outpath: Path, fallback_
                 plt.tight_layout()
                 plt.savefig(outpath, dpi=300, bbox_inches="tight")
                 plt.close()
-                return {"method": "wordcloud", "top_terms": sorted(freqs.items(), key=lambda x: -x[1])[:15]}
+                return {
+                    "method": "wordcloud",
+                    "top_terms": sorted(freqs.items(), key=lambda x: -x[1])[:15],
+                }
         except Exception:
             pass
 
