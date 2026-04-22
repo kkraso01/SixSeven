@@ -5,9 +5,9 @@
   "bootstrap_samples": 1000,
   "analysis_schema_version": 3,
   "config": {
-    "root_dir": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven",
+    "root_dir": "C:\\Users\\kkras\\OneDrive\\Documents",
     "input_runs_dir": "old_artifacts",
-    "topics_path": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\config\\topics.json",
+    "topics_path": "C:\\Users\\kkras\\OneDrive\\Documents\\config\\topics.json",
     "output_analysis_dir": "results\\analysis\\llm_analysis",
     "max_runs": null,
     "overwrite_existing": false,
@@ -21,7 +21,7 @@
     "turning_point_delta_threshold": 5.0,
     "nrc_emotion_lexicon_path": "C:\\Users\\kkras\\OneDrive\\Documents\\SixSeven\\src\\debate\\resources\\lexicons\\NRC-Emotion-Lexicon\\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
     "use_transformer_emotion_secondary": false,
-    "transformer_emotion_model": "bhadresh-savani/bert-base-uncased-emotion"
+    "transformer_emotion_model": "None"
   },
   "libraries": {
     "spacy": "3.8.14",

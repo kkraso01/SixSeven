@@ -10,6 +10,7 @@ import argparse
 import json
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import pandas as pd
 from rich.console import Console
 from rich.panel import Panel
@@ -19,18 +20,81 @@ from rich.table import Table
 from debate.analysis.utils.features import (
     EmotionAnalyzer,
     analyze_utterance_features,
-    infer_winner_from_text,
     load_run_inputs,
 )
 from debate.analysis.analysis_runner import run_custom_analyzers
-from debate.analysis.utils.plots import (
-    plot_emotion_distribution,
-    plot_rhetorical_markers,
-    plot_sentiment_comparison,
-)
+from debate.analysis.utils.winner_inference import infer_winner_from_final_report
 from debate.core.config import DebateConfig
 
 console = Console()
+
+
+def _plot_sentiment_comparison(
+    output_dir: Path,
+    turn_indices: list[int],
+    series_by_agent: dict[str, list[float]],
+    metric_name: str,
+) -> str:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plt.figure()
+    for agent, values in series_by_agent.items():
+        if values:
+            rounds = turn_indices[: len(values)]
+            plt.plot(rounds, values, marker="o", label=agent)
+    plt.xlabel("Turn")
+    plt.ylabel(metric_name)
+    plt.title(f"{metric_name} Comparison")
+    plt.legend()
+    plt.tight_layout()
+    slug = metric_name.lower().replace(" ", "_")
+    path = output_dir / f"{slug}_comparison.png"
+    plt.savefig(path)
+    plt.close()
+    return str(path)
+
+
+def _plot_rhetorical_markers(
+    output_dir: Path,
+    agent: str,
+    turn_indices: list[int],
+    marker_data: dict[str, list[float]],
+) -> str:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plt.figure()
+    for label, values in marker_data.items():
+        if values:
+            rounds = turn_indices[: len(values)]
+            plt.plot(rounds, values, marker="o", label=label)
+    plt.xlabel("Turn")
+    plt.ylabel("Score")
+    plt.title(f"Rhetorical Markers: {agent}")
+    plt.legend()
+    plt.tight_layout()
+    path = output_dir / f"{agent.lower()}_rhetorical_markers.png"
+    plt.savefig(path)
+    plt.close()
+    return str(path)
+
+
+def _plot_emotion_distribution(
+    output_dir: Path,
+    agent: str,
+    counts: dict[str, int],
+) -> str:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    labels = list(counts.keys())
+    values = list(counts.values())
+    plt.figure(figsize=(max(6, len(labels) * 0.8), 4))
+    plt.bar(labels, values)
+    plt.xlabel("Emotion")
+    plt.ylabel("Count")
+    plt.title(f"Dominant Emotion Distribution: {agent}")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    path = output_dir / f"{agent.lower()}_emotion_distribution.png"
+    plt.savefig(path)
+    plt.close()
+    return str(path)
 
 
 def analyze_single_run(
@@ -102,7 +166,11 @@ def analyze_single_run(
 
     # 2. Winning Inference
     final_report = inputs.memory.final_report
-    winner_data = infer_winner_from_text(final_report.outcome_summary if final_report else "")
+    winner_data = infer_winner_from_final_report(
+        final_report.model_dump() if final_report else None,
+        use_explicit_winner_fields=False,
+        use_stance_trajectory_fallback=False,
+    )
 
     # 3. Generating Plots
     turn_indices = list(range(1, len(df_enriched) + 1))
@@ -112,14 +180,14 @@ def analyze_single_run(
         agent: df_enriched[df_enriched["speaker"] == agent]["polarity"].tolist()
         for agent in ["CA", "SA"]
     }
-    plot_sentiment_comparison(plots_dir, turn_indices, sentiment_data, "Polarity")
+    _plot_sentiment_comparison(plots_dir, turn_indices, sentiment_data, "Polarity")
 
     # Subjectivity Comparison
     subjectivity_data = {
         agent: df_enriched[df_enriched["speaker"] == agent]["subjectivity"].tolist()
         for agent in ["CA", "SA"]
     }
-    plot_sentiment_comparison(plots_dir, turn_indices, subjectivity_data, "Subjectivity")
+    _plot_sentiment_comparison(plots_dir, turn_indices, subjectivity_data, "Subjectivity")
 
     # Rhetorical Markers
     for agent in ["CA", "SA"]:
@@ -128,13 +196,13 @@ def analyze_single_run(
             col: sub[col].tolist()
             for col in ["uncertainty_score", "strong_modality_score", "weak_modality_score"]
         }
-        plot_rhetorical_markers(plots_dir, agent, turn_indices, marker_data)
+        _plot_rhetorical_markers(plots_dir, agent, turn_indices, marker_data)
 
     # Emotion Distribution
     if not skip_emotion and "dominant_emotion" in df_enriched.columns:
         for agent in ["CA", "SA"]:
             counts = df_enriched[df_enriched["speaker"] == agent]["dominant_emotion"].value_counts().to_dict()
-            plot_emotion_distribution(plots_dir, agent, counts)
+            _plot_emotion_distribution(plots_dir, agent, counts)
 
     # 4. Save results
     df_enriched.to_csv(analysis_dir / "enriched_debate_log.csv", index=False)
