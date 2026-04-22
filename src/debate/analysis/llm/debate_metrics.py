@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 from .config import ROLE_OPPONENT_MAP
-from debate.analysis.winner_inference import infer_winner_from_final_report as shared_infer_winner_from_final_report
+from debate.analysis.utils.winner_inference import infer_winner_from_final_report as shared_infer_winner_from_final_report
 
 
 def infer_winner_from_final_report(final_report: dict) -> dict:

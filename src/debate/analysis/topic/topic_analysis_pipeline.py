@@ -44,7 +44,7 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 import numpy as np
 import pandas as pd
 
-from debate.analysis.lexicons import (
+from debate.analysis.utils.lexicons import (
     EMFD_LEXICON_PATH,
     NRC_EMOTION_LEXICON_PATH,
     TOPIC_ANALYSIS_STRONG_MODALITY_WORDS as SHARED_TOPIC_ANALYSIS_STRONG_MODALITY_WORDS,

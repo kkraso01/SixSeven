@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from debate.analysis.lexicons import (
+from debate.analysis.utils.lexicons import (
     LLM_VIEW_ASSERTIVE_WORDS,
     LLM_VIEW_DEFAULT_NRC_EMOTIONS,
     LLM_VIEW_EVIDENCE_WORDS,

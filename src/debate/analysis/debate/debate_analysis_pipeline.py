@@ -7,19 +7,19 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from debate.analysis.features import (
+from debate.analysis.utils.features import (
     EmotionAnalyzer,
     analyze_utterance_features,
     extract_nrc_emotion_counts,
 )
-from debate.analysis.lexicons import (
+from debate.analysis.utils.lexicons import (
     DEBATE_ANALYSIS_NRC_TRUE_EMOTIONS,
     DEBATE_ANALYSIS_STRONG_MODALITY_WORDS,
     DEBATE_ANALYSIS_WEAK_MODALITY_WORDS,
     NRC_EMOTION_LEXICON_PATH,
     load_nrc_word_lexicon,
 )
-from debate.analysis.winner_inference import (
+from debate.analysis.utils.winner_inference import (
     infer_winner_from_final_report as shared_infer_winner_from_final_report,
     infer_winner_from_stance_trajectory as shared_infer_winner_from_stance_trajectory,
 )

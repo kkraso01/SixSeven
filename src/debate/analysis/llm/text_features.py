@@ -16,10 +16,10 @@ from sentence_transformers import SentenceTransformer
 from spacy.lang.en.stop_words import STOP_WORDS as SPACY_STOP_WORDS
 from transformers import pipeline
 
-from debate.analysis.features import (
+from debate.analysis.utils.features import (
     emotion_lexicon_scores,
 )
-from debate.analysis.lexicons import load_nrc_emotion_lexicon
+from debate.analysis.utils.lexicons import load_nrc_emotion_lexicon
 
 from .config import (
     ASSERTIVE_WORDS,

@@ -10,12 +10,12 @@ import seaborn as sns
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-from debate.analysis.features import (
+from debate.analysis.utils.features import (
     EmotionAnalyzer,
     analyze_utterance_features,
     extract_nrc_emotion_counts,
 )
-from debate.analysis.lexicons import EMOTION_LEXICON
+from debate.analysis.utils.lexicons import EMOTION_LEXICON
 
 console = Console()
 
