@@ -86,17 +86,23 @@ cp config/config.example.ini config/config.ini
 - **Poetry**: `poetry run sixseven`
 
 ### Research Audit
-Runs the post-debate analysis pipeline. By default, this executes the three custom analyzers sequentially in-process and writes outputs under `results/analysis/`.
+Runs the post-debate analysis pipeline. By default, this executes the four custom analyzers sequentially in-process and writes outputs under `results/analysis/`.
 
 #### Default Flow
 No arguments are required. The default custom suite uses:
 - **Input Runs**: `old_artifacts`
 - **Artifacts**: `old_artifacts`
 - **Output Root**: `results`
-- **Executed Analyzers**: `debate_analysis -> llm_analysis -> role_analysis`
+- **Executed Analyzers**: `debate_analysis -> topic_analysis -> role_analysis -> llm_analysis`
 
 - **Standard**: `python cli/analyze_results.py`
+- **Module**: `python -m cli.analyze_results`
 - **Poetry**: `poetry run sixseven-analyze`
+
+#### Important Note
+The default custom suite reads from `old_artifacts` on purpose. The machine used for debate generation needed roughly two days of continuous running to populate the newer refactored outputs under `results/batches/ollama`, and those long runs were affected by network and scheduling interruptions. As a result, the refactored batch artifact directories are not reliably populated yet.
+
+Because of that limitation, the analysis scripts currently default to the older per-run, pre-refactor artifact schema in `old_artifacts`, which remains the canonical input source for the analysis pipeline unless you explicitly override it with CLI flags.
 
 #### Supported Flags
 - `--dir`: Input directory. Defaults to `old_artifacts` for the custom suite and `results/raw` for the legacy advanced analysis path.
@@ -115,9 +121,9 @@ When `cli/analyze_results.py` runs with defaults, the flow is:
 1. Parse CLI arguments.
 2. Default to the custom suite path.
 3. Call the central runner in `src/debate/analysis/analysis_runner.py`.
-4. Execute `debate_analysis`, `llm_analysis`, and `role_analysis` sequentially via imported `main(argv)` functions.
+4. Execute `debate_analysis`, `topic_analysis`, `role_analysis`, and `llm_analysis` sequentially via imported `main(argv)` functions.
 5. Adapt shared CLI inputs into analyzer-specific flags.
-6. Write outputs under `results/analysis/debate_analysis`, `results/analysis/llm_analysis`, and `results/analysis/role_analysis`.
+6. Write outputs under `results/analysis/debate_analysis`, `results/analysis/llm_analysis`, `results/analysis/role_analysis`, and `results/analysis/topic_analysis`.
 
 #### Legacy Analysis
 The older analysis path is still available for direct per-run or batch analysis over `results/raw/run_*`.

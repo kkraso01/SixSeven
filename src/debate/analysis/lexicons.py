@@ -16,6 +16,7 @@ ANALYSIS_DIR = Path(__file__).resolve().parent
 DEBATE_SRC_DIR = ANALYSIS_DIR.parent
 NRC_EMOTION_LEXICON_DIR = DEBATE_SRC_DIR / "resources" / "lexicons" / "NRC-Emotion-Lexicon"
 NRC_EMOTION_LEXICON_PATH = NRC_EMOTION_LEXICON_DIR / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
+EMFD_LEXICON_PATH = DEBATE_SRC_DIR / "resources" / "lexicons" / "emfd" / "emfd_scoring.csv"
 
 # ---------------------------------------------------------------------------
 # Base language-analysis lexicons (used by features.py / language_analysis.py)
@@ -58,6 +59,78 @@ MORAL_FOUNDATION_LEXICON: dict[str, set[str]] = {
         "corrupt",
     },
     "sanctity_degradation": {"pure", "sacred", "dirty", "contaminate", "unnatural", "toxic"},
+}
+
+
+# ---------------------------------------------------------------------------
+# Topic-analysis pipeline lexicons (topic_analysis/topic_analysis_pipeline.py)
+# ---------------------------------------------------------------------------
+
+TOPIC_ANALYSIS_UNCERTAINTY_WORDS: set[str] = {
+    "abeyance", "abeyances", "almost", "alteration", "alterations", "ambiguities",
+    "ambiguity", "ambiguous", "anomalies", "anomalous", "anomalously", "anomaly",
+    "anticipate", "anticipated", "anticipates", "anticipating", "anticipation",
+    "anticipations", "apparent", "apparently", "appear", "appeared", "appearing",
+    "appears", "approximate", "approximated", "approximately", "approximates",
+    "approximating", "approximation", "approximations", "arbitrarily", "arbitrariness",
+    "arbitrary", "assume", "assumed", "assumes", "assuming", "assumption", "assumptions",
+    "believe", "believed", "believes", "believing", "cautious", "cautiously",
+    "cautiousness", "clarification", "clarifications", "conceivable", "conceivably",
+    "conditional", "conditionally", "confuses", "confusing", "confusingly", "confusion",
+    "contingencies", "contingency", "contingent", "contingently", "contingents", "could",
+    "crossroad", "crossroads", "depend", "depended", "dependence", "dependencies",
+    "dependency", "dependent", "depending", "depends", "destabilizing", "deviate",
+    "deviated", "deviates", "deviating", "deviation", "deviations", "differ", "differed",
+    "differing", "differs", "doubt", "doubted", "doubtful", "doubts", "exposure",
+    "exposures", "fluctuate", "fluctuated", "fluctuates", "fluctuating", "fluctuation",
+    "fluctuations", "hidden", "hinges", "imprecise", "imprecision", "imprecisions",
+    "improbability", "improbable", "incompleteness", "indefinite", "indefinitely",
+    "indefiniteness", "indeterminable", "indeterminate", "inexact", "inexactness",
+    "instabilities", "instability", "intangible", "intangibles", "likelihood", "may",
+    "maybe", "might", "nearly", "nonassessable", "occasionally", "ordinarily", "pending",
+    "perhaps", "possibilities", "possibility", "possible", "possibly", "precaution",
+    "precautionary", "precautions", "predict", "predictability", "predicted", "predicting",
+    "prediction", "predictions", "predictive", "predictor", "predictors", "predicts",
+    "preliminarily", "preliminary", "presumably", "presume", "presumed", "presumes",
+    "presuming", "presumption", "presumptions", "probabilistic", "probabilities",
+    "probability", "probable", "probably", "random", "randomize", "randomized",
+    "randomizes", "randomizing", "randomly", "randomness", "reassess", "reassessed",
+    "reassesses", "reassessing", "reassessment", "reassessments", "recalculate",
+    "recalculated", "recalculates", "recalculating", "recalculation", "recalculations",
+    "reconsider", "reconsidered", "reconsidering", "reconsiders", "reexamination",
+    "reexamine", "reexamining", "reinterpret", "reinterpretation", "reinterpretations",
+    "reinterpreted", "reinterpreting", "reinterprets", "revise", "revised", "risk",
+    "risked", "riskier", "riskiest", "riskiness", "risking", "risks", "risky", "roughly",
+    "rumors", "seems", "seldom", "seldomly", "sometime", "sometimes", "somewhat",
+    "somewhere", "speculate", "speculated", "speculates", "speculating", "speculation",
+    "speculations", "speculative", "speculatively", "sporadic", "sporadically", "sudden",
+    "suddenly", "suggest", "suggested", "suggesting", "suggests", "susceptibility",
+    "tending", "tentative", "tentatively", "turbulence", "uncertain", "uncertainly",
+    "uncertainties", "uncertainty", "unclear", "unconfirmed", "undecided", "undefined",
+    "undesignated", "undetectable", "undeterminable", "undetermined", "undocumented",
+    "unexpected", "unexpectedly", "unfamiliar", "unfamiliarity", "unforecasted",
+    "unforseen", "unguaranteed", "unhedged", "unidentifiable", "unidentified", "unknown",
+    "unknowns", "unobservable", "unplanned", "unpredictability", "unpredictable",
+    "unpredictably", "unpredicted", "unproved", "unproven", "unquantifiable",
+    "unquantified", "unreconciled", "unseasonable", "unseasonably", "unsettled",
+    "unspecific", "unspecified", "untested", "unusual", "unusually", "unwritten",
+    "vagaries", "vague", "vaguely", "vagueness", "vaguenesses", "vaguer", "vaguest",
+    "variability", "variable", "variables", "variably", "variance", "variances", "variant",
+    "variants", "variation", "variations", "varied", "varies", "vary", "varying",
+    "volatile", "volatilities", "volatility",
+}
+
+TOPIC_ANALYSIS_STRONG_MODALITY_WORDS: set[str] = {
+    "always", "best", "clearly", "definitely", "definitively", "highest", "lowest",
+    "must", "never", "strongly", "unambiguously", "uncompromising", "undisputed",
+    "undoubtedly", "unequivocal", "unequivocally", "unparalleled", "unsurpassed", "will",
+}
+
+TOPIC_ANALYSIS_WEAK_MODALITY_WORDS: set[str] = {
+    "apparently", "appeared", "appearing", "appears", "conceivable", "could", "depend",
+    "depended", "depending", "depends", "may", "maybe", "might", "nearly", "occasionally",
+    "perhaps", "possible", "possibly", "seldom", "seldomly", "sometimes", "somewhat",
+    "suggest", "suggests", "uncertain", "uncertainly",
 }
 
 
@@ -220,6 +293,33 @@ def load_nrc_emotion_lexicon(
                 emotion_lexicon[emotion].update(variants)
 
     return emotion_lexicon
+
+
+def load_emfd_lexicon(path: Path | str | None = None) -> Any | None:
+    """Load an eMFD-style CSV/TSV file from the shared path by default."""
+    selected = Path(path) if path is not None else EMFD_LEXICON_PATH
+    if not selected.exists():
+        return None
+
+    import pandas as pd
+
+    suffix = selected.suffix.lower()
+    sep = "\t" if suffix in {".tsv", ".txt"} else ","
+    df = pd.read_csv(selected, sep=sep)
+
+    lower_map = {c: c.strip().lower() for c in df.columns}
+    df = df.rename(columns=lower_map)
+
+    token_col_candidates = ["word", "term", "token", "lemma", "feature"]
+    token_col = next((c for c in token_col_candidates if c in df.columns), None)
+    if token_col is None:
+        raise ValueError(
+            "Could not detect the token column in the eMFD file. "
+            "Please rename it to one of: word, term, token, lemma, feature."
+        )
+
+    df[token_col] = df[token_col].astype(str).str.lower().str.strip()
+    return df
 
 def _load_emotion_lexicon() -> dict[str, set[str]]:
     """

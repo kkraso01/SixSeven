@@ -338,7 +338,7 @@ def plot_stance_vader_combined_for_run(run_dir: Path) -> bool:
 
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Create combined per-run NRC emotion trajectory plots.")
     parser.add_argument(
         "--output-root",
@@ -352,7 +352,7 @@ def main() -> None:
         default=None,
         help="Optional run folder name (for example: run_20260208_102359)",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     root = args.output_root
     if not root.exists():
