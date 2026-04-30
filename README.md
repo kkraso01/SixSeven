@@ -2,7 +2,7 @@
 
 SixSeven is a research framework for simulating debates between LLM-based agents. It enables reproducible experiments between divergent worldviews (e.g., Conspiracy theory proponent vs. Scientific consensus) using a multi-agent orchestration pipeline and a results-based output hierarchy.
 
-This project was developed as part of the **MAI623-NLP** course for the **MSc in Artificial Intelligence** at the **University of Cyprus (UCY)**.
+This project was developed as part of the **MAI623-NLP** course for the **MSc in Artificial Intelligence** at the **University of Cyprus (UCY)**, under the supervision of **Dr. [Demetris Paschalides](https://github.com/dpasch01)**
 
 The framework supports post-debate analysis, including sentiment tracking, BERT-based emotion detection, and rhetorical marker analysis.
 
